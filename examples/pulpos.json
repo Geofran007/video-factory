@@ -1,0 +1,68 @@
+{
+  "topic": "Los pulpos tienen tres corazones",
+  "category": "ciencia",
+  "title": "Los pulpos tienen TRES corazones (y sangre azul)",
+  "hook": "¿Sabías que los pulpos tienen tres corazones?",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "title",
+      "narration": "¿Sabías que los pulpos tienen tres corazones?",
+      "on_screen_text": "Tres corazones",
+      "highlight_words": ["corazones"],
+      "icon": "heart", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "statement",
+      "narration": "Dos de ellos bombean la sangre hacia las branquias. El tercero la envía al resto del cuerpo.",
+      "on_screen_text": "2 para las branquias, 1 para el cuerpo",
+      "highlight_words": ["branquias"],
+      "icon": "heart", "sfx": "pop", "transition": "slide"
+    },
+    {
+      "id": "s3", "role": "development", "type": "icon_fact",
+      "narration": "Y su sangre es azul, porque transporta el oxígeno con hemocianina, una proteína rica en cobre.",
+      "on_screen_text": "Sangre azul gracias al cobre",
+      "highlight_words": ["azul"],
+      "icon": "drop", "sfx": "ding", "transition": "zoom"
+    },
+    {
+      "id": "s4", "role": "surprise", "type": "big_number",
+      "narration": "Pero lo más sorprendente es su sistema nervioso: tiene más de quinientos millones de neuronas, y cerca de dos tercios están en sus brazos.",
+      "on_screen_text": "Más de 500 millones de neuronas",
+      "highlight_words": ["brazos"],
+      "big_number": "500",
+      "number_caption": "millones de neuronas, dos tercios en los brazos",
+      "icon": "brain", "sfx": "riser", "transition": "wipe"
+    },
+    {
+      "id": "s5", "role": "development", "type": "comparison",
+      "narration": "Además, el corazón que irriga el cuerpo deja de latir cuando nada. Por eso se cansa rápido y prefiere arrastrarse.",
+      "on_screen_text": "¿Nadar o arrastrarse?",
+      "highlight_words": ["arrastrarse"],
+      "items": ["Nadar: el corazón se detiene", "Arrastrarse: se cansa menos"],
+      "icon": "wave", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s6", "role": "closing", "type": "cta",
+      "narration": "¿Qué otro animal quieres que investiguemos? Déjalo en los comentarios y sígueme para más datos.",
+      "on_screen_text": "¿Qué animal sigue?",
+      "highlight_words": ["animal"],
+      "icon": "question", "sfx": "pop", "transition": "zoom"
+    }
+  ],
+  "description": "Los pulpos tienen tres corazones, sangre azul y la mayoría de sus neuronas en los brazos. Fuentes en la descripción. ¿Qué animal quieres ver después?",
+  "hashtags": ["pulpos", "ciencia", "animales", "sabiasque", "datoscuriosos", "biologia"],
+  "sources": [
+    { "title": "Octopus", "url": "https://en.wikipedia.org/wiki/Octopus", "publisher": "Wikipedia" }
+  ],
+  "claims": [
+    { "statement": "Los pulpos tienen tres corazones: dos branquiales y uno sistémico.", "scene_id": "s2",
+      "source_urls": ["https://en.wikipedia.org/wiki/Octopus"], "confidence": "alta" },
+    { "statement": "Su sangre es azulada por la hemocianina, una proteína rica en cobre.", "scene_id": "s3",
+      "source_urls": ["https://en.wikipedia.org/wiki/Octopus"], "confidence": "alta" },
+    { "statement": "Tienen más de 500 millones de neuronas; unos dos tercios están en los brazos.", "scene_id": "s4",
+      "source_urls": ["https://en.wikipedia.org/wiki/Octopus"], "confidence": "alta" },
+    { "statement": "El corazón sistémico se inactiva cuando el pulpo nada, por lo que se cansa rápido y suele arrastrarse.", "scene_id": "s5",
+      "source_urls": ["https://en.wikipedia.org/wiki/Octopus"], "confidence": "alta" }
+  ]
+}

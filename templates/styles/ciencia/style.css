@@ -1,0 +1,7 @@
+/* Ciencia: azul profundo, cian eléctrico, partículas conectadas. */
+body[data-style="ciencia"] {
+  --bg1: #050b1f; --bg2: #0d2a5c;
+  --accent: #3be8ff; --accent2: #7b6cff; --accent-ink: #00141a;
+  --card: rgba(59,232,255,.08); --card-border: rgba(59,232,255,.30);
+  --sub-hl: #3be8ff; --hl-bg: rgba(59,232,255,.18);
+}

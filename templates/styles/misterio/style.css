@@ -1,0 +1,8 @@
+/* Misterio: iluminación cinematográfica, violeta y verde azulado sobre negro. */
+body[data-style="misterio"] {
+  --bg1: #040308; --bg2: #160b24;
+  --accent: #b388ff; --accent2: #2de2c4; --accent-ink: #0b0414;
+  --card: rgba(179,136,255,.08); --card-border: rgba(179,136,255,.30);
+  --sub-hl: #2de2c4; --hl-bg: rgba(45,226,196,.15);
+}
+body[data-style="misterio"] .txt { text-shadow: 0 0 40px rgba(179,136,255,.55), 0 6px 26px rgba(0,0,0,.6); }

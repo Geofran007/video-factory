@@ -1,0 +1,7 @@
+/* Curiosidades: colores llamativos y energía pop. */
+body[data-style="curiosidades"] {
+  --bg1: #2a0845; --bg2: #ff3d7f;
+  --accent: #ffe14d; --accent2: #ff3d7f; --accent-ink: #2a0845;
+  --card: rgba(255,255,255,.14); --card-border: rgba(255,255,255,.45);
+  --sub-hl: #ffe14d; --hl-bg: rgba(42,8,69,.35);
+}
