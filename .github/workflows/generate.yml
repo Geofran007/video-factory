@@ -1,0 +1,85 @@
+name: Generar video
+
+# Ejecución manual. En la Fase 2 se podrá activar la ejecución programada (schedule) y la publicación.
+on:
+  workflow_dispatch:
+    inputs:
+      topic:
+        description: "Temática (vacío = usar el ejemplo examples/pulpos.json, sin IA)"
+        required: false
+        default: ""
+      category:
+        description: "Categoría"
+        type: choice
+        options: [curiosidades, ciencia, historia, misterio, finanzas]
+        default: curiosidades
+      duration:
+        description: "Duración objetivo (15-60 s)"
+        default: "40"
+      voice:
+        description: "Voz"
+        type: choice
+        options: [masculina, masculina_2, femenina]
+        default: masculina
+  # schedule:
+  #   - cron: "0 14 * * 1-5"   # Fase 2: un video por día hábil
+
+permissions:
+  contents: read
+
+concurrency:
+  group: generate-video
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    env:
+      # Configura el secreto en Settings → Secrets and variables → Actions. Nunca en el código.
+      ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+      VF_DAILY_BUDGET_USD: "1.0"
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+      - run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+      - run: pip install -e ".[voice]"
+      - run: python -m playwright install --with-deps chromium
+      - uses: actions/cache@v4
+        with:
+          path: models/piper
+          key: piper-voices-${{ hashFiles('config/providers.json') }}
+      - run: python scripts/setup_voices.py
+      - run: video-factory doctor
+
+      - name: Generar
+        env:
+          TOPIC: ${{ inputs.topic }}
+          CATEGORY: ${{ inputs.category }}
+          DURATION: ${{ inputs.duration }}
+          VOICE: ${{ inputs.voice }}
+        run: |
+          if [ -n "$TOPIC" ]; then
+            video-factory generate --topic "$TOPIC" --category "$CATEGORY" --duration "$DURATION" --voice "$VOICE"
+          else
+            video-factory generate --content examples/pulpos.json --voice "$VOICE"
+          fi
+
+      - name: Subir resultado
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: video-${{ github.run_id }}
+          path: |
+            output/*/video.mp4
+            output/*/thumbnail.jpg
+            output/*/script.md
+            output/*/metadata.json
+            output/*/subtitles.srt
+            output/*/report.json
+            output/*/cost.json
+            output/*/job.log
+          retention-days: 7

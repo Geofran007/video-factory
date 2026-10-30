@@ -1,0 +1,54 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Dependencias del sistema (FFmpeg y fuentes)
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+
+      - name: Dependencias de Python
+        run: pip install -e ".[voice,dev]"
+
+      - name: Chromium para Playwright
+        run: python -m playwright install --with-deps chromium
+
+      - name: Caché de voces de Piper
+        uses: actions/cache@v4
+        with:
+          path: models/piper
+          key: piper-voices-${{ hashFiles('config/providers.json') }}
+
+      - name: Voces de Piper
+        run: python scripts/setup_voices.py
+
+      - name: Pruebas unitarias
+        run: pytest -m "not integration" -q
+
+      - name: Prueba de integración (video completo, sin IA)
+        run: pytest -m integration -q
+
+      - name: Diagnóstico si falla
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-ci
+          path: |
+            logs/
+            /tmp/pytest-of-*/**/job.log
+          retention-days: 7
