@@ -1,0 +1,28 @@
+# Entornos y secretos
+.venv/
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+build/
+dist/
+
+# Salidas generadas
+output/
+logs/
+data/*.db
+
+# Modelos de voz descargados (pesados, se obtienen con scripts/setup_voice.py)
+models/
+
+# Sistema
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
