@@ -1,0 +1,4 @@
+{
+  "_instrucciones": "Registra aquí cada recurso de terceros. Un archivo de assets/ que no figure aquí con 'file', 'license' y 'source' NO se usa. Rutas relativas a assets/. Ejemplo: {\"file\": \"music/ciencia/pista.mp3\", \"license\": \"CC0 1.0\", \"source\": \"https://...\", \"attribution\": \"Título — Autor (CC0)\"}",
+  "assets": []
+}
