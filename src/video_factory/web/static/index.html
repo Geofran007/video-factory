@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Video Factory</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo">▶</span> AI Video Factory <span class="phase">Fase 1</span></div>
+  <div class="meta" id="meta">Cargando…</div>
+</header>
+
+<main class="layout">
+  <section class="card" id="panel-generate">
+    <h2>Generar video</h2>
+    <form id="form">
+      <label class="field">
+        <span>Temática</span>
+        <textarea id="topic" rows="3" maxlength="200" placeholder="Ej.: ¿Qué pasaría si la Tierra dejara de girar?"></textarea>
+      </label>
+      <label class="field">
+        <span>O usar contenido de ejemplo (sin IA)</span>
+        <select id="example"><option value="">— Generar con IA —</option></select>
+      </label>
+      <div class="row">
+        <label class="field"><span>Categoría</span><select id="category"></select></label>
+        <label class="field"><span>Estilo visual</span><select id="style"><option value="">Según categoría</option></select></label>
+      </div>
+      <div class="row">
+        <label class="field"><span>Voz</span><select id="voice"></select></label>
+        <label class="field"><span>Velocidad <output id="speed-out">1.00×</output></span>
+          <input type="range" id="speed" min="0.8" max="1.2" step="0.05" value="1"></label>
+      </div>
+      <label class="field"><span>Duración objetivo <output id="duration-out">40 s</output></span>
+        <input type="range" id="duration" min="15" max="60" step="5" value="40"></label>
+      <button type="submit" id="submit" class="primary">Generar video</button>
+      <p class="hint" id="hint"></p>
+    </form>
+    <div id="status" class="status" hidden>
+      <div class="status-head"><strong id="status-stage">En cola</strong><span id="status-pct">0 %</span></div>
+      <div class="bar"><div id="status-bar"></div></div>
+      <p id="status-msg" class="hint"></p>
+    </div>
+  </section>
+
+  <section class="card" id="panel-result">
+    <h2>Resultado</h2>
+    <div id="result-empty" class="empty">Genera un video o elige uno del historial.</div>
+    <div id="result" hidden>
+      <div class="result-grid">
+        <div class="preview"><video id="video" controls playsinline preload="metadata"></video></div>
+        <div class="details">
+          <h3 id="r-title"></h3>
+          <div class="badges" id="r-badges"></div>
+          <dl class="kv">
+            <dt>Duración</dt><dd id="r-duration">—</dd>
+            <dt>Audio</dt><dd id="r-audio">—</dd>
+            <dt>Costo IA</dt><dd id="r-cost">—</dd>
+            <dt>Carpeta</dt><dd id="r-path" class="mono">—</dd>
+          </dl>
+          <div class="downloads" id="r-downloads"></div>
+        </div>
+      </div>
+      <details open><summary>Guion por escenas</summary><ol id="r-scenes" class="scenes"></ol></details>
+      <details><summary>Verificación de datos</summary><ul id="r-claims" class="claims"></ul></details>
+      <details><summary>Metadatos para publicación</summary>
+        <label class="field"><span>Descripción</span><textarea id="r-description" rows="8" readonly></textarea></label>
+        <p id="r-hashtags" class="hashtags"></p>
+      </details>
+      <details><summary>Control de calidad</summary><ul id="r-qa" class="qa"></ul></details>
+    </div>
+  </section>
+
+  <section class="card wide" id="panel-history">
+    <div class="history-head"><h2>Historial</h2><button id="refresh" class="ghost">Actualizar</button></div>
+    <div class="table-wrap">
+      <table>
+        <thead><tr><th>Fecha</th><th>Temática</th><th>Estado</th><th>Duración</th><th>Costo</th><th>Ruta</th></tr></thead>
+        <tbody id="history"></tbody>
+      </table>
+    </div>
+  </section>
+</main>
+<script src="app.js"></script>
+</body>
+</html>
