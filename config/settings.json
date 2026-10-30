@@ -1,0 +1,55 @@
+{
+  "language": "es-419",
+  "video": {
+    "width": 1080,
+    "height": 1920,
+    "fps": 30,
+    "min_duration_s": 15,
+    "max_duration_s": 60,
+    "default_duration_s": 40,
+    "crf": 20,
+    "preset": "medium",
+    "jpeg_quality": 88,
+    "render_workers": "auto"
+  },
+  "audio": {
+    "sample_rate": 48000,
+    "words_per_second": 2.6,
+    "sentence_pause_s": 0.22,
+    "scene_padding_s": 0.35,
+    "lead_in_s": 0.25,
+    "tail_s": 0.7,
+    "max_speed": 1.2,
+    "music_volume_db": -20,
+    "sfx_volume_db": -9,
+    "ducking": { "threshold": 0.03, "ratio": 8, "attack_ms": 20, "release_ms": 350 },
+    "target_lufs": -14,
+    "true_peak_db": -1.5
+  },
+  "subtitles": {
+    "max_words_per_cue": 5,
+    "min_cue_s": 0.45
+  },
+  "limits": {
+    "max_output_mb": 150,
+    "max_job_seconds": 1800,
+    "max_llm_retries": 2,
+    "daily_budget_usd": 2.0,
+    "max_topic_chars": 200
+  },
+  "qa": {
+    "max_black_segment_s": 0.4,
+    "max_trailing_silence_s": 1.5,
+    "max_peak_dbfs": -0.5,
+    "duration_tolerance_s": 0.2
+  },
+  "paths": {
+    "output": "output",
+    "data": "data",
+    "logs": "logs",
+    "models": "models/piper",
+    "templates": "templates",
+    "assets": "assets",
+    "prompts": "prompts"
+  }
+}

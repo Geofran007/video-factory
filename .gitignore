@@ -16,7 +16,7 @@ dist/
 # Salidas generadas
 output/
 logs/
-data/*.db
+data/
 
 # Modelos de voz descargados (pesados, se obtienen con scripts/setup_voice.py)
 models/

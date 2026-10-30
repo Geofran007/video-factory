@@ -1,0 +1,43 @@
+{
+  "llm": {
+    "provider": "claude",
+    "model": "claude-sonnet-5-5",
+    "effort": "medium",
+    "max_tokens": 16000,
+    "timeout_s": 300,
+    "web_search": { "enabled": true, "max_uses": 3 },
+    "pricing_usd": {
+      "_fuente": "https://platform.claude.com/docs/en/about-claude/pricing (consultado 2026-10-29)",
+      "claude-sonnet-5-5": { "input_per_mtok": 2.0, "output_per_mtok": 10.0, "cache_read_per_mtok": 0.10 },
+      "claude-opus-5-5": { "input_per_mtok": 4.0, "output_per_mtok": 20.0, "cache_read_per_mtok": 0.20 },
+      "claude-haiku-5-5": { "input_per_mtok": 0.10, "output_per_mtok": 0.50, "cache_read_per_mtok": 0.01 },
+      "web_search_per_request": 0.01
+    }
+  },
+  "tts": {
+    "provider": "piper",
+    "default_voice": "masculina",
+    "voices": {
+      "masculina": {
+        "model": "es_MX-claude-high",
+        "label": "Masculina (México) · Piper",
+        "license": "Apache-2.0",
+        "attribution": null
+      },
+      "masculina_2": {
+        "model": "es_MX-ald-medium",
+        "label": "Masculina 2 (México) · Piper",
+        "license": "Unlicense",
+        "attribution": null
+      },
+      "femenina": {
+        "model": "es_AR-daniela-high",
+        "label": "Femenina (Argentina) · Piper",
+        "license": "CC BY-SA 4.0",
+        "attribution": "Voz 'daniela' de Piper (rhasspy/piper-voices), dataset OpenSLR 61, CC BY-SA 4.0"
+      }
+    }
+  },
+  "renderer": { "provider": "playwright-chromium" },
+  "storage": { "provider": "local" }
+}
