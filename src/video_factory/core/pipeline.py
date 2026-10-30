@@ -22,7 +22,7 @@ from ..audio.tts_provider import create_tts
 from ..core.config import AppConfig
 from ..core.errors import BudgetExceededError, ConfigurationError, ValidationError, VideoFactoryError
 from ..core.logging_setup import job_log_handler, remove_handler
-from ..core.models import CATEGORIES, Timeline, VideoContent
+from ..core.models import CATEGORIES, STYLES, Timeline, VideoContent
 from ..storage.history import History
 from ..timeline.subtitle_generator import to_srt
 from ..timeline.timeline_builder import build_timeline
@@ -49,12 +49,15 @@ class JobOptions:
     speed: float = 1.0
     style: str | None = None
     content_file: str | None = None  # usar contenido existente en lugar de llamar a la IA
+    # Solo con content_file: una persona verificó manualmente las fuentes listadas. Aun así se comprueba
+    # que cada URL responda y que la confianza declarada sea alta.
+    sources_verified: bool = False
 
     def validate(self, cfg: AppConfig) -> None:
         v = cfg.video
         if self.category not in CATEGORIES:
             raise ValidationError(f"Categoría inválida: {self.category}")
-        if self.style and self.style not in CATEGORIES:
+        if self.style and self.style not in STYLES:
             raise ValidationError(f"Estilo inválido: {self.style}")
         if not v["min_duration_s"] <= self.duration_s <= v["max_duration_s"]:
             raise ValidationError(f"La duración debe estar entre {v['min_duration_s']} y {v['max_duration_s']} s")
@@ -149,7 +152,12 @@ class Pipeline:
             return VideoContent.model_validate_json(path.read_text("utf-8"))
         if options.content_file:
             content = VideoContent.model_validate_json(Path(options.content_file).read_text("utf-8"))
-            verify_claims(content, researched_urls=None)
+            manual = {s.url for s in content.sources} if options.sources_verified else None
+            verify_claims(content, researched_urls=manual)
+            if manual is not None:
+                for c in content.claims:
+                    if c.status == "verified":
+                        c.review_note = "verificado manualmente"
         else:
             gen = self.content_generator()
             out = gen.generate(topic=options.topic, category=options.category, duration_s=options.duration_s)

@@ -1,0 +1,10 @@
+/* Océano: profundidad cinematográfica, cian frío y acento ámbar de "tiempo profundo". */
+body[data-style="oceano"] {
+  --bg1: #021422; --bg2: #06324a;
+  --accent: #5ee7ff; --accent2: #ffb347; --accent-ink: #021422;
+  --card: rgba(4,40,60,.55); --card-border: rgba(94,231,255,.35);
+  --sub-hl: #ffd166; --hl-bg: rgba(255,179,71,.22);
+}
+body[data-style="oceano"] .txt { text-shadow: 0 0 34px rgba(94,231,255,.35), 0 8px 30px rgba(0,0,0,.65); }
+body[data-style="oceano"] .hl { color: var(--accent2); }
+body[data-style="oceano"] #vignette { background: radial-gradient(ellipse at 50% 38%, transparent 45%, rgba(0,6,14,.78) 100%); }

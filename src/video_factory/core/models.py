@@ -12,10 +12,14 @@ from typing import Literal
 from pydantic import BaseModel, Field, field_validator, model_validator
 
 Category = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades"]
+# Estilos visuales: uno por categoría más estilos temáticos que se pueden elegir aparte.
+Style = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades", "oceano"]
 SceneRole = Literal["hook", "development", "surprise", "closing"]
-SceneType = Literal["title", "statement", "big_number", "list", "comparison", "chart", "icon_fact", "cta"]
+SceneType = Literal["title", "statement", "big_number", "list", "comparison", "chart", "icon_fact", "cta",
+                    "illustration", "timeline"]
 Transition = Literal["fade", "slide", "zoom", "wipe"]
-SfxName = Literal["none", "whoosh", "impact", "riser", "pop", "ding"]
+SfxName = Literal["none", "whoosh", "impact", "riser", "pop", "ding", "bubbles"]
+Illustration = Literal["shark", "ancient_shark", "tree", "dinosaur", "human"]
 Icon = Literal[
     "brain", "heart", "atom", "globe", "clock", "star", "bolt", "eye", "question",
     "chart", "coin", "rocket", "planet", "book", "map", "drop", "fire", "wave",
@@ -24,12 +28,14 @@ Icon = Literal[
 Confidence = Literal["alta", "media", "baja"]
 
 CATEGORIES: tuple[str, ...] = Category.__args__  # type: ignore[attr-defined]
+STYLES: tuple[str, ...] = Style.__args__  # type: ignore[attr-defined]
 ICONS: tuple[str, ...] = Icon.__args__  # type: ignore[attr-defined]
 
 
 class ChartPoint(BaseModel):
     label: str = Field(max_length=24)
     value: float
+    illustration: Illustration | None = None
 
 
 class Scene(BaseModel):
@@ -43,7 +49,9 @@ class Scene(BaseModel):
     big_number: str | None = Field(default=None, max_length=16, description="Cifra destacada para big_number")
     number_caption: str | None = Field(default=None, max_length=60)
     items: list[str] = Field(default_factory=list, description="Elementos para list (2-4) o comparison (exactamente 2)")
-    chart: list[ChartPoint] = Field(default_factory=list, description="2-5 puntos para chart")
+    chart: list[ChartPoint] = Field(default_factory=list,
+                                    description="2-5 puntos para chart; para timeline, millones de años atrás")
+    illustration: Illustration | None = Field(default=None, description="Ilustración animada para illustration")
     sfx: SfxName = "none"
     transition: Transition = "fade"
 
@@ -63,8 +71,12 @@ class Scene(BaseModel):
             raise ValueError(f"escena {self.id}: list requiere entre 2 y 4 items")
         if self.type == "comparison" and len(self.items) != 2:
             raise ValueError(f"escena {self.id}: comparison requiere exactamente 2 items")
-        if self.type == "chart" and not (2 <= len(self.chart) <= 5):
-            raise ValueError(f"escena {self.id}: chart requiere entre 2 y 5 puntos")
+        if self.type in ("chart", "timeline") and not (2 <= len(self.chart) <= 5):
+            raise ValueError(f"escena {self.id}: {self.type} requiere entre 2 y 5 puntos")
+        if self.type == "timeline" and any(p.value < 0 for p in self.chart):
+            raise ValueError(f"escena {self.id}: timeline usa millones de años atrás (valores ≥ 0)")
+        if self.type == "illustration" and not self.illustration:
+            raise ValueError(f"escena {self.id}: illustration requiere el campo illustration")
         self.items = [i[:48] for i in self.items]
         return self
 
@@ -169,7 +181,8 @@ class Timeline(BaseModel):
     height: int
     fps: int
     duration: float
-    style: Category
+    style: Style
+    category: Category | None = None
     title: str
     scenes: list[TimelineScene]
     cues: list[Cue]

@@ -17,6 +17,12 @@ _SYNTH: dict[str, tuple[float, str]] = {
     "riser": (1.2, "(0.30*sin(2*PI*(180*t+380*t*t))+0.18*(2*random(0)-1)*t)*pow(t/1.2,1.6)"),
     "pop": (0.2, "0.75*sin(2*PI*(950-1800*t)*t)*exp(-28*t)"),
     "ding": (1.3, "0.45*sin(2*PI*1318.5*t)*exp(-3.2*t)+0.22*sin(2*PI*2637*t)*exp(-6*t)+0.1*sin(2*PI*3955*t)*exp(-9*t)"),
+    "bubbles": (0.9, "+".join(
+        # Cada burbuja: un «blup» con frecuencia ascendente que se apaga rápido.
+        f"{a}*sin(2*PI*({f0}+{k}*(t-{t0}))*(t-{t0}))*exp(-38*(t-{t0}))*gte(t,{t0})"
+        for t0, f0, k, a in [(0.0, 420, 2600, 0.6), (0.09, 560, 3000, 0.45), (0.21, 380, 2200, 0.55),
+                             (0.3, 650, 3400, 0.35), (0.44, 480, 2800, 0.4), (0.6, 720, 3600, 0.25)]
+    )),
 }
 _WHOOSH = (
     "anoisesrc=d=0.65:c=pink:r=48000:a=0.9:s=7,"
@@ -24,7 +30,7 @@ _WHOOSH = (
     "afade=t=in:d=0.32:curve=qsin,afade=t=out:st=0.32:d=0.33:curve=qsin"
 )
 
-SFX_NAMES = ("whoosh", "impact", "riser", "pop", "ding")
+SFX_NAMES = ("whoosh", "impact", "riser", "pop", "ding", "bubbles")
 
 
 def sfx_path(name: str, cache_dir: Path, assets_dir: Path) -> Path:

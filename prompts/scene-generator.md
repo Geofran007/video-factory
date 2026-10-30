@@ -11,12 +11,17 @@ Las plantillas visuales ya existen; tú solo eliges el tipo y llenas los datos. 
 | chart | Gráfico de barras con 2 a 5 valores reales | chart [{label, value}] |
 | icon_fact | Dato curioso con ícono grande | on_screen_text, icon |
 | cta | Cierre con llamada a la acción | on_screen_text |
+| illustration | Ilustración animada a gran tamaño (en el gancho, se lanza hacia la cámara) | illustration, on_screen_text |
+| timeline | Línea de tiempo vertical; cada punto es un evento | chart [{label, value = millones de años atrás, illustration opcional}] |
+
+Ilustraciones disponibles (`illustration`): shark (tiburón actual), ancient_shark (tiburón prehistórico), tree (árbol
+primitivo), dinosaur, human.
 
 Íconos permitidos (`icon`): brain, heart, atom, globe, clock, star, bolt, eye, question, chart, coin, rocket,
 planet, book, map, drop, fire, wave, dna, landmark, key, lightbulb, skull, crown.
 
 Efectos de sonido (`sfx`): none, whoosh (movimiento), impact (revelación fuerte), riser (tensión antes del dato),
-pop (aparición ligera), ding (dato curioso). Usa como máximo uno por escena y no repitas el mismo en escenas seguidas.
+pop (aparición ligera), ding (dato curioso), bubbles (escenas acuáticas). Usa como máximo uno por escena y no repitas el mismo en escenas seguidas.
 
 Transiciones (`transition`): fade, slide, zoom, wipe. Varíalas.
 

@@ -1,0 +1,81 @@
+{
+  "topic": "¿Sabías que los tiburones son más antiguos que los árboles?",
+  "category": "ciencia",
+  "title": "Los tiburones son MÁS ANTIGUOS que los árboles",
+  "hook": "¿Sabías que los tiburones son más antiguos que los árboles?",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "illustration",
+      "narration": "¿Sabías que los tiburones son más antiguos que los árboles?",
+      "on_screen_text": "Más antiguos que los árboles",
+      "highlight_words": ["antiguos"],
+      "illustration": "shark", "icon": "question", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "big_number",
+      "narration": "Sus rastros más antiguos son escamas de hace unos cuatrocientos cincuenta millones de años.",
+      "on_screen_text": "Escamas de 450 millones de años",
+      "highlight_words": ["escamas"],
+      "big_number": "450",
+      "number_caption": "millones de años: las escamas más antiguas",
+      "icon": "clock", "sfx": "bubbles", "transition": "zoom"
+    },
+    {
+      "id": "s3", "role": "development", "type": "illustration",
+      "narration": "Los primeros árboles llegaron después: hace unos trescientos ochenta y cinco millones de años.",
+      "on_screen_text": "Primeros árboles: hace 385 millones de años",
+      "highlight_words": ["385"],
+      "illustration": "tree", "icon": "globe", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s4", "role": "surprise", "type": "timeline",
+      "narration": "Cuando aparecieron los dinosaurios, los tiburones ya llevaban cerca de doscientos millones de años en el océano.",
+      "on_screen_text": "Antes que bosques y dinosaurios",
+      "highlight_words": ["Antes"],
+      "chart": [
+        { "label": "Tiburones", "value": 450, "illustration": "ancient_shark" },
+        { "label": "Árboles", "value": 385, "illustration": "tree" },
+        { "label": "Dinosaurios", "value": 233, "illustration": "dinosaur" },
+        { "label": "Humanos", "value": 0.3, "illustration": "human" }
+      ],
+      "icon": "clock", "sfx": "riser", "transition": "wipe"
+    },
+    {
+      "id": "s5", "role": "surprise", "type": "illustration",
+      "narration": "Y han sobrevivido a cinco extinciones masivas.",
+      "on_screen_text": "Sobrevivieron a 5 extinciones masivas",
+      "highlight_words": ["5", "extinciones"],
+      "illustration": "ancient_shark", "icon": "skull", "sfx": "impact", "transition": "zoom"
+    },
+    {
+      "id": "s6", "role": "closing", "type": "cta",
+      "narration": "¿Qué otro ser vivo te sorprendería por su edad? Cuéntamelo en los comentarios.",
+      "on_screen_text": "¿Qué ser vivo es aún más antiguo?",
+      "highlight_words": ["antiguo"],
+      "icon": "question", "sfx": "bubbles", "transition": "slide"
+    }
+  ],
+  "description": "Los tiburones aparecen en el registro fósil antes que los árboles: sus escamas más antiguas tienen unos 450 millones de años y los primeros árboles conocidos, unos 385. Además, sobrevivieron a cinco extinciones masivas. Fuentes en la descripción.",
+  "hashtags": ["tiburones", "ciencia", "paleontologia", "sabiasque", "oceano", "datoscuriosos"],
+  "sources": [
+    { "title": "Shark evolution: a 450 million year timeline", "url": "https://www.nhm.ac.uk/discover/shark-evolution-a-450-million-year-timeline.html", "publisher": "Natural History Museum (Londres)" },
+    { "title": "Tree", "url": "https://en.wikipedia.org/wiki/Tree", "publisher": "Wikipedia" },
+    { "title": "Shark", "url": "https://en.wikipedia.org/wiki/Shark", "publisher": "Wikipedia" },
+    { "title": "Dinosaur", "url": "https://en.wikipedia.org/wiki/Dinosaur", "publisher": "Wikipedia" },
+    { "title": "Human", "url": "https://en.wikipedia.org/wiki/Human", "publisher": "Wikipedia" }
+  ],
+  "claims": [
+    { "statement": "Los tiburones aparecen en el registro fósil antes de que existieran los árboles.", "scene_id": "s1",
+      "source_urls": ["https://www.nhm.ac.uk/discover/shark-evolution-a-450-million-year-timeline.html"], "confidence": "alta" },
+    { "statement": "Las evidencias más antiguas de tiburones son escamas de unos 450 millones de años (Ordovícico tardío); se debate si eran tiburones verdaderos o animales similares.", "scene_id": "s2",
+      "source_urls": ["https://www.nhm.ac.uk/discover/shark-evolution-a-450-million-year-timeline.html", "https://en.wikipedia.org/wiki/Shark"], "confidence": "alta" },
+    { "statement": "Wattieza, probablemente el primer árbol, data del Devónico medio, hace unos 385 millones de años.", "scene_id": "s3",
+      "source_urls": ["https://en.wikipedia.org/wiki/Tree"], "confidence": "alta" },
+    { "statement": "Los dinosaurios aparecieron hace unos 233 millones de años; para entonces los tiburones existían desde hacía cerca de 200 millones de años (escamas de ~450 Ma; tiburones del Devónico desde ~419 Ma).", "scene_id": "s4",
+      "source_urls": ["https://en.wikipedia.org/wiki/Dinosaur", "https://www.nhm.ac.uk/discover/shark-evolution-a-450-million-year-timeline.html", "https://en.wikipedia.org/wiki/Shark"], "confidence": "alta" },
+    { "statement": "Homo sapiens surgió hace unos 300.000 años.", "scene_id": "s4",
+      "source_urls": ["https://en.wikipedia.org/wiki/Human"], "confidence": "alta" },
+    { "statement": "Los tiburones han sobrevivido a cinco extinciones masivas.", "scene_id": "s5",
+      "source_urls": ["https://www.nhm.ac.uk/discover/shark-evolution-a-450-million-year-timeline.html"], "confidence": "alta" }
+  ]
+}

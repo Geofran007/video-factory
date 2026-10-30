@@ -18,7 +18,7 @@ from pydantic import BaseModel, Field
 
 from ..core.config import load_config
 from ..core.logging_setup import setup_logging
-from ..core.models import CATEGORIES
+from ..core.models import CATEGORIES, STYLES
 from ..core.pipeline import JobOptions, Pipeline
 from ..storage.history import History
 
@@ -85,6 +85,7 @@ def options() -> dict[str, Any]:
     v = cfg.video
     return {
         "categories": list(CATEGORIES),
+        "styles": list(STYLES),
         "voices": [{"id": k, "label": val["label"]} for k, val in pipeline.tts.available_voices().items()],
         "duration": {"min": v["min_duration_s"], "max": v["max_duration_s"], "default": v["default_duration_s"]},
         "speed": {"min": 0.8, "max": cfg.audio["max_speed"]},

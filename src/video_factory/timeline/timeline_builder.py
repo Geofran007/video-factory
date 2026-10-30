@@ -82,6 +82,7 @@ def build_timeline(
         fps=int(video_cfg["fps"]),
         duration=round(narration.duration, 3),
         style=style or content.category,
+        category=content.category,
         title=content.title,
         scenes=scenes,
         cues=build_cues(narration.sentences, max_words=int(subtitle_cfg["max_words_per_cue"]),

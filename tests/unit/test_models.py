@@ -33,11 +33,23 @@ def _mutate(data, fn):
         (lambda d: d["claims"][0].update(scene_id="s99"), "inexistente"),
         (lambda d: d["scenes"][1].update(icon="<script>"), "icon"),
         (lambda d: d["scenes"][1].update(type="html"), "type"),
+        (lambda d: d["scenes"][1].update(type="illustration"), "illustration"),
+        (lambda d: d["scenes"][1].update(type="illustration", illustration="ballena"), "illustration"),
+        (lambda d: d["scenes"][1].update(type="timeline", chart=[{"label": "a", "value": -5}, {"label": "b", "value": 1}]),
+         "millones de años"),
     ],
 )
 def test_invalid_content_is_rejected(example_dict, mutation, message):
     with pytest.raises(ValidationError, match=message):
         VideoContent.model_validate(_mutate(example_dict, mutation))
+
+
+def test_shark_example_uses_new_scene_types():
+    from conftest import ROOT
+
+    content = VideoContent.model_validate_json((ROOT / "examples" / "tiburones.json").read_text("utf-8"))
+    types = {s.type for s in content.scenes}
+    assert {"illustration", "timeline"} <= types
 
 
 def test_hashtags_are_normalized(example_dict):

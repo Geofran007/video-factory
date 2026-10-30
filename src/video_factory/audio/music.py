@@ -23,9 +23,11 @@ class MusicStyle:
     pulse: float  # volumen del bombo (0 = sin pulso)
     hats: float  # volumen del charles (0 = sin charles)
     brightness: int  # frecuencia del filtro pasa bajos
+    rumble: float = 0.0  # ruido grave de fondo (ambiente submarino)
 
 
 STYLES: dict[str, MusicStyle] = {
+    "oceano": MusicStyle(("Em", "C", "G", "D"), 64, 0.22, 0.0, 1300, rumble=0.10),
     "ciencia": MusicStyle(("Am", "F", "C", "G"), 100, 0.35, 0.0, 3200),
     "historia": MusicStyle(("Dm", "Bb", "F", "C"), 76, 0.25, 0.0, 2200),
     "misterio": MusicStyle(("Cm", "Ab", "Fm", "G"), 66, 0.30, 0.0, 1500),
@@ -71,6 +73,9 @@ def music_expression(style: MusicStyle) -> str:
     if style.hats:
         ht = f"mod(t+{beat / 2:.4f},{beat:.4f})"
         parts.append(f"{style.hats}*(2*random(1)-1)*exp(-70*{ht})")
+    if style.rumble:
+        # Ruido que «respira» lentamente; el filtro pasa bajos lo convierte en rumor submarino.
+        parts.append(f"{style.rumble}*(2*random(2)-1)*(0.6+0.4*sin(2*PI*0.13*t))")
     return "+".join(parts)
 
 

@@ -34,7 +34,7 @@
     options = await api('/api/options');
     const cats = options.categories.map((c) => ({ value: c, label: c[0].toUpperCase() + c.slice(1) }));
     fillSelect($('category'), cats, 'curiosidades');
-    fillSelect($('style'), cats);
+    fillSelect($('style'), options.styles.map((c) => ({ value: c, label: c[0].toUpperCase() + c.slice(1) })));
     fillSelect($('voice'), options.voices.map((v) => ({ value: v.id, label: v.label })), options.voices[0]?.id);
     fillSelect($('example'), options.examples.map((e) => ({ value: e.name, label: `${e.title} (${e.category})` })));
     const d = $('duration');

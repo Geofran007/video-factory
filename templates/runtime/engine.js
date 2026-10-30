@@ -264,6 +264,121 @@
       };
     },
 
+    // Ilustración animada a pantalla completa. En el gancho, el tiburón se lanza hacia la cámara.
+    illustration(root, s) {
+      const art = VF.illustration(s.illustration);
+      const stage = el('div', 'illu-stage illu-' + s.illustration);
+      if (s.illustration === 'tree') {
+        // Los árboles viven en tierra: se muestran en una «ventana» con paisaje del Devónico.
+        const backdrop = el('div', 'illu-backdrop');
+        backdrop.appendChild(art.svg);
+        stage.appendChild(backdrop);
+      } else {
+        stage.appendChild(art.svg);
+      }
+      const hook = s.role === 'hook';
+      const box = el('div', hook ? 'txt txt-title txt-over' : 'txt txt-body');
+      const spans = wordSpans(box, s.on_screen_text, s.highlight_words);
+      root.append(stage, box);
+      fitText(box, hook ? 130 : 96, 48);
+      const isShark = /shark/.test(s.illustration);
+      const isTree = s.illustration === 'tree';
+      return (lt, dur) => {
+        art.animate(lt, isShark && hook ? 1.6 : 1);
+        let tx = 0, ty = 0, sc = 1, rotDeg = 0, op = 1;
+        if (isShark && hook) {
+          // Embestida: de lejos (pequeño y tenue) a primer plano en ~1.2 s, luego patrulla.
+          const p = ease.inOutSine(prog(lt, 0, 1.2));
+          sc = lerp(0.28, 1.25, p);
+          op = clamp(0.25 + p);
+          tx = lerp(-300, 0, p) + Math.sin(lt * 1.3) * 30; // avanza en la dirección en que mira
+          ty = lerp(-160, 40, p) + Math.sin(lt * 2.1) * 14;
+          rotDeg = lerp(-8, 2, p) + Math.sin(lt * 2.1) * 2;
+        } else if (isShark) {
+          // Crucero: entra por la izquierda (mira a la derecha) y patrulla con ondulación suave.
+          const p = ease.outCubic(prog(lt, 0, 1.1));
+          tx = lerp(-900, 0, p) + Math.sin(lt * 0.9) * 50;
+          ty = Math.sin(lt * 1.8) * 22;
+          rotDeg = Math.sin(lt * 1.8 + 0.6) * 3;
+        } else if (isTree) {
+          const g = ease.outCubic(prog(lt, 0.05, 1.3));
+          art.trunk.setAttribute('transform', `translate(0 ${(460 * (1 - g)).toFixed(1)}) scale(1 ${Math.max(0.001, g).toFixed(3)})`);
+          art.trunk.style.transformOrigin = '181px 460px';
+          const c = ease.outBack(prog(lt, 0.7, 0.9));
+          art.crown.style.transformOrigin = '181px 172px';
+          art.crown.style.transform = `translateY(${((1 - g) * 288).toFixed(1)}px) scale(${Math.max(0.001, c).toFixed(3)})`;
+          sc = 1 + 0.03 * Math.sin(lt * 0.8);
+        } else {
+          const p = ease.outBack(prog(lt, 0, 0.7));
+          sc = p;
+          ty = Math.sin(lt * 1.5) * 8;
+        }
+        stage.style.opacity = op.toFixed(3);
+        stage.style.transform = `translate(${tx.toFixed(1)}px, ${ty.toFixed(1)}px) scale(${sc.toFixed(3)}) rotate(${rotDeg.toFixed(2)}deg)`;
+        animateWords(spans, lt, hook ? 0.95 : 0.4, hook ? 0.1 : 0.07);
+        if (hook) {
+          const slam = prog(lt, 0.95, 0.25);
+          box.style.transform = `scale(${lerp(1.5, 1, ease.outCubic(slam)).toFixed(3)})`;
+        }
+      };
+    },
+
+    // Línea de tiempo geológica vertical (valores = millones de años atrás).
+    timeline(root, s) {
+      const head = el('div', 'txt txt-head');
+      const spans = wordSpans(head, s.on_screen_text, s.highlight_words);
+      const wrap = el('div', 'tl');
+      const line = el('div', 'tl-line');
+      const fill = el('div', 'tl-fill');
+      line.appendChild(fill);
+      wrap.appendChild(line);
+      root.append(head, wrap);
+      fitText(head, 84, 44);
+      const H = 620, GAP = 140, TOP = 80;
+      line.style.top = TOP + 'px';
+      line.style.height = (H + 20) + 'px';
+      const pts = [...s.chart].sort((a, b) => b.value - a.value);
+      const max = pts[0].value || 1;
+      // Posición lineal en el tiempo, separando tarjetas que quedarían superpuestas.
+      const ys = pts.map((p) => (1 - p.value / max) * H);
+      for (let i = 1; i < ys.length; i++) ys[i] = Math.max(ys[i], ys[i - 1] + GAP);
+      const scale = ys[ys.length - 1] > H ? H / ys[ys.length - 1] : 1;
+      const items = pts.map((p, i) => {
+        const y = ys[i] * scale;
+        const item = el('div', 'tl-item');
+        item.style.top = (y + TOP).toFixed(1) + 'px';
+        const dot = el('div', 'tl-dot');
+        const card = el('div', 'tl-card');
+        if (p.illustration) {
+          const thumb = el('div', 'tl-thumb');
+          thumb.appendChild(VF.illustration(p.illustration).svg);
+          card.appendChild(thumb);
+        }
+        const txt = el('div', 'tl-text');
+        txt.append(el('div', 'tl-label', p.label), el('div', 'tl-value', ''));
+        card.appendChild(txt);
+        item.append(dot, card);
+        wrap.appendChild(item);
+        return { item, card, dot, y, p, value: txt.lastChild };
+      });
+      const ago = (v) => (v >= 1 ? `hace ${formatNumber(v, v % 1 ? 1 : 0)} M de años` : `hace ${formatNumber(v * 1000, 0)} mil años`);
+      return (lt, dur) => {
+        animateWords(spans, lt, 0.05, 0.05);
+        const reveal = Math.max(1.2, dur * 0.7);
+        const pf = ease.inOutSine(prog(lt, 0.3, reveal));
+        const total = items[items.length - 1].y + 40;
+        fill.style.height = (pf * total).toFixed(1) + 'px';
+        items.forEach(({ card, dot, y, p, value }) => {
+          const at = 0.3 + reveal * (y / total);
+          const q = ease.outBack(prog(lt, at, 0.45));
+          card.style.opacity = clamp(q * 2).toFixed(3);
+          card.style.transform = `translateX(${((1 - q) * 160).toFixed(1)}px)`;
+          dot.style.transform = `translate(-50%, -50%) scale(${(q * (1 + 0.15 * Math.sin(lt * 5))).toFixed(3)})`;
+          value.textContent = ago(p.value);
+        });
+      };
+    },
+
     cta(root, s) {
       const box = el('div', 'txt txt-title txt-cta');
       const spans = wordSpans(box, s.on_screen_text, s.highlight_words);
@@ -361,7 +476,7 @@
       node.appendChild(inner);
       let tag = null;
       if (ts.index === 0) {
-        tag = el('div', 'category-tag', TL.style.toUpperCase());
+        tag = el('div', 'category-tag', (TL.category || TL.style).toUpperCase());
         node.appendChild(tag);
       }
       host.appendChild(node);

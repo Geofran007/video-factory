@@ -19,7 +19,7 @@ import sys
 from .core.config import load_config
 from .core.errors import VideoFactoryError
 from .core.logging_setup import setup_logging
-from .core.models import CATEGORIES
+from .core.models import CATEGORIES, STYLES
 from .core.pipeline import JobOptions, Pipeline
 from .storage.history import History
 
@@ -33,7 +33,8 @@ def _pipeline() -> Pipeline:
 def cmd_generate(args: argparse.Namespace) -> int:
     pipe = _pipeline()
     opts = JobOptions(topic=args.topic or "", category=args.category, duration_s=args.duration, voice=args.voice,
-                      speed=args.speed, style=args.style, content_file=args.content)
+                      speed=args.speed, style=args.style, content_file=args.content,
+                      sources_verified=bool(args.content and args.sources_verified))
     if args.content:
         data = json.loads(open(args.content, encoding="utf-8").read())
         opts.topic = opts.topic or data.get("topic", "")
@@ -139,7 +140,9 @@ def main(argv: list[str] | None = None) -> int:
     g.add_argument("--topic", help="Temática del video")
     g.add_argument("--content", help="Ruta a un content.json existente (no llama a la IA)")
     g.add_argument("--category", choices=CATEGORIES, default="curiosidades")
-    g.add_argument("--style", choices=CATEGORIES, help="Estilo visual (por defecto, el de la categoría)")
+    g.add_argument("--style", choices=STYLES, help="Estilo visual (por defecto, el de la categoría)")
+    g.add_argument("--sources-verified", action="store_true",
+                   help="Con --content: las fuentes fueron verificadas manualmente por una persona")
     g.add_argument("--duration", type=int, default=40)
     g.add_argument("--voice", default="masculina")
     g.add_argument("--speed", type=float, default=1.0)
