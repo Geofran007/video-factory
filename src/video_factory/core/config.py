@@ -56,6 +56,8 @@ def _env_overrides(settings: dict[str, Any], providers: dict[str, Any]) -> None:
         providers["llm"]["web_search"]["enabled"] = ws.strip().lower() in {"1", "true", "yes", "si", "sí"}
     if budget := os.getenv("VF_DAILY_BUDGET_USD"):
         settings["limits"]["daily_budget_usd"] = float(budget)
+    if max_job := os.getenv("VF_MAX_JOB_SECONDS"):
+        settings["limits"]["max_job_seconds"] = int(max_job)
 
 
 @lru_cache(maxsize=1)

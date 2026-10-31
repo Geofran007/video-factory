@@ -199,6 +199,27 @@ los resultados de búsqueda + 3 búsquedas; guion ≈ 4 k de entrada y 6–8 k d
 llamadas reales**; el costo real queda en `cost.json` y en el historial. Para abaratar: `VF_LLM_MODEL=claude-haiku-5-5`
 (≈ $0,01–0,04) o `VF_WEB_SEARCH=false`.
 
+## Voz natural opcional: Chatterbox (MIT)
+
+Voz más natural en español latino (`chatterbox_latam`), basada en
+[Chatterbox Multilingual es-MX/LatAm](https://huggingface.co/ResembleAI/Chatterbox-Multilingual-es-mx-latam).
+Corre en un entorno aislado porque sus dependencias fijas chocan con las del proyecto:
+
+```bash
+py -3.12 -m venv .venv-chatterbox
+.venv-chatterbox\Scripts\python -m pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+.venv-chatterbox\Scripts\python -m pip install chatterbox-tts==0.1.7
+.venv-chatterbox\Scripts\python scripts\setup_chatterbox.py      # descarga ~3 GB
+set VF_MAX_JOB_SECONDS=7200
+video-factory generate --content examples/tiburones.json --style oceano --voice chatterbox_latam
+```
+
+- **Muy lenta sin GPU**: ~2 min por frase en un PC de 8 núcleos (un video de 30 s ≈ 13 min en total).
+- No admite `--speed`. Cada frase tiene un límite de tokens proporcional al texto y se recorta si se excede,
+  para evitar el audio "desbocado" que el modelo produce a veces.
+- Los audios llevan la marca de agua inaudible Perth de Resemble AI.
+- No se recomienda en GitHub Actions (runners sin GPU).
+
 ## Licencias de recursos
 
 - **Voces**: `es_MX-claude-high` (Apache-2.0), `es_MX-ald-medium` (Unlicense), `es_AR-daniela-high` (CC BY-SA 4.0,

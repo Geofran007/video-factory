@@ -77,8 +77,90 @@ class PiperTTS:
         return self.synthesize_many([SynthesisItem(text, out_path)], voice=voice, speed=speed)[0]
 
 
-def create_tts(tts_config: dict[str, Any], root: Path, models_dir: Path) -> PiperTTS:
-    provider = tts_config.get("provider", "piper")
-    if provider == "piper":
-        return PiperTTS(tts_config, models_dir, root / "scripts" / "piper_batch.py")
-    raise ConfigurationError(f"Proveedor de voz no soportado todavía: {provider}")
+class ChatterboxTTS:
+    """Chatterbox Multilingual (MIT) en su propio entorno (.venv-chatterbox). Muy lento sin GPU."""
+
+    name = "chatterbox"
+
+    def __init__(self, voices: dict[str, dict[str, Any]], root: Path):
+        self.voices = voices
+        self.root = root
+        self.worker = root / "scripts" / "chatterbox_batch.py"
+        sub = "Scripts/python.exe" if sys.platform == "win32" else "bin/python"
+        self.python = root / ".venv-chatterbox" / sub
+
+    def _model_dir(self, voice: str) -> Path:
+        return self.root / self.voices[voice]["model_dir"]
+
+    def available_voices(self) -> dict[str, dict[str, Any]]:
+        if not self.python.exists():
+            return {}
+        return {k: v for k, v in self.voices.items() if (self._model_dir(k) / "t3_mtl23ls_v2.safetensors").exists()}
+
+    def voice_info(self, voice: str) -> dict[str, Any]:
+        return self.voices[voice]
+
+    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0) -> list[SynthesisResult]:
+        if not items:
+            return []
+        if voice not in self.available_voices():
+            raise ConfigurationError("Chatterbox no está instalado (ver README: scripts/setup_chatterbox.py)")
+        v = self.voices[voice]
+        job = {"model_dir": str(self._model_dir(voice)), "language": "es",
+               "exaggeration": v.get("exaggeration", 0.5), "cfg_weight": v.get("cfg_weight", 0.5),
+               "temperature": v.get("temperature", 0.8), "seed": v.get("seed", 1234),
+               "items": [{"text": i.text, "out": str(i.out)} for i in items]}
+        with tempfile.NamedTemporaryFile("w", suffix=".json", delete=False, encoding="utf-8") as fh:
+            json.dump(job, fh, ensure_ascii=False)
+            job_path = fh.name
+        try:
+            proc = subprocess.run([str(self.python), str(self.worker), job_path], capture_output=True, text=True,
+                                  encoding="utf-8", errors="replace", timeout=7200)
+        finally:
+            Path(job_path).unlink(missing_ok=True)
+        if proc.returncode != 0:
+            raise AudioError(f"Chatterbox falló: {proc.stderr.strip()[-800:]}")
+        raw = json.loads(proc.stdout.strip().splitlines()[-1])
+        # Chatterbox no admite velocidad; se ignora `speed` (el pipeline solo acelera si excede el máximo).
+        return [SynthesisResult(Path(r["out"]), float(r["duration"]), int(r["sample_rate"]), None) for r in raw]
+
+
+class MultiEngineTTS:
+    """Enruta cada voz a su motor según providers.json → tts.voices.<voz>.engine (por defecto, piper)."""
+
+    name = "multi"
+
+    def __init__(self, engines: dict[str, Any], voice_engine: dict[str, str]):
+        self.engines = engines
+        self.voice_engine = voice_engine
+
+    def _engine(self, voice: str) -> Any:
+        if voice not in self.voice_engine:
+            raise ConfigurationError(f"Voz desconocida: {voice}")
+        return self.engines[self.voice_engine[voice]]
+
+    def available_voices(self) -> dict[str, dict[str, Any]]:
+        out: dict[str, dict[str, Any]] = {}
+        for engine in self.engines.values():
+            out.update(engine.available_voices())
+        return out
+
+    def voice_info(self, voice: str) -> dict[str, Any]:
+        return self._engine(voice).voice_info(voice)
+
+    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0) -> list[SynthesisResult]:
+        return self._engine(voice).synthesize_many(items, voice=voice, speed=speed)
+
+
+def create_tts(tts_config: dict[str, Any], root: Path, models_dir: Path) -> MultiEngineTTS:
+    voices = tts_config["voices"]
+    voice_engine = {k: v.get("engine", "piper") for k, v in voices.items()}
+    piper_cfg = {**tts_config, "voices": {k: v for k, v in voices.items() if voice_engine[k] == "piper"}}
+    engines: dict[str, Any] = {"piper": PiperTTS(piper_cfg, models_dir, root / "scripts" / "piper_batch.py")}
+    cb = {k: v for k, v in voices.items() if voice_engine[k] == "chatterbox"}
+    if cb:
+        engines["chatterbox"] = ChatterboxTTS(cb, root)
+    unknown = set(voice_engine.values()) - set(engines)
+    if unknown:
+        raise ConfigurationError(f"Motor de voz no soportado: {', '.join(sorted(unknown))}")
+    return MultiEngineTTS(engines, voice_engine)

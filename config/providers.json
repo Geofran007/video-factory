@@ -35,6 +35,17 @@
         "label": "Femenina (Argentina) · Piper",
         "license": "CC BY-SA 4.0",
         "attribution": "Voz 'daniela' de Piper (rhasspy/piper-voices), dataset OpenSLR 61, CC BY-SA 4.0"
+      },
+      "chatterbox_latam": {
+        "engine": "chatterbox",
+        "model_dir": "models/chatterbox-es-latam",
+        "label": "Natural latina · Chatterbox (muy lenta sin GPU)",
+        "license": "MIT",
+        "attribution": "Voz Chatterbox Multilingual es-MX/LatAm (Resemble AI), MIT",
+        "exaggeration": 0.55,
+        "cfg_weight": 0.5,
+        "temperature": 0.8,
+        "seed": 1234
       }
     }
   },
