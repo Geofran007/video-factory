@@ -1,6 +1,6 @@
 name: Generar video
 
-# Ejecución manual. En la Fase 2 se podrá activar la ejecución programada (schedule) y la publicación.
+# Ejecución manual (Actions → Generar video → Run workflow). En la Fase 2 se podrá activar la ejecución programada (schedule) y la publicación.
 on:
   workflow_dispatch:
     inputs:
