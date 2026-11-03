@@ -22,6 +22,9 @@ data/
 # Modelos de voz descargados (pesados, se obtienen con scripts/setup_voice.py)
 models/
 
+# Grabaciones de voz personales (datos biométricos, nunca al repositorio)
+entrenamiento/
+
 # Sistema
 .DS_Store
 Thumbs.db

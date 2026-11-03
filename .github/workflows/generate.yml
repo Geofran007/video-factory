@@ -17,9 +17,9 @@ on:
         description: "Duración objetivo (15-60 s)"
         default: "40"
       voice:
-        description: "Voz"
+        description: "Voz (chatterbox_latam y mi_voz tardan 30-90 min sin GPU)"
         type: choice
-        options: [masculina, masculina_2, femenina]
+        options: [masculina, masculina_2, femenina, chatterbox_latam, mi_voz]
         default: masculina
   # schedule:
   #   - cron: "0 14 * * 1-5"   # Fase 2: un video por día hábil
@@ -34,11 +34,13 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-    timeout-minutes: 40
+    timeout-minutes: 180
     env:
       # Configura el secreto en Settings → Secrets and variables → Actions. Nunca en el código.
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       VF_DAILY_BUDGET_USD: "1.0"
+      VF_MAX_JOB_SECONDS: "9000"
+      CHATTERBOX: ${{ inputs.voice == 'chatterbox_latam' || inputs.voice == 'mi_voz' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -53,6 +55,35 @@ jobs:
           path: models/piper
           key: piper-voices-${{ hashFiles('config/providers.json') }}
       - run: python scripts/setup_voices.py
+
+      # Chatterbox (MIT) en su propio entorno: sus dependencias fijas chocan con las del proyecto.
+      - name: Caché de Chatterbox (entorno y modelo ~3 GB)
+        if: env.CHATTERBOX == 'true'
+        uses: actions/cache@v4
+        with:
+          path: |
+            .venv-chatterbox
+            models/chatterbox-es-latam
+          key: chatterbox-0.1.7-torch2.6.0-${{ runner.os }}-${{ hashFiles('scripts/setup_chatterbox.py') }}
+      - name: Instalar Chatterbox
+        if: env.CHATTERBOX == 'true'
+        run: |
+          if [ ! -x .venv-chatterbox/bin/python ]; then
+            python -m venv .venv-chatterbox
+            .venv-chatterbox/bin/python -m pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+            .venv-chatterbox/bin/python -m pip install chatterbox-tts==0.1.7
+          fi
+          .venv-chatterbox/bin/python scripts/setup_chatterbox.py
+      - name: Descifrar la voz de referencia
+        if: inputs.voice == 'mi_voz'
+        env:
+          # Contraseña del cifrado de voces/referencia.wav.gpg, guardada solo como secreto del repositorio.
+          VOICE_PASSPHRASE: ${{ secrets.VOICE_PASSPHRASE }}
+        run: |
+          mkdir -p models/mi-voz
+          gpg --batch --quiet --pinentry-mode loopback --passphrase-fd 0 \
+            --output models/mi-voz/referencia.wav --decrypt voces/referencia.wav.gpg <<< "$VOICE_PASSPHRASE"
+
       - run: video-factory doctor
 
       - name: Generar
@@ -83,3 +114,7 @@ jobs:
             output/*/cost.json
             output/*/job.log
           retention-days: 7
+
+      - name: Borrar la voz descifrada
+        if: always()
+        run: rm -f models/mi-voz/referencia.wav

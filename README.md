@@ -218,7 +218,27 @@ video-factory generate --content examples/tiburones.json --style oceano --voice 
 - No admite `--speed`. Cada frase tiene un límite de tokens proporcional al texto y se recorta si se excede,
   para evitar el audio "desbocado" que el modelo produce a veces.
 - Los audios llevan la marca de agua inaudible Perth de Resemble AI.
-- No se recomienda en GitHub Actions (runners sin GPU).
+- En GitHub Actions funciona pero tarda 30–90 min por video (runners sin GPU); el entorno y el modelo se guardan en caché.
+
+### Tu propia voz (`mi_voz`)
+
+Chatterbox no se entrena: copia el timbre de un clip de referencia en cada síntesis. Usa solo tu voz o una con
+autorización escrita de su dueño.
+
+1. Graba 15–20 s en un lugar silencioso, con el tono de narrador de los videos.
+2. Conviértela a `models/mi-voz/referencia.wav` (mono, 24 kHz). `models/` y `entrenamiento/` nunca se suben.
+3. `video-factory generate --content examples/tiburones.json --style oceano --voice mi_voz`
+
+Ajustes en `config/providers.json → tts.voices.mi_voz`: `exaggeration` (expresividad), `cfg_weight` (más bajo = más
+parecido al ritmo del clip) y `seed`.
+
+Para GitHub Actions la referencia va **cifrada** en `voces/referencia.wav.gpg` (AES-256) y la contraseña solo como
+secreto `VOICE_PASSPHRASE`. Para cambiarla:
+
+```bash
+gpg --symmetric --cipher-algo AES256 --output voces/referencia.wav.gpg models/mi-voz/referencia.wav
+gh secret set VOICE_PASSPHRASE
+```
 
 ## Licencias de recursos
 
@@ -236,7 +256,8 @@ video-factory generate --content examples/tiburones.json --style oceano --voice 
   integración (video completo sin IA).
 - `.github/workflows/generate.yml`: ejecución manual (*Run workflow*) con temática, categoría, duración y voz; sube el
   MP4, guion, metadatos y reportes como artefacto (7 días). Requiere el secreto `ANTHROPIC_API_KEY`
-  (*Settings → Secrets and variables → Actions*). Sin temática usa el ejemplo y no llama a la IA.
+  (*Settings → Secrets and variables → Actions*). Sin temática usa el ejemplo y no llama a la IA. Con la voz `mi_voz`
+  también requiere `VOICE_PASSPHRASE`; el clip descifrado se borra al terminar.
 - Preparado para Fase 2: bloque `schedule` comentado, comando `batch`, `publishers/publisher_interface.py`,
   `metadata.json → platforms`, `storage` intercambiable y `concurrency` para no solapar ejecuciones.
 

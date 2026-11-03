@@ -46,6 +46,18 @@
         "cfg_weight": 0.5,
         "temperature": 0.8,
         "seed": 1234
+      },
+      "mi_voz": {
+        "engine": "chatterbox",
+        "model_dir": "models/chatterbox-es-latam",
+        "audio_prompt": "models/mi-voz/referencia.wav",
+        "label": "Mi voz · Chatterbox (muy lenta sin GPU)",
+        "license": "Voz propia del autor",
+        "attribution": null,
+        "exaggeration": 0.65,
+        "cfg_weight": 0.5,
+        "temperature": 0.8,
+        "seed": 1234
       }
     }
   },

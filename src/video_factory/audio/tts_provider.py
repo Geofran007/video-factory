@@ -92,10 +92,17 @@ class ChatterboxTTS:
     def _model_dir(self, voice: str) -> Path:
         return self.root / self.voices[voice]["model_dir"]
 
+    def _audio_prompt(self, voice: str) -> Path | None:
+        """Clip de referencia (voz propia o autorizada) para clonar el timbre; None usa la voz incluida."""
+        clip = self.voices[voice].get("audio_prompt")
+        return (self.root / clip) if clip else None
+
     def available_voices(self) -> dict[str, dict[str, Any]]:
         if not self.python.exists():
             return {}
-        return {k: v for k, v in self.voices.items() if (self._model_dir(k) / "t3_mtl23ls_v2.safetensors").exists()}
+        return {k: v for k, v in self.voices.items()
+                if (self._model_dir(k) / "t3_mtl23ls_v2.safetensors").exists()
+                and (self._audio_prompt(k) is None or self._audio_prompt(k).exists())}
 
     def voice_info(self, voice: str) -> dict[str, Any]:
         return self.voices[voice]
@@ -106,7 +113,9 @@ class ChatterboxTTS:
         if voice not in self.available_voices():
             raise ConfigurationError("Chatterbox no está instalado (ver README: scripts/setup_chatterbox.py)")
         v = self.voices[voice]
+        clip = self._audio_prompt(voice)
         job = {"model_dir": str(self._model_dir(voice)), "language": "es",
+               "audio_prompt": str(clip) if clip else None,
                "exaggeration": v.get("exaggeration", 0.5), "cfg_weight": v.get("cfg_weight", 0.5),
                "temperature": v.get("temperature", 0.8), "seed": v.get("seed", 1234),
                "items": [{"text": i.text, "out": str(i.out)} for i in items]}
