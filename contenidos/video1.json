@@ -1,0 +1,95 @@
+{
+  "topic": "¿Sabías que en Venus un día dura más que un año?",
+  "category": "ciencia",
+  "title": "En VENUS un día dura más que un año",
+  "hook": "¿Sabías que en Venus un día dura más que un año?",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "¿Sabías que en Venus un día dura más que un año?",
+      "on_screen_text": "¡Un día más largo que un año!",
+      "highlight_words": ["día", "año"],
+      "icon": "planet",
+      "sfx": "impact",
+      "transition": "zoom"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "Este planeta necesita doscientos cuarenta y tres días terrestres para completar una sola vuelta sobre sí mismo.",
+      "on_screen_text": "243 días para girar",
+      "highlight_words": ["243"],
+      "big_number": "243",
+      "number_caption": "Días terrestres para completar una rotación",
+      "icon": "clock",
+      "sfx": "whoosh",
+      "transition": "slide"
+    },
+    {
+      "id": "s3",
+      "role": "surprise",
+      "type": "comparison",
+      "narration": "Pero completar una órbita alrededor del Sol solamente le toma doscientos veinticinco días.",
+      "on_screen_text": "Su año dura solo 225 días",
+      "highlight_words": ["225"],
+      "items": ["Rotación: 243 días", "Órbita: 225 días"],
+      "icon": "rocket",
+      "sfx": "riser",
+      "transition": "wipe"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "statement",
+      "narration": "Además, Venus gira en dirección contraria a la mayoría de los planetas, haciendo que el Sol aparezca por el oeste.",
+      "on_screen_text": "El Sol sale por el oeste",
+      "highlight_words": ["oeste"],
+      "icon": "globe",
+      "sfx": "whoosh",
+      "transition": "zoom"
+    },
+    {
+      "id": "s5",
+      "role": "closing",
+      "type": "cta",
+      "narration": "Imagina vivir en un planeta donde el día supera al año. ¿Te gustaría conocer Venus? Cuéntamelo en los comentarios.",
+      "on_screen_text": "¿Visitarías Venus?",
+      "highlight_words": ["Venus"],
+      "icon": "question",
+      "sfx": "pop",
+      "transition": "fade"
+    }
+  ],
+  "description": "Venus tiene una característica increíble: su rotación dura más que su viaje alrededor del Sol. ¡Un día puede superar a todo un año!",
+  "hashtags": ["venus", "espacio", "astronomia", "ciencia", "sabiasque"],
+  "sources": [
+    {
+      "title": "Venus: Facts",
+      "url": "https://science.nasa.gov/venus/venus-facts/",
+      "publisher": "NASA"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Una rotación completa de Venus dura aproximadamente 243 días terrestres.",
+      "scene_id": "s2",
+      "source_urls": ["https://science.nasa.gov/venus/venus-facts/"],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Venus completa una órbita alrededor del Sol en aproximadamente 225 días terrestres.",
+      "scene_id": "s3",
+      "source_urls": ["https://science.nasa.gov/venus/venus-facts/"],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Venus tiene rotación retrógrada y el Sol sale por el oeste.",
+      "scene_id": "s4",
+      "source_urls": ["https://science.nasa.gov/venus/venus-facts/"],
+      "confidence": "alta"
+    }
+  ]
+}
