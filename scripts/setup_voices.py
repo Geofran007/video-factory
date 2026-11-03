@@ -20,7 +20,8 @@ def main() -> int:
     settings = json.loads((ROOT / "config" / "settings.json").read_text(encoding="utf-8"))
     target = ROOT / settings["paths"]["models"]
     target.mkdir(parents=True, exist_ok=True)
-    models = sorted({v["model"] for v in providers["tts"]["voices"].values()})
+    voices = providers["tts"]["voices"].values()
+    models = sorted({v["model"] for v in voices if v.get("engine", "piper") == "piper"})
     missing = [m for m in models if not (target / f"{m}.onnx").exists()]
     if not missing:
         print("Todas las voces ya están instaladas:", ", ".join(models))
