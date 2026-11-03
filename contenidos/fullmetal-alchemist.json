@@ -1,0 +1,55 @@
+{
+  "topic": "La trágica historia de los hermanos Elric y cómo intentaron recuperar lo que perdieron.",
+  "category": "curiosidades",
+  "title": "La historia de FULLMETAL ALCHEMIST en 50 segundos",
+  "hook": "Dos hermanos intentaron revivir a su madre usando alquimia... pero cometieron el mayor pecado de todos.",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "statement",
+      "narration": "Dos hermanos intentaron revivir a su madre usando alquimia... pero cometieron el mayor pecado de todos.",
+      "on_screen_text": "El precio de desafiar a la muerte",
+      "highlight_words": ["muerte"],
+      "icon": "fire", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "big_number",
+      "narration": "Edward perdió una pierna y un brazo, mientras Alphonse perdió todo su cuerpo. Edward logró unir su alma a una armadura.",
+      "on_screen_text": "Dos hermanos. Un sacrificio irreversible.",
+      "highlight_words": ["sacrificio"],
+      "big_number": "2",
+      "number_caption": "hermanos marcados por la alquimia",
+      "icon": "key", "sfx": "impact", "transition": "zoom"
+    },
+    {
+      "id": "s3", "role": "surprise", "type": "icon_fact",
+      "narration": "En su búsqueda de la Piedra Filosofal descubrieron que estaba creada con almas humanas. Pero aquello escondía una conspiración que amenazaba a todo su país.",
+      "on_screen_text": "La Piedra Filosofal tenía un precio aterrador",
+      "highlight_words": ["aterrador"],
+      "icon": "skull", "sfx": "riser", "transition": "wipe"
+    },
+    {
+      "id": "s4", "role": "closing", "type": "cta",
+      "narration": "Después de una batalla contra Padre, Edward sacrificó su capacidad de usar alquimia para recuperar el cuerpo de Alphonse. Porque al final, su mayor tesoro nunca fue la alquimia... fue su hermano.",
+      "on_screen_text": "Un hermano vale más que toda la alquimia",
+      "highlight_words": ["hermano"],
+      "icon": "heart", "sfx": "impact", "transition": "fade"
+    }
+  ],
+  "description": "Dos hermanos desafiaron las leyes de la alquimia para recuperar a su madre, pero terminaron pagando un precio terrible. Esta es la historia de Fullmetal Alchemist: Brotherhood. ¿La has visto?",
+  "hashtags": ["FullmetalAlchemist", "FullmetalAlchemistBrotherhood", "Anime", "EdwardElric", "AlphonseElric", "AnimeResumido", "SeriesGD"],
+  "sources": [
+    {"title": "Fullmetal Alchemist Brotherhood - Official Introduction", "url": "https://fullmetalalchemistusa.com/introduction/", "publisher": "Fullmetal Alchemist Official USA"},
+    {"title": "Fullmetal Alchemist Brotherhood - Characters", "url": "https://fullmetalalchemistusa.com/character/", "publisher": "Fullmetal Alchemist Official USA"},
+    {"title": "Fullmetal Alchemist Brotherhood - Story 07", "url": "https://fullmetalalchemistusa.com/story/07.html", "publisher": "Fullmetal Alchemist Official USA"}
+  ],
+  "claims": [
+    {"statement": "Edward y Alphonse intentaron realizar una transmutación humana para recuperar a su madre y sufrieron graves pérdidas físicas.", "scene_id": "s1",
+     "source_urls": ["https://fullmetalalchemistusa.com/introduction/", "https://fullmetalalchemistusa.com/character/"], "confidence": "alta"},
+    {"statement": "Edward perdió una pierna y un brazo, y vinculó el alma de Alphonse a una armadura.", "scene_id": "s2",
+     "source_urls": ["https://fullmetalalchemistusa.com/character/"], "confidence": "alta"},
+    {"statement": "Los hermanos descubrieron que la Piedra Filosofal requería almas humanas y que existía una conspiración nacional.", "scene_id": "s3",
+     "source_urls": ["https://fullmetalalchemistusa.com/story/07.html", "https://fullmetalalchemistusa.com/introduction/"], "confidence": "alta"},
+    {"statement": "Edward renunció a su capacidad de realizar alquimia para recuperar el cuerpo y el alma de Alphonse.", "scene_id": "s4",
+     "source_urls": ["https://fullmetalalchemistusa.com/introduction/"], "confidence": "alta"}
+  ]
+}

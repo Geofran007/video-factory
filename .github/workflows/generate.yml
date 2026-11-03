@@ -8,6 +8,15 @@ on:
         description: "Temática (vacío = usar el ejemplo examples/pulpos.json, sin IA)"
         required: false
         default: ""
+      content:
+        description: "Archivo de contenido del repo, p. ej. contenidos/mi-video.json (tiene prioridad sobre la temática)"
+        required: false
+        default: ""
+      style:
+        description: "Estilo visual (auto = el de la categoría)"
+        type: choice
+        options: [auto, ciencia, historia, misterio, finanzas, curiosidades, oceano]
+        default: auto
       category:
         description: "Categoría"
         type: choice
@@ -92,11 +101,17 @@ jobs:
           CATEGORY: ${{ inputs.category }}
           DURATION: ${{ inputs.duration }}
           VOICE: ${{ inputs.voice }}
+          CONTENT: ${{ inputs.content }}
+          STYLE: ${{ inputs.style }}
         run: |
-          if [ -n "$TOPIC" ]; then
-            video-factory generate --topic "$TOPIC" --category "$CATEGORY" --duration "$DURATION" --voice "$VOICE"
+          style_args=()
+          if [ -n "$STYLE" ] && [ "$STYLE" != "auto" ]; then style_args=(--style "$STYLE"); fi
+          if [ -n "$CONTENT" ]; then
+            video-factory generate --content "$CONTENT" --voice "$VOICE" "${style_args[@]}"
+          elif [ -n "$TOPIC" ]; then
+            video-factory generate --topic "$TOPIC" --category "$CATEGORY" --duration "$DURATION" --voice "$VOICE" "${style_args[@]}"
           else
-            video-factory generate --content examples/pulpos.json --voice "$VOICE"
+            video-factory generate --content examples/pulpos.json --voice "$VOICE" "${style_args[@]}"
           fi
 
       - name: Subir resultado
