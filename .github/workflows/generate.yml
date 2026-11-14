@@ -15,7 +15,7 @@ on:
       style:
         description: "Estilo visual (auto = el de la categoría)"
         type: choice
-        options: [auto, ciencia, historia, misterio, finanzas, curiosidades, oceano]
+        options: [auto, ciencia, historia, misterio, finanzas, curiosidades, oceano, anime]
         default: auto
       category:
         description: "Categoría"

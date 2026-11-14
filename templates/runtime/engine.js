@@ -468,7 +468,7 @@
     document.body.dataset.style = TL.style;
     style = VF.styles[TL.style] || VF.styles.curiosidades;
     bgCtx = $('bg').getContext('2d');
-    if (style.init) style.init(bgCtx, mulberry32(1234));
+    if (style.init) style.init(bgCtx, mulberry32(1234), TL);
     const host = $('scenes');
     scenes = TL.scenes.map((ts) => {
       const node = el('div', `scene scene-${ts.scene.type}`);

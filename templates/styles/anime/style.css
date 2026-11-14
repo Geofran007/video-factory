@@ -1,0 +1,28 @@
+/* Anime / manga: tinta negra, rojo y amarillo de impacto, texto con contorno grueso y sombra dura. */
+body[data-style="anime"] {
+  --bg1: #0b0814; --bg2: #2a0a17;
+  --accent: #ff2d55; --accent2: #ffd60a; --accent-ink: #0b0814;
+  --card: rgba(255,255,255,.07); --card-border: rgba(255,255,255,.85);
+  --sub-hl: #ffd60a; --hl-bg: rgba(255,45,85,.35);
+  --font: "Impact", "Arial Black", "Segoe UI Black", "DejaVu Sans", sans-serif;
+}
+body[data-style="anime"] .txt { font-style: italic; font-weight: 900; letter-spacing: 0.01em;
+  paint-order: stroke fill; -webkit-text-stroke: 10px #000;
+  text-shadow: 8px 8px 0 #ff2d55, 0 0 30px rgba(0,0,0,.6); }
+body[data-style="anime"] .txt-title { text-shadow: 10px 10px 0 #ff2d55, 18px 18px 0 #000; }
+body[data-style="anime"] .hl { color: var(--accent2); }
+body[data-style="anime"] .big-number { font-style: italic; color: #ffd60a; paint-order: stroke fill;
+  -webkit-text-stroke: 12px #000; text-shadow: 10px 10px 0 #ff2d55; }
+body[data-style="anime"] .category-tag { transform-origin: 50% 50%; rotate: -4deg; border-radius: 0;
+  border: 5px solid #000; box-shadow: 8px 8px 0 #000; color: #000; background: #ffd60a; font-style: italic; }
+body[data-style="anime"] .list-row,
+body[data-style="anime"] .cmp-card { border-radius: 0; border-width: 5px; box-shadow: 10px 10px 0 #000; }
+body[data-style="anime"] .list-row.active { box-shadow: 10px 10px 0 #ff2d55; }
+body[data-style="anime"] .list-badge { border-radius: 0; rotate: -6deg; border: 4px solid #000; background: #ffd60a; }
+body[data-style="anime"] .cmp-vs { border-radius: 0; rotate: 8deg; border: 6px solid #000; font-style: italic;
+  background: #ff2d55; box-shadow: 10px 10px 0 #000; }
+body[data-style="anime"] .icon-md,
+body[data-style="anime"] .icon-xl { color: #ffd60a; filter: drop-shadow(6px 6px 0 #ff2d55) drop-shadow(0 0 2px #000); }
+body[data-style="anime"] .cue { font-style: italic; }
+body[data-style="anime"] #vignette { background: radial-gradient(ellipse at 50% 42%, transparent 50%, rgba(0,0,0,.7) 100%); }
+body[data-style="anime"] #progress-fill { background: repeating-linear-gradient(-45deg, #ff2d55 0 18px, #ffd60a 18px 36px); }

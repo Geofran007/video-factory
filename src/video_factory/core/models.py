@@ -13,7 +13,7 @@ from pydantic import BaseModel, Field, field_validator, model_validator
 
 Category = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades"]
 # Estilos visuales: uno por categoría más estilos temáticos que se pueden elegir aparte.
-Style = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades", "oceano"]
+Style = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades", "oceano", "anime"]
 SceneRole = Literal["hook", "development", "surprise", "closing"]
 SceneType = Literal["title", "statement", "big_number", "list", "comparison", "chart", "icon_fact", "cta",
                     "illustration", "timeline"]

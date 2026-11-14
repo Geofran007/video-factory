@@ -28,6 +28,7 @@ class MusicStyle:
 
 STYLES: dict[str, MusicStyle] = {
     "oceano": MusicStyle(("Em", "C", "G", "D"), 64, 0.22, 0.0, 1300, rumble=0.10),
+    "anime": MusicStyle(("Am", "F", "G", "Em"), 128, 0.40, 0.08, 4600),
     "ciencia": MusicStyle(("Am", "F", "C", "G"), 100, 0.35, 0.0, 3200),
     "historia": MusicStyle(("Dm", "Bb", "F", "C"), 76, 0.25, 0.0, 2200),
     "misterio": MusicStyle(("Cm", "Ab", "Fm", "G"), 66, 0.30, 0.0, 1500),
