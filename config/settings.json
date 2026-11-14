@@ -5,7 +5,7 @@
     "height": 1920,
     "fps": 30,
     "min_duration_s": 15,
-    "max_duration_s": 60,
+    "max_duration_s": 180,
     "default_duration_s": 40,
     "crf": 20,
     "preset": "medium",

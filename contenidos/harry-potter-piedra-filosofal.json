@@ -1,0 +1,169 @@
+{
+  "topic": "Resumen de la película Harry Potter y la piedra filosofal",
+  "category": "curiosidades",
+  "title": "HARRY POTTER y la piedra filosofal en menos de 3 minutos",
+  "hook": "Un niño que dormía bajo una escalera era, sin saberlo, el mago más famoso del mundo.",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "illustration",
+      "narration": "Un niño que dormía bajo una escalera era, sin saberlo, el mago más famoso del mundo.",
+      "on_screen_text": "El niño bajo la escalera",
+      "highlight_words": ["escalera"],
+      "illustration": "lightning", "icon": "bolt", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "statement",
+      "narration": "Harry Potter vivía con sus tíos, que lo trataban como un estorbo y le ocultaban la verdad sobre sus padres.",
+      "on_screen_text": "Huérfano y tratado como un estorbo",
+      "highlight_words": ["estorbo"],
+      "icon": "key", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s3", "role": "development", "type": "illustration",
+      "narration": "Un día empezaron a llegar cartas. Cientos de cartas. Sus tíos huyeron de casa para esconderlo, pero no pudieron detenerlas.",
+      "on_screen_text": "Cientos de cartas para Harry",
+      "highlight_words": ["Cientos"],
+      "illustration": "letter", "icon": "book", "sfx": "whoosh", "transition": "zoom"
+    },
+    {
+      "id": "s4", "role": "surprise", "type": "big_number",
+      "narration": "En su cumpleaños número once, un gigante llamado Hagrid derribó la puerta y le dio la noticia: Harry, eres un mago.",
+      "on_screen_text": "Harry, eres un mago",
+      "highlight_words": ["mago"],
+      "big_number": "11",
+      "number_caption": "años: la edad en que descubre la verdad",
+      "icon": "star", "sfx": "impact", "transition": "zoom"
+    },
+    {
+      "id": "s5", "role": "development", "type": "illustration",
+      "narration": "Sus padres no murieron en un accidente. Los mató Voldemort, un mago tenebroso. Pero su hechizo contra Harry rebotó y solo le dejó una cicatriz.",
+      "on_screen_text": "El hechizo que rebotó",
+      "highlight_words": ["rebotó"],
+      "illustration": "hooded", "icon": "skull", "sfx": "riser", "transition": "wipe"
+    },
+    {
+      "id": "s6", "role": "development", "type": "illustration",
+      "narration": "En el callejón Diagon eligió su primera varita, hermana de la varita que le hizo esa cicatriz.",
+      "on_screen_text": "Su varita tiene una hermana",
+      "highlight_words": ["hermana"],
+      "illustration": "wand", "icon": "lightbulb", "sfx": "ding", "transition": "fade"
+    },
+    {
+      "id": "s7", "role": "development", "type": "illustration",
+      "narration": "Desde el andén nueve y tres cuartos tomó el tren hacia Hogwarts, el colegio de magia y hechicería.",
+      "on_screen_text": "Andén 9 ¾ rumbo a Hogwarts",
+      "highlight_words": ["Hogwarts"],
+      "illustration": "train", "icon": "map", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s8", "role": "development", "type": "illustration",
+      "narration": "Ahí conoció a Ron Weasley y a Hermione Granger, sus mejores amigos para siempre.",
+      "on_screen_text": "Harry, Ron y Hermione",
+      "highlight_words": ["Hermione"],
+      "illustration": "trio", "icon": "heart", "sfx": "pop", "transition": "zoom"
+    },
+    {
+      "id": "s9", "role": "development", "type": "illustration",
+      "narration": "Un sombrero que lee la mente eligió su casa. Harry pidió no ir a Slytherin, y terminó en Gryffindor.",
+      "on_screen_text": "No a Slytherin… ¡Gryffindor!",
+      "highlight_words": ["Gryffindor"],
+      "illustration": "wizard_hat", "icon": "crown", "sfx": "ding", "transition": "fade"
+    },
+    {
+      "id": "s10", "role": "development", "type": "illustration",
+      "narration": "Sin haber jugado nunca, se convirtió en el buscador más joven en un siglo del equipo de quidditch.",
+      "on_screen_text": "El buscador más joven en un siglo",
+      "highlight_words": ["joven"],
+      "illustration": "broom", "icon": "rocket", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s11", "role": "surprise", "type": "illustration",
+      "narration": "Pero en un pasillo prohibido encontraron un perro gigante de tres cabezas, parado sobre una trampilla.",
+      "on_screen_text": "Un perro de tres cabezas",
+      "highlight_words": ["tres"],
+      "illustration": "three_headed_dog", "icon": "eye", "sfx": "impact", "transition": "zoom"
+    },
+    {
+      "id": "s12", "role": "development", "type": "illustration",
+      "narration": "Debajo se escondía la piedra filosofal, capaz de crear el elixir de la vida y volver inmortal a quien lo beba.",
+      "on_screen_text": "La piedra de la inmortalidad",
+      "highlight_words": ["inmortalidad"],
+      "illustration": "magic_stone", "icon": "star", "sfx": "riser", "transition": "fade"
+    },
+    {
+      "id": "s13", "role": "development", "type": "illustration",
+      "narration": "Harry encontró un espejo que muestra el deseo más profundo de quien lo mira. Él vio a sus padres.",
+      "on_screen_text": "El espejo del deseo",
+      "highlight_words": ["deseo"],
+      "illustration": "mirror", "icon": "heart", "sfx": "ding", "transition": "wipe"
+    },
+    {
+      "id": "s14", "role": "surprise", "type": "icon_fact",
+      "narration": "En el bosque prohibido vio a una figura encapuchada bebiendo sangre de unicornio. Era Voldemort, débil pero vivo.",
+      "on_screen_text": "Voldemort sigue vivo",
+      "highlight_words": ["vivo"],
+      "icon": "skull", "sfx": "riser", "transition": "zoom"
+    },
+    {
+      "id": "s15", "role": "development", "type": "list",
+      "narration": "Para llegar a la piedra superaron tres pruebas: una planta que atrapa, llaves voladoras y un ajedrez gigante.",
+      "on_screen_text": "Tres pruebas mortales",
+      "highlight_words": ["pruebas"],
+      "items": ["Una planta que atrapa", "Llaves voladoras", "Ajedrez gigante"],
+      "icon": "key", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s16", "role": "development", "type": "illustration",
+      "narration": "En el ajedrez, Ron se sacrificó a propósito para que Harry pudiera seguir.",
+      "on_screen_text": "El sacrificio de Ron",
+      "highlight_words": ["sacrificio"],
+      "illustration": "chess_knight", "icon": "crown", "sfx": "impact", "transition": "zoom"
+    },
+    {
+      "id": "s17", "role": "surprise", "type": "icon_fact",
+      "narration": "Y el ladrón no era Snape, como creían. Era el profesor Quirrell, que escondía a Voldemort en la parte de atrás de su cabeza.",
+      "on_screen_text": "El villano era Quirrell",
+      "highlight_words": ["Quirrell"],
+      "icon": "eye", "sfx": "impact", "transition": "wipe"
+    },
+    {
+      "id": "s18", "role": "surprise", "type": "icon_fact",
+      "narration": "Cuando Quirrell tocó a Harry, su piel se volvió polvo. El amor de su madre, que dio la vida por él, lo protegía.",
+      "on_screen_text": "Lo protegía el amor de su madre",
+      "highlight_words": ["amor"],
+      "icon": "heart", "sfx": "riser", "transition": "fade"
+    },
+    {
+      "id": "s19", "role": "development", "type": "illustration",
+      "narration": "La piedra fue destruida, y Gryffindor ganó la copa de las casas.",
+      "on_screen_text": "Gryffindor gana la copa",
+      "highlight_words": ["copa"],
+      "illustration": "castle", "icon": "crown", "sfx": "ding", "transition": "zoom"
+    },
+    {
+      "id": "s20", "role": "closing", "type": "cta",
+      "narration": "Así empezó una saga de ocho películas. ¿Cuál es tu favorita de Harry Potter? Te leo en los comentarios.",
+      "on_screen_text": "¿Cuál es tu película favorita?",
+      "highlight_words": ["favorita"],
+      "icon": "question", "sfx": "pop", "transition": "slide"
+    }
+  ],
+  "description": "Resumen de Harry Potter y la piedra filosofal (2001): el niño que vivía bajo la escalera descubre que es mago, llega a Hogwarts y enfrenta a Voldemort por la piedra filosofal. ¿Cuál es tu película favorita de la saga?",
+  "hashtags": ["harrypotter", "piedrafilosofal", "hogwarts", "peliculas", "resumen", "cine"],
+  "sources": [
+    {"title": "Harry Potter and the Philosopher's Stone (film)", "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)", "publisher": "Wikipedia"},
+    {"title": "Harry Potter (film series)", "url": "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)", "publisher": "Wikipedia"}
+  ],
+  "claims": [
+    {"statement": "En la película, Harry vive con sus tíos y descubre a los once años, gracias a Hagrid, que es un mago.", "scene_id": "s4",
+     "source_urls": ["https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"], "confidence": "alta"},
+    {"statement": "Voldemort mató a los padres de Harry y su intento de matar a Harry le dejó una cicatriz.", "scene_id": "s5",
+     "source_urls": ["https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"], "confidence": "alta"},
+    {"statement": "La piedra filosofal está custodiada por un perro de tres cabezas y protegida por varias pruebas, entre ellas un ajedrez gigante.", "scene_id": "s11",
+     "source_urls": ["https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"], "confidence": "alta"},
+    {"statement": "El profesor Quirrell, que lleva a Voldemort en la parte trasera de su cabeza, es quien intenta robar la piedra.", "scene_id": "s17",
+     "source_urls": ["https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"], "confidence": "alta"},
+    {"statement": "La saga cinematográfica de Harry Potter tiene ocho películas.", "scene_id": "s20",
+     "source_urls": ["https://en.wikipedia.org/wiki/Harry_Potter_(film_series)"], "confidence": "alta"}
+  ]
+}

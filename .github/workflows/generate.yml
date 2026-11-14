@@ -23,7 +23,7 @@ on:
         options: [curiosidades, ciencia, historia, misterio, finanzas]
         default: curiosidades
       duration:
-        description: "Duración objetivo (15-60 s)"
+        description: "Duración objetivo (15-180 s)"
         default: "40"
       voice:
         description: "Voz (chatterbox_latam y mi_voz tardan 30-90 min sin GPU)"

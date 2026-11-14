@@ -266,6 +266,7 @@
 
     // Ilustración animada a pantalla completa. En el gancho, el tiburón se lanza hacia la cámara.
     illustration(root, s) {
+      const FLIERS = new Set(['owl', 'broom', 'letter', 'train']);
       const art = VF.illustration(s.illustration);
       const stage = el('div', 'illu-stage illu-' + s.illustration);
       if (s.illustration === 'tree') {
@@ -308,6 +309,12 @@
           art.crown.style.transformOrigin = '181px 172px';
           art.crown.style.transform = `translateY(${((1 - g) * 288).toFixed(1)}px) scale(${Math.max(0.001, c).toFixed(3)})`;
           sc = 1 + 0.03 * Math.sin(lt * 0.8);
+        } else if (FLIERS.has(s.illustration)) {
+          // Lechuza, escoba, carta y tren entran volando desde la izquierda.
+          const p = ease.outCubic(prog(lt, 0, 1.0));
+          tx = lerp(-1000, 0, p) + Math.sin(lt * 1.1) * 26;
+          ty = Math.sin(lt * 2.4) * 18;
+          rotDeg = Math.sin(lt * 2.4 + 0.5) * 3;
         } else {
           const p = ease.outBack(prog(lt, 0, 0.7));
           sc = p;

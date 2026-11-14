@@ -19,7 +19,9 @@ SceneType = Literal["title", "statement", "big_number", "list", "comparison", "c
                     "illustration", "timeline"]
 Transition = Literal["fade", "slide", "zoom", "wipe"]
 SfxName = Literal["none", "whoosh", "impact", "riser", "pop", "ding", "bubbles"]
-Illustration = Literal["shark", "ancient_shark", "tree", "dinosaur", "human"]
+Illustration = Literal["shark", "ancient_shark", "tree", "dinosaur", "human", "wizard", "trio", "hooded", "castle", "owl",
+                       "letter", "wand", "lightning", "wizard_hat", "magic_stone", "broom", "three_headed_dog",
+                       "train", "chess_knight", "mirror"]
 Icon = Literal[
     "brain", "heart", "atom", "globe", "clock", "star", "bolt", "eye", "question",
     "chart", "coin", "rocket", "planet", "book", "map", "drop", "fire", "wave",
@@ -120,8 +122,8 @@ class VideoContent(BaseModel):
 
     @model_validator(mode="after")
     def _structure(self) -> "VideoContent":
-        if not (3 <= len(self.scenes) <= 10):
-            raise ValueError("el video debe tener entre 3 y 10 escenas")
+        if not (3 <= len(self.scenes) <= 24):
+            raise ValueError("el video debe tener entre 3 y 24 escenas")
         ids = [s.id for s in self.scenes]
         if len(set(ids)) != len(ids):
             raise ValueError("los ids de escena deben ser únicos")

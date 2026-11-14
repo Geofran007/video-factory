@@ -28,7 +28,7 @@ def _mutate(data, fn):
         (lambda d: d["scenes"][1].update(narration="  "), "vacía"),
         (lambda d: d["scenes"][4].update(items=["solo uno"]), "comparison"),
         (lambda d: d["scenes"][3].update(big_number=None), "big_number"),
-        (lambda d: d.update(scenes=[d["scenes"][0], d["scenes"][-1]], claims=[]), "entre 3 y 10"),
+        (lambda d: d.update(scenes=[d["scenes"][0], d["scenes"][-1]], claims=[]), "entre 3 y 24"),
         (lambda d: d["scenes"][1].update(id="s1"), "únicos"),
         (lambda d: d["claims"][0].update(scene_id="s99"), "inexistente"),
         (lambda d: d["scenes"][1].update(icon="<script>"), "icon"),

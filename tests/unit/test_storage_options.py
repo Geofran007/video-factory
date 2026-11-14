@@ -21,7 +21,7 @@ def test_history_roundtrip(tmp_path):
 
 @pytest.mark.parametrize("kwargs, msg", [
     ({"category": "deportes"}, "Categoría"),
-    ({"duration_s": 90}, "duración"),
+    ({"duration_s": 240}, "duración"),
     ({"topic": "x"}, "temática"),
     ({"speed": 2.0}, "Velocidad"),
 ])

@@ -159,7 +159,281 @@
     return { svg, animate() {} };
   }
 
-  const FACTORY = { shark: () => shark('shark'), ancient_shark: () => shark('ancient_shark'), tree, dinosaur, human };
+  // ------------------------------------------------------- magia: siluetas y símbolos
+  // Figuras genéricas y objetos de fantasía dibujados por el proyecto; no reproducen personajes ni
+  // diseños de ninguna película o libro.
+  function glow(id, color) {
+    return n('filter', { id, x: '-60%', y: '-60%', width: '220%', height: '220%' }, [
+      n('feGaussianBlur', { stdDeviation: 8, result: 'b' }),
+      n('feFlood', { 'flood-color': color }),
+      n('feComposite', { in2: 'b', operator: 'in', result: 'c' }),
+      n('feMerge', {}, [n('feMergeNode', { in: 'c' }), n('feMergeNode', { in: 'SourceGraphic' })]),
+    ]);
+  }
+
+  function sparkle(x, y, s, fill = '#fff6c8') {
+    return n('path', { d: `M${x},${y - s} L${x + s * 0.22},${y - s * 0.22} L${x + s},${y} L${x + s * 0.22},${y + s * 0.22} L${x},${y + s} L${x - s * 0.22},${y + s * 0.22} L${x - s},${y} L${x - s * 0.22},${y - s * 0.22} Z`, fill });
+  }
+
+  function figure(x, h, robe, hat = true) {
+    // Silueta de mago o maga joven: túnica, bufanda y, opcionalmente, sombrero puntiagudo.
+    const s = h / 300, g = n('g', { transform: `translate(${x} ${300 - h}) scale(${s.toFixed(3)})` });
+    g.append(
+      n('path', { d: 'M60,90 C30,96 18,150 14,300 L106,300 C102,150 90,96 60,90 Z', fill: robe }),
+      n('path', { d: 'M40,98 C52,108 68,108 80,98 L84,112 C68,124 52,124 36,112 Z', fill: '#b9343a' }),
+      n('path', { d: 'M76,110 L84,170 L72,172 L68,116 Z', fill: '#d9a43a' }),
+      n('circle', { cx: 60, cy: 62, r: 30, fill: '#1a1424' }),
+    );
+    if (hat) g.append(n('path', { d: 'M24,52 C40,44 80,44 96,52 L64,-34 C62,-38 58,-38 56,-34 Z', fill: '#1a1424' }));
+    return g;
+  }
+
+  function wizard() {
+    const id = `ill${++uid}`;
+    const arm = n('g', {}, [
+      n('path', { d: 'M150,190 C178,176 206,158 232,138', stroke: '#2a2140', 'stroke-width': 22, 'stroke-linecap': 'round', fill: 'none' }),
+      n('path', { d: 'M228,142 L300,70', stroke: '#7a5232', 'stroke-width': 7, 'stroke-linecap': 'round' }),
+    ]);
+    const tip = n('g', { filter: `url(#${id}g)` }, [n('circle', { cx: 302, cy: 68, r: 9, fill: '#fff4b0' }), sparkle(302, 68, 26)]);
+    const svg = n('svg', { viewBox: '0 0 360 420', class: 'illu illu-magic' }, [
+      n('defs', {}, [gradient(`${id}r`, [[0, '#3b2f5c'], [1, '#17112a']]), glow(`${id}g`, '#ffd65a')]),
+      n('path', { d: 'M130,130 C80,140 60,260 50,420 L240,420 C228,260 206,140 160,130 Z', fill: `url(#${id}r)` }),
+      n('path', { d: 'M108,126 C128,140 162,140 182,126 L186,146 C160,160 128,160 104,146 Z', fill: '#b9343a' }),
+      n('circle', { cx: 145, cy: 92, r: 40, fill: '#1a1424' }),
+      n('path', { d: 'M90,80 C114,66 176,66 200,80 L150,-40 C148,-46 142,-46 140,-40 Z', fill: '#2a2140' }),
+      arm, tip,
+    ]);
+    return { svg, animate(t) {
+      rot(arm, Math.sin(t * 2.2) * 6, 150, 190);
+      tip.setAttribute('opacity', (0.65 + 0.35 * Math.abs(Math.sin(t * 5))).toFixed(3));
+    } };
+  }
+
+  function trio() {
+    const id = `ill${++uid}`;
+    const svg = n('svg', { viewBox: '0 0 420 320', class: 'illu illu-magic' }, [
+      n('defs', {}, [gradient(`${id}r`, [[0, '#3b2f5c'], [1, '#17112a']])]),
+    ]);
+    const people = [figure(40, 250, `url(#${id}r)`, false), figure(150, 290, `url(#${id}r)`, false), figure(270, 262, `url(#${id}r)`, false)];
+    people.forEach((p) => svg.appendChild(p));
+    const base = people.map((p) => p.getAttribute('transform'));
+    return { svg, animate(t) {
+      people.forEach((p, i) => p.setAttribute('transform', `translate(0 ${(Math.sin(t * 2 + i * 1.3) * 4).toFixed(1)}) ${base[i]}`));
+    } };
+  }
+
+  function hooded() {
+    const id = `ill${++uid}`;
+    const eyes = n('g', { filter: `url(#${id}g)` }, [
+      n('ellipse', { cx: 158, cy: 118, rx: 9, ry: 4, fill: '#ff3b3b' }), n('ellipse', { cx: 202, cy: 118, rx: 9, ry: 4, fill: '#ff3b3b' })]);
+    const svg = n('svg', { viewBox: '0 0 360 420', class: 'illu illu-magic' }, [
+      n('defs', {}, [gradient(`${id}r`, [[0, '#2a2236'], [1, '#07050c']]), glow(`${id}g`, '#ff2020')]),
+      n('path', { d: 'M180,20 C110,20 90,90 96,150 C70,220 40,330 30,420 L330,420 C320,330 290,220 264,150 C270,90 250,20 180,20 Z', fill: `url(#${id}r)` }),
+      n('path', { d: 'M180,60 C140,60 128,100 132,140 C150,160 210,160 228,140 C232,100 220,60 180,60 Z', fill: '#000' }),
+      eyes,
+    ]);
+    return { svg, animate(t) { eyes.setAttribute('opacity', (0.4 + 0.6 * Math.abs(Math.sin(t * 1.7))).toFixed(3)); } };
+  }
+
+  function castle() {
+    const id = `ill${++uid}`;
+    const windows = [];
+    const svg = n('svg', { viewBox: '0 0 440 360', class: 'illu illu-magic' }, [
+      n('defs', {}, [gradient(`${id}s`, [[0, '#2c2a46'], [1, '#14121f']]), glow(`${id}g`, '#ffcf6a')]),
+      n('circle', { cx: 360, cy: 60, r: 34, fill: '#f6f0d2', opacity: 0.9 }),
+      n('path', { d: 'M0,360 L0,300 C60,280 90,250 130,250 L330,250 C370,250 400,280 440,300 L440,360 Z', fill: '#0d0b16' }),
+    ]);
+    const towers = [[70, 150, 46, 110], [140, 110, 40, 150], [205, 60, 50, 200], [285, 120, 40, 140], [345, 160, 44, 100]];
+    const body = n('g', { fill: `url(#${id}s)` });
+    body.appendChild(n('rect', { x: 90, y: 190, width: 280, height: 70 }));
+    for (const [x, y, w, h] of towers) {
+      body.append(n('rect', { x, y, width: w, height: h + 10 }), n('path', { d: `M${x - 8},${y} L${x + w / 2},${y - w * 1.3} L${x + w + 8},${y} Z` }));
+    }
+    svg.appendChild(body);
+    const lights = n('g', { filter: `url(#${id}g)` });
+    towers.forEach(([x, y, w], i) => [0, 1].forEach((k) => {
+      const win = n('rect', { x: x + w / 2 - 6, y: y + 24 + k * 44, width: 12, height: 20, rx: 6, fill: '#ffd36a' });
+      windows.push([win, i * 2 + k]);
+      lights.appendChild(win);
+    }));
+    svg.appendChild(lights);
+    return { svg, animate(t) {
+      windows.forEach(([w, k]) => w.setAttribute('opacity', (0.55 + 0.45 * Math.abs(Math.sin(t * 1.3 + k * 1.7))).toFixed(3)));
+    } };
+  }
+
+  function owl() {
+    const wingL = n('g', {}, [n('path', { d: 'M150,150 C100,120 40,130 10,170 C60,170 100,190 140,200 Z', fill: '#e9e4d6' })]);
+    const wingR = n('g', {}, [n('path', { d: 'M250,150 C300,120 360,130 390,170 C340,170 300,190 260,200 Z', fill: '#e9e4d6' })]);
+    const svg = n('svg', { viewBox: '0 0 400 330', class: 'illu illu-magic' }, [
+      wingL, wingR,
+      n('ellipse', { cx: 200, cy: 190, rx: 72, ry: 92, fill: '#f6f2e6' }),
+      n('path', { d: 'M160,200 C175,215 225,215 240,200 M165,230 C180,244 220,244 235,230', stroke: '#c9c1ad', 'stroke-width': 4, fill: 'none' }),
+      n('circle', { cx: 172, cy: 150, r: 22, fill: '#fff' }), n('circle', { cx: 228, cy: 150, r: 22, fill: '#fff' }),
+      n('circle', { cx: 172, cy: 150, r: 13, fill: '#e3a512' }), n('circle', { cx: 228, cy: 150, r: 13, fill: '#e3a512' }),
+      n('circle', { cx: 172, cy: 150, r: 7, fill: '#111' }), n('circle', { cx: 228, cy: 150, r: 7, fill: '#111' }),
+      n('path', { d: 'M192,166 L200,184 L208,166 Z', fill: '#3a3a3a' }),
+      n('rect', { x: 170, y: 272, width: 60, height: 40, fill: '#efe2c0', transform: 'rotate(-8 200 292)' }),
+      n('circle', { cx: 200, cy: 292, r: 8, fill: '#b02a2a' }),
+    ]);
+    return { svg, animate(t) {
+      const a = Math.sin(t * 9) * 22;
+      rot(wingL, a, 150, 170); rot(wingR, -a, 250, 170);
+    } };
+  }
+
+  function letter() {
+    const svg = n('svg', { viewBox: '0 0 360 260', class: 'illu illu-magic' }, [
+      n('rect', { x: 20, y: 30, width: 320, height: 200, rx: 8, fill: '#efe2c0' }),
+      n('path', { d: 'M20,38 L180,150 L340,38', stroke: '#c9b48a', 'stroke-width': 5, fill: 'none' }),
+      n('path', { d: 'M40,90 L130,90 M40,110 L110,110', stroke: '#6a5a40', 'stroke-width': 4, opacity: 0.6 }),
+      n('circle', { cx: 180, cy: 150, r: 30, fill: '#a3242a' }),
+      n('path', { d: 'M168,150 L180,136 L192,150 L180,164 Z', fill: '#d4555a' }),
+    ]);
+    return { svg, animate() {} };
+  }
+
+  function wand() {
+    const id = `ill${++uid}`;
+    const sparks = n('g', { filter: `url(#${id}g)` });
+    const dots = Array.from({ length: 9 }, (_, i) => { const s = sparkle(0, 0, 10 + (i % 3) * 6); sparks.appendChild(s); return s; });
+    const svg = n('svg', { viewBox: '0 0 400 400', class: 'illu illu-magic' }, [
+      n('defs', {}, [gradient(`${id}w`, [[0, '#9a6a3e'], [1, '#4a2e1a']], false), glow(`${id}g`, '#ffd65a')]),
+      n('path', { d: 'M60,350 L300,110 L310,120 L72,360 Z', fill: `url(#${id}w)` }),
+      n('path', { d: 'M60,350 L100,310 L112,322 L72,360 Z', fill: '#3a2414' }),
+      sparks,
+    ]);
+    return { svg, animate(t) {
+      dots.forEach((d, i) => {
+        const a = t * 2.4 + i * 0.7, r = 20 + ((t * 40 + i * 23) % 90);
+        d.setAttribute('transform', `translate(${(305 + Math.cos(a) * r).toFixed(1)} ${(115 + Math.sin(a) * r).toFixed(1)})`);
+        d.setAttribute('opacity', (1 - r / 110).toFixed(3));
+      });
+    } };
+  }
+
+  function lightning() {
+    const id = `ill${++uid}`;
+    const bolt = n('path', { d: 'M230,10 L110,200 L190,200 L140,390 L300,160 L215,160 L270,10 Z', fill: '#ffe066', filter: `url(#${id}g)` });
+    const svg = n('svg', { viewBox: '0 0 400 400', class: 'illu illu-magic' }, [n('defs', {}, [glow(`${id}g`, '#fff3a0')]), bolt]);
+    return { svg, animate(t) { bolt.setAttribute('opacity', (Math.sin(t * 23) > 0.85 ? 0.55 : 1).toFixed(2)); } };
+  }
+
+  function wizardHat() {
+    const brim = n('g', {}, [
+      n('path', { d: 'M40,300 C90,270 310,270 360,300 C320,330 80,330 40,300 Z', fill: '#4a3a2a' }),
+      n('path', { d: 'M110,290 C120,200 150,120 210,40 C222,30 236,40 230,56 C220,90 214,110 236,150 C262,196 276,250 290,290 Z', fill: '#5c4630' }),
+      n('path', { d: 'M150,250 C175,240 225,240 250,250', stroke: '#2e2418', 'stroke-width': 6, fill: 'none', 'stroke-linecap': 'round' }),
+      n('path', { d: 'M165,200 C180,210 200,210 215,200', stroke: '#2e2418', 'stroke-width': 5, fill: 'none', 'stroke-linecap': 'round' }),
+      n('path', { d: 'M180,140 L198,150 L210,132', stroke: '#3a2c1e', 'stroke-width': 4, fill: 'none' }),
+    ]);
+    const svg = n('svg', { viewBox: '0 0 400 340', class: 'illu illu-magic' }, [brim]);
+    return { svg, animate(t) { rot(brim, Math.sin(t * 3) * 4, 200, 300); } };
+  }
+
+  function magicStone() {
+    const id = `ill${++uid}`;
+    const halo = n('circle', { cx: 200, cy: 200, r: 150, fill: `url(#${id}h)` });
+    const svg = n('svg', { viewBox: '0 0 400 400', class: 'illu illu-magic' }, [
+      n('defs', {}, [
+        n('radialGradient', { id: `${id}h` }, [n('stop', { offset: 0, 'stop-color': '#ff3b4a', 'stop-opacity': 0.55 }), n('stop', { offset: 1, 'stop-color': '#ff3b4a', 'stop-opacity': 0 })]),
+        gradient(`${id}s`, [[0, '#ff7a85'], [0.5, '#d4142a'], [1, '#6a0612']]),
+      ]),
+      halo,
+      n('path', { d: 'M200,90 L280,150 L262,270 L200,310 L138,270 L120,150 Z', fill: `url(#${id}s)` }),
+      n('path', { d: 'M200,90 L230,180 L200,310 M120,150 L230,180 L280,150 M138,270 L230,180 L262,270', stroke: '#ff9aa3', 'stroke-width': 3, fill: 'none', opacity: 0.6 }),
+      n('path', { d: 'M168,120 L200,100 L210,140 Z', fill: '#fff', opacity: 0.55 }),
+    ]);
+    return { svg, animate(t) { halo.setAttribute('r', (140 + Math.sin(t * 2.5) * 22).toFixed(1)); } };
+  }
+
+  function broom() {
+    const bristles = n('g', {}, [n('path', { d: 'M60,230 C20,250 0,290 10,320 C50,300 90,290 120,262 Z', fill: '#c99a4a' }),
+      n('path', { d: 'M40,262 L18,300 M60,262 L40,306 M80,256 L66,300', stroke: '#8a6428', 'stroke-width': 4 })]);
+    const svg = n('svg', { viewBox: '0 0 420 340', class: 'illu illu-magic' }, [
+      n('path', { d: 'M20,300 C10,300 0,310 30,312 M0,280 C-20,290 -10,300 20,296', stroke: '#ffffff', 'stroke-width': 5, opacity: 0.35, fill: 'none' }),
+      bristles,
+      n('path', { d: 'M100,252 L400,60 L408,72 L110,264 Z', fill: '#7a5232' }),
+      n('path', { d: 'M100,240 L124,262', stroke: '#5a3a1a', 'stroke-width': 10 }),
+    ]);
+    return { svg, animate(t) { rot(bristles, Math.sin(t * 8) * 4, 110, 258); } };
+  }
+
+  function threeHeadedDog() {
+    const heads = [];
+    const svg = n('svg', { viewBox: '0 0 440 340', class: 'illu illu-magic' }, [
+      n('path', { d: 'M350,230 C390,220 410,190 420,160', stroke: '#2a2026', 'stroke-width': 14, 'stroke-linecap': 'round', fill: 'none' }),
+      n('ellipse', { cx: 220, cy: 228, rx: 150, ry: 62, fill: '#2a2026' }),
+      ...[[96, 0], [150, 6], [282, 6], [336, 0]].map(([x, d]) => n('path', {
+        d: `M${x - 16},${250 + d} L${x - 20},318 L${x + 12},318 L${x + 16},${250 + d} Z`, fill: '#231a20' })),
+    ]);
+    [[110, 120, -14], [220, 90, 0], [330, 120, 14]].forEach(([x, y, a]) => {
+      const h = n('g', { transform: `rotate(${a} ${x} ${y + 60})` }, [
+        n('path', { d: `M${x - 40},${y + 60} C${x - 46},${y + 10} ${x - 20},${y - 20} ${x},${y - 20} C${x + 20},${y - 20} ${x + 46},${y + 10} ${x + 40},${y + 60} Z`, fill: '#3a2c34' }),
+        n('path', { d: `M${x - 40},${y - 4} L${x - 30},${y - 44} L${x - 14},${y - 14} Z M${x + 40},${y - 4} L${x + 30},${y - 44} L${x + 14},${y - 14} Z`, fill: '#2a2026' }),
+        n('path', { d: `M${x - 22},${y + 40} L${x},${y + 66} L${x + 22},${y + 40} Z`, fill: '#140c10' }),
+        n('path', { d: `M${x - 14},${y + 42} L${x - 10},${y + 52} L${x - 6},${y + 42} M${x + 6},${y + 42} L${x + 10},${y + 52} L${x + 14},${y + 42}`, fill: '#f2efe6' }),
+        n('circle', { cx: x - 14, cy: y + 10, r: 5, fill: '#ffcc33' }), n('circle', { cx: x + 14, cy: y + 10, r: 5, fill: '#ffcc33' }),
+      ]);
+      const wrap = n('g', {}, [h]);
+      heads.push(wrap);
+      svg.appendChild(wrap);
+    });
+    return { svg, animate(t) { heads.forEach((h, i) => h.setAttribute('transform', `translate(0 ${(Math.sin(t * 3 + i * 2) * 8).toFixed(1)})`)); } };
+  }
+
+  function train() {
+    const puffs = Array.from({ length: 5 }, () => n('circle', { r: 20, fill: '#e8e8ee' }));
+    const svg = n('svg', { viewBox: '0 0 460 300', class: 'illu illu-magic' }, [
+      ...puffs,
+      n('rect', { x: 60, y: 130, width: 260, height: 100, rx: 10, fill: '#b3202a' }),
+      n('rect', { x: 250, y: 80, width: 110, height: 150, rx: 8, fill: '#8f1820' }),
+      n('rect', { x: 268, y: 100, width: 74, height: 50, rx: 6, fill: '#ffd36a' }),
+      n('rect', { x: 100, y: 96, width: 34, height: 44, fill: '#222' }),
+      n('path', { d: 'M40,230 L60,170 L60,230 Z', fill: '#444' }),
+      n('rect', { x: 60, y: 186, width: 300, height: 10, fill: '#d9b24a' }),
+      ...[110, 190, 300].map((cx) => n('circle', { cx, cy: 238, r: 34, fill: '#1c1c22', stroke: '#d9b24a', 'stroke-width': 6 })),
+      n('rect', { x: 0, y: 270, width: 460, height: 8, fill: '#555' }),
+    ]);
+    return { svg, animate(t) {
+      puffs.forEach((p, i) => {
+        const k = ((t * 0.8 + i / puffs.length) % 1);
+        p.setAttribute('cx', (117 - k * 120).toFixed(1));
+        p.setAttribute('cy', (90 - k * 90).toFixed(1));
+        p.setAttribute('r', (14 + k * 30).toFixed(1));
+        p.setAttribute('opacity', (0.8 * (1 - k)).toFixed(3));
+      });
+    } };
+  }
+
+  function chessKnight() {
+    const id = `ill${++uid}`;
+    const svg = n('svg', { viewBox: '0 0 300 400', class: 'illu illu-magic' }, [
+      n('defs', {}, [gradient(`${id}k`, [[0, '#d9d4c8'], [1, '#8d877a']], false)]),
+      n('path', { d: 'M70,380 L230,380 L222,344 L78,344 Z M90,344 L210,344 C206,300 196,270 190,240 C230,220 244,170 220,120 C200,80 160,50 120,46 L112,26 L98,52 C70,70 62,110 70,150 L54,190 C50,210 70,220 84,206 L112,184 C120,200 110,240 90,344 Z', fill: `url(#${id}k)` }),
+      n('circle', { cx: 132, cy: 104, r: 7, fill: '#2a2620' }),
+    ]);
+    return { svg, animate() {} };
+  }
+
+  function mirror() {
+    const id = `ill${++uid}`;
+    const shine = n('rect', { x: -60, y: 60, width: 40, height: 380, fill: '#ffffff', opacity: 0.25, transform: 'rotate(18 150 250)' });
+    const svg = n('svg', { viewBox: '0 0 300 480', class: 'illu illu-magic' }, [
+      n('defs', {}, [gradient(`${id}m`, [[0, '#6d7fa6'], [1, '#2a3354']]),
+        n('clipPath', { id: `${id}c` }, [n('path', { d: 'M150,40 C230,40 250,120 250,180 L250,400 L50,400 L50,180 C50,120 70,40 150,40 Z' })])]),
+      n('path', { d: 'M150,10 C260,10 280,110 280,180 L280,430 L20,430 L20,180 C20,110 40,10 150,10 Z', fill: '#c79a3a' }),
+      n('path', { d: 'M150,40 C230,40 250,120 250,180 L250,400 L50,400 L50,180 C50,120 70,40 150,40 Z', fill: `url(#${id}m)` }),
+      n('g', { 'clip-path': `url(#${id}c)` }, [shine]),
+      n('rect', { x: 0, y: 430, width: 300, height: 20, rx: 6, fill: '#a77d2a' }),
+      n('path', { d: 'M40,450 L20,480 M260,450 L280,480', stroke: '#a77d2a', 'stroke-width': 12, 'stroke-linecap': 'round' }),
+    ]);
+    return { svg, animate(t) { shine.setAttribute('x', (-80 + ((t * 120) % 460)).toFixed(1)); } };
+  }
+
+  const FACTORY = { shark: () => shark('shark'), ancient_shark: () => shark('ancient_shark'), tree, dinosaur, human,
+    wizard, trio, hooded, castle, owl, letter, wand, lightning, wizard_hat: wizardHat, magic_stone: magicStone, broom,
+    three_headed_dog: threeHeadedDog, train, chess_knight: chessKnight, mirror };
   window.VF = window.VF || { styles: {} };
   window.VF.illustration = (name) => (FACTORY[name] || FACTORY.shark)();
   window.VF.illustrationNames = Object.keys(FACTORY);
