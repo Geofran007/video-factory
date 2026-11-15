@@ -16,7 +16,16 @@ Category = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades"
 Style = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades", "oceano", "anime"]
 SceneRole = Literal["hook", "development", "surprise", "closing"]
 SceneType = Literal["title", "statement", "big_number", "list", "comparison", "chart", "icon_fact", "cta",
-                    "illustration", "timeline"]
+                    "illustration", "timeline", "cartoon"]
+# Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
+Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
+                  "mirror_room"]
+Character = Literal["hero", "friend_boy", "friend_girl", "giant", "aunt", "uncle", "professor", "turban", "elder",
+                    "villain", "dog3", "owl"]
+Action = Literal["idle", "talk", "walk_in", "run", "sleepy", "shocked", "jump_joy", "wave", "point", "cast_spell",
+                 "hold_up", "read", "fly", "sneak", "cower", "fall", "float", "angry", "crumble"]
+FxType = Literal["pow", "bubble", "thought", "confetti", "sparkles", "hearts", "dust", "zzz", "flash", "spell"]
+Prop = Literal["wand", "book", "letter", "stone"]
 Transition = Literal["fade", "slide", "zoom", "wipe"]
 SfxName = Literal["none", "whoosh", "impact", "riser", "pop", "ding", "bubbles"]
 Illustration = Literal["shark", "ancient_shark", "tree", "dinosaur", "human", "wizard", "trio", "hooded", "castle", "owl",
@@ -40,6 +49,25 @@ class ChartPoint(BaseModel):
     illustration: Illustration | None = None
 
 
+class CastMember(BaseModel):
+    character: Character
+    action: Action = "idle"
+    x: float = Field(default=0.5, ge=0, le=1, description="Posición horizontal (0 = izquierda, 1 = derecha)")
+    facing: Literal[1, -1] = 1
+    at: float = Field(default=0, ge=0, le=20, description="Segundos desde el inicio de la escena en que empieza")
+    prop: Prop | None = None
+
+
+class Fx(BaseModel):
+    type: FxType
+    text: str = Field(default="", max_length=14)
+    at: float = Field(default=0, ge=0, le=20)
+    x: float = Field(default=0.5, ge=0, le=1)
+    y: float | None = Field(default=None, ge=0, le=1, description="0 = arriba de la zona segura, 1 = abajo")
+    x2: float | None = Field(default=None, ge=0, le=1, description="Destino del hechizo (spell)")
+    dur: float | None = Field(default=None, gt=0, le=10)
+
+
 class Scene(BaseModel):
     id: str = Field(description="Identificador corto y único, p. ej. s1, s2")
     role: SceneRole
@@ -54,6 +82,9 @@ class Scene(BaseModel):
     chart: list[ChartPoint] = Field(default_factory=list,
                                     description="2-5 puntos para chart; para timeline, millones de años atrás")
     illustration: Illustration | None = Field(default=None, description="Ilustración animada para illustration")
+    setting: Setting | None = Field(default=None, description="Escenario de la caricatura")
+    cast: list[CastMember] = Field(default_factory=list, description="1-5 personajes de la caricatura")
+    fx: list[Fx] = Field(default_factory=list, description="Efectos de cómic (máx. 6)")
     sfx: SfxName = "none"
     transition: Transition = "fade"
 
@@ -79,6 +110,8 @@ class Scene(BaseModel):
             raise ValueError(f"escena {self.id}: timeline usa millones de años atrás (valores ≥ 0)")
         if self.type == "illustration" and not self.illustration:
             raise ValueError(f"escena {self.id}: illustration requiere el campo illustration")
+        if self.type == "cartoon" and (not self.setting or not 1 <= len(self.cast) <= 5 or len(self.fx) > 6):
+            raise ValueError(f"escena {self.id}: cartoon requiere setting, entre 1 y 5 personajes y como máximo 6 efectos")
         self.items = [i[:48] for i in self.items]
         return self
 

@@ -1,0 +1,987 @@
+{
+  "topic": "Resumen de la película Harry Potter y la piedra filosofal",
+  "category": "curiosidades",
+  "title": "HARRY POTTER y la piedra filosofal (resumen en caricatura)",
+  "hook": "Un niño que dormía bajo una escalera era, sin saberlo, el mago más famoso del mundo.",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "cartoon",
+      "narration": "Un niño que dormía bajo una escalera era, sin saberlo, el mago más famoso del mundo.",
+      "on_screen_text": "El niño bajo la escalera",
+      "highlight_words": [
+        "escalera"
+      ],
+      "icon": "bolt",
+      "sfx": "impact",
+      "transition": "fade",
+      "setting": "house",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "sleepy",
+          "x": 0.78,
+          "facing": 1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "flash",
+          "at": 0,
+          "x": 0.5
+        },
+        {
+          "type": "zzz",
+          "at": 0.3,
+          "x": 0.78,
+          "y": 0.55
+        }
+      ]
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Harry Potter vivía con sus tíos, que lo trataban como un estorbo y le ocultaban la verdad sobre sus padres.",
+      "on_screen_text": "Huérfano y tratado como un estorbo",
+      "highlight_words": [
+        "estorbo"
+      ],
+      "icon": "key",
+      "sfx": "whoosh",
+      "transition": "slide",
+      "setting": "house",
+      "cast": [
+        {
+          "character": "aunt",
+          "action": "point",
+          "x": 0.2,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "uncle",
+          "action": "angry",
+          "x": 0.45,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "hero",
+          "action": "cower",
+          "x": 0.8,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "bubble",
+          "at": 0.8,
+          "x": 0.35,
+          "y": 0.42,
+          "text": "¡Fuera!"
+        }
+      ]
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Un día empezaron a llegar cartas. Cientos de cartas. Sus tíos huyeron de casa para esconderlo, pero no pudieron detenerlas.",
+      "on_screen_text": "Cientos de cartas para Harry",
+      "highlight_words": [
+        "Cientos"
+      ],
+      "icon": "book",
+      "sfx": "whoosh",
+      "transition": "zoom",
+      "setting": "house",
+      "cast": [
+        {
+          "character": "owl",
+          "action": "fly",
+          "x": 0.5,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "hero",
+          "action": "hold_up",
+          "x": 0.25,
+          "facing": 1,
+          "at": 0,
+          "prop": "letter"
+        },
+        {
+          "character": "uncle",
+          "action": "shocked",
+          "x": 0.75,
+          "facing": -1,
+          "at": 1.2
+        }
+      ],
+      "fx": [
+        {
+          "type": "bubble",
+          "at": 1.4,
+          "x": 0.75,
+          "y": 0.42,
+          "text": "¡NOOO!"
+        },
+        {
+          "type": "pow",
+          "at": 3.8,
+          "x": 0.5,
+          "y": 0.4,
+          "text": "¡CARTAS!"
+        }
+      ]
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "cartoon",
+      "narration": "En su cumpleaños número once, un gigante llamado Hagrid derribó la puerta y le dio la noticia: Harry, eres un mago.",
+      "on_screen_text": "Harry, eres un mago",
+      "highlight_words": [
+        "mago"
+      ],
+      "icon": "star",
+      "sfx": "impact",
+      "transition": "zoom",
+      "setting": "house",
+      "cast": [
+        {
+          "character": "giant",
+          "action": "walk_in",
+          "x": 0.66,
+          "facing": -1,
+          "at": 0
+        },
+        {
+          "character": "hero",
+          "action": "shocked",
+          "x": 0.24,
+          "facing": 1,
+          "at": 1.4
+        }
+      ],
+      "fx": [
+        {
+          "type": "pow",
+          "at": 0.1,
+          "x": 0.7,
+          "y": 0.4,
+          "text": "¡PUM!"
+        },
+        {
+          "type": "bubble",
+          "at": 2.3,
+          "x": 0.55,
+          "y": 0.45,
+          "text": "¡Eres un mago!",
+          "dur": 3
+        },
+        {
+          "type": "confetti",
+          "at": 4.0,
+          "x": 0.24,
+          "y": 0.55
+        }
+      ]
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Sus padres no murieron en un accidente. Los mató Voldemort, un mago tenebroso. Pero su hechizo contra Harry rebotó y solo le dejó una cicatriz.",
+      "on_screen_text": "El hechizo que rebotó",
+      "highlight_words": [
+        "rebotó"
+      ],
+      "icon": "skull",
+      "sfx": "riser",
+      "transition": "wipe",
+      "setting": "castle_night",
+      "cast": [
+        {
+          "character": "villain",
+          "action": "crumble",
+          "x": 0.72,
+          "facing": -1,
+          "at": 3.0
+        },
+        {
+          "character": "hero",
+          "action": "cower",
+          "x": 0.24,
+          "facing": 1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "spell",
+          "at": 0.8,
+          "x": 0.66,
+          "y": 0.5,
+          "x2": 0.3
+        },
+        {
+          "type": "flash",
+          "at": 1.9,
+          "x": 0.5
+        },
+        {
+          "type": "spell",
+          "at": 1.9,
+          "x": 0.3,
+          "y": 0.5,
+          "x2": 0.7
+        },
+        {
+          "type": "pow",
+          "at": 2.2,
+          "x": 0.5,
+          "y": 0.38,
+          "text": "¡REBOTÓ!"
+        }
+      ]
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "En el callejón Diagon eligió su primera varita, hermana de la varita que le hizo esa cicatriz.",
+      "on_screen_text": "Su varita tiene una hermana",
+      "highlight_words": [
+        "hermana"
+      ],
+      "icon": "lightbulb",
+      "sfx": "ding",
+      "transition": "fade",
+      "setting": "street",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "cast_spell",
+          "x": 0.35,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "elder",
+          "action": "talk",
+          "x": 0.78,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "sparkles",
+          "at": 0.8,
+          "x": 0.55,
+          "y": 0.5
+        },
+        {
+          "type": "sparkles",
+          "at": 3.0,
+          "x": 0.55,
+          "y": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Desde el andén nueve y tres cuartos tomó el tren hacia Hogwarts, el colegio de magia y hechicería.",
+      "on_screen_text": "Andén 9 ¾ rumbo a Hogwarts",
+      "highlight_words": [
+        "Hogwarts"
+      ],
+      "icon": "map",
+      "sfx": "whoosh",
+      "transition": "slide",
+      "setting": "train",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "wave",
+          "x": 0.3,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "owl",
+          "action": "idle",
+          "x": 0.75,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "thought",
+          "at": 1.0,
+          "x": 0.45,
+          "y": 0.45,
+          "text": "¡A Hogwarts!"
+        }
+      ]
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Ahí conoció a Ron Weasley y a Hermione Granger, sus mejores amigos para siempre.",
+      "on_screen_text": "Harry, Ron y Hermione",
+      "highlight_words": [
+        "Hermione"
+      ],
+      "icon": "heart",
+      "sfx": "pop",
+      "transition": "zoom",
+      "setting": "train",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "talk",
+          "x": 0.2,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_boy",
+          "action": "talk",
+          "x": 0.48,
+          "facing": -1,
+          "at": 0
+        },
+        {
+          "character": "friend_girl",
+          "action": "walk_in",
+          "x": 0.78,
+          "facing": -1,
+          "at": 1.0
+        }
+      ],
+      "fx": [
+        {
+          "type": "hearts",
+          "at": 2.6,
+          "x": 0.48,
+          "y": 0.55
+        }
+      ]
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Un sombrero que lee la mente eligió su casa. Harry pidió no ir a Slytherin, y terminó en Gryffindor.",
+      "on_screen_text": "No a Slytherin… ¡Gryffindor!",
+      "highlight_words": [
+        "Gryffindor"
+      ],
+      "icon": "crown",
+      "sfx": "ding",
+      "transition": "fade",
+      "setting": "great_hall",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "cower",
+          "x": 0.45,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "elder",
+          "action": "idle",
+          "x": 0.85,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "thought",
+          "at": 0.6,
+          "x": 0.45,
+          "y": 0.45,
+          "text": "¡Slytherin no!",
+          "dur": 2.6
+        },
+        {
+          "type": "pow",
+          "at": 3.6,
+          "x": 0.5,
+          "y": 0.4,
+          "text": "¡GRYFFINDOR!"
+        },
+        {
+          "type": "confetti",
+          "at": 3.7,
+          "x": 0.45,
+          "y": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Sin haber jugado nunca, se convirtió en el buscador más joven en un siglo del equipo de quidditch.",
+      "on_screen_text": "El buscador más joven en un siglo",
+      "highlight_words": [
+        "joven"
+      ],
+      "icon": "rocket",
+      "sfx": "whoosh",
+      "transition": "slide",
+      "setting": "sky",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "fly",
+          "x": 0.5,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_boy",
+          "action": "jump_joy",
+          "x": 0.12,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_girl",
+          "action": "jump_joy",
+          "x": 0.88,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "confetti",
+          "at": 2.0,
+          "x": 0.5,
+          "y": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "role": "surprise",
+      "type": "cartoon",
+      "narration": "Pero en un pasillo prohibido encontraron un perro gigante de tres cabezas, parado sobre una trampilla.",
+      "on_screen_text": "Un perro de tres cabezas",
+      "highlight_words": [
+        "tres"
+      ],
+      "icon": "eye",
+      "sfx": "impact",
+      "transition": "zoom",
+      "setting": "corridor",
+      "cast": [
+        {
+          "character": "dog3",
+          "action": "angry",
+          "x": 0.72,
+          "facing": -1,
+          "at": 0
+        },
+        {
+          "character": "friend_girl",
+          "action": "cower",
+          "x": 0.06,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "hero",
+          "action": "cower",
+          "x": 0.2,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_boy",
+          "action": "shocked",
+          "x": 0.34,
+          "facing": 1,
+          "at": 0.4
+        }
+      ],
+      "fx": [
+        {
+          "type": "bubble",
+          "at": 0.6,
+          "x": 0.66,
+          "y": 0.42,
+          "text": "¡GRRR!"
+        }
+      ]
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Debajo se escondía la piedra filosofal, capaz de crear el elixir de la vida y volver inmortal a quien lo beba.",
+      "on_screen_text": "La piedra de la inmortalidad",
+      "highlight_words": [
+        "inmortalidad"
+      ],
+      "icon": "star",
+      "sfx": "riser",
+      "transition": "fade",
+      "setting": "corridor",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "hold_up",
+          "x": 0.4,
+          "facing": 1,
+          "at": 0,
+          "prop": "stone"
+        },
+        {
+          "character": "friend_girl",
+          "action": "read",
+          "x": 0.78,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "sparkles",
+          "at": 0.5,
+          "x": 0.45,
+          "y": 0.45
+        },
+        {
+          "type": "sparkles",
+          "at": 2.5,
+          "x": 0.45,
+          "y": 0.45
+        }
+      ]
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Harry encontró un espejo que muestra el deseo más profundo de quien lo mira. Él vio a sus padres.",
+      "on_screen_text": "El espejo del deseo",
+      "highlight_words": [
+        "deseo"
+      ],
+      "icon": "heart",
+      "sfx": "ding",
+      "transition": "wipe",
+      "setting": "mirror_room",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "idle",
+          "x": 0.12,
+          "facing": 1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "hearts",
+          "at": 1.2,
+          "x": 0.5,
+          "y": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s14",
+      "role": "surprise",
+      "type": "cartoon",
+      "narration": "En el bosque prohibido vio a una figura encapuchada bebiendo sangre de unicornio. Era Voldemort, débil pero vivo.",
+      "on_screen_text": "Voldemort sigue vivo",
+      "highlight_words": [
+        "vivo"
+      ],
+      "icon": "skull",
+      "sfx": "riser",
+      "transition": "zoom",
+      "setting": "forest",
+      "cast": [
+        {
+          "character": "villain",
+          "action": "float",
+          "x": 0.72,
+          "facing": -1,
+          "at": 0
+        },
+        {
+          "character": "hero",
+          "action": "cower",
+          "x": 0.22,
+          "facing": 1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "flash",
+          "at": 0.4,
+          "x": 0.5
+        },
+        {
+          "type": "bubble",
+          "at": 1.6,
+          "x": 0.25,
+          "y": 0.45,
+          "text": "¡Ay, no!"
+        }
+      ]
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "Para llegar a la piedra superaron tres pruebas: una planta que atrapa, llaves voladoras y un ajedrez gigante.",
+      "on_screen_text": "Tres pruebas mortales",
+      "highlight_words": [
+        "pruebas"
+      ],
+      "icon": "key",
+      "sfx": "whoosh",
+      "transition": "slide",
+      "setting": "chessboard",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "sneak",
+          "x": 0.28,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_boy",
+          "action": "sneak",
+          "x": 0.5,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_girl",
+          "action": "sneak",
+          "x": 0.72,
+          "facing": 1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "thought",
+          "at": 1.0,
+          "x": 0.5,
+          "y": 0.45,
+          "text": "3 pruebas…"
+        }
+      ]
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "En el ajedrez, Ron se sacrificó a propósito para que Harry pudiera seguir.",
+      "on_screen_text": "El sacrificio de Ron",
+      "highlight_words": [
+        "sacrificio"
+      ],
+      "icon": "crown",
+      "sfx": "impact",
+      "transition": "zoom",
+      "setting": "chessboard",
+      "cast": [
+        {
+          "character": "friend_boy",
+          "action": "fall",
+          "x": 0.62,
+          "facing": -1,
+          "at": 1.4
+        },
+        {
+          "character": "hero",
+          "action": "shocked",
+          "x": 0.28,
+          "facing": 1,
+          "at": 2.0
+        }
+      ],
+      "fx": [
+        {
+          "type": "pow",
+          "at": 1.5,
+          "x": 0.62,
+          "y": 0.42,
+          "text": "¡CRASH!"
+        }
+      ]
+    },
+    {
+      "id": "s17",
+      "role": "surprise",
+      "type": "cartoon",
+      "narration": "Y el ladrón no era Snape, como creían. Era el profesor Quirrell, que escondía a Voldemort en la parte de atrás de su cabeza.",
+      "on_screen_text": "El villano era Quirrell",
+      "highlight_words": [
+        "Quirrell"
+      ],
+      "icon": "eye",
+      "sfx": "impact",
+      "transition": "wipe",
+      "setting": "mirror_room",
+      "cast": [
+        {
+          "character": "turban",
+          "action": "talk",
+          "x": 0.7,
+          "facing": -1,
+          "at": 0
+        },
+        {
+          "character": "hero",
+          "action": "shocked",
+          "x": 0.22,
+          "facing": 1,
+          "at": 0.8
+        }
+      ],
+      "fx": [
+        {
+          "type": "bubble",
+          "at": 1.2,
+          "x": 0.7,
+          "y": 0.45,
+          "text": "¡Era yo!"
+        },
+        {
+          "type": "flash",
+          "at": 3.0,
+          "x": 0.5
+        }
+      ]
+    },
+    {
+      "id": "s18",
+      "role": "surprise",
+      "type": "cartoon",
+      "narration": "Cuando Quirrell tocó a Harry, su piel se volvió polvo. El amor de su madre, que dio la vida por él, lo protegía.",
+      "on_screen_text": "Lo protegía el amor de su madre",
+      "highlight_words": [
+        "amor"
+      ],
+      "icon": "heart",
+      "sfx": "riser",
+      "transition": "fade",
+      "setting": "mirror_room",
+      "cast": [
+        {
+          "character": "turban",
+          "action": "crumble",
+          "x": 0.66,
+          "facing": -1,
+          "at": 1.2
+        },
+        {
+          "character": "hero",
+          "action": "idle",
+          "x": 0.3,
+          "facing": 1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "dust",
+          "at": 1.6,
+          "x": 0.66,
+          "y": 0.6
+        },
+        {
+          "type": "hearts",
+          "at": 2.8,
+          "x": 0.3,
+          "y": 0.6
+        }
+      ]
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "cartoon",
+      "narration": "La piedra fue destruida, y Gryffindor ganó la copa de las casas.",
+      "on_screen_text": "Gryffindor gana la copa",
+      "highlight_words": [
+        "copa"
+      ],
+      "icon": "crown",
+      "sfx": "ding",
+      "transition": "zoom",
+      "setting": "great_hall",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "jump_joy",
+          "x": 0.3,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_boy",
+          "action": "jump_joy",
+          "x": 0.52,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "friend_girl",
+          "action": "jump_joy",
+          "x": 0.74,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "elder",
+          "action": "wave",
+          "x": 0.92,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "confetti",
+          "at": 0.4,
+          "x": 0.5,
+          "y": 0.4
+        },
+        {
+          "type": "confetti",
+          "at": 2.2,
+          "x": 0.3,
+          "y": 0.4
+        }
+      ]
+    },
+    {
+      "id": "s20",
+      "role": "closing",
+      "type": "cartoon",
+      "narration": "Así empezó una saga de ocho películas. ¿Cuál es tu favorita de Harry Potter? Te leo en los comentarios.",
+      "on_screen_text": "¿Cuál es tu película favorita?",
+      "highlight_words": [
+        "favorita"
+      ],
+      "icon": "question",
+      "sfx": "pop",
+      "transition": "slide",
+      "setting": "castle_night",
+      "cast": [
+        {
+          "character": "hero",
+          "action": "wave",
+          "x": 0.45,
+          "facing": 1,
+          "at": 0
+        },
+        {
+          "character": "owl",
+          "action": "fly",
+          "x": 0.7,
+          "facing": -1,
+          "at": 0
+        }
+      ],
+      "fx": [
+        {
+          "type": "thought",
+          "at": 1.0,
+          "x": 0.45,
+          "y": 0.45,
+          "text": "¿Tu favorita?"
+        }
+      ]
+    }
+  ],
+  "description": "Resumen de Harry Potter y la piedra filosofal (2001): el niño que vivía bajo la escalera descubre que es mago, llega a Hogwarts y enfrenta a Voldemort por la piedra filosofal. ¿Cuál es tu película favorita de la saga?",
+  "hashtags": [
+    "harrypotter",
+    "piedrafilosofal",
+    "hogwarts",
+    "peliculas",
+    "resumen",
+    "cine"
+  ],
+  "sources": [
+    {
+      "title": "Harry Potter and the Philosopher's Stone (film)",
+      "url": "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Harry Potter (film series)",
+      "url": "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "En la película, Harry vive con sus tíos y descubre a los once años, gracias a Hagrid, que es un mago.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Voldemort mató a los padres de Harry y su intento de matar a Harry le dejó una cicatriz.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La piedra filosofal está custodiada por un perro de tres cabezas y protegida por varias pruebas, entre ellas un ajedrez gigante.",
+      "scene_id": "s11",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El profesor Quirrell, que lleva a Voldemort en la parte trasera de su cabeza, es quien intenta robar la piedra.",
+      "scene_id": "s17",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Harry_Potter_and_the_Philosopher%27s_Stone_(film)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La saga cinematográfica de Harry Potter tiene ocho películas.",
+      "scene_id": "s20",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Harry_Potter_(film_series)"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

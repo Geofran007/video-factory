@@ -330,6 +330,25 @@
       };
     },
 
+    // Caricatura: escenario y personajes a pantalla completa; el texto queda como cartel arriba.
+    cartoon(root, s) {
+      const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+      svg.setAttribute('viewBox', '0 0 1080 1920');
+      svg.setAttribute('class', 'cartoon');
+      root.parentElement.insertBefore(svg, root);
+      const update = VF.cartoon.build(svg, s);
+      const box = el('div', 'txt cartoon-caption');
+      const spans = wordSpans(box, s.on_screen_text, s.highlight_words);
+      root.appendChild(box);
+      fitText(box, 82, 44);
+      return (lt) => {
+        update(lt);
+        const p = ease.outBack(prog(lt, 0.1, 0.45));
+        box.style.transform = `rotate(-2deg) scale(${p.toFixed(3)})`;
+        animateWords(spans, lt, 0.2, 0.05);
+      };
+    },
+
     // Línea de tiempo geológica vertical (valores = millones de años atrás).
     timeline(root, s) {
       const head = el('div', 'txt txt-head');
