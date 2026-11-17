@@ -90,4 +90,5 @@ def build_timeline(
         sfx=sfx,
         narration_file=narration.path.name,
         voice_attribution=voice_attribution,
+        presenter=content.presenter,
     )

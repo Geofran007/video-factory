@@ -489,9 +489,56 @@
     });
   }
 
+  // ------------------------------------------------------------------ presentador
+  // Imagen fija del presentador del canal (templates/presenters/<nombre>.png) arriba durante todo el video.
+  // No se redibuja: solo se anima con transformaciones (respira, rebota al hablar, salta en cada escena).
+  let presenter = null;
+
+  function buildPresenter() {
+    if (!TL.presenter) return Promise.resolve();
+    $('stage').classList.add('with-presenter');
+    const box = el('div', 'presenter');
+    const disc = el('div', 'presenter-disc');
+    const img = el('img', 'presenter-img');
+    const wow = el('div', 'presenter-wow', '!');
+    box.append(disc, img, wow);
+    $('stage').appendChild(box);
+    presenter = { box, img, wow, starts: TL.scenes.map((s) => s.start),
+                  words: TL.cues.flatMap((c) => c.words) };
+    return new Promise((resolve, reject) => {
+      img.onload = resolve;
+      img.onerror = () => reject(new Error(`no se encontró el presentador '${TL.presenter}'`));
+      img.src = `../presenters/${TL.presenter}.png`;
+    });
+  }
+
+  function updatePresenter(t) {
+    if (!presenter) return;
+    const { img, wow, starts, words } = presenter;
+    // Última escena que ya empezó y tiempo desde su inicio.
+    let idx = 0;
+    for (let i = 0; i < starts.length; i++) if (t >= starts[i]) idx = i;
+    const since = t - starts[idx];
+    const speaking = words.some((w) => t >= w.start && t < w.end);
+    const enter = ease.outBack(prog(t, 0, 0.35));
+    const hopP = prog(since, 0, 0.45);
+    const hop = idx > 0 && hopP < 1 ? Math.sin(Math.PI * hopP) : 0;
+    const breathe = Math.sin(t * 2 * Math.PI / 2.4);
+    const talk = speaking ? Math.abs(Math.sin(t * 10.5)) : 0;
+    const tilt = (idx % 2 ? -1 : 1) * 3 * ease.outCubic(prog(since, 0, 0.5)) + 1.2 * Math.sin(t * 1.3);
+    const y = (1 - enter) * -460 - 44 * hop - 9 * talk;
+    const sx = 1 + 0.06 * hop - 0.012 * breathe;
+    const sy = 1 - 0.05 * hop + 0.015 * breathe + 0.025 * talk;
+    img.style.transform = `translateY(${y.toFixed(1)}px) rotate(${tilt.toFixed(2)}deg) scale(${sx.toFixed(4)}, ${sy.toFixed(4)})`;
+    const w = idx > 0 ? prog(since, 0.05, 0.25) * (1 - prog(since, 0.9, 0.25)) : 0;
+    wow.style.opacity = w.toFixed(3);
+    wow.style.transform = `rotate(14deg) scale(${(0.4 + 0.6 * ease.outBack(prog(since, 0.05, 0.3))).toFixed(3)})`;
+  }
+
   VF.init = async function init(timeline) {
     TL = timeline;
     document.body.dataset.style = TL.style;
+    await buildPresenter();
     style = VF.styles[TL.style] || VF.styles.curiosidades;
     bgCtx = $('bg').getContext('2d');
     if (style.init) style.init(bgCtx, mulberry32(1234), TL);
@@ -541,6 +588,7 @@
     // Destello de impacto en el gancho.
     $('flash').style.opacity = (0.55 * (1 - prog(t, 0, 0.35))).toFixed(3);
     $('progress-fill').style.transform = `scaleX(${clamp(t / TL.duration).toFixed(4)})`;
+    updatePresenter(t);
     updateSubtitles(t);
   };
 })();

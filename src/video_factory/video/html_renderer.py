@@ -99,6 +99,8 @@ class PlaywrightRenderer:
         page = self.templates_dir / "runtime" / "index.html"
         if not page.exists():
             raise RenderError(f"No se encontró la plantilla: {page}")
+        if timeline.presenter and not (self.templates_dir / "presenters" / f"{timeline.presenter}.png").exists():
+            raise RenderError(f"No se encontró el presentador: templates/presenters/{timeline.presenter}.png")
         total = timeline.frame_count
         workers = self._workers(total)
         seg_dir = out_path.parent / "segments"

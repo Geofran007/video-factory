@@ -1,0 +1,79 @@
+{
+  "topic": "Curiosidades que parecen mentira, pero son reales",
+  "category": "curiosidades",
+  "title": "Curiosidades que parecen mentira, pero son reales",
+  "hook": "¡Espera! Tu cerebro está a punto de descubrir cosas que parecen inventadas, pero son completamente reales.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "title",
+      "narration": "¡Espera! Tu cerebro está a punto de descubrir cosas que parecen inventadas, pero son completamente reales.",
+      "on_screen_text": "Parece mentira… pero es real",
+      "highlight_words": ["real"],
+      "icon": "brain", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "timeline",
+      "narration": "Los tiburones son más antiguos que los árboles. Ya nadaban hace unos cuatrocientos cincuenta millones de años, y los primeros árboles llegaron mucho después.",
+      "on_screen_text": "Tiburones: más antiguos que los árboles",
+      "highlight_words": ["antiguos"],
+      "chart": [
+        {"label": "Tiburones", "value": 450, "illustration": "ancient_shark"},
+        {"label": "Árboles", "value": 385, "illustration": "tree"},
+        {"label": "Humanos", "value": 0.3, "illustration": "human"}
+      ],
+      "icon": "clock", "sfx": "bubbles", "transition": "slide"
+    },
+    {
+      "id": "s3", "role": "development", "type": "big_number",
+      "narration": "¡Y esto es increíble! Los pulpos tienen tres corazones y su sangre es azul.",
+      "on_screen_text": "Pulpos: 3 corazones y sangre azul",
+      "highlight_words": ["azul"],
+      "big_number": "3",
+      "number_caption": "corazones tiene un pulpo",
+      "icon": "heart", "sfx": "pop", "transition": "zoom"
+    },
+    {
+      "id": "s4", "role": "development", "type": "icon_fact",
+      "narration": "Pero espera, hay algo todavía más extraño: Venus tarda más en girar sobre sí mismo que en dar la vuelta al Sol.",
+      "on_screen_text": "En Venus un giro dura más que un año",
+      "highlight_words": ["Venus"],
+      "icon": "planet", "sfx": "riser", "transition": "wipe"
+    },
+    {
+      "id": "s5", "role": "surprise", "type": "comparison",
+      "narration": "¡Guau! Cleopatra vivió más cerca de la llegada a la Luna que de la construcción de la Gran Pirámide.",
+      "on_screen_text": "Cleopatra, más cerca de la Luna",
+      "highlight_words": ["Luna"],
+      "items": ["Gran Pirámide → Cleopatra: ~2500 años", "Cleopatra → la Luna: ~2000 años"],
+      "icon": "landmark", "sfx": "impact", "transition": "slide"
+    },
+    {
+      "id": "s6", "role": "closing", "type": "cta",
+      "narration": "¿Cuántas de estas curiosidades conocías? ¡Déjamelo en los comentarios y sígueme para descubrir más cosas increíbles!",
+      "on_screen_text": "¿Cuántas conocías?",
+      "highlight_words": ["conocías"],
+      "icon": "question", "sfx": "pop", "transition": "zoom"
+    }
+  ],
+  "description": "Tiburones más antiguos que los árboles, pulpos con tres corazones, un planeta donde un giro dura más que un año y Cleopatra más cerca de la Luna que de las pirámides. ¿Cuántas conocías?",
+  "hashtags": ["curiosidades", "sabiasque", "datoscuriosos", "ciencia", "historia", "animales", "shorts"],
+  "sources": [
+    {"title": "Shark – Evolution", "url": "https://en.wikipedia.org/wiki/Shark", "publisher": "Wikipedia"},
+    {"title": "Archaeopteris (primeros árboles)", "url": "https://en.wikipedia.org/wiki/Archaeopteris", "publisher": "Wikipedia"},
+    {"title": "Octopus", "url": "https://en.wikipedia.org/wiki/Octopus", "publisher": "Wikipedia"},
+    {"title": "Venus: Facts", "url": "https://science.nasa.gov/venus/venus-facts/", "publisher": "NASA"},
+    {"title": "Cleopatra", "url": "https://en.wikipedia.org/wiki/Cleopatra", "publisher": "Wikipedia"},
+    {"title": "Great Pyramid of Giza", "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza", "publisher": "Wikipedia"}
+  ],
+  "claims": [
+    {"statement": "Los tiburones existen desde hace unos 450 millones de años; los primeros árboles aparecieron hace unos 385 millones de años.", "scene_id": "s2",
+     "source_urls": ["https://en.wikipedia.org/wiki/Shark", "https://en.wikipedia.org/wiki/Archaeopteris"], "confidence": "alta"},
+    {"statement": "Los pulpos tienen tres corazones y sangre azul por la hemocianina.", "scene_id": "s3",
+     "source_urls": ["https://en.wikipedia.org/wiki/Octopus"], "confidence": "alta"},
+    {"statement": "Venus tarda unos 243 días terrestres en rotar sobre su eje y unos 225 en orbitar el Sol.", "scene_id": "s4",
+     "source_urls": ["https://science.nasa.gov/venus/venus-facts/"], "confidence": "alta"},
+    {"statement": "La Gran Pirámide se construyó hacia el 2560 a. C.; Cleopatra murió en el 30 a. C. y la llegada a la Luna fue en 1969.", "scene_id": "s5",
+     "source_urls": ["https://en.wikipedia.org/wiki/Cleopatra", "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"], "confidence": "alta"}
+  ]
+}

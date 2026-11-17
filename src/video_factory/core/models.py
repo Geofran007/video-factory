@@ -142,6 +142,8 @@ class VideoContent(BaseModel):
     hashtags: list[str]
     sources: list[Source] = Field(default_factory=list)
     claims: list[Claim] = Field(default_factory=list)
+    presenter: str | None = Field(default=None, pattern=r"^[a-z0-9_-]{1,40}$",
+                                  description="Presentador fijo arriba: templates/presenters/<nombre>.png")
 
     @field_validator("hashtags")
     @classmethod
@@ -224,6 +226,7 @@ class Timeline(BaseModel):
     sfx: list[SfxEvent]
     narration_file: str
     voice_attribution: str | None = None
+    presenter: str | None = None
 
     @property
     def frame_count(self) -> int:
