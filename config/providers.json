@@ -54,7 +54,7 @@
         "label": "Mi voz · Chatterbox (muy lenta sin GPU)",
         "license": "Voz propia del autor",
         "attribution": null,
-        "exaggeration": 0.65,
+        "exaggeration": 0.4,
         "cfg_weight": 0.5,
         "temperature": 0.8,
         "seed": 1234
