@@ -232,6 +232,10 @@ autorización escrita de su dueño.
 Ajustes en `config/providers.json → tts.voices.mi_voz`: `exaggeration` (expresividad), `cfg_weight` (más bajo = más
 parecido al ritmo del clip) y `seed`.
 
+**Otra voz propia** (ej. `voz_zueria`): copia la entrada `mi_voz` en `providers.json` con otro nombre y otro
+`audio_prompt` (`models/<nombre>/referencia.wav`), cífrala en `voces/<nombre>.wav.gpg` con la **misma** contraseña y
+añádela a `options`, a `CHATTERBOX` y al `case` de descifrado en `.github/workflows/generate.yml`.
+
 Para GitHub Actions la referencia va **cifrada** en `voces/referencia.wav.gpg` (AES-256) y la contraseña solo como
 secreto `VOICE_PASSPHRASE`. Para cambiarla:
 

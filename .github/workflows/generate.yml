@@ -26,9 +26,9 @@ on:
         description: "Duración objetivo (15-180 s)"
         default: "40"
       voice:
-        description: "Voz (chatterbox_latam y mi_voz tardan 30-90 min sin GPU)"
+        description: "Voz (chatterbox_latam, mi_voz y voz_zueria tardan 30-90 min sin GPU)"
         type: choice
-        options: [masculina, masculina_2, femenina, chatterbox_latam, mi_voz]
+        options: [masculina, masculina_2, femenina, chatterbox_latam, mi_voz, voz_zueria]
         default: masculina
   # schedule:
   #   - cron: "0 14 * * 1-5"   # Fase 2: un video por día hábil
@@ -49,7 +49,7 @@ jobs:
       ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
       VF_DAILY_BUDGET_USD: "1.0"
       VF_MAX_JOB_SECONDS: "9000"
-      CHATTERBOX: ${{ inputs.voice == 'chatterbox_latam' || inputs.voice == 'mi_voz' }}
+      CHATTERBOX: ${{ inputs.voice == 'chatterbox_latam' || inputs.voice == 'mi_voz' || inputs.voice == 'voz_zueria' }}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -84,14 +84,19 @@ jobs:
           fi
           .venv-chatterbox/bin/python scripts/setup_chatterbox.py
       - name: Descifrar la voz de referencia
-        if: inputs.voice == 'mi_voz'
+        if: inputs.voice == 'mi_voz' || inputs.voice == 'voz_zueria'
         env:
-          # Contraseña del cifrado de voces/referencia.wav.gpg, guardada solo como secreto del repositorio.
+          # Contraseña del cifrado de voces/*.gpg, guardada solo como secreto del repositorio.
           VOICE_PASSPHRASE: ${{ secrets.VOICE_PASSPHRASE }}
+          VOICE: ${{ inputs.voice }}
         run: |
-          mkdir -p models/mi-voz
+          case "$VOICE" in
+            mi_voz)     src=voces/referencia.wav.gpg; dst=models/mi-voz/referencia.wav ;;
+            voz_zueria) src=voces/voz-zueria.wav.gpg; dst=models/voz-zueria/referencia.wav ;;
+          esac
+          mkdir -p "$(dirname "$dst")"
           gpg --batch --quiet --pinentry-mode loopback --passphrase-fd 0 \
-            --output models/mi-voz/referencia.wav --decrypt voces/referencia.wav.gpg <<< "$VOICE_PASSPHRASE"
+            --output "$dst" --decrypt "$src" <<< "$VOICE_PASSPHRASE"
 
       - run: video-factory doctor
 
@@ -132,4 +137,4 @@ jobs:
 
       - name: Borrar la voz descifrada
         if: always()
-        run: rm -f models/mi-voz/referencia.wav
+        run: rm -f models/mi-voz/referencia.wav models/voz-zueria/referencia.wav

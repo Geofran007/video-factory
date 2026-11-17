@@ -58,6 +58,18 @@
         "cfg_weight": 0.5,
         "temperature": 0.8,
         "seed": 1234
+      },
+      "voz_zueria": {
+        "engine": "chatterbox",
+        "model_dir": "models/chatterbox-es-latam",
+        "audio_prompt": "models/voz-zueria/referencia.wav",
+        "label": "Voz zueria (propia) · Chatterbox (muy lenta sin GPU)",
+        "license": "Voz propia del autor",
+        "attribution": null,
+        "exaggeration": 0.5,
+        "cfg_weight": 0.5,
+        "temperature": 0.8,
+        "seed": 1234
       }
     }
   },
