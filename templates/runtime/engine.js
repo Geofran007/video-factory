@@ -526,7 +526,7 @@
     const breathe = Math.sin(t * 2 * Math.PI / 2.4);
     const talk = speaking ? Math.abs(Math.sin(t * 10.5)) : 0;
     const tilt = (idx % 2 ? -1 : 1) * 3 * ease.outCubic(prog(since, 0, 0.5)) + 1.2 * Math.sin(t * 1.3);
-    const y = (1 - enter) * -460 - 44 * hop - 9 * talk;
+    const y = (1 - enter) * -460 - 30 * hop - 8 * talk;
     const sx = 1 + 0.06 * hop - 0.012 * breathe;
     const sy = 1 - 0.05 * hop + 0.015 * breathe + 0.025 * talk;
     img.style.transform = `translateY(${y.toFixed(1)}px) rotate(${tilt.toFixed(2)}deg) scale(${sx.toFixed(4)}, ${sy.toFixed(4)})`;

@@ -148,8 +148,8 @@ body { font-family: var(--font); color: var(--text); -webkit-font-smoothing: ant
 .cartoon-caption .hl { color: #ff2d55; }
 
 /* Presentador fijo (imagen del canal) en la franja superior; las escenas bajan y se reducen para dejarle sitio. */
-.with-presenter .scene { padding-top: 440px; }
-.with-presenter .scene-inner { zoom: 0.81; }
+.with-presenter .scene { padding-top: 485px; }
+.with-presenter .scene-inner { zoom: 0.77; }
 .with-presenter .category-tag { display: none; }
 .presenter { position: absolute; left: 50%; top: 34px; width: 380px; height: 424px; margin-left: -190px; pointer-events: none; }
 .presenter-disc { position: absolute; left: 30px; top: 104px; width: 320px; height: 320px; border-radius: 50%;
