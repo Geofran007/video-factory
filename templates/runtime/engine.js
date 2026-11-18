@@ -553,7 +553,7 @@
     const breathe = Math.sin(t * 2 * Math.PI / 2.4);
     const talk = speaking ? Math.abs(Math.sin(t * 10.5)) : 0;
     const tilt = (idx % 2 ? -1 : 1) * 3 * ease.outCubic(prog(since, 0, 0.5)) + 1.2 * Math.sin(t * 1.3);
-    let y = (1 - enter) * -460 - 30 * hop - 8 * talk;
+    let y = (1 - enter) * 560 - 30 * hop - 8 * talk;
     // float_away: aparece un globo sobre el perrito y, en la segunda mitad de la escena, se lo lleva volando.
     const floating = presenter.actions[idx] === 'float_away';
     const sdur = presenter.ends[idx] - starts[idx];
