@@ -163,5 +163,5 @@ body { font-family: var(--font); color: var(--text); -webkit-font-smoothing: ant
 .presenter-lift .illu { filter: drop-shadow(0 10px 16px rgba(0,0,0,.4)); }
 .illu-stage.illu-balloons_person, .illu-stage.illu-balloons_car, .illu-stage.illu-balloons_elephant,
 .illu-stage.illu-balloons_whale, .illu-stage.illu-balloon { height: 700px; }
-.illu-lifted { transform: scale(1.5); transform-origin: 50% 55%; }
+.illu-lifted { transform: scale(1.3); transform-origin: 50% 20%; }
 .illu-balloon { transform: scale(1.25); transform-origin: 50% 40%; }

@@ -312,7 +312,7 @@
         } else if (/^balloon/.test(s.illustration)) {
           // Globos: suben desde abajo y siguen elevándose despacio, con vaivén.
           const p = ease.outCubic(prog(lt, 0, 1.4));
-          ty = lerp(520, 0, p) - lt * 16 + Math.sin(lt * 1.2) * 12;
+          ty = lerp(520, 0, p) + Math.sin(lt * 1.2) * 12;
           tx = Math.sin(lt * 0.8) * 18;
           rotDeg = Math.sin(lt * 1.1) * 2;
         } else if (FLIERS.has(s.illustration)) {
