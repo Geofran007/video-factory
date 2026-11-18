@@ -431,7 +431,106 @@
     return { svg, animate(t) { shine.setAttribute('x', (-80 + ((t * 120) % 460)).toFixed(1)); } };
   }
 
+  // ------------------------------------------------------ globos: «¿cuántos harían falta?»
+  // Racimos de globos de helio levantando cosas cotidianas. Todo dibujado por el proyecto.
+  const BALLOON_COLORS = ['#ff4d6d', '#ffbe0b', '#3a86ff', '#8338ec', '#06d6a0', '#fb5607', '#ff70a6', '#4cc9f0'];
+
+  function balloonShape(x, y, r, color) {
+    const g = n('g', {});
+    g.append(
+      n('path', { d: `M${x - 6},${y + r * 1.18 + 9} L${x},${y + r * 1.18 - 2} L${x + 6},${y + r * 1.18 + 9} Z`, fill: color }),
+      n('ellipse', { cx: x, cy: y, rx: r, ry: r * 1.2, fill: color }),
+      n('ellipse', { cx: x - r * 0.35, cy: y - r * 0.45, rx: r * 0.22, ry: r * 0.36, fill: '#ffffff', opacity: 0.45,
+        transform: `rotate(-25 ${x - r * 0.35} ${y - r * 0.45})` }),
+    );
+    return g;
+  }
+
+  function balloon() {
+    const string = n('path', { stroke: '#f4f4f4', 'stroke-width': 3, fill: 'none', opacity: 0.85 });
+    const b = balloonShape(200, 170, 110, '#ff4d6d');
+    const svg = n('svg', { viewBox: '0 0 400 600', class: 'illu illu-balloon' }, [string, b]);
+    return { svg, animate(t) {
+      const dx = Math.sin(t * 1.6) * 10, dy = Math.sin(t * 2.1) * 8;
+      b.setAttribute('transform', `translate(${dx.toFixed(1)} ${dy.toFixed(1)}) rotate(${(Math.sin(t * 1.6) * 3).toFixed(2)} 200 300)`);
+      string.setAttribute('d', `M${200 + dx},${312 + dy} C${190 + Math.sin(t * 3) * 20},400 ${215 - Math.sin(t * 3) * 20},480 200,590`);
+    } };
+  }
+
+  // Cosas que cuelgan del racimo. ax/ay: punto donde se juntan los hilos.
+  const SUBJECTS = {
+    person: () => ({ count: 9, spread: 1, g: n('g', {}, [
+      n('path', { d: 'M236,452 L244,366 M264,452 L256,366', stroke: '#f0c9a4', 'stroke-width': 11, 'stroke-linecap': 'round' }),
+      n('circle', { cx: 250, cy: 420, r: 28, fill: '#f0c9a4' }),
+      n('path', { d: 'M226,452 C236,444 264,444 274,452 L280,560 L220,560 Z', fill: '#3a86ff' }),
+      n('path', { d: 'M232,556 L226,640 M268,556 L276,640', stroke: '#33415c', 'stroke-width': 16, 'stroke-linecap': 'round' }),
+      n('path', { d: 'M238,428 Q250,438 262,428', stroke: '#6b3d2a', 'stroke-width': 4, fill: 'none', 'stroke-linecap': 'round' }),
+      n('circle', { cx: 240, cy: 414, r: 3.5, fill: '#222' }), n('circle', { cx: 260, cy: 414, r: 3.5, fill: '#222' }),
+    ]) }),
+    car: () => ({ count: 15, spread: 1.15, g: n('g', {}, [
+      n('path', { d: 'M250,366 L160,452 M250,366 L340,452', stroke: '#f4f4f4', 'stroke-width': 3 }),
+      n('path', { d: 'M100,520 L104,486 C110,472 130,466 150,464 L180,436 C190,428 204,424 220,424 L300,424 C318,424 330,430 340,440 L366,466 C388,468 404,476 406,494 L408,520 Z', fill: '#e63946' }),
+      n('path', { d: 'M190,462 L214,438 L250,438 L250,462 Z M262,438 L304,438 C314,438 322,444 330,452 L338,462 L262,462 Z', fill: '#bde0fe' }),
+      n('rect', { x: 100, y: 512, width: 308, height: 14, rx: 6, fill: '#a4161a' }),
+      ...[160, 350].map((cx) => n('circle', { cx, cy: 526, r: 30, fill: '#1d1d24', stroke: '#c9c9d1', 'stroke-width': 8 })),
+      n('circle', { cx: 398, cy: 492, r: 7, fill: '#ffe066' }),
+    ]) }),
+    elephant: () => ({ count: 20, spread: 1.3, g: n('g', {}, [
+      n('path', { d: 'M250,366 L190,428 M250,366 L320,432', stroke: '#f4f4f4', 'stroke-width': 3 }),
+      ...[[160, 540], [205, 545], [285, 545], [330, 540]].map(([x, y]) => n('rect', { x: x - 18, y: y - 50, width: 36, height: 110, rx: 14, fill: '#8d99ae' })),
+      n('ellipse', { cx: 245, cy: 490, rx: 125, ry: 80, fill: '#9aa5b8' }),
+      n('path', { d: 'M122,470 C104,486 100,510 108,530', stroke: '#8d99ae', 'stroke-width': 7, fill: 'none', 'stroke-linecap': 'round' }),
+      n('circle', { cx: 362, cy: 456, r: 58, fill: '#9aa5b8' }),
+      n('path', { d: 'M332,420 C296,412 284,470 312,500 C330,498 342,470 340,440 Z', fill: '#b8c0cf' }),
+      n('path', { d: 'M404,474 C424,510 420,560 396,590 C390,598 400,606 408,598 C438,566 444,508 418,466 Z', fill: '#9aa5b8' }),
+      n('path', { d: 'M396,494 C404,504 414,506 420,502', stroke: '#f8f5ec', 'stroke-width': 8, 'stroke-linecap': 'round', fill: 'none' }),
+      n('circle', { cx: 378, cy: 444, r: 6, fill: '#222' }),
+    ]) }),
+    whale: () => ({ count: 28, spread: 1.55, g: n('g', {}, [
+      n('defs', {}, [gradient('whaleBody', [[0, '#4a6fa5'], [0.6, '#355c8c'], [1, '#9cb8d6']])]),
+      n('path', { d: 'M250,366 L130,448 M250,366 L380,444', stroke: '#f4f4f4', 'stroke-width': 3 }),
+      n('path', { d: 'M60,470 C40,446 20,440 4,444 C22,462 30,480 30,494 C30,508 22,526 4,544 C20,548 40,542 60,518 Z', fill: '#355c8c' }),
+      n('path', { d: 'M56,494 C100,452 200,436 300,438 C380,440 448,460 482,492 C470,516 420,538 330,546 C230,552 130,540 56,500 Z', fill: 'url(#whaleBody)' }),
+      ...[0, 1, 2, 3, 4].map((i) => n('path', { d: `M${300 + i * 26},${528 - i * 2} C${330 + i * 26},${532 - i * 2} ${400 + i * 10},${524} 470,${504 + i}`,
+        stroke: '#c9d8ea', 'stroke-width': 2, fill: 'none', opacity: 0.6 })),
+      n('path', { d: 'M180,444 L196,424 L208,446 Z', fill: '#2f507a' }),
+      n('path', { d: 'M300,520 C286,548 266,566 240,574 C262,552 272,536 278,520 Z', fill: '#2f507a' }),
+      n('circle', { cx: 430, cy: 486, r: 5, fill: '#0b1a2a' }),
+    ]) }),
+  };
+
+  function lifted(kind) {
+    const subj = SUBJECTS[kind]();
+    const AX = 250, AY = 366;
+    const strings = n('g', {});
+    const cluster = n('g', {});
+    const balloons = [];
+    for (let i = 0; i < subj.count; i++) {
+      // Espiral de girasol: un racimo compacto y deterministico.
+      const a = i * 2.39996, rr = Math.sqrt(i + 0.5) * 30 * subj.spread;
+      const x = 250 + Math.cos(a) * rr * 1.25, y = 200 + Math.sin(a) * rr * 0.75 - i * 1.5;
+      const r = 30 + ((i * 7) % 11);
+      const b = balloonShape(x, y, r, BALLOON_COLORS[i % BALLOON_COLORS.length]);
+      const s = n('path', { stroke: '#f4f4f4', 'stroke-width': 1.6, fill: 'none', opacity: 0.75 });
+      strings.appendChild(s); cluster.appendChild(b);
+      balloons.push({ b, s, x, y: y + r * 1.18 + 8, ph: i * 1.7 });
+    }
+    // Detrás los del fondo: orden por altura para dar profundidad.
+    balloons.slice().sort((p, q) => p.y - q.y).forEach(({ b }) => cluster.appendChild(b));
+    const svg = n('svg', { viewBox: '0 0 500 700', class: 'illu illu-lifted' }, [strings, cluster, subj.g]);
+    return { svg, animate(t) {
+      for (const p of balloons) {
+        const dx = Math.sin(t * 1.5 + p.ph) * 6, dy = Math.sin(t * 2 + p.ph) * 5;
+        p.b.setAttribute('transform', `translate(${dx.toFixed(1)} ${dy.toFixed(1)})`);
+        p.s.setAttribute('d', `M${(p.x + dx).toFixed(1)},${(p.y + dy).toFixed(1)} Q${((p.x + AX) / 2).toFixed(1)},${((p.y + AY) / 2 + 10).toFixed(1)} ${AX},${AY}`);
+      }
+      subj.g.setAttribute('transform', `rotate(${(Math.sin(t * 1.3) * 2.5).toFixed(2)} ${AX} ${AY})`);
+    } };
+  }
+
   const FACTORY = { shark: () => shark('shark'), ancient_shark: () => shark('ancient_shark'), tree, dinosaur, human,
+    balloon, balloons_person: () => lifted('person'), balloons_car: () => lifted('car'),
+    balloons_elephant: () => lifted('elephant'), balloons_whale: () => lifted('whale'),
     wizard, trio, hooded, castle, owl, letter, wand, lightning, wizard_hat: wizardHat, magic_stone: magicStone, broom,
     three_headed_dog: threeHeadedDog, train, chess_knight: chessKnight, mirror };
   window.VF = window.VF || { styles: {} };

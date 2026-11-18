@@ -309,6 +309,12 @@
           art.crown.style.transformOrigin = '181px 172px';
           art.crown.style.transform = `translateY(${((1 - g) * 288).toFixed(1)}px) scale(${Math.max(0.001, c).toFixed(3)})`;
           sc = 1 + 0.03 * Math.sin(lt * 0.8);
+        } else if (/^balloon/.test(s.illustration)) {
+          // Globos: suben desde abajo y siguen elevándose despacio, con vaivén.
+          const p = ease.outCubic(prog(lt, 0, 1.4));
+          ty = lerp(520, 0, p) - lt * 16 + Math.sin(lt * 1.2) * 12;
+          tx = Math.sin(lt * 0.8) * 18;
+          rotDeg = Math.sin(lt * 1.1) * 2;
         } else if (FLIERS.has(s.illustration)) {
           // Lechuza, escoba, carta y tren entran volando desde la izquierda.
           const p = ease.outCubic(prog(lt, 0, 1.0));
@@ -501,9 +507,12 @@
     const disc = el('div', 'presenter-disc');
     const img = el('img', 'presenter-img');
     const wow = el('div', 'presenter-wow', '!');
-    box.append(disc, img, wow);
+    const lift = el('div', 'presenter-lift');
+    lift.appendChild(VF.illustration('balloon').svg);
+    box.append(disc, lift, img, wow);
     $('stage').appendChild(box);
-    presenter = { box, img, wow, starts: TL.scenes.map((s) => s.start),
+    presenter = { box, img, wow, lift, starts: TL.scenes.map((s) => s.start), ends: TL.scenes.map((s) => s.end),
+                  actions: TL.scenes.map((s) => s.scene.presenter_action || 'none'),
                   words: TL.cues.flatMap((c) => c.words) };
     return new Promise((resolve, reject) => {
       img.onload = resolve;
@@ -526,7 +535,15 @@
     const breathe = Math.sin(t * 2 * Math.PI / 2.4);
     const talk = speaking ? Math.abs(Math.sin(t * 10.5)) : 0;
     const tilt = (idx % 2 ? -1 : 1) * 3 * ease.outCubic(prog(since, 0, 0.5)) + 1.2 * Math.sin(t * 1.3);
-    const y = (1 - enter) * -460 - 30 * hop - 8 * talk;
+    let y = (1 - enter) * -460 - 30 * hop - 8 * talk;
+    // float_away: aparece un globo sobre el perrito y, en la segunda mitad de la escena, se lo lleva volando.
+    const floating = presenter.actions[idx] === 'float_away';
+    const sdur = presenter.ends[idx] - starts[idx];
+    const rise = floating ? ease.inCubic(prog(since, sdur * 0.45, sdur * 0.5)) : 0;
+    y -= rise * 760;
+    const lp = floating ? ease.outBack(prog(since, 0.2, 0.5)) : 0;
+    presenter.lift.style.opacity = floating ? clamp(lp * 2).toFixed(3) : '0';
+    presenter.lift.style.transform = `translateY(${(y + (1 - lp) * 140).toFixed(1)}px) rotate(${(Math.sin(t * 1.7) * 4).toFixed(2)}deg) scale(${Math.max(0.01, lp).toFixed(3)})`;
     const sx = 1 + 0.06 * hop - 0.012 * breathe;
     const sy = 1 - 0.05 * hop + 0.015 * breathe + 0.025 * talk;
     img.style.transform = `translateY(${y.toFixed(1)}px) rotate(${tilt.toFixed(2)}deg) scale(${sx.toFixed(4)}, ${sy.toFixed(4)})`;

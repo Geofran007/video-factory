@@ -30,7 +30,9 @@ Transition = Literal["fade", "slide", "zoom", "wipe"]
 SfxName = Literal["none", "whoosh", "impact", "riser", "pop", "ding", "bubbles"]
 Illustration = Literal["shark", "ancient_shark", "tree", "dinosaur", "human", "wizard", "trio", "hooded", "castle", "owl",
                        "letter", "wand", "lightning", "wizard_hat", "magic_stone", "broom", "three_headed_dog",
-                       "train", "chess_knight", "mirror"]
+                       "train", "chess_knight", "mirror", "balloon", "balloons_person", "balloons_car",
+                       "balloons_elephant", "balloons_whale"]
+PresenterAction = Literal["none", "float_away"]
 Icon = Literal[
     "brain", "heart", "atom", "globe", "clock", "star", "bolt", "eye", "question",
     "chart", "coin", "rocket", "planet", "book", "map", "drop", "fire", "wave",
@@ -87,6 +89,7 @@ class Scene(BaseModel):
     fx: list[Fx] = Field(default_factory=list, description="Efectos de cómic (máx. 6)")
     sfx: SfxName = "none"
     transition: Transition = "fade"
+    presenter_action: PresenterAction = Field(default="none", description="float_away: el presentador se va volando con un globo")
 
     @field_validator("narration")
     @classmethod

@@ -1,0 +1,86 @@
+{
+  "topic": "¿Cuántos globos de helio harían falta para levantarte?",
+  "category": "curiosidades",
+  "title": "¿Cuántos globos harían falta para levantarte? 🎈",
+  "hook": "¿Cuántos globos de helio harían falta para levantarte del suelo? Spoiler: muchísimos.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "illustration",
+      "narration": "¿Cuántos globos de helio harían falta para levantarte del suelo? Spoiler: muchísimos.",
+      "on_screen_text": "¿Cuántos globos para levantarte?",
+      "highlight_words": ["globos"],
+      "illustration": "balloon",
+      "icon": "question", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "big_number",
+      "narration": "Un globo de fiesta levanta apenas unos diez gramos. Eso es menos que dos hojas de papel.",
+      "on_screen_text": "Un globo levanta unos 10 gramos",
+      "highlight_words": ["10"],
+      "big_number": "10 g",
+      "number_caption": "levanta un globo de fiesta",
+      "icon": "drop", "sfx": "pop", "transition": "zoom"
+    },
+    {
+      "id": "s3", "role": "development", "type": "illustration",
+      "narration": "¡Y esto es increíble! Para levantar a una persona de setenta kilos necesitarías unos siete mil globos.",
+      "on_screen_text": "Una persona: 7.000 globos",
+      "highlight_words": ["7.000"],
+      "illustration": "balloons_person",
+      "icon": "star", "sfx": "riser", "transition": "slide"
+    },
+    {
+      "id": "s4", "role": "development", "type": "illustration",
+      "narration": "¿Y un auto? Unos ciento cincuenta mil.",
+      "on_screen_text": "Un auto: 150.000 globos",
+      "highlight_words": ["150.000"],
+      "illustration": "balloons_car",
+      "icon": "rocket", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s5", "role": "development", "type": "illustration",
+      "narration": "Un elefante: seiscientos mil.",
+      "on_screen_text": "Un elefante: 600.000 globos",
+      "highlight_words": ["600.000"],
+      "illustration": "balloons_elephant",
+      "icon": "globe", "sfx": "pop", "transition": "zoom"
+    },
+    {
+      "id": "s6", "role": "surprise", "type": "illustration",
+      "narration": "Y una ballena azul… ¡quince millones de globos!",
+      "on_screen_text": "Ballena azul: 15 millones de globos",
+      "highlight_words": ["15", "millones"],
+      "illustration": "balloons_whale",
+      "icon": "wave", "sfx": "impact", "transition": "wipe"
+    },
+    {
+      "id": "s7", "role": "closing", "type": "big_number",
+      "narration": "¿Y un perrito como yo? Con solo quinientos globos… ¡Guau, me voy volando! ¿Qué levantamos después? Déjalo en los comentarios.",
+      "on_screen_text": "Un perrito: 500 globos",
+      "highlight_words": ["500"],
+      "big_number": "500",
+      "number_caption": "globos para un perrito de 5 kilos",
+      "icon": "heart", "sfx": "pop", "transition": "zoom",
+      "presenter_action": "float_away"
+    }
+  ],
+  "description": "Un globo de fiesta levanta unos 10 gramos. ¿Cuántos harían falta para levantarte a ti, a un auto, a un elefante o a una ballena azul? Cálculos aproximados con la flotabilidad del helio. ¿Qué levantamos después?",
+  "hashtags": ["curiosidades", "globos", "helio", "ciencia", "sabiasque", "fisica", "shorts"],
+  "sources": [
+    {"title": "Helium – Lifting gas", "url": "https://en.wikipedia.org/wiki/Lifting_gas", "publisher": "Wikipedia"},
+    {"title": "Gas balloon", "url": "https://en.wikipedia.org/wiki/Gas_balloon", "publisher": "Wikipedia"},
+    {"title": "African elephant", "url": "https://en.wikipedia.org/wiki/African_elephant", "publisher": "Wikipedia"},
+    {"title": "Blue whale", "url": "https://en.wikipedia.org/wiki/Blue_whale", "publisher": "Wikipedia"}
+  ],
+  "claims": [
+    {"statement": "El helio levanta cerca de 1 gramo por litro; un globo de fiesta de ~28 cm (~11,5 L) levanta unos 10 g netos.", "scene_id": "s2",
+     "source_urls": ["https://en.wikipedia.org/wiki/Lifting_gas"], "confidence": "media"},
+    {"statement": "70 kg / 10 g ≈ 7.000 globos.", "scene_id": "s3", "source_urls": ["https://en.wikipedia.org/wiki/Lifting_gas"], "confidence": "media"},
+    {"statement": "Un auto de ~1.500 kg necesitaría unos 150.000 globos.", "scene_id": "s4", "source_urls": ["https://en.wikipedia.org/wiki/Lifting_gas"], "confidence": "media"},
+    {"statement": "Un elefante africano de ~6 toneladas necesitaría unos 600.000 globos.", "scene_id": "s5",
+     "source_urls": ["https://en.wikipedia.org/wiki/African_elephant"], "confidence": "media"},
+    {"statement": "Una ballena azul de ~150 toneladas necesitaría unos 15 millones de globos.", "scene_id": "s6",
+     "source_urls": ["https://en.wikipedia.org/wiki/Blue_whale"], "confidence": "media"}
+  ]
+}

@@ -159,3 +159,9 @@ body { font-family: var(--font); color: var(--text); -webkit-font-smoothing: ant
 .presenter-wow { position: absolute; right: -40px; top: 10px; width: 92px; height: 92px; border-radius: 50%;
   display: flex; align-items: center; justify-content: center; font-size: 72px; font-weight: 900;
   color: var(--accent-ink); background: var(--sub-hl); border: 6px solid #000; opacity: 0; }
+.presenter-lift { position: absolute; left: 270px; top: 10px; width: 190px; height: 285px; opacity: 0; transform-origin: 50% 100%; }
+.presenter-lift .illu { filter: drop-shadow(0 10px 16px rgba(0,0,0,.4)); }
+.illu-stage.illu-balloons_person, .illu-stage.illu-balloons_car, .illu-stage.illu-balloons_elephant,
+.illu-stage.illu-balloons_whale, .illu-stage.illu-balloon { height: 700px; }
+.illu-lifted { transform: scale(1.5); transform-origin: 50% 55%; }
+.illu-balloon { transform: scale(1.25); transform-origin: 50% 40%; }
