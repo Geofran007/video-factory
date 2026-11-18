@@ -528,7 +528,73 @@
     } };
   }
 
+  // ------------------------------------------------- agua: cosas que se llenan («¿cuántos vasos?»)
+  // Cada forma se llena con agua que sube con oleaje. Formas dibujadas por el proyecto.
+  const CONTAINERS = {
+    glass: { vb: '0 0 400 520', top: 120, bottom: 470, fill: 0.78,
+      shape: 'M80,60 L320,60 L292,470 C290,486 280,494 264,494 L136,494 C120,494 110,486 108,470 Z',
+      extra: () => [] },
+    person: { vb: '0 0 300 600', top: 20, bottom: 590, fill: 0.62,
+      shape: 'M150,20 A52,52 0 1 1 149.9,20 Z M96,140 C120,128 180,128 204,140 L232,330 L206,334 L196,226 L194,590 L160,590 L152,380 L148,380 L140,590 L106,590 L104,226 L94,334 L68,330 Z',
+      extra: () => [] },
+    bathtub: { vb: '0 0 560 420', top: 150, bottom: 330, fill: 0.85,
+      shape: 'M40,150 L520,150 L520,190 C520,290 460,340 380,340 L180,340 C100,340 40,290 40,190 Z',
+      extra: () => [
+        n('path', { d: 'M120,340 L104,400 M440,340 L456,400', stroke: '#c9c9d1', 'stroke-width': 16, 'stroke-linecap': 'round' }),
+        n('path', { d: 'M470,150 L470,70 C470,50 450,40 430,48 L410,58', stroke: '#c9c9d1', 'stroke-width': 14, fill: 'none', 'stroke-linecap': 'round' }),
+        n('rect', { x: 26, y: 136, width: 508, height: 20, rx: 10, fill: '#f3f4f7' }),
+      ] },
+    pool: { vb: '0 0 600 380', top: 70, bottom: 330, fill: 0.88,
+      shape: 'M130,70 L470,70 L580,330 L20,330 Z',
+      extra: () => [
+        ...[1, 2, 3, 4, 5].map((i) => n('path', { d: `M${130 + i * 340 / 6},74 L${20 + i * 560 / 6},326`, stroke: '#ffffff', 'stroke-width': 3, opacity: 0.55, 'stroke-dasharray': '10 14' })),
+        n('path', { d: 'M470,30 L470,110 M496,30 L496,110 M470,52 L496,52 M470,80 L496,80', stroke: '#d9d9e0', 'stroke-width': 6, 'stroke-linecap': 'round' }),
+        n('path', { d: 'M130,70 L470,70 L580,330 L20,330 Z', stroke: '#f3f4f7', 'stroke-width': 12, fill: 'none', 'stroke-linejoin': 'round' }),
+      ] },
+    earth: { vb: '0 0 500 500', top: 30, bottom: 470, fill: 1.0,
+      shape: 'M250,30 A220,220 0 1 1 249.9,30 Z',
+      extra: () => [
+        n('path', { d: 'M150,120 C190,100 230,120 220,160 C212,190 240,210 226,250 C210,290 170,280 160,240 C150,200 110,190 120,150 Z', fill: '#57b65f' }),
+        n('path', { d: 'M300,230 C340,210 390,230 384,280 C378,330 340,380 310,360 C290,340 300,300 286,270 Z', fill: '#57b65f' }),
+        n('path', { d: 'M330,90 C360,80 400,110 390,140 C370,150 340,130 330,110 Z', fill: '#57b65f' }),
+        n('path', { d: 'M250,30 A220,220 0 1 1 249.9,30 Z', stroke: '#bfe6ff', 'stroke-width': 6, fill: 'none', opacity: 0.6 }),
+      ] },
+  };
+
+  function filled(kind) {
+    const c = CONTAINERS[kind];
+    const id = `ill${++uid}`;
+    const [, , W, H] = c.vb.split(' ').map(Number);
+    const water = n('path', { fill: `url(#${id}w)` });
+    const shine = n('path', { stroke: '#ffffff', 'stroke-width': 4, fill: 'none', opacity: 0.5 });
+    const bubbles = Array.from({ length: 8 }, () => n('circle', { r: 5, fill: '#ffffff', opacity: 0.5 }));
+    const svg = n('svg', { viewBox: c.vb, class: `illu illu-water illu-water-${kind}` }, [
+      n('defs', {}, [gradient(`${id}w`, [[0, '#4cc9f0'], [1, '#1d4ed8']]), n('clipPath', { id: `${id}c` }, [n('path', { d: c.shape })])]),
+      n('path', { d: c.shape, fill: kind === 'earth' ? '#0b2a4a' : 'rgba(255,255,255,0.16)' }),
+      n('g', { 'clip-path': `url(#${id}c)` }, [water, shine, ...bubbles]),
+      n('path', { d: c.shape, fill: 'none', stroke: '#ffffff', 'stroke-width': 6, opacity: kind === 'earth' ? 0 : 0.85, 'stroke-linejoin': 'round' }),
+      ...c.extra(),
+    ]);
+    return { svg, animate(t) {
+      // El agua sube durante ~2 s y luego se queda con oleaje.
+      const p = 1 - Math.pow(1 - Math.min(1, t / 2.2), 3);
+      const level = c.bottom - (c.bottom - c.top) * c.fill * p;
+      let d = `M0,${H} L0,${level}`;
+      for (let x = 0; x <= W; x += W / 12) d += ` L${x.toFixed(1)},${(level + Math.sin(x / 38 + t * 4) * 7).toFixed(1)}`;
+      water.setAttribute('d', `${d} L${W},${H} Z`);
+      shine.setAttribute('d', `M${W * 0.2},${level + 14} L${W * 0.42},${level + 10}`);
+      bubbles.forEach((b, i) => {
+        const k = (t * 0.6 + i / bubbles.length) % 1;
+        b.setAttribute('cx', (W * (0.2 + 0.6 * ((i * 37) % 100) / 100) + Math.sin(t * 3 + i) * 6).toFixed(1));
+        b.setAttribute('cy', (c.bottom - (c.bottom - level) * k).toFixed(1));
+        b.setAttribute('opacity', (0.5 * (1 - k) * p).toFixed(3));
+      });
+    } };
+  }
+
   const FACTORY = { shark: () => shark('shark'), ancient_shark: () => shark('ancient_shark'), tree, dinosaur, human,
+    water_glass: () => filled('glass'), water_person: () => filled('person'), water_bathtub: () => filled('bathtub'),
+    water_pool: () => filled('pool'), water_earth: () => filled('earth'),
     balloon, balloons_person: () => lifted('person'), balloons_car: () => lifted('car'),
     balloons_elephant: () => lifted('elephant'), balloons_whale: () => lifted('whale'),
     wizard, trio, hooded, castle, owl, letter, wand, lightning, wizard_hat: wizardHat, magic_stone: magicStone, broom,

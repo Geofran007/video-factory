@@ -1,0 +1,87 @@
+{
+  "topic": "¿Cuántos vasos de agua harían falta para llenar el océano?",
+  "category": "curiosidades",
+  "title": "¿Cuántos vasos de agua llenarían el océano? 🌊",
+  "hook": "¿Cuántos vasos de agua harían falta para llenar el océano? Agárrate, porque el número es absurdo.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "illustration",
+      "narration": "¿Cuántos vasos de agua harían falta para llenar el océano? Agárrate, porque el número es absurdo.",
+      "on_screen_text": "¿Cuántos vasos para llenar el océano?",
+      "highlight_words": ["océano"],
+      "illustration": "water_glass",
+      "icon": "drop", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "big_number",
+      "narration": "Un vaso normal tiene unos doscientos cincuenta mililitros. Empecemos poco a poco.",
+      "on_screen_text": "Un vaso: 250 ml",
+      "highlight_words": ["250"],
+      "big_number": "250 ml",
+      "number_caption": "tiene un vaso normal",
+      "icon": "drop", "sfx": "bubbles", "transition": "zoom"
+    },
+    {
+      "id": "s3", "role": "development", "type": "illustration",
+      "narration": "¡Y esto es increíble! Con el agua de tu cuerpo llenarías más de ciento sesenta vasos.",
+      "on_screen_text": "Tu cuerpo: más de 160 vasos",
+      "highlight_words": ["160"],
+      "illustration": "water_person",
+      "icon": "heart", "sfx": "riser", "transition": "slide"
+    },
+    {
+      "id": "s4", "role": "development", "type": "illustration",
+      "narration": "Una tina llena: unos seiscientos.",
+      "on_screen_text": "Una tina: 600 vasos",
+      "highlight_words": ["600"],
+      "illustration": "water_bathtub",
+      "icon": "drop", "sfx": "bubbles", "transition": "slide"
+    },
+    {
+      "id": "s5", "role": "development", "type": "illustration",
+      "narration": "Una piscina olímpica: diez millones de vasos.",
+      "on_screen_text": "Piscina olímpica: 10 millones de vasos",
+      "highlight_words": ["10", "millones"],
+      "illustration": "water_pool",
+      "icon": "wave", "sfx": "whoosh", "transition": "zoom"
+    },
+    {
+      "id": "s6", "role": "surprise", "type": "illustration",
+      "narration": "¿Y el océano? Más de cinco mil trillones de vasos. Un cinco seguido de veintiún ceros.",
+      "on_screen_text": "El océano: 5 mil trillones de vasos",
+      "highlight_words": ["trillones"],
+      "illustration": "water_earth",
+      "icon": "globe", "sfx": "impact", "transition": "wipe"
+    },
+    {
+      "id": "s7", "role": "closing", "type": "big_number",
+      "narration": "¿Y un perrito como yo? Con más o menos un vaso al día estoy feliz. ¿Qué calculamos después? Déjalo en los comentarios.",
+      "on_screen_text": "Un perrito: 1 vaso al día",
+      "highlight_words": ["1"],
+      "big_number": "1",
+      "number_caption": "vaso al día para un perrito de 5 kilos",
+      "icon": "heart", "sfx": "pop", "transition": "zoom"
+    }
+  ],
+  "description": "Un vaso tiene unos 250 ml. ¿Cuántos harían falta para el agua de tu cuerpo, una tina, una piscina olímpica… y todo el océano? Cálculos aproximados. ¿Qué calculamos después?",
+  "hashtags": ["curiosidades", "oceano", "agua", "ciencia", "sabiasque", "matematicas", "shorts"],
+  "sources": [
+    {"title": "The Water in You: Water and the Human Body", "url": "https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body", "publisher": "USGS"},
+    {"title": "Olympic-size swimming pool", "url": "https://en.wikipedia.org/wiki/Olympic-size_swimming_pool", "publisher": "Wikipedia"},
+    {"title": "How much water is in the ocean?", "url": "https://oceanservice.noaa.gov/facts/oceanwater.html", "publisher": "NOAA"},
+    {"title": "Bathtub", "url": "https://en.wikipedia.org/wiki/Bathtub", "publisher": "Wikipedia"}
+  ],
+  "claims": [
+    {"statement": "El cuerpo de un adulto es ~60 % agua: 70 kg × 0,6 ≈ 42 L ≈ 168 vasos de 250 ml.", "scene_id": "s3",
+     "source_urls": ["https://www.usgs.gov/special-topics/water-science-school/science/water-you-water-and-human-body"], "confidence": "alta"},
+    {"statement": "Una tina típica llena tiene unos 150 L ≈ 600 vasos.", "scene_id": "s4",
+     "source_urls": ["https://en.wikipedia.org/wiki/Bathtub"], "confidence": "media"},
+    {"statement": "Una piscina olímpica tiene ~2.500 m³ (2,5 millones de litros) ≈ 10 millones de vasos.", "scene_id": "s5",
+     "source_urls": ["https://en.wikipedia.org/wiki/Olympic-size_swimming_pool"], "confidence": "alta"},
+    {"statement": "El océano tiene ~1.335 millones de km³ (≈1,3 × 10²¹ L) ≈ 5,3 × 10²¹ vasos.", "scene_id": "s6",
+     "source_urls": ["https://oceanservice.noaa.gov/facts/oceanwater.html"], "confidence": "alta"},
+    {"statement": "Un perro necesita unos 50-60 ml de agua por kilo al día: 5 kg ≈ 250-300 ml.", "scene_id": "s7",
+     "source_urls": [], "confidence": "media"}
+  ]
+}

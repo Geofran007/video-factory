@@ -31,7 +31,8 @@ SfxName = Literal["none", "whoosh", "impact", "riser", "pop", "ding", "bubbles"]
 Illustration = Literal["shark", "ancient_shark", "tree", "dinosaur", "human", "wizard", "trio", "hooded", "castle", "owl",
                        "letter", "wand", "lightning", "wizard_hat", "magic_stone", "broom", "three_headed_dog",
                        "train", "chess_knight", "mirror", "balloon", "balloons_person", "balloons_car",
-                       "balloons_elephant", "balloons_whale"]
+                       "balloons_elephant", "balloons_whale", "water_glass", "water_person", "water_bathtub",
+                       "water_pool", "water_earth"]
 PresenterAction = Literal["none", "float_away"]
 Icon = Literal[
     "brain", "heart", "atom", "globe", "clock", "star", "bolt", "eye", "question",
