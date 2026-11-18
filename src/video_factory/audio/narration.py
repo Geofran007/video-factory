@@ -7,6 +7,7 @@ Cada frase se sintetiza por separado y se mide su duración real; así la línea
 from __future__ import annotations
 
 import hashlib
+import json
 import logging
 import re
 from dataclasses import dataclass
@@ -78,9 +79,12 @@ def build_narration(
 ) -> NarrationResult:
     work_dir.mkdir(parents=True, exist_ok=True)
     plan: list[tuple[str, str, Path]] = []
+    # La configuración de la voz entra en la clave: cambiar tempo/expresividad no reutiliza audios viejos.
+    info = tts.voice_info(voice) if hasattr(tts, "voice_info") else {}
+    vcfg = json.dumps(info, sort_keys=True, default=str)
     for scene in content.scenes:
         for sentence in split_sentences(scene.narration):
-            digest = hashlib.sha1(f"{voice}|{speed}|{sentence}".encode()).hexdigest()[:12]
+            digest = hashlib.sha1(f"{voice}|{speed}|{vcfg}|{sentence}".encode()).hexdigest()[:12]
             plan.append((scene.id, sentence, work_dir / f"{scene.id}_{digest}.wav"))
 
     pending = [SynthesisItem(text, out) for _, text, out in plan if not out.exists()]

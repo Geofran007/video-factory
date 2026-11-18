@@ -14,6 +14,7 @@ from pathlib import Path
 from typing import Any
 
 from ..core.errors import AudioError, ConfigurationError
+from ..core.media import duration_of, run_ffmpeg
 from ..core.interfaces import SynthesisItem, SynthesisResult
 
 
@@ -130,8 +131,19 @@ class ChatterboxTTS:
         if proc.returncode != 0:
             raise AudioError(f"Chatterbox falló: {proc.stderr.strip()[-800:]}")
         raw = json.loads(proc.stdout.strip().splitlines()[-1])
-        # Chatterbox no admite velocidad; se ignora `speed` (el pipeline solo acelera si excede el máximo).
-        return [SynthesisResult(Path(r["out"]), float(r["duration"]), int(r["sample_rate"]), None) for r in raw]
+        # Chatterbox no tiene control de velocidad: se acelera después con atempo (conserva el tono).
+        # `tempo` de la voz (providers.json) se combina con la velocidad pedida.
+        tempo = float(v.get("tempo", 1.0)) * speed
+        results = []
+        for r in raw:
+            out, dur = Path(r["out"]), float(r["duration"])
+            if abs(tempo - 1.0) > 1e-3:
+                fast = out.with_name(out.stem + ".tempo.wav")
+                run_ffmpeg(["-i", str(out), "-af", f"atempo={tempo:.4f}", "-c:a", "pcm_s16le", str(fast)])
+                fast.replace(out)
+                dur = duration_of(out)
+            results.append(SynthesisResult(out, dur, int(r["sample_rate"]), None))
+        return results
 
 
 class MultiEngineTTS:
