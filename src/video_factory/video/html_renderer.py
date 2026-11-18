@@ -25,8 +25,9 @@ from ..core.models import Timeline
 
 log = logging.getLogger("video_factory.video.renderer")
 
+# WebGL (escenas 3D) por software con SwiftShader: igual en Windows y en los runners de GitHub, sin GPU.
 _CHROMIUM_ARGS = ["--disable-gpu", "--font-render-hinting=none", "--disable-lcd-text", "--hide-scrollbars",
-                  "--mute-audio", "--disable-extensions"]
+                  "--mute-audio", "--disable-extensions", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"]
 
 
 def _render_segment(job: dict[str, Any]) -> dict[str, Any]:

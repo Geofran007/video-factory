@@ -168,3 +168,5 @@ body { font-family: var(--font); color: var(--text); -webkit-font-smoothing: ant
 .illu-stage.illu-water_glass { height: 540px; }
 .illu-stage.illu-water_person { height: 680px; }
 .illu-water { filter: drop-shadow(0 20px 30px rgba(0,0,0,.45)); }
+/* scene3d: lienzo WebGL de Three.js */
+.three-canvas { width: 960px; height: 780px; border-radius: 36px; will-change: transform, opacity; }

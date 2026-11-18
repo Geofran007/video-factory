@@ -16,7 +16,9 @@ Category = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades"
 Style = Literal["ciencia", "historia", "misterio", "finanzas", "curiosidades", "oceano", "anime"]
 SceneRole = Literal["hook", "development", "surprise", "closing"]
 SceneType = Literal["title", "statement", "big_number", "list", "comparison", "chart", "icon_fact", "cta",
-                    "illustration", "timeline", "cartoon"]
+                    "illustration", "timeline", "cartoon", "scene3d"]
+# Escenas 3D con Three.js (templates/runtime/three-scenes.js).
+Model3D = Literal["ball", "room", "pool", "pyramid", "earth"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]
@@ -85,6 +87,7 @@ class Scene(BaseModel):
     chart: list[ChartPoint] = Field(default_factory=list,
                                     description="2-5 puntos para chart; para timeline, millones de años atrás")
     illustration: Illustration | None = Field(default=None, description="Ilustración animada para illustration")
+    model3d: Model3D | None = Field(default=None, description="Escena 3D para scene3d")
     setting: Setting | None = Field(default=None, description="Escenario de la caricatura")
     cast: list[CastMember] = Field(default_factory=list, description="1-5 personajes de la caricatura")
     fx: list[Fx] = Field(default_factory=list, description="Efectos de cómic (máx. 6)")
@@ -114,6 +117,8 @@ class Scene(BaseModel):
             raise ValueError(f"escena {self.id}: timeline usa millones de años atrás (valores ≥ 0)")
         if self.type == "illustration" and not self.illustration:
             raise ValueError(f"escena {self.id}: illustration requiere el campo illustration")
+        if self.type == "scene3d" and not self.model3d:
+            raise ValueError(f"escena {self.id}: scene3d requiere el campo model3d")
         if self.type == "cartoon" and (not self.setting or not 1 <= len(self.cast) <= 5 or len(self.fx) > 6):
             raise ValueError(f"escena {self.id}: cartoon requiere setting, entre 1 y 5 personajes y como máximo 6 efectos")
         self.items = [i[:48] for i in self.items]

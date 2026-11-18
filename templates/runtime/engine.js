@@ -336,6 +336,24 @@
       };
     },
 
+    // Escena 3D (Three.js): lienzo WebGL y texto debajo. La animación depende solo del tiempo local.
+    scene3d(root, s) {
+      const cv = el('canvas', 'three-canvas');
+      cv.width = 960; cv.height = 780;
+      const box = el('div', s.role === 'hook' ? 'txt txt-title' : 'txt txt-body');
+      const spans = wordSpans(box, s.on_screen_text, s.highlight_words);
+      root.append(cv, box);
+      fitText(box, s.role === 'hook' ? 84 : 84, 44);
+      const update = VF.three.build(cv, s.model3d);
+      return (lt) => {
+        update(lt);
+        const p = ease.outCubic(prog(lt, 0, 0.5));
+        cv.style.transform = `scale(${(0.9 + 0.1 * p).toFixed(3)})`;
+        cv.style.opacity = clamp(p * 1.5).toFixed(3);
+        animateWords(spans, lt, 0.35, 0.07);
+      };
+    },
+
     // Caricatura: escenario y personajes a pantalla completa; el texto queda como cartel arriba.
     cartoon(root, s) {
       const svg = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
