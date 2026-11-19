@@ -1,0 +1,189 @@
+{
+  "topic": "Facts that sound fake but are true",
+  "category": "curiosidades",
+  "title": "Facts that sound fake… but are 100% real",
+  "hook": "Wait! Your brain is about to discover things that sound made up, but are completely real.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "Wait! Your brain is about to discover things that sound made up, but are completely real.",
+      "on_screen_text": "Sounds fake… but it's real",
+      "highlight_words": [
+        "real"
+      ],
+      "icon": "brain",
+      "sfx": "impact",
+      "transition": "fade"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "timeline",
+      "narration": "Sharks are older than trees. They were already swimming about four hundred fifty million years ago, and the first trees showed up much later.",
+      "on_screen_text": "Sharks: older than trees",
+      "highlight_words": [
+        "older"
+      ],
+      "chart": [
+        {
+          "label": "Sharks",
+          "value": 450,
+          "illustration": "ancient_shark"
+        },
+        {
+          "label": "Trees",
+          "value": 385,
+          "illustration": "tree"
+        },
+        {
+          "label": "Humans",
+          "value": 0.3,
+          "illustration": "human"
+        }
+      ],
+      "icon": "clock",
+      "sfx": "bubbles",
+      "transition": "slide"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "big_number",
+      "narration": "And this is incredible! Octopuses have three hearts and blue blood.",
+      "on_screen_text": "Octopuses: 3 hearts and blue blood",
+      "highlight_words": [
+        "blue"
+      ],
+      "big_number": "3",
+      "number_caption": "hearts in one octopus",
+      "icon": "heart",
+      "sfx": "pop",
+      "transition": "zoom"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "But wait, there's something even stranger: Venus takes longer to spin once than to go around the Sun.",
+      "on_screen_text": "On Venus, one spin lasts longer than a year",
+      "highlight_words": [
+        "Venus"
+      ],
+      "icon": "planet",
+      "sfx": "riser",
+      "transition": "wipe"
+    },
+    {
+      "id": "s5",
+      "role": "surprise",
+      "type": "comparison",
+      "narration": "Wow! Cleopatra lived closer to the Moon landing than to the building of the Great Pyramid.",
+      "on_screen_text": "Cleopatra: closer to the Moon landing",
+      "highlight_words": [
+        "Moon"
+      ],
+      "items": [
+        "Great Pyramid → Cleopatra: ~2,500 years",
+        "Cleopatra → the Moon: ~2,000 years"
+      ],
+      "icon": "landmark",
+      "sfx": "impact",
+      "transition": "slide"
+    },
+    {
+      "id": "s6",
+      "role": "closing",
+      "type": "cta",
+      "narration": "How many of these did you already know? Tell me in the comments and follow me for more amazing facts!",
+      "on_screen_text": "How many did you know?",
+      "highlight_words": [
+        "know?"
+      ],
+      "icon": "question",
+      "sfx": "pop",
+      "transition": "zoom"
+    }
+  ],
+  "description": "Sharks are older than trees, octopuses have three hearts, Venus spins slower than it orbits, and Cleopatra lived closer to the Moon landing than to the pyramids. How many did you know?",
+  "hashtags": [
+    "facts",
+    "didyouknow",
+    "funfacts",
+    "science",
+    "history",
+    "animals",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Shark – Evolution",
+      "url": "https://en.wikipedia.org/wiki/Shark",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Archaeopteris (primeros árboles)",
+      "url": "https://en.wikipedia.org/wiki/Archaeopteris",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Octopus",
+      "url": "https://en.wikipedia.org/wiki/Octopus",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Venus: Facts",
+      "url": "https://science.nasa.gov/venus/venus-facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Cleopatra",
+      "url": "https://en.wikipedia.org/wiki/Cleopatra",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Great Pyramid of Giza",
+      "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los tiburones existen desde hace unos 450 millones de años; los primeros árboles aparecieron hace unos 385 millones de años.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shark",
+        "https://en.wikipedia.org/wiki/Archaeopteris"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los pulpos tienen tres corazones y sangre azul por la hemocianina.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Venus tarda unos 243 días terrestres en rotar sobre su eje y unos 225 en orbitar el Sol.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://science.nasa.gov/venus/venus-facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Gran Pirámide se construyó hacia el 2560 a. C.; Cleopatra murió en el 30 a. C. y la llegada a la Luna fue en 1969.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cleopatra",
+        "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"
+      ],
+      "confidence": "alta"
+    }
+  ],
+  "language": "en"
+}

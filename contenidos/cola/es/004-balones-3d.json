@@ -1,0 +1,73 @@
+{
+  "topic": "¿Cuántos balones de fútbol harían falta para llenar la Tierra?",
+  "category": "curiosidades",
+  "title": "¿Cuántos balones de fútbol llenarían la Tierra? ⚽",
+  "hook": "¿Cuántos balones de fútbol harían falta para llenar la Tierra? Vamos de a poco.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1", "role": "hook", "type": "scene3d", "model3d": "ball",
+      "narration": "¿Cuántos balones de fútbol harían falta para llenar la Tierra? Vamos de a poco.",
+      "on_screen_text": "¿Cuántos balones llenarían la Tierra?",
+      "highlight_words": ["Tierra"],
+      "icon": "globe", "sfx": "impact", "transition": "fade"
+    },
+    {
+      "id": "s2", "role": "development", "type": "scene3d", "model3d": "room",
+      "narration": "¡Y esto es increíble! Para llenar tu cuarto necesitarías unos dos mil quinientos balones.",
+      "on_screen_text": "Tu cuarto: 2.500 balones",
+      "highlight_words": ["2.500"],
+      "icon": "star", "sfx": "pop", "transition": "slide"
+    },
+    {
+      "id": "s3", "role": "development", "type": "scene3d", "model3d": "pool",
+      "narration": "Una piscina olímpica: casi trescientos mil.",
+      "on_screen_text": "Piscina olímpica: casi 300.000",
+      "highlight_words": ["300.000"],
+      "icon": "wave", "sfx": "bubbles", "transition": "zoom"
+    },
+    {
+      "id": "s4", "role": "development", "type": "scene3d", "model3d": "pyramid",
+      "narration": "La Gran Pirámide de Guiza: unos trescientos millones de balones.",
+      "on_screen_text": "Gran Pirámide: 300 millones",
+      "highlight_words": ["300", "millones"],
+      "icon": "landmark", "sfx": "whoosh", "transition": "slide"
+    },
+    {
+      "id": "s5", "role": "surprise", "type": "scene3d", "model3d": "earth",
+      "narration": "¿Y la Tierra? Más de cien mil trillones de balones. Un uno seguido de veintitrés ceros.",
+      "on_screen_text": "La Tierra: 100 mil trillones",
+      "highlight_words": ["trillones"],
+      "icon": "planet", "sfx": "impact", "transition": "wipe"
+    },
+    {
+      "id": "s6", "role": "closing", "type": "big_number",
+      "narration": "¿Y un perrito como yo? Con un solo balón me basta. ¿Qué calculamos después? Déjalo en los comentarios.",
+      "on_screen_text": "Un perrito: 1 balón",
+      "highlight_words": ["1"],
+      "big_number": "1",
+      "number_caption": "balón para un perrito feliz",
+      "icon": "heart", "sfx": "pop", "transition": "zoom"
+    }
+  ],
+  "description": "Un balón de fútbol mide unos 22 cm. ¿Cuántos harían falta para llenar tu cuarto, una piscina olímpica, la Gran Pirámide… y la Tierra entera? Cálculos aproximados. ¿Qué calculamos después?",
+  "hashtags": ["curiosidades", "futbol", "balones", "matematicas", "sabiasque", "ciencia", "shorts"],
+  "sources": [
+    {"title": "Ball (association football) – tamaño 5", "url": "https://en.wikipedia.org/wiki/Ball_(association_football)", "publisher": "Wikipedia"},
+    {"title": "Random close pack (~64 %)", "url": "https://en.wikipedia.org/wiki/Random_close_pack", "publisher": "Wikipedia"},
+    {"title": "Olympic-size swimming pool", "url": "https://en.wikipedia.org/wiki/Olympic-size_swimming_pool", "publisher": "Wikipedia"},
+    {"title": "Great Pyramid of Giza", "url": "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza", "publisher": "Wikipedia"},
+    {"title": "Earth fact sheet", "url": "https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html", "publisher": "NASA"}
+  ],
+  "claims": [
+    {"statement": "Un balón talla 5 mide ~22 cm (≈5,6 L); apilados al azar ocupan ~64 % del espacio: ≈115 balones por m³.", "scene_id": "s2",
+     "source_urls": ["https://en.wikipedia.org/wiki/Ball_(association_football)", "https://en.wikipedia.org/wiki/Random_close_pack"], "confidence": "media"},
+    {"statement": "Un cuarto de 3 × 3 × 2,5 m (22,5 m³) ≈ 2.580 balones.", "scene_id": "s2", "source_urls": [], "confidence": "media"},
+    {"statement": "Piscina olímpica ~2.500 m³ ≈ 287.000 balones.", "scene_id": "s3",
+     "source_urls": ["https://en.wikipedia.org/wiki/Olympic-size_swimming_pool"], "confidence": "media"},
+    {"statement": "Gran Pirámide ~2,6 millones de m³ ≈ 300 millones de balones.", "scene_id": "s4",
+     "source_urls": ["https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"], "confidence": "media"},
+    {"statement": "La Tierra ~1,083 × 10²¹ m³ ≈ 1,2 × 10²³ balones.", "scene_id": "s5",
+     "source_urls": ["https://nssdc.gsfc.nasa.gov/planetary/factsheet/earthfact.html"], "confidence": "media"}
+  ]
+}

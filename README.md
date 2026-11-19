@@ -142,7 +142,7 @@ src/video_factory/
 ├── timeline/     timeline_builder · subtitle_generator
 ├── video/        html_renderer (Playwright) · video_composer (FFmpeg)
 ├── validation/   sources (verificación de datos) · media_qa (QA del MP4)
-├── publishers/   publisher_interface (Fase 2, sin implementación)
+├── publishers/   publisher_interface y youtube (YouTube Data API v3)
 ├── storage/      history (SQLite) · local_storage
 ├── web/          app (FastAPI) · static/ (interfaz)
 └── cli.py
@@ -262,8 +262,24 @@ gh secret set VOICE_PASSPHRASE
   MP4, guion, metadatos y reportes como artefacto (7 días). Requiere el secreto `ANTHROPIC_API_KEY`
   (*Settings → Secrets and variables → Actions*). Sin temática usa el ejemplo y no llama a la IA. Con la voz `mi_voz`
   también requiere `VOICE_PASSPHRASE`; el clip descifrado se borra al terminar.
-- Preparado para Fase 2: bloque `schedule` comentado, comando `batch`, `publishers/publisher_interface.py`,
-  `metadata.json → platforms`, `storage` intercambiable y `concurrency` para no solapar ejecuciones.
+- `.github/workflows/publish.yml`: **publicación en YouTube** (autorizada por el autor el 2026-11-19, cambio de la
+  regla 8 de la Fase 1). Cada día a las 13:00 UTC toma el primer guion de `contenidos/cola/es/` (Leo curioso) y de
+  `contenidos/cola/en/` (Curious Leo), genera el video con `voz_zueria` y lo sube como **privado**; luego mueve el
+  guion a `contenidos/publicados/<idioma>/` con el enlace del video. Si el control de calidad falla, no sube nada.
+  También se puede lanzar a mano (*Run workflow*) con la opción «prueba» para generar sin subir.
+
+### Publicar en YouTube
+
+1. Google Cloud: proyecto con *YouTube Data API v3*, pantalla de consentimiento **Externa en producción** (página
+   principal y privacidad en https://geofran007.github.io/curious-leo-legal/) y credencial OAuth *App de escritorio*
+   guardada en `credenciales/client_secret.json` (excluida de git).
+2. `pip install -e ".[youtube]"` y, por canal, `python scripts/youtube_auth.py --canal es|en`: elige el canal en el
+   navegador y el script guarda `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN_<ES|EN>` y
+   `YT_CHANNEL_ID_<ES|EN>` como secretos de GitHub sin mostrarlos.
+3. Pon guiones en las colas con prefijo de orden (`001-…json`). El campo `language` del guion debe coincidir con
+   la cola. Los videos se declaran como contenido sintético (voz clonada) y «no es para niños».
+4. Mientras la API no pase la auditoría de YouTube, los videos quedan privados: publícalos o prográmalos en
+   YouTube Studio. Cuota: ~6 subidas por día por proyecto.
 
 ## Solución de errores
 

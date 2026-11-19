@@ -1,0 +1,138 @@
+name: Publicar en YouTube
+
+# Cada día toma el siguiente guion de contenidos/cola/es (Leo curioso) y contenidos/cola/en (Curious Leo),
+# genera el video y lo sube como PRIVADO. El autor lo revisa y lo publica o programa en YouTube Studio.
+# Publicación automática autorizada por el autor el 2026-11-19 (cambio de la regla 8 de la Fase 1).
+on:
+  schedule:
+    - cron: "0 13 * * *"   # 13:00 UTC = 8:00 en Ecuador/Colombia/Perú, 8:00-9:00 en el este de EE. UU.
+  workflow_dispatch:
+    inputs:
+      canales:
+        description: "Canales a procesar"
+        type: choice
+        options: [ambos, es, en]
+        default: ambos
+      visibilidad:
+        description: "Visibilidad en YouTube (sin auditoría de la API, YouTube fuerza privado)"
+        type: choice
+        options: [private, unlisted, public]
+        default: private
+      prueba:
+        description: "Solo generar (no subir ni mover el guion)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write   # para mover el guion usado a contenidos/publicados/
+
+concurrency:
+  group: publish-youtube
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 200
+    env:
+      VF_MAX_JOB_SECONDS: "9000"
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN_ES: ${{ secrets.YT_REFRESH_TOKEN_ES }}
+      YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
+      YT_CHANNEL_ID_ES: ${{ secrets.YT_CHANNEL_ID_ES }}
+      YT_CHANNEL_ID_EN: ${{ secrets.YT_CHANNEL_ID_EN }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: ¿Hay guiones en la cola?
+        id: cola
+        run: |
+          n=$(ls contenidos/cola/es/*.json contenidos/cola/en/*.json 2>/dev/null | wc -l)
+          echo "pendientes=$n" >> "$GITHUB_OUTPUT"
+          echo "Guiones en cola: $n"
+      - uses: actions/setup-python@v5
+        if: steps.cola.outputs.pendientes != '0'
+        with:
+          python-version: "3.12"
+          cache: pip
+      - if: steps.cola.outputs.pendientes != '0'
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+      - if: steps.cola.outputs.pendientes != '0'
+        run: pip install -e ".[voice,youtube]"
+      - if: steps.cola.outputs.pendientes != '0'
+        run: python -m playwright install --with-deps chromium
+      - if: steps.cola.outputs.pendientes != '0'
+        uses: actions/cache@v4
+        with:
+          path: models/piper
+          key: piper-voices-${{ hashFiles('config/providers.json') }}
+      - if: steps.cola.outputs.pendientes != '0'
+        run: python scripts/setup_voices.py
+      - name: Caché de Chatterbox (entorno y modelo ~3 GB)
+        if: steps.cola.outputs.pendientes != '0'
+        uses: actions/cache@v4
+        with:
+          path: |
+            .venv-chatterbox
+            models/chatterbox-es-latam
+          key: chatterbox-0.1.7-torch2.6.0-${{ runner.os }}-${{ hashFiles('scripts/setup_chatterbox.py') }}
+      - name: Instalar Chatterbox
+        if: steps.cola.outputs.pendientes != '0'
+        run: |
+          if [ ! -x .venv-chatterbox/bin/python ]; then
+            python -m venv .venv-chatterbox
+            .venv-chatterbox/bin/python -m pip install torch==2.6.0 torchaudio==2.6.0 --index-url https://download.pytorch.org/whl/cpu
+            .venv-chatterbox/bin/python -m pip install chatterbox-tts==0.1.7
+          fi
+          .venv-chatterbox/bin/python scripts/setup_chatterbox.py
+      - name: Descifrar la voz (voz_zueria)
+        if: steps.cola.outputs.pendientes != '0'
+        env:
+          VOICE_PASSPHRASE: ${{ secrets.VOICE_PASSPHRASE }}
+        run: |
+          mkdir -p models/voz-zueria
+          gpg --batch --quiet --pinentry-mode loopback --passphrase-fd 0 \
+            --output models/voz-zueria/referencia.wav --decrypt voces/voz-zueria.wav.gpg <<< "$VOICE_PASSPHRASE"
+
+      - name: Generar y subir
+        if: steps.cola.outputs.pendientes != '0'
+        env:
+          CANALES: ${{ inputs.canales || 'ambos' }}
+          VISIBILIDAD: ${{ inputs.visibilidad || 'private' }}
+          PRUEBA: ${{ inputs.prueba || false }}
+        run: |
+          case "$CANALES" in ambos) list="es en" ;; *) list="$CANALES" ;; esac
+          extra=(); [ "$PRUEBA" = "true" ] && extra=(--dry-run)
+          status=0
+          for c in $list; do
+            echo "::group::Canal $c"
+            python scripts/publish_queue.py --canal "$c" --visibility "$VISIBILIDAD" "${extra[@]}" || status=1
+            echo "::endgroup::"
+          done
+          exit $status
+
+      - name: Guardar la cola actualizada
+        if: always() && steps.cola.outputs.pendientes != '0'
+        run: |
+          git config user.name "video-factory[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A contenidos/cola contenidos/publicados
+          if git diff --cached --quiet; then echo "Sin cambios en la cola."; exit 0; fi
+          git commit -m "chore(publicar): guiones subidos a YouTube $(date -u +%F)"
+          git pull --rebase --quiet && git push
+
+      - name: Subir resultado
+        if: always() && steps.cola.outputs.pendientes != '0'
+        uses: actions/upload-artifact@v4
+        with:
+          name: publicado-${{ github.run_id }}
+          path: |
+            output/*/video.mp4
+            output/*/metadata.json
+            output/*/report.json
+            output/*/job.log
+          retention-days: 7
+
+      - name: Borrar la voz descifrada
+        if: always()
+        run: rm -f models/voz-zueria/referencia.wav

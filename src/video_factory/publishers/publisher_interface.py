@@ -1,8 +1,7 @@
-"""Interfaz de publicación (preparada para la Fase 2; sin implementaciones en esta fase).
+"""Interfaz de publicación.
 
-En la Fase 2 se añadirán YouTubeShortsPublisher (YouTube Data API v3) y TikTokPublisher
-(Content Posting API), cada uno con sus credenciales OAuth por canal en variables de entorno
-o en un gestor de secretos. Aquí no hay llamadas simuladas: publicar lanza NotImplementedError.
+Implementado: YouTube (publishers/youtube.py, YouTube Data API v3, subida como privado por defecto).
+Pendiente: TikTok (Content Posting API). Credenciales OAuth por canal en variables de entorno.
 """
 
 from __future__ import annotations
@@ -43,8 +42,8 @@ class Publisher(Protocol):
     def publish(self, request: PublishRequest) -> PublishResult: ...
 
 
-def get_publisher(platform: str) -> Publisher:
-    raise NotImplementedError(
-        f"La publicación en '{platform}' no está implementada en la Fase 1. "
-        "Los metadatos ya se generan en metadata.json → platforms."
-    )
+def get_publisher(platform: str, channel: str = "es") -> Publisher:
+    if platform == "youtube":
+        from .youtube import YouTubePublisher
+        return YouTubePublisher(channel)
+    raise NotImplementedError(f"La publicación en '{platform}' todavía no está implementada.")
