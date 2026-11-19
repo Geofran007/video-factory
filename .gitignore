@@ -30,3 +30,7 @@ entrenamiento/
 Thumbs.db
 .vscode/
 .idea/
+
+# Credenciales OAuth de Google/YouTube (nunca al repositorio)
+credenciales/
+client_secret*.json
