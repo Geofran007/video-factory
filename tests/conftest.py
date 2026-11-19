@@ -56,7 +56,7 @@ class FakeTTS:
     def __init__(self) -> None:
         self.calls = 0
 
-    def synthesize_many(self, items, *, voice, speed=1.0):
+    def synthesize_many(self, items, *, voice, speed=1.0, language="es"):
         self.calls += 1
         out = []
         for it in items:

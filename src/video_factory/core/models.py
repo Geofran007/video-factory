@@ -151,6 +151,7 @@ class VideoContent(BaseModel):
     hashtags: list[str]
     sources: list[Source] = Field(default_factory=list)
     claims: list[Claim] = Field(default_factory=list)
+    language: Literal["es", "en"] = Field(default="es", description="Idioma de la narración y los textos")
     presenter: str | None = Field(default=None, pattern=r"^[a-z0-9_-]{1,40}$",
                                   description="Presentador fijo arriba: templates/presenters/<nombre>.png")
 
@@ -236,6 +237,7 @@ class Timeline(BaseModel):
     narration_file: str
     voice_attribution: str | None = None
     presenter: str | None = None
+    language: str = "es"
 
     @property
     def frame_count(self) -> int:

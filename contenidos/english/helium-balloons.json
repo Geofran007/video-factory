@@ -1,0 +1,186 @@
+{
+  "topic": "How many helium balloons would it take to lift you?",
+  "category": "curiosidades",
+  "title": "How many balloons would it take to lift you? 🎈",
+  "hook": "How many helium balloons would it take to lift you off the ground? Spoiler: a lot.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "illustration",
+      "narration": "How many helium balloons would it take to lift you off the ground? Spoiler: a lot.",
+      "on_screen_text": "How many balloons to lift you?",
+      "highlight_words": [
+        "balloons"
+      ],
+      "illustration": "balloon",
+      "icon": "question",
+      "sfx": "impact",
+      "transition": "fade"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "A party balloon lifts only about ten grams. That's less than two sheets of paper.",
+      "on_screen_text": "One balloon lifts about 10 grams",
+      "highlight_words": [
+        "10"
+      ],
+      "big_number": "10 g",
+      "number_caption": "lifted by one party balloon",
+      "icon": "drop",
+      "sfx": "pop",
+      "transition": "zoom"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "illustration",
+      "narration": "And this is incredible! To lift a one hundred fifty pound person, you'd need about seven thousand balloons.",
+      "on_screen_text": "One person: 7,000 balloons",
+      "highlight_words": [
+        "7,000"
+      ],
+      "illustration": "balloons_person",
+      "icon": "star",
+      "sfx": "riser",
+      "transition": "slide"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "illustration",
+      "narration": "A car? About one hundred fifty thousand.",
+      "on_screen_text": "A car: 150,000 balloons",
+      "highlight_words": [
+        "150,000"
+      ],
+      "illustration": "balloons_car",
+      "icon": "rocket",
+      "sfx": "whoosh",
+      "transition": "slide"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "illustration",
+      "narration": "An elephant: six hundred thousand.",
+      "on_screen_text": "An elephant: 600,000 balloons",
+      "highlight_words": [
+        "600,000"
+      ],
+      "illustration": "balloons_elephant",
+      "icon": "globe",
+      "sfx": "pop",
+      "transition": "zoom"
+    },
+    {
+      "id": "s6",
+      "role": "surprise",
+      "type": "illustration",
+      "narration": "And a blue whale… fifteen million balloons!",
+      "on_screen_text": "Blue whale: 15 million balloons",
+      "highlight_words": [
+        "15",
+        "million"
+      ],
+      "illustration": "balloons_whale",
+      "icon": "wave",
+      "sfx": "impact",
+      "transition": "wipe"
+    },
+    {
+      "id": "s7",
+      "role": "closing",
+      "type": "big_number",
+      "narration": "And a little dog like me? Just five hundred balloons… Woof, I'm flying away! What should we lift next? Tell me in the comments.",
+      "on_screen_text": "A puppy: 500 balloons",
+      "highlight_words": [
+        "500"
+      ],
+      "big_number": "500",
+      "number_caption": "balloons for an 11-pound puppy",
+      "icon": "heart",
+      "sfx": "pop",
+      "transition": "zoom",
+      "presenter_action": "float_away"
+    }
+  ],
+  "description": "A party balloon lifts about 10 grams. How many would it take to lift you, a car, an elephant or a blue whale? Rough estimates using helium's lift. What should we lift next?",
+  "hashtags": [
+    "balloons",
+    "helium",
+    "science",
+    "physics",
+    "didyouknow",
+    "funfacts",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Helium – Lifting gas",
+      "url": "https://en.wikipedia.org/wiki/Lifting_gas",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gas balloon",
+      "url": "https://en.wikipedia.org/wiki/Gas_balloon",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "African elephant",
+      "url": "https://en.wikipedia.org/wiki/African_elephant",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Blue whale",
+      "url": "https://en.wikipedia.org/wiki/Blue_whale",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El helio levanta cerca de 1 gramo por litro; un globo de fiesta de ~28 cm (~11,5 L) levanta unos 10 g netos.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lifting_gas"
+      ],
+      "confidence": "media"
+    },
+    {
+      "statement": "70 kg / 10 g ≈ 7.000 globos.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lifting_gas"
+      ],
+      "confidence": "media"
+    },
+    {
+      "statement": "Un auto de ~1.500 kg necesitaría unos 150.000 globos.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lifting_gas"
+      ],
+      "confidence": "media"
+    },
+    {
+      "statement": "Un elefante africano de ~6 toneladas necesitaría unos 600.000 globos.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/African_elephant"
+      ],
+      "confidence": "media"
+    },
+    {
+      "statement": "Una ballena azul de ~150 toneladas necesitaría unos 15 millones de globos.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Blue_whale"
+      ],
+      "confidence": "media"
+    }
+  ],
+  "language": "en"
+}

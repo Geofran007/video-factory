@@ -46,11 +46,14 @@ class PiperTTS:
             )
         return model
 
-    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0) -> list[SynthesisResult]:
+    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0,
+                        language: str = "es") -> list[SynthesisResult]:
         if not items:
             return []
         if not 0.5 <= speed <= 2.0:
             raise AudioError(f"Velocidad fuera de rango: {speed}")
+        if language != "es":
+            raise ConfigurationError(f"Las voces Piper del proyecto solo hablan español; para '{language}' usa una voz Chatterbox")
         job = {
             "model": str(self._model_path(voice)),
             "length_scale": round(1.0 / speed, 4),
@@ -108,14 +111,15 @@ class ChatterboxTTS:
     def voice_info(self, voice: str) -> dict[str, Any]:
         return self.voices[voice]
 
-    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0) -> list[SynthesisResult]:
+    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0,
+                        language: str = "es") -> list[SynthesisResult]:
         if not items:
             return []
         if voice not in self.available_voices():
             raise ConfigurationError("Chatterbox no está instalado (ver README: scripts/setup_chatterbox.py)")
         v = self.voices[voice]
         clip = self._audio_prompt(voice)
-        job = {"model_dir": str(self._model_dir(voice)), "language": "es",
+        job = {"model_dir": str(self._model_dir(voice)), "language": language,
                "audio_prompt": str(clip) if clip else None,
                "exaggeration": v.get("exaggeration", 0.5), "cfg_weight": v.get("cfg_weight", 0.5),
                "temperature": v.get("temperature", 0.8), "seed": v.get("seed", 1234),
@@ -169,8 +173,9 @@ class MultiEngineTTS:
     def voice_info(self, voice: str) -> dict[str, Any]:
         return self._engine(voice).voice_info(voice)
 
-    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0) -> list[SynthesisResult]:
-        return self._engine(voice).synthesize_many(items, voice=voice, speed=speed)
+    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0,
+                        language: str = "es") -> list[SynthesisResult]:
+        return self._engine(voice).synthesize_many(items, voice=voice, speed=speed, language=language)
 
 
 def create_tts(tts_config: dict[str, Any], root: Path, models_dir: Path) -> MultiEngineTTS:

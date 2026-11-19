@@ -91,4 +91,5 @@ def build_timeline(
         narration_file=narration.path.name,
         voice_attribution=voice_attribution,
         presenter=content.presenter,
+        language=content.language,
     )

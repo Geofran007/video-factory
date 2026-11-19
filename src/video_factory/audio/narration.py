@@ -84,11 +84,11 @@ def build_narration(
     vcfg = json.dumps(info, sort_keys=True, default=str)
     for scene in content.scenes:
         for sentence in split_sentences(scene.narration):
-            digest = hashlib.sha1(f"{voice}|{speed}|{vcfg}|{sentence}".encode()).hexdigest()[:12]
+            digest = hashlib.sha1(f"{voice}|{speed}|{vcfg}|{content.language}|{sentence}".encode()).hexdigest()[:12]
             plan.append((scene.id, sentence, work_dir / f"{scene.id}_{digest}.wav"))
 
     pending = [SynthesisItem(text, out) for _, text, out in plan if not out.exists()]
-    results = {r.path: r for r in tts.synthesize_many(pending, voice=voice, speed=speed)}
+    results = {r.path: r for r in tts.synthesize_many(pending, voice=voice, speed=speed, language=content.language)}
 
     lead_in = float(audio_cfg["lead_in_s"])
     pause = float(audio_cfg["sentence_pause_s"])

@@ -15,7 +15,7 @@ def compose(timeline: Timeline, video: Path, audio: Path, out: Path) -> Path:
         "-map", "0:v:0", "-map", "1:a:0",
         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-ar", "48000",
         "-t", duration, "-movflags", "+faststart",
-        "-metadata", f"title={timeline.title}", "-metadata", "language=spa",
+        "-metadata", f"title={timeline.title}", "-metadata", f"language={ {'en': 'eng'}.get(timeline.language, 'spa') }",
         str(out),
     ])
     return out

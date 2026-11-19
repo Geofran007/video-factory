@@ -68,7 +68,8 @@ class TTSProvider(Protocol):
 
     name: str
 
-    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0) -> list[SynthesisResult]: ...
+    def synthesize_many(self, items: list[SynthesisItem], *, voice: str, speed: float = 1.0,
+                        language: str = "es") -> list[SynthesisResult]: ...
 
     def available_voices(self) -> dict[str, dict[str, Any]]: ...
 
