@@ -23,7 +23,7 @@ jobs:
         run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
 
       - name: Dependencias de Python
-        run: pip install -e ".[voice,dev]"
+        run: pip install -e ".[voice,dev,youtube]"
 
       - name: Chromium para Playwright
         run: python -m playwright install --with-deps chromium
