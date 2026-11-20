@@ -1,0 +1,157 @@
+{
+  "topic": "Animal facts",
+  "category": "curiosidades",
+  "title": "Animals with real superpowers 🦩",
+  "hook": "Wait! These animals have superpowers that sound made up.",
+  "language": "en",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "Wait! These animals have superpowers that sound made up.",
+      "on_screen_text": "Animals with superpowers",
+      "highlight_words": [
+        "superpowers"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "icon": "star"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "Flamingos aren't born pink: they turn pink from what they eat, like algae and shrimp.",
+      "on_screen_text": "Flamingos are pink from their food",
+      "highlight_words": [
+        "pink"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "icon": "drop"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "big_number",
+      "narration": "And this is incredible! Koalas can sleep up to twenty hours a day.",
+      "on_screen_text": "Koalas: up to 20 hours of sleep",
+      "highlight_words": [
+        "20"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "big_number": "20 h",
+      "number_caption": "a koala can sleep each day",
+      "icon": "clock"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "big_number",
+      "narration": "But wait, here's something faster: some hummingbirds flap their wings about eighty times per second.",
+      "on_screen_text": "Hummingbird: 80 flaps per second",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "big_number": "80",
+      "number_caption": "wing flaps per second",
+      "icon": "bolt"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "Wow! And octopuses have three hearts. No wonder they always look so in love.",
+      "on_screen_text": "Octopuses: 3 hearts",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "icon": "heart"
+    },
+    {
+      "id": "s6",
+      "role": "closing",
+      "type": "cta",
+      "narration": "What animal should I look into next? Tell me in the comments and follow me.",
+      "on_screen_text": "Which animal is next?",
+      "highlight_words": [
+        "animal"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "Flamingos turned pink by food, koalas sleeping 20 hours, hummingbirds flapping 80 times a second and octopuses with three hearts. Which animal is next?",
+  "hashtags": [
+    "animals",
+    "nature",
+    "facts",
+    "didyouknow",
+    "funfacts",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Flamingo – coloration",
+      "url": "https://en.wikipedia.org/wiki/Flamingo",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Koala",
+      "url": "https://en.wikipedia.org/wiki/Koala",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hummingbird",
+      "url": "https://en.wikipedia.org/wiki/Hummingbird",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Octopus",
+      "url": "https://en.wikipedia.org/wiki/Octopus",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los flamencos son rosados por los carotenoides de su alimentación.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Flamingo"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los koalas duermen entre 18 y 22 horas al día.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Koala"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Algunos colibríes baten las alas hasta unas 80 veces por segundo.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los pulpos tienen tres corazones.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

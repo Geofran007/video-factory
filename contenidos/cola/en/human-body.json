@@ -1,0 +1,134 @@
+{
+  "topic": "Human body facts",
+  "category": "ciencia",
+  "title": "Your body is more amazing than you think 🫀",
+  "hook": "Wait! Your own body hides facts that sound like science fiction.",
+  "language": "en",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "Wait! Your own body hides facts that sound like science fiction.",
+      "on_screen_text": "Your body is science fiction",
+      "highlight_words": [
+        "fiction"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "icon": "heart"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "You're made of about thirty-seven trillion cells. If you counted one per second, it would take you over a million years.",
+      "on_screen_text": "37 trillion cells",
+      "highlight_words": [
+        "37"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "big_number": "37",
+      "number_caption": "trillion cells in your body",
+      "icon": "dna"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "comparison",
+      "narration": "And this is incredible! You were born with about three hundred bones, but as an adult you have two hundred six, because many fuse together.",
+      "on_screen_text": "Baby: ~300 bones · Adult: 206",
+      "highlight_words": [
+        "206"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "items": [
+        "Baby: about 300 bones",
+        "Adult: 206 bones"
+      ],
+      "icon": "star"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "scene3d",
+      "narration": "But wait, it gets stranger: laid end to end, your blood vessels would stretch about sixty thousand miles. That's more than twice around the Earth!",
+      "on_screen_text": "Your blood vessels: 2× around Earth",
+      "highlight_words": [
+        "2×"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "model3d": "earth",
+      "icon": "globe"
+    },
+    {
+      "id": "s5",
+      "role": "closing",
+      "type": "cta",
+      "narration": "What body part should I look into next? Tell me in the comments and follow me.",
+      "on_screen_text": "What should we explore next?",
+      "highlight_words": [
+        "next?"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "37 trillion cells, 300 bones at birth and blood vessels that would wrap around Earth twice. What should we explore next?",
+  "hashtags": [
+    "humanbody",
+    "science",
+    "biology",
+    "didyouknow",
+    "funfacts",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "An estimation of the number of cells in the human body (2013)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23829164/",
+      "publisher": "Annals of Human Biology"
+    },
+    {
+      "title": "Human skeleton",
+      "url": "https://en.wikipedia.org/wiki/Human_skeleton",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Blood vessels",
+      "url": "https://my.clevelandclinic.org/health/body/21640-blood-vessels",
+      "publisher": "Cleveland Clinic"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El cuerpo humano tiene unos 37 billones de células (estimación de 2013).",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/23829164/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un adulto tiene 206 huesos; un bebé nace con unos 270-300 que luego se fusionan.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Human_skeleton"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los vasos sanguíneos de un adulto medirían unos 100.000 km en línea.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://my.clevelandclinic.org/health/body/21640-blood-vessels"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

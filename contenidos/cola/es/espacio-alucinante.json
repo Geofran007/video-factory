@@ -1,0 +1,159 @@
+{
+  "topic": "Curiosidades del espacio",
+  "category": "ciencia",
+  "title": "Datos del espacio que te vuelan la cabeza 🚀",
+  "hook": "¡Espera! Estos datos del espacio te van a volar la cabeza.",
+  "language": "es",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "narration": "¡Espera! Estos datos del espacio te van a volar la cabeza.",
+      "on_screen_text": "Datos del espacio alucinantes",
+      "highlight_words": [
+        "espacio"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "model3d": "earth",
+      "icon": "planet"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "La luz del Sol tarda unos ocho minutos en llegar a la Tierra. Cuando miras el Sol, lo ves como era hace ocho minutos.",
+      "on_screen_text": "La luz del Sol tarda 8 minutos",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "big_number": "8 min",
+      "number_caption": "tarda la luz del Sol en llegar",
+      "icon": "star"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "big_number",
+      "narration": "¡Y esto es increíble! Dentro de Júpiter cabrían más de mil trescientas Tierras.",
+      "on_screen_text": "Júpiter: caben 1.300 Tierras",
+      "highlight_words": [
+        "1.300"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "big_number": "1.300",
+      "number_caption": "Tierras cabrían en Júpiter",
+      "icon": "planet"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "icon_fact",
+      "narration": "Pero espera, hay algo más extraño: un pedacito de estrella de neutrones del tamaño de un terrón de azúcar pesaría unos mil millones de toneladas.",
+      "on_screen_text": "Un terrón de estrella: mil millones de toneladas",
+      "highlight_words": [
+        "mil",
+        "millones"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "icon": "atom"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "¡Guau! Y como en la Luna no hay viento ni lluvia, las huellas de los astronautas pueden durar muchísimo tiempo.",
+      "on_screen_text": "Las huellas en la Luna no se borran",
+      "highlight_words": [
+        "Luna"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "icon": "rocket"
+    },
+    {
+      "id": "s6",
+      "role": "closing",
+      "type": "cta",
+      "narration": "¿Qué dato del espacio quieres que investigue? Déjamelo en los comentarios y sígueme.",
+      "on_screen_text": "¿Qué investigamos después?",
+      "highlight_words": [
+        "después?"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "La luz del Sol tarda 8 minutos, en Júpiter caben más de 1.300 Tierras y una cucharadita de estrella de neutrones pesa como una montaña. ¿Qué investigamos después?",
+  "hashtags": [
+    "espacio",
+    "astronomia",
+    "ciencia",
+    "sabiasque",
+    "nasa",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Sun – distance and light time",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Jupiter facts",
+      "url": "https://science.nasa.gov/jupiter/jupiter-facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Neutron stars",
+      "url": "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Apollo footprints",
+      "url": "https://www.nasa.gov/history/apollo-11-mission-overview/",
+      "publisher": "NASA"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La luz del Sol tarda unos 8 minutos en llegar a la Tierra.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En el volumen de Júpiter cabrían más de 1.300 Tierras.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://science.nasa.gov/jupiter/jupiter-facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Una porción del tamaño de un terrón de azúcar de estrella de neutrones pesaría unos mil millones de toneladas.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Sin viento ni lluvia, las huellas en la Luna pueden durar muchísimo tiempo.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://www.nasa.gov/history/apollo-11-mission-overview/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

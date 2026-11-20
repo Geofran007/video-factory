@@ -4,7 +4,7 @@
     python scripts/publish_queue.py --canal en            # Curious Leo
     python scripts/publish_queue.py --canal en --dry-run  # genera, pero no sube ni mueve nada
 
-Cola:       contenidos/cola/<es|en>/*.json   (se toma el primero en orden alfabético: usa prefijos 001-, 002-…)
+Cola:       contenidos/cola/<es|en>/*.json   (por defecto se elige uno al azar; con --orden alfabetico, el primero)
 Publicados: contenidos/publicados/<es|en>/<fecha>-<nombre>.json + <fecha>-<nombre>.youtube.json
 
 Reglas de seguridad:
@@ -18,6 +18,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import random
 import subprocess
 import sys
 from pathlib import Path
@@ -46,6 +47,8 @@ def main() -> int:
     ap.add_argument("--voice", default="voz_zueria")
     ap.add_argument("--visibility", choices=["private", "unlisted", "public"], default="private")
     ap.add_argument("--dry-run", action="store_true", help="Genera el video pero no lo sube ni mueve el guion")
+    ap.add_argument("--orden", choices=["aleatorio", "alfabetico"], default="aleatorio",
+                    help="aleatorio: temas variados cada día; alfabetico: respeta los prefijos 001-, 002-…")
     args = ap.parse_args()
 
     queue = ROOT / "contenidos" / "cola" / args.canal
@@ -53,7 +56,9 @@ def main() -> int:
     if not pending:
         print(f"Cola vacía ({queue.relative_to(ROOT)}): no hay nada que publicar hoy.")
         return 0
-    content = pending[0]
+    # Azar reproducible por día y canal: si el trabajo se reintenta el mismo día, elige el mismo guion.
+    rng = random.Random(f"{dt.date.today().isoformat()}-{args.canal}")
+    content = rng.choice(pending) if args.orden == "aleatorio" else pending[0]
     data = json.loads(content.read_text(encoding="utf-8"))
     if data.get("language", "es") != args.canal:
         raise SystemExit(f"{content.name} está en '{data.get('language', 'es')}' y el canal es '{args.canal}'.")

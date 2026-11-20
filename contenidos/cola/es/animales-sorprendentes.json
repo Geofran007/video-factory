@@ -1,0 +1,157 @@
+{
+  "topic": "Curiosidades de animales",
+  "category": "curiosidades",
+  "title": "Animales con superpoderes reales 🦩",
+  "hook": "¡Espera! Estos animales tienen superpoderes que parecen inventados.",
+  "language": "es",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "¡Espera! Estos animales tienen superpoderes que parecen inventados.",
+      "on_screen_text": "Animales con superpoderes",
+      "highlight_words": [
+        "superpoderes"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "icon": "star"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "Los flamencos no nacen rosados: se vuelven rosados por lo que comen, como algas y camarones.",
+      "on_screen_text": "Los flamencos son rosados por su comida",
+      "highlight_words": [
+        "rosados"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "icon": "drop"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "big_number",
+      "narration": "¡Y esto es increíble! Los koalas pueden dormir hasta veinte horas al día.",
+      "on_screen_text": "Koalas: hasta 20 horas de sueño",
+      "highlight_words": [
+        "20"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "big_number": "20 h",
+      "number_caption": "puede dormir un koala al día",
+      "icon": "clock"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "big_number",
+      "narration": "Pero espera, hay algo más rápido: algunos colibríes baten sus alas unas ochenta veces por segundo.",
+      "on_screen_text": "Colibrí: 80 aleteos por segundo",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "big_number": "80",
+      "number_caption": "aleteos por segundo",
+      "icon": "bolt"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "¡Guau! Y los pulpos tienen tres corazones. Ya sabes por qué siempre parecen tan enamorados.",
+      "on_screen_text": "Pulpos: 3 corazones",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "icon": "heart"
+    },
+    {
+      "id": "s6",
+      "role": "closing",
+      "type": "cta",
+      "narration": "¿Qué animal quieres que investigue? Déjamelo en los comentarios y sígueme.",
+      "on_screen_text": "¿Qué animal sigue?",
+      "highlight_words": [
+        "animal"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "Flamencos rosados por su comida, koalas que duermen 20 horas, colibríes con 80 aleteos por segundo y pulpos con tres corazones. ¿Qué animal sigue?",
+  "hashtags": [
+    "animales",
+    "naturaleza",
+    "curiosidades",
+    "sabiasque",
+    "datoscuriosos",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Flamingo – coloration",
+      "url": "https://en.wikipedia.org/wiki/Flamingo",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Koala",
+      "url": "https://en.wikipedia.org/wiki/Koala",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hummingbird",
+      "url": "https://en.wikipedia.org/wiki/Hummingbird",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Octopus",
+      "url": "https://en.wikipedia.org/wiki/Octopus",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los flamencos son rosados por los carotenoides de su alimentación.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Flamingo"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los koalas duermen entre 18 y 22 horas al día.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Koala"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Algunos colibríes baten las alas hasta unas 80 veces por segundo.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los pulpos tienen tres corazones.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

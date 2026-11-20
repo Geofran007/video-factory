@@ -1,0 +1,135 @@
+{
+  "topic": "Curiosidades del cuerpo humano",
+  "category": "ciencia",
+  "title": "Tu cuerpo es más increíble de lo que crees 🫀",
+  "hook": "¡Espera! Tu propio cuerpo esconde datos que parecen de ciencia ficción.",
+  "language": "es",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "¡Espera! Tu propio cuerpo esconde datos que parecen de ciencia ficción.",
+      "on_screen_text": "Tu cuerpo es ciencia ficción",
+      "highlight_words": [
+        "ficción"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "icon": "heart"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "Estás hecho de unos treinta y siete billones de células. Si contaras una por segundo, tardarías más de un millón de años.",
+      "on_screen_text": "37 billones de células",
+      "highlight_words": [
+        "37"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "big_number": "37",
+      "number_caption": "billones de células tiene tu cuerpo",
+      "icon": "dna"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "comparison",
+      "narration": "¡Y esto es increíble! Naciste con cerca de trescientos huesos, pero de adulto tienes doscientos seis, porque muchos se fusionan.",
+      "on_screen_text": "Bebé: ~300 huesos · Adulto: 206",
+      "highlight_words": [
+        "206"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "items": [
+        "Bebé: cerca de 300 huesos",
+        "Adulto: 206 huesos"
+      ],
+      "icon": "star"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "scene3d",
+      "narration": "Pero espera, hay algo más extraño: si pusieras todos tus vasos sanguíneos en fila, medirían unos cien mil kilómetros. ¡Más de dos vueltas a la Tierra!",
+      "on_screen_text": "Tus venas: 2 vueltas a la Tierra",
+      "highlight_words": [
+        "2",
+        "vueltas"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "model3d": "earth",
+      "icon": "globe"
+    },
+    {
+      "id": "s5",
+      "role": "closing",
+      "type": "cta",
+      "narration": "¿Qué parte del cuerpo quieres que investigue? Déjamelo en los comentarios y sígueme.",
+      "on_screen_text": "¿Qué investigamos después?",
+      "highlight_words": [
+        "después?"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "37 billones de células, 300 huesos al nacer y vasos sanguíneos que darían dos vueltas a la Tierra. ¿Qué investigamos después?",
+  "hashtags": [
+    "cuerpohumano",
+    "ciencia",
+    "biologia",
+    "sabiasque",
+    "datoscuriosos",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "An estimation of the number of cells in the human body (2013)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23829164/",
+      "publisher": "Annals of Human Biology"
+    },
+    {
+      "title": "Human skeleton",
+      "url": "https://en.wikipedia.org/wiki/Human_skeleton",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Blood vessels",
+      "url": "https://my.clevelandclinic.org/health/body/21640-blood-vessels",
+      "publisher": "Cleveland Clinic"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El cuerpo humano tiene unos 37 billones de células (estimación de 2013).",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://pubmed.ncbi.nlm.nih.gov/23829164/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un adulto tiene 206 huesos; un bebé nace con unos 270-300 que luego se fusionan.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Human_skeleton"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los vasos sanguíneos de un adulto medirían unos 100.000 km en línea.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://my.clevelandclinic.org/health/body/21640-blood-vessels"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

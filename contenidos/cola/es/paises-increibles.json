@@ -1,0 +1,161 @@
+{
+  "topic": "Curiosidades de países",
+  "category": "curiosidades",
+  "title": "Datos de países que parecen inventados 🌍",
+  "hook": "¡Espera! Estos datos de países parecen inventados, pero son totalmente reales.",
+  "language": "es",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "¡Espera! Estos datos de países parecen inventados, pero son totalmente reales.",
+      "on_screen_text": "Países que parecen inventados",
+      "highlight_words": [
+        "inventados"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "icon": "globe"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "¿Qué país tiene más husos horarios? No es Rusia ni Estados Unidos: es Francia, con doce, gracias a sus territorios repartidos por el mundo.",
+      "on_screen_text": "Francia: 12 husos horarios",
+      "highlight_words": [
+        "Francia"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "big_number": "12",
+      "number_caption": "husos horarios tiene Francia",
+      "icon": "clock"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "¡Y esto es increíble! La bandera de Nepal es la única bandera nacional que no es rectangular: son dos triángulos.",
+      "on_screen_text": "Nepal: la única bandera no rectangular",
+      "highlight_words": [
+        "Nepal"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "star"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "big_number",
+      "narration": "Pero espera, hay algo más extraño: Japón tiene más de catorce mil islas, según un recuento oficial de dos mil veintitrés.",
+      "on_screen_text": "Japón: más de 14 mil islas",
+      "highlight_words": [
+        "14"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "big_number": "14 mil",
+      "number_caption": "islas cuenta Japón",
+      "icon": "map"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "comparison",
+      "narration": "¡Guau! Y Bolivia tiene dos capitales: Sucre, la constitucional, y La Paz, donde está el gobierno.",
+      "on_screen_text": "Bolivia: dos capitales",
+      "highlight_words": [
+        "dos"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "items": [
+        "Sucre: capital constitucional",
+        "La Paz: sede de gobierno"
+      ],
+      "icon": "landmark"
+    },
+    {
+      "id": "s6",
+      "role": "closing",
+      "type": "cta",
+      "narration": "¿Cuál te sorprendió más? Déjamelo en los comentarios y sígueme para más curiosidades.",
+      "on_screen_text": "¿Cuál te sorprendió más?",
+      "highlight_words": [
+        "sorprendió"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "Francia con 12 husos horarios, la bandera no rectangular de Nepal, las más de 14 mil islas de Japón y las dos capitales de Bolivia. ¿Cuál te sorprendió más?",
+  "hashtags": [
+    "curiosidades",
+    "paises",
+    "geografia",
+    "sabiasque",
+    "datoscuriosos",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Time in France",
+      "url": "https://en.wikipedia.org/wiki/Time_in_France",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Flag of Nepal",
+      "url": "https://en.wikipedia.org/wiki/Flag_of_Nepal",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "List of islands of Japan (recuento 2023)",
+      "url": "https://en.wikipedia.org/wiki/List_of_islands_of_Japan",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Bolivia – capitales",
+      "url": "https://en.wikipedia.org/wiki/Bolivia",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Francia tiene 12 husos horarios por sus territorios de ultramar.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Time_in_France"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La bandera de Nepal es la única bandera nacional que no es rectangular.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Flag_of_Nepal"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un recuento oficial de 2023 contó 14.125 islas en Japón.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/List_of_islands_of_Japan"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Bolivia tiene capital constitucional en Sucre y sede de gobierno en La Paz.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Bolivia"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,158 @@
+{
+  "topic": "Space facts",
+  "category": "ciencia",
+  "title": "Space facts that will blow your mind 🚀",
+  "hook": "Wait! These space facts are going to blow your mind.",
+  "language": "en",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "narration": "Wait! These space facts are going to blow your mind.",
+      "on_screen_text": "Mind-blowing space facts",
+      "highlight_words": [
+        "space"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "model3d": "earth",
+      "icon": "planet"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "Sunlight takes about eight minutes to reach Earth. When you look at the Sun, you see it as it was eight minutes ago.",
+      "on_screen_text": "Sunlight takes 8 minutes",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "big_number": "8 min",
+      "number_caption": "for sunlight to reach us",
+      "icon": "star"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "big_number",
+      "narration": "And this is incredible! More than one thousand three hundred Earths could fit inside Jupiter.",
+      "on_screen_text": "Jupiter: 1,300 Earths fit inside",
+      "highlight_words": [
+        "1,300"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "big_number": "1,300",
+      "number_caption": "Earths could fit in Jupiter",
+      "icon": "planet"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "icon_fact",
+      "narration": "But wait, it gets stranger: a sugar-cube-sized piece of a neutron star would weigh about a billion tons.",
+      "on_screen_text": "A sugar cube of star: a billion tons",
+      "highlight_words": [
+        "billion"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "icon": "atom"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "Wow! And since the Moon has no wind or rain, astronauts' footprints can last a very, very long time.",
+      "on_screen_text": "Moon footprints don't wash away",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "icon": "rocket"
+    },
+    {
+      "id": "s6",
+      "role": "closing",
+      "type": "cta",
+      "narration": "What space fact should I look into next? Tell me in the comments and follow me.",
+      "on_screen_text": "What should we explore next?",
+      "highlight_words": [
+        "next?"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "Sunlight takes 8 minutes to reach us, 1,300 Earths fit inside Jupiter and a sugar cube of neutron star weighs a billion tons. What should we explore next?",
+  "hashtags": [
+    "space",
+    "astronomy",
+    "science",
+    "didyouknow",
+    "nasa",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Sun – distance and light time",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Jupiter facts",
+      "url": "https://science.nasa.gov/jupiter/jupiter-facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Neutron stars",
+      "url": "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Apollo footprints",
+      "url": "https://www.nasa.gov/history/apollo-11-mission-overview/",
+      "publisher": "NASA"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La luz del Sol tarda unos 8 minutos en llegar a la Tierra.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En el volumen de Júpiter cabrían más de 1.300 Tierras.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://science.nasa.gov/jupiter/jupiter-facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Una porción del tamaño de un terrón de azúcar de estrella de neutrones pesaría unos mil millones de toneladas.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://imagine.gsfc.nasa.gov/science/objects/neutron_stars1.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Sin viento ni lluvia, las huellas en la Luna pueden durar muchísimo tiempo.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://www.nasa.gov/history/apollo-11-mission-overview/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

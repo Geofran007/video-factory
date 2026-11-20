@@ -1,0 +1,138 @@
+{
+  "topic": "Curiosidades de historia",
+  "category": "historia",
+  "title": "Datos de historia que no te enseñaron 🏛️",
+  "hook": "¡Espera! Estos datos de historia parecen inventados, pero son completamente reales.",
+  "language": "es",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "title",
+      "narration": "¡Espera! Estos datos de historia parecen inventados, pero son completamente reales.",
+      "on_screen_text": "Historia que parece inventada",
+      "highlight_words": [
+        "inventada"
+      ],
+      "sfx": "impact",
+      "transition": "fade",
+      "icon": "landmark"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "big_number",
+      "narration": "La guerra más corta de la historia fue en mil ochocientos noventa y seis, entre el Reino Unido y Zanzíbar. Duró menos de una hora.",
+      "on_screen_text": "La guerra más corta: menos de 1 hora",
+      "highlight_words": [
+        "1"
+      ],
+      "sfx": "pop",
+      "transition": "slide",
+      "big_number": "38 min",
+      "number_caption": "duró la guerra más corta",
+      "icon": "clock"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "icon_fact",
+      "narration": "¡Y esto es increíble! Los vikingos no usaban cascos con cuernos. Esa imagen la inventaron artistas siglos después.",
+      "on_screen_text": "Los vikingos no tenían cuernos",
+      "highlight_words": [
+        "cuernos"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "crown"
+    },
+    {
+      "id": "s4",
+      "role": "surprise",
+      "type": "comparison",
+      "narration": "Pero espera, hay algo más extraño: la Universidad de Oxford es más antigua que la ciudad azteca de Tenochtitlan.",
+      "on_screen_text": "Oxford es más antigua que los aztecas",
+      "highlight_words": [
+        "Oxford"
+      ],
+      "sfx": "riser",
+      "transition": "wipe",
+      "items": [
+        "Oxford: clases hacia 1096",
+        "Tenochtitlan: fundada hacia 1325"
+      ],
+      "icon": "book"
+    },
+    {
+      "id": "s5",
+      "role": "closing",
+      "type": "cta",
+      "narration": "¿Qué época quieres que investigue? Déjamelo en los comentarios y sígueme.",
+      "on_screen_text": "¿Qué época sigue?",
+      "highlight_words": [
+        "época"
+      ],
+      "sfx": "pop",
+      "transition": "zoom",
+      "icon": "question"
+    }
+  ],
+  "description": "Una guerra de 38 minutos, vikingos sin cuernos y una universidad más antigua que los aztecas. ¿Qué época investigamos después?",
+  "hashtags": [
+    "historia",
+    "curiosidades",
+    "sabiasque",
+    "datoscuriosos",
+    "vikingos",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Anglo-Zanzibar War",
+      "url": "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Horned helmet – Vikings",
+      "url": "https://en.wikipedia.org/wiki/Horned_helmet",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "University of Oxford",
+      "url": "https://en.wikipedia.org/wiki/University_of_Oxford",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tenochtitlan",
+      "url": "https://en.wikipedia.org/wiki/Tenochtitlan",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La guerra anglo-zanzibariana de 1896 duró entre 38 y 45 minutos.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Anglo-Zanzibar_War"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "No hay pruebas de que los vikingos usaran cascos con cuernos en batalla.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Horned_helmet"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En Oxford ya se enseñaba hacia 1096; Tenochtitlan se fundó hacia 1325.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/University_of_Oxford"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
