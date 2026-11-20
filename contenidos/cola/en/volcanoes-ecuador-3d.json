@@ -1,0 +1,258 @@
+{
+  "topic": "Why Ecuador has so many volcanoes, all in a row",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why does Ecuador have so many volcanoes? 🌋🇪🇨",
+  "hook": "Why does Ecuador have so many volcanoes, and why are they all in a row?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "and_hook",
+      "narration": "Why does Ecuador have so many volcanoes, and why are they all in a row?",
+      "on_screen_text": "Why so many volcanoes?",
+      "highlight_words": [
+        "volcanoes?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_avenue",
+      "narration": "There are dozens, and many of them form the famous Avenue of the Volcanoes, between two mountain ranges.",
+      "on_screen_text": "The Avenue of the Volcanoes",
+      "highlight_words": [
+        "Avenue"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "Blame two plates: the Nazca Plate, under the ocean, and the South American Plate, where the continent sits.",
+      "on_screen_text": "Two plates collide",
+      "highlight_words": [
+        "collide"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_push",
+      "narration": "The Nazca Plate pushes east and slides underneath the continent.",
+      "on_screen_text": "Nazca slides underneath",
+      "highlight_words": [
+        "underneath"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_melt",
+      "narration": "About a hundred kilometers down, it releases the water it had trapped, and that water makes the mantle melt.",
+      "on_screen_text": "Water melts the mantle",
+      "highlight_words": [
+        "melts"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_rise",
+      "narration": "That magma rises, punches through the crust and builds a volcano right above.",
+      "on_screen_text": "The magma rises",
+      "highlight_words": [
+        "rises"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_row",
+      "narration": "Since the collision happens along the whole coast, the volcanoes line up, from north to south.",
+      "on_screen_text": "That's why they line up",
+      "highlight_words": [
+        "line"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_rise",
+      "narration": "And that same push slowly lifted the Andes over millions of years.",
+      "on_screen_text": "How the Andes grew",
+      "highlight_words": [
+        "Andes"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_cotopaxi",
+      "narration": "Cotopaxi, almost six thousand meters tall, is one of the highest active volcanoes in the world.",
+      "on_screen_text": "Cotopaxi: almost 6,000 m",
+      "highlight_words": [
+        "6,000"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "and_globe",
+      "narration": "And the summit of Chimborazo is the farthest point from the center of the Earth, even farther than Everest.",
+      "on_screen_text": "Farther than Everest",
+      "highlight_words": [
+        "Everest"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gal_map",
+      "narration": "And guess which plate carries the Galápagos toward Ecuador? The same one: the Nazca Plate.",
+      "on_screen_text": "The same plate!",
+      "highlight_words": [
+        "same"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_final",
+      "narration": "So every volcano in Ecuador is a sign that the ocean floor is sliding under your feet.",
+      "on_screen_text": "The ocean, under your feet",
+      "highlight_words": [
+        "feet"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "and_outro",
+      "narration": "Send this to someone who lives near a volcano.",
+      "on_screen_text": "Send this to a friend",
+      "highlight_words": [
+        "friend"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Ecuador has dozens of volcanoes lined up north to south because the Nazca Plate sinks beneath the South American Plate (subduction). About 100 km down, the plate releases water, the mantle melts and magma rises to build volcanoes like Cotopaxi. Chimborazo's summit is the point on Earth's surface farthest from its center. Original 3D animation; not to scale, figures are approximate.",
+  "hashtags": [
+    "ecuador",
+    "volcanoes",
+    "cotopaxi",
+    "chimborazo",
+    "andes",
+    "geology",
+    "science",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Volcanes del Ecuador",
+      "url": "https://www.igepn.edu.ec/",
+      "publisher": "Instituto Geofísico, Escuela Politécnica Nacional"
+    },
+    {
+      "title": "Subduction",
+      "url": "https://en.wikipedia.org/wiki/Subduction",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Volcanic arc",
+      "url": "https://en.wikipedia.org/wiki/Volcanic_arc",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cotopaxi",
+      "url": "https://en.wikipedia.org/wiki/Cotopaxi",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Chimborazo",
+      "url": "https://en.wikipedia.org/wiki/Chimborazo",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Nazca Plate",
+      "url": "https://en.wikipedia.org/wiki/Nazca_Plate",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Nazca Plate subducts beneath the South American Plate off Ecuador's coast, creating the volcanic arc of the Ecuadorian Andes.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Nazca_Plate",
+        "https://en.wikipedia.org/wiki/Volcanic_arc"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In subduction zones the sinking plate releases water at about 100 km depth; that water lowers the mantle's melting point and generates magma.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Subduction",
+        "https://en.wikipedia.org/wiki/Volcanic_arc"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Cotopaxi is about 5,897 m tall and is one of the highest active volcanoes in the world.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cotopaxi"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Chimborazo's summit (≈6,384 km from Earth's center) is the surface point farthest from the center, about 2 km more than Everest, due to the equatorial bulge.",
+      "scene_id": "s10",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chimborazo"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

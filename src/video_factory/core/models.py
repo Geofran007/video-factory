@@ -18,7 +18,12 @@ SceneRole = Literal["hook", "development", "surprise", "closing"]
 SceneType = Literal["title", "statement", "big_number", "list", "comparison", "chart", "icon_fact", "cta",
                     "illustration", "timeline", "cartoon", "scene3d"]
 # Escenas 3D con Three.js (templates/runtime/three-scenes.js).
-Model3D = Literal["ball", "room", "pool", "pyramid", "earth"]
+Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
+                  # Galápagos (templates/runtime/galapagos-3d.js), a pantalla completa
+                  "gal_map", "gal_ages", "gal_hotspot", "gal_plate", "gal_volcano", "gal_drift", "gal_conveyor",
+                  "gal_flyover", "gal_seamounts", "gal_life", "gal_beagle", "gal_final", "gal_outro",
+                  "and_hook", "and_avenue", "and_rise", "and_cotopaxi", "and_final", "and_outro", "and_globe",
+                  "sub_plates", "sub_push", "sub_melt", "sub_rise", "sub_row"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]
@@ -28,7 +33,7 @@ Action = Literal["idle", "talk", "walk_in", "run", "sleepy", "shocked", "jump_jo
                  "hold_up", "read", "fly", "sneak", "cower", "fall", "float", "angry", "crumble"]
 FxType = Literal["pow", "bubble", "thought", "confetti", "sparkles", "hearts", "dust", "zzz", "flash", "spell"]
 Prop = Literal["wand", "book", "letter", "stone"]
-Transition = Literal["fade", "slide", "zoom", "wipe"]
+Transition = Literal["fade", "slide", "zoom", "wipe", "cut"]
 SfxName = Literal["none", "whoosh", "impact", "riser", "pop", "ding", "bubbles"]
 Illustration = Literal["shark", "ancient_shark", "tree", "dinosaur", "human", "wizard", "trio", "hooded", "castle", "owl",
                        "letter", "wand", "lightning", "wizard_hat", "magic_stone", "broom", "three_headed_dog",

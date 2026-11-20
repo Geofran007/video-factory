@@ -263,13 +263,17 @@
   };
 
   window.VF = window.VF || { styles: {} };
+  const FULL = new Set(); // escenas que llenan toda la pantalla (canvas 2D de 1080×1920)
   window.VF.three = {
     available: !!T,
-    build(canvas, name) {
+    // Otros módulos (p. ej. galapagos-3d.js) agregan escenas aquí.
+    register(name, builder, { full = false } = {}) { BUILDERS[name] = builder; if (full) FULL.add(name); },
+    isFull: (name) => FULL.has(name),
+    build(canvas, name, sceneData) {
       if (!T) throw new Error('Three.js no está cargado (templates/vendor/three.min.js)');
       const b = BUILDERS[name];
       if (!b) throw new Error(`escena 3D desconocida: ${name}`);
-      return b(canvas);
+      return b(canvas, sceneData);
     },
   };
 })();

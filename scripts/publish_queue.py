@@ -4,7 +4,8 @@
     python scripts/publish_queue.py --canal en            # Curious Leo
     python scripts/publish_queue.py --canal en --dry-run  # genera, pero no sube ni mueve nada
 
-Cola:       contenidos/cola/<es|en>/*.json   (por defecto se elige uno al azar; con --orden alfabetico, el primero)
+Cola:       contenidos/cola/<es|en>/*.json   (por defecto se elige uno al azar; con --orden alfabetico, el primero;
+            con --guion <nombre>, ese guion)
 Publicados: contenidos/publicados/<es|en>/<fecha>-<nombre>.json + <fecha>-<nombre>.youtube.json
 
 Reglas de seguridad:
@@ -49,6 +50,7 @@ def main() -> int:
     ap.add_argument("--dry-run", action="store_true", help="Genera el video pero no lo sube ni mueve el guion")
     ap.add_argument("--orden", choices=["aleatorio", "alfabetico"], default="aleatorio",
                     help="aleatorio: temas variados cada día; alfabetico: respeta los prefijos 001-, 002-…")
+    ap.add_argument("--guion", default="", help="Nombre de un guion concreto de la cola (con o sin .json)")
     args = ap.parse_args()
 
     queue = ROOT / "contenidos" / "cola" / args.canal
@@ -59,6 +61,11 @@ def main() -> int:
     # Azar reproducible por día y canal: si el trabajo se reintenta el mismo día, elige el mismo guion.
     rng = random.Random(f"{dt.date.today().isoformat()}-{args.canal}")
     content = rng.choice(pending) if args.orden == "aleatorio" else pending[0]
+    if args.guion:
+        wanted = queue / (args.guion if args.guion.endswith(".json") else args.guion + ".json")
+        if wanted not in pending:
+            raise SystemExit(f"No está en la cola: {wanted.relative_to(ROOT)}")
+        content = wanted
     data = json.loads(content.read_text(encoding="utf-8"))
     if data.get("language", "es") != args.canal:
         raise SystemExit(f"{content.name} está en '{data.get('language', 'es')}' y el canal es '{args.canal}'.")

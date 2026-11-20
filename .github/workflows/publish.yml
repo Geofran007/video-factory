@@ -22,6 +22,14 @@ on:
         description: "Solo generar (no subir ni mover el guion)"
         type: boolean
         default: false
+      guion_es:
+        description: "Guion concreto de contenidos/cola/es (vacío = al azar)"
+        type: string
+        default: ""
+      guion_en:
+        description: "Guion concreto de contenidos/cola/en (vacío = al azar)"
+        type: string
+        default: ""
 
 permissions:
   contents: write   # para mover el guion usado a contenidos/publicados/
@@ -100,13 +108,16 @@ jobs:
           CANALES: ${{ inputs.canales || 'ambos' }}
           VISIBILIDAD: ${{ inputs.visibilidad || 'private' }}
           PRUEBA: ${{ inputs.prueba || false }}
+          GUION_ES: ${{ inputs.guion_es || '' }}
+          GUION_EN: ${{ inputs.guion_en || '' }}
         run: |
           case "$CANALES" in ambos) list="es en" ;; *) list="$CANALES" ;; esac
           extra=(); [ "$PRUEBA" = "true" ] && extra=(--dry-run)
           status=0
           for c in $list; do
             echo "::group::Canal $c"
-            python scripts/publish_queue.py --canal "$c" --visibility "$VISIBILIDAD" "${extra[@]}" || status=1
+            g=GUION_${c^^}; sel=(); [ -n "${!g}" ] && sel=(--guion "${!g}")
+            python scripts/publish_queue.py --canal "$c" --visibility "$VISIBILIDAD" "${extra[@]}" "${sel[@]}" || status=1
             echo "::endgroup::"
           done
           exit $status

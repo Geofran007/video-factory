@@ -338,6 +338,24 @@
 
     // Escena 3D (Three.js): lienzo WebGL y texto debajo. La animación depende solo del tiempo local.
     scene3d(root, s) {
+      if (VF.three.isFull(s.model3d)) {
+        // Escena 3D a pantalla completa (fondo) con un cartel breve arriba; el presentador queda encima, abajo.
+        const full = el('canvas', 'three-full');
+        full.width = 1080; full.height = 1920;
+        root.parentElement.insertBefore(full, root);
+        const cap = el('div', 'txt three-caption');
+        const cspans = wordSpans(cap, s.on_screen_text, s.highlight_words);
+        root.appendChild(cap);
+        fitText(cap, 54, 36);
+        const upd = VF.three.build(full, s.model3d, s);
+        return (lt, dur) => {
+          upd(lt, dur);
+          const p = ease.outCubic(prog(lt, 0.05, 0.35));
+          cap.style.opacity = p.toFixed(3);
+          cap.style.transform = `translateY(${((1 - p) * -30).toFixed(1)}px)`;
+          animateWords(cspans, lt, 0.1, 0.05);
+        };
+      }
       const cv = el('canvas', 'three-canvas');
       cv.width = 960; cv.height = 780;
       const box = el('div', s.role === 'hook' ? 'txt txt-title' : 'txt txt-body');
@@ -462,6 +480,11 @@
       case 'slide': tx = (1 - e) * 1080; opacity = clamp(pIn * 3); break;
       case 'zoom': scale = lerp(1.35, 1, e); opacity = e; break;
       case 'wipe': clip = `inset(0 ${((1 - e) * 100).toFixed(2)}% 0 0)`; break;
+      case 'cut': // corte directo: sin fundido ni desplazamiento
+        node.style.opacity = pOut > 0 ? '0' : '1';
+        node.style.transform = 'none';
+        node.style.clipPath = 'none';
+        return;
       default: opacity = e;
     }
     const o = ease.inCubic(pOut);
@@ -572,6 +595,7 @@
 
   VF.init = async function init(timeline) {
     TL = timeline;
+    VF.lang = TL.language || 'es';
     document.body.dataset.style = TL.style;
     await buildPresenter();
     style = VF.styles[TL.style] || VF.styles.curiosidades;

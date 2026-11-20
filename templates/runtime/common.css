@@ -170,4 +170,10 @@ body { font-family: var(--font); color: var(--text); -webkit-font-smoothing: ant
 .illu-stage.illu-water_person { height: 680px; }
 .illu-water { filter: drop-shadow(0 20px 30px rgba(0,0,0,.45)); }
 /* scene3d: lienzo WebGL de Three.js */
+/* scene3d a pantalla completa: el 3D llena el fondo y el texto va en una pastilla oscura arriba */
+.three-full { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+.scene-scene3d .scene-inner:has(.three-caption) { position: relative; justify-content: flex-start; padding-top: 10px; zoom: 1; }
+.three-caption { width: 920px; max-height: 200px; padding: 18px 34px; border-radius: 30px; color: #fff;
+  background: rgba(8, 12, 24, .78); border: 3px solid rgba(255,255,255,.75); text-shadow: none; }
+.three-caption .hl { color: #ffc94a; }
 .three-canvas { width: 960px; height: 780px; border-radius: 36px; will-change: transform, opacity; }
