@@ -1,0 +1,209 @@
+{
+  "topic": "Cómo funcionan las esclusas del Canal de Panamá",
+  "language": "es",
+  "category": "historia",
+  "title": "¿Cómo cruzan los barcos el Canal de Panamá? 🚢",
+  "hook": "¿Cómo hace un barco gigante para cruzar las montañas de Panamá?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pan_hook",
+      "narration": "¿Cómo hace un barco gigante para cruzar las montañas de Panamá?",
+      "on_screen_text": "¿Cómo cruza las montañas?",
+      "highlight_words": [
+        "montañas?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_route",
+      "narration": "Antes, para ir de Nueva York a San Francisco por mar había que rodear toda Sudamérica: unos veintidós mil quinientos kilómetros.",
+      "on_screen_text": "Rodear Sudamérica: 22.500 km",
+      "highlight_words": [
+        "22.500"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_shortcut",
+      "narration": "Desde mil novecientos catorce, el Canal de Panamá recorta ese viaje a unos nueve mil quinientos.",
+      "on_screen_text": "Con el canal: 9.500 km",
+      "highlight_words": [
+        "9.500"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_profile",
+      "narration": "Pero el canal no es plano: en el medio hay un lago a veintiséis metros sobre el nivel del mar.",
+      "on_screen_text": "Un lago a 26 m de altura",
+      "highlight_words": [
+        "26"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_enter",
+      "narration": "Para subir, el barco entra en una esclusa: una cámara gigante con compuertas.",
+      "on_screen_text": "Entra a la esclusa",
+      "highlight_words": [
+        "esclusa"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_fill",
+      "narration": "Cierran las compuertas y dejan entrar agua del lago, sin bombas, solo por gravedad, y el barco sube como en un ascensor.",
+      "on_screen_text": "Sube como en un ascensor",
+      "highlight_words": [
+        "ascensor"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_steps",
+      "narration": "Tres escalones así lo suben hasta el lago, y otros tres lo bajan al otro océano.",
+      "on_screen_text": "Tres escalones de subida",
+      "highlight_words": [
+        "Tres"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "pan_water",
+      "narration": "Y cada barco que cruza las esclusas antiguas gasta unos doscientos millones de litros de agua dulce, que terminan en el mar.",
+      "on_screen_text": "200 millones de litros",
+      "highlight_words": [
+        "200"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pan_outro",
+      "narration": "Mándaselo a alguien a quien le encanten los barcos.",
+      "on_screen_text": "Mándaselo a un fan de barcos",
+      "highlight_words": [
+        "barcos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Desde 1914 el Canal de Panamá recorta el viaje por mar de Nueva York a San Francisco de unos 22.500 km a unos 9.500 km. Como el canal pasa por el lago Gatún, a 26 m sobre el mar, los barcos suben y bajan con esclusas que se llenan por gravedad, sin bombas. Cada tránsito por las esclusas antiguas usa unos 200 millones de litros de agua dulce. Animación 3D propia; mapa y escala aproximados.",
+  "hashtags": [
+    "canaldepanama",
+    "panama",
+    "barcos",
+    "ingenieria",
+    "historia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Panama Canal",
+      "url": "https://en.wikipedia.org/wiki/Panama_Canal",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Panama Canal locks",
+      "url": "https://en.wikipedia.org/wiki/Panama_Canal_locks",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gatun Lake",
+      "url": "https://en.wikipedia.org/wiki/Gatun_Lake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Autoridad del Canal de Panamá",
+      "url": "https://pancanal.com/",
+      "publisher": "Autoridad del Canal de Panamá"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Por mar, Nueva York–San Francisco rodeando el cabo de Hornos son unos 22.500 km; por el canal, unos 9.500 km.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El Canal de Panamá se inauguró en 1914.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El lago Gatún está a unos 26 m sobre el nivel del mar.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gatun_Lake"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las esclusas se llenan y vacían por gravedad, sin bombas, con agua del lago.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal_locks"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hay tres escalones de esclusas a cada lado (Gatún en el Atlántico; Pedro Miguel y Miraflores en el Pacífico).",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal_locks"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Cada tránsito por las esclusas originales usa unos 197 millones de litros (52 millones de galones) de agua dulce.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal_locks"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

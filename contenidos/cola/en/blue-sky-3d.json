@@ -1,0 +1,194 @@
+{
+  "topic": "Why the sky is blue and sunsets are red",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why is the sky blue? 🌤️",
+  "hook": "Why is the sky blue, if sunlight is white?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cielo_hook",
+      "narration": "Why is the sky blue, if sunlight is white?",
+      "on_screen_text": "Why is the sky blue?",
+      "highlight_words": [
+        "blue?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_prism",
+      "narration": "White light actually carries every color mixed together, as a prism shows.",
+      "on_screen_text": "White = every color",
+      "highlight_words": [
+        "color"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_molecules",
+      "narration": "When it enters the atmosphere, that light hits tiny air molecules, mostly nitrogen and oxygen.",
+      "on_screen_text": "It hits the air",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_scatter",
+      "narration": "And those molecules scatter blue light much more than red: they bounce it in every direction.",
+      "on_screen_text": "Blue bounces",
+      "highlight_words": [
+        "Blue"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_everywhere",
+      "narration": "That's why, wherever you look, blue light reaches you from the whole sky.",
+      "on_screen_text": "Blue from everywhere",
+      "highlight_words": [
+        "everywhere"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_violet",
+      "narration": "And violet, which scatters even more? There's less of it in sunlight, and our eyes are far more sensitive to blue.",
+      "on_screen_text": "What about violet?",
+      "highlight_words": [
+        "violet?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_sunset",
+      "narration": "At sunset, light crosses much more atmosphere: the blue gets lost along the way and the oranges and reds come through.",
+      "on_screen_text": "Sunset: a long path",
+      "highlight_words": [
+        "long"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "cielo_moon",
+      "narration": "And on the Moon, which has no atmosphere, the sky is black even during the day.",
+      "on_screen_text": "On the Moon: black sky",
+      "highlight_words": [
+        "black"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cielo_outro",
+      "narration": "Send this to someone who asked you this as a kid.",
+      "on_screen_text": "Send this to a curious mind",
+      "highlight_words": [
+        "curious"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Sunlight carries every color. Air molecules scatter short-wavelength (blue) light much more than long-wavelength (red) light: that's Rayleigh scattering. So blue reaches us from the whole sky, and at sunset, when light crosses more atmosphere, only oranges and reds get through. On the Moon, with no atmosphere, the sky is black. Original 3D animation.",
+  "hashtags": [
+    "sky",
+    "bluesky",
+    "sunset",
+    "light",
+    "physics",
+    "science",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Rayleigh scattering",
+      "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Diffuse sky radiation",
+      "url": "https://en.wikipedia.org/wiki/Diffuse_sky_radiation",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Why Is the Sky Blue?",
+      "url": "https://spaceplace.nasa.gov/blue-sky/",
+      "publisher": "NASA Space Place"
+    },
+    {
+      "title": "Dispersive prism",
+      "url": "https://en.wikipedia.org/wiki/Dispersive_prism",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Rayleigh scattering scales with the inverse fourth power of wavelength, so blue scatters much more than red.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The sky doesn't look violet because sunlight has less violet, some is absorbed high up, and our eyes are more sensitive to blue.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diffuse_sky_radiation"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "At sunset light travels through more atmosphere and scattering removes the blue, leaving reds and oranges.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+        "https://spaceplace.nasa.gov/blue-sky/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Moon has no significant atmosphere, so its sky looks black even in daytime.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://spaceplace.nasa.gov/blue-sky/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

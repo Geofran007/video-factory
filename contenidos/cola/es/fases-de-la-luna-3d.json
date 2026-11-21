@@ -1,0 +1,202 @@
+{
+  "topic": "Por qué la Luna tiene fases",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué la Luna cambia de forma? 🌙",
+  "hook": "¿Por qué la Luna cambia de forma cada noche?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "luna_hook",
+      "narration": "¿Por qué la Luna cambia de forma cada noche?",
+      "on_screen_text": "¿Por qué cambia la Luna?",
+      "highlight_words": [
+        "Luna?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_myth",
+      "narration": "Mucha gente cree que es la sombra de la Tierra, pero no: esa sombra solo la tapa en los eclipses.",
+      "on_screen_text": "No es la sombra de la Tierra",
+      "highlight_words": [
+        "sombra"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_half",
+      "narration": "La Luna no tiene luz propia, y el Sol siempre ilumina la mitad que lo mira.",
+      "on_screen_text": "Siempre media Luna iluminada",
+      "highlight_words": [
+        "mitad",
+        "media"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_orbit",
+      "narration": "Mientras tanto, la Luna da una vuelta alrededor de la Tierra más o menos cada mes.",
+      "on_screen_text": "Una vuelta al mes",
+      "highlight_words": [
+        "mes"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_new",
+      "narration": "Cuando pasa entre la Tierra y el Sol, nos muestra su lado oscuro: es luna nueva.",
+      "on_screen_text": "Luna nueva",
+      "highlight_words": [
+        "nueva"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_quarter",
+      "narration": "Una semana después vemos media cara iluminada: cuarto creciente.",
+      "on_screen_text": "Cuarto creciente",
+      "highlight_words": [
+        "creciente"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_full",
+      "narration": "Y cuando la Tierra queda en medio, vemos toda la cara iluminada: luna llena.",
+      "on_screen_text": "Luna llena",
+      "highlight_words": [
+        "llena"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_cycle",
+      "narration": "El ciclo completo dura unos veintinueve días y medio, y vuelve a empezar.",
+      "on_screen_text": "Ciclo de 29,5 días",
+      "highlight_words": [
+        "29,5"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "luna_face",
+      "narration": "Y siempre vemos la misma cara, porque la Luna gira sobre sí misma justo una vez por cada vuelta.",
+      "on_screen_text": "Siempre la misma cara",
+      "highlight_words": [
+        "misma"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "luna_outro",
+      "narration": "Mándaselo a alguien que mira la Luna de noche.",
+      "on_screen_text": "Mándaselo a un soñador",
+      "highlight_words": [
+        "soñador"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La Luna no tiene luz propia: el Sol siempre ilumina la mitad que lo mira, y según dónde esté en su órbita vemos más o menos de esa mitad. El ciclo dura unos 29,5 días y siempre vemos la misma cara porque la Luna gira una vez por cada vuelta. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "luna",
+    "fasesdelaluna",
+    "astronomia",
+    "espacio",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Lunar phase",
+      "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tidal locking",
+      "url": "https://en.wikipedia.org/wiki/Tidal_locking",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Moon Phases",
+      "url": "https://science.nasa.gov/moon/moon-phases/",
+      "publisher": "NASA"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La Luna no emite luz propia; refleja la luz del Sol, que ilumina siempre su mitad orientada hacia él.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_phase"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las fases no se deben a la sombra de la Tierra; la sombra terrestre solo cubre la Luna durante los eclipses lunares.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_phase"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El mes sinódico (ciclo de fases) dura unos 29,5 días.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_phase"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Luna está en rotación sincrónica: gira una vez por órbita, por eso vemos siempre la misma cara.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tidal_locking"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

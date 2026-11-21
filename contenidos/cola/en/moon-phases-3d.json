@@ -1,0 +1,201 @@
+{
+  "topic": "Why the Moon has phases",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why does the Moon change shape? 🌙",
+  "hook": "Why does the Moon change shape every night?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "luna_hook",
+      "narration": "Why does the Moon change shape every night?",
+      "on_screen_text": "Why does the Moon change?",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_myth",
+      "narration": "Many people think it's Earth's shadow, but no: that shadow only covers it during eclipses.",
+      "on_screen_text": "It's not Earth's shadow",
+      "highlight_words": [
+        "shadow"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_half",
+      "narration": "The Moon has no light of its own, and the Sun always lights the half facing it.",
+      "on_screen_text": "Half is always lit",
+      "highlight_words": [
+        "Half"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_orbit",
+      "narration": "Meanwhile, the Moon goes around the Earth about once a month.",
+      "on_screen_text": "One orbit a month",
+      "highlight_words": [
+        "month"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_new",
+      "narration": "When it passes between the Earth and the Sun, it shows us its dark side: that's a new moon.",
+      "on_screen_text": "New moon",
+      "highlight_words": [
+        "New"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_quarter",
+      "narration": "A week later we see half of its face lit: first quarter.",
+      "on_screen_text": "First quarter",
+      "highlight_words": [
+        "quarter"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_full",
+      "narration": "And when the Earth is in the middle, we see the whole face lit: full moon.",
+      "on_screen_text": "Full moon",
+      "highlight_words": [
+        "Full"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_cycle",
+      "narration": "The whole cycle takes about twenty-nine and a half days, and then it starts again.",
+      "on_screen_text": "A 29.5-day cycle",
+      "highlight_words": [
+        "29.5-day"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "luna_face",
+      "narration": "And we always see the same face, because the Moon spins exactly once for every orbit.",
+      "on_screen_text": "Always the same face",
+      "highlight_words": [
+        "same"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "luna_outro",
+      "narration": "Send this to someone who looks at the Moon at night.",
+      "on_screen_text": "Send this to a dreamer",
+      "highlight_words": [
+        "dreamer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "The Moon makes no light of its own: the Sun always lights the half facing it, and depending on where it is in its orbit we see more or less of that half. The cycle lasts about 29.5 days, and we always see the same face because the Moon spins once per orbit. Original 3D animation; not to scale.",
+  "hashtags": [
+    "moon",
+    "moonphases",
+    "astronomy",
+    "space",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Lunar phase",
+      "url": "https://en.wikipedia.org/wiki/Lunar_phase",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tidal locking",
+      "url": "https://en.wikipedia.org/wiki/Tidal_locking",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Moon Phases",
+      "url": "https://science.nasa.gov/moon/moon-phases/",
+      "publisher": "NASA"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Moon gives off no light of its own; it reflects sunlight, which always lights the half facing the Sun.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_phase"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Phases are not caused by Earth's shadow; Earth's shadow only covers the Moon during lunar eclipses.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_phase"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The synodic month (cycle of phases) lasts about 29.5 days.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_phase"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Moon is tidally locked: it rotates once per orbit, so we always see the same face.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tidal_locking"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,199 @@
+{
+  "topic": "Por qué existen las estaciones del año",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué hay verano e invierno? 🌍☀️",
+  "hook": "¿Por qué existen el verano y el invierno?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "¿Por qué existen el verano y el invierno?",
+      "on_screen_text": "¿Por qué hay estaciones?",
+      "highlight_words": [
+        "estaciones?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Mucha gente cree que es porque nos acercamos al Sol. Pero la Tierra está más cerca en enero, ¡cuando en el norte es invierno!",
+      "on_screen_text": "¡En enero estamos más cerca!",
+      "highlight_words": [
+        "enero"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "El verdadero secreto es que el eje de la Tierra está inclinado unos veintitrés grados.",
+      "on_screen_text": "La Tierra está inclinada",
+      "highlight_words": [
+        "inclinada"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "En junio, el hemisferio norte se inclina hacia el Sol: recibe luz más directa y días más largos. Es verano.",
+      "on_screen_text": "Junio: verano en el norte",
+      "highlight_words": [
+        "verano"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "Un rayo directo concentra el calor en poco espacio; uno inclinado reparte el mismo calor en mucho más.",
+      "on_screen_text": "Directo calienta más",
+      "highlight_words": [
+        "Directo"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "Seis meses después pasa al revés: el norte se aleja del Sol y es invierno, mientras en el sur es verano.",
+      "on_screen_text": "Diciembre: al revés",
+      "highlight_words": [
+        "revés"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "Y como el eje apunta siempre hacia el mismo lado, esto se repite cada año.",
+      "on_screen_text": "Se repite cada año",
+      "highlight_words": [
+        "año"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "En la línea ecuatorial el Sol pega casi de frente todo el año. Por eso en Ecuador no hay cuatro estaciones, sino época de lluvias y época seca.",
+      "on_screen_text": "En Ecuador: lluvias y seca",
+      "highlight_words": [
+        "Ecuador:"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "est_outro",
+      "narration": "Mándaselo a alguien que cree que en verano estamos más cerca del Sol.",
+      "on_screen_text": "Mándaselo a quien lo crea",
+      "highlight_words": [
+        "crea"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Las estaciones no se deben a la distancia al Sol (la Tierra está más cerca a principios de enero), sino a la inclinación de unos 23,4° de su eje. Cuando un hemisferio se inclina hacia el Sol recibe luz más directa y días más largos. En la línea ecuatorial el Sol pega casi vertical todo el año. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "estaciones",
+    "verano",
+    "invierno",
+    "tierra",
+    "ciencia",
+    "ecuador",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Season",
+      "url": "https://en.wikipedia.org/wiki/Season",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Perihelion and aphelion",
+      "url": "https://en.wikipedia.org/wiki/Apsis#Perihelion_and_aphelion",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "What Causes the Seasons?",
+      "url": "https://spaceplace.nasa.gov/seasons/",
+      "publisher": "NASA Space Place"
+    },
+    {
+      "title": "Climate of Ecuador",
+      "url": "https://en.wikipedia.org/wiki/Climate_of_Ecuador",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La Tierra pasa por el perihelio (punto más cercano al Sol) a principios de enero, durante el invierno del hemisferio norte.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Apsis#Perihelion_and_aphelion"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El eje de la Tierra está inclinado unos 23,4° respecto a la perpendicular de su órbita.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las estaciones se deben a la inclinación del eje: el hemisferio inclinado hacia el Sol recibe luz más directa y días más largos.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Season",
+        "https://spaceplace.nasa.gov/seasons/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En Ecuador, cerca de la línea ecuatorial, no hay cuatro estaciones marcadas sino temporadas lluviosa y seca.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Climate_of_Ecuador"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

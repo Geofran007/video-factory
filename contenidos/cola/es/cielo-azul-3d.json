@@ -1,0 +1,194 @@
+{
+  "topic": "Por qué el cielo es azul y los atardeceres rojos",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué el cielo es azul? 🌤️",
+  "hook": "¿Por qué el cielo es azul, si la luz del Sol es blanca?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cielo_hook",
+      "narration": "¿Por qué el cielo es azul, si la luz del Sol es blanca?",
+      "on_screen_text": "¿Por qué el cielo es azul?",
+      "highlight_words": [
+        "azul?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_prism",
+      "narration": "La luz blanca en realidad trae todos los colores mezclados, como muestra un prisma.",
+      "on_screen_text": "Blanca = todos los colores",
+      "highlight_words": [
+        "colores"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_molecules",
+      "narration": "Al entrar en la atmósfera, esa luz choca con moléculas de aire diminutas, sobre todo de nitrógeno y oxígeno.",
+      "on_screen_text": "Choca con el aire",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_scatter",
+      "narration": "Y esas moléculas desvían mucho más la luz azul que la roja: la rebotan en todas direcciones.",
+      "on_screen_text": "El azul rebota",
+      "highlight_words": [
+        "azul"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_everywhere",
+      "narration": "Por eso, mires adonde mires, te llega luz azul desde todo el cielo.",
+      "on_screen_text": "Azul desde todas partes",
+      "highlight_words": [
+        "todas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_violet",
+      "narration": "¿Y el violeta, que se desvía todavía más? Hay menos en la luz del Sol, y nuestros ojos son mucho más sensibles al azul.",
+      "on_screen_text": "¿Y el violeta?",
+      "highlight_words": [
+        "violeta?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cielo_sunset",
+      "narration": "Al atardecer, la luz cruza mucha más atmósfera: el azul se pierde por el camino y llegan los naranjas y rojos.",
+      "on_screen_text": "Atardecer: camino largo",
+      "highlight_words": [
+        "largo"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "cielo_moon",
+      "narration": "Y en la Luna, que no tiene atmósfera, el cielo es negro incluso de día.",
+      "on_screen_text": "En la Luna: cielo negro",
+      "highlight_words": [
+        "negro"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cielo_outro",
+      "narration": "Mándaselo a alguien que te preguntó esto de niño.",
+      "on_screen_text": "Mándaselo a un curioso",
+      "highlight_words": [
+        "curioso"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La luz del Sol trae todos los colores. Las moléculas de aire dispersan mucho más la luz de onda corta (azul) que la larga (roja): es la dispersión de Rayleigh. Por eso el azul nos llega desde todo el cielo, y al atardecer, cuando la luz cruza más atmósfera, solo llegan naranjas y rojos. En la Luna, sin atmósfera, el cielo es negro. Animación 3D propia.",
+  "hashtags": [
+    "cielo",
+    "cieloazul",
+    "atardecer",
+    "luz",
+    "fisica",
+    "ciencia",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Rayleigh scattering",
+      "url": "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Diffuse sky radiation",
+      "url": "https://en.wikipedia.org/wiki/Diffuse_sky_radiation",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Why Is the Sky Blue?",
+      "url": "https://spaceplace.nasa.gov/blue-sky/",
+      "publisher": "NASA Space Place"
+    },
+    {
+      "title": "Dispersive prism",
+      "url": "https://en.wikipedia.org/wiki/Dispersive_prism",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La dispersión de Rayleigh es inversamente proporcional a la cuarta potencia de la longitud de onda, por lo que el azul se dispersa mucho más que el rojo.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rayleigh_scattering"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El cielo no se ve violeta porque la luz solar trae menos violeta, parte se absorbe en la alta atmósfera y el ojo es más sensible al azul.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diffuse_sky_radiation"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Al atardecer la luz recorre más atmósfera y la dispersión elimina el azul, dejando tonos rojos y naranjas.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rayleigh_scattering",
+        "https://spaceplace.nasa.gov/blue-sky/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Luna no tiene una atmósfera apreciable, por eso su cielo se ve negro incluso de día.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://spaceplace.nasa.gov/blue-sky/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

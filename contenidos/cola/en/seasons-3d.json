@@ -1,0 +1,199 @@
+{
+  "topic": "Why Earth has seasons",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why do we have summer and winter? 🌍☀️",
+  "hook": "Why do summer and winter exist?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "Why do summer and winter exist?",
+      "on_screen_text": "Why are there seasons?",
+      "highlight_words": [
+        "seasons?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Many people think it's because we get closer to the Sun. But Earth is closest in January, when it's winter in the north!",
+      "on_screen_text": "Closest in January!",
+      "highlight_words": [
+        "January!"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "The real secret is that Earth's axis is tilted about twenty-three degrees.",
+      "on_screen_text": "Earth is tilted",
+      "highlight_words": [
+        "tilted"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "In June, the northern hemisphere leans toward the Sun: it gets more direct light and longer days. It's summer.",
+      "on_screen_text": "June: northern summer",
+      "highlight_words": [
+        "summer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "A direct ray packs its heat into a small spot; a slanted one spreads the same heat over a much bigger area.",
+      "on_screen_text": "Direct heats more",
+      "highlight_words": [
+        "Direct"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "Six months later it flips: the north leans away from the Sun and it's winter, while the south has summer.",
+      "on_screen_text": "December: it flips",
+      "highlight_words": [
+        "flips"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "And since the axis always points the same way, this repeats every year.",
+      "on_screen_text": "It repeats every year",
+      "highlight_words": [
+        "year"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "At the equator the Sun shines almost straight down all year. That's why Ecuador doesn't have four seasons, just a rainy season and a dry season.",
+      "on_screen_text": "Ecuador: rainy and dry",
+      "highlight_words": [
+        "Ecuador:"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "est_outro",
+      "narration": "Send this to someone who thinks we're closer to the Sun in summer.",
+      "on_screen_text": "Send this to a believer",
+      "highlight_words": [
+        "believer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Seasons aren't caused by distance from the Sun (Earth is closest in early January) but by the roughly 23.4° tilt of its axis. When a hemisphere leans toward the Sun it gets more direct light and longer days. Near the equator the Sun is almost overhead all year. Original 3D animation; not to scale.",
+  "hashtags": [
+    "seasons",
+    "summer",
+    "winter",
+    "earth",
+    "science",
+    "astronomy",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Season",
+      "url": "https://en.wikipedia.org/wiki/Season",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Perihelion and aphelion",
+      "url": "https://en.wikipedia.org/wiki/Apsis#Perihelion_and_aphelion",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "What Causes the Seasons?",
+      "url": "https://spaceplace.nasa.gov/seasons/",
+      "publisher": "NASA Space Place"
+    },
+    {
+      "title": "Climate of Ecuador",
+      "url": "https://en.wikipedia.org/wiki/Climate_of_Ecuador",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Earth reaches perihelion (closest to the Sun) in early January, during northern winter.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Apsis#Perihelion_and_aphelion"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Earth's axis is tilted about 23.4° from the perpendicular to its orbit.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Seasons are caused by axial tilt: the hemisphere tilted toward the Sun gets more direct light and longer days.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Season",
+        "https://spaceplace.nasa.gov/seasons/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In Ecuador, near the equator, there are no four marked seasons but wet and dry seasons.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Climate_of_Ecuador"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

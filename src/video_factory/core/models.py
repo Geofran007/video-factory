@@ -23,7 +23,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "gal_map", "gal_ages", "gal_hotspot", "gal_plate", "gal_volcano", "gal_drift", "gal_conveyor",
                   "gal_flyover", "gal_seamounts", "gal_life", "gal_beagle", "gal_final", "gal_outro",
                   "and_hook", "and_avenue", "and_rise", "and_cotopaxi", "and_final", "and_outro", "and_globe",
-                  "sub_plates", "sub_push", "sub_melt", "sub_rise", "sub_row"]
+                  "sub_plates", "sub_push", "sub_melt", "sub_rise", "sub_row",
+                  # Espacio (espacio-3d.js), cielo (cielo-3d.js) y Canal de Panamá (panama-3d.js)
+                  "luna_hook", "luna_myth", "luna_half", "luna_orbit", "luna_new", "luna_quarter", "luna_full",
+                  "luna_cycle", "luna_face", "luna_outro",
+                  "est_hook", "est_distance", "est_tilt", "est_june", "est_rays", "est_december", "est_orbit",
+                  "est_equator", "est_outro",
+                  "cielo_hook", "cielo_prism", "cielo_molecules", "cielo_scatter", "cielo_everywhere", "cielo_violet",
+                  "cielo_sunset", "cielo_moon", "cielo_outro",
+                  "pan_hook", "pan_route", "pan_shortcut", "pan_profile", "pan_enter", "pan_fill", "pan_steps",
+                  "pan_water", "pan_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

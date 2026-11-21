@@ -1,0 +1,209 @@
+{
+  "topic": "How the Panama Canal locks work",
+  "language": "en",
+  "category": "historia",
+  "title": "How do ships cross the Panama Canal? 🚢",
+  "hook": "How does a giant ship get across the mountains of Panama?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pan_hook",
+      "narration": "How does a giant ship get across the mountains of Panama?",
+      "on_screen_text": "How does it cross mountains?",
+      "highlight_words": [
+        "mountains?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_route",
+      "narration": "Before, sailing from New York to San Francisco meant going all the way around South America: about twenty-two thousand five hundred kilometers.",
+      "on_screen_text": "Around South America: 22,500 km",
+      "highlight_words": [
+        "22,500"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_shortcut",
+      "narration": "Since nineteen fourteen, the Panama Canal has cut that trip to about nine thousand five hundred.",
+      "on_screen_text": "With the canal: 9,500 km",
+      "highlight_words": [
+        "9,500"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_profile",
+      "narration": "But the canal isn't flat: in the middle there's a lake twenty-six meters above sea level.",
+      "on_screen_text": "A lake 26 m up",
+      "highlight_words": [
+        "26"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_enter",
+      "narration": "To go up, the ship enters a lock: a giant chamber with gates.",
+      "on_screen_text": "Into the lock",
+      "highlight_words": [
+        "lock"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_fill",
+      "narration": "They close the gates and let lake water flow in, no pumps, just gravity, and the ship rises like in an elevator.",
+      "on_screen_text": "Up like an elevator",
+      "highlight_words": [
+        "elevator"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pan_steps",
+      "narration": "Three steps like that lift it up to the lake, and three more lower it into the other ocean.",
+      "on_screen_text": "Three steps up",
+      "highlight_words": [
+        "Three"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "pan_water",
+      "narration": "And every ship through the old locks uses about two hundred million liters of fresh water, which ends up in the sea.",
+      "on_screen_text": "200 million liters",
+      "highlight_words": [
+        "200"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pan_outro",
+      "narration": "Send this to someone who loves ships.",
+      "on_screen_text": "Send this to a ship lover",
+      "highlight_words": [
+        "ship"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Since 1914 the Panama Canal has cut the sea voyage from New York to San Francisco from about 22,500 km to about 9,500 km. Because the canal crosses Gatun Lake, 26 m above sea level, ships are raised and lowered by locks that fill by gravity, with no pumps. Each transit of the original locks uses about 200 million liters of fresh water. Original 3D animation; map and scale are approximate.",
+  "hashtags": [
+    "panamacanal",
+    "panama",
+    "ships",
+    "engineering",
+    "history",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Panama Canal",
+      "url": "https://en.wikipedia.org/wiki/Panama_Canal",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Panama Canal locks",
+      "url": "https://en.wikipedia.org/wiki/Panama_Canal_locks",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gatun Lake",
+      "url": "https://en.wikipedia.org/wiki/Gatun_Lake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Autoridad del Canal de Panamá",
+      "url": "https://pancanal.com/",
+      "publisher": "Autoridad del Canal de Panamá"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "By sea, New York–San Francisco around Cape Horn is about 22,500 km; through the canal, about 9,500 km.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Panama Canal opened in 1914.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Gatun Lake is about 26 m above sea level.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gatun_Lake"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The locks fill and empty by gravity, without pumps, using lake water.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal_locks"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "There are three lock steps on each side (Gatun on the Atlantic; Pedro Miguel and Miraflores on the Pacific).",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal_locks"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Each transit of the original locks uses about 197 million liters (52 million gallons) of fresh water.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Panama_Canal_locks"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
