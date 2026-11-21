@@ -12,6 +12,9 @@ Reglas de seguridad:
 - Si el video no pasa el control de calidad, no se sube y el guion se queda en la cola.
 - El idioma del guion debe coincidir con el canal (no se sube un video en inglés al canal en español).
 - La visibilidad por defecto es «private»: el autor lo publica o lo programa en YouTube Studio.
+- TikTok (opcional): si hay secretos TIKTOK_* para el canal, después de YouTube el mismo video se envía a TikTok
+  (por defecto como borrador a la bandeja de la app; ver video_factory/publishers/tiktok.py). Si TikTok falla,
+  YouTube no se ve afectado y el guion igual pasa a publicados.
 """
 
 from __future__ import annotations
@@ -19,6 +22,7 @@ from __future__ import annotations
 import argparse
 import datetime as dt
 import json
+import os
 import random
 import subprocess
 import sys
@@ -27,6 +31,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
 
+from video_factory.publishers import tiktok  # noqa: E402
 from video_factory.publishers.youtube import YouTubePublisher, request_from_job  # noqa: E402
 
 
@@ -51,6 +56,7 @@ def main() -> int:
     ap.add_argument("--orden", choices=["aleatorio", "alfabetico"], default="aleatorio",
                     help="aleatorio: temas variados cada día; alfabetico: respeta los prefijos 001-, 002-…")
     ap.add_argument("--guion", default="", help="Nombre de un guion concreto de la cola (con o sin .json)")
+    ap.add_argument("--sin-tiktok", action="store_true", help="No enviar a TikTok aunque haya credenciales")
     args = ap.parse_args()
 
     queue = ROOT / "contenidos" / "cola" / args.canal
@@ -95,7 +101,38 @@ def main() -> int:
         "title": result["title"], "duration_s": result["duration_s"], "job_id": result["job_id"],
         "uploaded_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
     }, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    if not args.sin_tiktok:
+        publish_tiktok(job_dir, args.canal, args.visibility, done / f"{stamp}-{name}.tiktok.json", result)
     return 0
+
+
+def save_rotated_token(token: str) -> None:
+    """TikTok cambia el refresh token en cada uso: se deja en un archivo temporal para que el workflow lo
+    guarde como secreto de GitHub (nunca se imprime ni se sube al repositorio)."""
+    out = os.environ.get("TIKTOK_NEW_TOKEN_FILE", "").strip()
+    if not out:
+        print("::warning::TikTok entregó un refresh token nuevo y no hay TIKTOK_NEW_TOKEN_FILE para guardarlo.")
+        return
+    Path(out).write_text(token, encoding="utf-8")
+
+
+def publish_tiktok(job_dir: Path, canal: str, visibility: str, record: Path, result: dict) -> None:
+    if not tiktok.configured(canal):
+        print(f"TikTok: sin credenciales para '{canal}', se omite.")
+        return
+    try:
+        pub = tiktok.TikTokPublisher(canal, on_new_refresh_token=save_rotated_token)
+        res = pub.publish(tiktok.request_from_job(job_dir, canal, visibility))
+        info = {"publish_id": res.remote_id, "mode": pub.mode, "ok": True}
+        print(f"TikTok ({pub.mode}): enviado · {res.remote_id}"
+              + (" — revisa la bandeja de entrada de la app para publicarlo." if pub.mode == "inbox" else ""))
+    except Exception as exc:  # TikTok no debe tumbar la publicación de YouTube
+        info = {"ok": False, "error": str(exc)[:500]}
+        print(f"::warning::TikTok falló: {exc}")
+    info.update({"channel": canal, "title": result["title"], "job_id": result["job_id"],
+                 "sent_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")})
+    record.write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 if __name__ == "__main__":

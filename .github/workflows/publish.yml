@@ -50,6 +50,12 @@ jobs:
       YT_REFRESH_TOKEN_EN: ${{ secrets.YT_REFRESH_TOKEN_EN }}
       YT_CHANNEL_ID_ES: ${{ secrets.YT_CHANNEL_ID_ES }}
       YT_CHANNEL_ID_EN: ${{ secrets.YT_CHANNEL_ID_EN }}
+      # TikTok (opcional): si faltan estos secretos, la subida a TikTok se omite sin afectar a YouTube.
+      TIKTOK_CLIENT_KEY: ${{ secrets.TIKTOK_CLIENT_KEY }}
+      TIKTOK_CLIENT_SECRET: ${{ secrets.TIKTOK_CLIENT_SECRET }}
+      TIKTOK_REFRESH_TOKEN_ES: ${{ secrets.TIKTOK_REFRESH_TOKEN_ES }}
+      TIKTOK_REFRESH_TOKEN_EN: ${{ secrets.TIKTOK_REFRESH_TOKEN_EN }}
+      TIKTOK_MODE: ${{ vars.TIKTOK_MODE || 'inbox' }}
     steps:
       - uses: actions/checkout@v4
       - name: ¿Hay guiones en la cola?
@@ -117,10 +123,28 @@ jobs:
           for c in $list; do
             echo "::group::Canal $c"
             g=GUION_${c^^}; sel=(); [ -n "${!g}" ] && sel=(--guion "${!g}")
-            python scripts/publish_queue.py --canal "$c" --visibility "$VISIBILIDAD" "${extra[@]}" "${sel[@]}" || status=1
+            TIKTOK_NEW_TOKEN_FILE="$RUNNER_TEMP/tiktok_$c.txt"               python scripts/publish_queue.py --canal "$c" --visibility "$VISIBILIDAD" "${extra[@]}" "${sel[@]}" || status=1
             echo "::endgroup::"
           done
           exit $status
+
+      # TikTok cambia el refresh token en cada uso: se guarda el nuevo como secreto (necesita GH_SECRETS_TOKEN,
+      # un token de GitHub con permiso "Secrets: read and write" solo para este repositorio).
+      - name: Guardar el token nuevo de TikTok
+        if: always()
+        env:
+          GH_TOKEN: ${{ secrets.GH_SECRETS_TOKEN }}
+        run: |
+          for c in es en; do
+            f="$RUNNER_TEMP/tiktok_$c.txt"
+            [ -s "$f" ] || continue
+            if [ -z "$GH_TOKEN" ]; then
+              echo "::error::Falta el secreto GH_SECRETS_TOKEN: no se pudo guardar el token nuevo de TikTok ($c). Vuelve a correr scripts/tiktok_auth.py."
+            else
+              gh secret set "TIKTOK_REFRESH_TOKEN_${c^^}" --repo "${{ github.repository }}" < "$f" && echo "Token de TikTok ($c) actualizado."
+            fi
+            rm -f "$f"
+          done
 
       - name: Guardar la cola actualizada
         if: always() && steps.cola.outputs.pendientes != '0'

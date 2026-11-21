@@ -263,7 +263,7 @@ gh secret set VOICE_PASSPHRASE
   (*Settings → Secrets and variables → Actions*). Sin temática usa el ejemplo y no llama a la IA. Con la voz `mi_voz`
   también requiere `VOICE_PASSPHRASE`; el clip descifrado se borra al terminar.
 - `.github/workflows/publish.yml`: **publicación en YouTube** (autorizada por el autor el 2026-11-19, cambio de la
-  regla 8 de la Fase 1). Cada día a las 13:00 UTC toma el primer guion de `contenidos/cola/es/` (Leo curioso) y de
+  regla 8 de la Fase 1). Cada día a las 13:00 UTC toma un guion al azar de `contenidos/cola/es/` (Leo curioso) y de
   `contenidos/cola/en/` (Curious Leo), genera el video con `voz_zueria` y lo sube como **privado**; luego mueve el
   guion a `contenidos/publicados/<idioma>/` con el enlace del video. Si el control de calidad falla, no sube nada.
   También se puede lanzar a mano (*Run workflow*) con la opción «prueba» para generar sin subir.
@@ -280,6 +280,25 @@ gh secret set VOICE_PASSPHRASE
    la cola. Los videos se declaran como contenido sintético (voz clonada) y «no es para niños».
 4. Mientras la API no pase la auditoría de YouTube, los videos quedan privados: publícalos o prográmalos en
    YouTube Studio. Cuota: ~6 subidas por día por proyecto.
+
+### Publicar en TikTok (opcional)
+
+Después de YouTube, el mismo video se envía a TikTok si existen los secretos `TIKTOK_*` del canal; si faltan o
+TikTok falla, YouTube no se ve afectado (queda registro en `contenidos/publicados/<idioma>/*.tiktok.json`).
+
+1. En https://developers.tiktok.com crea una app con los productos **Login Kit** (Desktop, redirect URI
+   `http://127.0.0.1:3455/callback/`) y **Content Posting API**. Envía la app a revisión (*App review*); mientras
+   está en *sandbox* solo funciona con las cuentas agregadas como usuarios de prueba.
+2. Guarda el Client key y el Client secret en `credenciales/tiktok_app.json` (`{"client_key": "…", "client_secret": "…"}`,
+   carpeta excluida de git) y, por cuenta, corre `python scripts/tiktok_auth.py --canal es|en`.
+3. TikTok cambia el refresh token cada vez que se usa. Crea un token de GitHub *fine-grained* solo para este
+   repositorio con permiso **Secrets: Read and write** y guárdalo como secreto `GH_SECRETS_TOKEN`: el workflow lo usa
+   para guardar el token nuevo al final de cada ejecución. Sin él, TikTok dejará de funcionar tras la primera subida.
+4. Modo (variable de repositorio `TIKTOK_MODE`):
+   - `inbox` (por defecto): el video llega como **borrador** a la bandeja de entrada de TikTok y lo publicas desde la
+     app (máximo 5 borradores pendientes por día).
+   - `direct`: publica directo, pero mientras la app no pase la **auditoría** de TikTok la cuenta debe ser privada y el
+     video queda visible solo para ti. Conecta con `--modo direct` para pedir el permiso `video.publish`.
 
 ## Solución de errores
 
