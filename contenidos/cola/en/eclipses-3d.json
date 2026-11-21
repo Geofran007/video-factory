@@ -1,0 +1,207 @@
+{
+  "topic": "How solar and lunar eclipses work",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does the Moon cover the Sun? 🌑☀️",
+  "hook": "How can the tiny Moon completely cover the enormous Sun?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ecl_hook",
+      "narration": "How can the tiny Moon completely cover the enormous Sun?",
+      "on_screen_text": "How does the Moon cover the Sun?",
+      "highlight_words": [
+        "cover"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_size",
+      "narration": "The Sun is about four hundred times wider than the Moon, but it's also about four hundred times farther away.",
+      "on_screen_text": "400× bigger, 400× farther",
+      "highlight_words": [
+        "400×"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_same",
+      "narration": "So from Earth, both look almost the same size in the sky.",
+      "on_screen_text": "Same size in the sky",
+      "highlight_words": [
+        "Same"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_solar",
+      "narration": "In a solar eclipse, the Moon lines up right in front and its shadow falls on the Earth.",
+      "on_screen_text": "The Moon's shadow",
+      "highlight_words": [
+        "shadow"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_path",
+      "narration": "But that shadow is small: only people inside a narrow strip see the total eclipse.",
+      "on_screen_text": "Only along a narrow strip",
+      "highlight_words": [
+        "narrow"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_tilt",
+      "narration": "So why isn't there one every month? Because the Moon's orbit is tilted about five degrees, so it usually passes above or below.",
+      "on_screen_text": "A 5° tilted orbit",
+      "highlight_words": [
+        "5°"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_lunar",
+      "narration": "In a lunar eclipse it's the other way around: the Earth blocks the Sun and the Moon slips into our shadow.",
+      "on_screen_text": "Lunar eclipse",
+      "highlight_words": [
+        "Lunar"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ecl_red",
+      "narration": "And it turns red, because Earth's atmosphere bends the light of every sunrise and sunset on the planet onto it.",
+      "on_screen_text": "Why it turns red",
+      "highlight_words": [
+        "red"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_future",
+      "narration": "And since the Moon drifts away almost four centimeters a year, in hundreds of millions of years there will be no more total eclipses.",
+      "on_screen_text": "Someday, no more",
+      "highlight_words": [
+        "more"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ecl_outro",
+      "narration": "Send this to someone you'd watch the next eclipse with.",
+      "on_screen_text": "Watch the next one together",
+      "highlight_words": [
+        "together"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "The Sun is about 400 times wider than the Moon and about 400 times farther away, so they look the same size. In a solar eclipse the Moon's shadow falls on a narrow strip of Earth; it doesn't happen every month because the Moon's orbit is tilted about 5°. In a lunar eclipse the Moon turns red from light that Earth's atmosphere bends toward it. The Moon drifts away about 3.8 cm a year. Original 3D animation; not to scale.",
+  "hashtags": [
+    "eclipse",
+    "solareclipse",
+    "moon",
+    "sun",
+    "astronomy",
+    "space",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Eclipses",
+      "url": "https://science.nasa.gov/eclipses/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Solar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Lunar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Lunar_eclipse",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Orbit of the Moon",
+      "url": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Sun's diameter is about 400 times the Moon's, and it is also about 400 times farther away.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Solar_eclipse"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Moon's orbit is inclined about 5° to the ecliptic, so eclipses don't happen every month.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "An eclipsed Moon looks reddish because of light refracted by Earth's atmosphere.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_eclipse"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Moon recedes about 3.8 cm per year; in hundreds of millions of years total solar eclipses will no longer occur.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Solar_eclipse",
+        "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

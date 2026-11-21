@@ -35,6 +35,18 @@
     };
   }
 
+  // Arcoíris: 7 medias coronas de color (rojo afuera; reverse = segundo arco con colores invertidos).
+  const BOW = [0xff3b30, 0xff9500, 0xffd60a, 0x34c759, 0x0a84ff, 0x5e5ce6, 0x8e5cf7];
+  function rainbowArcs(scene, center, R, reverse, opacity, full = false) {
+    const cols = reverse ? BOW.slice().reverse() : BOW; const w = R * 0.018; const ms = [];
+    cols.forEach((c, i) => {
+      const m = new T.Mesh(new T.RingGeometry(R - (i + 1) * w, R - i * w, 128, 1, 0, full ? PI * 2 : PI),
+        new T.MeshBasicMaterial({ color: c, transparent: true, opacity: 0, depthWrite: false, fog: false, side: T.DoubleSide }));
+      m.position.set(...center); scene.add(m); ms.push(m);
+    });
+    return (p) => ms.forEach((m) => { m.material.opacity = opacity * p; m.visible = p > 0.01; });
+  }
+
   // ------------------------------------------------------------------ paisaje de día (gancho y cierre)
   function landscape(canvas, variant) {
     const st = stage(canvas, { bg: 0x4f9be8, fog: [0x9fd0f5, 20, 70], stars: false, hemi: 1.0, moon: 1.2, focus: 0.36 });
@@ -86,9 +98,22 @@
       g.position.set((r() - 0.5) * 34, 9 + r() * 5, -20 - r() * 15); scene.add(g); clouds.push({ g, x: g.position.x, s: 0.2 + r() * 0.2 });
     }
     const sun = glowSprite(0xfff2c0, 9, 1); sun.position.set(9, 14, -40); scene.add(sun);
-    if (variant === 'outro') fade(st);
+    if (variant === 'outro' || variant === 'arco_outro') fade(st);
+    // Arcoíris (detrás del observador está el Sol, así que lo ocultamos en estas escenas)
+    let bows = [];
+    if (variant.startsWith('arco')) {
+      sun.visible = false;
+      bows.push(rainbowArcs(scene, [0, -2, -34], 15, false, 0.6));
+      if (variant === 'arco_double') {
+        bows.push(rainbowArcs(scene, [0, -2, -34], 18.2, true, 0.32));
+        const band = new T.Mesh(new T.RingGeometry(15.6, 17.6, 96, 1, 0, PI), new T.MeshBasicMaterial({ color: 0x1a2a4a, transparent: true, opacity: 0.18, depthWrite: false, fog: false }));
+        band.position.set(0, -2, -34.1); scene.add(band);
+        st.label({ text: 'colores al revés', p: [-12.6, 9.6, -34], t0: (d) => d * 0.4, color: COL.white, size: 42, dy: 0, dx: 120 });
+      }
+    }
     return (lt, dur) => {
       const k = smooth(clamp(lt / dur));
+      bows.forEach((b, i) => b(smooth(prog(lt, 0.2 + i * dur * 0.3, dur * 0.4))));
       if (variant === 'outro') { paintSky(smooth(prog(lt, 0, dur * 0.6))); sun.position.set(9, lerp(14, 2, k), -40); sun.material.color.set(0xff9a4a); }
       clouds.forEach((o) => { o.g.position.x = o.x + lt * o.s; });
       camera.position.set(0, 1.8, lerp(8, 6.5, k)); camera.lookAt(0, lerp(4.5, 5.2, k), -10);
@@ -333,7 +358,177 @@
     };
   }
 
+  // ================================================================== ARCOÍRIS
+  K.addEN({
+    'Sol a tu espalda': 'Sun behind you', 'lluvia delante': 'rain in front', 'se dobla': 'it bends',
+    'rebota': 'it bounces', 'sale separada': 'it comes out split', 'rojo ≈ 42°': 'red ≈ 42°', 'violeta ≈ 40°': 'violet ≈ 40°',
+    'rojo: gotas más altas': 'red: higher drops', 'violeta: gotas más bajas': 'violet: lower drops',
+    'sombra de tu cabeza': 'shadow of your head', 'círculo completo': 'a full circle', 'colores al revés': 'colors reversed',
+    'tu arcoíris': 'your rainbow', 'el de tu amigo': "your friend's",
+  });
+
+  function person(scene, x, z, color = 0xffc94a) {
+    const g = new T.Group();
+    const body = new T.Mesh(new T.CylinderGeometry(0.2, 0.25, 0.8, 10), new T.MeshStandardMaterial({ color }));
+    const head = new T.Mesh(new T.SphereGeometry(0.2, 14, 10), new T.MeshStandardMaterial({ color: 0xf1c7a0 }));
+    body.position.y = 0.4; head.position.y = 1.0; g.add(body, head); g.position.set(x, 0, z); scene.add(g);
+    return [x, 1.0, z];
+  }
+
+  function rain(scene, x0, x1, top, n, seed) {
+    const r = rng(seed); const drops = [];
+    const mat = new T.LineBasicMaterial({ color: 0x9fc8ff, transparent: true, opacity: 0.5 });
+    for (let i = 0; i < n; i++) {
+      const l = new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(0, 0, 0), new T.Vector3(0, -0.35, 0)]), mat);
+      scene.add(l); drops.push({ l, x: lerp(x0, x1, r()), z: (r() - 0.5) * 4, ph: r(), sp: 0.8 + r() * 0.4 });
+    }
+    return (lt) => drops.forEach((o) => { const f = (lt * o.sp + o.ph) % 1; o.l.position.set(o.x, top - f * top, o.z); });
+  }
+
+  function seg(scene, a, b, color, opacity = 1) {
+    const m = onGlow(new T.Line(new T.BufferGeometry().setFromPoints([new T.Vector3(...a), new T.Vector3(...b)]),
+      new T.LineBasicMaterial({ color, transparent: true, opacity })));
+    scene.add(m); return m;
+  }
+
+  // Lado: Sol bajo a la izquierda, observador, lluvia a la derecha.
+  function arcoSide(canvas, variant) {
+    const st = stage(canvas, { bg: 0x0d1a33, fog: null, stars: false, focus: 0.37, hemi: 0.9 });
+    const { scene, camera } = st;
+    const ground = new T.Mesh(new T.BoxGeometry(30, 0.3, 6), new T.MeshStandardMaterial({ color: 0x3c7a3a, flatShading: true }));
+    ground.position.y = -0.15; scene.add(ground);
+    const eye = person(scene, 0, 0);
+    const sun = glowSprite(0xfff2c0, 2.6, 1); sun.position.set(-3.8, 2.2, 0); scene.add(sun);
+    const rainUpd = rain(scene, 3.4, 5.6, 8, 120, 3);
+    const beams = [];
+    for (let i = 0; i < 4; i++) beams.push({ m: seg(scene, [-3.4, 1.8 + i * 1.5, 0], [4.6, 1.8 + i * 1.5, 0], 0xfff2c0, 0.35), t: 0.2 + i * 0.1 });
+    const fan = [];
+    const angles = variant === 'yours' ? [] : [[42, 0xff3b30], [40, 0x8e5cf7]];
+    const X = 4.4;
+    angles.forEach(([deg, c], i) => {
+      const y = eye[1] + X * Math.tan(deg * PI / 180 * 1.0);
+      const drop = onGlow(new T.Mesh(new T.SphereGeometry(0.16, 12, 8), new T.MeshBasicMaterial({ color: c })));
+      drop.position.set(X, y, 0); scene.add(drop);
+      fan.push({ line: seg(scene, [X, y, 0], eye, c, 0.95), drop, t: 0.6 + i * 0.9 });
+    });
+    const people = [];
+    if (variant === 'yours') {
+      const eye2 = person(scene, 1.3, 0, 0x6ee08a);
+      [[eye, 0xff3b30], [eye2, 0xff9500]].forEach(([e, c], i) => {
+        const y = e[1] + (X - e[0]) * Math.tan(42 * PI / 180);
+        const drop = onGlow(new T.Mesh(new T.SphereGeometry(0.16, 12, 8), new T.MeshBasicMaterial({ color: c })));
+        drop.position.set(X, y, 0); scene.add(drop);
+        people.push({ line: seg(scene, [X, y, 0], e, c, 0.95), drop, t: 0.5 + i * dur0Frac });
+      });
+      st.label({ text: 'tu arcoíris', p: () => people[0].drop.position.toArray(), t0: 0.6, color: '#ff8a7a', size: 38, dx: -150, dy: 40 });
+      st.label({ text: 'el de tu amigo', p: () => people[1].drop.position.toArray(), t0: (d) => d * 0.5, color: COL.orange, size: 38, dx: -150, dy: -60 });
+    }
+    if (variant === 'recipe') {
+      st.label({ text: 'Sol a tu espalda', p: [-3.8, 2.2, 0], t0: 0.3, color: COL.gold, size: 40, dy: 120, dx: 80 });
+      st.label({ text: 'lluvia delante', p: [4.5, 4, 0], t0: (d) => d * 0.45, color: COL.blue, size: 40, dy: 160, dx: -80 });
+    }
+    if (variant === 'many') {
+      st.label({ text: 'rojo: gotas más altas', p: () => fan[0].drop.position.toArray(), t0: 0.8, color: '#ff8a7a', size: 38, dx: -200, dy: 70 });
+      st.label({ text: 'violeta: gotas más bajas', p: () => fan[1].drop.position.toArray(), t0: (d) => d * 0.5, color: '#c4a6ff', size: 38, dx: -200, dy: -90 });
+    }
+    return (lt, dur) => {
+      rainUpd(lt);
+      beams.forEach((b) => { b.m.material.opacity = 0.35 * smooth(prog(lt, b.t, 0.6)); });
+      [...fan, ...people].forEach((o) => { const p = smooth(prog(lt, variant === 'yours' ? o.t * dur : o.t, 0.6)); o.line.visible = o.drop.visible = p > 0.01; o.line.material.opacity = p; });
+      const k = smooth(clamp(lt / dur));
+      camera.position.set(lerp(0.2, 0.6, k), 3.4, lerp(18.5, 17.5, k)); camera.lookAt(0.4, 3.0, 0);
+      st.draw(lt, dur);
+    };
+  }
+  const dur0Frac = 0.45;
+
+  // Gota grande: la luz entra, se dobla, rebota y sale separada en colores.
+  function arcoDrop(canvas, variant) {
+    const st = stage(canvas, { fog: null, focus: 0.37 });
+    const { scene, camera } = st;
+    const R = 2;
+    const drop = new T.Mesh(new T.SphereGeometry(R, 48, 32), new T.MeshStandardMaterial({ color: 0x6fb6ff, transparent: true, opacity: 0.28, roughness: 0.05, depthWrite: false }));
+    scene.add(drop);
+    const rim = new T.Mesh(new T.TorusGeometry(R, 0.02, 6, 96), new T.MeshBasicMaterial({ color: 0xbfe0ff, transparent: true, opacity: 0.6 }));
+    scene.add(rim);
+    const E = [-1.6, 1.2, 0], B = [1.7, -1.05, 0], X = [-0.9, -1.786, 0];
+    const parts = [seg(scene, [-6, 1.2, 0], E, 0xffffff), seg(scene, E, B, 0xffffff), seg(scene, B, X, 0xffffff)];
+    const outs = BOW.map((c, i) => { const a = (180 + 46 - i * 2) * PI / 180; return seg(scene, X, [X[0] + Math.cos(a) * 5, X[1] + Math.sin(a) * 5, 0], c); });
+    if (variant === 'drop') {
+      st.label({ text: 'se dobla', p: E, t0: 0.4, color: COL.white, size: 40, dy: 110 });
+      st.label({ text: 'rebota', p: B, t0: (d) => d * 0.4, color: COL.white, size: 40, dy: -150, dx: -40 });
+      st.label({ text: 'sale separada', p: X, t0: (d) => d * 0.7, color: COL.gold, size: 40, dy: -170, dx: -80 });
+    } else {
+      st.label({ text: 'rojo ≈ 42°', p: () => [X[0] + Math.cos((180 + 46) * PI / 180) * 4.6, X[1] + Math.sin((180 + 46) * PI / 180) * 4.6, 0], t0: 0.4, color: '#ff8a7a', size: 40, dy: 0, dx: -60 });
+      st.label({ text: 'violeta ≈ 40°', p: () => [X[0] + Math.cos((180 + 34) * PI / 180) * 4.6, X[1] + Math.sin((180 + 34) * PI / 180) * 4.6, 0], t0: (d) => d * 0.45, color: '#c4a6ff', size: 40, dy: 110, dx: -120 });
+    }
+    return (lt, dur) => {
+      const grow = (m, a, b, p) => { m.visible = p > 0.01; const pos = m.geometry.attributes.position; pos.setXYZ(1, lerp(a[0], b[0], p), lerp(a[1], b[1], p), 0); pos.needsUpdate = true; };
+      const t = variant === 'drop' ? [0.2, dur * 0.3, dur * 0.5, dur * 0.7] : [0, 0, 0, 0.1];
+      const pts = [[-6, 1.2, 0], E, B, X];
+      parts.forEach((m, i) => grow(m, pts[i], pts[i + 1], variant === 'drop' ? smooth(prog(lt, t[i], dur * 0.18)) : 1));
+      outs.forEach((m, i) => { const a = (180 + 46 - i * 2) * PI / 180; grow(m, X, [X[0] + Math.cos(a) * 5, X[1] + Math.sin(a) * 5, 0], smooth(prog(lt, t[3], dur * 0.25))); });
+      const k = smooth(clamp(lt / dur));
+      if (variant === 'drop') { camera.position.set(lerp(-0.4, 0.4, k), 0.4, lerp(12, 11, k)); camera.lookAt(-0.6, 0, 0); }
+      else { camera.position.set(-2.4, -2.2, lerp(9, 8, k)); camera.lookAt(-3.0, -3.4, 0); }
+      st.draw(lt, dur);
+    };
+  }
+
+  // Cono de 42° alrededor de la sombra de la cabeza; y vista desde un avión con el círculo completo.
+  function arcoCone(canvas, variant) {
+    const plane = variant === 'circle';
+    const st = stage(canvas, { bg: plane ? 0x4f8fd8 : 0x0d1a33, fog: plane ? [0x9fc8f0, 20, 70] : null, stars: false, focus: 0.37, hemi: 1.0 });
+    const { scene, camera } = st;
+    if (!plane) {
+      const ground = new T.Mesh(new T.PlaneGeometry(40, 40), new T.MeshStandardMaterial({ color: 0x3c7a3a }));
+      ground.rotation.x = -PI / 2; scene.add(ground);
+      const eye = person(scene, 0, 4);
+      const shadowPt = onGlow(new T.Mesh(new T.CircleGeometry(0.25, 20), new T.MeshBasicMaterial({ color: 0x111111 })));
+      shadowPt.rotation.x = -PI / 2; shadowPt.position.set(0, 0.02, -3); scene.add(shadowPt);
+      // El eje del cono va del ojo a la sombra de la cabeza (Sol bajo detrás).
+      const axis = new T.Vector3(0, -0.14, -1).normalize();
+      const L = 9, rad = Math.tan(42 * PI / 180) * L;
+      const center = new T.Vector3(...eye).addScaledVector(axis, L);
+      const bow = rainbowArcs(scene, center.toArray(), rad, false, 0.85, true);
+      const ringObjs = scene.children.slice(-7); ringObjs.forEach((m) => m.lookAt(...eye));
+      const lines = [];
+      for (let i = 0; i < 10; i++) { const a = i / 10 * PI * 2; const p = center.clone().add(new T.Vector3(Math.cos(a) * rad, Math.sin(a) * rad, 0)); lines.push(seg(scene, eye, p.toArray(), 0xffffff, 0.25)); }
+      st.label({ text: 'sombra de tu cabeza', p: [0, 0, -3], t0: 0.4, color: COL.white, size: 38, dy: -120 });
+      st.label({ text: 'rojo ≈ 42°', p: () => center.clone().add(new T.Vector3(rad * 0.7, rad * 0.7, 0)).toArray(), t0: (d) => d * 0.45, color: '#ff8a7a', size: 40 });
+      return (lt, dur) => {
+        bow(smooth(prog(lt, dur * 0.2, dur * 0.4)));
+        lines.forEach((l) => { l.material.opacity = 0.25 * smooth(prog(lt, 0.2, 0.8)); });
+        const k = smooth(clamp(lt / dur));
+        camera.position.set(lerp(-2.5, -1.5, k), 4.0, lerp(14, 13, k)); camera.lookAt(0, 1.8, -5);
+        st.draw(lt, dur);
+      };
+    }
+    // Avión sobre las nubes con el arcoíris circular delante.
+    const r = rng(6);
+    for (let i = 0; i < 30; i++) {
+      const c = new T.Mesh(new T.IcosahedronGeometry(1.5 + r() * 1.5, 1), new T.MeshStandardMaterial({ color: 0xffffff, flatShading: true }));
+      c.position.set((r() - 0.5) * 50, -6 + r() * 1.5, -r() * 50 + 5); c.scale.y = 0.5; scene.add(c);
+    }
+    const bow = rainbowArcs(scene, [0, -3, -26], 9, false, 0.8, true);
+    const shadowPlane = new T.Group();
+    const body = new T.Mesh(new T.CylinderGeometry(0.12, 0.12, 1.6, 10), new T.MeshBasicMaterial({ color: 0x223 }));
+    body.rotation.z = PI / 2; const wing = new T.Mesh(new T.BoxGeometry(0.3, 0.03, 1.8), new T.MeshBasicMaterial({ color: 0x223 }));
+    shadowPlane.add(body, wing); shadowPlane.position.set(0, -3, -25.9); shadowPlane.scale.setScalar(0.7); scene.add(shadowPlane);
+    st.label({ text: 'círculo completo', p: [0, 6, -26], t0: (d) => d * 0.4, color: COL.gold, size: 46, dy: 60 });
+    return (lt, dur) => {
+      bow(smooth(prog(lt, 0.2, dur * 0.4)));
+      const k = smooth(clamp(lt / dur));
+      camera.position.set(Math.sin(lt * 0.4) * 0.3, 2.0, lerp(4, 2, k)); camera.lookAt(0, -2.5, -26);
+      st.draw(lt, dur);
+    };
+  }
+
   const reg = (name, fn) => window.VF.three.register(name, fn, { full: true });
+  ['arco_hook', 'arco_double', 'arco_outro'].forEach((v) => reg(v, (c) => landscape(c, v)));
+  ['recipe', 'many', 'yours'].forEach((v) => reg(`arco_${v}`, (c) => arcoSide(c, v)));
+  ['drop', 'split'].forEach((v) => reg(`arco_${v}`, (c) => arcoDrop(c, v)));
+  ['cone', 'circle'].forEach((v) => reg(`arco_${v}`, (c) => arcoCone(c, v)));
   reg('cielo_hook', (c) => landscape(c, 'hook'));
   reg('cielo_outro', (c) => landscape(c, 'outro'));
   reg('cielo_prism', (c) => prismScene(c));

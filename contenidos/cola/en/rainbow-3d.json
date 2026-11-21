@@ -1,0 +1,203 @@
+{
+  "topic": "How a rainbow forms",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does a rainbow form? 🌈",
+  "hook": "Why does a rainbow appear, and why are its colors always in the same order?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "arco_hook",
+      "narration": "Why does a rainbow appear, and why are its colors always in the same order?",
+      "on_screen_text": "How does a rainbow form?",
+      "highlight_words": [
+        "rainbow"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_recipe",
+      "narration": "You need two things to see one: the Sun behind you and raindrops in front of you.",
+      "on_screen_text": "Sun behind, rain ahead",
+      "highlight_words": [
+        "Sun",
+        "rain"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_drop",
+      "narration": "Every drop works like a tiny prism: light goes in, bends, bounces off the back and comes out again.",
+      "on_screen_text": "Every drop is a prism",
+      "highlight_words": [
+        "prism"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_split",
+      "narration": "As it bends, each color comes out at a different angle: red at about forty-two degrees and violet at about forty.",
+      "on_screen_text": "Red 42°, violet 40°",
+      "highlight_words": [
+        "42°"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_many",
+      "narration": "That's why red reaches you from higher drops and violet from lower ones: red is always on top.",
+      "on_screen_text": "Red is always on top",
+      "highlight_words": [
+        "Red"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_cone",
+      "narration": "All the drops at that angle form a circle around the shadow of your head.",
+      "on_screen_text": "A circle around you",
+      "highlight_words": [
+        "circle"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "arco_circle",
+      "narration": "From the ground the horizon cuts part of it off, but from a plane a rainbow can look like a full circle.",
+      "on_screen_text": "A full circle!",
+      "highlight_words": [
+        "full"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_double",
+      "narration": "And if light bounces twice inside the drop, a second, fainter rainbow appears with its colors reversed.",
+      "on_screen_text": "The double one is reversed",
+      "highlight_words": [
+        "reversed"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_yours",
+      "narration": "Since it all depends on where you stand, nobody sees exactly the same rainbow as you.",
+      "on_screen_text": "Your rainbow is yours alone",
+      "highlight_words": [
+        "yours"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "arco_outro",
+      "narration": "Send this to someone who always looks for rainbows.",
+      "on_screen_text": "Send this to a rainbow hunter",
+      "highlight_words": [
+        "rainbow"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "With the Sun behind you and rain ahead, every drop acts like a prism: light enters, refracts, reflects inside and comes out split into colors, red at about 42° and violet at about 40° from the shadow of your head. From a plane it can look like a full circle, and a double rainbow has its colors reversed. Original 3D animation; angles exaggerated for clarity.",
+  "hashtags": [
+    "rainbow",
+    "light",
+    "rain",
+    "physics",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Rainbow",
+      "url": "https://en.wikipedia.org/wiki/Rainbow",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Rainbows",
+      "url": "https://scijinks.gov/rainbow/",
+      "publisher": "NOAA SciJinks"
+    },
+    {
+      "title": "Primary rainbow",
+      "url": "https://atoptics.co.uk/atoptics/rainbows/primary-rainbow/",
+      "publisher": "Atmospheric Optics"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "To see a rainbow the Sun must be behind the observer and the rain in front.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow",
+        "https://scijinks.gov/rainbow/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In the primary rainbow red appears about 42° from the antisolar point and violet about 40°.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "From a plane or high vantage point a rainbow can appear as a full circle.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The secondary bow comes from two internal reflections and has reversed colors.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

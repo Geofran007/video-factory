@@ -1,0 +1,215 @@
+{
+  "topic": "Cómo se forman los rayos y los truenos",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Qué es un rayo? ⚡",
+  "hook": "¿Qué es realmente un rayo, y por qué suena el trueno?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "¿Qué es realmente un rayo, y por qué suena el trueno?",
+      "on_screen_text": "¿Qué es un rayo?",
+      "highlight_words": [
+        "rayo?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "Dentro de una nube de tormenta, el viento sube y hace chocar trocitos de hielo con granizo blando, millones de veces.",
+      "on_screen_text": "Hielo chocando en la nube",
+      "highlight_words": [
+        "chocando"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_charges",
+      "narration": "Esos choques separan cargas: arriba quedan las positivas, abajo las negativas, y el suelo se carga al revés.",
+      "on_screen_text": "Se separan las cargas",
+      "highlight_words": [
+        "cargas"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "Cuando la diferencia es enorme, baja un canal de aire cargado, a saltos, buscando el suelo.",
+      "on_screen_text": "Baja a saltos",
+      "highlight_words": [
+        "saltos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "Desde el suelo sube otra chispa a su encuentro, y cuando se tocan, la corriente viaja de golpe: ese es el destello.",
+      "on_screen_text": "¡Se tocan y destella!",
+      "highlight_words": [
+        "destella!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "Ese canal calienta el aire a unos treinta mil grados: cinco veces más que la superficie del Sol.",
+      "on_screen_text": "5 veces más que el Sol",
+      "highlight_words": [
+        "5"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_thunder",
+      "narration": "El aire se expande tan rápido que estalla como una explosión, y eso es el trueno.",
+      "on_screen_text": "Eso es el trueno",
+      "highlight_words": [
+        "trueno"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "Como la luz llega antes que el sonido, cuenta los segundos: cada tres son más o menos un kilómetro.",
+      "on_screen_text": "3 segundos ≈ 1 km",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "Y sí, un rayo puede caer dos veces en el mismo lugar: el Empire State recibe unos veinte rayos al año.",
+      "on_screen_text": "Cae dos veces, ¡y más!",
+      "highlight_words": [
+        "más!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ray_outro",
+      "narration": "Mándaselo a alguien que se asusta con los truenos.",
+      "on_screen_text": "Mándaselo a un amigo",
+      "highlight_words": [
+        "amigo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Dentro de una nube de tormenta, el hielo y el granizo blando chocan y separan cargas eléctricas. Un canal de aire cargado baja a saltos, otra chispa sube desde el suelo y, al tocarse, se produce el destello. El rayo calienta el aire a unos 30.000 °C y su expansión explosiva es el trueno. Cuenta los segundos: cada 3 son aproximadamente 1 km. Animación 3D propia.",
+  "hashtags": [
+    "rayos",
+    "tormenta",
+    "trueno",
+    "clima",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Lightning Science Overview",
+      "url": "https://www.weather.gov/safety/lightning-science-overview",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Understanding Lightning: Thunder",
+      "url": "https://www.weather.gov/safety/lightning-science-thunder",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Lightning Myths",
+      "url": "https://www.weather.gov/safety/lightning-myths",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Lightning",
+      "url": "https://en.wikipedia.org/wiki/Lightning",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los choques entre cristales de hielo y granizo blando separan cargas: la parte alta de la nube queda positiva y la baja negativa.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-overview"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El líder escalonado baja por pasos y se encuentra con una descarga ascendente desde el suelo.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-overview",
+        "https://en.wikipedia.org/wiki/Lightning"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un rayo puede calentar el aire a unos 50.000 °F (~28.000 °C), unas cinco veces la temperatura de la superficie del Sol.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-thunder"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El sonido recorre aproximadamente 1 km cada 3 segundos.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Speed_of_sound"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El Empire State Building recibe en promedio unos 20–25 rayos al año.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-myths"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

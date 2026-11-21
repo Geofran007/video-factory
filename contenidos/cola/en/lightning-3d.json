@@ -1,0 +1,215 @@
+{
+  "topic": "How lightning and thunder form",
+  "language": "en",
+  "category": "ciencia",
+  "title": "What is lightning? ⚡",
+  "hook": "What is lightning, really, and why does thunder rumble?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "What is lightning, really, and why does thunder rumble?",
+      "on_screen_text": "What is lightning?",
+      "highlight_words": [
+        "lightning?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "Inside a storm cloud, rising winds smash tiny ice crystals into soft hail, millions of times.",
+      "on_screen_text": "Ice colliding in the cloud",
+      "highlight_words": [
+        "colliding"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_charges",
+      "narration": "Those collisions separate charges: positive on top, negative at the bottom, and the ground takes the opposite charge.",
+      "on_screen_text": "Charges separate",
+      "highlight_words": [
+        "Charges"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "When the difference gets huge, a channel of charged air comes down in steps, looking for the ground.",
+      "on_screen_text": "It comes down in steps",
+      "highlight_words": [
+        "steps"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "A spark rises from the ground to meet it, and when they touch, the current rushes through: that's the flash.",
+      "on_screen_text": "They touch and flash!",
+      "highlight_words": [
+        "flash!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "That channel heats the air to about thirty thousand degrees Celsius: five times hotter than the surface of the Sun.",
+      "on_screen_text": "5× hotter than the Sun",
+      "highlight_words": [
+        "5×"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_thunder",
+      "narration": "The air expands so fast it bursts like an explosion, and that's thunder.",
+      "on_screen_text": "That's thunder",
+      "highlight_words": [
+        "thunder"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "Since light arrives before sound, count the seconds: every three is roughly one kilometer.",
+      "on_screen_text": "3 seconds ≈ 1 km",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "And yes, lightning can strike the same place twice: the Empire State Building gets hit about twenty times a year.",
+      "on_screen_text": "Twice, and more!",
+      "highlight_words": [
+        "more!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ray_outro",
+      "narration": "Send this to someone who's scared of thunder.",
+      "on_screen_text": "Send this to a friend",
+      "highlight_words": [
+        "friend"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Inside a storm cloud, ice and soft hail collide and separate electric charges. A channel of charged air steps down, a spark rises from the ground, and when they meet you get the flash. Lightning heats the air to about 30,000 °C and its explosive expansion is thunder. Count the seconds: every 3 is roughly 1 km. Original 3D animation.",
+  "hashtags": [
+    "lightning",
+    "storm",
+    "thunder",
+    "weather",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Lightning Science Overview",
+      "url": "https://www.weather.gov/safety/lightning-science-overview",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Understanding Lightning: Thunder",
+      "url": "https://www.weather.gov/safety/lightning-science-thunder",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Lightning Myths",
+      "url": "https://www.weather.gov/safety/lightning-myths",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Lightning",
+      "url": "https://en.wikipedia.org/wiki/Lightning",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Collisions between ice crystals and soft hail separate charge: the top of the cloud becomes positive and the bottom negative.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-overview"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The stepped leader descends in steps and meets an upward streamer from the ground.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-overview",
+        "https://en.wikipedia.org/wiki/Lightning"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Lightning can heat the air to about 50,000 °F (~28,000 °C), about five times hotter than the Sun's surface.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-thunder"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Sound travels roughly 1 km every 3 seconds.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Speed_of_sound"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Empire State Building is struck about 20–25 times a year on average.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-myths"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

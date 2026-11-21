@@ -32,7 +32,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "cielo_hook", "cielo_prism", "cielo_molecules", "cielo_scatter", "cielo_everywhere", "cielo_violet",
                   "cielo_sunset", "cielo_moon", "cielo_outro",
                   "pan_hook", "pan_route", "pan_shortcut", "pan_profile", "pan_enter", "pan_fill", "pan_steps",
-                  "pan_water", "pan_outro"]
+                  "pan_water", "pan_outro",
+                  # Tanda 2: rayos (rayo-3d.js), arcoíris (cielo-3d.js), eclipses (espacio-3d.js), corazón (corazon-3d.js)
+                  "ray_hook", "ray_cloud", "ray_charges", "ray_leader", "ray_strike", "ray_heat", "ray_thunder",
+                  "ray_count", "ray_tower", "ray_outro",
+                  "arco_hook", "arco_recipe", "arco_drop", "arco_split", "arco_many", "arco_cone", "arco_circle",
+                  "arco_double", "arco_yours", "arco_outro",
+                  "ecl_hook", "ecl_size", "ecl_same", "ecl_solar", "ecl_path", "ecl_tilt", "ecl_lunar", "ecl_red",
+                  "ecl_future", "ecl_outro",
+                  "cor_hook", "cor_size", "cor_two", "cor_lungs", "cor_body", "cor_spark", "cor_squeeze", "cor_valves",
+                  "cor_liters", "cor_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

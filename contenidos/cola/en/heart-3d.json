@@ -1,0 +1,215 @@
+{
+  "topic": "How the human heart works and beats",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does your heart beat? ❤️",
+  "hook": "Your heart beats about a hundred thousand times a day without you asking. How does it do it?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cor_hook",
+      "narration": "Your heart beats about a hundred thousand times a day without you asking. How does it do it?",
+      "on_screen_text": "How does your heart beat?",
+      "highlight_words": [
+        "heart"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_size",
+      "narration": "It's a muscle about the size of a fist, split into four chambers: two atria on top and two ventricles below.",
+      "on_screen_text": "Four chambers",
+      "highlight_words": [
+        "Four"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_two",
+      "narration": "It's really two pumps: the right side sends blood to the lungs, and the left side to the rest of the body.",
+      "on_screen_text": "Two pumps in one",
+      "highlight_words": [
+        "Two"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_lungs",
+      "narration": "Oxygen-poor blood goes to the lungs, picks up oxygen and comes back to the heart.",
+      "on_screen_text": "Oxygen from the lungs",
+      "highlight_words": [
+        "Oxygen"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_body",
+      "narration": "And the left ventricle, the strongest one, pushes it all around the body.",
+      "on_screen_text": "The strongest one",
+      "highlight_words": [
+        "strongest"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_spark",
+      "narration": "Every beat starts with an electrical spark in the sinus node: your natural pacemaker.",
+      "on_screen_text": "An electrical spark",
+      "highlight_words": [
+        "spark"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_squeeze",
+      "narration": "That signal makes the atria squeeze first and, an instant later, the ventricles.",
+      "on_screen_text": "Top first, then bottom",
+      "highlight_words": [
+        "Top",
+        "bottom"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_valves",
+      "narration": "And the thump-thump you hear is the valves snapping shut so blood can't flow backward.",
+      "on_screen_text": "Thump-thump = valves",
+      "highlight_words": [
+        "valves"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "cor_liters",
+      "narration": "In a single day, your heart pumps about seven thousand liters of blood.",
+      "on_screen_text": "7,000 liters a day",
+      "highlight_words": [
+        "7,000"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cor_outro",
+      "narration": "Send this to someone who makes your heart beat faster.",
+      "on_screen_text": "Send this to someone special",
+      "highlight_words": [
+        "special"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "The heart is a fist-sized muscle with four chambers. The right side sends blood to the lungs and the left side to the rest of the body. Each beat starts with an electrical signal from the sinus node; the atria contract, then the ventricles, and the 'thump-thump' is the valves closing. It beats about 100,000 times and pumps about 7,000 liters a day. Simplified original 3D animation; not medical advice.",
+  "hashtags": [
+    "heart",
+    "humanbody",
+    "health",
+    "biology",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Heart",
+      "url": "https://my.clevelandclinic.org/health/body/21704-heart",
+      "publisher": "Cleveland Clinic"
+    },
+    {
+      "title": "Heart",
+      "url": "https://en.wikipedia.org/wiki/Heart",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Sinoatrial node",
+      "url": "https://en.wikipedia.org/wiki/Sinoatrial_node",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Heart sounds",
+      "url": "https://en.wikipedia.org/wiki/Heart_sounds",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The heart beats about 100,000 times a day.",
+      "scene_id": "s1",
+      "source_urls": [
+        "https://my.clevelandclinic.org/health/body/21704-heart"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The right side pumps blood to the lungs (pulmonary circulation) and the left side to the rest of the body (systemic circulation).",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Heart"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The sinoatrial node is the natural pacemaker that starts each heartbeat.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sinoatrial_node"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Heart sounds are mainly produced by the valves closing.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Heart_sounds"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The heart pumps about 2,000 gallons (~7,500 liters) of blood a day.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://my.clevelandclinic.org/health/body/21704-heart"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -360,4 +360,176 @@
   ['hook', 'distance', 'orbit', 'outro'].forEach((v) => reg(`est_${v}`, (c) => estOrbit(c, v)));
   ['tilt', 'june', 'december', 'equator'].forEach((v) => reg(`est_${v}`, (c) => estClose(c, v)));
   reg('est_rays', (c) => estRays(c));
+
+  // ================================================================== ECLIPSES
+  K.addEN({
+    'Sol: 400 veces más ancho': 'Sun: 400 times wider', '…y 400 veces más lejos': '…and 400 times farther',
+    'mismo tamaño en el cielo': 'same size in the sky', 'sombra de la Luna': "the Moon's shadow",
+    'franja de totalidad': 'path of totality', 'órbita inclinada ≈ 5°': 'tilted orbit ≈ 5°', 'pasa por arriba': 'passes above',
+    'eclipse de Luna': 'lunar eclipse', 'luz de todos los\namaneceres y atardeceres': 'light from every\nsunrise and sunset',
+    '+3,8 cm por año': '+3.8 cm per year', 'Luna': 'Moon',
+  });
+
+  function eclipseClose(canvas, variant) {
+    const st = space(canvas, { focus: 0.36 });
+    const { scene, camera } = st;
+    const sun = new T.Group(); sun.position.set(0, 0, -30); scene.add(sun);
+    sun.add(onGlow(new T.Mesh(new T.SphereGeometry(3, 32, 20), new T.MeshBasicMaterial({ color: 0xfff0b8 }))));
+    const halo = glowSprite(0xffc860, 14, 0.8); sun.add(halo);
+    const corona = glowSprite(0xdfe8ff, 13, 0); sun.add(corona);
+    const corona2 = glowSprite(0xffffff, 8.5, 0); sun.add(corona2);
+    const moon = new T.Mesh(new T.SphereGeometry(3 * 10 / 30 * 1.03, 32, 20), new T.MeshBasicMaterial({ color: 0x07080c }));
+    scene.add(moon);
+    if (variant === 'outro') fade(st);
+    return (lt, dur) => {
+      const p = variant === 'hook' ? smooth(prog(lt, 0.2, dur * 0.7)) : 1;
+      const x = lerp(2.6, 0, p);
+      moon.position.set(x, 0, -10);
+      const cover = smooth(clamp(1 - Math.abs(x) / 0.4));
+      halo.material.opacity = 0.8 * (1 - cover * 0.95);
+      corona.material.opacity = cover * (0.75 + 0.1 * Math.sin(lt * 2)); corona2.material.opacity = cover * 0.8;
+      scene.background.setRGB(0.02 * (1 - cover), 0.03 * (1 - cover), 0.07 * (1 - cover));
+      camera.position.set(0, 0, 0); camera.lookAt(0, 0, -30);
+      camera.fov = lerp(34, 30, smooth(clamp(lt / dur))); camera.updateProjectionMatrix();
+      st.draw(lt, dur);
+    };
+  }
+
+  function eclipseLine(canvas, variant) {
+    const st = space(canvas, { focus: 0.37 });
+    const { scene, camera } = st;
+    const SX = -3.2, MX = 2.0, EX = 3.0, RM = 0.26, RS = RM * (EX - SX) / (EX - MX);
+    const sun = sunBall(scene, [SX, 0, 0], RS * 0.75);
+    sun.children[0].scale.setScalar(1 / 0.75);
+    const light = new T.DirectionalLight(0xfff4e0, 2.2); light.position.set(-20, 0, 0); scene.add(light);
+    const moon = sphere(RM, 'moon', 5); moon.position.set(MX, 0, 0); scene.add(moon);
+    const earth = sphere(variant === 'solar' ? 0.6 : 0.45, 'earth', 2); earth.position.set(EX, 0, 0); scene.add(earth);
+    const lines = [];
+    if (variant === 'same') {
+      [-1, 1].forEach((s) => lines.push(line(scene, [EX, 0, 0], [SX, s * RS, 0], 0xffc94a, 0, true)));
+      st.label({ text: 'mismo tamaño en el cielo', screen: [540, 1000], t0: (d) => d * 0.4, color: COL.gold, size: 46 });
+    }
+    if (variant === 'size') {
+      st.label({ text: 'Sol: 400 veces más ancho', p: [SX, RS, 0], t0: 0.3, color: COL.gold, size: 40, dy: 120, dx: 120 });
+      st.label({ text: 'Luna', p: [MX, RM, 0], t0: 0.6, color: COL.white, size: 34, dy: 90 });
+      st.label({ text: '…y 400 veces más lejos', screen: [540, 1000], t0: (d) => d * 0.5, color: COL.white, size: 46 });
+      line(scene, [SX, -RS - 0.4, 0], [EX, -RS - 0.4, 0], 0xffffff, 0.5);
+    }
+    let shadow = null;
+    if (variant === 'solar') {
+      const g = new T.ConeGeometry(RM, EX - MX - 0.55, 24, 1, true); g.rotateZ(PI / 2);
+      shadow = new T.Mesh(g, new T.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.7, depthWrite: false, side: T.DoubleSide }));
+      shadow.position.set((MX + EX - 0.55) / 2, 0, 0); scene.add(shadow);
+      const spot = new T.Mesh(new T.CircleGeometry(0.07, 16), new T.MeshBasicMaterial({ color: 0x000000 }));
+      spot.position.set(EX - 0.6, 0, 0.02); spot.rotation.y = -PI / 2; scene.add(spot);
+      st.label({ text: 'sombra de la Luna', p: [(MX + EX) / 2, 0.1, 0], t0: (d) => d * 0.35, color: COL.white, size: 40, dy: 150 });
+    }
+    return (lt, dur) => {
+      lines.forEach((l) => { l.material.opacity = 0.9 * smooth(prog(lt, 0.3, dur * 0.4)); });
+      if (shadow) shadow.material.opacity = 0.7 * smooth(prog(lt, 0.2, dur * 0.3));
+      earth.rotation.y = lt * 0.4;
+      const k = smooth(clamp(lt / dur));
+      camera.position.set(lerp(-0.3, 0.3, k), lerp(1.5, 1.0, k), lerp(17, 16, k)); camera.lookAt(-0.2, 0, 0);
+      st.draw(lt, dur);
+    };
+  }
+
+  function eclipsePath(canvas) {
+    const st = space(canvas, { focus: 0.37 });
+    const { scene, camera } = st;
+    const light = new T.DirectionalLight(0xfff4e0, 2.3); light.position.set(-6, 2, 20); scene.add(light);
+    const R = 1.9;
+    const earth = sphere(R, 'earth', 2, 5); scene.add(earth);
+    const trail = []; const N = 60;
+    const pathPt = (t) => { const lon = lerp(-1.0, 1.0, t), lat = 0.5 * Math.sin(t * PI) - 0.15; return new T.Vector3(Math.sin(lon) * Math.cos(lat), Math.sin(lat), Math.cos(lon) * Math.cos(lat)).multiplyScalar(R * 1.01); };
+    for (let i = 0; i < N; i++) {
+      const m = new T.Mesh(new T.CircleGeometry(0.09, 12), new T.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.55 }));
+      const p = pathPt(i / (N - 1)); m.position.copy(p); m.lookAt(p.clone().multiplyScalar(2)); scene.add(m); trail.push(m);
+    }
+    const spot = glowSprite(0x000000, 0.1, 0);
+    const umbra = new T.Mesh(new T.CircleGeometry(0.2, 20), new T.MeshBasicMaterial({ color: 0x000000 })); scene.add(umbra);
+    st.label({ text: 'franja de totalidad', p: () => umbra.position.toArray(), t0: (d) => d * 0.3, color: COL.gold, size: 42 });
+    return (lt, dur) => {
+      const p = smooth(prog(lt, 0.2, dur * 0.8));
+      const pos = pathPt(p); umbra.position.copy(pos); umbra.lookAt(pos.clone().multiplyScalar(2));
+      trail.forEach((m, i) => { m.visible = i / (N - 1) <= p; });
+      const k = smooth(clamp(lt / dur));
+      camera.position.set(lerp(-0.4, 0.4, k), 0.6, 10.5); camera.lookAt(0, 0, 0);
+      st.draw(lt, dur);
+    };
+  }
+
+  function eclipseOrbit(canvas, variant) {
+    const st = space(canvas, { focus: 0.37 });
+    const { scene, camera } = st;
+    const light = new T.DirectionalLight(0xfff6e8, 2.2); light.position.set(-20, 0, 0); scene.add(light);
+    sunBall(scene, [-6.4, 0, 0], 0.6);
+    const earth = sphere(0.7, 'earth', 2); scene.add(earth);
+    const tiltA = variant === 'tilt' ? 12 * PI / 180 : 0;
+    const orbitG = new T.Group(); orbitG.rotation.z = tiltA; scene.add(orbitG);
+    ring(orbitG, R_ORB, 0xffffff, 0.3);
+    if (variant === 'tilt') {
+      const plane = new T.Mesh(new T.CircleGeometry(4.2, 64), new T.MeshBasicMaterial({ color: 0x5aa8ff, transparent: true, opacity: 0.08, side: T.DoubleSide, depthWrite: false }));
+      plane.rotation.x = -PI / 2; scene.add(plane);
+      line(scene, [-6, 0, 0], [6, 0, 0], 0xffc94a, 0.5);
+    }
+    let shadow = null;
+    if (variant === 'lunar' || variant === 'tilt') {
+      const g = new T.ConeGeometry(0.7, 6, 32, 1, true); g.rotateZ(PI / 2);
+      shadow = new T.Mesh(g, new T.MeshBasicMaterial({ color: 0x000000, transparent: true, opacity: 0.55, depthWrite: false, side: T.DoubleSide }));
+      shadow.position.x = 3.0; scene.add(shadow);
+    }
+    const moonR = variant === 'future' ? 0.4 : 0.34;
+    const moon = sphere(moonR, 'moon', 5); orbitG.add(moon);
+    const red = new T.Color(0x9a3a20), white = new T.Color(0xffffff);
+    if (variant === 'tilt') {
+      st.label({ text: 'órbita inclinada ≈ 5°', p: [-R_ORB * Math.cos(tiltA), -R_ORB * Math.sin(tiltA) + 0.1, 0], t0: 0.3, color: COL.white, size: 38, dy: -140 });
+      st.label({ text: 'pasa por arriba', p: () => { const v = new T.Vector3(); moon.getWorldPosition(v); return v.toArray(); }, t0: (d) => d * 0.55, color: COL.gold, size: 40 });
+    }
+    if (variant === 'lunar') st.label({ text: 'eclipse de Luna', p: () => moon.position.toArray(), t0: (d) => d * 0.55, color: '#ff8a7a', size: 44 });
+    if (variant === 'future') st.label({ text: '+3,8 cm por año', p: () => moon.position.toArray(), t0: 0.4, color: COL.gold, size: 44 });
+    const futRing = variant === 'future' ? ring(scene, R_ORB, 0xffc94a, 0.4) : null;
+    return (lt, dur) => {
+      const k = smooth(clamp(lt / dur));
+      let phi = 0, R = R_ORB;
+      if (variant === 'lunar') phi = lerp(-0.7, 0, smooth(prog(lt, 0.1, dur * 0.6)));
+      if (variant === 'tilt') phi = lerp(-0.9, 0.5, k);
+      if (variant === 'future') { phi = lt * 0.5; R = lerp(R_ORB * 0.8, R_ORB * 1.25, k); futRing.scale.setScalar(R / R_ORB); }
+      moon.position.set(R * Math.cos(phi), 0, -R * Math.sin(phi));
+      const v = new T.Vector3(); moon.getWorldPosition(v);
+      const inShadow = variant === 'lunar' ? smooth(clamp(1 - Math.hypot(v.y, v.z) / 0.45)) * (v.x > 0 ? 1 : 0) : 0;
+      moon.material.color.copy(white).lerp(red, inShadow);
+      earth.rotation.y = lt * 0.4;
+      if (variant === 'tilt') { camera.position.set(0.5, 2.0, 13.5); camera.lookAt(0.4, 0, 0); }
+      else { camera.position.set(lerp(-0.5, 0.5, k), 7.5, 11.5); camera.lookAt(0.6, 0, 0.3); }
+      st.draw(lt, dur);
+    };
+  }
+
+  // Desde la Luna durante un eclipse lunar: la Tierra tapa el Sol con un anillo rojo de atmósfera.
+  function eclipseRed(canvas) {
+    const st = space(canvas, { focus: 0.37 });
+    const { scene, camera } = st;
+    const sun = glowSprite(0xfff0c0, 7, 1); sun.position.set(0, 0, -40); scene.add(sun);
+    const earth = new T.Mesh(new T.SphereGeometry(2.2, 48, 32), new T.MeshBasicMaterial({ color: 0x05070c })); earth.position.set(0, 0, -12); scene.add(earth);
+    const ringM = onGlow(new T.Mesh(new T.RingGeometry(2.2, 2.42, 128), new T.MeshBasicMaterial({ color: 0xff6a2a, transparent: true, side: T.DoubleSide })));
+    ringM.position.set(0, 0, -11.9); scene.add(ringM);
+    const ringGlow = glowSprite(0xff5a20, 6.8, 0); ringGlow.position.set(0, 0, -12.2); scene.add(ringGlow);
+    st.label({ text: 'luz de todos los\namaneceres y atardeceres', p: [1.6, 1.6, -12], t0: (d) => d * 0.35, color: COL.orange, size: 38, dy: 150 });
+    return (lt, dur) => {
+      const p = smooth(prog(lt, 0.2, dur * 0.4));
+      earth.position.x = lerp(3.5, 0, p); ringM.position.x = earth.position.x; ringGlow.position.x = earth.position.x;
+      const cover = smooth(clamp(1 - Math.abs(earth.position.x) / 0.8));
+      sun.material.opacity = 1 - cover; ringM.material.opacity = 0.25 + 0.75 * cover; ringGlow.material.opacity = cover * 0.9;
+      camera.position.set(0, 0, 0); camera.lookAt(0, 0, -12);
+      st.draw(lt, dur);
+    };
+  }
+
+  reg('ecl_hook', (c) => eclipseClose(c, 'hook'));
+  reg('ecl_outro', (c) => eclipseClose(c, 'outro'));
+  ['size', 'same', 'solar'].forEach((v) => reg(`ecl_${v}`, (c) => eclipseLine(c, v)));
+  reg('ecl_path', (c) => eclipsePath(c));
+  ['tilt', 'lunar', 'future'].forEach((v) => reg(`ecl_${v}`, (c) => eclipseOrbit(c, v)));
+  reg('ecl_red', (c) => eclipseRed(c));
 })();

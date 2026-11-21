@@ -1,0 +1,207 @@
+{
+  "topic": "Cómo funcionan los eclipses de Sol y de Luna",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo tapa la Luna al Sol? 🌑☀️",
+  "hook": "¿Cómo puede la pequeña Luna tapar por completo al enorme Sol?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ecl_hook",
+      "narration": "¿Cómo puede la pequeña Luna tapar por completo al enorme Sol?",
+      "on_screen_text": "¿Cómo tapa la Luna al Sol?",
+      "highlight_words": [
+        "tapa"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_size",
+      "narration": "El Sol es unas cuatrocientas veces más ancho que la Luna, pero también está unas cuatrocientas veces más lejos.",
+      "on_screen_text": "400× más grande y más lejos",
+      "highlight_words": [
+        "400×"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_same",
+      "narration": "Por eso, desde la Tierra, los dos se ven casi del mismo tamaño en el cielo.",
+      "on_screen_text": "Mismo tamaño en el cielo",
+      "highlight_words": [
+        "Mismo"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_solar",
+      "narration": "En un eclipse de Sol, la Luna se pone justo delante y su sombra cae sobre la Tierra.",
+      "on_screen_text": "La sombra de la Luna",
+      "highlight_words": [
+        "sombra"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_path",
+      "narration": "Pero esa sombra es pequeña: solo quienes están en una franja estrecha ven el eclipse total.",
+      "on_screen_text": "Solo en una franja",
+      "highlight_words": [
+        "franja"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_tilt",
+      "narration": "¿Y por qué no hay uno cada mes? Porque la órbita de la Luna está inclinada unos cinco grados, y casi siempre pasa por arriba o por abajo.",
+      "on_screen_text": "Órbita inclinada 5°",
+      "highlight_words": [
+        "5°"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_lunar",
+      "narration": "En un eclipse de Luna pasa al revés: la Tierra tapa el Sol y la Luna entra en nuestra sombra.",
+      "on_screen_text": "Eclipse de Luna",
+      "highlight_words": [
+        "Luna"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ecl_red",
+      "narration": "Y se pone roja, porque la atmósfera de la Tierra desvía hacia ella la luz de todos los amaneceres y atardeceres del planeta.",
+      "on_screen_text": "¿Por qué se pone roja?",
+      "highlight_words": [
+        "roja?"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_future",
+      "narration": "Y como la Luna se aleja casi cuatro centímetros por año, dentro de cientos de millones de años ya no habrá eclipses totales.",
+      "on_screen_text": "Algún día no habrá más",
+      "highlight_words": [
+        "más"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ecl_outro",
+      "narration": "Mándaselo a alguien con quien quieras ver el próximo eclipse.",
+      "on_screen_text": "Para ver el próximo juntos",
+      "highlight_words": [
+        "juntos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "El Sol es unas 400 veces más ancho que la Luna y está unas 400 veces más lejos, por eso se ven del mismo tamaño. En un eclipse solar la sombra de la Luna cae en una franja estrecha de la Tierra; no ocurre cada mes porque la órbita lunar está inclinada unos 5°. En un eclipse lunar la Luna se pone roja por la luz que la atmósfera terrestre desvía hacia ella. La Luna se aleja unos 3,8 cm por año. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "eclipse",
+    "eclipsesolar",
+    "luna",
+    "sol",
+    "astronomia",
+    "espacio",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Eclipses",
+      "url": "https://science.nasa.gov/eclipses/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Solar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Solar_eclipse",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Lunar eclipse",
+      "url": "https://en.wikipedia.org/wiki/Lunar_eclipse",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Orbit of the Moon",
+      "url": "https://en.wikipedia.org/wiki/Orbit_of_the_Moon",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El diámetro del Sol es unas 400 veces el de la Luna, y su distancia también unas 400 veces mayor.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Solar_eclipse"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La órbita de la Luna está inclinada unos 5° respecto a la eclíptica, por eso no hay eclipses cada mes.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Luna eclipsada se ve rojiza por la luz refractada por la atmósfera terrestre.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lunar_eclipse"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Luna se aleja de la Tierra unos 3,8 cm por año; dentro de cientos de millones de años ya no habrá eclipses totales de Sol.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Solar_eclipse",
+        "https://en.wikipedia.org/wiki/Orbit_of_the_Moon"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

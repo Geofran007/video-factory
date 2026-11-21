@@ -1,0 +1,203 @@
+{
+  "topic": "Cómo se forma un arcoíris",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo se forma el arcoíris? 🌈",
+  "hook": "¿Por qué aparece el arcoíris, y por qué siempre con los colores en el mismo orden?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "arco_hook",
+      "narration": "¿Por qué aparece el arcoíris, y por qué siempre con los colores en el mismo orden?",
+      "on_screen_text": "¿Cómo se forma el arcoíris?",
+      "highlight_words": [
+        "arcoíris?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_recipe",
+      "narration": "Para verlo necesitas dos cosas: el Sol a tu espalda y gotas de lluvia delante de ti.",
+      "on_screen_text": "Sol atrás, lluvia adelante",
+      "highlight_words": [
+        "Sol",
+        "lluvia"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_drop",
+      "narration": "Cada gota funciona como un pequeño prisma: la luz entra, se dobla, rebota en el fondo y vuelve a salir.",
+      "on_screen_text": "Cada gota es un prisma",
+      "highlight_words": [
+        "prisma"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_split",
+      "narration": "Al doblarse, cada color sale con un ángulo distinto: el rojo a unos cuarenta y dos grados y el violeta a unos cuarenta.",
+      "on_screen_text": "Rojo 42°, violeta 40°",
+      "highlight_words": [
+        "42°"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_many",
+      "narration": "Por eso el rojo te llega desde gotas más altas y el violeta desde gotas más bajas: siempre rojo arriba.",
+      "on_screen_text": "Siempre rojo arriba",
+      "highlight_words": [
+        "rojo"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_cone",
+      "narration": "Todas las gotas a ese ángulo forman un círculo alrededor de la sombra de tu cabeza.",
+      "on_screen_text": "Un círculo alrededor de ti",
+      "highlight_words": [
+        "círculo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "arco_circle",
+      "narration": "Desde el suelo el horizonte corta una parte, pero desde un avión el arcoíris puede verse como un círculo completo.",
+      "on_screen_text": "¡Un círculo completo!",
+      "highlight_words": [
+        "completo!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_double",
+      "narration": "Y si la luz rebota dos veces dentro de la gota, aparece un segundo arcoíris, más tenue y con los colores al revés.",
+      "on_screen_text": "El doble, al revés",
+      "highlight_words": [
+        "revés"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arco_yours",
+      "narration": "Como todo depende de dónde estés parado, nadie ve exactamente el mismo arcoíris que tú.",
+      "on_screen_text": "Tu arcoíris es solo tuyo",
+      "highlight_words": [
+        "tuyo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "arco_outro",
+      "narration": "Mándaselo a alguien que siempre busca arcoíris.",
+      "on_screen_text": "Mándaselo a quien los busca",
+      "highlight_words": [
+        "busca"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Con el Sol a la espalda y lluvia delante, cada gota actúa como un prisma: la luz entra, se refracta, se refleja dentro y sale separada en colores, el rojo a unos 42° y el violeta a unos 40° de la sombra de tu cabeza. Desde un avión puede verse como un círculo completo, y el arco doble tiene los colores invertidos. Animación 3D propia; ángulos exagerados para que se vean.",
+  "hashtags": [
+    "arcoiris",
+    "luz",
+    "lluvia",
+    "fisica",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Rainbow",
+      "url": "https://en.wikipedia.org/wiki/Rainbow",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Rainbows",
+      "url": "https://scijinks.gov/rainbow/",
+      "publisher": "NOAA SciJinks"
+    },
+    {
+      "title": "Primary rainbow",
+      "url": "https://atoptics.co.uk/atoptics/rainbows/primary-rainbow/",
+      "publisher": "Atmospheric Optics"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Para ver un arcoíris el Sol debe estar detrás del observador y la lluvia delante.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow",
+        "https://scijinks.gov/rainbow/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En el arcoíris primario el rojo aparece a unos 42° del punto antisolar y el violeta a unos 40°.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Desde un avión o un lugar alto el arcoíris puede verse como un círculo completo.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El arco secundario se forma con dos reflexiones dentro de la gota y tiene los colores invertidos.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Rainbow"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

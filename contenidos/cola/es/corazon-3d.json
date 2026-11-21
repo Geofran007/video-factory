@@ -1,0 +1,215 @@
+{
+  "topic": "Cómo funciona y late el corazón humano",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo late tu corazón? ❤️",
+  "hook": "Tu corazón late unas cien mil veces al día sin que se lo pidas. ¿Cómo lo hace?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cor_hook",
+      "narration": "Tu corazón late unas cien mil veces al día sin que se lo pidas. ¿Cómo lo hace?",
+      "on_screen_text": "¿Cómo late tu corazón?",
+      "highlight_words": [
+        "corazón?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_size",
+      "narration": "Es un músculo del tamaño de un puño, dividido en cuatro cámaras: dos aurículas arriba y dos ventrículos abajo.",
+      "on_screen_text": "Cuatro cámaras",
+      "highlight_words": [
+        "Cuatro"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_two",
+      "narration": "En realidad son dos bombas: el lado derecho manda sangre a los pulmones, y el izquierdo, al resto del cuerpo.",
+      "on_screen_text": "Dos bombas en una",
+      "highlight_words": [
+        "Dos"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_lungs",
+      "narration": "La sangre sin oxígeno va a los pulmones, se carga de oxígeno y vuelve al corazón.",
+      "on_screen_text": "Oxígeno en los pulmones",
+      "highlight_words": [
+        "Oxígeno"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_body",
+      "narration": "Y el ventrículo izquierdo, el más fuerte, la empuja por todo el cuerpo.",
+      "on_screen_text": "El más fuerte",
+      "highlight_words": [
+        "fuerte"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_spark",
+      "narration": "Cada latido empieza con una chispa eléctrica en el nódulo sinusal: tu marcapasos natural.",
+      "on_screen_text": "Una chispa eléctrica",
+      "highlight_words": [
+        "chispa"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_squeeze",
+      "narration": "Esa señal hace que primero se aprieten las aurículas y, un instante después, los ventrículos.",
+      "on_screen_text": "Primero arriba, luego abajo",
+      "highlight_words": [
+        "arriba,",
+        "abajo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_valves",
+      "narration": "Y el pum pum que escuchas son las válvulas cerrándose para que la sangre no vuelva atrás.",
+      "on_screen_text": "El pum-pum son válvulas",
+      "highlight_words": [
+        "válvulas"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "cor_liters",
+      "narration": "En un solo día, tu corazón bombea unos siete mil litros de sangre.",
+      "on_screen_text": "7.000 litros al día",
+      "highlight_words": [
+        "7.000"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cor_outro",
+      "narration": "Mándaselo a alguien que te hace latir el corazón.",
+      "on_screen_text": "Mándaselo a alguien especial",
+      "highlight_words": [
+        "especial"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "El corazón es un músculo del tamaño de un puño con cuatro cámaras. El lado derecho envía la sangre a los pulmones y el izquierdo al resto del cuerpo. Cada latido empieza con una señal eléctrica del nódulo sinusal; las aurículas se contraen y luego los ventrículos, y el 'pum-pum' es el cierre de las válvulas. Late unas 100.000 veces y bombea unos 7.000 litros al día. Animación 3D propia y simplificada; no es consejo médico.",
+  "hashtags": [
+    "corazon",
+    "cuerpohumano",
+    "salud",
+    "biologia",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Heart",
+      "url": "https://my.clevelandclinic.org/health/body/21704-heart",
+      "publisher": "Cleveland Clinic"
+    },
+    {
+      "title": "Heart",
+      "url": "https://en.wikipedia.org/wiki/Heart",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Sinoatrial node",
+      "url": "https://en.wikipedia.org/wiki/Sinoatrial_node",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Heart sounds",
+      "url": "https://en.wikipedia.org/wiki/Heart_sounds",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El corazón late unas 100.000 veces al día.",
+      "scene_id": "s1",
+      "source_urls": [
+        "https://my.clevelandclinic.org/health/body/21704-heart"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El lado derecho bombea sangre a los pulmones (circulación pulmonar) y el izquierdo al resto del cuerpo (circulación sistémica).",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Heart"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El nódulo sinusal es el marcapasos natural que inicia cada latido.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sinoatrial_node"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los ruidos cardíacos se producen principalmente por el cierre de las válvulas.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Heart_sounds"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El corazón bombea alrededor de 2.000 galones (~7.500 litros) de sangre al día.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://my.clevelandclinic.org/health/body/21704-heart"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
