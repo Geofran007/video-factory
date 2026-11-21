@@ -89,12 +89,36 @@ def wait_for_code(state: str) -> str:
     return result["code"]
 
 
+def demo_upload(video: Path, access_token: str, canal: str) -> None:
+    """Envía un video como borrador con el token recién obtenido (sin guardarlo), para la demo de revisión."""
+    if not video.exists():
+        sys.exit(f"No existe el video {video}")
+    sys.path.insert(0, str(ROOT / "src"))
+    from video_factory.publishers.publisher_interface import PublishRequest
+    from video_factory.publishers.tiktok import TikTokPublisher
+
+    class Once(TikTokPublisher):
+        def _access_token(self) -> str:  # usa el token de esta autorización
+            return access_token
+
+    req = PublishRequest(video_path=video, title=video.stem, description="", tags=[], channel_id=canal)
+    print(f"Enviando {video.name} ({video.stat().st_size / 1e6:.1f} MB) como borrador a TikTok…")
+    res = Once(canal, mode="inbox").publish(req)
+    print(f"Listo ({res.remote_id}). Abre la app de TikTok: te llegará una notificación en la bandeja de entrada "
+          "para terminar de publicar el borrador.")
+
+
 def main() -> int:
+    for stream in (sys.stdout, sys.stderr):  # la consola de Windows (cp1252) no imprime →, … ni tildes raras
+        if hasattr(stream, "reconfigure"):
+            stream.reconfigure(encoding="utf-8", errors="replace")
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     ap.add_argument("--canal", choices=["es", "en"], required=True, help="Cuenta a conectar: es (español) o en (inglés)")
     ap.add_argument("--modo", choices=["inbox", "direct"], default="inbox")
     ap.add_argument("--app", default=str(ROOT / "credenciales" / "tiktok_app.json"))
     ap.add_argument("--repo", default="Geofran007/video-factory")
+    ap.add_argument("--demo-video", default="", help="Después de autorizar, envía este MP4 como borrador (para el video de revisión)")
+    ap.add_argument("--solo-demo", action="store_true", help="No guarda secretos en GitHub (útil con las credenciales de Sandbox)")
     args = ap.parse_args()
 
     gh = gh_binary()
@@ -131,6 +155,12 @@ def main() -> int:
                      headers={"Authorization": f"Bearer {tok['access_token']}"}, timeout=30)
     name = (u.json().get("data", {}).get("user", {}) or {}).get("display_name", "?") if u.status_code == 200 else "?"
     print(f"Cuenta de TikTok autorizada: {name}")
+
+    if args.demo_video:
+        demo_upload(Path(args.demo_video), tok["access_token"], args.canal)
+    if args.solo_demo:
+        print("Modo demo: no se guardó nada en GitHub.")
+        return 0
 
     suffix = args.canal.upper()
     set_secret(gh, args.repo, "TIKTOK_CLIENT_KEY", client_key)
