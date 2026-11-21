@@ -1,0 +1,204 @@
+{
+  "topic": "Why seawater is salty",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why is the sea salty? 🌊🧂",
+  "hook": "Why is the sea salty, if the rivers that flow into it are fresh water?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "sal_hook",
+      "narration": "Why is the sea salty, if the rivers that flow into it are fresh water?",
+      "on_screen_text": "Why is the sea salty?",
+      "highlight_words": [
+        "salty?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_rain",
+      "narration": "It all starts with rain: it picks up a tiny bit of acid from the air and slowly wears down rocks.",
+      "on_screen_text": "Rain wears down rocks",
+      "highlight_words": [
+        "rocks"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_rocks",
+      "narration": "That frees tiny minerals, like sodium and chlorine, which the water carries away.",
+      "on_screen_text": "Sodium and chlorine set loose",
+      "highlight_words": [
+        "Sodium",
+        "chlorine"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_rivers",
+      "narration": "Rivers carry them to the sea, but in such small amounts that we can't taste them.",
+      "on_screen_text": "Rivers carry them to sea",
+      "highlight_words": [
+        "Rivers"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_evap",
+      "narration": "In the sea, the sun evaporates the water, but the salt doesn't leave: it stays behind.",
+      "on_screen_text": "Water leaves, salt stays",
+      "highlight_words": [
+        "salt"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_cycle",
+      "narration": "And so, cycle after cycle for millions of years, the salt kept building up.",
+      "on_screen_text": "Millions of years adding up",
+      "highlight_words": [
+        "Millions"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "Minerals also pour out of volcanoes and hot springs on the seafloor.",
+      "on_screen_text": "Hot springs on the seafloor",
+      "highlight_words": [
+        "Hot"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_glass",
+      "narration": "Today, every liter of seawater holds about thirty-five grams of salt.",
+      "on_screen_text": "35 grams per liter",
+      "highlight_words": [
+        "35"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sal_layer",
+      "narration": "If we pulled out all that salt and spread it over the continents, it would make a layer more than a hundred and fifty meters thick.",
+      "on_screen_text": "A 150-meter layer!",
+      "highlight_words": [
+        "150-meter"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "sal_outro",
+      "narration": "Send this to someone who loves the sea.",
+      "on_screen_text": "Send this to a sea lover",
+      "highlight_words": [
+        "sea"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Rain, slightly acidic, wears down rocks and frees minerals that rivers carry to the sea in amounts too small to taste. In the sea the water evaporates but the salt stays, so it built up over millions of years; hydrothermal vents add minerals too. Today every liter holds about 35 g of salt. Original 3D animation.",
+  "hashtags": [
+    "ocean",
+    "sea",
+    "salt",
+    "water",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Why is the ocean salty?",
+      "url": "https://oceanservice.noaa.gov/facts/whysalty.html",
+      "publisher": "NOAA Ocean Service"
+    },
+    {
+      "title": "Why is the ocean salty but rivers flowing into it are not?",
+      "url": "https://www.usgs.gov/faqs/why-ocean-salty-but-rivers-flowing-it-are-not",
+      "publisher": "USGS"
+    },
+    {
+      "title": "Seawater",
+      "url": "https://en.wikipedia.org/wiki/Seawater",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Rain is slightly acidic from dissolved carbon dioxide and erodes rocks, releasing ions that rivers carry to the sea.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/whysalty.html",
+        "https://www.usgs.gov/faqs/why-ocean-salty-but-rivers-flowing-it-are-not"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hydrothermal vents on the seafloor also add dissolved minerals.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/whysalty.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Average seawater salinity is about 35 grams of salt per liter (3.5%).",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www.usgs.gov/faqs/why-ocean-salty-but-rivers-flowing-it-are-not",
+        "https://en.wikipedia.org/wiki/Seawater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "If all the ocean's salt were spread over the land it would form a layer over 150 m thick, about a 40-story building.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/whysalty.html"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

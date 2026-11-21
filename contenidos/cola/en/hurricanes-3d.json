@@ -1,0 +1,203 @@
+{
+  "topic": "How hurricanes form",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How is a hurricane born? 🌀",
+  "hook": "How is a hurricane born, a storm that can spin over half a country?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "hur_hook",
+      "narration": "How is a hurricane born, a storm that can spin over half a country?",
+      "on_screen_text": "How is a hurricane born?",
+      "highlight_words": [
+        "hurricane"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_warm",
+      "narration": "It all starts over a very warm sea, above twenty-six degrees Celsius.",
+      "on_screen_text": "Sea above 26 °C",
+      "highlight_words": [
+        "26"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_rise",
+      "narration": "Warm, moist air rises, cools and builds huge clouds, which release even more heat.",
+      "on_screen_text": "Warm air rises",
+      "highlight_words": [
+        "rises"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_pull",
+      "narration": "Below, it leaves a low-pressure zone that sucks in the air around it.",
+      "on_screen_text": "Low pressure pulls in air",
+      "highlight_words": [
+        "pulls"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_spin",
+      "narration": "And since the Earth rotates, that air doesn't flow straight in: it curves, and the whole thing starts to spin.",
+      "on_screen_text": "And it starts to spin",
+      "highlight_words": [
+        "spin"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_eye",
+      "narration": "At the center is the eye, a calm zone, surrounded by the most violent wall of the storm.",
+      "on_screen_text": "The eye: calm at the center",
+      "highlight_words": [
+        "eye:"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_cat5",
+      "narration": "In the strongest ones, the wind tops two hundred and fifty kilometers per hour.",
+      "on_screen_text": "Over 250 km/h",
+      "highlight_words": [
+        "250"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_land",
+      "narration": "When it reaches land it loses its fuel, the warm water, and slowly weakens.",
+      "on_screen_text": "Over land it weakens",
+      "highlight_words": [
+        "weakens"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "hur_equator",
+      "narration": "And they almost never form near the equator, because there Earth's spin can't get them rotating. That's why Ecuador doesn't get hurricanes.",
+      "on_screen_text": "Ecuador: no hurricanes",
+      "highlight_words": [
+        "Ecuador:"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "hur_outro",
+      "narration": "Send this to someone who lives where hurricanes hit.",
+      "on_screen_text": "Send this to someone in their path",
+      "highlight_words": [
+        "path"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Hurricanes are born over seas warmer than about 26 °C: warm, moist air rises, builds clouds that release heat, and leaves a low-pressure zone below that pulls in more air. Earth's rotation makes that air spin, with a calm eye at the center. At category 5 winds top 252 km/h. They weaken over land, and they almost never form near the equator. Original 3D animation.",
+  "hashtags": [
+    "hurricane",
+    "weather",
+    "storm",
+    "ocean",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Introduction to Tropical Cyclones",
+      "url": "https://www.weather.gov/jetstream/tc",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Saffir-Simpson Hurricane Wind Scale",
+      "url": "https://www.nhc.noaa.gov/aboutsshws.php",
+      "publisher": "NOAA National Hurricane Center"
+    },
+    {
+      "title": "Tropical cyclone",
+      "url": "https://en.wikipedia.org/wiki/Tropical_cyclone",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Tropical cyclones need ocean water of at least about 26.5 °C.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www.weather.gov/jetstream/tc",
+        "https://en.wikipedia.org/wiki/Tropical_cyclone"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Coriolis force makes hurricanes spin: counterclockwise in the Northern Hemisphere and clockwise in the Southern.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tropical_cyclone"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "A category 5 hurricane has sustained winds of 252 km/h or more.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://www.nhc.noaa.gov/aboutsshws.php"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Tropical cyclones almost never form within about 5° of the equator, where the Coriolis effect is minimal.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://www.weather.gov/jetstream/tc",
+        "https://en.wikipedia.org/wiki/Tropical_cyclone"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

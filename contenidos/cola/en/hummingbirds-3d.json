@@ -1,0 +1,215 @@
+{
+  "topic": "How hummingbirds fly",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does a hummingbird fly? 🐦🌺",
+  "hook": "How can a hummingbird stay perfectly still in midair, as if it were floating?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "col_hook",
+      "narration": "How can a hummingbird stay perfectly still in midair, as if it were floating?",
+      "on_screen_text": "How does a hummingbird hover?",
+      "highlight_words": [
+        "hummingbird"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_beats",
+      "narration": "Its wings beat up to about eighty times a second, so fast that they hum.",
+      "on_screen_text": "Up to 80 beats a second",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_eight",
+      "narration": "But the trick is how it moves them: the wingtip traces a figure eight in the air.",
+      "on_screen_text": "A figure-eight wingbeat",
+      "highlight_words": [
+        "figure-eight"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_lift",
+      "narration": "That way it pushes air down when the wing goes down, and also when it comes up, something almost no other bird does.",
+      "on_screen_text": "Pushing down and up",
+      "highlight_words": [
+        "up"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hover",
+      "narration": "That's why it can hover in one spot, like a tiny helicopter.",
+      "on_screen_text": "Like a helicopter",
+      "highlight_words": [
+        "helicopter"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_back",
+      "narration": "It can even fly backward, something almost no other bird can manage.",
+      "on_screen_text": "It flies backward!",
+      "highlight_words": [
+        "backward!"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_heart",
+      "narration": "To pull it off, its heart can beat more than twelve hundred times a minute.",
+      "on_screen_text": "1,200 beats a minute",
+      "highlight_words": [
+        "1,200"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_torpor",
+      "narration": "It burns so much energy that at night it falls into a deep sleep and lowers its body temperature to save fuel.",
+      "on_screen_text": "At night: power-saving mode",
+      "highlight_words": [
+        "power-saving"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "col_ecuador",
+      "narration": "And Ecuador is one of the best places to see them: it has more than a hundred different species.",
+      "on_screen_text": "100+ species in Ecuador",
+      "highlight_words": [
+        "100+"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "col_outro",
+      "narration": "Send this to someone who loves birds.",
+      "on_screen_text": "Send this to a bird lover",
+      "highlight_words": [
+        "bird"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Hummingbirds beat their wings up to about 80 times a second in a figure-eight pattern, so they push air down on the downstroke and the upstroke. That lets them hover in place and even fly backward. Their hearts can top 1,200 beats per minute, and at night they go into torpor to save energy. Ecuador has more than 100 species. Original 3D animation, wingbeats in slow motion.",
+  "hashtags": [
+    "hummingbird",
+    "birds",
+    "nature",
+    "animals",
+    "ecuador",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Hummingbird",
+      "url": "https://en.wikipedia.org/wiki/Hummingbird",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Warrick et al. (2005), Aerodynamics of the hovering hummingbird",
+      "url": "https://www.nature.com/articles/nature03647",
+      "publisher": "Nature"
+    },
+    {
+      "title": "List of birds of Ecuador",
+      "url": "https://en.wikipedia.org/wiki/List_of_birds_of_Ecuador",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Torpor",
+      "url": "https://en.wikipedia.org/wiki/Torpor",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Hummingbirds beat their wings about 12 to 80 times per second depending on the species.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "When hovering, hummingbirds generate lift on the downstroke (~75%) and the upstroke (~25%).",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://www.nature.com/articles/nature03647"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "A hummingbird's heart can exceed 1,200 beats per minute.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "At night hummingbirds can enter torpor, lowering their body temperature and metabolism.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Torpor",
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "More than 100 hummingbird species have been recorded in Ecuador.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/List_of_birds_of_Ecuador"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,203 @@
+{
+  "topic": "Cómo se forman los huracanes",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo nace un huracán? 🌀",
+  "hook": "¿Cómo nace un huracán, una tormenta capaz de girar sobre medio país?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "hur_hook",
+      "narration": "¿Cómo nace un huracán, una tormenta capaz de girar sobre medio país?",
+      "on_screen_text": "¿Cómo nace un huracán?",
+      "highlight_words": [
+        "huracán?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_warm",
+      "narration": "Todo empieza sobre un mar muy caliente, a más de veintiséis grados.",
+      "on_screen_text": "Mar a más de 26 °C",
+      "highlight_words": [
+        "26"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_rise",
+      "narration": "El aire caliente y húmedo sube, se enfría y forma nubes enormes, que sueltan todavía más calor.",
+      "on_screen_text": "El aire caliente sube",
+      "highlight_words": [
+        "sube"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_pull",
+      "narration": "Abajo queda una zona de baja presión que chupa el aire de alrededor.",
+      "on_screen_text": "Baja presión que chupa",
+      "highlight_words": [
+        "chupa"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_spin",
+      "narration": "Y como la Tierra gira, ese aire no entra derecho: se curva, y todo empieza a dar vueltas.",
+      "on_screen_text": "Y empieza a girar",
+      "highlight_words": [
+        "girar"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_eye",
+      "narration": "En el centro queda el ojo, una zona tranquila, rodeada por la pared más violenta del huracán.",
+      "on_screen_text": "El ojo: calma en el centro",
+      "highlight_words": [
+        "ojo:"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_cat5",
+      "narration": "En los más fuertes, el viento supera los doscientos cincuenta kilómetros por hora.",
+      "on_screen_text": "Más de 250 km/h",
+      "highlight_words": [
+        "250"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hur_land",
+      "narration": "Al llegar a tierra pierde su combustible, el agua caliente, y se va debilitando.",
+      "on_screen_text": "En tierra se debilita",
+      "highlight_words": [
+        "debilita"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "hur_equator",
+      "narration": "Y casi nunca se forman cerca del ecuador, porque ahí el giro de la Tierra no logra hacerlos rotar. Por eso Ecuador no tiene huracanes.",
+      "on_screen_text": "Ecuador: sin huracanes",
+      "highlight_words": [
+        "Ecuador:"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "hur_outro",
+      "narration": "Mándaselo a alguien que vive donde llegan huracanes.",
+      "on_screen_text": "Mándaselo a quien los vive",
+      "highlight_words": [
+        "vive"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Los huracanes nacen sobre mares a más de unos 26 °C: el aire caliente y húmedo sube, forma nubes que liberan calor y deja abajo una zona de baja presión que atrae más aire. Por la rotación de la Tierra ese aire gira, y en el centro queda el ojo, en calma. En categoría 5 el viento supera los 252 km/h. Al llegar a tierra se debilitan, y casi nunca se forman cerca del ecuador. Animación 3D propia.",
+  "hashtags": [
+    "huracan",
+    "clima",
+    "tormenta",
+    "oceano",
+    "ciencia",
+    "ecuador",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Introduction to Tropical Cyclones",
+      "url": "https://www.weather.gov/jetstream/tc",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "Saffir-Simpson Hurricane Wind Scale",
+      "url": "https://www.nhc.noaa.gov/aboutsshws.php",
+      "publisher": "NOAA National Hurricane Center"
+    },
+    {
+      "title": "Tropical cyclone",
+      "url": "https://en.wikipedia.org/wiki/Tropical_cyclone",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los ciclones tropicales necesitan aguas oceánicas de al menos unos 26,5 °C.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www.weather.gov/jetstream/tc",
+        "https://en.wikipedia.org/wiki/Tropical_cyclone"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La fuerza de Coriolis hace girar los huracanes: en sentido antihorario en el hemisferio norte y horario en el sur.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tropical_cyclone"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un huracán de categoría 5 tiene vientos sostenidos de 252 km/h o más.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://www.nhc.noaa.gov/aboutsshws.php"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los ciclones tropicales casi nunca se forman a menos de unos 5° del ecuador, donde el efecto Coriolis es mínimo.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://www.weather.gov/jetstream/tc",
+        "https://en.wikipedia.org/wiki/Tropical_cyclone"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

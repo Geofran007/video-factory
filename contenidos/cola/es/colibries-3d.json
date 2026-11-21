@@ -1,0 +1,215 @@
+{
+  "topic": "Cómo vuelan los colibríes",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo vuela un colibrí? 🐦🌺",
+  "hook": "¿Cómo puede un colibrí quedarse quieto en el aire, como si flotara?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "col_hook",
+      "narration": "¿Cómo puede un colibrí quedarse quieto en el aire, como si flotara?",
+      "on_screen_text": "¿Cómo flota un colibrí?",
+      "highlight_words": [
+        "colibrí?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_beats",
+      "narration": "Sus alas baten hasta unas ochenta veces por segundo, tan rápido que zumban.",
+      "on_screen_text": "Hasta 80 aleteos por segundo",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_eight",
+      "narration": "Pero el truco está en cómo las mueve: la punta del ala dibuja un ocho en el aire.",
+      "on_screen_text": "El ala dibuja un ocho",
+      "highlight_words": [
+        "ocho"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_lift",
+      "narration": "Así empuja aire hacia abajo al bajar el ala, y también al subirla, algo que casi ningún otro pájaro hace.",
+      "on_screen_text": "Empuja al bajar y al subir",
+      "highlight_words": [
+        "subir"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hover",
+      "narration": "Por eso puede flotar en un solo punto, como un pequeño helicóptero.",
+      "on_screen_text": "Como un helicóptero",
+      "highlight_words": [
+        "helicóptero"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_back",
+      "narration": "Y hasta puede volar hacia atrás, algo que casi ningún otro pájaro logra.",
+      "on_screen_text": "¡Vuela hacia atrás!",
+      "highlight_words": [
+        "atrás!"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_heart",
+      "narration": "Para lograrlo, su corazón puede latir más de mil doscientas veces por minuto.",
+      "on_screen_text": "1.200 latidos por minuto",
+      "highlight_words": [
+        "1.200"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_torpor",
+      "narration": "Gasta tanta energía que de noche entra en un sueño profundo y baja su temperatura para ahorrar.",
+      "on_screen_text": "De noche, modo ahorro",
+      "highlight_words": [
+        "ahorro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "col_ecuador",
+      "narration": "Y Ecuador es uno de los mejores lugares para verlos: tiene más de cien especies distintas.",
+      "on_screen_text": "Más de 100 especies en Ecuador",
+      "highlight_words": [
+        "100"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "col_outro",
+      "narration": "Mándaselo a alguien que ama a los pájaros.",
+      "on_screen_text": "Mándaselo a un amante de aves",
+      "highlight_words": [
+        "aves"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Los colibríes baten las alas hasta unas 80 veces por segundo y las mueven en forma de ocho, de modo que empujan aire al bajar y también al subir. Así pueden quedarse quietos en el aire e incluso volar hacia atrás. Su corazón puede superar los 1.200 latidos por minuto y de noche entran en un letargo para ahorrar energía. Ecuador tiene más de 100 especies. Animación 3D propia, aleteo en cámara lenta.",
+  "hashtags": [
+    "colibri",
+    "aves",
+    "naturaleza",
+    "animales",
+    "ecuador",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Hummingbird",
+      "url": "https://en.wikipedia.org/wiki/Hummingbird",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Warrick et al. (2005), Aerodynamics of the hovering hummingbird",
+      "url": "https://www.nature.com/articles/nature03647",
+      "publisher": "Nature"
+    },
+    {
+      "title": "List of birds of Ecuador",
+      "url": "https://en.wikipedia.org/wiki/List_of_birds_of_Ecuador",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Torpor",
+      "url": "https://en.wikipedia.org/wiki/Torpor",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los colibríes baten las alas de unas 12 a 80 veces por segundo según la especie.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Al flotar, los colibríes generan sustentación en el aleteo hacia abajo (~75 %) y también hacia arriba (~25 %).",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://www.nature.com/articles/nature03647"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El corazón de un colibrí puede superar los 1.200 latidos por minuto.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "De noche los colibríes pueden entrar en letargo (torpor), bajando su temperatura y metabolismo.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Torpor",
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En Ecuador se han registrado más de 100 especies de colibríes.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/List_of_birds_of_Ecuador"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

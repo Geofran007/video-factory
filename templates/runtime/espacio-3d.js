@@ -94,6 +94,8 @@
     ctx.restore();
   }
 
+  Object.assign(K, { space, sphere, sunBall });
+
   const fade = (st) => {
     st.overlay = (ctx, lt, dur) => {
       const a = smooth(prog(lt, dur * 0.5, dur * 0.45));

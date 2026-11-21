@@ -1,0 +1,209 @@
+{
+  "topic": "Cómo funciona el GPS",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo sabe tu celular dónde estás? 📍🛰️",
+  "hook": "¿Cómo sabe tu celular dónde estás, aunque estés en medio de la nada?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "gps_hook",
+      "narration": "¿Cómo sabe tu celular dónde estás, aunque estés en medio de la nada?",
+      "on_screen_text": "¿Cómo sabe dónde estás?",
+      "highlight_words": [
+        "dónde"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gps_sats",
+      "narration": "Allá arriba hay unos treinta satélites GPS, a veinte mil kilómetros de altura, dando dos vueltas a la Tierra cada día.",
+      "on_screen_text": "30 satélites allá arriba",
+      "highlight_words": [
+        "30"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gps_clock",
+      "narration": "Cada uno lleva relojes atómicos y repite sin parar: soy este satélite, y esta es la hora exacta.",
+      "on_screen_text": "Relojes atómicos",
+      "highlight_words": [
+        "atómicos"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gps_listen",
+      "narration": "Tu celular no les envía nada: solo escucha.",
+      "on_screen_text": "Tu celular solo escucha",
+      "highlight_words": [
+        "escucha"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gps_distance",
+      "narration": "Como la señal viaja a la velocidad de la luz, el tiempo que tarda en llegar dice a qué distancia está cada satélite.",
+      "on_screen_text": "Tiempo = distancia",
+      "highlight_words": [
+        "distancia"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gps_spheres",
+      "narration": "Con tres satélites, esas tres distancias se cruzan en un solo punto: justo donde estás tú.",
+      "on_screen_text": "Tres distancias, un punto",
+      "highlight_words": [
+        "punto"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gps_four",
+      "narration": "Y un cuarto satélite corrige el reloj de tu celular, que no es tan preciso.",
+      "on_screen_text": "El cuarto corrige el reloj",
+      "highlight_words": [
+        "cuarto"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gps_micro",
+      "narration": "Tiene que ser exacto: un error de una millonésima de segundo ya te movería trescientos metros.",
+      "on_screen_text": "1 microsegundo = 300 m",
+      "highlight_words": [
+        "300"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "gps_relativity",
+      "narration": "Y por la relatividad de Einstein, los relojes en órbita se adelantan unos treinta y ocho microsegundos al día. Sin corregirlo, el GPS fallaría por kilómetros.",
+      "on_screen_text": "Einstein en tu celular",
+      "highlight_words": [
+        "Einstein"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "gps_outro",
+      "narration": "Mándaselo a alguien que siempre se pierde.",
+      "on_screen_text": "Mándaselo a quien se pierde",
+      "highlight_words": [
+        "pierde"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Unos 30 satélites GPS orbitan a unos 20.200 km y dan dos vueltas a la Tierra al día. Cada uno lleva relojes atómicos y transmite su hora exacta; tu celular solo escucha, calcula a qué distancia está cada satélite por el tiempo que tarda la señal, y con cuatro satélites encuentra tu posición. Por la relatividad, los relojes de órbita se adelantan unos 38 microsegundos al día y hay que corregirlos. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "gps",
+    "satelites",
+    "tecnologia",
+    "celular",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "GPS Space Segment",
+      "url": "https://www.gps.gov/systems/gps/space/",
+      "publisher": "GPS.gov"
+    },
+    {
+      "title": "Global Positioning System",
+      "url": "https://en.wikipedia.org/wiki/Global_Positioning_System",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Error analysis for the Global Positioning System",
+      "url": "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La constelación GPS tiene unos 31 satélites operativos a unos 20.200 km que completan dos órbitas por día.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www.gps.gov/systems/gps/space/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los receptores GPS solo reciben señales; no transmiten a los satélites.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Global_Positioning_System"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Se necesitan al menos cuatro satélites: tres para la posición y uno para corregir el reloj del receptor.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Global_Positioning_System"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un error de 1 microsegundo equivale a unos 300 m, porque la señal viaja a la velocidad de la luz.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Por efectos relativistas, los relojes de los satélites se adelantan unos 38 microsegundos al día respecto a la Tierra.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

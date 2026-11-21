@@ -41,7 +41,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "ecl_hook", "ecl_size", "ecl_same", "ecl_solar", "ecl_path", "ecl_tilt", "ecl_lunar", "ecl_red",
                   "ecl_future", "ecl_outro",
                   "cor_hook", "cor_size", "cor_two", "cor_lungs", "cor_body", "cor_spark", "cor_squeeze", "cor_valves",
-                  "cor_liters", "cor_outro"]
+                  "cor_liters", "cor_outro",
+                  # Tanda 3: mar salado (sal-3d.js), GPS (gps-3d.js), huracanes (huracan-3d.js), colibríes (colibri-3d.js)
+                  "sal_hook", "sal_rain", "sal_rocks", "sal_rivers", "sal_evap", "sal_cycle", "sal_vents", "sal_glass",
+                  "sal_layer", "sal_outro",
+                  "gps_hook", "gps_sats", "gps_clock", "gps_listen", "gps_distance", "gps_spheres", "gps_four",
+                  "gps_micro", "gps_relativity", "gps_outro",
+                  "hur_hook", "hur_warm", "hur_rise", "hur_pull", "hur_spin", "hur_eye", "hur_cat5", "hur_land",
+                  "hur_equator", "hur_outro",
+                  "col_hook", "col_beats", "col_eight", "col_lift", "col_hover", "col_back", "col_heart", "col_torpor",
+                  "col_ecuador", "col_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

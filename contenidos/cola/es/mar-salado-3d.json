@@ -1,0 +1,204 @@
+{
+  "topic": "Por qué el agua del mar es salada",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué el mar es salado? 🌊🧂",
+  "hook": "¿Por qué el mar es salado, si los ríos que llegan a él son de agua dulce?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "sal_hook",
+      "narration": "¿Por qué el mar es salado, si los ríos que llegan a él son de agua dulce?",
+      "on_screen_text": "¿Por qué el mar es salado?",
+      "highlight_words": [
+        "salado?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_rain",
+      "narration": "Todo empieza con la lluvia: trae un poquito de ácido del aire y va desgastando las rocas.",
+      "on_screen_text": "La lluvia gasta las rocas",
+      "highlight_words": [
+        "rocas"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_rocks",
+      "narration": "Así se sueltan minerales diminutos, como el sodio y el cloro, que el agua arrastra.",
+      "on_screen_text": "Sodio y cloro sueltos",
+      "highlight_words": [
+        "Sodio",
+        "cloro"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_rivers",
+      "narration": "Los ríos los llevan hasta el mar, pero en tan poca cantidad que no notamos el sabor.",
+      "on_screen_text": "Los ríos los llevan al mar",
+      "highlight_words": [
+        "ríos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_evap",
+      "narration": "En el mar, el sol evapora el agua, pero la sal no se va: se queda.",
+      "on_screen_text": "El agua se va, la sal se queda",
+      "highlight_words": [
+        "sal"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_cycle",
+      "narration": "Y así, vuelta tras vuelta durante millones de años, la sal se fue acumulando.",
+      "on_screen_text": "Millones de años sumando",
+      "highlight_words": [
+        "Millones"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "También salen minerales de volcanes y fuentes calientes en el fondo del mar.",
+      "on_screen_text": "Fuentes calientes en el fondo",
+      "highlight_words": [
+        "calientes"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_glass",
+      "narration": "Hoy, cada litro de agua de mar tiene unos treinta y cinco gramos de sal.",
+      "on_screen_text": "35 gramos por litro",
+      "highlight_words": [
+        "35"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sal_layer",
+      "narration": "Si sacáramos toda esa sal y la repartiéramos sobre los continentes, formaría una capa de más de ciento cincuenta metros.",
+      "on_screen_text": "¡Una capa de 150 metros!",
+      "highlight_words": [
+        "150"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "sal_outro",
+      "narration": "Mándaselo a alguien que ama el mar.",
+      "on_screen_text": "Mándaselo a un amante del mar",
+      "highlight_words": [
+        "mar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La lluvia, ligeramente ácida, desgasta las rocas y libera minerales que los ríos llevan al mar en cantidades tan pequeñas que no se notan. En el mar el agua se evapora pero la sal se queda, y así se acumuló durante millones de años; también aportan minerales las fuentes hidrotermales. Hoy cada litro tiene unos 35 g de sal. Animación 3D propia.",
+  "hashtags": [
+    "mar",
+    "oceano",
+    "sal",
+    "agua",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Why is the ocean salty?",
+      "url": "https://oceanservice.noaa.gov/facts/whysalty.html",
+      "publisher": "NOAA Ocean Service"
+    },
+    {
+      "title": "Why is the ocean salty but rivers flowing into it are not?",
+      "url": "https://www.usgs.gov/faqs/why-ocean-salty-but-rivers-flowing-it-are-not",
+      "publisher": "USGS"
+    },
+    {
+      "title": "Seawater",
+      "url": "https://en.wikipedia.org/wiki/Seawater",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La lluvia es ligeramente ácida por el dióxido de carbono disuelto y desgasta las rocas, liberando iones que llegan al mar por los ríos.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/whysalty.html",
+        "https://www.usgs.gov/faqs/why-ocean-salty-but-rivers-flowing-it-are-not"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las fuentes hidrotermales del fondo marino también aportan minerales disueltos.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/whysalty.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La salinidad media del agua de mar es de unos 35 gramos de sal por litro (3,5 %).",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www.usgs.gov/faqs/why-ocean-salty-but-rivers-flowing-it-are-not",
+        "https://en.wikipedia.org/wiki/Seawater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Si se extrajera toda la sal del mar y se repartiera sobre los continentes formaría una capa de más de 150 m, como un edificio de 40 pisos.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/whysalty.html"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
