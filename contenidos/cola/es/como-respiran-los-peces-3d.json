@@ -1,0 +1,202 @@
+{
+  "topic": "Cómo funcionan las branquias de los peces",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo respiran los peces? 🐟",
+  "hook": "¿Cómo respiran los peces bajo el agua, si casi ninguno tiene pulmones?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pez_hook",
+      "narration": "¿Cómo respiran los peces bajo el agua, si casi ninguno tiene pulmones?",
+      "on_screen_text": "¿Cómo respiran los peces?",
+      "highlight_words": [
+        "peces?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_oxygen",
+      "narration": "El agua tiene oxígeno disuelto, pero muy poco: unas treinta veces menos que el aire.",
+      "on_screen_text": "Poquísimo oxígeno",
+      "highlight_words": [
+        "oxígeno"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_mouth",
+      "narration": "El pez toma agua por la boca y la hace salir por los costados, pasando por las branquias.",
+      "on_screen_text": "Boca → branquias",
+      "highlight_words": [
+        "branquias"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_gills",
+      "narration": "Las branquias son arcos con cientos de filamentos rojos, llenos de vasos sanguíneos.",
+      "on_screen_text": "Las branquias",
+      "highlight_words": [
+        "branquias"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_lamellae",
+      "narration": "Cada filamento tiene láminas finísimas, por donde el oxígeno pasa del agua a la sangre.",
+      "on_screen_text": "Láminas finísimas",
+      "highlight_words": [
+        "finísimas"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_counter",
+      "narration": "El truco: la sangre fluye en sentido contrario al agua, y así pueden sacar hasta un ochenta por ciento del oxígeno.",
+      "on_screen_text": "Contracorriente",
+      "highlight_words": [
+        "Contracorriente"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_co2",
+      "narration": "Y al mismo tiempo, sueltan el dióxido de carbono al agua.",
+      "on_screen_text": "Sale el CO₂",
+      "highlight_words": [
+        "CO₂"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_air",
+      "narration": "Fuera del agua, las branquias se pegan entre sí y dejan de funcionar, por eso el pez se ahoga en el aire.",
+      "on_screen_text": "En el aire, se ahogan",
+      "highlight_words": [
+        "ahogan"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "pez_shark",
+      "narration": "Y algunos tiburones, como el tiburón blanco, tienen que nadar sin parar para que el agua pase por sus branquias.",
+      "on_screen_text": "Nadar para respirar",
+      "highlight_words": [
+        "respirar"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pez_outro",
+      "narration": "Mándaselo a alguien que tiene una pecera.",
+      "on_screen_text": "Para quien tiene pecera",
+      "highlight_words": [
+        "pecera"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "El agua tiene mucho menos oxígeno que el aire. Los peces la hacen entrar por la boca y salir por las branquias, cuyos filamentos tienen láminas finísimas donde el oxígeno pasa a la sangre; como la sangre fluye en sentido contrario al agua, extraen gran parte del oxígeno y a la vez sueltan el CO₂. Fuera del agua las branquias colapsan, y algunos tiburones deben nadar sin parar para respirar. Animación 3D propia.",
+  "hashtags": [
+    "peces",
+    "branquias",
+    "oceano",
+    "animales",
+    "biologia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Gill",
+      "url": "https://en.wikipedia.org/wiki/Gill",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Countercurrent exchange",
+      "url": "https://en.wikipedia.org/wiki/Countercurrent_exchange",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Ram ventilation",
+      "url": "https://en.wikipedia.org/wiki/Ram_ventilation",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El agua contiene muchísimo menos oxígeno disuelto que el aire (del orden de 20 a 40 veces menos).",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gill"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El intercambio a contracorriente permite a los peces extraer una gran parte del oxígeno del agua (hasta ~80 %).",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Countercurrent_exchange",
+        "https://en.wikipedia.org/wiki/Gill"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Fuera del agua los filamentos branquiales colapsan y el pez no puede respirar.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gill"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Algunos tiburones, como el tiburón blanco, dependen de la ventilación por embestida y deben nadar para respirar.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ram_ventilation"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

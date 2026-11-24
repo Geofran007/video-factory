@@ -1,0 +1,210 @@
+{
+  "topic": "How a microwave oven works",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does a microwave heat food? 🍲",
+  "hook": "How does a microwave heat food with no fire inside?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "mic_hook",
+      "narration": "How does a microwave heat food with no fire inside?",
+      "on_screen_text": "How does a microwave heat?",
+      "highlight_words": [
+        "microwave"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_waves",
+      "narration": "A part called the magnetron shoots out very short radio waves: microwaves.",
+      "on_screen_text": "The magnetron",
+      "highlight_words": [
+        "magnetron"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_water",
+      "narration": "Those waves flip the water molecules in your food back and forth billions of times a second.",
+      "on_screen_text": "Water spins and spins",
+      "highlight_words": [
+        "spins"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_friction",
+      "narration": "Moving that fast, they bump and rub against everything around them, and that friction is heat.",
+      "on_screen_text": "Friction = heat",
+      "highlight_words": [
+        "heat"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_uneven",
+      "narration": "The waves form hot and cold spots inside the oven, which is why the plate turns.",
+      "on_screen_text": "That's why the plate spins",
+      "highlight_words": [
+        "spins"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_door",
+      "narration": "The door has a mesh with holes smaller than the waves: light gets through, but microwaves don't.",
+      "on_screen_text": "The door mesh",
+      "highlight_words": [
+        "mesh"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_metal",
+      "narration": "Metal reflects them and can spark, so keep metal out.",
+      "on_screen_text": "No metal!",
+      "highlight_words": [
+        "metal!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_ice",
+      "narration": "And ice heats far worse than liquid water: that's why defrosting goes in bursts.",
+      "on_screen_text": "Defrost goes in bursts",
+      "highlight_words": [
+        "bursts"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mic_candy",
+      "narration": "And it was invented by accident in the 1940s, when an engineer's chocolate bar melted in his pocket next to a radar.",
+      "on_screen_text": "Invented by a chocolate bar",
+      "highlight_words": [
+        "chocolate"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "mic_outro",
+      "narration": "Send this to someone who lives on microwave meals.",
+      "on_screen_text": "For the microwave king",
+      "highlight_words": [
+        "microwave"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "A magnetron emits microwaves (about 2.45 GHz) that make water molecules in food flip back and forth; that motion becomes heat. Hot and cold spots form inside the oven, which is why the plate turns. The door mesh lets light through but not microwaves, metal can spark, and ice heats worse than liquid water. It was invented after a melted chocolate bar was noticed next to a radar in the 1940s. Original 3D animation.",
+  "hashtags": [
+    "microwave",
+    "physics",
+    "kitchen",
+    "technology",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Microwave oven",
+      "url": "https://en.wikipedia.org/wiki/Microwave_oven",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Percy Spencer",
+      "url": "https://en.wikipedia.org/wiki/Percy_Spencer",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Faraday cage",
+      "url": "https://en.wikipedia.org/wiki/Faraday_cage",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Household ovens use about 2.45 GHz microwaves, which make polar molecules like water rotate.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Standing waves create hot and cold spots; the turntable evens out the heating.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The door's metal mesh works as a Faraday cage: its holes are much smaller than the wavelength (~12 cm).",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven",
+        "https://en.wikipedia.org/wiki/Faraday_cage"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Ice absorbs microwaves much less than liquid water.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In the 1940s Percy Spencer noticed a chocolate bar melting near a radar magnetron; the oven was patented in 1945.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Percy_Spencer"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

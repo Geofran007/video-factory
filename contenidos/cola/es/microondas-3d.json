@@ -1,0 +1,210 @@
+{
+  "topic": "Cómo funciona un horno microondas",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo calienta un microondas? 🍲",
+  "hook": "¿Cómo calienta un microondas la comida, si por dentro no hay fuego?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "mic_hook",
+      "narration": "¿Cómo calienta un microondas la comida, si por dentro no hay fuego?",
+      "on_screen_text": "¿Cómo calienta el microondas?",
+      "highlight_words": [
+        "microondas?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_waves",
+      "narration": "Una pieza llamada magnetrón lanza ondas de radio muy cortas: las microondas.",
+      "on_screen_text": "El magnetrón",
+      "highlight_words": [
+        "magnetrón"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_water",
+      "narration": "Esas ondas hacen girar las moléculas de agua de la comida de un lado a otro, miles de millones de veces por segundo.",
+      "on_screen_text": "El agua gira y gira",
+      "highlight_words": [
+        "gira"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_friction",
+      "narration": "Al moverse tan rápido, chocan y rozan con todo lo que las rodea, y ese roce es calor.",
+      "on_screen_text": "Roce = calor",
+      "highlight_words": [
+        "calor"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_uneven",
+      "narration": "Las ondas forman zonas calientes y frías dentro del horno, por eso el plato gira.",
+      "on_screen_text": "Por eso el plato gira",
+      "highlight_words": [
+        "gira"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_door",
+      "narration": "La puerta tiene una rejilla con agujeros más pequeños que las ondas: la luz pasa, pero las microondas no.",
+      "on_screen_text": "La rejilla de la puerta",
+      "highlight_words": [
+        "rejilla"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_metal",
+      "narration": "El metal las refleja y puede hacer chispas, por eso no se mete metal.",
+      "on_screen_text": "¡Nada de metal!",
+      "highlight_words": [
+        "metal!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mic_ice",
+      "narration": "Y el hielo se calienta mucho peor que el agua líquida: por eso descongelar va por ratos.",
+      "on_screen_text": "Descongelar va por ratos",
+      "highlight_words": [
+        "ratos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mic_candy",
+      "narration": "Y se inventó por casualidad en los años cuarenta, cuando a un ingeniero se le derritió un chocolate en el bolsillo junto a un radar.",
+      "on_screen_text": "Inventado por un chocolate",
+      "highlight_words": [
+        "chocolate"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "mic_outro",
+      "narration": "Mándaselo a alguien que vive del microondas.",
+      "on_screen_text": "Para el rey del microondas",
+      "highlight_words": [
+        "microondas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Un magnetrón emite microondas (unos 2,45 GHz) que hacen oscilar las moléculas de agua de los alimentos; ese movimiento se convierte en calor. Dentro del horno se forman zonas calientes y frías, por eso gira el plato. La rejilla de la puerta deja pasar la luz pero no las microondas, el metal puede hacer chispas y el hielo se calienta peor que el agua líquida. Se inventó tras notar un chocolate derretido junto a un radar en los años cuarenta. Animación 3D propia.",
+  "hashtags": [
+    "microondas",
+    "fisica",
+    "cocina",
+    "tecnologia",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Microwave oven",
+      "url": "https://en.wikipedia.org/wiki/Microwave_oven",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Percy Spencer",
+      "url": "https://en.wikipedia.org/wiki/Percy_Spencer",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Faraday cage",
+      "url": "https://en.wikipedia.org/wiki/Faraday_cage",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los hornos domésticos usan microondas de unos 2,45 GHz, que hacen rotar las moléculas polares como el agua.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las ondas estacionarias crean zonas calientes y frías; el plato giratorio reparte el calentamiento.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La rejilla metálica de la puerta funciona como jaula de Faraday: sus agujeros son mucho más pequeños que la longitud de onda (~12 cm).",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven",
+        "https://en.wikipedia.org/wiki/Faraday_cage"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El hielo absorbe las microondas mucho peor que el agua líquida.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Microwave_oven"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Percy Spencer notó en los años cuarenta que un chocolate se derretía cerca de un magnetrón de radar; el horno se patentó en 1945.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Percy_Spencer"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

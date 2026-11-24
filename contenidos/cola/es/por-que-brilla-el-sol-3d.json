@@ -1,0 +1,211 @@
+{
+  "topic": "Cómo produce energía el Sol: fusión nuclear",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué brilla el Sol? ☀️",
+  "hook": "¿Por qué brilla el Sol, y de dónde saca tanta energía?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "sol_hook",
+      "narration": "¿Por qué brilla el Sol, y de dónde saca tanta energía?",
+      "on_screen_text": "¿Por qué brilla el Sol?",
+      "highlight_words": [
+        "Sol?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_core",
+      "narration": "En su centro, el núcleo, la temperatura llega a unos quince millones de grados.",
+      "on_screen_text": "Núcleo: 15 millones °C",
+      "highlight_words": [
+        "15"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_fusion",
+      "narration": "Ahí los núcleos de hidrógeno chocan tan fuerte que se fusionan en helio, y liberan muchísima energía.",
+      "on_screen_text": "Hidrógeno → helio",
+      "highlight_words": [
+        "helio"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_mass",
+      "narration": "Cada segundo, el Sol convierte unos cuatro millones de toneladas de su materia en pura energía.",
+      "on_screen_text": "4 millones de toneladas por segundo",
+      "highlight_words": [
+        "4"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "Esa energía llega a la superficie, que está a unos cinco mil quinientos grados y tiene manchas más frías.",
+      "on_screen_text": "Superficie: 5.500 °C",
+      "highlight_words": [
+        "5.500"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "Desde ahí, la luz tarda unos ocho minutos en llegar a la Tierra.",
+      "on_screen_text": "8 minutos hasta aquí",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_age",
+      "narration": "El Sol tiene unos cuatro mil seiscientos millones de años, y le queda combustible para unos cinco mil millones más.",
+      "on_screen_text": "A mitad de su vida",
+      "highlight_words": [
+        "mitad"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_giant",
+      "narration": "Al final se inflará hasta volverse una gigante roja.",
+      "on_screen_text": "Será una gigante roja",
+      "highlight_words": [
+        "roja"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sol_walk",
+      "narration": "Y lo más loco: la energía que sale hoy del Sol pudo pasar decenas de miles de años rebotando dentro de él antes de escapar.",
+      "on_screen_text": "Decenas de miles de años",
+      "highlight_words": [
+        "miles"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "sol_outro",
+      "narration": "Mándaselo a alguien que ilumina tu día.",
+      "on_screen_text": "Para quien ilumina tu día",
+      "highlight_words": [
+        "ilumina"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "En el núcleo del Sol, a unos 15 millones de grados, el hidrógeno se fusiona en helio y libera energía; cada segundo convierte unos 4 millones de toneladas de materia en energía. La superficie está a unos 5.500 °C y su luz tarda unos 8 minutos en llegar a la Tierra, aunque la energía puede tardar decenas de miles de años en salir del interior. Tiene unos 4.600 millones de años, le quedan unos 5.000 millones y terminará como gigante roja. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "sol",
+    "espacio",
+    "fusion",
+    "astronomia",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Sun facts",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Sun",
+      "url": "https://en.wikipedia.org/wiki/Sun",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Solar core",
+      "url": "https://en.wikipedia.org/wiki/Solar_core",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La temperatura del núcleo solar es de unos 15 millones de °C.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/",
+        "https://en.wikipedia.org/wiki/Solar_core"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El Sol convierte unos 4 millones de toneladas de materia en energía cada segundo.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La luz del Sol tarda unos 8 minutos en llegar a la Tierra.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El Sol tiene unos 4.600 millones de años y le quedan unos 5.000 millones en su etapa actual.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/",
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La energía producida en el núcleo tarda de decenas a cientos de miles de años en atravesar la zona radiativa.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

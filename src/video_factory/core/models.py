@@ -77,7 +77,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "hie_hook", "hie_compare", "hie_molecule", "hie_liquid", "hie_lattice", "hie_expand", "hie_iceberg",
                   "hie_lake", "hie_bottle", "hie_snow", "hie_outro",
                   "mit_hook", "mit_name", "mit_spin", "mit_bulge", "mit_weight", "mit_day", "mit_shadow", "mit_drain",
-                  "mit_monument", "mit_outro"]
+                  "mit_monument", "mit_outro",
+                  # Tanda 7: huellas (huellas-3d.js), microondas (microondas-3d.js), Sol (sol-3d.js), peces (peces-3d.js)
+                  "hue_hook", "hue_womb", "hue_ridges", "hue_patterns", "hue_unique", "hue_twins", "hue_touch",
+                  "hue_police", "hue_koala", "hue_outro",
+                  "mic_hook", "mic_waves", "mic_water", "mic_friction", "mic_uneven", "mic_door", "mic_metal", "mic_ice",
+                  "mic_candy", "mic_outro",
+                  "sol_hook", "sol_core", "sol_fusion", "sol_mass", "sol_surface", "sol_light", "sol_age", "sol_giant",
+                  "sol_walk", "sol_outro",
+                  "pez_hook", "pez_oxygen", "pez_mouth", "pez_gills", "pez_lamellae", "pez_counter", "pez_co2", "pez_air",
+                  "pez_shark", "pez_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

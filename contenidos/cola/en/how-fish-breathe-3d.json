@@ -1,0 +1,202 @@
+{
+  "topic": "How fish gills work",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How do fish breathe? 🐟",
+  "hook": "How do fish breathe underwater, when almost none of them have lungs?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pez_hook",
+      "narration": "How do fish breathe underwater, when almost none of them have lungs?",
+      "on_screen_text": "How do fish breathe?",
+      "highlight_words": [
+        "fish"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_oxygen",
+      "narration": "Water has dissolved oxygen, but very little: about thirty times less than air.",
+      "on_screen_text": "Very little oxygen",
+      "highlight_words": [
+        "oxygen"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_mouth",
+      "narration": "The fish takes water in through its mouth and pushes it out the sides, across its gills.",
+      "on_screen_text": "Mouth → gills",
+      "highlight_words": [
+        "gills"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_gills",
+      "narration": "Gills are arches with hundreds of red filaments packed with blood vessels.",
+      "on_screen_text": "The gills",
+      "highlight_words": [
+        "gills"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_lamellae",
+      "narration": "Each filament has ultra-thin plates where oxygen passes from the water into the blood.",
+      "on_screen_text": "Ultra-thin plates",
+      "highlight_words": [
+        "Ultra-thin"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_counter",
+      "narration": "The trick: blood flows the opposite way to the water, so they can pull out up to eighty percent of the oxygen.",
+      "on_screen_text": "Countercurrent flow",
+      "highlight_words": [
+        "Countercurrent"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_co2",
+      "narration": "And at the same time, they release carbon dioxide into the water.",
+      "on_screen_text": "CO₂ goes out",
+      "highlight_words": [
+        "CO₂"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_air",
+      "narration": "Out of the water, the gills collapse and stop working, which is why a fish suffocates in air.",
+      "on_screen_text": "They suffocate in air",
+      "highlight_words": [
+        "suffocate"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "pez_shark",
+      "narration": "And some sharks, like the great white, must keep swimming so water flows over their gills.",
+      "on_screen_text": "Swim to breathe",
+      "highlight_words": [
+        "breathe"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pez_outro",
+      "narration": "Send this to someone with a fish tank.",
+      "on_screen_text": "For the fish-tank owner",
+      "highlight_words": [
+        "fish-tank"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Water holds far less oxygen than air. Fish take water in through the mouth and push it out over the gills, whose filaments have ultra-thin plates where oxygen passes into the blood; because blood flows opposite to the water, they extract much of the oxygen while releasing CO₂. Out of water the gills collapse, and some sharks must keep swimming to breathe. Original 3D animation.",
+  "hashtags": [
+    "fish",
+    "gills",
+    "ocean",
+    "animals",
+    "biology",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Gill",
+      "url": "https://en.wikipedia.org/wiki/Gill",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Countercurrent exchange",
+      "url": "https://en.wikipedia.org/wiki/Countercurrent_exchange",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Ram ventilation",
+      "url": "https://en.wikipedia.org/wiki/Ram_ventilation",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Water holds far less dissolved oxygen than air (on the order of 20 to 40 times less).",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gill"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Countercurrent exchange lets fish extract a large share of the water's oxygen (up to ~80%).",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Countercurrent_exchange",
+        "https://en.wikipedia.org/wiki/Gill"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Out of water the gill filaments collapse and the fish can't breathe.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gill"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Some sharks, like the great white, rely on ram ventilation and must swim to breathe.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ram_ventilation"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

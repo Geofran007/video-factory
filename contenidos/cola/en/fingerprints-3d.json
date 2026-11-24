@@ -1,0 +1,209 @@
+{
+  "topic": "How fingerprints form and what they're for",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why do we have fingerprints? 🖐️",
+  "hook": "Why do we have fingerprints, and why are no two alike?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "hue_hook",
+      "narration": "Why do we have fingerprints, and why are no two alike?",
+      "on_screen_text": "Why do we have fingerprints?",
+      "highlight_words": [
+        "fingerprints?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_womb",
+      "narration": "They form before birth, roughly between weeks ten and sixteen of pregnancy.",
+      "on_screen_text": "Before you're born",
+      "highlight_words": [
+        "born"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_ridges",
+      "narration": "The skin on your fingertips folds into ridges and grooves, like tiny waves.",
+      "on_screen_text": "Ridges and grooves",
+      "highlight_words": [
+        "Ridges"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_patterns",
+      "narration": "Those ridges form three basic patterns: arches, loops and whorls.",
+      "on_screen_text": "Arches, loops, whorls",
+      "highlight_words": [
+        "whorls"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_unique",
+      "narration": "But the details, like where each line ends or splits, are unique to each person.",
+      "on_screen_text": "Unique details",
+      "highlight_words": [
+        "Unique"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_twins",
+      "narration": "Not even identical twins have the same fingerprints.",
+      "on_screen_text": "Not even twins",
+      "highlight_words": [
+        "twins"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_touch",
+      "narration": "And they help you feel: when you slide a finger, the ridges vibrate and your brain picks up textures better.",
+      "on_screen_text": "Feeling textures",
+      "highlight_words": [
+        "textures"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_police",
+      "narration": "That's why police have used them to identify people for over a hundred years.",
+      "on_screen_text": "Identifying for 100+ years",
+      "highlight_words": [
+        "100+"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "hue_koala",
+      "narration": "And koalas have fingerprints so similar to ours they could fool an expert.",
+      "on_screen_text": "Koalas have them too!",
+      "highlight_words": [
+        "Koalas"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "hue_outro",
+      "narration": "Send this to someone one of a kind.",
+      "on_screen_text": "Send this to someone unique",
+      "highlight_words": [
+        "unique"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Fingerprints form before birth, roughly between weeks 10 and 16 of pregnancy. The skin folds into ridges that make arches, loops or whorls, and their details are unique, even between identical twins. They help sense texture because they vibrate as a finger slides, they've been used to identify people for over a century, and koalas have fingerprints very similar to ours. Original 3D animation.",
+  "hashtags": [
+    "fingerprints",
+    "humanbody",
+    "biology",
+    "science",
+    "facts",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Fingerprint",
+      "url": "https://en.wikipedia.org/wiki/Fingerprint",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Koala",
+      "url": "https://en.wikipedia.org/wiki/Koala",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Scheibert et al. (2009), The role of fingerprints in the coding of tactile information",
+      "url": "https://www.science.org/doi/10.1126/science.1166467",
+      "publisher": "Science"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Fingerprint ridges form during fetal development, roughly between weeks 10 and 16.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fingerprint"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The three basic patterns are arch, loop and whorl.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fingerprint"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Identical twins have different fingerprints.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fingerprint"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Ridges amplify vibrations when a finger slides, helping to sense fine textures.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://www.science.org/doi/10.1126/science.1166467"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Koalas have fingerprints very similar to human ones.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Koala"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "topic": "How the Sun makes energy: nuclear fusion",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why does the Sun shine? ☀️",
+  "hook": "Why does the Sun shine, and where does all that energy come from?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "sol_hook",
+      "narration": "Why does the Sun shine, and where does all that energy come from?",
+      "on_screen_text": "Why does the Sun shine?",
+      "highlight_words": [
+        "Sun"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_core",
+      "narration": "At its center, the core, the temperature reaches about fifteen million degrees Celsius.",
+      "on_screen_text": "Core: 15 million °C",
+      "highlight_words": [
+        "15"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_fusion",
+      "narration": "There, hydrogen nuclei smash together so hard they fuse into helium, releasing enormous energy.",
+      "on_screen_text": "Hydrogen → helium",
+      "highlight_words": [
+        "helium"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_mass",
+      "narration": "Every second, the Sun turns about four million tons of its matter into pure energy.",
+      "on_screen_text": "4 million tons a second",
+      "highlight_words": [
+        "4"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "That energy reaches the surface, which is about five thousand five hundred degrees, with cooler dark spots.",
+      "on_screen_text": "Surface: 5,500 °C",
+      "highlight_words": [
+        "5,500"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "From there, sunlight takes about eight minutes to reach Earth.",
+      "on_screen_text": "8 minutes to get here",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_age",
+      "narration": "The Sun is about four point six billion years old, and it has fuel for about five billion more.",
+      "on_screen_text": "Halfway through its life",
+      "highlight_words": [
+        "Halfway"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_giant",
+      "narration": "In the end it will swell up into a red giant.",
+      "on_screen_text": "It'll become a red giant",
+      "highlight_words": [
+        "red"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sol_walk",
+      "narration": "And the craziest part: the energy leaving the Sun today may have spent tens of thousands of years bouncing around inside it before escaping.",
+      "on_screen_text": "Tens of thousands of years",
+      "highlight_words": [
+        "thousands"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "sol_outro",
+      "narration": "Send this to someone who brightens your day.",
+      "on_screen_text": "For someone who brightens your day",
+      "highlight_words": [
+        "brightens"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "In the Sun's core, at about 15 million degrees, hydrogen fuses into helium and releases energy; every second it turns about 4 million tons of matter into energy. The surface is about 5,500 °C and its light takes about 8 minutes to reach Earth, though the energy can take tens of thousands of years to escape the interior. It's about 4.6 billion years old, has about 5 billion to go and will end as a red giant. Original 3D animation; not to scale.",
+  "hashtags": [
+    "sun",
+    "space",
+    "fusion",
+    "astronomy",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Sun facts",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Sun",
+      "url": "https://en.wikipedia.org/wiki/Sun",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Solar core",
+      "url": "https://en.wikipedia.org/wiki/Solar_core",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Sun's core temperature is about 15 million °C.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/",
+        "https://en.wikipedia.org/wiki/Solar_core"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Sun converts about 4 million tons of matter into energy every second.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Sunlight takes about 8 minutes to reach Earth.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Sun is about 4.6 billion years old with about 5 billion years left in its current stage.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/",
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Energy made in the core takes tens to hundreds of thousands of years to cross the radiative zone.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "topic": "Cómo se forman las huellas dactilares y para qué sirven",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué tenemos huellas dactilares? 🖐️",
+  "hook": "¿Por qué tenemos huellas dactilares, y por qué no hay dos iguales?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "hue_hook",
+      "narration": "¿Por qué tenemos huellas dactilares, y por qué no hay dos iguales?",
+      "on_screen_text": "¿Por qué tenemos huellas?",
+      "highlight_words": [
+        "huellas?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_womb",
+      "narration": "Se forman antes de nacer, más o menos entre la semana diez y la dieciséis del embarazo.",
+      "on_screen_text": "Antes de nacer",
+      "highlight_words": [
+        "nacer"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_ridges",
+      "narration": "La piel de los dedos se pliega en crestas y surcos, como pequeñas olas.",
+      "on_screen_text": "Crestas y surcos",
+      "highlight_words": [
+        "Crestas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_patterns",
+      "narration": "Esas crestas forman tres dibujos básicos: arcos, presillas y verticilos.",
+      "on_screen_text": "Arcos, presillas, verticilos",
+      "highlight_words": [
+        "verticilos"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_unique",
+      "narration": "Pero los detalles, como dónde se corta o se divide cada línea, son únicos de cada persona.",
+      "on_screen_text": "Detalles únicos",
+      "highlight_words": [
+        "únicos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_twins",
+      "narration": "Ni siquiera los gemelos idénticos tienen las mismas huellas.",
+      "on_screen_text": "Ni los gemelos",
+      "highlight_words": [
+        "gemelos"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_touch",
+      "narration": "Y ayudan a sentir: al deslizar el dedo, las crestas vibran y el cerebro reconoce mejor las texturas.",
+      "on_screen_text": "Sentir texturas",
+      "highlight_words": [
+        "texturas"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_police",
+      "narration": "Por eso la policía las usa para identificar personas desde hace más de cien años.",
+      "on_screen_text": "Más de 100 años identificando",
+      "highlight_words": [
+        "100"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "hue_koala",
+      "narration": "Y los koalas tienen huellas tan parecidas a las nuestras que podrían confundir a un experto.",
+      "on_screen_text": "¡Los koalas también!",
+      "highlight_words": [
+        "koalas"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "hue_outro",
+      "narration": "Mándaselo a alguien único.",
+      "on_screen_text": "Mándaselo a alguien único",
+      "highlight_words": [
+        "único"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Las huellas dactilares se forman antes de nacer, más o menos entre las semanas 10 y 16 del embarazo. La piel se pliega en crestas que dibujan arcos, presillas o verticilos, y sus detalles son únicos, incluso entre gemelos idénticos. Ayudan a percibir texturas porque vibran al deslizar el dedo, se usan para identificar personas desde hace más de un siglo, y los koalas tienen huellas muy parecidas a las nuestras. Animación 3D propia.",
+  "hashtags": [
+    "huellas",
+    "cuerpohumano",
+    "biologia",
+    "ciencia",
+    "curiosidades",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Fingerprint",
+      "url": "https://en.wikipedia.org/wiki/Fingerprint",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Koala",
+      "url": "https://en.wikipedia.org/wiki/Koala",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Scheibert et al. (2009), The role of fingerprints in the coding of tactile information",
+      "url": "https://www.science.org/doi/10.1126/science.1166467",
+      "publisher": "Science"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Las crestas dactilares se forman durante el desarrollo fetal, aproximadamente entre las semanas 10 y 16.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fingerprint"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los tres patrones básicos son arco, presilla y verticilo.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fingerprint"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los gemelos idénticos tienen huellas dactilares diferentes.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fingerprint"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las crestas amplifican vibraciones al deslizar el dedo, lo que ayuda a percibir texturas finas.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://www.science.org/doi/10.1126/science.1166467"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los koalas tienen huellas dactilares muy parecidas a las humanas.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Koala"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
