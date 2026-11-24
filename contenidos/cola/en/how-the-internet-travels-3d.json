@@ -1,0 +1,214 @@
+{
+  "topic": "How internet data travels: packets and undersea cables",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does the internet travel? 🌐",
+  "hook": "How does a video get from the other side of the world to your phone in a second?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "net_hook",
+      "narration": "How does a video get from the other side of the world to your phone in a second?",
+      "on_screen_text": "How does the internet travel?",
+      "highlight_words": [
+        "internet"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_packets",
+      "narration": "First, everything is split into little pieces called packets, and each one carries the address it's going to.",
+      "on_screen_text": "Split into packets",
+      "highlight_words": [
+        "packets"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_routes",
+      "narration": "The packets travel through a network of computers, and each one can take a different route.",
+      "on_screen_text": "Each takes its own route",
+      "highlight_words": [
+        "route"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_rebuild",
+      "narration": "When they arrive, your phone puts them back together in the right order.",
+      "on_screen_text": "Put back together",
+      "highlight_words": [
+        "together"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_cable",
+      "narration": "And to cross oceans satellites are barely used: almost everything travels through cables on the seafloor.",
+      "on_screen_text": "Cables under the sea",
+      "highlight_words": [
+        "sea"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_count",
+      "narration": "There are over a million kilometers of these cables wrapped around the planet.",
+      "on_screen_text": "Over 1 million km",
+      "highlight_words": [
+        "million"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_fiber",
+      "narration": "Inside are glass fibers, and the data travels as pulses of light bouncing off their walls.",
+      "on_screen_text": "Data made of light",
+      "highlight_words": [
+        "light"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_thin",
+      "narration": "And yet, on the deep seafloor many of those cables are only about as thick as a garden hose.",
+      "on_screen_text": "Garden-hose thick",
+      "highlight_words": [
+        "Garden-hose"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "net_shark",
+      "narration": "So thin that, now and then, a curious shark has bitten one.",
+      "on_screen_text": "Sharks biting cables!",
+      "highlight_words": [
+        "Sharks"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "net_outro",
+      "narration": "Send this to someone who can't live without wifi.",
+      "on_screen_text": "For the wifi addict",
+      "highlight_words": [
+        "wifi"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Data is split into addressed packets that take different routes and are reassembled on arrival. Between continents almost all traffic (~99%) travels through undersea fiber-optic cables, over 1.4 million km of them, where data moves as pulses of light. In deep water many cables are about as thin as a garden hose, and the odd shark has bitten one. Original 3D animation.",
+  "hashtags": [
+    "internet",
+    "technology",
+    "cables",
+    "fiberoptics",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Submarine cable FAQs",
+      "url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+      "publisher": "TeleGeography"
+    },
+    {
+      "title": "Packet switching",
+      "url": "https://en.wikipedia.org/wiki/Packet_switching",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Optical fiber",
+      "url": "https://en.wikipedia.org/wiki/Optical_fiber",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Submarine communications cable",
+      "url": "https://en.wikipedia.org/wiki/Submarine_communications_cable",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "On the internet data is split into addressed packets that are reassembled on arrival.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Packet_switching"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "About 99% of intercontinental data traffic travels through undersea cables.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "There are more than 1.4 million km of undersea cables in service.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In deep water many cables are roughly the thickness of a garden hose.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Shark bites on undersea cables have been documented, though they're a rare cause of damage.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

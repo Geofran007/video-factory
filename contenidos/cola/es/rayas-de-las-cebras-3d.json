@@ -1,0 +1,201 @@
+{
+  "topic": "Para qué sirven las rayas de las cebras",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué las cebras tienen rayas? 🦓",
+  "hook": "¿Por qué las cebras tienen rayas?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ceb_hook",
+      "narration": "¿Por qué las cebras tienen rayas?",
+      "on_screen_text": "¿Por qué tienen rayas?",
+      "highlight_words": [
+        "rayas?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_unique",
+      "narration": "Primero, un dato: no hay dos cebras con las mismas rayas.",
+      "on_screen_text": "Ninguna es igual",
+      "highlight_words": [
+        "igual"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_skin",
+      "narration": "Y debajo del pelo, su piel es oscura: son más bien negras con rayas blancas.",
+      "on_screen_text": "¿Negras con rayas blancas?",
+      "highlight_words": [
+        "Negras"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_ideas",
+      "narration": "Durante mucho tiempo se pensó que servían para camuflarse o para refrescarse.",
+      "on_screen_text": "Muchas ideas",
+      "highlight_words": [
+        "ideas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_flies",
+      "narration": "Pero la explicación con más pruebas tiene que ver con unas moscas que pican: los tábanos.",
+      "on_screen_text": "Culpa de las moscas",
+      "highlight_words": [
+        "moscas"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_miss",
+      "narration": "Las rayas parecen confundirlas: se acercan, pero no logran frenar bien y casi no aterrizan.",
+      "on_screen_text": "No logran aterrizar",
+      "highlight_words": [
+        "aterrizar"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_africa",
+      "narration": "Además, en las zonas con más moscas, las cebras suelen tener rayas más marcadas.",
+      "on_screen_text": "Más moscas, más rayas",
+      "highlight_words": [
+        "rayas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_family",
+      "narration": "Y como cada patrón es único, también podrían ayudar a que mamá y cría se reconozcan.",
+      "on_screen_text": "Mamá y cría",
+      "highlight_words": [
+        "cría"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ceb_experiment",
+      "narration": "En un experimento, a unos caballos les pusieron abrigos rayados, ¡y los tábanos aterrizaron mucho menos sobre ellos!",
+      "on_screen_text": "¡Caballos con pijama de cebra!",
+      "highlight_words": [
+        "pijama"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ceb_outro",
+      "narration": "Mándaselo a alguien que ama a los animales.",
+      "on_screen_text": "Para un amante de los animales",
+      "highlight_words": [
+        "animales"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "No hay dos cebras con las mismas rayas y su piel es oscura bajo el pelo. Se propusieron el camuflaje o el control del calor, pero la explicación con más pruebas es que las rayas dificultan que los tábanos aterricen; en zonas con más moscas las rayas suelen ser más marcadas, y en un experimento los caballos con abrigos rayados recibieron muchos menos aterrizajes. Los patrones únicos también podrían ayudar al reconocimiento. Animación 3D propia; las barras del experimento son ilustrativas.",
+  "hashtags": [
+    "cebras",
+    "animales",
+    "africa",
+    "naturaleza",
+    "biologia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Zebra",
+      "url": "https://en.wikipedia.org/wiki/Zebra",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Caro et al. (2019), Benefits of zebra stripes",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210831",
+      "publisher": "PLOS ONE"
+    },
+    {
+      "title": "Caro et al. (2014), The function of zebra stripes",
+      "url": "https://www.nature.com/articles/ncomms4535",
+      "publisher": "Nature Communications"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La piel de las cebras es oscura bajo el pelaje.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Zebra"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los tábanos se acercan a las cebras pero frenan mal y aterrizan mucho menos en superficies rayadas.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210831"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La intensidad de las rayas se correlaciona con la actividad de moscas que pican en distintas regiones.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://www.nature.com/articles/ncomms4535"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Caballos con abrigos rayados recibieron muchos menos aterrizajes de tábanos que con abrigos lisos.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210831"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,209 @@
+{
+  "topic": "How diamonds form deep inside the Earth",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does a diamond form? 💎",
+  "hook": "How does a diamond form, nature's hardest stone?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "dia_hook",
+      "narration": "How does a diamond form, nature's hardest stone?",
+      "on_screen_text": "How is a diamond born?",
+      "highlight_words": [
+        "diamond"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_carbon",
+      "narration": "A diamond is made of a single element: carbon.",
+      "on_screen_text": "Just carbon",
+      "highlight_words": [
+        "carbon"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_graphite",
+      "narration": "The same as pencil lead. The difference is how the atoms are arranged.",
+      "on_screen_text": "Pencil vs. diamond",
+      "highlight_words": [
+        "Pencil"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_deep",
+      "narration": "Natural diamonds form deep inside the Earth, about a hundred and fifty kilometers down.",
+      "on_screen_text": "150 km underground",
+      "highlight_words": [
+        "150"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_pressure",
+      "narration": "There, enormous pressure and over a thousand degrees squeeze the carbon into an incredibly tough network.",
+      "on_screen_text": "Pressure and heat",
+      "highlight_words": [
+        "Pressure"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_age",
+      "narration": "Many are between one and three and a half billion years old.",
+      "on_screen_text": "Older than dinosaurs",
+      "highlight_words": [
+        "Older"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_pipe",
+      "narration": "They reach the surface in very deep volcanic eruptions that carry them up like an elevator.",
+      "on_screen_text": "A volcanic elevator",
+      "highlight_words": [
+        "elevator"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_hard",
+      "narration": "And their atomic network is so strong that a diamond can scratch almost anything.",
+      "on_screen_text": "It scratches almost anything",
+      "highlight_words": [
+        "scratches"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "dia_star",
+      "narration": "And there's a star nicknamed Lucy whose core is thought to be crystallized carbon: like a diamond bigger than the Moon.",
+      "on_screen_text": "A diamond in space!",
+      "highlight_words": [
+        "diamond"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "dia_outro",
+      "narration": "Send this to someone worth more than a diamond.",
+      "on_screen_text": "Worth more than a diamond",
+      "highlight_words": [
+        "diamond"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Diamond is pure carbon, like pencil graphite, but with its atoms in a very strong 3D network. Natural diamonds form about 150 km deep under huge pressure and over 1,000 °C; many are 1 to 3.5 billion years old and rise in deep kimberlite eruptions. They're the hardest natural material, and the white dwarf BPM 37093 ('Lucy') has a crystallized carbon core. Original 3D animation; not to scale.",
+  "hashtags": [
+    "diamonds",
+    "geology",
+    "carbon",
+    "earth",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Diamond",
+      "url": "https://en.wikipedia.org/wiki/Diamond",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Kimberlite",
+      "url": "https://en.wikipedia.org/wiki/Kimberlite",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "BPM 37093",
+      "url": "https://en.wikipedia.org/wiki/BPM_37093",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Diamond and graphite are both pure carbon with different crystal structures.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Most natural diamonds form about 150–250 km deep in the mantle.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Many natural diamonds are between 1 and 3.5 billion years old.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Diamonds reach the surface in deep-source volcanic eruptions, mainly kimberlite.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Kimberlite"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The white dwarf BPM 37093, nicknamed Lucy, is thought to have a crystallized carbon core thousands of kilometers across.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/BPM_37093"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

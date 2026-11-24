@@ -1,0 +1,209 @@
+{
+  "topic": "Cómo se forman los diamantes en el interior de la Tierra",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo se forma un diamante? 💎",
+  "hook": "¿Cómo se forma un diamante, la piedra más dura de la naturaleza?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "dia_hook",
+      "narration": "¿Cómo se forma un diamante, la piedra más dura de la naturaleza?",
+      "on_screen_text": "¿Cómo nace un diamante?",
+      "highlight_words": [
+        "diamante?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_carbon",
+      "narration": "Un diamante está hecho de un solo elemento: carbono.",
+      "on_screen_text": "Solo carbono",
+      "highlight_words": [
+        "carbono"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_graphite",
+      "narration": "Lo mismo que la mina de un lápiz. La diferencia es cómo se acomodan los átomos.",
+      "on_screen_text": "Lápiz contra diamante",
+      "highlight_words": [
+        "Lápiz"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_deep",
+      "narration": "Los diamantes naturales se forman muy adentro de la Tierra, a unos ciento cincuenta kilómetros de profundidad.",
+      "on_screen_text": "A 150 km bajo tierra",
+      "highlight_words": [
+        "150"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_pressure",
+      "narration": "Ahí, una presión enorme y más de mil grados aprietan el carbono hasta formar una red durísima.",
+      "on_screen_text": "Presión y calor",
+      "highlight_words": [
+        "Presión"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_age",
+      "narration": "Muchos tienen entre mil y tres mil quinientos millones de años.",
+      "on_screen_text": "Más viejos que los dinosaurios",
+      "highlight_words": [
+        "viejos"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_pipe",
+      "narration": "Llegan a la superficie en erupciones volcánicas muy profundas, que los suben como en un ascensor.",
+      "on_screen_text": "Un ascensor volcánico",
+      "highlight_words": [
+        "ascensor"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_hard",
+      "narration": "Y su red de átomos es tan firme que un diamante puede rayar casi cualquier cosa.",
+      "on_screen_text": "Raya casi todo",
+      "highlight_words": [
+        "Raya"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "dia_star",
+      "narration": "Y hay una estrella, apodada Lucy, cuyo núcleo sería carbono cristalizado: como un diamante más grande que la Luna.",
+      "on_screen_text": "¡Un diamante en el espacio!",
+      "highlight_words": [
+        "diamante"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "dia_outro",
+      "narration": "Mándaselo a alguien que vale más que un diamante.",
+      "on_screen_text": "Vale más que un diamante",
+      "highlight_words": [
+        "diamante"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "El diamante es carbono puro, igual que el grafito del lápiz, pero con los átomos en una red tridimensional muy firme. Los diamantes naturales se forman a unos 150 km de profundidad, con presión enorme y más de 1.000 °C; muchos tienen entre 1.000 y 3.500 millones de años y suben en erupciones profundas de kimberlita. Son el material natural más duro, y la enana blanca BPM 37093 («Lucy») tiene un núcleo de carbono cristalizado. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "diamantes",
+    "geologia",
+    "carbono",
+    "tierra",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Diamond",
+      "url": "https://en.wikipedia.org/wiki/Diamond",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Kimberlite",
+      "url": "https://en.wikipedia.org/wiki/Kimberlite",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "BPM 37093",
+      "url": "https://en.wikipedia.org/wiki/BPM_37093",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El diamante y el grafito son ambos carbono puro con distinta estructura cristalina.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La mayoría de los diamantes naturales se forman a unos 150–250 km de profundidad en el manto.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Muchos diamantes naturales tienen entre 1.000 y 3.500 millones de años.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los diamantes llegan a la superficie en erupciones volcánicas profundas, sobre todo de kimberlita.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Kimberlite"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La enana blanca BPM 37093, apodada Lucy, tendría un núcleo de carbono cristalizado de miles de kilómetros.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/BPM_37093"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

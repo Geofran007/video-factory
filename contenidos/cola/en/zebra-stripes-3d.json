@@ -1,0 +1,201 @@
+{
+  "topic": "What zebra stripes are for",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why do zebras have stripes? 🦓",
+  "hook": "Why do zebras have stripes?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ceb_hook",
+      "narration": "Why do zebras have stripes?",
+      "on_screen_text": "Why the stripes?",
+      "highlight_words": [
+        "stripes?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_unique",
+      "narration": "First, a fact: no two zebras have the same stripes.",
+      "on_screen_text": "No two alike",
+      "highlight_words": [
+        "alike"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_skin",
+      "narration": "And under the fur, their skin is dark: they're really black with white stripes.",
+      "on_screen_text": "Black with white stripes?",
+      "highlight_words": [
+        "Black"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_ideas",
+      "narration": "For a long time people thought they were for camouflage or for keeping cool.",
+      "on_screen_text": "Lots of ideas",
+      "highlight_words": [
+        "ideas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_flies",
+      "narration": "But the explanation with the most evidence involves biting flies: horseflies.",
+      "on_screen_text": "Blame the flies",
+      "highlight_words": [
+        "flies"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_miss",
+      "narration": "The stripes seem to confuse them: they fly close, but can't brake properly and rarely land.",
+      "on_screen_text": "They can't land",
+      "highlight_words": [
+        "land"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_africa",
+      "narration": "Also, in places with more flies, zebras tend to have bolder stripes.",
+      "on_screen_text": "More flies, bolder stripes",
+      "highlight_words": [
+        "stripes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_family",
+      "narration": "And since every pattern is unique, they may also help a mother and foal recognize each other.",
+      "on_screen_text": "Mom and foal",
+      "highlight_words": [
+        "foal"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ceb_experiment",
+      "narration": "In one experiment, horses were dressed in striped coats, and horseflies landed on them far less!",
+      "on_screen_text": "Horses in zebra pajamas!",
+      "highlight_words": [
+        "pajamas!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ceb_outro",
+      "narration": "Send this to someone who loves animals.",
+      "on_screen_text": "For an animal lover",
+      "highlight_words": [
+        "animal"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "No two zebras have the same stripes, and their skin is dark under the fur. Camouflage and heat control were proposed, but the best-supported explanation is that stripes make it hard for horseflies to land; where flies are more common stripes tend to be bolder, and in an experiment horses wearing striped coats got far fewer landings. Unique patterns may also help with recognition. Original 3D animation; experiment bars are illustrative.",
+  "hashtags": [
+    "zebras",
+    "animals",
+    "africa",
+    "nature",
+    "biology",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Zebra",
+      "url": "https://en.wikipedia.org/wiki/Zebra",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Caro et al. (2019), Benefits of zebra stripes",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210831",
+      "publisher": "PLOS ONE"
+    },
+    {
+      "title": "Caro et al. (2014), The function of zebra stripes",
+      "url": "https://www.nature.com/articles/ncomms4535",
+      "publisher": "Nature Communications"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Zebras' skin is dark under their coat.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Zebra"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Horseflies approach zebras but brake poorly and land far less on striped surfaces.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210831"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Stripe intensity correlates with biting-fly activity across regions.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://www.nature.com/articles/ncomms4535"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Horses wearing striped coats received far fewer horsefly landings than with plain coats.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210831"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,211 @@
+{
+  "topic": "Cómo funcionan los cohetes: acción y reacción, etapas y órbita",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo vuela un cohete? 🚀",
+  "hook": "¿Cómo puede un cohete subir al espacio, donde ni siquiera hay aire?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "coh_hook",
+      "narration": "¿Cómo puede un cohete subir al espacio, donde ni siquiera hay aire?",
+      "on_screen_text": "¿Cómo vuela un cohete?",
+      "highlight_words": [
+        "cohete?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_balloon",
+      "narration": "Piensa en un globo: si lo sueltas, el aire sale para un lado y el globo sale disparado para el otro.",
+      "on_screen_text": "Como un globo",
+      "highlight_words": [
+        "globo"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_newton",
+      "narration": "Un cohete hace lo mismo: lanza gases hacia abajo a enorme velocidad, y esos gases lo empujan hacia arriba.",
+      "on_screen_text": "Acción y reacción",
+      "highlight_words": [
+        "reacción"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_vacuum",
+      "narration": "No necesita aire para empujarse: por eso funciona igual en el vacío del espacio.",
+      "on_screen_text": "Funciona sin aire",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_tanks",
+      "narration": "Pero sí necesita oxígeno para quemar el combustible, así que lo lleva en su propio tanque.",
+      "on_screen_text": "Lleva su propio oxígeno",
+      "highlight_words": [
+        "oxígeno"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_mass",
+      "narration": "Tanto, que cerca del noventa por ciento del peso de un cohete al despegar es combustible.",
+      "on_screen_text": "90 % combustible",
+      "highlight_words": [
+        "90"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_stages",
+      "narration": "Por eso va por etapas: cuando un tanque se vacía, se suelta para no cargar peso inútil.",
+      "on_screen_text": "Etapas que se sueltan",
+      "highlight_words": [
+        "etapas"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_orbit",
+      "narration": "Para quedarse en órbita necesita ir a unos veintiocho mil kilómetros por hora: en realidad, va cayendo sin parar alrededor de la Tierra.",
+      "on_screen_text": "Órbita: caer sin parar",
+      "highlight_words": [
+        "caer"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "coh_land",
+      "narration": "Y hoy algunos cohetes regresan, se frenan con sus motores y aterrizan de pie para volver a usarse.",
+      "on_screen_text": "¡Cohetes que aterrizan!",
+      "highlight_words": [
+        "aterrizan!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "coh_outro",
+      "narration": "Mándaselo a alguien que sueña con ir al espacio.",
+      "on_screen_text": "Para un futuro astronauta",
+      "highlight_words": [
+        "astronauta"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Como un globo que se suelta, un cohete expulsa gases hacia abajo y estos lo empujan hacia arriba (tercera ley de Newton), por eso funciona también en el vacío. Lleva su propio oxidante, y la mayor parte de su peso al despegar es propelente, por eso usa etapas que se sueltan. Para quedar en órbita necesita unos 28.000 km/h, y hoy algunos propulsores regresan y aterrizan para reutilizarse. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "cohetes",
+    "espacio",
+    "fisica",
+    "astronomia",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Newton's Third Law",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-third-law-of-motion/",
+      "publisher": "NASA Glenn Research Center"
+    },
+    {
+      "title": "Multistage rocket",
+      "url": "https://en.wikipedia.org/wiki/Multistage_rocket",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Orbital speed",
+      "url": "https://en.wikipedia.org/wiki/Orbital_speed",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Propellant mass fraction",
+      "url": "https://en.wikipedia.org/wiki/Propellant_mass_fraction",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Reusable launch vehicle",
+      "url": "https://en.wikipedia.org/wiki/Reusable_launch_vehicle",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Un cohete se impulsa expulsando gases (tercera ley de Newton) y no necesita aire para empujarse.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-third-law-of-motion/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En los cohetes orbitales el propelente suele ser alrededor del 85–90 % de la masa al despegue.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Propellant_mass_fraction"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La velocidad orbital en órbita baja es de unos 7,8 km/s (~28.000 km/h).",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Orbital_speed"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Algunos propulsores actuales regresan y aterrizan verticalmente para reutilizarse.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Reusable_launch_vehicle"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -95,7 +95,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "die_hook", "die_jaw", "die_count", "die_roots", "die_push", "die_enamel", "die_cavity", "die_norepair",
                   "die_shark", "die_outro",
                   "din_hook", "din_asteroid", "din_impact", "din_crater", "din_dust", "din_cold", "din_extinct",
-                  "din_mammals", "din_birds", "din_outro"]
+                  "din_mammals", "din_birds", "din_outro",
+                  # Tanda 9: internet (internet-3d.js), cohetes (cohetes-3d.js), cebras (cebras-3d.js), diamantes (diamantes-3d.js)
+                  "net_hook", "net_packets", "net_routes", "net_rebuild", "net_cable", "net_count", "net_fiber", "net_speed",
+                  "net_thin", "net_shark", "net_outro",
+                  "coh_hook", "coh_balloon", "coh_newton", "coh_vacuum", "coh_tanks", "coh_mass", "coh_stages",
+                  "coh_orbit", "coh_land", "coh_outro",
+                  "ceb_hook", "ceb_unique", "ceb_skin", "ceb_ideas", "ceb_flies", "ceb_miss", "ceb_africa", "ceb_family",
+                  "ceb_experiment", "ceb_outro",
+                  "dia_hook", "dia_carbon", "dia_graphite", "dia_deep", "dia_pressure", "dia_age", "dia_pipe", "dia_hard",
+                  "dia_star", "dia_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

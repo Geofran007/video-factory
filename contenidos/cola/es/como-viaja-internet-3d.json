@@ -1,0 +1,214 @@
+{
+  "topic": "Cómo viajan los datos de internet: paquetes y cables submarinos",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo viaja internet? 🌐",
+  "hook": "¿Cómo llega un video desde el otro lado del mundo hasta tu celular en un segundo?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "net_hook",
+      "narration": "¿Cómo llega un video desde el otro lado del mundo hasta tu celular en un segundo?",
+      "on_screen_text": "¿Cómo viaja internet?",
+      "highlight_words": [
+        "internet?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_packets",
+      "narration": "Primero, todo se parte en pedacitos llamados paquetes, y cada uno lleva la dirección a donde va.",
+      "on_screen_text": "Todo se parte en paquetes",
+      "highlight_words": [
+        "paquetes"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_routes",
+      "narration": "Los paquetes viajan por una red de computadoras, y cada uno puede tomar un camino distinto.",
+      "on_screen_text": "Cada uno, su camino",
+      "highlight_words": [
+        "camino"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_rebuild",
+      "narration": "Al llegar, tu celular los vuelve a juntar en el orden correcto.",
+      "on_screen_text": "Se vuelven a armar",
+      "highlight_words": [
+        "armar"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_cable",
+      "narration": "Y para cruzar los océanos casi no se usan satélites: casi todo viaja por cables en el fondo del mar.",
+      "on_screen_text": "Cables bajo el mar",
+      "highlight_words": [
+        "mar"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_count",
+      "narration": "Hay más de un millón de kilómetros de esos cables rodeando el planeta.",
+      "on_screen_text": "Más de 1 millón de km",
+      "highlight_words": [
+        "millón"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_fiber",
+      "narration": "Por dentro tienen fibras de vidrio, y los datos viajan como pulsos de luz que rebotan en sus paredes.",
+      "on_screen_text": "Datos hechos de luz",
+      "highlight_words": [
+        "luz"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "net_thin",
+      "narration": "Y aun así, en el fondo del mar muchos de esos cables son apenas tan gruesos como una manguera.",
+      "on_screen_text": "Gruesos como una manguera",
+      "highlight_words": [
+        "manguera"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "net_shark",
+      "narration": "Tan delgados que, alguna vez, un tiburón curioso los ha mordido.",
+      "on_screen_text": "¡Tiburones mordiendo cables!",
+      "highlight_words": [
+        "Tiburones"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "net_outro",
+      "narration": "Mándaselo a alguien que no puede vivir sin wifi.",
+      "on_screen_text": "Para quien no vive sin wifi",
+      "highlight_words": [
+        "wifi"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Los datos se dividen en paquetes con su dirección, viajan por rutas distintas y se vuelven a armar al llegar. Entre continentes, casi todo el tráfico (~99 %) va por cables submarinos de fibra óptica, más de 1,4 millones de km, donde los datos viajan como pulsos de luz. En aguas profundas muchos cables son tan delgados como una manguera, y algún tiburón los ha mordido. Animación 3D propia.",
+  "hashtags": [
+    "internet",
+    "tecnologia",
+    "cables",
+    "fibraoptica",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Submarine cable FAQs",
+      "url": "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+      "publisher": "TeleGeography"
+    },
+    {
+      "title": "Packet switching",
+      "url": "https://en.wikipedia.org/wiki/Packet_switching",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Optical fiber",
+      "url": "https://en.wikipedia.org/wiki/Optical_fiber",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Submarine communications cable",
+      "url": "https://en.wikipedia.org/wiki/Submarine_communications_cable",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "En internet los datos se dividen en paquetes con dirección de destino y se reensamblan al llegar.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Packet_switching"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Alrededor del 99 % del tráfico intercontinental de datos viaja por cables submarinos.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hay más de 1,4 millones de km de cables submarinos en servicio.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En aguas profundas, muchos cables tienen un grosor similar al de una manguera de jardín.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Se han documentado mordidas de tiburón en cables submarinos, aunque son una causa rara de daños.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

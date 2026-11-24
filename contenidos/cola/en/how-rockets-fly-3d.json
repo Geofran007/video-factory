@@ -1,0 +1,211 @@
+{
+  "topic": "How rockets work: action and reaction, stages and orbit",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does a rocket fly? 🚀",
+  "hook": "How can a rocket climb into space, where there isn't even any air?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "coh_hook",
+      "narration": "How can a rocket climb into space, where there isn't even any air?",
+      "on_screen_text": "How does a rocket fly?",
+      "highlight_words": [
+        "rocket"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_balloon",
+      "narration": "Think of a balloon: let it go, and the air rushes out one way while the balloon shoots off the other.",
+      "on_screen_text": "Like a balloon",
+      "highlight_words": [
+        "balloon"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_newton",
+      "narration": "A rocket does the same: it blasts gas downward at enormous speed, and that gas pushes it up.",
+      "on_screen_text": "Action and reaction",
+      "highlight_words": [
+        "reaction"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_vacuum",
+      "narration": "It doesn't need air to push against: that's why it works just as well in the vacuum of space.",
+      "on_screen_text": "Works without air",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_tanks",
+      "narration": "But it does need oxygen to burn its fuel, so it carries its own in a tank.",
+      "on_screen_text": "It brings its own oxygen",
+      "highlight_words": [
+        "oxygen"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_mass",
+      "narration": "So much that about ninety percent of a rocket's weight at liftoff is propellant.",
+      "on_screen_text": "90% propellant",
+      "highlight_words": [
+        "90%"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_stages",
+      "narration": "That's why it goes in stages: when a tank runs dry, it drops off so it isn't carrying dead weight.",
+      "on_screen_text": "Stages that drop off",
+      "highlight_words": [
+        "Stages"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_orbit",
+      "narration": "To stay in orbit it has to go about twenty-eight thousand kilometers per hour: it's actually falling around the Earth nonstop.",
+      "on_screen_text": "Orbit: endless falling",
+      "highlight_words": [
+        "falling"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "coh_land",
+      "narration": "And today some rockets come back, brake with their engines and land upright to be used again.",
+      "on_screen_text": "Rockets that land!",
+      "highlight_words": [
+        "land!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "coh_outro",
+      "narration": "Send this to someone who dreams of going to space.",
+      "on_screen_text": "For a future astronaut",
+      "highlight_words": [
+        "astronaut"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Like a released balloon, a rocket throws gas downward and the gas pushes it up (Newton's third law), so it works in a vacuum too. It carries its own oxidizer, and most of its liftoff weight is propellant, which is why it uses stages that drop away. To stay in orbit it needs about 28,000 km/h, and today some boosters come back and land to be reused. Original 3D animation; not to scale.",
+  "hashtags": [
+    "rockets",
+    "space",
+    "physics",
+    "astronomy",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Newton's Third Law",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-third-law-of-motion/",
+      "publisher": "NASA Glenn Research Center"
+    },
+    {
+      "title": "Multistage rocket",
+      "url": "https://en.wikipedia.org/wiki/Multistage_rocket",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Orbital speed",
+      "url": "https://en.wikipedia.org/wiki/Orbital_speed",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Propellant mass fraction",
+      "url": "https://en.wikipedia.org/wiki/Propellant_mass_fraction",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Reusable launch vehicle",
+      "url": "https://en.wikipedia.org/wiki/Reusable_launch_vehicle",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "A rocket is propelled by expelling gas (Newton's third law) and doesn't need air to push against.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/newtons-third-law-of-motion/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In orbital rockets propellant is typically about 85–90% of liftoff mass.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Propellant_mass_fraction"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Orbital speed in low Earth orbit is about 7.8 km/s (~28,000 km/h).",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Orbital_speed"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Some current boosters return and land vertically to be reused.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Reusable_launch_vehicle"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
