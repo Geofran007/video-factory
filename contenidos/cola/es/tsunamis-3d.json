@@ -1,0 +1,215 @@
+{
+  "topic": "Cómo se forman y viajan los tsunamis",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo se forma un tsunami? 🌊",
+  "hook": "¿Cómo se forma un tsunami, una ola capaz de cruzar océanos enteros?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "tsu_hook",
+      "narration": "¿Cómo se forma un tsunami, una ola capaz de cruzar océanos enteros?",
+      "on_screen_text": "¿Cómo nace un tsunami?",
+      "highlight_words": [
+        "tsunami?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "La mayoría empieza con un gran terremoto bajo el mar, cuando una placa se levanta de golpe.",
+      "on_screen_text": "Un terremoto bajo el mar",
+      "highlight_words": [
+        "terremoto"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_lift",
+      "narration": "Eso empuja hacia arriba toda la columna de agua, desde el fondo hasta la superficie.",
+      "on_screen_text": "Sube toda el agua",
+      "highlight_words": [
+        "toda"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "El agua vuelve a bajar y la energía sale en forma de olas que se abren en todas direcciones.",
+      "on_screen_text": "Olas en todas direcciones",
+      "highlight_words": [
+        "todas"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "En aguas profundas viajan a unos ochocientos kilómetros por hora, tan rápido como un avión.",
+      "on_screen_text": "Rápido como un avión",
+      "highlight_words": [
+        "avión"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "Pero en alta mar casi no se notan: miden un metro o menos, y un barco apenas las siente.",
+      "on_screen_text": "Casi invisibles en alta mar",
+      "highlight_words": [
+        "invisibles"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Al llegar a la costa, el fondo se vuelve poco profundo: la ola se frena y crece hasta volverse enorme.",
+      "on_screen_text": "Se frena y crece",
+      "highlight_words": [
+        "crece"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Una señal de alerta: si el mar se retira de repente, no te acerques a mirar; sube a un lugar alto.",
+      "on_screen_text": "Si el mar se retira, ¡sube!",
+      "highlight_words": [
+        "¡sube!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "En mil novecientos sesenta, un tsunami nacido en Chile cruzó todo el Pacífico y llegó a Japón unas veintidós horas después.",
+      "on_screen_text": "De Chile a Japón",
+      "highlight_words": [
+        "Japón"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "tsu_outro",
+      "narration": "Mándaselo a alguien que vive cerca del mar.",
+      "on_screen_text": "Mándaselo a quien vive en la costa",
+      "highlight_words": [
+        "costa"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La mayoría de los tsunamis nacen de grandes terremotos submarinos que levantan el fondo del mar y toda la columna de agua. En aguas profundas viajan a unos 800 km/h y miden un metro o menos, pero cerca de la costa se frenan y crecen. Si el mar se retira de repente, hay que subir a un lugar alto. En 1960 un tsunami de Chile llegó a Japón unas 22 horas después. Animación 3D propia; información general, sigue siempre a las autoridades locales.",
+  "hashtags": [
+    "tsunami",
+    "terremoto",
+    "oceano",
+    "seguridad",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "What is a tsunami?",
+      "url": "https://oceanservice.noaa.gov/facts/tsunami.html",
+      "publisher": "NOAA Ocean Service"
+    },
+    {
+      "title": "Tsunami Safety",
+      "url": "https://www.weather.gov/safety/tsunami",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "1960 Valdivia earthquake",
+      "url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tsunami",
+      "url": "https://en.wikipedia.org/wiki/Tsunami",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La mayoría de los tsunamis los causan grandes terremotos submarinos que desplazan el fondo marino.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/tsunami.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En aguas profundas un tsunami puede viajar a más de 800 km/h.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/tsunami.html",
+        "https://en.wikipedia.org/wiki/Tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En mar abierto la altura de un tsunami suele ser de un metro o menos.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Si el mar se retira de forma inusual o hay un terremoto fuerte en la costa, hay que ir de inmediato a un lugar alto.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www.weather.gov/safety/tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El tsunami del terremoto de Valdivia (Chile, 1960) llegó a Japón unas 22 horas después.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

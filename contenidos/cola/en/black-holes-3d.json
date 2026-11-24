@@ -1,0 +1,206 @@
+{
+  "topic": "What a black hole is and how it forms",
+  "language": "en",
+  "category": "ciencia",
+  "title": "What is a black hole? 🕳️",
+  "hook": "What is a black hole, and why can't anything escape it?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "bh_hook",
+      "narration": "What is a black hole, and why can't anything escape it?",
+      "on_screen_text": "What is a black hole?",
+      "highlight_words": [
+        "black"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_star",
+      "narration": "Many are born from a giant star, many times more massive than our Sun.",
+      "on_screen_text": "A giant star",
+      "highlight_words": [
+        "giant"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_collapse",
+      "narration": "When it runs out of fuel, its core collapses in on itself and the star explodes as a supernova.",
+      "on_screen_text": "Collapse and supernova",
+      "highlight_words": [
+        "supernova"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_horizon",
+      "narration": "What's left is so compact that it has a boundary called the event horizon.",
+      "on_screen_text": "The event horizon",
+      "highlight_words": [
+        "horizon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_light",
+      "narration": "Past that boundary, its gravity is so strong that not even light can escape. That's why it's black.",
+      "on_screen_text": "Not even light escapes",
+      "highlight_words": [
+        "light"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_grid",
+      "narration": "It's as if it bends space around it, like a heavy ball sinking into a trampoline.",
+      "on_screen_text": "It bends space",
+      "highlight_words": [
+        "space"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_spaghetti",
+      "narration": "If you fell into a small one, gravity would pull harder on your feet than your head and stretch you like spaghetti.",
+      "on_screen_text": "Stretched like spaghetti",
+      "highlight_words": [
+        "spaghetti"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_photo",
+      "narration": "In twenty nineteen, scientists captured the first image of one: a ring of light around a shadow.",
+      "on_screen_text": "The first image: 2019",
+      "highlight_words": [
+        "2019"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "bh_sun",
+      "narration": "And if you could squeeze the Sun into a black hole, it would be about six kilometers wide, and Earth would keep orbiting it!",
+      "on_screen_text": "A 6 km Sun",
+      "highlight_words": [
+        "6"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "bh_outro",
+      "narration": "Send this to someone who loves space.",
+      "on_screen_text": "Send this to a space fan",
+      "highlight_words": [
+        "space"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Many black holes are born when a very massive star runs out of fuel, its core collapses and it explodes as a supernova. Past the event horizon not even light escapes. They bend space, would stretch anyone falling into a small one, and in 2019 the first image of one was captured. If the Sun were squeezed into a black hole it would be about 6 km wide and Earth would keep orbiting. Original 3D animation; not to scale.",
+  "hashtags": [
+    "blackhole",
+    "space",
+    "astronomy",
+    "universe",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Black Holes",
+      "url": "https://science.nasa.gov/universe/black-holes/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Event Horizon Telescope",
+      "url": "https://eventhorizontelescope.org/",
+      "publisher": "EHT Collaboration"
+    },
+    {
+      "title": "Schwarzschild radius",
+      "url": "https://en.wikipedia.org/wiki/Schwarzschild_radius",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Spaghettification",
+      "url": "https://en.wikipedia.org/wiki/Spaghettification",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Stellar-mass black holes form when the core of a very massive star collapses after it runs out of fuel.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://science.nasa.gov/universe/black-holes/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Inside the event horizon gravity is so strong that not even light can escape.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://science.nasa.gov/universe/black-holes/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In 2019 the Event Horizon Telescope released the first image of a black hole (M87*).",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://eventhorizontelescope.org/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Sun's Schwarzschild radius is about 3 km (≈6 km across); Earth's orbit wouldn't change because the mass would be the same.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Schwarzschild_radius"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

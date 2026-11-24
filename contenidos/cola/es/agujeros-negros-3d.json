@@ -1,0 +1,206 @@
+{
+  "topic": "Qué es un agujero negro y cómo se forma",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Qué es un agujero negro? 🕳️",
+  "hook": "¿Qué es un agujero negro, y por qué nada puede escapar de él?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "bh_hook",
+      "narration": "¿Qué es un agujero negro, y por qué nada puede escapar de él?",
+      "on_screen_text": "¿Qué es un agujero negro?",
+      "highlight_words": [
+        "negro?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_star",
+      "narration": "Muchos nacen de una estrella gigante, muchas veces más masiva que nuestro Sol.",
+      "on_screen_text": "Una estrella gigante",
+      "highlight_words": [
+        "gigante"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_collapse",
+      "narration": "Cuando se queda sin combustible, su centro se desploma sobre sí mismo y la estrella explota en una supernova.",
+      "on_screen_text": "Colapso y supernova",
+      "highlight_words": [
+        "supernova"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_horizon",
+      "narration": "Lo que queda es tan compacto que tiene un límite llamado horizonte de eventos.",
+      "on_screen_text": "El horizonte de eventos",
+      "highlight_words": [
+        "horizonte"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_light",
+      "narration": "Pasado ese límite, su gravedad es tan fuerte que ni siquiera la luz puede escapar. Por eso es negro.",
+      "on_screen_text": "Ni la luz escapa",
+      "highlight_words": [
+        "luz"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_grid",
+      "narration": "Es como si curvara el espacio a su alrededor, igual que una bola pesada hunde una cama elástica.",
+      "on_screen_text": "Curva el espacio",
+      "highlight_words": [
+        "espacio"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_spaghetti",
+      "narration": "Si cayeras en uno pequeño, la gravedad tiraría más de tus pies que de tu cabeza y te estiraría como un espagueti.",
+      "on_screen_text": "Estirado como espagueti",
+      "highlight_words": [
+        "espagueti"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_photo",
+      "narration": "En dos mil diecinueve, los científicos lograron la primera imagen de uno: un anillo de luz alrededor de una sombra.",
+      "on_screen_text": "La primera foto: 2019",
+      "highlight_words": [
+        "2019"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "bh_sun",
+      "narration": "Y si pudieras comprimir el Sol hasta volverlo agujero negro, mediría unos seis kilómetros, ¡y la Tierra seguiría girando a su alrededor!",
+      "on_screen_text": "Un Sol de 6 km",
+      "highlight_words": [
+        "6"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "bh_outro",
+      "narration": "Mándaselo a alguien que ama el espacio.",
+      "on_screen_text": "Mándaselo a un fan del espacio",
+      "highlight_words": [
+        "espacio"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Muchos agujeros negros nacen cuando una estrella muy masiva se queda sin combustible, su centro colapsa y estalla en supernova. Más allá del horizonte de eventos ni la luz escapa. Curvan el espacio, estirarían a quien cayera en uno pequeño, y en 2019 se obtuvo la primera imagen de uno. Si el Sol se comprimiera hasta ser un agujero negro, mediría unos 6 km y la Tierra seguiría en su órbita. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "agujeronegro",
+    "espacio",
+    "astronomia",
+    "universo",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Black Holes",
+      "url": "https://science.nasa.gov/universe/black-holes/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Event Horizon Telescope",
+      "url": "https://eventhorizontelescope.org/",
+      "publisher": "EHT Collaboration"
+    },
+    {
+      "title": "Schwarzschild radius",
+      "url": "https://en.wikipedia.org/wiki/Schwarzschild_radius",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Spaghettification",
+      "url": "https://en.wikipedia.org/wiki/Spaghettification",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los agujeros negros de masa estelar se forman cuando el núcleo de una estrella muy masiva colapsa al agotar su combustible.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://science.nasa.gov/universe/black-holes/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Dentro del horizonte de eventos la gravedad es tan intensa que ni la luz puede escapar.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://science.nasa.gov/universe/black-holes/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En 2019 el Event Horizon Telescope publicó la primera imagen de un agujero negro (M87*).",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://eventhorizontelescope.org/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El radio de Schwarzschild del Sol es de unos 3 km (≈6 km de diámetro); la órbita de la Tierra no cambiaría porque la masa sería la misma.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Schwarzschild_radius"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

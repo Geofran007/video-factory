@@ -1,0 +1,202 @@
+{
+  "topic": "How the northern and southern lights form",
+  "language": "en",
+  "category": "ciencia",
+  "title": "What are auroras? 🌌",
+  "hook": "What are those lights dancing in the sky near the poles?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "aur_hook",
+      "narration": "What are those lights dancing in the sky near the poles?",
+      "on_screen_text": "What are auroras?",
+      "highlight_words": [
+        "auroras?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_wind",
+      "narration": "It all starts with the Sun, which blasts out a stream of electrically charged particles: the solar wind.",
+      "on_screen_text": "The solar wind",
+      "highlight_words": [
+        "wind"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_shield",
+      "narration": "Earth has an invisible shield, its magnetic field, that deflects almost all of those particles.",
+      "on_screen_text": "Earth's magnetic shield",
+      "highlight_words": [
+        "shield"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_poles",
+      "narration": "But near the poles, the field lines guide them down into the atmosphere, forming a ring of light.",
+      "on_screen_text": "A ring over the poles",
+      "highlight_words": [
+        "ring"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_collide",
+      "narration": "There they crash into oxygen and nitrogen in the air, and every collision makes those gases glow.",
+      "on_screen_text": "Collisions that glow",
+      "highlight_words": [
+        "glow"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_colors",
+      "narration": "Oxygen gives the green and, higher up, the red; nitrogen paints the purple tones.",
+      "on_screen_text": "Each gas, a color",
+      "highlight_words": [
+        "color"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_south",
+      "narration": "And it happens at both poles: northern lights in the north and southern lights in the south.",
+      "on_screen_text": "North and south",
+      "highlight_words": [
+        "south"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_storm",
+      "narration": "When the Sun has a strong storm, the ring grows and auroras show up much closer to the equator.",
+      "on_screen_text": "Solar storms",
+      "highlight_words": [
+        "storms"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "aur_jupiter",
+      "narration": "And they're not just on Earth: Jupiter has auroras so big the whole Earth would fit inside.",
+      "on_screen_text": "Auroras on Jupiter!",
+      "highlight_words": [
+        "Jupiter!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "aur_outro",
+      "narration": "Send this to someone who dreams of seeing an aurora.",
+      "on_screen_text": "Send this to a dreamer",
+      "highlight_words": [
+        "dreamer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "The solar wind sends charged particles toward Earth; the magnetic field deflects most of them, but near the poles it guides them into the atmosphere. There they hit oxygen (green and red) and nitrogen (purple) and make the sky glow. It happens at both poles, strong solar storms push auroras closer to the equator, and Jupiter has auroras bigger than Earth. Original 3D animation; not to scale.",
+  "hashtags": [
+    "aurora",
+    "northernlights",
+    "sun",
+    "space",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Aurora",
+      "url": "https://www.swpc.noaa.gov/phenomena/aurora",
+      "publisher": "NOAA Space Weather Prediction Center"
+    },
+    {
+      "title": "Aurora",
+      "url": "https://en.wikipedia.org/wiki/Aurora",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Jupiter's aurora",
+      "url": "https://en.wikipedia.org/wiki/Magnetosphere_of_Jupiter",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Auroras are caused by charged particles from the solar wind guided by Earth's magnetic field.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www.swpc.noaa.gov/phenomena/aurora"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Oxygen emits green (≈100–250 km) and red (higher up); nitrogen gives blue and purple tones.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www.swpc.noaa.gov/phenomena/aurora",
+        "https://en.wikipedia.org/wiki/Aurora"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "During strong geomagnetic storms the auroral oval expands toward lower latitudes.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www.swpc.noaa.gov/phenomena/aurora"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Jupiter's auroras can be larger than the entire Earth.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetosphere_of_Jupiter"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

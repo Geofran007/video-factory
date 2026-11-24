@@ -1,0 +1,206 @@
+{
+  "topic": "How a plane flies: lift and forces",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does a plane fly? ✈️",
+  "hook": "How can a plane that weighs hundreds of tons fly?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "avi_hook",
+      "narration": "How can a plane that weighs hundreds of tons fly?",
+      "on_screen_text": "How does a plane fly?",
+      "highlight_words": [
+        "fly?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_forces",
+      "narration": "Four forces act on it: thrust from the engines, air drag, its weight and lift.",
+      "on_screen_text": "Four forces",
+      "highlight_words": [
+        "Four"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_wing",
+      "narration": "The key is the wing: it's curved and tilted slightly upward.",
+      "on_screen_text": "The secret: the wing",
+      "highlight_words": [
+        "wing"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_down",
+      "narration": "So as it moves forward, it pushes a huge amount of air downward, and the air pushes the wing up in return.",
+      "on_screen_text": "Air down, wing up",
+      "highlight_words": [
+        "up"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_pressure",
+      "narration": "That's why there's lower pressure above the wing than below, and that difference holds the plane up.",
+      "on_screen_text": "Lower pressure on top",
+      "highlight_words": [
+        "pressure"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_myth",
+      "narration": "And watch out for the myth: the air on top doesn't have to arrive at the same time as the air below; it actually gets there first.",
+      "on_screen_text": "A common myth",
+      "highlight_words": [
+        "myth"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_takeoff",
+      "narration": "To take off, a passenger jet needs to race along at about two hundred and fifty kilometers per hour.",
+      "on_screen_text": "Takeoff: ~250 km/h",
+      "highlight_words": [
+        "250"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_high",
+      "narration": "Then it climbs to about eleven kilometers, where the air is three times thinner and it burns less fuel.",
+      "on_screen_text": "11 km up",
+      "highlight_words": [
+        "11"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "avi_upside",
+      "narration": "And the most surprising part: an aerobatic plane can fly upside down, because what matters is how it tilts the wing.",
+      "on_screen_text": "It flies upside down!",
+      "highlight_words": [
+        "upside"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "avi_outro",
+      "narration": "Send this to someone who's afraid of flying.",
+      "on_screen_text": "Send this to a nervous flyer",
+      "highlight_words": [
+        "flyer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Four forces act on a plane: thrust, drag, weight and lift. The curved, tilted wing deflects lots of air downward and the air pushes it up, with lower pressure above than below. The myth that the air over and under the wing arrives at the same time is false. A passenger jet takes off at about 250 km/h, cruises around 11 km up, and an aerobatic plane can fly upside down. Original 3D animation.",
+  "hashtags": [
+    "airplane",
+    "aviation",
+    "physics",
+    "flight",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Four Forces on an Airplane",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/",
+      "publisher": "NASA Glenn Research Center"
+    },
+    {
+      "title": "Incorrect Lift Theory",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/wrong-lift-theory/",
+      "publisher": "NASA Glenn Research Center"
+    },
+    {
+      "title": "Lift (force)",
+      "url": "https://en.wikipedia.org/wiki/Lift_(force)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cruise (aeronautics)",
+      "url": "https://en.wikipedia.org/wiki/Cruise_(aeronautics)",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The four forces of flight are lift, weight, thrust and drag.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The wing deflects air downward and, by Newton's third law, receives an upward force; at the same time pressure above the wing is lower.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lift_(force)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The 'equal transit time' theory is wrong: air over the wing arrives first.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/wrong-lift-theory/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Airliners usually cruise at about 10–12 km, where the air is much thinner.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cruise_(aeronautics)"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -50,7 +50,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "hur_hook", "hur_warm", "hur_rise", "hur_pull", "hur_spin", "hur_eye", "hur_cat5", "hur_land",
                   "hur_equator", "hur_outro",
                   "col_hook", "col_beats", "col_eight", "col_lift", "col_hover", "col_back", "col_heart", "col_torpor",
-                  "col_ecuador", "col_outro"]
+                  "col_ecuador", "col_outro",
+                  # Tanda 4: auroras (aurora-3d.js), aviones (avion-3d.js), tsunamis (tsunami-3d.js), agujeros negros (agujero-3d.js)
+                  "aur_hook", "aur_wind", "aur_shield", "aur_poles", "aur_collide", "aur_colors", "aur_south", "aur_storm",
+                  "aur_jupiter", "aur_outro",
+                  "avi_hook", "avi_forces", "avi_wing", "avi_down", "avi_pressure", "avi_myth", "avi_takeoff", "avi_high",
+                  "avi_upside", "avi_outro",
+                  "tsu_hook", "tsu_quake", "tsu_lift", "tsu_spread", "tsu_speed", "tsu_small", "tsu_grow", "tsu_retreat",
+                  "tsu_pacific", "tsu_outro",
+                  "bh_hook", "bh_star", "bh_collapse", "bh_horizon", "bh_light", "bh_grid", "bh_spaghetti", "bh_photo",
+                  "bh_sun", "bh_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

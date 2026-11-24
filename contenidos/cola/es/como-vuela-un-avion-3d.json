@@ -1,0 +1,206 @@
+{
+  "topic": "Cómo vuela un avión: sustentación y fuerzas",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo vuela un avión? ✈️",
+  "hook": "¿Cómo puede volar un avión que pesa cientos de toneladas?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "avi_hook",
+      "narration": "¿Cómo puede volar un avión que pesa cientos de toneladas?",
+      "on_screen_text": "¿Cómo vuela un avión?",
+      "highlight_words": [
+        "avión?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_forces",
+      "narration": "En el aire actúan cuatro fuerzas: el empuje de los motores, la resistencia del aire, su peso y la sustentación.",
+      "on_screen_text": "Cuatro fuerzas",
+      "highlight_words": [
+        "Cuatro"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_wing",
+      "narration": "La clave está en el ala: tiene una forma curva y va un poco inclinada hacia arriba.",
+      "on_screen_text": "El secreto: el ala",
+      "highlight_words": [
+        "ala"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_down",
+      "narration": "Así, al avanzar, desvía muchísimo aire hacia abajo, y el aire responde empujando el ala hacia arriba.",
+      "on_screen_text": "Aire abajo, ala arriba",
+      "highlight_words": [
+        "arriba"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_pressure",
+      "narration": "Por eso, encima del ala queda menos presión que debajo, y esa diferencia sostiene al avión.",
+      "on_screen_text": "Menos presión arriba",
+      "highlight_words": [
+        "presión"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_myth",
+      "narration": "Y ojo con el mito: el aire de arriba no tiene que llegar al mismo tiempo que el de abajo; de hecho, llega antes.",
+      "on_screen_text": "Un mito muy repetido",
+      "highlight_words": [
+        "mito"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_takeoff",
+      "narration": "Para despegar, un avión de pasajeros necesita correr a unos doscientos cincuenta kilómetros por hora.",
+      "on_screen_text": "Despegue: ~250 km/h",
+      "highlight_words": [
+        "250"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "avi_high",
+      "narration": "Luego sube a unos once kilómetros, donde el aire es tres veces menos denso y gasta menos combustible.",
+      "on_screen_text": "A 11 km de altura",
+      "highlight_words": [
+        "11"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "avi_upside",
+      "narration": "Y lo más sorprendente: un avión acrobático puede volar boca abajo, porque lo que importa es cómo inclina el ala.",
+      "on_screen_text": "¡Vuela boca abajo!",
+      "highlight_words": [
+        "abajo!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "avi_outro",
+      "narration": "Mándaselo a alguien que tiene miedo de volar.",
+      "on_screen_text": "Mándaselo a quien teme volar",
+      "highlight_words": [
+        "volar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Sobre un avión actúan cuatro fuerzas: empuje, resistencia, peso y sustentación. El ala, curva e inclinada, desvía mucho aire hacia abajo y el aire la empuja hacia arriba, con menos presión encima que debajo. El mito de que el aire de arriba y el de abajo llegan a la vez es falso. Un avión de pasajeros despega a unos 250 km/h, vuela a unos 11 km de altura y un avión acrobático puede volar boca abajo. Animación 3D propia.",
+  "hashtags": [
+    "avion",
+    "aviacion",
+    "fisica",
+    "volar",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Four Forces on an Airplane",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/",
+      "publisher": "NASA Glenn Research Center"
+    },
+    {
+      "title": "Incorrect Lift Theory",
+      "url": "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/wrong-lift-theory/",
+      "publisher": "NASA Glenn Research Center"
+    },
+    {
+      "title": "Lift (force)",
+      "url": "https://en.wikipedia.org/wiki/Lift_(force)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cruise (aeronautics)",
+      "url": "https://en.wikipedia.org/wiki/Cruise_(aeronautics)",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Las cuatro fuerzas del vuelo son sustentación, peso, empuje y resistencia.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/four-forces-on-an-airplane/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El ala desvía aire hacia abajo y, por la tercera ley de Newton, recibe una fuerza hacia arriba; a la vez hay menos presión sobre el ala.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lift_(force)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La teoría del 'mismo tiempo de tránsito' es incorrecta: el aire sobre el ala llega antes.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www1.grc.nasa.gov/beginners-guide-to-aeronautics/wrong-lift-theory/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los aviones comerciales suelen volar a unos 10–12 km, donde el aire es mucho menos denso.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cruise_(aeronautics)"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

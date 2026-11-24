@@ -1,0 +1,215 @@
+{
+  "topic": "How tsunamis form and travel",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How does a tsunami form? 🌊",
+  "hook": "How does a tsunami form, a wave that can cross entire oceans?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "tsu_hook",
+      "narration": "How does a tsunami form, a wave that can cross entire oceans?",
+      "on_screen_text": "How is a tsunami born?",
+      "highlight_words": [
+        "tsunami"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "Most start with a big earthquake under the sea, when a plate suddenly lurches upward.",
+      "on_screen_text": "An undersea earthquake",
+      "highlight_words": [
+        "earthquake"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_lift",
+      "narration": "That pushes up the entire column of water, from the seafloor to the surface.",
+      "on_screen_text": "All the water rises",
+      "highlight_words": [
+        "All"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "The water drops back down and the energy spreads out as waves in every direction.",
+      "on_screen_text": "Waves in every direction",
+      "highlight_words": [
+        "every"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "In deep water they travel at about eight hundred kilometers per hour, as fast as a jet.",
+      "on_screen_text": "As fast as a jet",
+      "highlight_words": [
+        "jet"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "But out at sea they're barely noticeable: a meter tall or less, and a ship hardly feels them.",
+      "on_screen_text": "Nearly invisible at sea",
+      "highlight_words": [
+        "invisible"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Near the coast, the water gets shallow: the wave slows down and grows into a giant.",
+      "on_screen_text": "It slows and grows",
+      "highlight_words": [
+        "grows"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "A warning sign: if the sea suddenly pulls back, don't go look; get to high ground.",
+      "on_screen_text": "If the sea pulls back, go up!",
+      "highlight_words": [
+        "up!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "In nineteen sixty, a tsunami born in Chile crossed the whole Pacific and reached Japan about twenty-two hours later.",
+      "on_screen_text": "From Chile to Japan",
+      "highlight_words": [
+        "Japan"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "tsu_outro",
+      "narration": "Send this to someone who lives near the ocean.",
+      "on_screen_text": "Send this to a coast dweller",
+      "highlight_words": [
+        "coast"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Most tsunamis come from large undersea earthquakes that lift the seafloor and the whole water column. In deep water they travel at about 800 km/h and are a meter tall or less, but near the coast they slow down and grow. If the sea suddenly pulls back, get to high ground. In 1960 a tsunami from Chile reached Japan about 22 hours later. Original 3D animation; general information, always follow local authorities.",
+  "hashtags": [
+    "tsunami",
+    "earthquake",
+    "ocean",
+    "safety",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "What is a tsunami?",
+      "url": "https://oceanservice.noaa.gov/facts/tsunami.html",
+      "publisher": "NOAA Ocean Service"
+    },
+    {
+      "title": "Tsunami Safety",
+      "url": "https://www.weather.gov/safety/tsunami",
+      "publisher": "NOAA / National Weather Service"
+    },
+    {
+      "title": "1960 Valdivia earthquake",
+      "url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tsunami",
+      "url": "https://en.wikipedia.org/wiki/Tsunami",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Most tsunamis are caused by large undersea earthquakes that displace the seafloor.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/tsunami.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In deep water a tsunami can travel faster than 800 km/h.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/tsunami.html",
+        "https://en.wikipedia.org/wiki/Tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In the open ocean a tsunami is often a meter tall or less.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "If the sea draws back unusually or there's a strong coastal earthquake, move to high ground immediately.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www.weather.gov/safety/tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The tsunami from the 1960 Valdivia (Chile) earthquake reached Japan about 22 hours later.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

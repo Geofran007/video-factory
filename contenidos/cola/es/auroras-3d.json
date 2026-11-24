@@ -1,0 +1,202 @@
+{
+  "topic": "Cómo se forman las auroras boreales y australes",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Qué son las auroras? 🌌",
+  "hook": "¿Qué son esas luces que bailan en el cielo cerca de los polos?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "aur_hook",
+      "narration": "¿Qué son esas luces que bailan en el cielo cerca de los polos?",
+      "on_screen_text": "¿Qué son las auroras?",
+      "highlight_words": [
+        "auroras?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_wind",
+      "narration": "Todo empieza en el Sol, que lanza al espacio un chorro de partículas con carga eléctrica: el viento solar.",
+      "on_screen_text": "El viento solar",
+      "highlight_words": [
+        "viento"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_shield",
+      "narration": "La Tierra tiene un escudo invisible, su campo magnético, que desvía casi todas esas partículas.",
+      "on_screen_text": "El escudo magnético",
+      "highlight_words": [
+        "escudo"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_poles",
+      "narration": "Pero cerca de los polos, las líneas del campo las guían hacia la atmósfera, formando un anillo de luz.",
+      "on_screen_text": "Un anillo sobre los polos",
+      "highlight_words": [
+        "anillo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_collide",
+      "narration": "Allí chocan con el oxígeno y el nitrógeno del aire, y cada choque hace que esos gases brillen.",
+      "on_screen_text": "Choques que brillan",
+      "highlight_words": [
+        "brillan"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_colors",
+      "narration": "El oxígeno da el verde y, más arriba, el rojo; el nitrógeno pinta los tonos violetas.",
+      "on_screen_text": "Cada gas, un color",
+      "highlight_words": [
+        "color"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_south",
+      "narration": "Y pasa en los dos polos: en el norte son auroras boreales y en el sur, australes.",
+      "on_screen_text": "Boreales y australes",
+      "highlight_words": [
+        "australes"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_storm",
+      "narration": "Cuando el Sol tiene una tormenta fuerte, el anillo crece y las auroras se ven mucho más cerca del ecuador.",
+      "on_screen_text": "Tormentas solares",
+      "highlight_words": [
+        "Tormentas"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "aur_jupiter",
+      "narration": "Y no son solo de la Tierra: Júpiter tiene auroras tan grandes que la Tierra entera cabría dentro.",
+      "on_screen_text": "¡Auroras en Júpiter!",
+      "highlight_words": [
+        "Júpiter!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "aur_outro",
+      "narration": "Mándaselo a alguien que sueña con ver una aurora.",
+      "on_screen_text": "Mándaselo a un soñador",
+      "highlight_words": [
+        "soñador"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "El viento solar lanza partículas con carga hacia la Tierra; el campo magnético desvía casi todas, pero cerca de los polos las guía hacia la atmósfera. Allí chocan con oxígeno (verde y rojo) y nitrógeno (violeta) y hacen brillar el cielo. Pasa en ambos polos, en tormentas solares fuertes se ven más cerca del ecuador, y Júpiter tiene auroras más grandes que la Tierra. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "auroras",
+    "auroraboreal",
+    "sol",
+    "espacio",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Aurora",
+      "url": "https://www.swpc.noaa.gov/phenomena/aurora",
+      "publisher": "NOAA Space Weather Prediction Center"
+    },
+    {
+      "title": "Aurora",
+      "url": "https://en.wikipedia.org/wiki/Aurora",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Jupiter's aurora",
+      "url": "https://en.wikipedia.org/wiki/Magnetosphere_of_Jupiter",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Las auroras las causan partículas cargadas del viento solar guiadas por el campo magnético terrestre.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www.swpc.noaa.gov/phenomena/aurora"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El oxígeno emite verde (≈100–250 km) y rojo (más alto); el nitrógeno da tonos azules y violetas.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://www.swpc.noaa.gov/phenomena/aurora",
+        "https://en.wikipedia.org/wiki/Aurora"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Durante tormentas geomagnéticas fuertes el óvalo auroral se expande hacia latitudes más bajas.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://www.swpc.noaa.gov/phenomena/aurora"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las auroras de Júpiter pueden ser más grandes que toda la Tierra.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetosphere_of_Jupiter"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
