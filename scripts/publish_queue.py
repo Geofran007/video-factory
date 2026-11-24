@@ -4,7 +4,7 @@
     python scripts/publish_queue.py --canal en            # Curious Leo
     python scripts/publish_queue.py --canal en --dry-run  # genera, pero no sube ni mueve nada
 
-Cola:       contenidos/cola/<es|en>/*.json   (por defecto se elige uno al azar; con --orden alfabetico, el primero;
+Cola:       contenidos/cola/<es|en>/*.json   (por defecto uno al azar por turno, PUBLISH_SLOT; con --orden alfabetico, el primero;
             con --guion <nombre>, ese guion)
 Publicados: contenidos/publicados/<es|en>/<fecha>-<nombre>.json + <fecha>-<nombre>.youtube.json
 
@@ -64,8 +64,9 @@ def main() -> int:
     if not pending:
         print(f"Cola vacía ({queue.relative_to(ROOT)}): no hay nada que publicar hoy.")
         return 0
-    # Azar reproducible por día y canal: si el trabajo se reintenta el mismo día, elige el mismo guion.
-    rng = random.Random(f"{dt.date.today().isoformat()}-{args.canal}")
+    # Azar reproducible por día, turno (mañana/tarde) y canal: si se reintenta el mismo turno, elige el mismo guion.
+    slot = os.environ.get("PUBLISH_SLOT", "").strip()
+    rng = random.Random(f"{dt.date.today().isoformat()}-{slot}-{args.canal}" if slot else f"{dt.date.today().isoformat()}-{args.canal}")
     content = rng.choice(pending) if args.orden == "aleatorio" else pending[0]
     if args.guion:
         wanted = queue / (args.guion if args.guion.endswith(".json") else args.guion + ".json")

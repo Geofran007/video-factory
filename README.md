@@ -263,7 +263,7 @@ gh secret set VOICE_PASSPHRASE
   (*Settings → Secrets and variables → Actions*). Sin temática usa el ejemplo y no llama a la IA. Con la voz `mi_voz`
   también requiere `VOICE_PASSPHRASE`; el clip descifrado se borra al terminar.
 - `.github/workflows/publish.yml`: **publicación en YouTube** (autorizada por el autor el 2026-11-19, cambio de la
-  regla 8 de la Fase 1). Cada día a las 13:00 UTC toma un guion al azar de `contenidos/cola/es/` (Leo curioso) y de
+  regla 8 de la Fase 1). Dos veces al día (13:00 y 23:00 UTC) toma un guion al azar de `contenidos/cola/es/` (Leo curioso) y de
   `contenidos/cola/en/` (Curious Leo), genera el video con `voz_zueria` y lo sube como **privado**; luego mueve el
   guion a `contenidos/publicados/<idioma>/` con el enlace del video. Si el control de calidad falla, no sube nada.
   También se puede lanzar a mano (*Run workflow*) con la opción «prueba» para generar sin subir.

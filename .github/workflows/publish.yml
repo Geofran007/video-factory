@@ -1,11 +1,12 @@
 name: Publicar en YouTube
 
-# Cada día toma el siguiente guion de contenidos/cola/es (Leo curioso) y contenidos/cola/en (Curious Leo),
+# Dos veces al día toma un guion de contenidos/cola/es (Leo curioso) y de contenidos/cola/en (Curious Leo),
 # genera el video y lo sube como PRIVADO. El autor lo revisa y lo publica o programa en YouTube Studio.
 # Publicación automática autorizada por el autor el 2026-11-19 (cambio de la regla 8 de la Fase 1).
 on:
   schedule:
     - cron: "0 13 * * *"   # 13:00 UTC = 8:00 en Ecuador/Colombia/Perú, 8:00-9:00 en el este de EE. UU.
+    - cron: "0 23 * * *"   # 23:00 UTC = 18:00 en Ecuador/Colombia/Perú (GitHub puede retrasar cada ejecución)
   workflow_dispatch:
     inputs:
       canales:
@@ -116,6 +117,8 @@ jobs:
           PRUEBA: ${{ inputs.prueba || false }}
           GUION_ES: ${{ inputs.guion_es || '' }}
           GUION_EN: ${{ inputs.guion_en || '' }}
+          # Turno de la publicación: el sorteo del guion cambia entre la de la mañana y la de la tarde.
+          PUBLISH_SLOT: ${{ github.event.schedule || github.run_id }}
         run: |
           case "$CANALES" in ambos) list="es en" ;; *) list="$CANALES" ;; esac
           extra=(); [ "$PRUEBA" = "true" ] && extra=(--dry-run)
