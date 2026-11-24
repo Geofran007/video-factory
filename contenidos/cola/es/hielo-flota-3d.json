@@ -1,0 +1,214 @@
+{
+  "topic": "Por qué el hielo flota sobre el agua",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué el hielo flota? 🧊",
+  "hook": "¿Por qué el hielo flota, si es agua sólida?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "hie_hook",
+      "narration": "¿Por qué el hielo flota, si es agua sólida?",
+      "on_screen_text": "¿Por qué flota el hielo?",
+      "highlight_words": [
+        "hielo?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_compare",
+      "narration": "Casi todas las sustancias son más densas en estado sólido, y se hunden en su propio líquido. El agua es la excepción.",
+      "on_screen_text": "El agua es la excepción",
+      "highlight_words": [
+        "excepción"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_molecule",
+      "narration": "Cada molécula de agua tiene un oxígeno y dos hidrógenos, como una pequeña letra V.",
+      "on_screen_text": "H₂O: una pequeña V",
+      "highlight_words": [
+        "V"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_liquid",
+      "narration": "En el agua líquida, las moléculas se mueven y se apretujan sin orden.",
+      "on_screen_text": "Líquida: apretujadas",
+      "highlight_words": [
+        "apretujadas"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lattice",
+      "narration": "Pero al congelarse, se enganchan formando una red de hexágonos que deja huecos.",
+      "on_screen_text": "Hielo: hexágonos con huecos",
+      "highlight_words": [
+        "huecos"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_expand",
+      "narration": "Por esos huecos, el hielo ocupa cerca de un nueve por ciento más que el agua, y pesa menos para su tamaño.",
+      "on_screen_text": "+9 % de volumen",
+      "highlight_words": [
+        "+9"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_iceberg",
+      "narration": "Por eso flota, aunque apenas: un iceberg esconde cerca del noventa por ciento bajo el agua.",
+      "on_screen_text": "90 % escondido",
+      "highlight_words": [
+        "90"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "Y gracias a eso, los lagos se congelan de arriba hacia abajo, y los peces sobreviven en el agua de abajo.",
+      "on_screen_text": "Peces a salvo",
+      "highlight_words": [
+        "salvo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "hie_snow",
+      "narration": "Esa misma red hexagonal es la razón por la que los copos de nieve tienen seis brazos.",
+      "on_screen_text": "Por eso, 6 brazos",
+      "highlight_words": [
+        "6"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "hie_outro",
+      "narration": "Mándaselo a alguien que siempre pide su bebida con mucho hielo.",
+      "on_screen_text": "Para quien ama el hielo",
+      "highlight_words": [
+        "hielo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Casi todas las sustancias son más densas en estado sólido, pero el agua no: al congelarse, sus moléculas forman una red hexagonal con huecos, el hielo ocupa ~9 % más y flota, con ~90 % de un iceberg bajo el agua. Gracias a eso los lagos se congelan de arriba hacia abajo y los peces sobreviven debajo, y los copos de nieve tienen seis brazos. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "hielo",
+    "agua",
+    "quimica",
+    "fisica",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Ice",
+      "url": "https://en.wikipedia.org/wiki/Ice",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Properties of water",
+      "url": "https://en.wikipedia.org/wiki/Properties_of_water",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Iceberg",
+      "url": "https://en.wikipedia.org/wiki/Iceberg",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Snowflake",
+      "url": "https://en.wikipedia.org/wiki/Snowflake",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "En el hielo común (Ih), los enlaces de hidrógeno ordenan las moléculas en una red hexagonal abierta.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ice"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El agua aumenta su volumen alrededor de un 9 % al congelarse.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Properties_of_water"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Alrededor del 90 % del volumen de un iceberg queda bajo el agua.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Iceberg"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El agua es más densa cerca de 4 °C, por eso los lagos se congelan desde la superficie.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Properties_of_water"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La simetría hexagonal de los copos de nieve viene de la estructura cristalina del hielo.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Snowflake"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

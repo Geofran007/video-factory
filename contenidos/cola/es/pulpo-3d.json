@@ -1,0 +1,210 @@
+{
+  "topic": "Datos increíbles del pulpo: corazones, sangre azul y brazos que piensan",
+  "language": "es",
+  "category": "ciencia",
+  "title": "El pulpo tiene 3 corazones 🐙",
+  "hook": "¿Sabías que el pulpo tiene tres corazones y sangre azul?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pul_hook",
+      "narration": "¿Sabías que el pulpo tiene tres corazones y sangre azul?",
+      "on_screen_text": "3 corazones y sangre azul",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_hearts",
+      "narration": "Dos corazones bombean sangre a las branquias, y un tercero la manda al resto del cuerpo.",
+      "on_screen_text": "Tres corazones",
+      "highlight_words": [
+        "Tres"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_blue",
+      "narration": "Su sangre es azul porque transporta el oxígeno con cobre, en lugar del hierro que usamos nosotros.",
+      "on_screen_text": "Sangre azul de cobre",
+      "highlight_words": [
+        "azul"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_swim",
+      "narration": "Y cuando nada, el corazón principal se detiene. Por eso prefiere caminar sobre el fondo.",
+      "on_screen_text": "Nadar lo cansa",
+      "highlight_words": [
+        "cansa"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_brain",
+      "narration": "Tiene unos quinientos millones de neuronas, y dos tercios están en sus brazos: cada brazo casi piensa por sí solo.",
+      "on_screen_text": "Brazos que piensan",
+      "highlight_words": [
+        "piensan"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_camo",
+      "narration": "Con células de color en la piel, cambia de color y de textura en fracciones de segundo.",
+      "on_screen_text": "Camuflaje instantáneo",
+      "highlight_words": [
+        "instantáneo"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_squeeze",
+      "narration": "No tiene huesos: la única parte dura es su pico, así que pasa por cualquier hueco más grande que él.",
+      "on_screen_text": "Pasa por cualquier hueco",
+      "highlight_words": [
+        "hueco"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_ink",
+      "narration": "Y si lo atacan, suelta una nube de tinta y escapa a toda velocidad.",
+      "on_screen_text": "Nube de tinta",
+      "highlight_words": [
+        "tinta"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "pul_taste",
+      "narration": "Lo más raro: con sus ventosas puede saborear lo que toca.",
+      "on_screen_text": "¡Saborea con las ventosas!",
+      "highlight_words": [
+        "ventosas!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pul_outro",
+      "narration": "Mándaselo a alguien que hace mil cosas a la vez.",
+      "on_screen_text": "Para quien hace mil cosas",
+      "highlight_words": [
+        "mil"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "El pulpo tiene tres corazones (dos para las branquias y uno para el cuerpo), sangre azul por la hemocianina, que usa cobre, y el corazón principal se detiene al nadar. Unos dos tercios de sus ~500 millones de neuronas están en los brazos, cambia de color en fracciones de segundo, pasa por cualquier hueco más grande que su pico, suelta tinta y puede saborear con las ventosas. Animación 3D propia.",
+  "hashtags": [
+    "pulpo",
+    "animales",
+    "oceano",
+    "biologia",
+    "naturaleza",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Octopus",
+      "url": "https://en.wikipedia.org/wiki/Octopus",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cephalopod intelligence",
+      "url": "https://en.wikipedia.org/wiki/Cephalopod_intelligence",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hemocyanin",
+      "url": "https://en.wikipedia.org/wiki/Hemocyanin",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El pulpo tiene tres corazones: dos branquiales y uno sistémico.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Su sangre contiene hemocianina, basada en cobre, que la hace azul.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hemocyanin"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El corazón sistémico deja de latir mientras el pulpo nada.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Unos dos tercios de sus ~500 millones de neuronas están en los brazos.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus",
+        "https://en.wikipedia.org/wiki/Cephalopod_intelligence"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las ventosas del pulpo tienen quimiorreceptores con los que perciben sabores al tocar.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

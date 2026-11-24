@@ -1,0 +1,210 @@
+{
+  "topic": "Amazing octopus facts: hearts, blue blood and thinking arms",
+  "language": "en",
+  "category": "ciencia",
+  "title": "The octopus has 3 hearts 🐙",
+  "hook": "Did you know the octopus has three hearts and blue blood?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pul_hook",
+      "narration": "Did you know the octopus has three hearts and blue blood?",
+      "on_screen_text": "3 hearts and blue blood",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_hearts",
+      "narration": "Two hearts pump blood to the gills, and a third sends it to the rest of the body.",
+      "on_screen_text": "Three hearts",
+      "highlight_words": [
+        "Three"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_blue",
+      "narration": "Its blood is blue because it carries oxygen with copper, instead of the iron we use.",
+      "on_screen_text": "Copper-blue blood",
+      "highlight_words": [
+        "blue"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_swim",
+      "narration": "And when it swims, its main heart stops. That's why it prefers to crawl along the bottom.",
+      "on_screen_text": "Swimming tires it out",
+      "highlight_words": [
+        "tires"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_brain",
+      "narration": "It has about five hundred million neurons, and two thirds of them are in its arms: each arm almost thinks for itself.",
+      "on_screen_text": "Arms that think",
+      "highlight_words": [
+        "think"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_camo",
+      "narration": "With color cells in its skin, it changes color and texture in a fraction of a second.",
+      "on_screen_text": "Instant camouflage",
+      "highlight_words": [
+        "Instant"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_squeeze",
+      "narration": "It has no bones: the only hard part is its beak, so it can squeeze through any gap bigger than that.",
+      "on_screen_text": "Through any gap",
+      "highlight_words": [
+        "gap"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_ink",
+      "narration": "And if something attacks it, it squirts a cloud of ink and jets away.",
+      "on_screen_text": "A cloud of ink",
+      "highlight_words": [
+        "ink"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "pul_taste",
+      "narration": "The weirdest part: its suckers can taste whatever they touch.",
+      "on_screen_text": "It tastes with its suckers!",
+      "highlight_words": [
+        "suckers!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pul_outro",
+      "narration": "Send this to someone who does a million things at once.",
+      "on_screen_text": "For the multitasker",
+      "highlight_words": [
+        "multitasker"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "The octopus has three hearts (two for the gills and one for the body), blue blood from copper-based hemocyanin, and its main heart stops while it swims. About two thirds of its ~500 million neurons are in its arms, it changes color in a fraction of a second, squeezes through any gap bigger than its beak, squirts ink and can taste with its suckers. Original 3D animation.",
+  "hashtags": [
+    "octopus",
+    "animals",
+    "ocean",
+    "biology",
+    "nature",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Octopus",
+      "url": "https://en.wikipedia.org/wiki/Octopus",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cephalopod intelligence",
+      "url": "https://en.wikipedia.org/wiki/Cephalopod_intelligence",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hemocyanin",
+      "url": "https://en.wikipedia.org/wiki/Hemocyanin",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The octopus has three hearts: two branchial and one systemic.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Its blood contains copper-based hemocyanin, which makes it blue.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hemocyanin"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The systemic heart stops beating while the octopus swims.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "About two thirds of its ~500 million neurons are in its arms.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus",
+        "https://en.wikipedia.org/wiki/Cephalopod_intelligence"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Octopus suckers have chemoreceptors that let them taste by touch.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

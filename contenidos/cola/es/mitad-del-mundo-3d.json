@@ -1,0 +1,214 @@
+{
+  "topic": "Curiosidades de vivir en la línea ecuatorial",
+  "language": "es",
+  "category": "ciencia",
+  "title": "Curiosidades de la Mitad del Mundo 🇪🇨🌍",
+  "hook": "¿Qué tiene de especial vivir justo en la mitad del mundo?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "mit_hook",
+      "narration": "¿Qué tiene de especial vivir justo en la mitad del mundo?",
+      "on_screen_text": "La Mitad del Mundo",
+      "highlight_words": [
+        "Mitad"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_name",
+      "narration": "La línea ecuatorial divide la Tierra en dos mitades, y de ella toma su nombre Ecuador.",
+      "on_screen_text": "De ahí viene «Ecuador»",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_spin",
+      "narration": "Ahí, el suelo gira más rápido que en ningún otro lugar: unos mil seiscientos setenta kilómetros por hora.",
+      "on_screen_text": "1.670 km/h sin moverte",
+      "highlight_words": [
+        "1.670"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "Ese giro ensancha la Tierra en el ecuador: su radio allí es unos veintiún kilómetros mayor.",
+      "on_screen_text": "La Tierra es más ancha aquí",
+      "highlight_words": [
+        "ancha"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_weight",
+      "narration": "Por eso allí pesas un poquito menos: unos trescientos cincuenta gramos menos si pesas setenta kilos.",
+      "on_screen_text": "Pesas un poco menos",
+      "highlight_words": [
+        "menos"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_day",
+      "narration": "Además, el día y la noche duran casi doce horas cada uno, todo el año.",
+      "on_screen_text": "12 horas y 12 horas",
+      "highlight_words": [
+        "12"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_shadow",
+      "narration": "Y en marzo y septiembre, al mediodía, el Sol queda justo arriba y casi no hay sombra.",
+      "on_screen_text": "Sin sombra al mediodía",
+      "highlight_words": [
+        "sombra"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_drain",
+      "narration": "Ojo con el truco del agua que gira distinto a cada lado de la línea: a esa escala, la rotación de la Tierra no lo decide.",
+      "on_screen_text": "El truco del lavabo",
+      "highlight_words": [
+        "truco"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mit_monument",
+      "narration": "Y el famoso monumento de la Mitad del Mundo no está exactamente sobre la línea: el GPS la ubica a unos doscientos cuarenta metros.",
+      "on_screen_text": "¡Está 240 m corrido!",
+      "highlight_words": [
+        "240"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "mit_outro",
+      "narration": "Mándaselo a alguien que vive en Ecuador o quiere visitarlo.",
+      "on_screen_text": "Para quien ama Ecuador",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Ecuador debe su nombre a la línea ecuatorial. Allí el suelo gira a unos 1.670 km/h, la Tierra es unos 21 km más ancha (de radio) que en los polos y pesas cerca de un 0,5 % menos. El día y la noche duran ~12 horas todo el año y en los equinoccios casi no hay sombra al mediodía. El truco del lavabo que gira distinto a cada lado es un mito, y el monumento de la Mitad del Mundo está a unos 240 m de la línea medida por GPS. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "ecuador",
+    "mitaddelmundo",
+    "quito",
+    "tierra",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Equator",
+      "url": "https://en.wikipedia.org/wiki/Equator",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Ciudad Mitad del Mundo",
+      "url": "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gravity of Earth",
+      "url": "https://en.wikipedia.org/wiki/Gravity_of_Earth",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Coriolis force – draining bathtubs",
+      "url": "https://en.wikipedia.org/wiki/Coriolis_force",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "En el ecuador, la superficie de la Tierra gira a unos 1.670 km/h.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Equator"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El radio ecuatorial de la Tierra es unos 21 km mayor que el polar.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Equator"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La gravedad efectiva es ~9,780 m/s² en el ecuador y ~9,832 m/s² en los polos (≈0,5 % menos).",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gravity_of_Earth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "A la escala de un lavabo, el efecto Coriolis es demasiado débil para decidir el sentido de giro del agua.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Coriolis_force"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El monumento de la Ciudad Mitad del Mundo está a unos 240 m del ecuador según mediciones GPS.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

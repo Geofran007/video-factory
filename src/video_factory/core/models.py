@@ -68,7 +68,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "abe_hook", "abe_wax", "abe_circles", "abe_shapes", "abe_less", "abe_proof", "abe_double", "abe_uses",
                   "abe_spoon", "abe_outro",
                   "lun_hook", "lun_young", "lun_theia", "lun_impact", "lun_ring", "lun_form", "lun_close", "lun_rocks",
-                  "lun_tilt", "lun_outro"]
+                  "lun_tilt", "lun_outro",
+                  # Tanda 6: pulpo (pulpo-3d.js), cuevas (cueva-3d.js), hielo (hielo-3d.js), Mitad del Mundo (mitad-3d.js)
+                  "pul_hook", "pul_hearts", "pul_blue", "pul_swim", "pul_brain", "pul_camo", "pul_squeeze", "pul_ink",
+                  "pul_taste", "pul_outro",
+                  "cue_hook", "cue_rain", "cue_acid", "cue_carve", "cue_drip", "cue_stalactite", "cue_stalagmite",
+                  "cue_column", "cue_slow", "cue_giant", "cue_outro",
+                  "hie_hook", "hie_compare", "hie_molecule", "hie_liquid", "hie_lattice", "hie_expand", "hie_iceberg",
+                  "hie_lake", "hie_bottle", "hie_snow", "hie_outro",
+                  "mit_hook", "mit_name", "mit_spin", "mit_bulge", "mit_weight", "mit_day", "mit_shadow", "mit_drain",
+                  "mit_monument", "mit_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

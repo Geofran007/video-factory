@@ -1,0 +1,214 @@
+{
+  "topic": "Why ice floats on water",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why does ice float? 🧊",
+  "hook": "Why does ice float, if it's just solid water?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "hie_hook",
+      "narration": "Why does ice float, if it's just solid water?",
+      "on_screen_text": "Why does ice float?",
+      "highlight_words": [
+        "ice"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_compare",
+      "narration": "Almost every substance is denser as a solid, so it sinks in its own liquid. Water is the exception.",
+      "on_screen_text": "Water is the exception",
+      "highlight_words": [
+        "exception"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_molecule",
+      "narration": "Each water molecule has one oxygen and two hydrogens, shaped like a little letter V.",
+      "on_screen_text": "H₂O: a little V",
+      "highlight_words": [
+        "V"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_liquid",
+      "narration": "In liquid water, the molecules move around and crowd together with no order.",
+      "on_screen_text": "Liquid: crowded",
+      "highlight_words": [
+        "crowded"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lattice",
+      "narration": "But when it freezes, they lock into a network of hexagons that leaves gaps.",
+      "on_screen_text": "Ice: hexagons with gaps",
+      "highlight_words": [
+        "gaps"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_expand",
+      "narration": "Because of those gaps, ice takes up about nine percent more space than water, so it's lighter for its size.",
+      "on_screen_text": "+9% volume",
+      "highlight_words": [
+        "+9%"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_iceberg",
+      "narration": "That's why it floats, but just barely: an iceberg hides about ninety percent underwater.",
+      "on_screen_text": "90% hidden",
+      "highlight_words": [
+        "90%"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "And because of that, lakes freeze from the top down, and fish survive in the water below.",
+      "on_screen_text": "Fish stay safe",
+      "highlight_words": [
+        "safe"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "hie_snow",
+      "narration": "That same hexagonal network is why snowflakes have six arms.",
+      "on_screen_text": "That's why: 6 arms",
+      "highlight_words": [
+        "6"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "hie_outro",
+      "narration": "Send this to someone who always wants extra ice.",
+      "on_screen_text": "For the extra-ice crowd",
+      "highlight_words": [
+        "extra-ice"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Almost every substance is denser as a solid, but water isn't: when it freezes, its molecules form a hexagonal network with gaps, ice takes up ~9% more space and floats, with ~90% of an iceberg underwater. That's why lakes freeze from the top down and fish survive below, and why snowflakes have six arms. Original 3D animation; exaggerated scale.",
+  "hashtags": [
+    "ice",
+    "water",
+    "chemistry",
+    "physics",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Ice",
+      "url": "https://en.wikipedia.org/wiki/Ice",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Properties of water",
+      "url": "https://en.wikipedia.org/wiki/Properties_of_water",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Iceberg",
+      "url": "https://en.wikipedia.org/wiki/Iceberg",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Snowflake",
+      "url": "https://en.wikipedia.org/wiki/Snowflake",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "In ordinary ice (Ih), hydrogen bonds arrange the molecules in an open hexagonal lattice.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ice"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Water expands by about 9% when it freezes.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Properties_of_water"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "About 90% of an iceberg's volume is underwater.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Iceberg"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Water is densest near 4 °C, so lakes freeze from the surface down.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Properties_of_water"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The hexagonal symmetry of snowflakes comes from ice's crystal structure.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Snowflake"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,201 @@
+{
+  "topic": "How caves, stalactites and stalagmites form",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How do caves form? 🦇",
+  "hook": "How do caves form, along with those stone spikes hanging from the ceiling?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cue_hook",
+      "narration": "How do caves form, along with those stone spikes hanging from the ceiling?",
+      "on_screen_text": "How is a cave born?",
+      "highlight_words": [
+        "cave"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_rain",
+      "narration": "It starts with rain: water picks up carbon dioxide and becomes a very weak acid.",
+      "on_screen_text": "Slightly acidic rain",
+      "highlight_words": [
+        "acidic"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_acid",
+      "narration": "That acid seeps into cracks in the limestone and slowly dissolves it.",
+      "on_screen_text": "It dissolves limestone",
+      "highlight_words": [
+        "limestone"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_carve",
+      "narration": "After thousands or millions of years, the cracks become tunnels and huge chambers.",
+      "on_screen_text": "From cracks to caves",
+      "highlight_words": [
+        "caves"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_drip",
+      "narration": "Inside the cave, every drop hanging from the ceiling leaves behind a tiny ring of mineral called calcite.",
+      "on_screen_text": "Every drop leaves calcite",
+      "highlight_words": [
+        "calcite"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_stalactite",
+      "narration": "Ring after ring, a stalactite grows downward.",
+      "on_screen_text": "Stalactite: hangs down",
+      "highlight_words": [
+        "Stalactite:"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_stalagmite",
+      "narration": "And where the drop hits the floor, a stalagmite grows upward.",
+      "on_screen_text": "Stalagmite: grows up",
+      "highlight_words": [
+        "Stalagmite:"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_column",
+      "narration": "They grow very slowly, often just a centimeter or two per century, but given enough time they meet and form a column.",
+      "on_screen_text": "They meet: a column",
+      "highlight_words": [
+        "column"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "And Son Doong cave in Vietnam is so huge a forty-story skyscraper could fit inside, and it has its own jungle.",
+      "on_screen_text": "A jungle inside a cave!",
+      "highlight_words": [
+        "jungle"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cue_outro",
+      "narration": "Send this to someone who loves adventure.",
+      "on_screen_text": "For an adventurer",
+      "highlight_words": [
+        "adventurer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Rainwater absorbs carbon dioxide and becomes a weak acid that dissolves limestone through its cracks; over thousands or millions of years the cracks become caves. Inside, every drop leaves calcite: stalactites grow from the ceiling and stalagmites from the floor, very slowly, until they join into columns. Son Doong cave in Vietnam is so big it has its own jungle. Original 3D animation.",
+  "hashtags": [
+    "caves",
+    "stalactites",
+    "geology",
+    "nature",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Solutional cave",
+      "url": "https://en.wikipedia.org/wiki/Solutional_cave",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Stalactite",
+      "url": "https://en.wikipedia.org/wiki/Stalactite",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Son Doong cave",
+      "url": "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90%C3%B2ng_cave",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Water with carbon dioxide forms carbonic acid, which dissolves limestone.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Solutional_cave"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Stalactites grow as each drop deposits calcite while releasing carbon dioxide.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Stalactite"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Stalactites usually grow very slowly (on average around 0.1 mm per year) and can join stalagmites to form columns.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Stalactite"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Parts of Son Doong cave could fit a 40-story building and it has its own jungle beneath its dolines.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90%C3%B2ng_cave"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

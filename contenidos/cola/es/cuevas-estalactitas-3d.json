@@ -1,0 +1,201 @@
+{
+  "topic": "Cómo se forman las cuevas, estalactitas y estalagmitas",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo se forman las cuevas? 🦇",
+  "hook": "¿Cómo se forman las cuevas, y esos picos de piedra que cuelgan del techo?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cue_hook",
+      "narration": "¿Cómo se forman las cuevas, y esos picos de piedra que cuelgan del techo?",
+      "on_screen_text": "¿Cómo nace una cueva?",
+      "highlight_words": [
+        "cueva?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_rain",
+      "narration": "Todo empieza con la lluvia: el agua atrapa dióxido de carbono y se vuelve un ácido muy suave.",
+      "on_screen_text": "Lluvia un poco ácida",
+      "highlight_words": [
+        "ácida"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_acid",
+      "narration": "Ese ácido se filtra por las grietas de la roca caliza y la va disolviendo, poquito a poco.",
+      "on_screen_text": "Disuelve la caliza",
+      "highlight_words": [
+        "caliza"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_carve",
+      "narration": "Después de miles o millones de años, las grietas se convierten en túneles y salas enormes.",
+      "on_screen_text": "De grietas a cuevas",
+      "highlight_words": [
+        "cuevas"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_drip",
+      "narration": "Dentro de la cueva, cada gota que cuelga del techo deja un anillito de mineral, la calcita.",
+      "on_screen_text": "Cada gota deja calcita",
+      "highlight_words": [
+        "calcita"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_stalactite",
+      "narration": "Anillo tras anillo, crece hacia abajo una estalactita.",
+      "on_screen_text": "Estalactita: cuelga",
+      "highlight_words": [
+        "Estalactita:"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_stalagmite",
+      "narration": "Y donde la gota cae al suelo, crece hacia arriba una estalagmita.",
+      "on_screen_text": "Estalagmita: sube",
+      "highlight_words": [
+        "Estalagmita:"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_column",
+      "narration": "Crecen muy despacio, a menudo un centímetro o dos por siglo, pero con tiempo suficiente se unen en una columna.",
+      "on_screen_text": "Se unen: columna",
+      "highlight_words": [
+        "columna"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "Y la cueva Son Doong, en Vietnam, es tan enorme que cabría un rascacielos de cuarenta pisos, y tiene su propia selva adentro.",
+      "on_screen_text": "¡Una selva en una cueva!",
+      "highlight_words": [
+        "selva"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cue_outro",
+      "narration": "Mándaselo a alguien que ama la aventura.",
+      "on_screen_text": "Para un aventurero",
+      "highlight_words": [
+        "aventurero"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "El agua de lluvia absorbe dióxido de carbono y se vuelve un ácido débil que disuelve la caliza por sus grietas; en miles o millones de años las grietas se vuelven cuevas. Dentro, cada gota deja calcita: crecen estalactitas desde el techo y estalagmitas desde el suelo, muy despacio, hasta unirse en columnas. La cueva Son Doong, en Vietnam, es tan grande que tiene su propia selva. Animación 3D propia.",
+  "hashtags": [
+    "cuevas",
+    "estalactitas",
+    "geologia",
+    "naturaleza",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Solutional cave",
+      "url": "https://en.wikipedia.org/wiki/Solutional_cave",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Stalactite",
+      "url": "https://en.wikipedia.org/wiki/Stalactite",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Son Doong cave",
+      "url": "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90%C3%B2ng_cave",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El agua con dióxido de carbono forma ácido carbónico, que disuelve la roca caliza.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Solutional_cave"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las estalactitas crecen cuando cada gota deposita calcita al liberar dióxido de carbono.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Stalactite"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las estalactitas suelen crecer muy despacio (en promedio del orden de 0,1 mm por año) y pueden unirse con estalagmitas formando columnas.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Stalactite"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En partes de la cueva Son Doong cabría un edificio de 40 pisos y tiene una selva propia bajo sus dolinas.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90%C3%B2ng_cave"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

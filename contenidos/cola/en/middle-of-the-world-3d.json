@@ -1,0 +1,214 @@
+{
+  "topic": "Curious facts about living on the equator",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Living at the Middle of the World 🇪🇨🌍",
+  "hook": "What's special about living right in the middle of the world?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "mit_hook",
+      "narration": "What's special about living right in the middle of the world?",
+      "on_screen_text": "The Middle of the World",
+      "highlight_words": [
+        "Middle"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_name",
+      "narration": "The equator splits the Earth into two halves, and that line gave Ecuador its name.",
+      "on_screen_text": "That's where 'Ecuador' comes from",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_spin",
+      "narration": "There, the ground spins faster than anywhere else: about sixteen hundred and seventy kilometers per hour.",
+      "on_screen_text": "1,670 km/h standing still",
+      "highlight_words": [
+        "1,670"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "That spin makes the Earth bulge at the equator: its radius there is about twenty-one kilometers bigger.",
+      "on_screen_text": "Earth is wider here",
+      "highlight_words": [
+        "wider"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_weight",
+      "narration": "That's why you weigh a little less there: about three hundred fifty grams less if you weigh seventy kilos.",
+      "on_screen_text": "You weigh a bit less",
+      "highlight_words": [
+        "less"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_day",
+      "narration": "Also, day and night each last about twelve hours, all year round.",
+      "on_screen_text": "12 hours and 12 hours",
+      "highlight_words": [
+        "12"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_shadow",
+      "narration": "And in March and September, at noon, the Sun is directly overhead and there's almost no shadow.",
+      "on_screen_text": "No shadow at noon",
+      "highlight_words": [
+        "shadow"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_drain",
+      "narration": "Beware the trick of water swirling differently on each side of the line: at that scale, Earth's rotation doesn't decide it.",
+      "on_screen_text": "The sink trick",
+      "highlight_words": [
+        "trick"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mit_monument",
+      "narration": "And the famous Middle of the World monument isn't exactly on the line: GPS puts the equator about two hundred forty meters away.",
+      "on_screen_text": "It's 240 m off!",
+      "highlight_words": [
+        "240"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "mit_outro",
+      "narration": "Send this to someone who lives in Ecuador or wants to visit.",
+      "on_screen_text": "For Ecuador lovers",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Ecuador is named after the equator. There the ground spins at about 1,670 km/h, Earth's radius is about 21 km bigger than at the poles, and you weigh about 0.5% less. Day and night last ~12 hours all year, and at the equinoxes there's almost no shadow at noon. The sink trick that swirls differently on each side is a myth, and the Middle of the World monument sits about 240 m from the GPS-measured line. Original 3D animation; exaggerated scale.",
+  "hashtags": [
+    "ecuador",
+    "equator",
+    "quito",
+    "earth",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Equator",
+      "url": "https://en.wikipedia.org/wiki/Equator",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Ciudad Mitad del Mundo",
+      "url": "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gravity of Earth",
+      "url": "https://en.wikipedia.org/wiki/Gravity_of_Earth",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Coriolis force – draining bathtubs",
+      "url": "https://en.wikipedia.org/wiki/Coriolis_force",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "At the equator, Earth's surface rotates at about 1,670 km/h.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Equator"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Earth's equatorial radius is about 21 km larger than its polar radius.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Equator"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Effective gravity is ~9.780 m/s² at the equator and ~9.832 m/s² at the poles (≈0.5% less).",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gravity_of_Earth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "At the scale of a sink, the Coriolis effect is far too weak to decide which way the water spins.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Coriolis_force"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Ciudad Mitad del Mundo monument lies about 240 m from the equator according to GPS measurements.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Ciudad_Mitad_del_Mundo"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
