@@ -1,0 +1,206 @@
+{
+  "topic": "How a compass works and Earth's magnetic field",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why does a compass point north? 🧭",
+  "hook": "Why does a compass needle always point north?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ima_hook",
+      "narration": "Why does a compass needle always point north?",
+      "on_screen_text": "Why does it point north?",
+      "highlight_words": [
+        "north?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_magnet",
+      "narration": "Because the needle is a magnet, and every magnet makes an invisible magnetic field around it.",
+      "on_screen_text": "An invisible field",
+      "highlight_words": [
+        "invisible"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_domains",
+      "narration": "Inside a magnet, millions of tiny magnetic regions all point the same way.",
+      "on_screen_text": "All lined up",
+      "highlight_words": [
+        "lined"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "And their poles work like this: like poles repel and opposites attract.",
+      "on_screen_text": "Opposites attract",
+      "highlight_words": [
+        "attract"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "The whole Earth is a giant magnet, thanks to liquid iron swirling in its core.",
+      "on_screen_text": "Earth is a magnet",
+      "highlight_words": [
+        "magnet"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_north",
+      "narration": "The needle points to magnetic north, which funnily enough is a magnetic south pole: that's why it pulls the needle's north end.",
+      "on_screen_text": "North is a south pole",
+      "highlight_words": [
+        "south"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_moving",
+      "narration": "And that pole isn't fixed: it moves tens of kilometers every year.",
+      "on_screen_text": "The pole moves",
+      "highlight_words": [
+        "moves"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_animals",
+      "narration": "Sea turtles and migrating birds use this field like a natural GPS.",
+      "on_screen_text": "A natural GPS",
+      "highlight_words": [
+        "GPS"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ima_flip",
+      "narration": "And every so often the field flips completely: the last time was about seven hundred eighty thousand years ago.",
+      "on_screen_text": "The field flips!",
+      "highlight_words": [
+        "flips!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ima_outro",
+      "narration": "Send this to someone with a great sense of direction.",
+      "on_screen_text": "For the human compass",
+      "highlight_words": [
+        "compass"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "A compass needle is a magnet; inside a magnet the magnetic domains are aligned, and opposite poles attract. Earth is a giant magnet because of moving liquid iron in its core, and the magnetic north the needle points to is actually a magnetic south pole. That pole drifts tens of km a year, many animals navigate by the field, and the field flips every so often: the last time about 780,000 years ago. Original 3D animation.",
+  "hashtags": [
+    "compass",
+    "magnet",
+    "magnetism",
+    "earth",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "North magnetic pole",
+      "url": "https://en.wikipedia.org/wiki/North_magnetic_pole",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Brunhes–Matuyama reversal",
+      "url": "https://en.wikipedia.org/wiki/Brunhes%E2%80%93Matuyama_reversal",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetoreception",
+      "url": "https://en.wikipedia.org/wiki/Magnetoreception",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Earth's magnetic field is generated by moving liquid iron in the outer core (geodynamo).",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The north geomagnetic pole is physically a magnetic south pole that attracts the needle's north pole.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/North_magnetic_pole"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The north magnetic pole moves tens of kilometers per year.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/North_magnetic_pole"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The last magnetic field reversal (Brunhes–Matuyama) happened about 780,000 years ago.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Brunhes%E2%80%93Matuyama_reversal"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

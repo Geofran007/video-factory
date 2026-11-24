@@ -86,7 +86,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "sol_hook", "sol_core", "sol_fusion", "sol_mass", "sol_surface", "sol_light", "sol_age", "sol_giant",
                   "sol_walk", "sol_outro",
                   "pez_hook", "pez_oxygen", "pez_mouth", "pez_gills", "pez_lamellae", "pez_counter", "pez_co2", "pez_air",
-                  "pez_shark", "pez_outro"]
+                  "pez_shark", "pez_outro",
+                  # Tanda 8: árboles (arboles-3d.js), brújula (imanes-3d.js), dientes (dientes-3d.js), dinosaurios (dinos-3d.js)
+                  "arb_hook", "arb_question", "arb_pot", "arb_leaf", "arb_photo", "arb_carbon", "arb_water", "arb_rings",
+                  "arb_hyperion", "arb_outro",
+                  "ima_hook", "ima_magnet", "ima_domains", "ima_poles", "ima_core", "ima_north", "ima_moving",
+                  "ima_animals", "ima_flip", "ima_outro",
+                  "die_hook", "die_jaw", "die_count", "die_roots", "die_push", "die_enamel", "die_cavity", "die_norepair",
+                  "die_shark", "die_outro",
+                  "din_hook", "din_asteroid", "din_impact", "din_crater", "din_dust", "din_cold", "din_extinct",
+                  "din_mammals", "din_birds", "din_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

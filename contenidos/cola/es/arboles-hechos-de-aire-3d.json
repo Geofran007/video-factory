@@ -1,0 +1,206 @@
+{
+  "topic": "De dónde viene la masa de un árbol: fotosíntesis",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿De dónde sacan su peso los árboles? 🌳",
+  "hook": "¿De dónde saca un árbol las toneladas que pesa?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "arb_hook",
+      "narration": "¿De dónde saca un árbol las toneladas que pesa?",
+      "on_screen_text": "¿De dónde sale su peso?",
+      "highlight_words": [
+        "peso?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_question",
+      "narration": "Casi todos responden: de la tierra. Pero no.",
+      "on_screen_text": "¿De la tierra? No",
+      "highlight_words": [
+        "No"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_pot",
+      "narration": "En el siglo diecisiete, un científico plantó un sauce en una maceta: en cinco años ganó setenta y cuatro kilos, y la tierra perdió apenas cincuenta y siete gramos.",
+      "on_screen_text": "+74 kg contra −57 g",
+      "highlight_words": [
+        "+74"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_leaf",
+      "narration": "El secreto está en las hojas: por unos poros diminutos absorben dióxido de carbono del aire.",
+      "on_screen_text": "Comen aire",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_photo",
+      "narration": "Con la luz del Sol y el agua, lo convierten en azúcar y sueltan oxígeno. Es la fotosíntesis.",
+      "on_screen_text": "Fotosíntesis",
+      "highlight_words": [
+        "Fotosíntesis"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_carbon",
+      "narration": "Con el carbono de ese azúcar fabrican la madera: casi toda su masa seca sale del aire.",
+      "on_screen_text": "Madera hecha de aire",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_water",
+      "narration": "Las raíces aportan el agua y algunos minerales, que suben por el tronco.",
+      "on_screen_text": "Agua desde las raíces",
+      "highlight_words": [
+        "raíces"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_rings",
+      "narration": "Y cada año el tronco suma un anillo nuevo, por eso puedes contar su edad.",
+      "on_screen_text": "1 anillo = 1 año",
+      "highlight_words": [
+        "anillo"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "arb_hyperion",
+      "narration": "El árbol más alto conocido, Hyperion, mide unos ciento dieciséis metros: más que un edificio de treinta y cinco pisos, hecho casi todo de aire.",
+      "on_screen_text": "116 metros de aire",
+      "highlight_words": [
+        "116"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "arb_outro",
+      "narration": "Mándaselo a alguien que ama la naturaleza.",
+      "on_screen_text": "Para un amante de la naturaleza",
+      "highlight_words": [
+        "naturaleza"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Casi toda la masa seca de un árbol viene del dióxido de carbono del aire, no de la tierra. En el siglo XVII Jan Baptist van Helmont cultivó un sauce durante 5 años: ganó unos 74 kg y la tierra perdió solo unos 57 g. Las hojas absorben CO₂ por los estomas y, con luz y agua, fabrican azúcar y sueltan oxígeno; las raíces aportan agua y minerales. Cada año el tronco suma un anillo, y el árbol más alto conocido, Hyperion, mide unos 116 m. Animación 3D propia.",
+  "hashtags": [
+    "arboles",
+    "fotosintesis",
+    "naturaleza",
+    "plantas",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Photosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Jan Baptist van Helmont",
+      "url": "https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hyperion (tree)",
+      "url": "https://en.wikipedia.org/wiki/Hyperion_(tree)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Dendrochronology",
+      "url": "https://en.wikipedia.org/wiki/Dendrochronology",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "En el experimento del sauce de van Helmont, el árbol ganó unos 74 kg en 5 años y la tierra perdió unos 57 g.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La mayor parte de la masa seca de las plantas procede del carbono del CO₂ fijado por fotosíntesis.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Photosynthesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los árboles de climas con estaciones forman un anillo de crecimiento por año.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Dendrochronology"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hyperion, una secuoya roja de California, mide unos 116 m y es el árbol vivo más alto conocido.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hyperion_(tree)"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

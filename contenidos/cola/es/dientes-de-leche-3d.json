@@ -1,0 +1,214 @@
+{
+  "topic": "Por qué se caen los dientes de leche y cómo cuidar los definitivos",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué se caen los dientes de leche? 🦷",
+  "hook": "¿Por qué se nos caen los dientes de leche?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "die_hook",
+      "narration": "¿Por qué se nos caen los dientes de leche?",
+      "on_screen_text": "¿Por qué se caen?",
+      "highlight_words": [
+        "caen?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_jaw",
+      "narration": "Mientras usas tus dientes de leche, los definitivos ya están creciendo escondidos en el hueso, justo debajo.",
+      "on_screen_text": "Los nuevos esperan abajo",
+      "highlight_words": [
+        "abajo"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_count",
+      "narration": "Los niños tienen veinte dientes de leche, y los adultos pueden llegar a tener treinta y dos.",
+      "on_screen_text": "De 20 a 32",
+      "highlight_words": [
+        "32"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_roots",
+      "narration": "Cuando el diente nuevo empuja, el cuerpo va disolviendo la raíz del de leche.",
+      "on_screen_text": "La raíz se disuelve",
+      "highlight_words": [
+        "disuelve"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_push",
+      "narration": "Sin raíz que lo sujete, se afloja y se cae, y el nuevo ocupa su lugar.",
+      "on_screen_text": "Se afloja y cae",
+      "highlight_words": [
+        "cae"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_enamel",
+      "narration": "Los dientes están cubiertos de esmalte, la sustancia más dura de todo el cuerpo.",
+      "on_screen_text": "Esmalte: lo más duro",
+      "highlight_words": [
+        "duro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_cavity",
+      "narration": "Pero las bacterias de la boca comen azúcar y producen ácido, que va abriendo huecos: las caries.",
+      "on_screen_text": "Así nacen las caries",
+      "highlight_words": [
+        "caries"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_norepair",
+      "narration": "Y el esmalte no se regenera, por eso los dientes definitivos hay que cuidarlos toda la vida.",
+      "on_screen_text": "No se regenera",
+      "highlight_words": [
+        "regenera"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "die_shark",
+      "narration": "En cambio, un tiburón tiene filas de dientes de repuesto y puede perder miles a lo largo de su vida.",
+      "on_screen_text": "Tiburones: miles de dientes",
+      "highlight_words": [
+        "miles"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "die_outro",
+      "narration": "Mándaselo a alguien a quien se le está cayendo un diente.",
+      "on_screen_text": "Para quien está mudando dientes",
+      "highlight_words": [
+        "dientes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Los dientes definitivos crecen dentro del hueso, debajo de los de leche; al empujar, el cuerpo reabsorbe la raíz del diente de leche, que se afloja y cae. Los niños tienen 20 dientes de leche y los adultos hasta 32. El esmalte es la sustancia más dura del cuerpo, pero las bacterias convierten el azúcar en ácido que forma caries, y el esmalte no se regenera. Los tiburones, en cambio, reemplazan miles de dientes en su vida. Animación 3D propia; no es consejo médico ni odontológico.",
+  "hashtags": [
+    "dientes",
+    "dientesdeleche",
+    "cuerpohumano",
+    "salud",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Deciduous teeth",
+      "url": "https://en.wikipedia.org/wiki/Deciduous_teeth",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tooth enamel",
+      "url": "https://en.wikipedia.org/wiki/Tooth_enamel",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tooth decay",
+      "url": "https://en.wikipedia.org/wiki/Tooth_decay",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Shark tooth",
+      "url": "https://en.wikipedia.org/wiki/Shark_tooth",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La dentición temporal tiene 20 dientes y la permanente hasta 32.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Deciduous_teeth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La raíz del diente de leche se reabsorbe mientras el diente permanente erupciona.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Deciduous_teeth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El esmalte dental es la sustancia más dura y mineralizada del cuerpo humano.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tooth_enamel"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El esmalte no tiene células vivas y no se regenera.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tooth_enamel"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los tiburones reemplazan sus dientes continuamente y pueden perder miles a lo largo de la vida.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shark_tooth"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

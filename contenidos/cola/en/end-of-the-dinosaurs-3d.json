@@ -1,0 +1,201 @@
+{
+  "topic": "The Chicxulub asteroid and the dinosaur extinction",
+  "language": "en",
+  "category": "ciencia",
+  "title": "What wiped out the dinosaurs? ☄️🦖",
+  "hook": "What wiped out the dinosaurs sixty-six million years ago?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "din_hook",
+      "narration": "What wiped out the dinosaurs sixty-six million years ago?",
+      "on_screen_text": "What wiped them out?",
+      "highlight_words": [
+        "wiped"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_asteroid",
+      "narration": "An asteroid about ten kilometers wide was racing toward Earth.",
+      "on_screen_text": "A 10 km asteroid",
+      "highlight_words": [
+        "10"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_impact",
+      "narration": "It struck what is now Mexico's Yucatán Peninsula, with more energy than billions of atomic bombs.",
+      "on_screen_text": "The impact!",
+      "highlight_words": [
+        "impact!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_crater",
+      "narration": "It left a crater about a hundred and eighty kilometers wide, still buried under land and sea.",
+      "on_screen_text": "A 180 km crater",
+      "highlight_words": [
+        "180"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_dust",
+      "narration": "Dust and soot from fires covered the sky and blocked the Sun for a long time.",
+      "on_screen_text": "The sky goes dark",
+      "highlight_words": [
+        "dark"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_cold",
+      "narration": "Without light, plants died, the planet cooled, and big animals ran out of food.",
+      "on_screen_text": "Cold and hunger",
+      "highlight_words": [
+        "hunger"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_extinct",
+      "narration": "That's how about three out of every four species on the planet disappeared.",
+      "on_screen_text": "3 in 4 species",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_mammals",
+      "narration": "Small animals survived, like some little mammals whose descendants would eventually include us.",
+      "on_screen_text": "The small survive",
+      "highlight_words": [
+        "small"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "din_birds",
+      "narration": "But dinosaurs didn't vanish completely: birds are dinosaurs. Chickens are relatives of T. rex!",
+      "on_screen_text": "Birds are dinosaurs!",
+      "highlight_words": [
+        "dinosaurs!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "din_outro",
+      "narration": "Send this to someone who loves dinosaurs.",
+      "on_screen_text": "For a dino fan",
+      "highlight_words": [
+        "dino"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "About 66 million years ago, an asteroid roughly 10 km wide struck the Yucatán Peninsula and left the Chicxulub crater, about 180 km across. Dust and soot blocked the Sun, the planet cooled and about three in four species disappeared. Small animals survived, like some mammals, and dinosaurs didn't vanish completely: birds are dinosaurs. Original 3D animation; not to scale.",
+  "hashtags": [
+    "dinosaurs",
+    "asteroid",
+    "extinction",
+    "history",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Chicxulub crater",
+      "url": "https://en.wikipedia.org/wiki/Chicxulub_crater",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cretaceous–Paleogene extinction event",
+      "url": "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Origin of birds",
+      "url": "https://en.wikipedia.org/wiki/Origin_of_birds",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Chicxulub asteroid was about 10 km across and struck about 66 million years ago.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chicxulub_crater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Chicxulub crater is about 180 km across and buried under the Yucatán Peninsula and the Gulf of Mexico.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chicxulub_crater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "About 75% of species disappeared in the Cretaceous–Paleogene extinction.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Birds descend from theropod dinosaurs and are considered dinosaurs.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Origin_of_birds"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

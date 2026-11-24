@@ -1,0 +1,206 @@
+{
+  "topic": "Cómo funciona una brújula y el campo magnético de la Tierra",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué la brújula apunta al norte? 🧭",
+  "hook": "¿Por qué la aguja de una brújula siempre apunta al norte?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ima_hook",
+      "narration": "¿Por qué la aguja de una brújula siempre apunta al norte?",
+      "on_screen_text": "¿Por qué apunta al norte?",
+      "highlight_words": [
+        "norte?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_magnet",
+      "narration": "Porque la aguja es un imán, y todo imán crea a su alrededor un campo magnético invisible.",
+      "on_screen_text": "Un campo invisible",
+      "highlight_words": [
+        "invisible"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_domains",
+      "narration": "Dentro de un imán, millones de diminutas zonas magnéticas apuntan hacia el mismo lado.",
+      "on_screen_text": "Todo alineado",
+      "highlight_words": [
+        "alineado"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "Y sus polos funcionan así: los iguales se repelen y los opuestos se atraen.",
+      "on_screen_text": "Opuestos se atraen",
+      "highlight_words": [
+        "atraen"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "La Tierra entera es un imán gigante, gracias al hierro líquido que se mueve en su núcleo.",
+      "on_screen_text": "La Tierra es un imán",
+      "highlight_words": [
+        "imán"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_north",
+      "narration": "La aguja apunta al norte magnético, que curiosamente es un polo sur magnético: por eso atrae al norte de la aguja.",
+      "on_screen_text": "El norte es un polo sur",
+      "highlight_words": [
+        "sur"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_moving",
+      "narration": "Y ese polo no está quieto: se mueve decenas de kilómetros cada año.",
+      "on_screen_text": "El polo se mueve",
+      "highlight_words": [
+        "mueve"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_animals",
+      "narration": "Tortugas marinas y aves migratorias usan este campo como un GPS natural.",
+      "on_screen_text": "Un GPS natural",
+      "highlight_words": [
+        "GPS"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ima_flip",
+      "narration": "Y cada cierto tiempo el campo se invierte por completo: la última vez fue hace unos setecientos ochenta mil años.",
+      "on_screen_text": "¡El campo se invierte!",
+      "highlight_words": [
+        "invierte!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ima_outro",
+      "narration": "Mándaselo a alguien que nunca se pierde.",
+      "on_screen_text": "Para quien nunca se pierde",
+      "highlight_words": [
+        "pierde"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La aguja de una brújula es un imán; dentro de un imán los dominios magnéticos están alineados, y los polos opuestos se atraen. La Tierra es un imán gigante por el hierro líquido en movimiento de su núcleo, y el norte magnético hacia el que apunta la aguja es, en realidad, un polo sur magnético. Ese polo se desplaza decenas de km por año, muchos animales usan el campo para orientarse y el campo se invierte cada cierto tiempo: la última vez hace unos 780.000 años. Animación 3D propia.",
+  "hashtags": [
+    "brujula",
+    "iman",
+    "magnetismo",
+    "tierra",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "North magnetic pole",
+      "url": "https://en.wikipedia.org/wiki/North_magnetic_pole",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Brunhes–Matuyama reversal",
+      "url": "https://en.wikipedia.org/wiki/Brunhes%E2%80%93Matuyama_reversal",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetoreception",
+      "url": "https://en.wikipedia.org/wiki/Magnetoreception",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El campo magnético terrestre se genera por el movimiento del hierro líquido del núcleo externo (geodinamo).",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El polo norte geomagnético es, en términos físicos, un polo sur magnético que atrae al polo norte de la aguja.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/North_magnetic_pole"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El polo norte magnético se desplaza decenas de kilómetros por año.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/North_magnetic_pole"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La última inversión del campo magnético (Brunhes–Matuyama) ocurrió hace unos 780.000 años.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Brunhes%E2%80%93Matuyama_reversal"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

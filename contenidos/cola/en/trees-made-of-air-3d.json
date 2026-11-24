@@ -1,0 +1,206 @@
+{
+  "topic": "Where a tree's mass comes from: photosynthesis",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Where do trees get their weight? 🌳",
+  "hook": "Where does a tree get the tons it weighs?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "arb_hook",
+      "narration": "Where does a tree get the tons it weighs?",
+      "on_screen_text": "Where does its weight come from?",
+      "highlight_words": [
+        "weight"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_question",
+      "narration": "Most people say: from the soil. But no.",
+      "on_screen_text": "From the soil? No",
+      "highlight_words": [
+        "No"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_pot",
+      "narration": "In the 1600s, a scientist planted a willow in a pot: in five years it gained seventy-four kilos, while the soil lost just fifty-seven grams.",
+      "on_screen_text": "+74 kg vs −57 g",
+      "highlight_words": [
+        "+74"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_leaf",
+      "narration": "The secret is in the leaves: through tiny pores they take in carbon dioxide from the air.",
+      "on_screen_text": "They eat air",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_photo",
+      "narration": "With sunlight and water, they turn it into sugar and release oxygen. That's photosynthesis.",
+      "on_screen_text": "Photosynthesis",
+      "highlight_words": [
+        "Photosynthesis"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_carbon",
+      "narration": "From the carbon in that sugar they build wood: almost all of their dry mass comes from the air.",
+      "on_screen_text": "Wood made of air",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_water",
+      "narration": "The roots supply water and a few minerals, which travel up the trunk.",
+      "on_screen_text": "Water from the roots",
+      "highlight_words": [
+        "roots"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_rings",
+      "narration": "And every year the trunk adds a new ring, which is how you can count its age.",
+      "on_screen_text": "1 ring = 1 year",
+      "highlight_words": [
+        "ring"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "arb_hyperion",
+      "narration": "The tallest known tree, Hyperion, is about a hundred and sixteen meters tall: taller than a thirty-five-story building, made mostly of air.",
+      "on_screen_text": "116 meters of air",
+      "highlight_words": [
+        "116"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "arb_outro",
+      "narration": "Send this to someone who loves nature.",
+      "on_screen_text": "For a nature lover",
+      "highlight_words": [
+        "nature"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Almost all of a tree's dry mass comes from carbon dioxide in the air, not from the soil. In the 1600s Jan Baptist van Helmont grew a willow for 5 years: it gained about 74 kg while the soil lost only about 57 g. Leaves take in CO₂ through stomata and, with light and water, make sugar and release oxygen; roots supply water and minerals. Each year the trunk adds a ring, and the tallest known tree, Hyperion, is about 116 m. Original 3D animation.",
+  "hashtags": [
+    "trees",
+    "photosynthesis",
+    "nature",
+    "plants",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Photosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Jan Baptist van Helmont",
+      "url": "https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hyperion (tree)",
+      "url": "https://en.wikipedia.org/wiki/Hyperion_(tree)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Dendrochronology",
+      "url": "https://en.wikipedia.org/wiki/Dendrochronology",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "In van Helmont's willow experiment, the tree gained about 74 kg over 5 years while the soil lost about 57 g.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Most of a plant's dry mass comes from carbon in CO₂ fixed by photosynthesis.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Photosynthesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Trees in seasonal climates form one growth ring per year.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Dendrochronology"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hyperion, a California coast redwood, is about 116 m tall and is the tallest known living tree.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hyperion_(tree)"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

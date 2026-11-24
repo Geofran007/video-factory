@@ -1,0 +1,214 @@
+{
+  "topic": "Why baby teeth fall out and how adult teeth work",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why do baby teeth fall out? 🦷",
+  "hook": "Why do our baby teeth fall out?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "die_hook",
+      "narration": "Why do our baby teeth fall out?",
+      "on_screen_text": "Why do they fall out?",
+      "highlight_words": [
+        "fall"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_jaw",
+      "narration": "While you're using your baby teeth, the permanent ones are already growing, hidden in the bone right underneath.",
+      "on_screen_text": "The new ones wait below",
+      "highlight_words": [
+        "below"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_count",
+      "narration": "Kids have twenty baby teeth, and adults can have up to thirty-two.",
+      "on_screen_text": "From 20 to 32",
+      "highlight_words": [
+        "32"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_roots",
+      "narration": "As the new tooth pushes up, the body gradually dissolves the baby tooth's root.",
+      "on_screen_text": "The root dissolves",
+      "highlight_words": [
+        "dissolves"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_push",
+      "narration": "With no root to hold it, it gets loose and falls out, and the new one takes its place.",
+      "on_screen_text": "Loose and out",
+      "highlight_words": [
+        "out"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_enamel",
+      "narration": "Teeth are covered in enamel, the hardest substance in the whole body.",
+      "on_screen_text": "Enamel: the hardest",
+      "highlight_words": [
+        "hardest"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_cavity",
+      "narration": "But mouth bacteria eat sugar and make acid, which slowly opens holes: cavities.",
+      "on_screen_text": "How cavities start",
+      "highlight_words": [
+        "cavities"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_norepair",
+      "narration": "And enamel doesn't grow back, so your permanent teeth have to last a lifetime.",
+      "on_screen_text": "It doesn't grow back",
+      "highlight_words": [
+        "back"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "die_shark",
+      "narration": "A shark, on the other hand, has rows of spare teeth and can go through thousands in its lifetime.",
+      "on_screen_text": "Sharks: thousands of teeth",
+      "highlight_words": [
+        "thousands"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "die_outro",
+      "narration": "Send this to someone who's losing a tooth right now.",
+      "on_screen_text": "For someone losing a tooth",
+      "highlight_words": [
+        "tooth"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Permanent teeth grow inside the bone beneath the baby teeth; as they push up, the body resorbs the baby tooth's root, which loosens and falls out. Kids have 20 baby teeth and adults up to 32. Enamel is the hardest substance in the body, but bacteria turn sugar into acid that causes cavities, and enamel doesn't grow back. Sharks, by contrast, replace thousands of teeth in their lives. Original 3D animation; not medical or dental advice.",
+  "hashtags": [
+    "teeth",
+    "babyteeth",
+    "humanbody",
+    "health",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Deciduous teeth",
+      "url": "https://en.wikipedia.org/wiki/Deciduous_teeth",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tooth enamel",
+      "url": "https://en.wikipedia.org/wiki/Tooth_enamel",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tooth decay",
+      "url": "https://en.wikipedia.org/wiki/Tooth_decay",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Shark tooth",
+      "url": "https://en.wikipedia.org/wiki/Shark_tooth",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The primary dentition has 20 teeth and the permanent one up to 32.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Deciduous_teeth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The baby tooth's root is resorbed as the permanent tooth erupts.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Deciduous_teeth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Tooth enamel is the hardest, most mineralized substance in the human body.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tooth_enamel"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Enamel has no living cells and does not regenerate.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tooth_enamel"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Sharks replace their teeth continuously and can lose thousands over their lives.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shark_tooth"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

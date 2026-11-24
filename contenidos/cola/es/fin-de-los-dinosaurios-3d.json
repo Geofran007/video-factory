@@ -1,0 +1,201 @@
+{
+  "topic": "El asteroide de Chicxulub y la extinción de los dinosaurios",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Qué acabó con los dinosaurios? ☄️🦖",
+  "hook": "¿Qué acabó con los dinosaurios hace sesenta y seis millones de años?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "din_hook",
+      "narration": "¿Qué acabó con los dinosaurios hace sesenta y seis millones de años?",
+      "on_screen_text": "¿Qué los extinguió?",
+      "highlight_words": [
+        "extinguió?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_asteroid",
+      "narration": "Un asteroide de unos diez kilómetros de ancho se acercaba a la Tierra a enorme velocidad.",
+      "on_screen_text": "Un asteroide de 10 km",
+      "highlight_words": [
+        "10"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_impact",
+      "narration": "Chocó en lo que hoy es la península de Yucatán, en México, con más energía que miles de millones de bombas atómicas.",
+      "on_screen_text": "¡El impacto!",
+      "highlight_words": [
+        "impacto!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_crater",
+      "narration": "Dejó un cráter de unos ciento ochenta kilómetros, que todavía está enterrado bajo el suelo y el mar.",
+      "on_screen_text": "Un cráter de 180 km",
+      "highlight_words": [
+        "180"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_dust",
+      "narration": "El polvo y el hollín de los incendios cubrieron el cielo y taparon el Sol durante mucho tiempo.",
+      "on_screen_text": "El cielo se oscurece",
+      "highlight_words": [
+        "oscurece"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_cold",
+      "narration": "Sin luz, las plantas murieron, el planeta se enfrió, y los animales grandes se quedaron sin comida.",
+      "on_screen_text": "Frío y hambre",
+      "highlight_words": [
+        "hambre"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_extinct",
+      "narration": "Así desaparecieron alrededor de tres de cada cuatro especies del planeta.",
+      "on_screen_text": "3 de cada 4 especies",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_mammals",
+      "narration": "Sobrevivieron animales pequeños, como unos mamíferos cuyos descendientes, mucho después, nos incluirían a nosotros.",
+      "on_screen_text": "Sobreviven los pequeños",
+      "highlight_words": [
+        "pequeños"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "din_birds",
+      "narration": "Pero los dinosaurios no desaparecieron del todo: las aves son dinosaurios. ¡La gallina es pariente del tiranosaurio!",
+      "on_screen_text": "¡Las aves son dinosaurios!",
+      "highlight_words": [
+        "dinosaurios!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "din_outro",
+      "narration": "Mándaselo a alguien que ama los dinosaurios.",
+      "on_screen_text": "Para un fan de los dinos",
+      "highlight_words": [
+        "dinos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Hace unos 66 millones de años, un asteroide de unos 10 km chocó en la península de Yucatán y dejó el cráter de Chicxulub, de unos 180 km. El polvo y el hollín taparon el Sol, el planeta se enfrió y desaparecieron cerca de tres de cada cuatro especies. Sobrevivieron animales pequeños, como algunos mamíferos, y los dinosaurios no se extinguieron del todo: las aves son dinosaurios. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "dinosaurios",
+    "asteroide",
+    "extincion",
+    "historia",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Chicxulub crater",
+      "url": "https://en.wikipedia.org/wiki/Chicxulub_crater",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cretaceous–Paleogene extinction event",
+      "url": "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Origin of birds",
+      "url": "https://en.wikipedia.org/wiki/Origin_of_birds",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El asteroide de Chicxulub medía unos 10 km de diámetro y cayó hace unos 66 millones de años.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chicxulub_crater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El cráter de Chicxulub mide unos 180 km y está enterrado bajo la península de Yucatán y el golfo de México.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chicxulub_crater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En la extinción del Cretácico–Paleógeno desapareció alrededor del 75 % de las especies.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las aves son descendientes de dinosaurios terópodos y se consideran dinosaurios.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Origin_of_birds"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
