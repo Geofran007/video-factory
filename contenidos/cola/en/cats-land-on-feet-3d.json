@@ -1,0 +1,197 @@
+{
+  "topic": "The cat righting reflex",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why do cats land on their feet? 🐈",
+  "hook": "Why do cats almost always land on their feet?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "gato_hook",
+      "narration": "Why do cats almost always land on their feet?",
+      "on_screen_text": "Why do cats land on their feet?",
+      "highlight_words": [
+        "feet?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_upside",
+      "narration": "Picture a cat that starts falling upside down. Watch what it does, in slow motion.",
+      "on_screen_text": "Falling upside down…",
+      "highlight_words": [
+        "upside"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_ear",
+      "narration": "First, its inner ear instantly senses where the ground is.",
+      "on_screen_text": "Its ear knows which way is down",
+      "highlight_words": [
+        "ear"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_front",
+      "narration": "Then it bends at the waist and twists the front half first: the head and front legs.",
+      "on_screen_text": "Front half first",
+      "highlight_words": [
+        "Front"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_back",
+      "narration": "Then it twists the back half until it's lined up.",
+      "on_screen_text": "Then the back half",
+      "highlight_words": [
+        "back"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_tuck",
+      "narration": "The trick: it tucks the legs of the half that's turning and stretches the others, so it can spin without pushing off anything.",
+      "on_screen_text": "Spinning on nothing",
+      "highlight_words": [
+        "nothing"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_land",
+      "narration": "At the end it stretches its legs and arches its back, which work like shock absorbers.",
+      "on_screen_text": "Shock-absorbing legs",
+      "highlight_words": [
+        "Shock-absorbing"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_kitten",
+      "narration": "This reflex shows up at three to four weeks old and is perfected by seven weeks.",
+      "on_screen_text": "From 3 weeks old",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "gato_photo",
+      "narration": "In eighteen ninety-four, a French scientist photographed it frame by frame and surprised the physicists of his time.",
+      "on_screen_text": "Photographed in 1894",
+      "highlight_words": [
+        "1894"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "gato_outro",
+      "narration": "Send this to a cat lover, and don't try this at home.",
+      "on_screen_text": "Don't try this at home",
+      "highlight_words": [
+        "home"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "When a cat falls upside down, its inner ear senses where the ground is; it bends at the waist, twists the front half first and then the back, tucking and stretching its legs to rotate without pushing off anything, and lands with its legs and back as shock absorbers. The reflex appears at 3–4 weeks and is perfected by 7. Étienne-Jules Marey photographed it frame by frame in 1894. Original slow-motion 3D animation. Please don't try this with your cat.",
+  "hashtags": [
+    "cats",
+    "animals",
+    "physics",
+    "pets",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Cat righting reflex",
+      "url": "https://en.wikipedia.org/wiki/Cat_righting_reflex",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Étienne-Jules Marey",
+      "url": "https://en.wikipedia.org/wiki/%C3%89tienne-Jules_Marey",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The righting reflex uses the vestibular system (inner ear) to orient itself.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The cat rotates each half of its body with a different moment of inertia (legs tucked or extended) without needing to push off anything.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The reflex appears at 3–4 weeks of age and is perfected by about 7 weeks.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Étienne-Jules Marey published an 1894 photo sequence of a cat righting itself in midair.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex",
+        "https://en.wikipedia.org/wiki/%C3%89tienne-Jules_Marey"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

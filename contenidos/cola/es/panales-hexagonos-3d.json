@@ -1,0 +1,206 @@
+{
+  "topic": "Por qué las abejas construyen celdas hexagonales",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué los panales son hexágonos? 🐝",
+  "hook": "¿Por qué las abejas construyen sus panales con hexágonos perfectos?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "abe_hook",
+      "narration": "¿Por qué las abejas construyen sus panales con hexágonos perfectos?",
+      "on_screen_text": "¿Por qué hexágonos?",
+      "highlight_words": [
+        "hexágonos?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_wax",
+      "narration": "La cera sale de su propio cuerpo, y cuesta muchísimo: unos seis a ocho kilos de miel por cada kilo de cera.",
+      "on_screen_text": "La cera cuesta caro",
+      "highlight_words": [
+        "caro"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_circles",
+      "narration": "Si usaran círculos, quedarían huecos entre las celdas: espacio y cera desperdiciados.",
+      "on_screen_text": "Los círculos dejan huecos",
+      "highlight_words": [
+        "huecos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_shapes",
+      "narration": "Solo tres figuras iguales cubren un plano sin huecos: triángulos, cuadrados y hexágonos.",
+      "on_screen_text": "Solo 3 figuras encajan",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_less",
+      "narration": "Y de las tres, el hexágono es el que necesita menos borde para encerrar la misma área.",
+      "on_screen_text": "El hexágono gasta menos",
+      "highlight_words": [
+        "menos"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_proof",
+      "narration": "Los matemáticos lo sospecharon durante siglos, y en mil novecientos noventa y nueve Thomas Hales lo demostró.",
+      "on_screen_text": "Demostrado en 1999",
+      "highlight_words": [
+        "1999"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_double",
+      "narration": "Además, el panal tiene dos capas de celdas, espalda con espalda, que comparten las paredes del fondo.",
+      "on_screen_text": "Dos capas en uno",
+      "highlight_words": [
+        "Dos"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_uses",
+      "narration": "En esas celdas guardan la miel y también crían a las abejas bebé.",
+      "on_screen_text": "Despensa y guardería",
+      "highlight_words": [
+        "guardería"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "abe_spoon",
+      "narration": "Y cada abeja obrera produce en toda su vida apenas una doceava parte de una cucharadita de miel.",
+      "on_screen_text": "1/12 de cucharadita",
+      "highlight_words": [
+        "1/12"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "abe_outro",
+      "narration": "Mándaselo a alguien que ama la miel.",
+      "on_screen_text": "Mándaselo a un fan de la miel",
+      "highlight_words": [
+        "miel"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La cera sale del cuerpo de las abejas y cuesta mucha miel. Solo triángulos, cuadrados y hexágonos cubren un plano sin huecos, y el hexágono es el que encierra la misma área con menos borde; Thomas Hales lo demostró en 1999 (conjetura del panal). El panal tiene dos capas de celdas espalda con espalda, donde guardan miel y crían a las larvas. Cada obrera produce en su vida ~1/12 de cucharadita de miel. Animación 3D propia.",
+  "hashtags": [
+    "abejas",
+    "panal",
+    "matematicas",
+    "naturaleza",
+    "miel",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Honeycomb conjecture",
+      "url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Beeswax",
+      "url": "https://en.wikipedia.org/wiki/Beeswax",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Honeycomb",
+      "url": "https://en.wikipedia.org/wiki/Honeycomb",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Honey facts",
+      "url": "https://honey.com/",
+      "publisher": "National Honey Board"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Las abejas consumen varios kilos de miel (estimaciones de ~6 a 8 kg) para producir 1 kg de cera.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Beeswax"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Solo tres polígonos regulares teselan el plano: el triángulo, el cuadrado y el hexágono.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Honeycomb_conjecture"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Thomas Hales demostró en 1999 la conjetura del panal: la cuadrícula hexagonal divide el plano en áreas iguales con el menor perímetro total.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Honeycomb_conjecture"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Una abeja obrera produce en su vida alrededor de 1/12 de cucharadita de miel.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://honey.com/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

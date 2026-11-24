@@ -1,0 +1,206 @@
+{
+  "topic": "Cómo funciona el ojo humano",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo ven tus ojos? 👁️",
+  "hook": "¿Cómo hacen tus ojos para convertir la luz en imágenes?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ojo_hook",
+      "narration": "¿Cómo hacen tus ojos para convertir la luz en imágenes?",
+      "on_screen_text": "¿Cómo ven tus ojos?",
+      "highlight_words": [
+        "ojos?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_parts",
+      "narration": "La luz entra por la córnea, pasa por la pupila y el cristalino la enfoca sobre la retina, al fondo del ojo.",
+      "on_screen_text": "Córnea, cristalino, retina",
+      "highlight_words": [
+        "retina"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_pupil",
+      "narration": "El iris ajusta la pupila: se cierra con mucha luz y se abre en la oscuridad.",
+      "on_screen_text": "La pupila se ajusta",
+      "highlight_words": [
+        "pupila"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_rays",
+      "narration": "Los rayos se cruzan dentro del ojo, así que la imagen llega a la retina ¡al revés!",
+      "on_screen_text": "¡La imagen llega al revés!",
+      "highlight_words": [
+        "revés!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_cells",
+      "narration": "En la retina hay unos ciento veinte millones de bastones, que ven con poca luz, y unos seis millones de conos.",
+      "on_screen_text": "Bastones y conos",
+      "highlight_words": [
+        "conos"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_colors",
+      "narration": "Los conos son de tres tipos, sensibles al rojo, al verde y al azul, y con ellos el cerebro mezcla todos los colores.",
+      "on_screen_text": "Tres tipos de conos",
+      "highlight_words": [
+        "Tres"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_flip",
+      "narration": "El nervio óptico lleva la señal al cerebro, que voltea la imagen y la interpreta.",
+      "on_screen_text": "El cerebro la endereza",
+      "highlight_words": [
+        "cerebro"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_blind",
+      "narration": "Donde sale el nervio no hay células: es el punto ciego. Tu cerebro lo rellena y nunca lo notas.",
+      "on_screen_text": "Tu punto ciego",
+      "highlight_words": [
+        "ciego"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ojo_saccade",
+      "narration": "Y tus ojos no están quietos: saltan unas tres veces por segundo, y el cerebro borra esos saltos para que veas todo estable.",
+      "on_screen_text": "Saltan 3 veces por segundo",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ojo_outro",
+      "narration": "Mándaselo a alguien con unos ojos increíbles.",
+      "on_screen_text": "Mándaselo a unos lindos ojos",
+      "highlight_words": [
+        "ojos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La luz entra por la córnea y la pupila, el cristalino la enfoca y la imagen llega al revés a la retina, donde unos 120 millones de bastones y 6 millones de conos (de tres tipos) la convierten en señales. El nervio óptico la lleva al cerebro, que la endereza, rellena el punto ciego y borra los saltos que dan los ojos unas tres veces por segundo. Animación 3D propia y simplificada; no es consejo médico.",
+  "hashtags": [
+    "ojos",
+    "vision",
+    "cuerpohumano",
+    "cerebro",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "How the Eyes Work",
+      "url": "https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work",
+      "publisher": "National Eye Institute"
+    },
+    {
+      "title": "Retina",
+      "url": "https://en.wikipedia.org/wiki/Retina",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Blind spot (vision)",
+      "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Saccade",
+      "url": "https://en.wikipedia.org/wiki/Saccade",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La imagen que forma el cristalino en la retina está invertida y el cerebro la interpreta derecha.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La retina humana tiene unos 120 millones de bastones y unos 6 millones de conos.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Retina"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Donde el nervio óptico sale del ojo no hay fotorreceptores (punto ciego) y el cerebro rellena ese hueco.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Blind_spot_(vision)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los ojos hacen movimientos rápidos (sacadas) unas tres veces por segundo y el cerebro suprime la visión durante ellos.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Saccade"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

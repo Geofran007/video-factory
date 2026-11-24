@@ -1,0 +1,197 @@
+{
+  "topic": "El reflejo de enderezamiento de los gatos",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Por qué los gatos caen de pie? 🐈",
+  "hook": "¿Por qué los gatos casi siempre caen de pie?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "gato_hook",
+      "narration": "¿Por qué los gatos casi siempre caen de pie?",
+      "on_screen_text": "¿Por qué caen de pie?",
+      "highlight_words": [
+        "pie?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_upside",
+      "narration": "Imagina un gato que empieza a caer boca arriba. Mira lo que hace, en cámara lenta.",
+      "on_screen_text": "Cae boca arriba…",
+      "highlight_words": [
+        "arriba…"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_ear",
+      "narration": "Primero, su oído interno detecta al instante dónde está el suelo.",
+      "on_screen_text": "Su oído sabe dónde es abajo",
+      "highlight_words": [
+        "oído"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_front",
+      "narration": "Entonces dobla la cintura y gira primero la mitad delantera: la cabeza y las patas de adelante.",
+      "on_screen_text": "Primero, la parte de adelante",
+      "highlight_words": [
+        "adelante"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_back",
+      "narration": "Después gira la mitad trasera, hasta quedar alineado.",
+      "on_screen_text": "Luego, la de atrás",
+      "highlight_words": [
+        "atrás"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_tuck",
+      "narration": "El truco: recoge las patas de la mitad que gira y estira las de la otra, para girar sin apoyarse en nada.",
+      "on_screen_text": "Gira sin apoyarse en nada",
+      "highlight_words": [
+        "nada"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_land",
+      "narration": "Al final estira las patas y arquea la espalda, que funcionan como amortiguadores.",
+      "on_screen_text": "Patas amortiguadoras",
+      "highlight_words": [
+        "amortiguadoras"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_kitten",
+      "narration": "Este reflejo aparece a las tres o cuatro semanas de vida y se perfecciona a las siete.",
+      "on_screen_text": "Desde las 3 semanas",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "gato_photo",
+      "narration": "En mil ochocientos noventa y cuatro, un científico francés lo fotografió en secuencia y sorprendió a los físicos de su época.",
+      "on_screen_text": "Fotografiado en 1894",
+      "highlight_words": [
+        "1894"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "gato_outro",
+      "narration": "Mándaselo a alguien que ama a los gatos, y no lo pruebes en casa.",
+      "on_screen_text": "No lo pruebes en casa",
+      "highlight_words": [
+        "casa"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Cuando un gato cae boca arriba, su oído interno detecta dónde está el suelo; dobla la cintura, gira primero la mitad delantera y luego la trasera, recogiendo y estirando las patas para girar sin apoyarse en nada, y aterriza con las patas y la espalda como amortiguadores. El reflejo aparece a las 3–4 semanas y se perfecciona a las 7. Étienne-Jules Marey lo fotografió en secuencia en 1894. Animación 3D propia en cámara lenta. Por favor, no lo pruebes con tu gato.",
+  "hashtags": [
+    "gatos",
+    "animales",
+    "fisica",
+    "mascotas",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Cat righting reflex",
+      "url": "https://en.wikipedia.org/wiki/Cat_righting_reflex",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Étienne-Jules Marey",
+      "url": "https://en.wikipedia.org/wiki/%C3%89tienne-Jules_Marey",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El reflejo de enderezamiento usa el sistema vestibular (oído interno) para orientarse.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El gato gira cada mitad del cuerpo con distinto momento de inercia (patas recogidas o estiradas) sin necesidad de apoyarse.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El reflejo aparece a las 3–4 semanas de edad y se perfecciona hacia las 7 semanas.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Étienne-Jules Marey publicó en 1894 una secuencia fotográfica de un gato enderezándose en el aire.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex",
+        "https://en.wikipedia.org/wiki/%C3%89tienne-Jules_Marey"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,202 @@
+{
+  "topic": "The giant-impact hypothesis and the Moon's origin",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How was the Moon born? 🌕💥",
+  "hook": "Did you know the Moon was probably born from a giant crash into Earth?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "lun_hook",
+      "narration": "Did you know the Moon was probably born from a giant crash into Earth?",
+      "on_screen_text": "How was the Moon born?",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_young",
+      "narration": "About four and a half billion years ago, the Earth was young and covered in lava.",
+      "on_screen_text": "A young, fiery Earth",
+      "highlight_words": [
+        "fiery"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_theia",
+      "narration": "Then another planet, about the size of Mars, came close. Scientists call it Theia.",
+      "on_screen_text": "Here comes Theia",
+      "highlight_words": [
+        "Theia"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_impact",
+      "narration": "They collided at an angle, and the impact blasted a huge amount of molten rock into space.",
+      "on_screen_text": "The giant impact!",
+      "highlight_words": [
+        "impact!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_ring",
+      "narration": "That debris kept circling the Earth, forming a ring.",
+      "on_screen_text": "A ring of debris",
+      "highlight_words": [
+        "ring"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_form",
+      "narration": "Bit by bit, gravity pulled the pieces together, and that's how the Moon was born.",
+      "on_screen_text": "The Moon is born",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_close",
+      "narration": "At first it was much, much closer and looked huge in the sky, and it has been drifting away ever since.",
+      "on_screen_text": "A giant Moon",
+      "highlight_words": [
+        "giant"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_rocks",
+      "narration": "The evidence: the rocks brought back by the Apollo missions are nearly identical to Earth's.",
+      "on_screen_text": "Nearly identical rocks",
+      "highlight_words": [
+        "identical"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "lun_tilt",
+      "narration": "And the Moon helps us: it keeps Earth's tilt steady, and with it a more stable climate.",
+      "on_screen_text": "The Moon steadies us",
+      "highlight_words": [
+        "steadies"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "lun_outro",
+      "narration": "Send this to someone who'd give you the Moon.",
+      "on_screen_text": "For someone who'd give you the Moon",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "According to the leading hypothesis, about 4.5 billion years ago a Mars-sized planet, Theia, crashed into the young Earth. The debris formed a ring that gravity gathered into the Moon, which started out much closer and has been drifting away. Apollo rocks have a composition nearly identical to Earth's, and the Moon helps stabilize Earth's tilt. Original 3D animation; not to scale.",
+  "hashtags": [
+    "moon",
+    "space",
+    "astronomy",
+    "earth",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Moon formation",
+      "url": "https://science.nasa.gov/moon/formation/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Giant-impact hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Moon – effect on Earth's axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt#Earth",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The leading hypothesis proposes an impact with a Mars-sized body, called Theia, about 4.5 billion years ago.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://science.nasa.gov/moon/formation/",
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Debris from the impact formed a disk around Earth that coalesced into the Moon.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Apollo samples have oxygen isotopes nearly identical to those of Earth rocks.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Moon helps stabilize the tilt of Earth's axis.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt#Earth"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

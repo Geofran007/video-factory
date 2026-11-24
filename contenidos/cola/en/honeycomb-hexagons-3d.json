@@ -1,0 +1,206 @@
+{
+  "topic": "Why bees build hexagonal cells",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Why are honeycombs hexagons? 🐝",
+  "hook": "Why do bees build their honeycombs with perfect hexagons?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "abe_hook",
+      "narration": "Why do bees build their honeycombs with perfect hexagons?",
+      "on_screen_text": "Why hexagons?",
+      "highlight_words": [
+        "hexagons?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_wax",
+      "narration": "The wax comes from their own bodies, and it's expensive: about six to eight kilos of honey for every kilo of wax.",
+      "on_screen_text": "Wax is expensive",
+      "highlight_words": [
+        "expensive"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_circles",
+      "narration": "If they used circles, there would be gaps between the cells: wasted space and wax.",
+      "on_screen_text": "Circles leave gaps",
+      "highlight_words": [
+        "gaps"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_shapes",
+      "narration": "Only three identical shapes cover a flat surface with no gaps: triangles, squares and hexagons.",
+      "on_screen_text": "Only 3 shapes fit",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_less",
+      "narration": "And of the three, the hexagon needs the least border to enclose the same area.",
+      "on_screen_text": "The hexagon uses less",
+      "highlight_words": [
+        "less"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_proof",
+      "narration": "Mathematicians suspected it for centuries, and in nineteen ninety-nine Thomas Hales proved it.",
+      "on_screen_text": "Proved in 1999",
+      "highlight_words": [
+        "1999"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_double",
+      "narration": "Plus, the comb has two layers of cells, back to back, sharing the walls at the bottom.",
+      "on_screen_text": "Two layers in one",
+      "highlight_words": [
+        "Two"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_uses",
+      "narration": "In those cells they store honey and also raise the baby bees.",
+      "on_screen_text": "Pantry and nursery",
+      "highlight_words": [
+        "nursery"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "abe_spoon",
+      "narration": "And each worker bee makes just one twelfth of a teaspoon of honey in its whole life.",
+      "on_screen_text": "1/12 of a teaspoon",
+      "highlight_words": [
+        "1/12"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "abe_outro",
+      "narration": "Send this to someone who loves honey.",
+      "on_screen_text": "Send this to a honey lover",
+      "highlight_words": [
+        "honey"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Wax comes from the bees' own bodies and costs a lot of honey. Only triangles, squares and hexagons tile a plane with no gaps, and the hexagon encloses the same area with the least border; Thomas Hales proved it in 1999 (the honeycomb conjecture). The comb has two layers of cells back to back, used for honey and for raising larvae. Each worker makes about 1/12 of a teaspoon of honey in its life. Original 3D animation.",
+  "hashtags": [
+    "bees",
+    "honeycomb",
+    "math",
+    "nature",
+    "honey",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Honeycomb conjecture",
+      "url": "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Beeswax",
+      "url": "https://en.wikipedia.org/wiki/Beeswax",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Honeycomb",
+      "url": "https://en.wikipedia.org/wiki/Honeycomb",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Honey facts",
+      "url": "https://honey.com/",
+      "publisher": "National Honey Board"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Bees consume several kilos of honey (estimates of ~6 to 8 kg) to produce 1 kg of wax.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Beeswax"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Only three regular polygons tile the plane: the triangle, the square and the hexagon.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Honeycomb_conjecture"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In 1999 Thomas Hales proved the honeycomb conjecture: a hexagonal grid divides the plane into equal areas with the least total perimeter.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Honeycomb_conjecture"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "A worker bee produces about 1/12 of a teaspoon of honey in its lifetime.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://honey.com/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

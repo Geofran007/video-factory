@@ -1,0 +1,202 @@
+{
+  "topic": "La hipótesis del gran impacto y el origen de la Luna",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Cómo nació la Luna? 🌕💥",
+  "hook": "¿Sabías que la Luna probablemente nació de un choque gigante contra la Tierra?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "lun_hook",
+      "narration": "¿Sabías que la Luna probablemente nació de un choque gigante contra la Tierra?",
+      "on_screen_text": "¿Cómo nació la Luna?",
+      "highlight_words": [
+        "Luna?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_young",
+      "narration": "Hace unos cuatro mil quinientos millones de años, la Tierra era joven y estaba cubierta de lava.",
+      "on_screen_text": "Una Tierra joven y ardiente",
+      "highlight_words": [
+        "ardiente"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_theia",
+      "narration": "Entonces se le acercó otro planeta, del tamaño de Marte, al que los científicos llaman Theia.",
+      "on_screen_text": "Llega Theia",
+      "highlight_words": [
+        "Theia"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_impact",
+      "narration": "Chocaron de lado, y el impacto lanzó al espacio una cantidad enorme de roca fundida.",
+      "on_screen_text": "¡El gran impacto!",
+      "highlight_words": [
+        "impacto!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_ring",
+      "narration": "Esos escombros quedaron girando alrededor de la Tierra, formando un anillo.",
+      "on_screen_text": "Un anillo de escombros",
+      "highlight_words": [
+        "anillo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_form",
+      "narration": "Poco a poco, la gravedad juntó los pedazos, y así nació la Luna.",
+      "on_screen_text": "Así nació la Luna",
+      "highlight_words": [
+        "Luna"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_close",
+      "narration": "Al principio estaba muchísimo más cerca y se veía gigante en el cielo, y desde entonces se ha ido alejando.",
+      "on_screen_text": "Una Luna gigante",
+      "highlight_words": [
+        "gigante"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_rocks",
+      "narration": "La prueba: las rocas que trajeron las misiones Apolo son casi idénticas a las de la Tierra.",
+      "on_screen_text": "Rocas casi idénticas",
+      "highlight_words": [
+        "idénticas"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "lun_tilt",
+      "narration": "Y la Luna nos ayuda: mantiene estable la inclinación de la Tierra, y con ello un clima más estable.",
+      "on_screen_text": "La Luna nos estabiliza",
+      "highlight_words": [
+        "estabiliza"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "lun_outro",
+      "narration": "Mándaselo a alguien que te bajaría la Luna.",
+      "on_screen_text": "Para quien te bajaría la Luna",
+      "highlight_words": [
+        "Luna"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Según la hipótesis más aceptada, hace unos 4.500 millones de años un planeta del tamaño de Marte, Theia, chocó contra la Tierra joven. Los escombros formaron un anillo que la gravedad juntó en la Luna, que al principio estaba mucho más cerca y se ha ido alejando. Las rocas de las misiones Apolo tienen una composición casi idéntica a la terrestre, y la Luna ayuda a estabilizar la inclinación de la Tierra. Animación 3D propia; escala exagerada.",
+  "hashtags": [
+    "luna",
+    "espacio",
+    "astronomia",
+    "tierra",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Moon formation",
+      "url": "https://science.nasa.gov/moon/formation/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Giant-impact hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Moon – effect on Earth's axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt#Earth",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La hipótesis principal propone un impacto con un cuerpo del tamaño de Marte, llamado Theia, hace unos 4.500 millones de años.",
+      "scene_id": "s3",
+      "source_urls": [
+        "https://science.nasa.gov/moon/formation/",
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los escombros del impacto formaron un disco alrededor de la Tierra que se agrupó en la Luna.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las muestras del programa Apolo tienen isótopos de oxígeno casi idénticos a los de las rocas terrestres.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Luna ayuda a estabilizar la inclinación del eje de la Tierra.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt#Earth"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

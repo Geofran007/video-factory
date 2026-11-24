@@ -1,0 +1,206 @@
+{
+  "topic": "How the human eye works",
+  "language": "en",
+  "category": "ciencia",
+  "title": "How do your eyes see? 👁️",
+  "hook": "How do your eyes turn light into pictures?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ojo_hook",
+      "narration": "How do your eyes turn light into pictures?",
+      "on_screen_text": "How do your eyes see?",
+      "highlight_words": [
+        "eyes"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_parts",
+      "narration": "Light enters through the cornea, passes the pupil, and the lens focuses it onto the retina at the back of the eye.",
+      "on_screen_text": "Cornea, lens, retina",
+      "highlight_words": [
+        "retina"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_pupil",
+      "narration": "The iris adjusts the pupil: it shrinks in bright light and opens wide in the dark.",
+      "on_screen_text": "The pupil adjusts",
+      "highlight_words": [
+        "pupil"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_rays",
+      "narration": "The light rays cross inside the eye, so the image lands on the retina upside down!",
+      "on_screen_text": "The image is upside down!",
+      "highlight_words": [
+        "upside"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_cells",
+      "narration": "The retina has about a hundred and twenty million rods, which see in dim light, and about six million cones.",
+      "on_screen_text": "Rods and cones",
+      "highlight_words": [
+        "cones"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_colors",
+      "narration": "Cones come in three types, sensitive to red, green and blue, and from them the brain mixes every color.",
+      "on_screen_text": "Three kinds of cones",
+      "highlight_words": [
+        "Three"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_flip",
+      "narration": "The optic nerve carries the signal to the brain, which flips the image and makes sense of it.",
+      "on_screen_text": "The brain flips it",
+      "highlight_words": [
+        "brain"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_blind",
+      "narration": "Where the nerve leaves there are no cells: that's the blind spot. Your brain fills it in and you never notice.",
+      "on_screen_text": "Your blind spot",
+      "highlight_words": [
+        "blind"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ojo_saccade",
+      "narration": "And your eyes aren't still: they jump about three times a second, and your brain erases those jumps so everything looks steady.",
+      "on_screen_text": "3 jumps a second",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ojo_outro",
+      "narration": "Send this to someone with amazing eyes.",
+      "on_screen_text": "Send this to amazing eyes",
+      "highlight_words": [
+        "eyes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Light enters through the cornea and pupil, the lens focuses it, and the image lands upside down on the retina, where about 120 million rods and 6 million cones (of three types) turn it into signals. The optic nerve carries it to the brain, which flips it, fills in the blind spot and erases the jumps your eyes make about three times a second. Simplified original 3D animation; not medical advice.",
+  "hashtags": [
+    "eyes",
+    "vision",
+    "humanbody",
+    "brain",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "How the Eyes Work",
+      "url": "https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work",
+      "publisher": "National Eye Institute"
+    },
+    {
+      "title": "Retina",
+      "url": "https://en.wikipedia.org/wiki/Retina",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Blind spot (vision)",
+      "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Saccade",
+      "url": "https://en.wikipedia.org/wiki/Saccade",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The image the lens forms on the retina is inverted and the brain interprets it upright.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://www.nei.nih.gov/learn-about-eye-health/healthy-vision/how-eyes-work"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The human retina has about 120 million rods and about 6 million cones.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Retina"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Where the optic nerve leaves the eye there are no photoreceptors (blind spot) and the brain fills in the gap.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Blind_spot_(vision)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The eyes make rapid movements (saccades) about three times per second and the brain suppresses vision during them.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Saccade"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -59,7 +59,16 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "tsu_hook", "tsu_quake", "tsu_lift", "tsu_spread", "tsu_speed", "tsu_small", "tsu_grow", "tsu_retreat",
                   "tsu_pacific", "tsu_outro",
                   "bh_hook", "bh_star", "bh_collapse", "bh_horizon", "bh_light", "bh_grid", "bh_spaghetti", "bh_photo",
-                  "bh_sun", "bh_outro"]
+                  "bh_sun", "bh_outro",
+                  # Tanda 5: ojo (ojo-3d.js), gatos (gato-3d.js), panales (abejas-3d.js), origen de la Luna (origen-luna-3d.js)
+                  "ojo_hook", "ojo_parts", "ojo_pupil", "ojo_rays", "ojo_cells", "ojo_colors", "ojo_flip", "ojo_blind",
+                  "ojo_saccade", "ojo_outro",
+                  "gato_hook", "gato_upside", "gato_ear", "gato_front", "gato_back", "gato_tuck", "gato_land",
+                  "gato_kitten", "gato_photo", "gato_outro",
+                  "abe_hook", "abe_wax", "abe_circles", "abe_shapes", "abe_less", "abe_proof", "abe_double", "abe_uses",
+                  "abe_spoon", "abe_outro",
+                  "lun_hook", "lun_young", "lun_theia", "lun_impact", "lun_ring", "lun_form", "lun_close", "lun_rocks",
+                  "lun_tilt", "lun_outro"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]
