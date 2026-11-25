@@ -69,6 +69,13 @@ def test_publish_at_only_when_requested_and_private(tmp_path, env):
         assert json.loads(init[2]["data"])["status"].get("publishAt") == expected
 
 
+def test_own_cloned_voice_is_not_declared_synthetic(tmp_path, env):
+    s = FakeSession()
+    YouTubePublisher("en", session=s).publish(_request(tmp_path, extra={"own_voice": "si"}))
+    init = next(c for c in s.calls if c[0] == "POST" and "upload" in c[1])
+    assert json.loads(init[2]["data"])["status"]["containsSyntheticMedia"] is False
+
+
 def test_validate_blocks_long_or_untitled(tmp_path, env):
     pub = YouTubePublisher("en", session=FakeSession())
     assert pub.validate(_request(tmp_path, title=" ")) == ["el título está vacío"]

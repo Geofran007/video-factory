@@ -93,8 +93,9 @@ class YouTubePublisher:
             "status": {
                 "privacyStatus": request.visibility,
                 "selfDeclaredMadeForKids": False,
-                # La narración usa una voz clonada con IA: se declara como contenido sintético.
-                "containsSyntheticMedia": True,
+                # YouTube no exige declarar animación ni la clonación de la propia voz para narrar
+                # (support.google.com/youtube/answer/14328491); cualquier otra voz sí se declara.
+                "containsSyntheticMedia": request.extra.get("own_voice") != "si",
             },
         }
         # Publicación programada (opcional): YouTube solo la admite en videos privados.
@@ -136,5 +137,6 @@ def request_from_job(job_dir: Path, channel: str, visibility: str = "private") -
         visibility=visibility,  # type: ignore[arg-type]
         thumbnail_path=None,
         extra={"language": meta.get("language", channel), "category_id": str(yt.get("category_id", "27")),
+               "own_voice": "si" if meta.get("own_voice") else "no",
                "format": meta.get("format", "short"), "duration_s": str(meta.get("duration_s", 0))},
     )

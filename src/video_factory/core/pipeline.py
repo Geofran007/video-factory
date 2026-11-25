@@ -278,6 +278,7 @@ def build_metadata(content: VideoContent, timeline: Timeline, voice: dict, music
         "title": content.title,
         "language": content.language,
         "format": content.format,
+        "own_voice": voice.get("license") == "Voz propia del autor",
         "description": description,
         "hashtags": content.hashtags,
         "category": content.category,
