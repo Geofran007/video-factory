@@ -1,0 +1,6 @@
+{
+  "turnos": {"manana": "09:00", "tarde": "17:00"},
+  "zonas": {"es": "America/Guayaquil", "en": "America/New_York"},
+  "horizonte_h": 24,
+  "margen_min": 75
+}

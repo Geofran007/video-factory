@@ -23,14 +23,15 @@ import argparse
 import datetime as dt
 import json
 import os
-import random
 import subprocess
 import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "src"))
+sys.path.insert(0, str(ROOT / "scripts"))
 
+import turnos  # noqa: E402
 from video_factory.publishers import tiktok  # noqa: E402
 from video_factory.publishers.youtube import YouTubePublisher, request_from_job  # noqa: E402
 
@@ -54,7 +55,7 @@ def main() -> int:
     ap.add_argument("--visibility", choices=["private", "unlisted", "public"], default="private")
     ap.add_argument("--dry-run", action="store_true", help="Genera el video pero no lo sube ni mueve el guion")
     ap.add_argument("--orden", choices=["aleatorio", "alfabetico"], default="aleatorio",
-                    help="aleatorio: temas variados cada día; alfabetico: respeta los prefijos 001-, 002-…")
+                    help="aleatorio: temas variados, el mismo en los dos canales; alfabetico: respeta los prefijos 001-, 002-…")
     ap.add_argument("--guion", default="", help="Nombre de un guion concreto de la cola (con o sin .json)")
     ap.add_argument("--sin-tiktok", action="store_true", help="No enviar a TikTok aunque haya credenciales")
     args = ap.parse_args()
@@ -64,10 +65,14 @@ def main() -> int:
     if not pending:
         print(f"Cola vacía ({queue.relative_to(ROOT)}): no hay nada que publicar hoy.")
         return 0
-    # Azar reproducible por día, turno (mañana/tarde) y canal: si se reintenta el mismo turno, elige el mismo guion.
-    slot = os.environ.get("PUBLISH_SLOT", "").strip()
-    rng = random.Random(f"{dt.date.today().isoformat()}-{slot}-{args.canal}" if slot else f"{dt.date.today().isoformat()}-{args.canal}")
-    content = rng.choice(pending) if args.orden == "aleatorio" else pending[0]
+    # El turno une los dos canales: el segundo toma el mismo tema que ya subió el primero. La semilla no incluye el
+    # canal (misma pareja también en pruebas) y sí la ejecución (un guion que falle no bloquea los reintentos).
+    slot = os.environ.get("PUBLISH_SLOT", "").strip() or f"manual-{dt.date.today().isoformat()}"
+    content = pending[0]
+    if args.orden == "aleatorio":
+        seed = f"{slot}-{os.environ.get('GITHUB_RUN_ID', '')}"
+        firma_otro = turnos.partner(turnos.load(turnos.LEDGER), slot, args.canal)
+        content = turnos.choose(queue.parent, args.canal, firma_otro, seed)
     if args.guion:
         wanted = queue / (args.guion if args.guion.endswith(".json") else args.guion + ".json")
         if wanted not in pending:
@@ -77,6 +82,11 @@ def main() -> int:
     if data.get("language", "es") != args.canal:
         raise SystemExit(f"{content.name} está en '{data.get('language', 'es')}' y el canal es '{args.canal}'.")
     print(f"Guion: {content.relative_to(ROOT)} · quedan {len(pending) - 1} después de este")
+
+    firma = turnos.signature(content)
+    when = turnos.target(slot, args.canal, turnos.load(turnos.CONFIG))
+    if when:
+        print(f"Turno {slot}: hora recomendada {when:%Y-%m-%d %H:%M} UTC")
 
     result = generate(content, args.voice)
     if result.get("qa_failures"):
@@ -89,7 +99,14 @@ def main() -> int:
         return 0
 
     pub = YouTubePublisher(args.canal)
-    res = pub.publish(request_from_job(job_dir, args.canal, args.visibility))
+    request = request_from_job(job_dir, args.canal, args.visibility)
+    # Desactivado salvo que el autor lo autorice con la variable YT_PROGRAMAR: hace público el video a esa hora.
+    scheduled = ""
+    if (os.environ.get("YT_PROGRAMAR") == "si" and when and args.visibility == "private"
+            and when > dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=15)):
+        scheduled = when.strftime("%Y-%m-%dT%H:%M:%SZ")
+        request.extra["publish_at"] = scheduled
+    res = pub.publish(request)
     print(f"Subido ({args.visibility}): {res.url}")
 
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d")
@@ -97,6 +114,9 @@ def main() -> int:
     done.mkdir(parents=True, exist_ok=True)
     name = content.stem.split("-", 1)[1] if content.stem[:3].isdigit() and "-" in content.stem else content.stem
     content.replace(done / f"{stamp}-{name}.json")
+    turnos.record(turnos.LEDGER, slot, args.canal, {
+        "guion": name, "firma": firma, "video_id": res.remote_id,
+        "hora_recomendada_utc": when.isoformat() if when else "", "programado_utc": scheduled})
     (done / f"{stamp}-{name}.youtube.json").write_text(json.dumps({
         "video_id": res.remote_id, "url": res.url, "visibility": args.visibility, "channel": args.canal,
         "title": result["title"], "duration_s": result["duration_s"], "job_id": result["job_id"],

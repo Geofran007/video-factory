@@ -97,6 +97,10 @@ class YouTubePublisher:
                 "containsSyntheticMedia": True,
             },
         }
+        # Publicación programada (opcional): YouTube solo la admite en videos privados.
+        publish_at = request.extra.get("publish_at")
+        if publish_at and request.visibility == "private":
+            body["status"]["publishAt"] = publish_at
         size = request.video_path.stat().st_size
         init = self.http.post(
             UPLOAD_URL, params={"uploadType": "resumable", "part": "snippet,status"},

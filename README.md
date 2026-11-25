@@ -263,9 +263,12 @@ gh secret set VOICE_PASSPHRASE
   (*Settings → Secrets and variables → Actions*). Sin temática usa el ejemplo y no llama a la IA. Con la voz `mi_voz`
   también requiere `VOICE_PASSPHRASE`; el clip descifrado se borra al terminar.
 - `.github/workflows/publish.yml`: **publicación en YouTube** (autorizada por el autor el 2026-11-19, cambio de la
-  regla 8 de la Fase 1). Dos veces al día (13:00 y 23:00 UTC) toma un guion al azar de `contenidos/cola/es/` (Leo curioso) y de
+  regla 8 de la Fase 1). Dos turnos al día (9:00 y 17:00 locales, en `config/horarios.json`) toma el **mismo tema** de `contenidos/cola/es/` (Leo curioso) y de
   `contenidos/cola/en/` (Curious Leo), genera el video con `voz_zueria` y lo sube como **privado**; luego mueve el
   guion a `contenidos/publicados/<idioma>/` con el enlace del video. Si el control de calidad falla, no sube nada.
+  GitHub retrasa las ejecuciones hasta 12 h, por eso se intenta cada 3 h y `scripts/turnos.py` prepara cada turno
+  con hasta 24 h de antelación; `contenidos/publicados/turnos.json` evita repetirlo. La variable de repositorio
+  `YT_PROGRAMAR=si` (desactivada) haría público cada video automáticamente a su hora; sin ella quedan privados.
   También se puede lanzar a mano (*Run workflow*) con la opción «prueba» para generar sin subir.
 
 ### Publicar en YouTube

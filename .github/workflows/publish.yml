@@ -1,12 +1,13 @@
 name: Publicar en YouTube
 
-# Dos veces al día toma un guion de contenidos/cola/es (Leo curioso) y de contenidos/cola/en (Curious Leo),
-# genera el video y lo sube como PRIVADO. El autor lo revisa y lo publica o programa en YouTube Studio.
+# Dos turnos al día (config/horarios.json) con el mismo tema en contenidos/cola/es (Leo curioso) y
+# contenidos/cola/en (Curious Leo): genera el video y lo sube como PRIVADO, horas antes de su turno.
+# GitHub retrasa las ejecuciones hasta 12 h o las descarta: se intenta cada 3 h y scripts/turnos.py decide si hay
+# un turno por preparar en las próximas 24 h; si no, la ejecución termina en segundos.
 # Publicación automática autorizada por el autor el 2026-11-19 (cambio de la regla 8 de la Fase 1).
 on:
   schedule:
-    - cron: "0 13 * * *"   # 13:00 UTC = 8:00 en Ecuador/Colombia/Perú, 8:00-9:00 en el este de EE. UU.
-    - cron: "0 23 * * *"   # 23:00 UTC = 18:00 en Ecuador/Colombia/Perú (GitHub puede retrasar cada ejecución)
+    - cron: "17 */3 * * *"   # en un minuto poco usado: las horas en punto son las que más se retrasan
   workflow_dispatch:
     inputs:
       canales:
@@ -59,10 +60,22 @@ jobs:
       TIKTOK_MODE: ${{ vars.TIKTOK_MODE || 'inbox' }}
     steps:
       - uses: actions/checkout@v4
-      - name: ¿Hay guiones en la cola?
+        with:
+          ref: ${{ github.ref_name }}   # la punta de la rama: una ejecución en espera ve lo que subió la anterior
+      - name: ¿Hay algo que preparar?
         id: cola
+        env:
+          EVENTO: ${{ github.event_name }}
         run: |
           n=$(ls contenidos/cola/es/*.json contenidos/cola/en/*.json 2>/dev/null | wc -l)
+          python3 scripts/turnos.py > "$RUNNER_TEMP/turno.txt"
+          cat "$RUNNER_TEMP/turno.txt"
+          if [ "$EVENTO" = "schedule" ]; then
+            cat "$RUNNER_TEMP/turno.txt" >> "$GITHUB_OUTPUT"
+            grep -q '^turno=.' "$RUNNER_TEMP/turno.txt" || n=0
+          else
+            echo "turno=manual-$GITHUB_RUN_ID" >> "$GITHUB_OUTPUT"
+          fi
           echo "pendientes=$n" >> "$GITHUB_OUTPUT"
           echo "Guiones en cola: $n"
       - uses: actions/setup-python@v5
@@ -117,17 +130,22 @@ jobs:
           PRUEBA: ${{ inputs.prueba || false }}
           GUION_ES: ${{ inputs.guion_es || '' }}
           GUION_EN: ${{ inputs.guion_en || '' }}
-          # Turno de la publicación: el sorteo del guion cambia entre la de la mañana y la de la tarde.
-          PUBLISH_SLOT: ${{ github.event.schedule || github.run_id }}
+          PUBLISH_SLOT: ${{ steps.cola.outputs.turno }}
+          CANALES_TURNO: ${{ steps.cola.outputs.canales }}
+          # "si" = YouTube hace público el video a la hora del turno. Sin la variable, queda privado.
+          YT_PROGRAMAR: ${{ vars.YT_PROGRAMAR }}
         run: |
           case "$CANALES" in ambos) list="es en" ;; *) list="$CANALES" ;; esac
           extra=(); [ "$PRUEBA" = "true" ] && extra=(--dry-run)
+          if [ -n "$CANALES_TURNO" ]; then list="$CANALES_TURNO"; fi
           status=0
           for c in $list; do
             echo "::group::Canal $c"
             g=GUION_${c^^}; sel=(); [ -n "${!g}" ] && sel=(--guion "${!g}")
             TIKTOK_NEW_TOKEN_FILE="$RUNNER_TEMP/tiktok_$c.txt"               python scripts/publish_queue.py --canal "$c" --visibility "$VISIBILIDAD" "${extra[@]}" "${sel[@]}" || status=1
             echo "::endgroup::"
+            # El inglés se basa en el español: si este falla, ambos se reintentan juntos en el siguiente intento.
+            if [ $status -ne 0 ]; then break; fi
           done
           exit $status
 
@@ -157,7 +175,11 @@ jobs:
           git add -A contenidos/cola contenidos/publicados
           if git diff --cached --quiet; then echo "Sin cambios en la cola."; exit 0; fi
           git commit -m "chore(publicar): guiones subidos a YouTube $(date -u +%F)"
-          git pull --rebase --quiet && git push
+          for i in 1 2 3; do
+            git pull --rebase --quiet && git push && exit 0
+            sleep $((i * 10))
+          done
+          exit 1
 
       - name: Subir resultado
         if: always() && steps.cola.outputs.pendientes != '0'
