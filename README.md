@@ -280,7 +280,7 @@ gh secret set VOICE_PASSPHRASE
    navegador y el script guarda `YT_CLIENT_ID`, `YT_CLIENT_SECRET`, `YT_REFRESH_TOKEN_<ES|EN>` y
    `YT_CHANNEL_ID_<ES|EN>` como secretos de GitHub sin mostrarlos.
 3. Pon guiones en las colas con prefijo de orden (`001-…json`). El campo `language` del guion debe coincidir con
-   la cola. Los videos se declaran como contenido sintético (voz clonada) y «no es para niños».
+   la cola. Con la voz propia del autor los videos no se marcan como contenido sintético (YouTube exime clonar la propia voz); con cualquier otra voz, sí. Se declaran «no es para niños».
 4. Mientras la API no pase la auditoría de YouTube, los videos quedan privados: publícalos o prográmalos en
    YouTube Studio. Cuota: ~6 subidas por día por proyecto.
 
