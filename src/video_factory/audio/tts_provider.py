@@ -137,7 +137,7 @@ class ChatterboxTTS:
         raw = json.loads(proc.stdout.strip().splitlines()[-1])
         # Chatterbox no tiene control de velocidad: se acelera después con atempo (conserva el tono).
         # `tempo` de la voz (providers.json) se combina con la velocidad pedida.
-        tempo = float(v.get("tempo", 1.0)) * speed
+        tempo = float(v.get(f"tempo_{language}", v.get("tempo", 1.0))) * speed
         results = []
         for r in raw:
             out, dur = Path(r["out"]), float(r["duration"])

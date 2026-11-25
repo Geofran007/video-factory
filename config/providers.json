@@ -68,6 +68,7 @@
         "attribution": null,
         "exaggeration": 0.5,
         "tempo": 1.15,
+        "tempo_en": 1.0,
         "cfg_weight": 0.5,
         "temperature": 0.8,
         "seed": 1234
