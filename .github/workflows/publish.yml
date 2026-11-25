@@ -20,6 +20,11 @@ on:
         type: choice
         options: [private, unlisted, public]
         default: private
+      formato:
+        description: "short = vertical (contenidos/cola); largo = horizontal de varios minutos (contenidos/largos)"
+        type: choice
+        options: [short, largo]
+        default: short
       prueba:
         description: "Solo generar (no subir ni mover el guion)"
         type: boolean
@@ -43,7 +48,7 @@ concurrency:
 jobs:
   publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 200
+    timeout-minutes: 340
     env:
       VF_MAX_JOB_SECONDS: "9000"
       YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
@@ -66,8 +71,9 @@ jobs:
         id: cola
         env:
           EVENTO: ${{ github.event_name }}
+          DIR: ${{ inputs.formato == 'largo' && 'largos' || 'cola' }}
         run: |
-          n=$(ls contenidos/cola/es/*.json contenidos/cola/en/*.json 2>/dev/null | wc -l)
+          n=$(ls contenidos/$DIR/es/*.json contenidos/$DIR/en/*.json 2>/dev/null | wc -l)
           python3 scripts/turnos.py > "$RUNNER_TEMP/turno.txt"
           cat "$RUNNER_TEMP/turno.txt"
           if [ "$EVENTO" = "schedule" ]; then
@@ -128,6 +134,7 @@ jobs:
           CANALES: ${{ inputs.canales || 'ambos' }}
           VISIBILIDAD: ${{ inputs.visibilidad || 'private' }}
           PRUEBA: ${{ inputs.prueba || false }}
+          FORMATO: ${{ inputs.formato || 'short' }}
           GUION_ES: ${{ inputs.guion_es || '' }}
           GUION_EN: ${{ inputs.guion_en || '' }}
           PUBLISH_SLOT: ${{ steps.cola.outputs.turno }}
@@ -137,6 +144,7 @@ jobs:
         run: |
           case "$CANALES" in ambos) list="es en" ;; *) list="$CANALES" ;; esac
           extra=(); [ "$PRUEBA" = "true" ] && extra=(--dry-run)
+          if [ "$FORMATO" = "largo" ]; then extra+=(--largo); fi
           if [ -n "$CANALES_TURNO" ]; then list="$CANALES_TURNO"; fi
           status=0
           for c in $list; do
@@ -173,6 +181,7 @@ jobs:
           git config user.name "video-factory[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add -A contenidos/cola contenidos/publicados
+          if [ -d contenidos/largos ]; then git add -A contenidos/largos; fi
           if git diff --cached --quiet; then echo "Sin cambios en la cola."; exit 0; fi
           git commit -m "chore(publicar): guiones subidos a YouTube $(date -u +%F)"
           for i in 1 2 3; do

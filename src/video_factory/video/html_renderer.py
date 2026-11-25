@@ -109,7 +109,7 @@ class PlaywrightRenderer:
         bounds = [round(total * k / workers) for k in range(workers + 1)]
         base = {
             "fps": timeline.fps, "width": timeline.width, "height": timeline.height,
-            "page_url": page.resolve().as_uri(), "timeline": json.loads(timeline.model_dump_json()),
+            "page_url": page.resolve().as_uri() + ("?o=h" if timeline.width > timeline.height else ""), "timeline": json.loads(timeline.model_dump_json()),
             "ffmpeg": binary("ffmpeg"), "preset": self.cfg.get("preset", "medium"), "crf": int(self.cfg.get("crf", 20)),
             "quality": int(self.cfg.get("jpeg_quality", 88)),
         }

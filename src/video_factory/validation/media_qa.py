@@ -80,7 +80,7 @@ def check_video(path: Path, timeline: Timeline, report: QAReport, qa_cfg: dict, 
     a = next((s for s in info["streams"] if s["codec_type"] == "audio"), None)
     report.add("mp4_abre", v is not None, info["format"].get("format_name", ""))
     report.add("video_h264", bool(v) and v["codec_name"] == "h264", v["codec_name"] if v else "sin video")
-    report.add("resolucion_1080x1920", bool(v) and (v["width"], v["height"]) == (timeline.width, timeline.height),
+    report.add(f"resolucion_{timeline.width}x{timeline.height}", bool(v) and (v["width"], v["height"]) == (timeline.width, timeline.height),
                f"{v['width']}x{v['height']}" if v else "")
     report.add("pixel_yuv420p", bool(v) and v.get("pix_fmt") == "yuv420p", v.get("pix_fmt", "") if v else "")
     fps = eval_fraction(v["avg_frame_rate"]) if v else 0

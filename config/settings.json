@@ -12,6 +12,14 @@
     "jpeg_quality": 88,
     "render_workers": "auto"
   },
+  "video_long": {
+    "width": 1920,
+    "height": 1080,
+    "min_duration_s": 181,
+    "max_duration_s": 480,
+    "max_words_per_cue": 8,
+    "max_output_mb": 500
+  },
   "audio": {
     "sample_rate": 48000,
     "words_per_second": 2.6,

@@ -341,19 +341,20 @@
       if (VF.three.isFull(s.model3d)) {
         // Escena 3D a pantalla completa (fondo) con un cartel breve arriba; el presentador queda encima, abajo.
         const full = el('canvas', 'three-full');
-        full.width = 1080; full.height = 1920;
+        full.width = W; full.height = H;
         root.parentElement.insertBefore(full, root);
         const cap = el('div', 'txt three-caption');
         const cspans = wordSpans(cap, s.on_screen_text, s.highlight_words);
         root.appendChild(cap);
-        fitText(cap, 54, 36);
+        fitText(cap, LAND ? 62 : 54, 36);
         const upd = VF.three.build(full, s.model3d, s);
+        const capAt = s.chapter ? CHAPTER_S : 0; // el cartel espera a que pase el título del capítulo
         return (lt, dur) => {
           upd(lt, dur);
-          const p = ease.outCubic(prog(lt, 0.05, 0.35));
+          const p = ease.outCubic(prog(lt, capAt + 0.05, 0.35));
           cap.style.opacity = p.toFixed(3);
           cap.style.transform = `translateY(${((1 - p) * -30).toFixed(1)}px)`;
-          animateWords(cspans, lt, 0.1, 0.05);
+          animateWords(cspans, lt, capAt + 0.1, 0.05);
         };
       }
       const cv = el('canvas', 'three-canvas');
@@ -477,7 +478,7 @@
     let opacity = 1, tx = 0, scale = 1, clip = 'none';
     const e = ease.outCubic(pIn);
     switch (type) {
-      case 'slide': tx = (1 - e) * 1080; opacity = clamp(pIn * 3); break;
+      case 'slide': tx = (1 - e) * W; opacity = clamp(pIn * 3); break;
       case 'zoom': scale = lerp(1.35, 1, e); opacity = e; break;
       case 'wipe': clip = `inset(0 ${((1 - e) * 100).toFixed(2)}% 0 0)`; break;
       case 'cut': // corte directo: sin fundido ni desplazamiento
@@ -497,6 +498,10 @@
   }
 
   // ------------------------------------------------------------------ estado global
+  // index.html?o=h → horizontal 1920×1080 (videos largos); por defecto vertical 1080×1920 (Shorts).
+  const LAND = new URLSearchParams(location.search).get('o') === 'h';
+  const [W, H] = LAND ? [1920, 1080] : [1080, 1920];
+  const CHAPTER_S = 2.4;
   let TL = null;
   let scenes = [];
   let style = null;
@@ -596,12 +601,15 @@
   VF.init = async function init(timeline) {
     TL = timeline;
     VF.lang = TL.language || 'es';
+    document.body.classList.toggle('land', LAND);
+    $('bg').width = W; $('bg').height = H;
     document.body.dataset.style = TL.style;
     await buildPresenter();
     style = VF.styles[TL.style] || VF.styles.curiosidades;
     bgCtx = $('bg').getContext('2d');
     if (style.init) style.init(bgCtx, mulberry32(1234), TL);
     const host = $('scenes');
+    let chapterCount = 0;
     scenes = TL.scenes.map((ts) => {
       const node = el('div', `scene scene-${ts.scene.type}`);
       const inner = el('div', 'scene-inner');
@@ -612,8 +620,14 @@
         node.appendChild(tag);
       }
       host.appendChild(node);
+      let chapter = null;
+      if (ts.scene.chapter) {
+        chapter = el('div', 'chapter-card');
+        chapter.append(el('span', 'chapter-num', String(++chapterCount)), el('span', 'chapter-title', ts.scene.chapter));
+        node.appendChild(chapter);
+      }
       const update = (builders[ts.scene.type] || builders.statement)(inner, ts.scene);
-      return { ts, node, inner, update, tag };
+      return { ts, node, inner, update, tag, chapter };
     });
     buildSubtitles();
     if (document.fonts && document.fonts.ready) await document.fonts.ready;
@@ -622,7 +636,6 @@
   };
 
   VF.seek = function seek(t) {
-    const W = 1080, H = 1920;
     style.draw(bgCtx, t, W, H, TL.duration);
     for (const s of scenes) {
       const { start, end } = s.ts;
@@ -638,6 +651,11 @@
       // Zoom lento continuo (efecto Ken Burns) para que ninguna escena quede estática.
       s.inner.style.transform = `scale(${(1 + 0.05 * clamp(lt / Math.max(dur, 0.1))).toFixed(4)})`;
       s.update(lt, dur);
+      if (s.chapter) {
+        const c = ease.outCubic(prog(lt, 0.15, 0.4)) * (1 - prog(lt, CHAPTER_S - 0.3, 0.3));
+        s.chapter.style.opacity = c.toFixed(3);
+        s.chapter.style.transform = `translate(-50%, ${((1 - c) * 30).toFixed(1)}px)`;
+      }
       if (s.tag) {
         const pt = ease.outBack(prog(lt, 0.2, 0.4));
         s.tag.style.transform = `scale(${pt.toFixed(3)})`;

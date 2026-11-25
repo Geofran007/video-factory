@@ -58,9 +58,10 @@ def main() -> int:
                     help="aleatorio: temas variados, el mismo en los dos canales; alfabetico: respeta los prefijos 001-, 002-…")
     ap.add_argument("--guion", default="", help="Nombre de un guion concreto de la cola (con o sin .json)")
     ap.add_argument("--sin-tiktok", action="store_true", help="No enviar a TikTok aunque haya credenciales")
+    ap.add_argument("--largo", action="store_true", help="Video largo horizontal: usa contenidos/largos y no va a TikTok")
     args = ap.parse_args()
 
-    queue = ROOT / "contenidos" / "cola" / args.canal
+    queue = ROOT / "contenidos" / ("largos" if args.largo else "cola") / args.canal
     pending = sorted(p for p in queue.glob("*.json"))
     if not pending:
         print(f"Cola vacía ({queue.relative_to(ROOT)}): no hay nada que publicar hoy.")
@@ -123,7 +124,7 @@ def main() -> int:
         "uploaded_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds"),
     }, ensure_ascii=False, indent=2), encoding="utf-8")
 
-    if not args.sin_tiktok:
+    if not args.sin_tiktok and not args.largo:
         publish_tiktok(job_dir, args.canal, args.visibility, done / f"{stamp}-{name}.tiktok.json", result)
     return 0
 

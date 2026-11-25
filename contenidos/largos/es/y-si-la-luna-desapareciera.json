@@ -1,0 +1,627 @@
+{
+  "topic": "Qué pasaría si la Luna desapareciera",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Qué pasaría si la Luna desapareciera? 🌙",
+  "hook": "¿Qué pasaría si esta noche la Luna desapareciera para siempre?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "luna_hook",
+      "narration": "¿Qué pasaría si esta noche la Luna desapareciera para siempre?",
+      "on_screen_text": "¿Y si la Luna desapareciera?",
+      "highlight_words": [
+        "desapareciera?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_vanish",
+      "narration": "Sin explosión y sin aviso. Miras al cielo y, de pronto, ya no está.",
+      "on_screen_text": "De pronto, ya no está",
+      "highlight_words": [
+        "no"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_orbit",
+      "narration": "Está a unos trescientos ochenta y cuatro mil kilómetros. ¿De verdad importa tanto una roca tan lejana?",
+      "on_screen_text": "¿Importa una roca tan lejana?",
+      "highlight_words": [
+        "lejana?"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "Te adelanto algo: cambiarían la noche, el mar, los animales y, con mucho tiempo, hasta el clima.",
+      "on_screen_text": "Noche, mar, animales y clima",
+      "highlight_words": [
+        "clima"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_switch",
+      "narration": "Soy Leo, y hoy vamos a quitar la Luna para ver qué se rompe primero.",
+      "on_screen_text": "Vamos a quitar la Luna",
+      "highlight_words": [
+        "quitar"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_moon",
+      "narration": "Empecemos por la primera noche. La Luna llena es, por mucho, lo más brillante de nuestro cielo nocturno.",
+      "on_screen_text": "La lámpara de la noche",
+      "highlight_words": [
+        "lámpara"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "La primera noche"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "Al apagarla, todas las noches serían tan oscuras como una noche de luna nueva.",
+      "on_screen_text": "Todas las noches, a oscuras",
+      "highlight_words": [
+        "oscuras"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "Lejos de las ciudades, el cielo se llenaría de estrellas. Los astrónomos estarían felices.",
+      "on_screen_text": "Un cielo lleno de estrellas",
+      "highlight_words": [
+        "estrellas"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_lions",
+      "narration": "Y muchos leones también: en lugares como el Serengueti comen mejor en las noches sin Luna, cuando cuesta más verlos venir.",
+      "on_screen_text": "Los leones cazan mejor",
+      "highlight_words": [
+        "mejor"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_coral_sync",
+      "narration": "En el mar habría problemas. Muchos corales usan la luz de la Luna como reloj, para soltar sus huevos casi al mismo tiempo.",
+      "on_screen_text": "Los corales usan la Luna",
+      "highlight_words": [
+        "Luna"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_coral_lost",
+      "narration": "Sin esa señal se desordenarían. Ya pasa hoy: donde hay luces artificiales, se reproducen entre uno y tres días antes.",
+      "on_screen_text": "Sin Luna pierden el reloj",
+      "highlight_words": [
+        "pierden"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_solar",
+      "narration": "Y adiós a los eclipses de Sol. Solo la Luna puede taparlo por completo en nuestro cielo.",
+      "on_screen_text": "Adiós a los eclipses",
+      "highlight_words": [
+        "eclipses"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_pull",
+      "narration": "Ahora, el mar. La Luna tira con más fuerza del lado cercano de la Tierra que del lejano, y así estira los océanos.",
+      "on_screen_text": "La Luna estira los océanos",
+      "highlight_words": [
+        "estira"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El mar"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_spin",
+      "narration": "La Tierra gira dentro de esos dos abultamientos de agua. Por eso muchas costas tienen dos mareas altas al día.",
+      "on_screen_text": "Dos mareas altas al día",
+      "highlight_words": [
+        "Dos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_sun",
+      "narration": "Entonces, ¿se acabarían las mareas? No. El Sol también las provoca, con cerca de la mitad de la fuerza de la Luna.",
+      "on_screen_text": "El Sol también hace mareas",
+      "highlight_words": [
+        "Sol"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_none",
+      "narration": "Sin Luna quedarían solo las mareas del Sol: mucho más pequeñas, y siempre a las mismas horas del día.",
+      "on_screen_text": "Mareas pequeñas",
+      "highlight_words": [
+        "pequeñas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_beach",
+      "narration": "Hoy, la franja de playa que el mar cubre y descubre está llena de vida: cangrejos, mejillones y aves que buscan comida.",
+      "on_screen_text": "Una franja llena de vida",
+      "highlight_words": [
+        "vida"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_small",
+      "narration": "Con mareas tan pequeñas, ese hogar se encogería muchísimo.",
+      "on_screen_text": "Ese hogar se encogería",
+      "highlight_words": [
+        "encogería"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_size",
+      "narration": "Mini reto: el Sol es cuatrocientas veces más ancho que la Luna. ¿Por qué la Luna le gana en las mareas?",
+      "on_screen_text": "¿Por qué gana la Luna?",
+      "highlight_words": [
+        "gana"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_why",
+      "narration": "Porque está muchísimo más cerca, y la fuerza de las mareas se debilita muy rápido con la distancia.",
+      "on_screen_text": "¡Porque está más cerca!",
+      "highlight_words": [
+        "cerca!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "El cambio más grande sería también el más lento. La Tierra gira inclinada unos veintitrés grados.",
+      "on_screen_text": "Un planeta inclinado",
+      "highlight_words": [
+        "inclinado"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El eje de la Tierra"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "Esa inclinación crea las estaciones: cuando el norte se inclina hacia el Sol, allí es verano.",
+      "on_screen_text": "La inclinación crea estaciones",
+      "highlight_words": [
+        "estaciones"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "Medio año después, le toca al sur.",
+      "on_screen_text": "Luego le toca al sur",
+      "highlight_words": [
+        "sur"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_tilt",
+      "narration": "La Luna ayuda a mantener ese eje bastante quieto. Apenas cambia un par de grados en decenas de miles de años.",
+      "on_screen_text": "La Luna sostiene el eje",
+      "highlight_words": [
+        "sostiene"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_mars",
+      "narration": "Mira Marte, que no tiene una luna grande. En millones de años, su inclinación pudo variar entre cero y sesenta grados.",
+      "on_screen_text": "Marte se bambolea",
+      "highlight_words": [
+        "bambolea"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_wobble",
+      "narration": "Sin Luna, el eje de la Tierra también podría variar mucho. En los años noventa, un cálculo hablaba de hasta ochenta y cinco grados.",
+      "on_screen_text": "¿Y la Tierra?",
+      "highlight_words": [
+        "Tierra?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_hot",
+      "narration": "Con el eje tan acostado, un polo tendría Sol durante meses, mientras el otro quedaría a oscuras. Las estaciones serían brutales.",
+      "on_screen_text": "Estaciones brutales",
+      "highlight_words": [
+        "brutales"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sl_debate",
+      "narration": "Pero la ciencia se corrige a sí misma. Estudios más recientes indican cambios bastante más lentos, que no impedirían la vida por sí solos.",
+      "on_screen_text": "La ciencia se corrige",
+      "highlight_words": [
+        "corrige"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_bary",
+      "narration": "¿Saldría volando la Tierra? No. Seguiría dando vueltas al Sol; solo perdería un pequeño bamboleo.",
+      "on_screen_text": "La Tierra sigue su camino",
+      "highlight_words": [
+        "sigue"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Mitos y sorpresas"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_shield",
+      "narration": "¿Nos quedaríamos sin escudo? Tampoco. La Luna es demasiado pequeña en el cielo para detener a la mayoría de los asteroides.",
+      "on_screen_text": "No es un escudo",
+      "highlight_words": [
+        "escudo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_impact",
+      "narration": "Lo asombroso está en el pasado. La idea más aceptada es que la Luna nació de un choque gigante, hace unos cuatro mil quinientos millones de años.",
+      "on_screen_text": "Nació de un choque gigante",
+      "highlight_words": [
+        "choque"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_close",
+      "narration": "Al principio estaba muchísimo más cerca, y en el cielo se habría visto enorme.",
+      "on_screen_text": "Antes se veía enorme",
+      "highlight_words": [
+        "enorme"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_day",
+      "narration": "Desde entonces, las mareas frenan nuestro giro. Hace mil cuatrocientos millones de años, el día duraba poco más de dieciocho horas.",
+      "on_screen_text": "Días de 18 horas",
+      "highlight_words": [
+        "18"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s34",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_future",
+      "narration": "Y hoy la Luna se aleja casi cuatro centímetros por año. Lo medimos con láser, gracias a los espejos que dejó el programa Apolo.",
+      "on_screen_text": "Se aleja 3,8 cm por año",
+      "highlight_words": [
+        "3,8"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s35",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_full",
+      "narration": "Así que tranquilo: se está yendo, pero casi a la velocidad a la que crecen tus uñas.",
+      "on_screen_text": "Se va muy despacio",
+      "highlight_words": [
+        "despacio"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s36",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_moon",
+      "narration": "Esta noche, mírala con otros ojos: mueve el mar, guía a los corales y ayuda a mantener firme nuestro planeta.",
+      "on_screen_text": "Mírala con otros ojos",
+      "highlight_words": [
+        "ojos"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s37",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "lun_outro",
+      "narration": "¿Qué quitamos en el próximo video? Escríbelo en los comentarios.",
+      "on_screen_text": "¿Qué quitamos ahora?",
+      "highlight_words": [
+        "ahora?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "¿Qué cambiaría si la Luna desapareciera esta noche? Recorremos la primera noche, el mar, el eje de la Tierra y los mitos más comunes. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "luna",
+    "quepasariasi",
+    "mareas",
+    "espacio",
+    "astronomia",
+    "ciencia",
+    "leocurioso"
+  ],
+  "sources": [
+    {
+      "title": "What causes tides?",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html",
+      "publisher": "NOAA"
+    },
+    {
+      "title": "Global disruption of coral broadcast spawning associated with artificial light at night",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10185496/",
+      "publisher": "Nature Communications"
+    },
+    {
+      "title": "Fear of Darkness, the Full Moon and the Nocturnal Ecology of African Lions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3140494",
+      "publisher": "PLoS ONE"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "On the Spin-axis Dynamics of a Moonless Earth",
+      "url": "https://arxiv.org/abs/1404.7505",
+      "publisher": "Li & Batygin, ApJ"
+    },
+    {
+      "title": "Thank the moon for Earth's lengthening day",
+      "url": "https://news.wisc.edu/thank-the-moon-for-earths-lengthening-day",
+      "publisher": "University of Wisconsin"
+    },
+    {
+      "title": "Measuring the Moon's Distance",
+      "url": "https://eclipse.gsfc.nasa.gov/help/ApolloLaser.html",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Barycenter",
+      "url": "https://en.wikipedia.org/wiki/Barycenter_(astronomy)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Giant-impact hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La fuerza de marea del Sol es cerca de la mitad de la de la Luna.",
+      "scene_id": "s15",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los corales expuestos a luz artificial desovan de uno a tres días antes.",
+      "scene_id": "s11",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10185496/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los leones de reservas como el Serengueti comen mejor en noches sin Luna.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3140494"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La inclinación de Marte pudo variar entre 0° y 60° en millones de años.",
+      "scene_id": "s25",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Sin la Luna, la variación caótica del eje sería lo bastante lenta como para no impedir la habitabilidad.",
+      "scene_id": "s28",
+      "source_urls": [
+        "https://arxiv.org/abs/1404.7505"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hace 1.400 millones de años el día duraba poco más de 18 horas.",
+      "scene_id": "s33",
+      "source_urls": [
+        "https://news.wisc.edu/thank-the-moon-for-earths-lengthening-day"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Luna se aleja unos 3,8 cm por año, medido con retrorreflectores Apolo.",
+      "scene_id": "s34",
+      "source_urls": [
+        "https://eclipse.gsfc.nasa.gov/help/ApolloLaser.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Tierra oscila alrededor del baricentro Tierra-Luna, que está dentro de la Tierra.",
+      "scene_id": "s29",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Barycenter_(astronomy)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La hipótesis más aceptada es que la Luna se formó por un impacto gigante hace unos 4.500 millones de años.",
+      "scene_id": "s31",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

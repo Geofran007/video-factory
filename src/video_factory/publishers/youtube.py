@@ -70,7 +70,7 @@ class YouTubePublisher:
         if len(request.description) > 5000:
             problems.append("la descripción supera 5000 caracteres")
         dur = float(request.extra.get("duration_s", 0) or 0)
-        if dur > MAX_SHORT_S:
+        if dur > MAX_SHORT_S and request.extra.get("format") != "long":
             problems.append(f"dura {dur:.0f}s; un Short admite hasta {MAX_SHORT_S}s")
         return problems
 
@@ -119,7 +119,8 @@ class YouTubePublisher:
         vid = video["id"]
         status = video.get("status", {})
         log.info("Subido a YouTube (%s): %s · %s", self.channel, vid, status.get("privacyStatus"))
-        return PublishResult(platform="youtube", remote_id=vid, url=f"https://youtube.com/shorts/{vid}")
+        url = f"https://youtu.be/{vid}" if request.extra.get("format") == "long" else f"https://youtube.com/shorts/{vid}"
+        return PublishResult(platform="youtube", remote_id=vid, url=url)
 
 
 def request_from_job(job_dir: Path, channel: str, visibility: str = "private") -> PublishRequest:
@@ -135,5 +136,5 @@ def request_from_job(job_dir: Path, channel: str, visibility: str = "private") -
         visibility=visibility,  # type: ignore[arg-type]
         thumbnail_path=None,
         extra={"language": meta.get("language", channel), "category_id": str(yt.get("category_id", "27")),
-               "duration_s": str(meta.get("duration_s", 0))},
+               "format": meta.get("format", "short"), "duration_s": str(meta.get("duration_s", 0))},
     )

@@ -26,10 +26,13 @@
   const prog = (t, a, d) => clamp((t - a) / Math.max(d, 1e-3));
   const outBack = (p) => { const c = 1.7; return 1 + (c + 1) * (p - 1) ** 3 + c * (p - 1) ** 2; };
 
-  const GW = 720, GH = 1280, W = 1080, H = 1920;
+  // index.html?o=h → video horizontal (1920×1080); sin el parámetro, vertical como siempre.
+  const LAND = new URLSearchParams(location.search).get('o') === 'h';
+  const [GW, GH, W, H] = LAND ? [1280, 720, 1920, 1080] : [720, 1280, 1080, 1920];
+  const SW = LAND ? 480 : 270, SH = LAND ? 270 : 480;
   const FOCUS = 0.36;        // la acción se centra arriba del presentador
-  const LABEL_TOP = 430;     // debajo del cartel de texto
-  const LABEL_BOTTOM = 1010; // encima del perrito
+  const LABEL_TOP = LAND ? 130 : 430;     // debajo del cartel de texto
+  const LABEL_BOTTOM = LAND ? 850 : 1010; // encima del perrito
   const GLOW = 1;            // capa que recibe brillo
 
   const COL = {
@@ -147,12 +150,14 @@
   function stage(canvas, { bg = 0x060a16, fog = [0x0b1628, 18, 60], fov = 50, focus = FOCUS, stars = true,
     hemi = 0.8, moon = 1.1 } = {}) {
     const { renderer, glowR, glc, glowC } = sharedRenderers();
-    const soft = document.createElement('canvas'); soft.width = 270; soft.height = 480;
+    const soft = document.createElement('canvas'); soft.width = SW; soft.height = SH;
     const softCtx = soft.getContext('2d');
 
     const scene = new T.Scene();
     scene.background = new T.Color(bg);
     if (fog) scene.fog = new T.Fog(fog[0], fog[1], fog[2]);
+    // En horizontal se acerca la cámara: las escenas se diseñaron para el ancho de una pantalla vertical.
+    if (LAND) { fov = 2 * Math.atan(Math.tan(fov * PI / 360) * 0.66) * 180 / PI; focus = 0.47; }
     const camera = new T.PerspectiveCamera(fov, GW / GH, 0.05, 300);
     camera.setViewOffset(GW, GH, 0, Math.round((0.5 - focus) * GH), GW, GH);
     scene.add(new T.HemisphereLight(0xa8bfff, 0x1c1a22, hemi));
@@ -213,7 +218,11 @@
         const alpha = pin * (1 - pout);
         if (alpha <= 0) continue;
         const scale = lerp(0.6, 1, outBack(pin));
-        if (L.screen) { st.pill(L.text, L.screen[0], L.screen[1], { color: L.color, size: L.size, alpha, scale }); continue; }
+        if (L.screen) {
+          // Posiciones pensadas para 1080×1920: en horizontal se reparten por la zona libre.
+          const sx = LAND ? L.screen[0] / 1080 * W : L.screen[0];
+          const sy = LAND ? lerp(LABEL_TOP + 90, LABEL_BOTTOM, clamp((L.screen[1] - 430) / 580)) : L.screen[1];
+          st.pill(L.text, sx, sy, { color: L.color, size: L.size, alpha, scale }); continue; }
         const p = st.project(typeof L.p === 'function' ? L.p(lt, dur) : L.p);
         if (!p.ok) continue;
         st.pill(L.text, p.x + (L.dx || 0), p.y - (L.dy ?? 110), { color: L.color, size: L.size, alpha, scale, anchor: p });
@@ -234,8 +243,8 @@
       ctx.globalCompositeOperation = 'source-over'; ctx.globalAlpha = 1; ctx.filter = 'none';
       ctx.drawImage(glc, 0, 0, W, H);
       // Brillo selectivo: solo lo que está en la capa GLOW (lava, magma, flechas, luces).
-      softCtx.clearRect(0, 0, 270, 480);
-      softCtx.filter = 'blur(5px)'; softCtx.drawImage(glowC, 0, 0, 270, 480); softCtx.filter = 'none';
+      softCtx.clearRect(0, 0, SW, SH);
+      softCtx.filter = 'blur(5px)'; softCtx.drawImage(glowC, 0, 0, SW, SH); softCtx.filter = 'none';
       ctx.globalCompositeOperation = 'lighter';
       ctx.globalAlpha = 0.95; ctx.drawImage(soft, 0, 0, W, H);
       ctx.globalAlpha = 0.45; ctx.drawImage(glowC, 0, 0, W, H);
@@ -921,7 +930,7 @@
   // ------------------------------------------------------------------ kit reutilizable
   // Otros módulos 3D a pantalla completa (andes-3d.js, …) usan el mismo escenario, etiquetas y brillo.
   window.VF.three.kit = {
-    T, PI, W, H, COL, GLOW, clamp, smooth, lerp, prog, outBack, hash, noise2, rng,
+    T, PI, W, H, LAND, COL, GLOW, clamp, smooth, lerp, prog, outBack, hash, noise2, rng,
     stage, ocean, smoke, glowSprite, onGlow, rockTex, mantleMaterial, arrow, islandMesh, island,
     addEN: (dict) => Object.assign(EN, dict), tr,
   };

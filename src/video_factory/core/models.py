@@ -104,7 +104,12 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "ceb_hook", "ceb_unique", "ceb_skin", "ceb_ideas", "ceb_flies", "ceb_miss", "ceb_africa", "ceb_family",
                   "ceb_experiment", "ceb_outro",
                   "dia_hook", "dia_carbon", "dia_graphite", "dia_deep", "dia_pressure", "dia_age", "dia_pipe", "dia_hard",
-                  "dia_star", "dia_outro"]
+                  "dia_star", "dia_outro",
+                  # Video largo: ¿y si la Luna desapareciera? (sin-luna-3d.js)
+                  "sl_vanish", "sl_switch", "sl_moon", "sl_fade", "sl_stars", "sl_lions", "sl_coral_sync",
+                  "sl_coral_lost", "sl_tide_pull", "sl_tide_spin", "sl_tide_sun", "sl_tide_none", "sl_tide_why", "sl_beach",
+                  "sl_small", "sl_mars", "sl_wobble", "sl_hot", "sl_debate", "sl_bary", "sl_shield",
+                  "sl_day"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]
@@ -179,6 +184,7 @@ class Scene(BaseModel):
     fx: list[Fx] = Field(default_factory=list, description="Efectos de cómic (máx. 6)")
     sfx: SfxName = "none"
     transition: Transition = "fade"
+    chapter: str | None = Field(default=None, max_length=40, description="Título del capítulo que empieza en esta escena (videos largos)")
     presenter_action: PresenterAction = Field(default="none", description="float_away: el presentador se va volando con un globo")
 
     @field_validator("narration")
@@ -237,6 +243,7 @@ class VideoContent(BaseModel):
     hashtags: list[str]
     sources: list[Source] = Field(default_factory=list)
     claims: list[Claim] = Field(default_factory=list)
+    format: Literal["short", "long"] = Field(default="short", description="short: vertical; long: horizontal de varios minutos")
     language: Literal["es", "en"] = Field(default="es", description="Idioma de la narración y los textos")
     presenter: str | None = Field(default=None, pattern=r"^[a-z0-9_-]{1,40}$",
                                   description="Presentador fijo arriba: templates/presenters/<nombre>.png")
@@ -253,8 +260,9 @@ class VideoContent(BaseModel):
 
     @model_validator(mode="after")
     def _structure(self) -> "VideoContent":
-        if not (3 <= len(self.scenes) <= 24):
-            raise ValueError("el video debe tener entre 3 y 24 escenas")
+        limit = 60 if self.format == "long" else 24
+        if not (3 <= len(self.scenes) <= limit):
+            raise ValueError(f"el video debe tener entre 3 y {limit} escenas")
         ids = [s.id for s in self.scenes]
         if len(set(ids)) != len(ids):
             raise ValueError("los ids de escena deben ser únicos")

@@ -1,0 +1,627 @@
+{
+  "topic": "What if the Moon disappeared",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "What If the Moon Disappeared? 🌙",
+  "hook": "What would happen if the Moon vanished forever tonight?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "luna_hook",
+      "narration": "What would happen if the Moon vanished forever tonight?",
+      "on_screen_text": "What if the Moon vanished?",
+      "highlight_words": [
+        "vanished?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_vanish",
+      "narration": "No explosion, no warning. You look up, and suddenly it's just gone.",
+      "on_screen_text": "Suddenly, it's gone",
+      "highlight_words": [
+        "gone"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_orbit",
+      "narration": "It's about two hundred and forty thousand miles away. Does such a distant rock really matter that much?",
+      "on_screen_text": "Does a distant rock matter?",
+      "highlight_words": [
+        "matter?"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "Here's a hint: it would change the night, the sea, the animals and, given enough time, even the climate.",
+      "on_screen_text": "Night, sea, animals, climate",
+      "highlight_words": [
+        "climate"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_switch",
+      "narration": "I'm Leo, and today we're switching off the Moon to see what breaks first.",
+      "on_screen_text": "Let's switch off the Moon",
+      "highlight_words": [
+        "off"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_moon",
+      "narration": "Let's start with the first night. The full Moon is by far the brightest thing in our night sky.",
+      "on_screen_text": "The lamp of the night",
+      "highlight_words": [
+        "lamp"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The first night"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "Switch it off, and every night would be as dark as a new moon night.",
+      "on_screen_text": "Every night, in the dark",
+      "highlight_words": [
+        "dark"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "Far from cities, the sky would fill with stars. Astronomers would be delighted.",
+      "on_screen_text": "A sky full of stars",
+      "highlight_words": [
+        "stars"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_lions",
+      "narration": "So would many lions: in places like the Serengeti they eat best on moonless nights, when it's harder to see them coming.",
+      "on_screen_text": "Lions hunt better",
+      "highlight_words": [
+        "better"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_coral_sync",
+      "narration": "The sea would be in trouble. Many corals use moonlight as a clock, to release their eggs almost all at once.",
+      "on_screen_text": "Corals use the Moon",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_coral_lost",
+      "narration": "Without that signal they'd lose track. It already happens: near artificial lights, they spawn one to three days early.",
+      "on_screen_text": "Without it, they lose track",
+      "highlight_words": [
+        "lose"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_solar",
+      "narration": "And goodbye, solar eclipses. Only the Moon can cover the Sun completely in our sky.",
+      "on_screen_text": "Goodbye, eclipses",
+      "highlight_words": [
+        "eclipses"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_pull",
+      "narration": "Now, the sea. The Moon pulls harder on Earth's near side than on its far side, and that stretches the oceans.",
+      "on_screen_text": "The Moon stretches the oceans",
+      "highlight_words": [
+        "stretches"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The sea"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_spin",
+      "narration": "Earth spins inside those two bulges of water. That's why many coasts get two high tides a day.",
+      "on_screen_text": "Two high tides a day",
+      "highlight_words": [
+        "Two"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_sun",
+      "narration": "So would the tides stop? No. The Sun makes them too, with about half the Moon's force.",
+      "on_screen_text": "The Sun makes tides too",
+      "highlight_words": [
+        "Sun"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_none",
+      "narration": "Without the Moon, only the Sun's tides would remain: much smaller, and always at the same times of day.",
+      "on_screen_text": "Small tides only",
+      "highlight_words": [
+        "Small"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_beach",
+      "narration": "Today, the strip of shore the sea covers and uncovers is full of life: crabs, mussels and birds looking for food.",
+      "on_screen_text": "A strip full of life",
+      "highlight_words": [
+        "life"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_small",
+      "narration": "With such small tides, that home would shrink dramatically.",
+      "on_screen_text": "That home would shrink",
+      "highlight_words": [
+        "shrink"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_size",
+      "narration": "Mini challenge: the Sun is four hundred times wider than the Moon. So why does the Moon win at tides?",
+      "on_screen_text": "Why does the Moon win?",
+      "highlight_words": [
+        "win?"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_why",
+      "narration": "Because it's far, far closer, and tidal force fades very quickly with distance.",
+      "on_screen_text": "Because it's closer!",
+      "highlight_words": [
+        "closer!"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "The biggest change would also be the slowest. Earth spins tilted by about twenty-three degrees.",
+      "on_screen_text": "A tilted planet",
+      "highlight_words": [
+        "tilted"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Earth's axis"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "That tilt creates the seasons: when the north leans toward the Sun, it's summer there.",
+      "on_screen_text": "The tilt makes seasons",
+      "highlight_words": [
+        "seasons"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "Half a year later, it's the south's turn.",
+      "on_screen_text": "Then it's the south's turn",
+      "highlight_words": [
+        "south's"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_tilt",
+      "narration": "The Moon helps keep that axis quite steady. It shifts only a couple of degrees over tens of thousands of years.",
+      "on_screen_text": "The Moon steadies the axis",
+      "highlight_words": [
+        "steadies"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_mars",
+      "narration": "Look at Mars, which has no large moon. Over millions of years, its tilt may have swung between zero and sixty degrees.",
+      "on_screen_text": "Mars wobbles",
+      "highlight_words": [
+        "wobbles"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_wobble",
+      "narration": "Without the Moon, Earth's axis could vary a lot too. In the nineties, one calculation allowed up to eighty-five degrees.",
+      "on_screen_text": "And Earth?",
+      "highlight_words": [
+        "Earth?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_hot",
+      "narration": "With the axis lying that flat, one pole would get sunlight for months while the other stayed dark. The seasons would be brutal.",
+      "on_screen_text": "Brutal seasons",
+      "highlight_words": [
+        "Brutal"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sl_debate",
+      "narration": "But science corrects itself. Newer studies point to much slower changes, which wouldn't rule out life on their own.",
+      "on_screen_text": "Science corrects itself",
+      "highlight_words": [
+        "corrects"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_bary",
+      "narration": "Would Earth fly off into space? No. It would keep circling the Sun; it would only lose a small wobble.",
+      "on_screen_text": "Earth stays on course",
+      "highlight_words": [
+        "stays"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Myths and surprises"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_shield",
+      "narration": "Would we lose our shield? Not really. The Moon is too small a target to stop most asteroids.",
+      "on_screen_text": "It's not a shield",
+      "highlight_words": [
+        "shield"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_impact",
+      "narration": "The amazing part is the past. The leading idea is that the Moon was born in a giant impact, about four and a half billion years ago.",
+      "on_screen_text": "Born in a giant impact",
+      "highlight_words": [
+        "impact"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_close",
+      "narration": "At first it was much, much closer, and it would have looked enormous in the sky.",
+      "on_screen_text": "It once looked enormous",
+      "highlight_words": [
+        "enormous"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_day",
+      "narration": "Ever since, the tides have been slowing our spin. One point four billion years ago, a day lasted just over eighteen hours.",
+      "on_screen_text": "18-hour days",
+      "highlight_words": [
+        "18-hour"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s34",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ecl_future",
+      "narration": "And today the Moon drifts away about an inch and a half per year. We measure it with lasers, thanks to mirrors left by the Apollo program.",
+      "on_screen_text": "Drifting 1.5 inches a year",
+      "highlight_words": [
+        "1.5"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s35",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "luna_full",
+      "narration": "So don't worry: it's leaving, but about as fast as your fingernails grow.",
+      "on_screen_text": "Leaving very slowly",
+      "highlight_words": [
+        "slowly"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s36",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_moon",
+      "narration": "Tonight, look at it differently: it moves the sea, guides the corals and helps keep our planet steady.",
+      "on_screen_text": "Look at it differently",
+      "highlight_words": [
+        "differently"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s37",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "lun_outro",
+      "narration": "What should we switch off next? Tell me in the comments.",
+      "on_screen_text": "What do we switch off next?",
+      "highlight_words": [
+        "next?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "What would change if the Moon vanished tonight? We explore the first night, the sea, Earth's axis and the most common myths. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "moon",
+    "whatif",
+    "tides",
+    "space",
+    "astronomy",
+    "science",
+    "curiousleo"
+  ],
+  "sources": [
+    {
+      "title": "What causes tides?",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html",
+      "publisher": "NOAA"
+    },
+    {
+      "title": "Global disruption of coral broadcast spawning associated with artificial light at night",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10185496/",
+      "publisher": "Nature Communications"
+    },
+    {
+      "title": "Fear of Darkness, the Full Moon and the Nocturnal Ecology of African Lions",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3140494",
+      "publisher": "PLoS ONE"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "On the Spin-axis Dynamics of a Moonless Earth",
+      "url": "https://arxiv.org/abs/1404.7505",
+      "publisher": "Li & Batygin, ApJ"
+    },
+    {
+      "title": "Thank the moon for Earth's lengthening day",
+      "url": "https://news.wisc.edu/thank-the-moon-for-earths-lengthening-day",
+      "publisher": "University of Wisconsin"
+    },
+    {
+      "title": "Measuring the Moon's Distance",
+      "url": "https://eclipse.gsfc.nasa.gov/help/ApolloLaser.html",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Barycenter",
+      "url": "https://en.wikipedia.org/wiki/Barycenter_(astronomy)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Giant-impact hypothesis",
+      "url": "https://en.wikipedia.org/wiki/Giant-impact_hypothesis",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Sun's tide-generating force is about half the Moon's.",
+      "scene_id": "s15",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Corals exposed to artificial light spawn one to three days earlier.",
+      "scene_id": "s11",
+      "source_urls": [
+        "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10185496/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Lions in reserves such as the Serengeti feed best on moonless nights.",
+      "scene_id": "s9",
+      "source_urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC3140494"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Mars's tilt may have varied between 0° and 60° over millions of years.",
+      "scene_id": "s25",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Without the Moon, chaotic axis variation is slow enough not to preclude habitability.",
+      "scene_id": "s28",
+      "source_urls": [
+        "https://arxiv.org/abs/1404.7505"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "1.4 billion years ago a day lasted just over 18 hours.",
+      "scene_id": "s33",
+      "source_urls": [
+        "https://news.wisc.edu/thank-the-moon-for-earths-lengthening-day"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Moon recedes about 3.8 cm per year, measured with Apollo retroreflectors.",
+      "scene_id": "s34",
+      "source_urls": [
+        "https://eclipse.gsfc.nasa.gov/help/ApolloLaser.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Earth wobbles around the Earth-Moon barycenter, which lies inside Earth.",
+      "scene_id": "s29",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Barycenter_(astronomy)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The leading hypothesis is that the Moon formed in a giant impact about 4.5 billion years ago.",
+      "scene_id": "s31",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Giant-impact_hypothesis"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

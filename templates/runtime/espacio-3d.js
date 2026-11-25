@@ -208,7 +208,7 @@
     }
     const inset = variant !== 'orbit' && variant !== 'face';
     st.overlay = (ctx, lt, dur, FONT) => {
-      if (inset) phaseInset(ctx, 920, 520, 78, phi - PI, FONT, smooth(prog(lt, 0.2, 0.4)));
+      if (inset) phaseInset(ctx, W - 160, K.LAND ? 360 : 520, 78, phi - PI, FONT, smooth(prog(lt, 0.2, 0.4)));
     };
     return (lt, dur) => {
       const k = variant === 'cycle' || variant === 'face' ? clamp(lt / dur) : smooth(clamp(lt / dur));
