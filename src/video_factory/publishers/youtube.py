@@ -45,6 +45,7 @@ class YouTubePublisher:
             raise YouTubeError(f"Canal desconocido: {channel}")
         self.channel = channel
         self.http = session or requests.Session()
+        self.last_status: dict = {}  # estado que devolvió YouTube (privacyStatus, publishAt…)
 
     # ------------------------------------------------------------------ autenticación
     def _access_token(self) -> str:
@@ -103,11 +104,11 @@ class YouTubePublisher:
         if publish_at and request.visibility == "private":
             body["status"]["publishAt"] = publish_at
         size = request.video_path.stat().st_size
-        init = self.http.post(
-            UPLOAD_URL, params={"uploadType": "resumable", "part": "snippet,status"},
-            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json; charset=UTF-8",
-                     "X-Upload-Content-Type": "video/mp4", "X-Upload-Content-Length": str(size)},
-            data=json.dumps(body), timeout=60)
+        init = self._start_upload(token, body, size)
+        if init.status_code == 400 and "publishAt" in body["status"]:
+            log.warning("YouTube rechazó la hora programada (%s): se sube privado sin programar", init.text[:200])
+            del body["status"]["publishAt"]
+            init = self._start_upload(token, body, size)
         if init.status_code != 200 or "Location" not in init.headers:
             raise YouTubeError(f"YouTube no aceptó iniciar la subida ({init.status_code}): {init.text[:400]}")
         with open(request.video_path, "rb") as fh:
@@ -118,10 +119,18 @@ class YouTubePublisher:
             raise YouTubeError(f"La subida falló ({up.status_code}): {up.text[:400]}")
         video = up.json()
         vid = video["id"]
-        status = video.get("status", {})
+        status = self.last_status = video.get("status", {})
         log.info("Subido a YouTube (%s): %s · %s", self.channel, vid, status.get("privacyStatus"))
         url = f"https://youtu.be/{vid}" if request.extra.get("format") == "long" else f"https://youtube.com/shorts/{vid}"
         return PublishResult(platform="youtube", remote_id=vid, url=url)
+
+    def _start_upload(self, token: str, body: dict, size: int) -> requests.Response:
+        return self.http.post(
+            UPLOAD_URL, params={"uploadType": "resumable", "part": "snippet,status"},
+            headers={"Authorization": f"Bearer {token}", "Content-Type": "application/json; charset=UTF-8",
+                     "X-Upload-Content-Type": "video/mp4", "X-Upload-Content-Length": str(size)},
+            data=json.dumps(body), timeout=60)
+
 
 
 def request_from_job(job_dir: Path, channel: str, visibility: str = "private") -> PublishRequest:

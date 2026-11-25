@@ -76,6 +76,21 @@ def test_own_cloned_voice_is_not_declared_synthetic(tmp_path, env):
     assert json.loads(init[2]["data"])["status"]["containsSyntheticMedia"] is False
 
 
+def test_rejected_publish_at_falls_back_to_private(tmp_path, env):
+    class Rejecting(FakeSession):
+        def post(self, url, **kw):
+            if "upload" in url and "publishAt" in kw["data"]:
+                self.calls.append(("POST", url, kw))
+                return FakeResp(400, {"error": "invalidPublishAt"})
+            return super().post(url, **kw)
+    s = Rejecting()
+    pub = YouTubePublisher("en", session=s)
+    res = pub.publish(_request(tmp_path, extra={"publish_at": "2026-11-26T14:00:00Z"}))
+    last = [c for c in s.calls if "upload" in c[1] and c[0] == "POST"][-1]
+    assert res.remote_id == "abc123" and "publishAt" not in json.loads(last[2]["data"])["status"]
+    assert pub.last_status == {"privacyStatus": "private"}
+
+
 def test_validate_blocks_long_or_untitled(tmp_path, env):
     pub = YouTubePublisher("en", session=FakeSession())
     assert pub.validate(_request(tmp_path, title=" ")) == ["el título está vacío"]

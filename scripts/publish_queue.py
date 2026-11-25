@@ -109,6 +109,9 @@ def main() -> int:
         request.extra["publish_at"] = scheduled
     res = pub.publish(request)
     print(f"Subido ({args.visibility}): {res.url}")
+    confirmed = pub.last_status.get("publishAt", "")
+    if scheduled:
+        print(f"Publicación programada: pedida {scheduled} · YouTube respondió {confirmed or 'sin hora (queda privado)'}")
 
     stamp = dt.datetime.now(dt.timezone.utc).strftime("%Y%m%d")
     done = ROOT / "contenidos" / "publicados" / args.canal
@@ -117,7 +120,7 @@ def main() -> int:
     content.replace(done / f"{stamp}-{name}.json")
     turnos.record(turnos.LEDGER, slot, args.canal, {
         "guion": name, "firma": firma, "video_id": res.remote_id,
-        "hora_recomendada_utc": when.isoformat() if when else "", "programado_utc": scheduled})
+        "hora_recomendada_utc": when.isoformat() if when else "", "programado_utc": confirmed})
     (done / f"{stamp}-{name}.youtube.json").write_text(json.dumps({
         "video_id": res.remote_id, "url": res.url, "visibility": args.visibility, "channel": args.canal,
         "title": result["title"], "duration_s": result["duration_s"], "job_id": result["job_id"],
