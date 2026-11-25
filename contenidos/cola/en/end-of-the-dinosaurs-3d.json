@@ -115,7 +115,7 @@
       "role": "surprise",
       "type": "scene3d",
       "model3d": "din_birds",
-      "narration": "But dinosaurs didn't vanish completely: birds are dinosaurs. Chickens are relatives of T. rex!",
+      "narration": "But dinosaurs didn't vanish completely: birds are dinosaurs. Chickens are relatives of T-rex!",
       "on_screen_text": "Birds are dinosaurs!",
       "highlight_words": [
         "dinosaurs!"

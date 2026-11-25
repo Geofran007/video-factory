@@ -3,6 +3,7 @@ from pathlib import Path
 
 import pytest
 
+from video_factory.audio.narration import split_sentences
 from video_factory.core.config import load_config
 from video_factory.core.models import VideoContent
 from video_factory.core.pipeline import chapter_list
@@ -41,3 +42,11 @@ def test_short_still_limited():
     raw["format"] = "short"
     with pytest.raises(ValueError):
         VideoContent.model_validate(raw)
+
+
+@pytest.mark.parametrize("path", FILES, ids=lambda p: p.stem)
+def test_no_tiny_sentences(path):
+    """Chatterbox falla con frases de una sola palabra («No.»)."""
+    content = VideoContent.model_validate_json(path.read_text(encoding="utf-8"))
+    tiny = [x for s in content.scenes for x in split_sentences(s.narration) if len(x) < 12]
+    assert not tiny

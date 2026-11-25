@@ -24,7 +24,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "arb_question",
-      "narration": "Casi todos responden: de la tierra. Pero no.",
+      "narration": "Casi todos responden: de la tierra, pero no.",
       "on_screen_text": "¿De la tierra? No",
       "highlight_words": [
         "No"

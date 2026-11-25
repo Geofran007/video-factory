@@ -97,14 +97,22 @@ def main() -> int:
         expected = max(1.0, len(item["text"].split()) * SECONDS_PER_WORD)
         model.t3.inference = original_inference
         cap_tokens(model, int((expected * 1.6 + 0.6) * TOKENS_PER_SECOND))
-        wav = model.generate(
-            item["text"],
-            language_id=job.get("language", "es"),
-            audio_prompt_path=job.get("audio_prompt"),
-            exaggeration=float(job.get("exaggeration", 0.5)),
-            cfg_weight=float(job.get("cfg_weight", 0.5)),
-            temperature=float(job.get("temperature", 0.8)),
-        )
+        for attempt in range(4):
+            try:
+                wav = model.generate(
+                    item["text"],
+                    language_id=job.get("language", "es"),
+                    audio_prompt_path=job.get("audio_prompt"),
+                    exaggeration=float(job.get("exaggeration", 0.5)),
+                    cfg_weight=float(job.get("cfg_weight", 0.5)),
+                    temperature=float(job.get("temperature", 0.8)),
+                )
+                break
+            except IndexError:  # fallo del analizador de Chatterbox con frases muy cortas («No.»): otra semilla
+                if attempt == 3:
+                    raise
+                print(f"[{i + 1}] reintento con otra semilla: {item['text'][:40]}", file=sys.stderr, flush=True)
+                torch.manual_seed(int(job.get("seed", 1234)) + i + 1000 * (attempt + 1))
         audio = trim_overrun(wav.squeeze(0).detach().cpu().numpy().astype(np.float32), model.sr, expected)
         peak = float(np.max(np.abs(audio))) or 1.0
         pcm = (audio / peak * 0.7 * 32767).astype(np.int16)  # ~-3 dBFS de margen, igual que Piper

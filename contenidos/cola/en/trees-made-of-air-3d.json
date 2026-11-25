@@ -24,7 +24,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "arb_question",
-      "narration": "Most people say: from the soil. But no.",
+      "narration": "Most people say: from the soil, but no.",
       "on_screen_text": "From the soil? No",
       "highlight_words": [
         "No"

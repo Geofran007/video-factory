@@ -169,7 +169,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_tide_pull",
-      "narration": "Now, the sea. The Moon pulls harder on Earth's near side than on its far side, and that stretches the oceans.",
+      "narration": "Now let's look at the sea: the Moon pulls harder on Earth's near side than on its far side, and that stretches the oceans.",
       "on_screen_text": "The Moon stretches the oceans",
       "highlight_words": [
         "stretches"
@@ -196,7 +196,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_tide_sun",
-      "narration": "So would the tides stop? No. The Sun makes them too, with about half the Moon's force.",
+      "narration": "So would the tides stop? No, the Sun makes them too, with about half the Moon's force.",
       "on_screen_text": "The Sun makes tides too",
       "highlight_words": [
         "Sun"
@@ -379,7 +379,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_bary",
-      "narration": "Would Earth fly off into space? No. It would keep circling the Sun; it would only lose a small wobble.",
+      "narration": "Would Earth fly off into space? No, it would keep circling the Sun; it would only lose a small wobble.",
       "on_screen_text": "Earth stays on course",
       "highlight_words": [
         "stays"
@@ -393,7 +393,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_shield",
-      "narration": "Would we lose our shield? Not really. The Moon is too small a target to stop most asteroids.",
+      "narration": "Would we lose our shield? Not really: the Moon is too small a target to stop most asteroids.",
       "on_screen_text": "It's not a shield",
       "highlight_words": [
         "shield"

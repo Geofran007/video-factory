@@ -169,7 +169,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_tide_pull",
-      "narration": "Ahora, el mar. La Luna tira con más fuerza del lado cercano de la Tierra que del lejano, y así estira los océanos.",
+      "narration": "Ahora vamos al mar: la Luna tira con más fuerza del lado cercano de la Tierra que del lejano, y así estira los océanos.",
       "on_screen_text": "La Luna estira los océanos",
       "highlight_words": [
         "estira"
@@ -196,7 +196,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_tide_sun",
-      "narration": "Entonces, ¿se acabarían las mareas? No. El Sol también las provoca, con cerca de la mitad de la fuerza de la Luna.",
+      "narration": "Entonces, ¿se acabarían las mareas? No: el Sol también las provoca, con cerca de la mitad de la fuerza de la Luna.",
       "on_screen_text": "El Sol también hace mareas",
       "highlight_words": [
         "Sol"
@@ -379,7 +379,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_bary",
-      "narration": "¿Saldría volando la Tierra? No. Seguiría dando vueltas al Sol; solo perdería un pequeño bamboleo.",
+      "narration": "¿Saldría volando la Tierra? No: seguiría dando vueltas al Sol; solo perdería un pequeño bamboleo.",
       "on_screen_text": "La Tierra sigue su camino",
       "highlight_words": [
         "sigue"
@@ -393,7 +393,7 @@
       "role": "development",
       "type": "scene3d",
       "model3d": "sl_shield",
-      "narration": "¿Nos quedaríamos sin escudo? Tampoco. La Luna es demasiado pequeña en el cielo para detener a la mayoría de los asteroides.",
+      "narration": "¿Nos quedaríamos sin escudo? Tampoco: la Luna es demasiado pequeña en el cielo para detener a la mayoría de los asteroides.",
       "on_screen_text": "No es un escudo",
       "highlight_words": [
         "escudo"
