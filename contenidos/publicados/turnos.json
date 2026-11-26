@@ -14,5 +14,21 @@
       "hora_recomendada_utc": "2026-11-26T14:00:00+00:00",
       "programado_utc": "2026-11-26T14:00:00Z"
     }
+  },
+  "2026-11-26-tarde": {
+    "es": {
+      "guion": "panales-hexagonos-3d",
+      "firma": "abe_hook>abe_wax>abe_circles>abe_shapes>abe_less>abe_proof>abe_double>abe_uses>abe_spoon>abe_outro",
+      "video_id": "itxdqjjywwY",
+      "hora_recomendada_utc": "2026-11-26T22:00:00+00:00",
+      "programado_utc": "2026-11-26T22:00:00Z"
+    },
+    "en": {
+      "guion": "honeycomb-hexagons-3d",
+      "firma": "abe_hook>abe_wax>abe_circles>abe_shapes>abe_less>abe_proof>abe_double>abe_uses>abe_spoon>abe_outro",
+      "video_id": "Kar7uUTfDNk",
+      "hora_recomendada_utc": "2026-11-26T22:00:00+00:00",
+      "programado_utc": "2026-11-26T22:00:00Z"
+    }
   }
 }
