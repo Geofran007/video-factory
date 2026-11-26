@@ -1,0 +1,18 @@
+{
+  "2026-11-26-manana": {
+    "es": {
+      "guion": "canal-de-panama-3d",
+      "firma": "pan_hook>pan_route>pan_shortcut>pan_profile>pan_enter>pan_fill>pan_steps>pan_water>pan_outro",
+      "video_id": "IzRBGo2dI_Y",
+      "hora_recomendada_utc": "2026-11-26T14:00:00+00:00",
+      "programado_utc": "2026-11-26T14:00:00Z"
+    },
+    "en": {
+      "guion": "panama-canal-3d",
+      "firma": "pan_hook>pan_route>pan_shortcut>pan_profile>pan_enter>pan_fill>pan_steps>pan_water>pan_outro",
+      "video_id": "cl8xXhhPMoA",
+      "hora_recomendada_utc": "2026-11-26T14:00:00+00:00",
+      "programado_utc": "2026-11-26T14:00:00Z"
+    }
+  }
+}
