@@ -30,5 +30,21 @@
       "hora_recomendada_utc": "2026-11-26T22:00:00+00:00",
       "programado_utc": "2026-11-26T22:00:00Z"
     }
+  },
+  "2026-11-27-manana": {
+    "es": {
+      "guion": "cuevas-estalactitas-3d",
+      "firma": "cue_hook>cue_rain>cue_acid>cue_carve>cue_drip>cue_stalactite>cue_stalagmite>cue_column>cue_giant>cue_outro",
+      "video_id": "t1iZaKM7_9U",
+      "hora_recomendada_utc": "2026-11-27T14:00:00+00:00",
+      "programado_utc": "2026-11-27T14:00:00Z"
+    },
+    "en": {
+      "guion": "caves-stalactites-3d",
+      "firma": "cue_hook>cue_rain>cue_acid>cue_carve>cue_drip>cue_stalactite>cue_stalagmite>cue_column>cue_giant>cue_outro",
+      "video_id": "yljKjAnzbGw",
+      "hora_recomendada_utc": "2026-11-27T14:00:00+00:00",
+      "programado_utc": "2026-11-27T14:00:00Z"
+    }
   }
 }
