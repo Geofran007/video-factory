@@ -99,11 +99,12 @@ LONG = {**CFG, "largos": {"dia": "sabado", "hora": "10:00", "margen_min": 240}}
 def test_weekly_long_slot_on_saturday():
     # Viernes 27/11 a las 20:17 UTC: el sábado 28 a las 10:00 (15:00 UTC) está dentro del horizonte.
     now = at("2026-11-27T20:17")
-    slot, due = turnos.next_slot(now, LONG, {"2026-11-28-manana": {"es": {}, "en": {}}}, BOTH, BOTH)
+    done = {s: {"es": {}, "en": {}} for s in ("2026-11-27-tarde", "2026-11-28-manana")}
+    slot, due = turnos.next_slot(now, LONG, done, BOTH, BOTH)
     assert (slot, due) == ("2026-11-28-largo", ["es", "en"])
     assert turnos.target("2026-11-28-largo", "es", LONG) == at("2026-11-28T15:00")
     # Sin guiones largos en cola, el turno largo no existe.
-    assert turnos.next_slot(now, LONG, {"2026-11-28-manana": {"es": {}, "en": {}}}, BOTH, {})[0] == "2026-11-29-manana"
+    assert turnos.next_slot(now, LONG, done, BOTH, {})[0] == "2026-11-28-tarde"
 
 
 def test_long_slot_needs_more_margin():
