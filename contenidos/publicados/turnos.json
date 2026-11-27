@@ -46,5 +46,21 @@
       "hora_recomendada_utc": "2026-11-27T14:00:00+00:00",
       "programado_utc": "2026-11-27T14:00:00Z"
     }
+  },
+  "2026-11-27-tarde": {
+    "es": {
+      "guion": "microondas-3d",
+      "firma": "mic_hook>mic_waves>mic_water>mic_friction>mic_uneven>mic_door>mic_metal>mic_ice>mic_candy>mic_outro",
+      "video_id": "zJsk-AMTnEo",
+      "hora_recomendada_utc": "2026-11-27T22:00:00+00:00",
+      "programado_utc": "2026-11-27T22:00:00Z"
+    },
+    "en": {
+      "guion": "microwave-3d",
+      "firma": "mic_hook>mic_waves>mic_water>mic_friction>mic_uneven>mic_door>mic_metal>mic_ice>mic_candy>mic_outro",
+      "video_id": "_B3d_0PmMqY",
+      "hora_recomendada_utc": "2026-11-27T22:00:00+00:00",
+      "programado_utc": "2026-11-27T22:00:00Z"
+    }
   }
 }
