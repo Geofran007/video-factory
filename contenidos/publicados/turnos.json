@@ -62,5 +62,21 @@
       "hora_recomendada_utc": "2026-11-27T22:00:00+00:00",
       "programado_utc": "2026-11-27T22:00:00Z"
     }
+  },
+  "2026-11-28-manana": {
+    "es": {
+      "guion": "mar-salado-3d",
+      "firma": "sal_hook>sal_rain>sal_rocks>sal_rivers>sal_evap>sal_cycle>sal_vents>sal_glass>sal_layer>sal_outro",
+      "video_id": "7tHYM7NqBfA",
+      "hora_recomendada_utc": "2026-11-28T14:00:00+00:00",
+      "programado_utc": "2026-11-28T14:00:00Z"
+    },
+    "en": {
+      "guion": "salty-sea-3d",
+      "firma": "sal_hook>sal_rain>sal_rocks>sal_rivers>sal_evap>sal_cycle>sal_vents>sal_glass>sal_layer>sal_outro",
+      "video_id": "upvz0GOvD1c",
+      "hora_recomendada_utc": "2026-11-28T14:00:00+00:00",
+      "programado_utc": "2026-11-28T14:00:00Z"
+    }
   }
 }
