@@ -93,7 +93,7 @@ def test_real_queue_has_no_duplicate_topics():
         assert len({turnos.signature(p) for p in files}) == len(files)
 
 
-LONG = {**CFG, "largos": {"dia": "sabado", "hora": "10:00", "margen_min": 240}}
+LONG = {**CFG, "largos": {"dias": ["miercoles", "sabado"], "hora": "10:00", "margen_min": 240}}
 
 
 def test_weekly_long_slot_on_saturday():
@@ -111,3 +111,8 @@ def test_long_slot_needs_more_margin():
     # A las 12:00 UTC faltan 3 h: no da tiempo a generar un video largo (margen 4 h).
     ledger = {"2026-11-28-tarde": {"es": {}, "en": {}}}
     assert turnos.next_slot(at("2026-11-28T12:00"), LONG, ledger, {}, BOTH) == ("", [])
+
+
+def test_two_long_slots_per_week():
+    week = [dt.date(2026, 11, 30) + dt.timedelta(days=i) for i in range(7)]
+    assert [turnos.DAYS[d.weekday()] for d in week if turnos.DAYS[d.weekday()] in LONG["largos"]["dias"]] == ["miercoles", "sabado"]

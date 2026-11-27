@@ -3,5 +3,5 @@
   "zonas": {"es": "America/Guayaquil", "en": "America/New_York"},
   "horizonte_h": 24,
   "margen_min": 75,
-  "largos": {"dia": "sabado", "hora": "10:00", "margen_min": 240}
+  "largos": {"dias": ["miercoles", "sabado"], "hora": "10:00", "margen_min": 240}
 }

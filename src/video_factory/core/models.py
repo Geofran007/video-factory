@@ -109,7 +109,11 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   "sl_vanish", "sl_switch", "sl_moon", "sl_fade", "sl_stars", "sl_lions", "sl_coral_sync",
                   "sl_coral_lost", "sl_tide_pull", "sl_tide_spin", "sl_tide_sun", "sl_tide_none", "sl_tide_why", "sl_beach",
                   "sl_small", "sl_mars", "sl_wobble", "sl_hot", "sl_debate", "sl_bary", "sl_shield",
-                  "sl_day"]
+                  "sl_day",
+                  # Videos largos: asteroides y estrellas fugaces (largos-3d.js)
+                  "ast_binary", "ast_dart", "ast_shrink", "ast_hera", "ast_outro", "ast_deflect", "ast_watch",
+                  "ast_belt", "ast_safe", "met_hook", "met_rain", "met_radiant", "met_watch", "met_outro",
+                  "met_orbit", "met_burn", "met_grain"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

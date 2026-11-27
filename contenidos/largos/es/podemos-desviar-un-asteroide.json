@@ -1,0 +1,513 @@
+{
+  "topic": "Cómo desviar un asteroide: DART y Hera",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Podemos desviar un asteroide? La misión que lo logró ☄️",
+  "hook": "¿Y si un asteroide viniera directo hacia la Tierra? ¿Podríamos empujarlo fuera del camino?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "din_asteroid",
+      "narration": "¿Y si un asteroide viniera directo hacia la Tierra? ¿Podríamos empujarlo fuera del camino?",
+      "on_screen_text": "¿Podemos desviar un asteroide?",
+      "highlight_words": [
+        "desviar"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_impact",
+      "narration": "Suena a película, pero ya pasó una vez: hace sesenta y seis millones de años, una roca de unos diez kilómetros cambió la historia de la vida.",
+      "on_screen_text": "Ya pasó una vez",
+      "highlight_words": [
+        "pasó"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_crater",
+      "narration": "Dejó un cráter gigante en lo que hoy es México, llamado Chicxulub, y acabó con los grandes dinosaurios.",
+      "on_screen_text": "El cráter de Chicxulub",
+      "highlight_words": [
+        "Chicxulub"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "La gran noticia es que la humanidad ya empujó un asteroide a propósito. Soy Leo, y hoy te cuento cómo lo hicimos.",
+      "on_screen_text": "Ya empujamos uno",
+      "highlight_words": [
+        "empujamos"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_belt",
+      "narration": "Empecemos por el principio. El sistema solar está lleno de rocas que sobraron cuando se formaron los planetas.",
+      "on_screen_text": "Rocas que sobraron",
+      "highlight_words": [
+        "sobraron"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Rocas que vagan"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_belt",
+      "narration": "La mayoría da vueltas muy lejos, en el cinturón de asteroides, entre Marte y Júpiter.",
+      "on_screen_text": "El cinturón de asteroides",
+      "highlight_words": [
+        "cinturón"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_watch",
+      "narration": "Pero algunas tienen órbitas que pasan cerca de la nuestra. Los astrónomos las buscan y las siguen cada noche.",
+      "on_screen_text": "Algunas pasan cerca",
+      "highlight_words": [
+        "cerca"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_safe",
+      "narration": "La buena noticia: casi todas las grandes, de más de un kilómetro, ya están encontradas, y ninguna conocida va a chocar con nosotros pronto.",
+      "on_screen_text": "Las grandes, vigiladas",
+      "highlight_words": [
+        "vigiladas"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_impact",
+      "narration": "El problema son las medianas, del tamaño de un estadio: hay muchas más y cuesta verlas.",
+      "on_screen_text": "Las medianas preocupan",
+      "highlight_words": [
+        "medianas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "Para probar si podemos desviar una, la NASA eligió un par de asteroides: Didymos y su pequeña luna, Dimorphos.",
+      "on_screen_text": "Didymos y Dimorphos",
+      "highlight_words": [
+        "Dimorphos"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El golpe de DART"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "Era el blanco perfecto: no amenaza a la Tierra, y desde aquí se podía medir cuánto tarda la luna en dar una vuelta.",
+      "on_screen_text": "El blanco perfecto",
+      "highlight_words": [
+        "perfecto"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_hook",
+      "narration": "En noviembre de 2021 despegó la nave DART, más o menos del tamaño de un auto pequeño, sin contar sus paneles solares.",
+      "on_screen_text": "Despega la nave DART",
+      "highlight_words": [
+        "DART"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "Diez meses después, en septiembre de 2022, se estrelló contra Dimorphos a más de seis kilómetros por segundo.",
+      "on_screen_text": "¡Impacto!",
+      "highlight_words": [
+        "Impacto!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "No llevaba explosivos: el choque por sí solo fue el empujón, como una bola de billar que golpea a otra.",
+      "on_screen_text": "Como en el billar",
+      "highlight_words": [
+        "billar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_shrink",
+      "narration": "Antes, Dimorphos tardaba casi doce horas en rodear a Didymos. Después del golpe, tardaba unos treinta y tres minutos menos.",
+      "on_screen_text": "33 minutos menos",
+      "highlight_words": [
+        "33"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_shrink",
+      "narration": "Fue más de lo esperado, porque el choque lanzó una gran nube de rocas y polvo que ayudó a empujar todavía más.",
+      "on_screen_text": "Más de lo esperado",
+      "highlight_words": [
+        "esperado"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_hera",
+      "narration": "Y ahora viene la parte nueva. La nave europea Hera, lanzada en 2024, acaba de llegar a esos asteroides.",
+      "on_screen_text": "Llega la nave Hera",
+      "highlight_words": [
+        "Hera"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Hera llega"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_hera",
+      "narration": "Es como volver a la escena del choque. Hera va a medir el cráter, la masa de Dimorphos y cuánto cambió su forma.",
+      "on_screen_text": "Volver a la escena",
+      "highlight_words": [
+        "escena"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_hera",
+      "narration": "Lleva además dos minisatélites, del tamaño de una caja de zapatos, que se acercarán todavía más.",
+      "on_screen_text": "Dos minisatélites",
+      "highlight_words": [
+        "minisatélites"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "Con esos datos sabremos cuánta fuerza hace falta para mover una roca de verdad, no solo en una computadora.",
+      "on_screen_text": "Datos reales",
+      "highlight_words": [
+        "reales"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_deflect",
+      "narration": "¿Y cómo nos protegería todo esto? El secreto no es la fuerza, sino el tiempo.",
+      "on_screen_text": "El secreto es el tiempo",
+      "highlight_words": [
+        "tiempo"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Cómo nos protegemos"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_deflect",
+      "narration": "Un empujón diminuto, dado años antes, cambia un poquito la órbita de la roca.",
+      "on_screen_text": "Un empujón diminuto",
+      "highlight_words": [
+        "diminuto"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_deflect",
+      "narration": "Con el paso del tiempo, ese poquito se convierte en miles de kilómetros, y la roca pasa de largo.",
+      "on_screen_text": "Y pasa de largo",
+      "highlight_words": [
+        "largo"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_watch",
+      "narration": "Por eso lo más importante es encontrarlas temprano. El observatorio Vera Rubin, en Chile, ya escanea todo el cielo del sur.",
+      "on_screen_text": "Encontrarlas temprano",
+      "highlight_words": [
+        "temprano"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_safe",
+      "narration": "Y no es la única misión: Japón y la NASA ya trajeron a la Tierra pedacitos de dos asteroides, Ryugu y Bennu.",
+      "on_screen_text": "Muestras de asteroides",
+      "highlight_words": [
+        "Muestras"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Sorpresa: hay asteroides que nos regalan espectáculos. El polvo de uno llamado Faetón crea cada diciembre la lluvia de las Gemínidas.",
+      "on_screen_text": "Un asteroide de estrellas fugaces",
+      "highlight_words": [
+        "fugaces"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "Este año su mejor noche será la del trece al catorce de diciembre. Busca un cielo oscuro y mira hacia arriba.",
+      "on_screen_text": "13–14 de diciembre",
+      "highlight_words": [
+        "diciembre"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Cada grano entra en la atmósfera tan rápido que el aire a su alrededor brilla, y eso es una estrella fugaz.",
+      "on_screen_text": "Así nace una estrella fugaz",
+      "highlight_words": [
+        "fugaz"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_watch",
+      "narration": "Así que, por primera vez en la historia, una especie del planeta aprendió a defenderse de las rocas del cielo.",
+      "on_screen_text": "Aprendimos a defendernos",
+      "highlight_words": [
+        "defendernos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ast_outro",
+      "narration": "¿Qué misión espacial quieres que expliquemos después? Escríbelo en los comentarios.",
+      "on_screen_text": "¿Qué misión sigue?",
+      "highlight_words": [
+        "misión"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "La humanidad ya empujó un asteroide a propósito. Te contamos qué hizo la nave DART, qué está descubriendo ahora la misión Hera y cómo nos protegeríamos de una roca espacial. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "asteroide",
+    "espacio",
+    "nasa",
+    "dart",
+    "hera",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s4",
+    "at": 0.5,
+    "text": "¿Podemos desviar un asteroide?",
+    "highlight": [
+      "asteroide?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Double Asteroid Redirection Test",
+      "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hera (space mission)",
+      "url": "https://en.wikipedia.org/wiki/Hera_(space_mission)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Chicxulub crater",
+      "url": "https://en.wikipedia.org/wiki/Chicxulub_crater",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Near-Earth object",
+      "url": "https://en.wikipedia.org/wiki/Near-Earth_object",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Vera C. Rubin Observatory",
+      "url": "https://en.wikipedia.org/wiki/Vera_C._Rubin_Observatory",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "3200 Phaethon",
+      "url": "https://en.wikipedia.org/wiki/3200_Phaethon",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Hace unos 66 millones de años, un asteroide de unos 10 km formó el cráter de Chicxulub.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chicxulub_crater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "DART chocó contra Dimorphos el 26 de septiembre de 2022 a unos 6 km/s.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El impacto acortó la órbita de Dimorphos alrededor de Didymos en unos 33 minutos.",
+      "scene_id": "s15",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hera, de la ESA, se lanzó en octubre de 2024 con dos pequeños satélites para estudiar Didymos y Dimorphos.",
+      "scene_id": "s17",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hera_(space_mission)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Se ha encontrado la gran mayoría de los asteroides cercanos a la Tierra de más de 1 km.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Near-Earth_object"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El Observatorio Vera Rubin, en Chile, escanea todo el cielo austral.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Vera_C._Rubin_Observatory"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Faetón es un asteroide cuyo polvo origina la lluvia de las Gemínidas.",
+      "scene_id": "s26",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/3200_Phaethon"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

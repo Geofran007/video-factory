@@ -43,7 +43,7 @@
       legs.b.forEach((p) => { p.rotation.z = lerp(0, -1.2, tuckB); });
       front.rotation.z = arch * 0.15; back.rotation.z = -arch * 0.15;
     };
-    return { root, pose, ear3 };
+    return { root, pose, ear3, head, front, back };
   }
 
   // Secuencia de enderezamiento en función de p (0..1): boca arriba → gira adelante → gira atrás → patas abajo.
@@ -134,6 +134,8 @@
       st.draw(lt, dur);
     };
   }
+
+  Object.assign(K, { cat, catRoom: room });
 
   const reg = (name, fn) => window.VF.three.register(name, fn, { full: true });
   ['hook', 'upside', 'ear', 'front', 'back', 'tuck', 'land', 'outro'].forEach((v) => reg(`gato_${v}`, (c) => fallScene(c, v)));

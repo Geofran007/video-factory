@@ -1,0 +1,513 @@
+{
+  "topic": "How to move an asteroid: DART and Hera",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "Can We Move an Asteroid? The Mission That Did It ☄️",
+  "hook": "What if an asteroid were heading straight for Earth? Could we push it out of the way?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "din_asteroid",
+      "narration": "What if an asteroid were heading straight for Earth? Could we push it out of the way?",
+      "on_screen_text": "Can we move an asteroid?",
+      "highlight_words": [
+        "move"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_impact",
+      "narration": "It sounds like a movie, but it has happened before: sixty-six million years ago, a rock about ten kilometers wide changed the history of life.",
+      "on_screen_text": "It happened before",
+      "highlight_words": [
+        "happened"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_crater",
+      "narration": "It left a giant crater in what is now Mexico, called Chicxulub, and wiped out the big dinosaurs.",
+      "on_screen_text": "The Chicxulub crater",
+      "highlight_words": [
+        "Chicxulub"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "The big news is that humanity has already pushed an asteroid on purpose. I'm Leo, and today I'll tell you how we did it.",
+      "on_screen_text": "We already pushed one",
+      "highlight_words": [
+        "pushed"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_belt",
+      "narration": "Let's start at the beginning. The solar system is full of rocks left over from when the planets formed.",
+      "on_screen_text": "Leftover rocks",
+      "highlight_words": [
+        "Leftover"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Wandering rocks"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_belt",
+      "narration": "Most of them circle far away, in the asteroid belt, between Mars and Jupiter.",
+      "on_screen_text": "The asteroid belt",
+      "highlight_words": [
+        "belt"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_watch",
+      "narration": "But some have orbits that pass near ours. Astronomers search for them and track them every night.",
+      "on_screen_text": "Some pass close by",
+      "highlight_words": [
+        "close"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_safe",
+      "narration": "The good news: almost all the big ones, over a kilometer wide, have already been found, and none we know of will hit us anytime soon.",
+      "on_screen_text": "The big ones are tracked",
+      "highlight_words": [
+        "tracked"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "din_impact",
+      "narration": "The problem is the medium ones, the size of a stadium: there are many more, and they're harder to spot.",
+      "on_screen_text": "Medium ones are the worry",
+      "highlight_words": [
+        "Medium"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "To test whether we can deflect one, NASA picked a pair of asteroids: Didymos and its little moon, Dimorphos.",
+      "on_screen_text": "Didymos and Dimorphos",
+      "highlight_words": [
+        "Dimorphos"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "DART's punch"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "It was the perfect target: it poses no threat to Earth, and from here we could measure how long the moon takes to go around.",
+      "on_screen_text": "The perfect target",
+      "highlight_words": [
+        "perfect"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_hook",
+      "narration": "In November 2021, the DART spacecraft launched, roughly the size of a small car, not counting its solar panels.",
+      "on_screen_text": "DART launches",
+      "highlight_words": [
+        "DART"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "Ten months later, in September 2022, it slammed into Dimorphos at more than six kilometers per second.",
+      "on_screen_text": "Impact!",
+      "highlight_words": [
+        "Impact!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "It carried no explosives: the crash itself was the push, like one billiard ball hitting another.",
+      "on_screen_text": "Like billiards",
+      "highlight_words": [
+        "billiards"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_shrink",
+      "narration": "Before, Dimorphos took almost twelve hours to circle Didymos. After the hit, it took about thirty-three minutes less.",
+      "on_screen_text": "33 minutes shorter",
+      "highlight_words": [
+        "33"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_shrink",
+      "narration": "That was more than expected, because the crash threw out a huge cloud of rocks and dust that added an extra push.",
+      "on_screen_text": "More than expected",
+      "highlight_words": [
+        "expected"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_hera",
+      "narration": "And now comes the new part. Europe's Hera spacecraft, launched in 2024, has just arrived at those asteroids.",
+      "on_screen_text": "Hera arrives",
+      "highlight_words": [
+        "Hera"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Hera arrives"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_hera",
+      "narration": "It's like returning to the scene of the crash. Hera will measure the crater, the mass of Dimorphos and how much its shape changed.",
+      "on_screen_text": "Back to the scene",
+      "highlight_words": [
+        "scene"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_hera",
+      "narration": "It also carries two mini-satellites, about the size of a shoebox, that will get even closer.",
+      "on_screen_text": "Two mini-satellites",
+      "highlight_words": [
+        "mini-satellites"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "With that data we'll know how much force it really takes to move a rock, not just in a computer.",
+      "on_screen_text": "Real data",
+      "highlight_words": [
+        "Real"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_deflect",
+      "narration": "So how would all this protect us? The secret isn't strength, it's time.",
+      "on_screen_text": "The secret is time",
+      "highlight_words": [
+        "time"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How we stay safe"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_deflect",
+      "narration": "A tiny nudge, given years ahead, changes the rock's orbit just a little.",
+      "on_screen_text": "A tiny nudge",
+      "highlight_words": [
+        "tiny"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_deflect",
+      "narration": "Over time, that little bit adds up to thousands of kilometers, and the rock sails past.",
+      "on_screen_text": "And it misses",
+      "highlight_words": [
+        "misses"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_watch",
+      "narration": "That's why finding them early matters most. The Vera Rubin Observatory in Chile is already scanning the whole southern sky.",
+      "on_screen_text": "Find them early",
+      "highlight_words": [
+        "early"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_safe",
+      "narration": "And it's not the only mission: Japan and NASA have already brought back pieces of two asteroids, Ryugu and Bennu.",
+      "on_screen_text": "Asteroid samples",
+      "highlight_words": [
+        "samples"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Surprise: some asteroids put on a show for us. Dust from one called Phaethon creates the Geminid meteor shower every December.",
+      "on_screen_text": "An asteroid of shooting stars",
+      "highlight_words": [
+        "shooting"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "This year its best night is December thirteenth to fourteenth. Find a dark sky and look up.",
+      "on_screen_text": "December 13–14",
+      "highlight_words": [
+        "December"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Each grain enters the atmosphere so fast that the air around it glows, and that's a shooting star.",
+      "on_screen_text": "That's a shooting star",
+      "highlight_words": [
+        "shooting"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_watch",
+      "narration": "So, for the first time in history, a species on this planet has learned to defend itself from rocks in the sky.",
+      "on_screen_text": "We learned to defend ourselves",
+      "highlight_words": [
+        "defend"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ast_outro",
+      "narration": "Which space mission should we explain next? Tell me in the comments.",
+      "on_screen_text": "Which mission is next?",
+      "highlight_words": [
+        "mission"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Humanity has already pushed an asteroid on purpose. Here's what the DART spacecraft did, what the Hera mission is finding now, and how we'd protect ourselves from a space rock. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "asteroid",
+    "space",
+    "nasa",
+    "dart",
+    "hera",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s4",
+    "at": 0.5,
+    "text": "Can we move an asteroid?",
+    "highlight": [
+      "asteroid?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Double Asteroid Redirection Test",
+      "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hera (space mission)",
+      "url": "https://en.wikipedia.org/wiki/Hera_(space_mission)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Chicxulub crater",
+      "url": "https://en.wikipedia.org/wiki/Chicxulub_crater",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Near-Earth object",
+      "url": "https://en.wikipedia.org/wiki/Near-Earth_object",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Vera C. Rubin Observatory",
+      "url": "https://en.wikipedia.org/wiki/Vera_C._Rubin_Observatory",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "3200 Phaethon",
+      "url": "https://en.wikipedia.org/wiki/3200_Phaethon",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "About 66 million years ago, an asteroid about 10 km wide made the Chicxulub crater.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Chicxulub_crater"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "DART struck Dimorphos on 26 September 2022 at about 6 km/s.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The impact shortened Dimorphos's orbit around Didymos by about 33 minutes.",
+      "scene_id": "s15",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "ESA's Hera launched in October 2024 with two small satellites to study Didymos and Dimorphos.",
+      "scene_id": "s17",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hera_(space_mission)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The large majority of near-Earth asteroids larger than 1 km have been found.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Near-Earth_object"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Vera Rubin Observatory in Chile surveys the whole southern sky.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Vera_C._Rubin_Observatory"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Phaethon is an asteroid whose dust produces the Geminid meteor shower.",
+      "scene_id": "s26",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/3200_Phaethon"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

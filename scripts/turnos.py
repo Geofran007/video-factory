@@ -46,7 +46,7 @@ def next_slot(now: dt.datetime, cfg: dict, ledger: dict, queued: dict[str, bool]
     for offset in range(-1, 4):
         date = (now + dt.timedelta(days=offset)).date()
         names = list(cfg["turnos"])
-        if "largos" in cfg and DAYS[date.weekday()] == cfg["largos"]["dia"]:
+        if "largos" in cfg and DAYS[date.weekday()] in cfg["largos"]["dias"]:
             names.append("largo")
         for name in names:
             slot = f"{date.isoformat()}-{name}"
