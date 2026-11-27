@@ -104,7 +104,7 @@ def test_weekly_long_slot_on_saturday():
     assert (slot, due) == ("2026-11-28-largo", ["es", "en"])
     assert turnos.target("2026-11-28-largo", "es", LONG) == at("2026-11-28T15:00")
     # Sin guiones largos en cola, el turno largo no existe.
-    assert turnos.next_slot(now, LONG, done, BOTH, {})[0] == "2026-11-28-tarde"
+    assert turnos.next_slot(now, LONG, done, BOTH, {})[0] == ""  # el turno de la tarde aún está fuera del horizonte
 
 
 def test_long_slot_needs_more_margin():
