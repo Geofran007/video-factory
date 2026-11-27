@@ -29,7 +29,7 @@ from ..timeline.subtitle_generator import to_srt
 from ..timeline.timeline_builder import build_timeline
 from ..validation import media_qa
 from ..validation.sources import verify_claims
-from ..video.html_renderer import PlaywrightRenderer
+from ..video.html_renderer import PlaywrightRenderer, render_thumbnail
 from ..video.video_composer import compose, thumbnail
 
 log = logging.getLogger("video_factory.pipeline")
@@ -223,7 +223,12 @@ class Pipeline:
 
         status("compose")
         final = compose(timeline, video_only, mixed, job_dir / "video.mp4")
-        thumbnail(final, job_dir / "thumbnail.jpg", at=min(1.5, timeline.duration / 3))
+        if content.thumbnail:
+            th = content.thumbnail
+            render_thumbnail(cfg.path("templates"), timeline, th.scene_id, th.at, th.text, th.highlight,
+                             job_dir / "thumbnail.jpg")
+        else:
+            thumbnail(final, job_dir / "thumbnail.jpg", at=min(1.5, timeline.duration / 3))
 
         status("qa")
         info = media_qa.check_video(final, timeline, report, cfg.qa,

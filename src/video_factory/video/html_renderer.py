@@ -84,6 +84,41 @@ def _render_segment(job: dict[str, Any]) -> dict[str, Any]:
     return {"out": str(out), "frames": end - start}
 
 
+def render_thumbnail(templates_dir: Path, timeline: Timeline, scene_id: str, at: float, text: str,
+                     highlight: list[str], out: Path) -> Path:
+    """Portada 1280×720 (o 720×1280): fotograma de una escena con título grande, sin subtítulos."""
+    from playwright.sync_api import sync_playwright
+
+    scene = next(s for s in timeline.scenes if s.id == scene_id)
+    t = scene.start + (scene.end - scene.start) * at
+    page_url = (templates_dir / "runtime" / "index.html").resolve().as_uri()
+    page_url += "?o=h" if timeline.width > timeline.height else ""
+    errors: list[str] = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch(args=_CHROMIUM_ARGS)
+        try:
+            ctx = browser.new_context(viewport={"width": timeline.width, "height": timeline.height},
+                                      device_scale_factor=1, offline=True)
+            ctx.route("**/*", lambda route: route.continue_() if route.request.url.startswith("file:")
+                      else route.abort())
+            page = ctx.new_page()
+            page.on("pageerror", lambda e: errors.append(str(e)))
+            page.goto(page_url, wait_until="load")
+            page.evaluate("tl => VF.init(tl)", json.loads(timeline.model_dump_json()))
+            page.evaluate("t => VF.seek(t)", t)
+            page.evaluate("([text, hl]) => VF.thumb(text, hl)", [text, highlight])
+            png = out.with_suffix(".png")
+            page.screenshot(path=str(png))
+        finally:
+            browser.close()
+    if errors:
+        raise RenderError("Error en la portada: " + " | ".join(errors[:3]))
+    size = "1280:720" if timeline.width > timeline.height else "720:1280"
+    run_ffmpeg(["-i", str(png), "-vf", f"scale={size}", "-q:v", "2", str(out)])
+    png.unlink(missing_ok=True)
+    return out
+
+
 class PlaywrightRenderer:
     def __init__(self, templates_dir: Path, video_cfg: dict[str, Any]):
         self.templates_dir = templates_dir

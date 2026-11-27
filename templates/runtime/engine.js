@@ -635,6 +635,20 @@
     return { scenes: scenes.length, cues: cueNodes.length };
   };
 
+  // Portada: oculta subtítulos y carteles y pone un título grande. Se llama después de VF.seek(t).
+  VF.thumb = function thumb(text, highlight) {
+    document.body.classList.add('thumb');
+    const hl = new Set((highlight || []).map((w) => w.toLowerCase()));
+    const box = el('div', 'thumb-title');
+    String(text).split(/\s+/).forEach((w) => {
+      const s = el('span', hl.has(w.toLowerCase().replace(/[¿?¡!.,]/g, '')) || hl.has(w.toLowerCase()) ? 'tw tw-hl' : 'tw', w);
+      box.append(s, ' ');
+    });
+    $('stage').appendChild(box);
+    fitText(box, 150, 70);
+    return true;
+  };
+
   VF.seek = function seek(t) {
     style.draw(bgCtx, t, W, H, TL.duration);
     for (const s of scenes) {

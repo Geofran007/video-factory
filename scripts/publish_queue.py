@@ -109,6 +109,8 @@ def main() -> int:
         request.extra["publish_at"] = scheduled
     res = pub.publish(request)
     print(f"Subido ({args.visibility}): {res.url}")
+    if pub.thumbnail_ok is not None:
+        print("Portada: " + ("aplicada" if pub.thumbnail_ok else "YouTube no la aceptó (¿canal sin verificar?)"))
     confirmed = pub.last_status.get("publishAt", "")
     if scheduled:
         print(f"Publicación programada: pedida {scheduled} · YouTube respondió {confirmed or 'sin hora (queda privado)'}")

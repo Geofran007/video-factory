@@ -91,3 +91,22 @@ def test_real_queue_has_no_duplicate_topics():
     for c in turnos.CHANNELS:
         files = list((turnos.QUEUE / c).glob("*.json"))
         assert len({turnos.signature(p) for p in files}) == len(files)
+
+
+LONG = {**CFG, "largos": {"dia": "sabado", "hora": "10:00", "margen_min": 240}}
+
+
+def test_weekly_long_slot_on_saturday():
+    # Viernes 27/11 a las 20:17 UTC: el sábado 28 a las 10:00 (15:00 UTC) está dentro del horizonte.
+    now = at("2026-11-27T20:17")
+    slot, due = turnos.next_slot(now, LONG, {"2026-11-28-manana": {"es": {}, "en": {}}}, BOTH, BOTH)
+    assert (slot, due) == ("2026-11-28-largo", ["es", "en"])
+    assert turnos.target("2026-11-28-largo", "es", LONG) == at("2026-11-28T15:00")
+    # Sin guiones largos en cola, el turno largo no existe.
+    assert turnos.next_slot(now, LONG, {"2026-11-28-manana": {"es": {}, "en": {}}}, BOTH, {})[0] == "2026-11-29-manana"
+
+
+def test_long_slot_needs_more_margin():
+    # A las 12:00 UTC faltan 3 h: no da tiempo a generar un video largo (margen 4 h).
+    ledger = {"2026-11-28-tarde": {"es": {}, "en": {}}}
+    assert turnos.next_slot(at("2026-11-28T12:00"), LONG, ledger, {}, BOTH) == ("", [])

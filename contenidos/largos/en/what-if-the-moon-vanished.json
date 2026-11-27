@@ -623,5 +623,13 @@
       ],
       "confidence": "alta"
     }
-  ]
+  ],
+  "thumbnail": {
+    "scene_id": "s2",
+    "at": 0.55,
+    "text": "What if the Moon vanished?",
+    "highlight": [
+      "vanished"
+    ]
+  }
 }

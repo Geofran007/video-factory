@@ -20,6 +20,7 @@ CONFIG = ROOT / "config" / "horarios.json"
 LEDGER = ROOT / "contenidos" / "publicados" / "turnos.json"
 QUEUE = ROOT / "contenidos" / "cola"
 CHANNELS = ("es", "en")
+DAYS = ["lunes", "martes", "miercoles", "jueves", "viernes", "sabado", "domingo"]
 
 
 def load(path: Path) -> dict:
@@ -29,26 +30,34 @@ def load(path: Path) -> dict:
 def target(slot: str, canal: str, cfg: dict) -> dt.datetime | None:
     """Hora UTC del turno «AAAA-MM-DD-nombre» en un canal; None si es un turno manual."""
     day, name = slot[:10], slot[11:]
-    if name not in cfg["turnos"]:
+    hours = {**cfg["turnos"], **({"largo": cfg["largos"]["hora"]} if "largos" in cfg else {})}
+    if name not in hours:
         return None
-    local = dt.datetime.fromisoformat(f"{day}T{cfg['turnos'][name]}:00")
+    local = dt.datetime.fromisoformat(f"{day}T{hours[name]}:00")
     return local.replace(tzinfo=ZoneInfo(cfg["zonas"][canal])).astimezone(dt.timezone.utc)
 
 
-def next_slot(now: dt.datetime, cfg: dict, ledger: dict, queued: dict[str, bool]) -> tuple[str, list[str]]:
-    """Primer turno con canales por llenar dentro del horizonte: (turno, canales), o ("", [])."""
-    lo = now + dt.timedelta(minutes=cfg["margen_min"])
+def next_slot(now: dt.datetime, cfg: dict, ledger: dict, queued: dict[str, bool],
+              queued_long: dict[str, bool] | None = None) -> tuple[str, list[str]]:
+    """Primer turno con canales por llenar dentro del horizonte: (turno, canales), o ("", []).
+    Los turnos «AAAA-MM-DD-largo» (semanales) son de videos largos y usan su propia cola y margen."""
     hi = now + dt.timedelta(hours=cfg["horizonte_h"])
     found = []
     for offset in range(-1, 4):
-        day = (now + dt.timedelta(days=offset)).date().isoformat()
-        for name in cfg["turnos"]:
-            slot = f"{day}-{name}"
+        date = (now + dt.timedelta(days=offset)).date()
+        names = list(cfg["turnos"])
+        if "largos" in cfg and DAYS[date.weekday()] == cfg["largos"]["dia"]:
+            names.append("largo")
+        for name in names:
+            slot = f"{date.isoformat()}-{name}"
+            long = name == "largo"
+            lo = now + dt.timedelta(minutes=cfg["largos"].get("margen_min", 240) if long else cfg["margen_min"])
             times = {c: target(slot, c, cfg) for c in CHANNELS}
             # El turno se decide con su primera hora: así los dos canales entran siempre juntos.
             if not lo <= min(times.values()) <= hi:
                 continue
-            due = [c for c in CHANNELS if queued.get(c) and c not in ledger.get(slot, {})]
+            have = (queued_long or {}) if long else queued
+            due = [c for c in CHANNELS if have.get(c) and c not in ledger.get(slot, {})]
             if due:
                 found.append((min(times.values()), slot, due))
     if not found:
@@ -89,9 +98,11 @@ def record(path: Path, slot: str, canal: str, entry: dict) -> None:
 
 def main() -> int:
     queued = {c: any((QUEUE / c).glob("*.json")) for c in CHANNELS}
-    slot, due = next_slot(dt.datetime.now(dt.timezone.utc), load(CONFIG), load(LEDGER), queued)
+    queued_long = {c: any((ROOT / "contenidos" / "largos" / c).glob("*.json")) for c in CHANNELS}
+    slot, due = next_slot(dt.datetime.now(dt.timezone.utc), load(CONFIG), load(LEDGER), queued, queued_long)
     print(f"turno={slot}")
     print(f"canales={' '.join(due)}")
+    print(f"formato={'largo' if slot.endswith('-largo') else 'short'}")
     return 0
 
 

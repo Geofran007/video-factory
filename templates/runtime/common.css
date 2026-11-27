@@ -192,3 +192,15 @@ body.land .presenter { left: 30px; top: 690px; margin-left: 0; }
 .chapter-num { width: 104px; height: 104px; border-radius: 50%; display: flex; align-items: center; justify-content: center;
   font-size: 66px; font-weight: 900; color: #1a1020; background: #ffc94a; }
 .chapter-title { font-size: 68px; font-weight: 900; color: #fff; }
+
+/* Portada (VF.thumb): sin subtítulos ni carteles, título grande y el presentador más grande. */
+body.thumb #subs, body.thumb .three-caption, body.thumb #progress, body.thumb .chapter-card,
+body.thumb .category-tag, body.thumb .presenter-wow { display: none !important; }
+body.thumb #vignette { background: linear-gradient(90deg, rgba(0,0,0,.72) 0%, rgba(0,0,0,.25) 48%, transparent 70%); }
+.thumb-title { position: absolute; left: 70px; top: 60px; width: 1080px; max-height: 640px; overflow: hidden;
+  font-weight: 900; line-height: 1.02; text-transform: uppercase; color: #fff; letter-spacing: -0.01em;
+  paint-order: stroke fill; -webkit-text-stroke: 16px #000; text-shadow: 0 14px 34px rgba(0,0,0,.65); }
+.thumb-title .tw { display: inline-block; }
+.thumb-title .tw-hl { color: #ffd23a; }
+body.thumb.land .presenter { left: 50px; top: 700px; transform: scale(1.55); transform-origin: 0 100%; }
+body.thumb .three-full { filter: saturate(1.25) brightness(1.15); }

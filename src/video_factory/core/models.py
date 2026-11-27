@@ -217,6 +217,14 @@ class Scene(BaseModel):
         return self
 
 
+class Thumbnail(BaseModel):
+    """Portada: un fotograma de una escena con un título grande encima."""
+    scene_id: str
+    at: float = Field(default=0.5, ge=0, le=1, description="Momento de la escena (0 = inicio, 1 = final)")
+    text: str = Field(max_length=48)
+    highlight: list[str] = Field(default_factory=list)
+
+
 class Source(BaseModel):
     title: str
     url: str
@@ -243,6 +251,7 @@ class VideoContent(BaseModel):
     hashtags: list[str]
     sources: list[Source] = Field(default_factory=list)
     claims: list[Claim] = Field(default_factory=list)
+    thumbnail: Thumbnail | None = None
     format: Literal["short", "long"] = Field(default="short", description="short: vertical; long: horizontal de varios minutos")
     language: Literal["es", "en"] = Field(default="es", description="Idioma de la narración y los textos")
     presenter: str | None = Field(default=None, pattern=r"^[a-z0-9_-]{1,40}$",
@@ -272,6 +281,8 @@ class VideoContent(BaseModel):
             raise ValueError("la última escena debe tener rol closing")
         if not any(s.role == "surprise" for s in self.scenes):
             raise ValueError("debe existir al menos una escena con rol surprise (dato sorprendente)")
+        if self.thumbnail and self.thumbnail.scene_id not in ids:
+            raise ValueError("la portada apunta a una escena inexistente")
         for claim in self.claims:
             if claim.scene_id not in ids:
                 raise ValueError(f"la afirmación '{claim.statement[:40]}' apunta a una escena inexistente")

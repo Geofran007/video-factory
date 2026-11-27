@@ -23,6 +23,7 @@ log = logging.getLogger("video_factory.publishers.youtube")
 
 TOKEN_URL = "https://oauth2.googleapis.com/token"
 UPLOAD_URL = "https://www.googleapis.com/upload/youtube/v3/videos"
+THUMB_URL = "https://www.googleapis.com/upload/youtube/v3/thumbnails/set"
 MAX_SHORT_S = 180
 
 
@@ -121,8 +122,20 @@ class YouTubePublisher:
         vid = video["id"]
         status = self.last_status = video.get("status", {})
         log.info("Subido a YouTube (%s): %s · %s", self.channel, vid, status.get("privacyStatus"))
+        self.thumbnail_ok = None
+        if request.thumbnail_path and request.thumbnail_path.exists():
+            self.thumbnail_ok = self._set_thumbnail(token, vid, request.thumbnail_path)
         url = f"https://youtu.be/{vid}" if request.extra.get("format") == "long" else f"https://youtube.com/shorts/{vid}"
         return PublishResult(platform="youtube", remote_id=vid, url=url)
+
+    def _set_thumbnail(self, token: str, vid: str, path: Path) -> bool:
+        """Portada personalizada. YouTube la permite solo en canales verificados: si la rechaza, el video queda igual."""
+        r = self.http.post(THUMB_URL, params={"videoId": vid}, data=path.read_bytes(),
+                           headers={"Authorization": f"Bearer {token}", "Content-Type": "image/jpeg"}, timeout=120)
+        if r.status_code != 200:
+            log.warning("YouTube no aceptó la portada (%s): %s", r.status_code, r.text[:300])
+            return False
+        return True
 
     def _start_upload(self, token: str, body: dict, size: int) -> requests.Response:
         return self.http.post(
@@ -144,7 +157,7 @@ def request_from_job(job_dir: Path, channel: str, visibility: str = "private") -
         tags=yt.get("tags", []),
         channel_id=os.environ.get(f"YT_CHANNEL_ID_{channel.upper()}", channel),
         visibility=visibility,  # type: ignore[arg-type]
-        thumbnail_path=None,
+        thumbnail_path=(job_dir / "thumbnail.jpg") if meta.get("format") == "long" else None,
         extra={"language": meta.get("language", channel), "category_id": str(yt.get("category_id", "27")),
                "own_voice": "si" if meta.get("own_voice") else "no",
                "format": meta.get("format", "short"), "duration_s": str(meta.get("duration_s", 0))},

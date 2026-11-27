@@ -74,6 +74,7 @@ jobs:
           DIR: ${{ inputs.formato == 'largo' && 'largos' || 'cola' }}
         run: |
           n=$(ls contenidos/$DIR/es/*.json contenidos/$DIR/en/*.json 2>/dev/null | wc -l)
+          [ "$EVENTO" = "schedule" ] && n=$(ls contenidos/cola/*/*.json contenidos/largos/*/*.json 2>/dev/null | wc -l)
           python3 scripts/turnos.py > "$RUNNER_TEMP/turno.txt"
           cat "$RUNNER_TEMP/turno.txt"
           if [ "$EVENTO" = "schedule" ]; then
@@ -134,7 +135,7 @@ jobs:
           CANALES: ${{ inputs.canales || 'ambos' }}
           VISIBILIDAD: ${{ inputs.visibilidad || 'private' }}
           PRUEBA: ${{ inputs.prueba || false }}
-          FORMATO: ${{ inputs.formato || 'short' }}
+          FORMATO: ${{ steps.cola.outputs.formato || inputs.formato || 'short' }}
           GUION_ES: ${{ inputs.guion_es || '' }}
           GUION_EN: ${{ inputs.guion_en || '' }}
           PUBLISH_SLOT: ${{ steps.cola.outputs.turno }}
