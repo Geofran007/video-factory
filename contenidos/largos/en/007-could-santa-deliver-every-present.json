@@ -1,0 +1,506 @@
+{
+  "topic": "The physics of Christmas Eve",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "Could SANTA Deliver Every Present in ONE Night? 🎅",
+  "hook": "Every December twenty-fourth, Santa has to deliver presents all over the world in a single night.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "Every December twenty-fourth, Santa has to deliver presents all over the world in a single night.",
+      "on_screen_text": "A single night",
+      "highlight_words": [
+        "night"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "Is it possible? Let's do the math with real physics, no magic… at least at first.",
+      "on_screen_text": "Let's do the math",
+      "highlight_words": [
+        "math"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "I'm Leo, and today we figure out what it would take. Spoiler: the sleigh would be the fastest machine in history.",
+      "on_screen_text": "The fastest machine",
+      "highlight_words": [
+        "fastest"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "First, how many children are there? Nearly two billion people in the world are under fifteen.",
+      "on_screen_text": "≈ 2 billion kids",
+      "highlight_words": [
+        "kids"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How many kids"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "Let's assume about three kids per home on average. That's hundreds of millions of homes in one night.",
+      "on_screen_text": "Hundreds of millions of homes",
+      "highlight_words": [
+        "homes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "But Santa has a trick: time zones. Midnight doesn't arrive everywhere at once.",
+      "on_screen_text": "The time-zone trick",
+      "highlight_words": [
+        "time-zone"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Help from the clock"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "If he starts in the Pacific islands, where Christmas comes first, and travels west following the night, he gets more than thirty hours.",
+      "on_screen_text": "Over 30 hours",
+      "highlight_words": [
+        "30"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "The first places to reach Christmas are Pacific islands like Kiribati, fourteen hours ahead of world time.",
+      "on_screen_text": "Kiribati goes first",
+      "highlight_words": [
+        "Kiribati"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "In some countries presents arrive on other days, like January sixth with the Three Kings, and that helps too.",
+      "on_screen_text": "Other gift days",
+      "highlight_words": [
+        "days"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_spin",
+      "narration": "It's like running alongside the night as Earth turns, so it stays the middle of the night wherever he is.",
+      "on_screen_text": "Racing the night",
+      "highlight_words": [
+        "night"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "Even so, the numbers are wild: he'd have to visit about six thousand homes per second.",
+      "on_screen_text": "6,000 homes per second",
+      "highlight_words": [
+        "6,000"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Sleigh speed"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "If homes were a kilometer apart, the sleigh would travel thousands of kilometers per second.",
+      "on_screen_text": "Thousands of km per second",
+      "highlight_words": [
+        "Thousands"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "At each house he'd have just a tiny fraction of a second to come down, leave the presents and get back to the sleigh.",
+      "on_screen_text": "A fraction of a second",
+      "highlight_words": [
+        "fraction"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_orbit",
+      "narration": "For comparison: a rocket in orbit goes about eight kilometers per second. The sleigh would be hundreds of times faster.",
+      "on_screen_text": "Faster than a rocket",
+      "highlight_words": [
+        "rocket"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_orbit",
+      "narration": "Not even the fastest space probes we've ever built come close to that speed.",
+      "on_screen_text": "Faster than any probe",
+      "highlight_words": [
+        "probe"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "And here's the problem. At that speed, the air in front of the sleigh would be squeezed and heated enormously.",
+      "on_screen_text": "The air heats up",
+      "highlight_words": [
+        "heats"
+      ],
+      "sfx": "riser",
+      "transition": "cut",
+      "chapter": "The air problem"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "The same thing that happens to a shooting star: it would glow like a meteor streaking across the sky.",
+      "on_screen_text": "Like a shooting star",
+      "highlight_words": [
+        "shooting"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "On top of that, the reindeer would feel enormous forces every time they braked and sped up between houses.",
+      "on_screen_text": "Brutal braking",
+      "highlight_words": [
+        "Brutal"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "And the load would be gigantic. If each present weighed just half a kilo, it would add up to hundreds of thousands of tons.",
+      "on_screen_text": "A gigantic load",
+      "highlight_words": [
+        "gigantic"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "More than many cargo ships put together, pulled by just a few reindeer.",
+      "on_screen_text": "More than a ship",
+      "highlight_words": [
+        "ship"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "And he'd have to go down chimneys that many homes don't even have.",
+      "on_screen_text": "Homes without chimneys",
+      "highlight_words": [
+        "chimneys"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "So with ordinary physics, it's impossible. That's why Christmas needs a little magic.",
+      "on_screen_text": "It takes magic",
+      "highlight_words": [
+        "magic"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "So how does he do it?"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "Or, as many people say, Santa's helpers are in every home in the world.",
+      "on_screen_text": "Lots of helpers",
+      "highlight_words": [
+        "helpers"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "nav_radar",
+      "narration": "Surprise: there's a military agency that tracks him every year. Since 1955, NORAD has shared where the sleigh is on Christmas Eve.",
+      "on_screen_text": "NORAD tracks him",
+      "highlight_words": [
+        "NORAD"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_radar",
+      "narration": "It all began with a misprinted phone number in an ad. Kids called, and the officers decided to play along.",
+      "on_screen_text": "It began with a mistake",
+      "highlight_words": [
+        "mistake"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "Today millions of families follow the trip online as night sweeps around the planet.",
+      "on_screen_text": "Millions follow along",
+      "highlight_words": [
+        "Millions"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "And don't forget the letters: millions of kids write each year, and in several countries the post office has special addresses to answer them.",
+      "on_screen_text": "Millions of letters",
+      "highlight_words": [
+        "letters"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "Not every family celebrates Christmas, but even so, the list would be enormous.",
+      "on_screen_text": "An enormous list",
+      "highlight_words": [
+        "enormous"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "So next Christmas Eve, look up: if you see a shooting star, maybe it isn't dust, or maybe it is.",
+      "on_screen_text": "Look up",
+      "highlight_words": [
+        "up"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "Real reindeer exist and live in the cold north, though of course none of them can fly.",
+      "on_screen_text": "Real reindeer",
+      "highlight_words": [
+        "Real"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "nav_outro",
+      "narration": "What other holiday question should we answer with science? Tell me in the comments. Merry Christmas!",
+      "on_screen_text": "Merry Christmas!",
+      "highlight_words": [
+        "Christmas!"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "We do the math with physics: how many children, how many hours thanks to time zones, how fast the sleigh would go and what would happen to the air. A festive thought experiment. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "christmas",
+    "santa",
+    "physics",
+    "whatif",
+    "math",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.95,
+    "text": "Can Santa deliver it all in one night?",
+    "highlight": [
+      "night?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "World population",
+      "url": "https://en.wikipedia.org/wiki/World_population",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Time zone",
+      "url": "https://en.wikipedia.org/wiki/Time_zone",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "NORAD Tracks Santa",
+      "url": "https://en.wikipedia.org/wiki/NORAD_Tracks_Santa",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Orbital speed",
+      "url": "https://en.wikipedia.org/wiki/Orbital_speed",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Atmospheric entry",
+      "url": "https://en.wikipedia.org/wiki/Atmospheric_entry",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "About a quarter of the world's population is under 15.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/World_population"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Time zones range from UTC−12 to UTC+14, stretching Christmas Eve across the planet.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Time_zone"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "NORAD has tracked Santa every Christmas Eve since 1955, after a misprinted phone number.",
+      "scene_id": "s24",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/NORAD_Tracks_Santa"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Low Earth orbit speed is about 7.8 km/s.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Orbital_speed"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "An object moving very fast through air compresses and heats the air in front of it.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atmospheric_entry"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,479 @@
+{
+  "topic": "Qué pasaría si la Tierra fuera un cubo",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Y si la Tierra fuera un CUBO? 🧊🌍",
+  "hook": "¿Qué pasaría si mañana la Tierra amaneciera convertida en un cubo gigante, como un planeta hecho de bloques?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cub_hook",
+      "narration": "¿Qué pasaría si mañana la Tierra amaneciera convertida en un cubo gigante, como un planeta hecho de bloques?",
+      "on_screen_text": "¿Y si la Tierra fuera un cubo?",
+      "highlight_words": [
+        "cubo?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Spoiler: los mares se volverían círculos perfectos, y en las esquinas no podrías ni respirar.",
+      "on_screen_text": "Mares redondos y esquinas sin aire",
+      "highlight_words": [
+        "esquinas"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "Soy Leo, y hoy vamos a construir un planeta cuadrado con física de verdad, para entender por qué el nuestro es redondo.",
+      "on_screen_text": "Un planeta cuadrado",
+      "highlight_words": [
+        "cuadrado"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "Todo empieza con la gravedad. No tira hacia abajo, como creemos, sino hacia el centro del planeta.",
+      "on_screen_text": "Hacia el centro",
+      "highlight_words": [
+        "centro"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "La gravedad manda"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "En una esfera, el centro está a la misma distancia de cualquier punto de la superficie, así que el suelo se siente plano en todas partes.",
+      "on_screen_text": "En una esfera, todo es plano",
+      "highlight_words": [
+        "plano"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "Pero en un cubo, el centro de cada cara está más cerca del centro que los bordes y las esquinas.",
+      "on_screen_text": "El cubo es distinto",
+      "highlight_words": [
+        "distinto"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "Por eso, en cualquier lugar del mundo, abajo significa siempre hacia el centro de la Tierra, aunque estés al otro lado.",
+      "on_screen_text": "Abajo es hacia el centro",
+      "highlight_words": [
+        "centro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "Para la gravedad, el centro de cada cara sería un valle, y caminar hacia un borde sería subir una montaña cada vez más empinada.",
+      "on_screen_text": "Todo es cuesta arriba",
+      "highlight_words": [
+        "arriba"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "Con el tamaño de la Tierra, una esquina quedaría como a mil setecientos kilómetros de altura. Mucho más alta que cualquier montaña real.",
+      "on_screen_text": "Esquinas altísimas",
+      "highlight_words": [
+        "altísimas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "Los aviones tampoco podrían cruzar los bordes, porque allí no habría aire para sostener sus alas.",
+      "on_screen_text": "Sin aire para volar",
+      "highlight_words": [
+        "volar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Ahora, el agua. El agua siempre corre hacia lo más bajo, así que todos los océanos bajarían al centro de las caras.",
+      "on_screen_text": "El agua baja al centro",
+      "highlight_words": [
+        "centro"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Mares y aire"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Tendríamos seis mares redondos, uno en cada cara, como seis ojos azules mirando al espacio.",
+      "on_screen_text": "Seis mares redondos",
+      "highlight_words": [
+        "Seis"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "Con el aire pasaría lo mismo. La atmósfera también se juntaría sobre el centro de cada cara.",
+      "on_screen_text": "El aire también baja",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "En los bordes y las esquinas casi no quedaría aire: serían zonas heladas, sin agua y sin vida, como estar en el espacio.",
+      "on_screen_text": "Bordes sin aire",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "La vida se apiñaría en anillos verdes alrededor de cada mar, en la orilla de cada valle.",
+      "on_screen_text": "Seis islas de vida",
+      "highlight_words": [
+        "vida"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Las ciudades se construirían junto a esas orillas, y los ríos bajarían desde las laderas hacia cada mar.",
+      "on_screen_text": "Ríos hacia el centro",
+      "highlight_words": [
+        "Ríos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "¿Y el día y la noche? En un cubo que gira, el Sol aparecería de golpe al pasar por cada borde.",
+      "on_screen_text": "Amaneceres de golpe",
+      "highlight_words": [
+        "golpe"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Días y estaciones raros"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "Una cara entera pasaría casi de la noche al día en un instante, sin los largos atardeceres que conocemos.",
+      "on_screen_text": "Sin atardeceres largos",
+      "highlight_words": [
+        "atardeceres"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "Las estaciones también serían extrañas: según cómo esté inclinado el cubo, una cara podría pasar meses mirando al Sol.",
+      "on_screen_text": "Estaciones extrañas",
+      "highlight_words": [
+        "extrañas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "Y viajar a otra cara sería una expedición de alpinismo con traje espacial, cruzando un borde sin aire.",
+      "on_screen_text": "Viajar sería escalar",
+      "highlight_words": [
+        "escalar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Pero hay un problema: un planeta cúbico no duraría. Su propia gravedad lo aplastaría.",
+      "on_screen_text": "No duraría",
+      "highlight_words": [
+        "duraría"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Por qué no existe"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Las esquinas, tan altas, pesarían muchísimo sobre la roca de abajo, que se iría hundiendo y derramando poco a poco.",
+      "on_screen_text": "Las esquinas se hunden",
+      "highlight_words": [
+        "hunden"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Con el tiempo, todo bajaría hasta quedar a la misma distancia del centro. Es decir, se volvería una esfera.",
+      "on_screen_text": "Se vuelve una esfera",
+      "highlight_words": [
+        "esfera"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Por eso todos los planetas y las lunas grandes son redondos: su gravedad es lo bastante fuerte para redondearlos.",
+      "on_screen_text": "Por eso son redondos",
+      "highlight_words": [
+        "redondos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Los científicos calculan que, a partir de unos cientos de kilómetros de tamaño, un cuerpo de roca o hielo ya se redondea solo.",
+      "on_screen_text": "Cientos de km bastan",
+      "highlight_words": [
+        "Cientos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "Los asteroides pequeños, en cambio, pueden tener formas de papa, porque su gravedad es demasiado débil.",
+      "on_screen_text": "Los pequeños, como papas",
+      "highlight_words": [
+        "papas"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "Sorpresa: ni siquiera la Tierra es una esfera perfecta. Como gira, está un poco abultada en la línea ecuatorial.",
+      "on_screen_text": "Ni la Tierra es perfecta",
+      "highlight_words": [
+        "perfecta"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_globe",
+      "narration": "Por eso la cima del Chimborazo, en Ecuador, es el punto más alejado del centro de la Tierra.",
+      "on_screen_text": "El Chimborazo gana",
+      "highlight_words": [
+        "Chimborazo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_hook",
+      "narration": "Así que, aunque un planeta de bloques sea divertido en los videojuegos, la gravedad siempre termina ganando.",
+      "on_screen_text": "La gravedad gana",
+      "highlight_words": [
+        "gana"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cub_outro",
+      "narration": "¿Qué forma rara le darías a la Tierra para el próximo video? Escríbelo en los comentarios.",
+      "on_screen_text": "¿Qué forma probamos?",
+      "highlight_words": [
+        "forma"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Imagina un planeta hecho de bloques. ¿Dónde estarían los mares, el aire y las montañas? La física de la gravedad responde, y explica por qué los planetas son redondos. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "quepasariasi",
+    "tierra",
+    "gravedad",
+    "planetas",
+    "fisica",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.5,
+    "text": "¿Y si la Tierra fuera un cubo?",
+    "highlight": [
+      "cubo?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Hydrostatic equilibrium",
+      "url": "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gravity",
+      "url": "https://en.wikipedia.org/wiki/Gravity",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Atmosphere of Earth",
+      "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Equatorial bulge",
+      "url": "https://en.wikipedia.org/wiki/Equatorial_bulge",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Los cuerpos suficientemente masivos adoptan forma casi esférica por su propia gravedad (equilibrio hidrostático).",
+      "scene_id": "s21",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La gravedad de un cuerpo atrae hacia su centro de masa.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gravity"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La mayor parte del aire de la Tierra está en los primeros kilómetros sobre la superficie.",
+      "scene_id": "s13",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atmosphere_of_Earth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Tierra es un poco más ancha en el ecuador por su rotación.",
+      "scene_id": "s27",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Equatorial_bulge"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

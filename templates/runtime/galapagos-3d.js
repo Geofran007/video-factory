@@ -211,6 +211,7 @@
     st.label = (o) => { o.text = tr(o.text); st.labels.push(o); return o; };
 
     function drawLabels(lt, dur) {
+      if (document.body.classList.contains('thumb')) return; // portada: solo el título grande
       for (const L of st.labels) {
         const t0 = typeof L.t0 === 'function' ? L.t0(dur) : (L.t0 || 0);
         const t1 = typeof L.t1 === 'function' ? L.t1(dur) : (L.t1 ?? Infinity);

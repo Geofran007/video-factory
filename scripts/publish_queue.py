@@ -70,7 +70,12 @@ def main() -> int:
     # canal (misma pareja también en pruebas) y sí la ejecución (un guion que falle no bloquea los reintentos).
     slot = os.environ.get("PUBLISH_SLOT", "").strip() or f"manual-{dt.date.today().isoformat()}"
     content = pending[0]
-    if args.orden == "aleatorio":
+    # Los largos van en orden (001-, 002-…) porque algunos dependen de la fecha; el otro idioma sigue al primero.
+    if args.largo:
+        firma_otro = turnos.partner(turnos.load(turnos.LEDGER), slot, args.canal)
+        par = [p for p in pending if firma_otro and turnos.signature(p) == firma_otro]
+        content = par[0] if par else pending[0]
+    elif args.orden == "aleatorio":
         seed = f"{slot}-{os.environ.get('GITHUB_RUN_ID', '')}"
         firma_otro = turnos.partner(turnos.load(turnos.LEDGER), slot, args.canal)
         content = turnos.choose(queue.parent, args.canal, firma_otro, seed)

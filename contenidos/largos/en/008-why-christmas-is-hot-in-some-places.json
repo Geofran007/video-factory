@@ -1,0 +1,489 @@
+{
+  "topic": "Why December is winter in the north and summer in the south",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "Why Is Christmas SNOWY in Some Places and SUNNY in Others? ☀️❄️",
+  "hook": "At Christmas, some people build snowmen and others go to the beach. How can it be the same day?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "At Christmas, some people build snowmen and others go to the beach. How can it be the same day?",
+      "on_screen_text": "Snow or beach?",
+      "highlight_words": [
+        "beach?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "While it's freezing in New York, it's high summer in Buenos Aires and Sydney.",
+      "on_screen_text": "Cold here, hot there",
+      "highlight_words": [
+        "hot"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "I'm Leo, and today I'll explain why December is winter in the north and summer in the south, and what happens on the equator.",
+      "on_screen_text": "North, south and equator",
+      "highlight_words": [
+        "equator"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Many people think it's about distance: that in summer we're closer to the Sun.",
+      "on_screen_text": "Is it distance?",
+      "highlight_words": [
+        "distance?"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The big myth"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "But it's the opposite: Earth is closest to the Sun in early January, right when it's winter in the north.",
+      "on_screen_text": "Closest in January",
+      "highlight_words": [
+        "January"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Besides, if it were about distance, the whole planet would have summer at the same time. And it doesn't.",
+      "on_screen_text": "It's not distance",
+      "highlight_words": [
+        "distance"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "The real secret is that Earth's axis is tilted, about twenty-three and a half degrees.",
+      "on_screen_text": "A tilted planet",
+      "highlight_words": [
+        "tilted"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The real secret"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "Without that tilt we'd have no seasons: every place would have nearly the same weather all year.",
+      "on_screen_text": "No tilt, no seasons",
+      "highlight_words": [
+        "seasons"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "And that axis always points the same way in space as we circle the Sun.",
+      "on_screen_text": "Always the same direction",
+      "highlight_words": [
+        "same"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "We go once around the Sun every year, about a hundred and fifty million kilometers away.",
+      "on_screen_text": "150 million km",
+      "highlight_words": [
+        "150"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "In December, the southern hemisphere tilts toward the Sun and the north tilts away.",
+      "on_screen_text": "The south faces the Sun",
+      "highlight_words": [
+        "south"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "When sunlight hits head-on, it concentrates its heat in a small area. When it comes in slanted, the same heat spreads over much more.",
+      "on_screen_text": "Direct or slanted",
+      "highlight_words": [
+        "Direct"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "On top of that, southern days are long and nights are short. More hours of sunlight, more heat: it's summer.",
+      "on_screen_text": "Long days down south",
+      "highlight_words": [
+        "Long"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "In June it flips: the north tilts toward the Sun and gets its summer, while the south gets cold.",
+      "on_screen_text": "In June, it flips",
+      "highlight_words": [
+        "flips"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Half a year later"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "And in Antarctica it's the opposite: in December the Sun never sets, and there's daylight around the clock.",
+      "on_screen_text": "Midnight Sun",
+      "highlight_words": [
+        "Midnight"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "Around December twenty-first comes the solstice: the shortest day of the year in the north and the longest in the south.",
+      "on_screen_text": "The solstice",
+      "highlight_words": [
+        "solstice"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "In the far north, near the pole, the Sun doesn't even rise in those days: it's the polar night.",
+      "on_screen_text": "The polar night",
+      "highlight_words": [
+        "polar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "And on the equator? There the Sun shines almost straight down all year long.",
+      "on_screen_text": "Equator: Sun all year",
+      "highlight_words": [
+        "Equator"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "And on the equator?"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "That's why there are no four clear seasons there, just wet seasons and dry seasons.",
+      "on_screen_text": "Wet and dry",
+      "highlight_words": [
+        "Wet"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "And Ecuador has many climates: beach, highlands and rainforest, all within a few hours' travel.",
+      "on_screen_text": "Many climates close by",
+      "highlight_words": [
+        "climates"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "In Quito, for example, the temperature changes more between day and night than from one month to the next.",
+      "on_screen_text": "More change in a day",
+      "highlight_words": [
+        "day"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_day",
+      "narration": "And day and night last almost twelve hours each, at Christmas or any other date.",
+      "on_screen_text": "12 hours of daylight",
+      "highlight_words": [
+        "12"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_cotopaxi",
+      "narration": "Mind you, it can be cold on the equator too, because of altitude. The peak of Cotopaxi has snow all year round.",
+      "on_screen_text": "Cold from altitude",
+      "highlight_words": [
+        "altitude"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Surprise: the whole planet gets a bit more sunlight in January than in July, because we're closer to the Sun.",
+      "on_screen_text": "More light in January",
+      "highlight_words": [
+        "January"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "But the tilt matters far more than that small difference. That's why it rules the seasons.",
+      "on_screen_text": "The tilt rules",
+      "highlight_words": [
+        "rules"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "Try it with a flashlight: point it straight down and the spot is small and bright; tilt it and it stretches out and gets dimmer.",
+      "on_screen_text": "The flashlight trick",
+      "highlight_words": [
+        "flashlight"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "So next Christmas, whether you're cold or hot, remember it's all thanks to a tilted planet.",
+      "on_screen_text": "Thanks to the tilt",
+      "highlight_words": [
+        "tilt"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "That's why in the south there are Christmas trees by the pool, and in the north, by the fireplace.",
+      "on_screen_text": "Pool or fireplace",
+      "highlight_words": [
+        "Pool"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "In Australia many families celebrate with an outdoor lunch, and in Argentina, in the summer heat.",
+      "on_screen_text": "A summer Christmas",
+      "highlight_words": [
+        "summer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "est_outro",
+      "narration": "What's Christmas like where you live, cold or hot? Tell me in the comments.",
+      "on_screen_text": "Cold or hot?",
+      "highlight_words": [
+        "hot?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "In December some people celebrate in the snow and others at the beach. The reason is Earth's tilt, not its distance from the Sun. And on the equator, it's neither. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "christmas",
+    "seasons",
+    "earth",
+    "sun",
+    "equator",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.6,
+    "text": "Christmas in snow or at the beach?",
+    "highlight": [
+      "beach?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Season",
+      "url": "https://en.wikipedia.org/wiki/Season",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Apsis",
+      "url": "https://en.wikipedia.org/wiki/Apsis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "What causes the seasons?",
+      "url": "https://spaceplace.nasa.gov/seasons/",
+      "publisher": "NASA Space Place"
+    },
+    {
+      "title": "Climate of Ecuador",
+      "url": "https://en.wikipedia.org/wiki/Climate_of_Ecuador",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "December solstice",
+      "url": "https://en.wikipedia.org/wiki/December_solstice",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Earth's axis is tilted about 23.4°.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Earth is closest to the Sun in early January (perihelion).",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Apsis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Around December 21 is the solstice: the shortest day in the north and the longest in the south.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/December_solstice"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Ecuador has no four marked seasons, but wet and dry seasons instead.",
+      "scene_id": "s18",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Climate_of_Ecuador"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

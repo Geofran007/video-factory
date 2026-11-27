@@ -1,0 +1,490 @@
+{
+  "topic": "The science of magnetism and superpowers",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "Could You CONTROL METAL Like a Superhero? 🧲",
+  "hook": "In movies, some superheroes lift cars, bridges and metal ships with a wave of their hand.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ima_hook",
+      "narration": "In movies, some superheroes lift cars, bridges and metal ships with a wave of their hand.",
+      "on_screen_text": "Moving metal by hand",
+      "highlight_words": [
+        "metal"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Could it happen in real life? The answer may surprise you, because part of it already exists.",
+      "on_screen_text": "Is it really possible?",
+      "highlight_words": [
+        "possible"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_magnet",
+      "narration": "I'm Leo, and today we'll uncover the science of magnetism, the invisible force that moves metal.",
+      "on_screen_text": "The invisible force",
+      "highlight_words": [
+        "invisible"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_magnet",
+      "narration": "The word magnet comes from Magnesia, a region of ancient Greece where stones that attracted iron were found.",
+      "on_screen_text": "Stones from Magnesia",
+      "highlight_words": [
+        "Magnesia"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "Every magnet has two poles. Opposite poles attract and like poles push apart, even without touching.",
+      "on_screen_text": "Poles that attract",
+      "highlight_words": [
+        "attract"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "What is a magnet?"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "And if you cut a magnet in half, you don't separate the poles: you get two magnets, each with a north and a south.",
+      "on_screen_text": "Always two poles",
+      "highlight_words": [
+        "poles"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_domains",
+      "narration": "Inside iron there are tiny zones that act like little magnets. Normally they point every which way.",
+      "on_screen_text": "Tiny magnets",
+      "highlight_words": [
+        "Tiny"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_domains",
+      "narration": "When they all line up the same way, the iron becomes a magnet. That's why a magnet grabs nails but not wood or plastic.",
+      "on_screen_text": "All lined up",
+      "highlight_words": [
+        "lined"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Now, the most powerful trick: electricity. A current flowing through a coiled wire creates a magnetic field.",
+      "on_screen_text": "Electricity = magnetism",
+      "highlight_words": [
+        "Electricity"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Switch-on magnets"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "That's an electromagnet. In scrapyards, cranes with electromagnets lift whole cars and drop them when the current switches off.",
+      "on_screen_text": "Cranes that lift cars",
+      "highlight_words": [
+        "cars"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "So lifting a car with magnetism is real. It just takes a lot of energy, not a wave of the hand.",
+      "on_screen_text": "Real, but energy-hungry",
+      "highlight_words": [
+        "energy"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_train",
+      "narration": "Magnets can make trains float, too. The Shanghai maglev train reached about four hundred and thirty kilometers per hour.",
+      "on_screen_text": "Floating trains",
+      "highlight_words": [
+        "Floating"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_train",
+      "narration": "Because they don't touch the rails, there's almost no friction. They float a few centimeters above the track.",
+      "on_screen_text": "Not touching the rails",
+      "highlight_words": [
+        "rails"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "Hospitals have giant magnets: MRI machines, which use fields of one point five to three teslas.",
+      "on_screen_text": "Hospital magnets",
+      "highlight_words": [
+        "Hospital"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The strongest magnets"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "A fridge magnet is about five thousandths of a tesla. An MRI is hundreds of times stronger.",
+      "on_screen_text": "Hundreds of times stronger",
+      "highlight_words": [
+        "Hundreds"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "Thanks to those giant magnets, doctors can see inside the body without making a single cut.",
+      "on_screen_text": "Seeing inside",
+      "highlight_words": [
+        "inside"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "And with an even stronger magnet, about sixteen teslas, scientists made a live frog float.",
+      "on_screen_text": "A floating frog!",
+      "highlight_words": [
+        "frog"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "It was unharmed. The water in its body is very weakly pushed away by magnets, and with a field that strong, it's enough to float.",
+      "on_screen_text": "Water gets pushed away",
+      "highlight_words": [
+        "pushed"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_blood",
+      "narration": "Could a magnet control a person through the iron in their blood? No, that iron is spread out in molecules and barely responds to magnets.",
+      "on_screen_text": "Blood doesn't stick",
+      "highlight_words": [
+        "Blood"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "What about the body?"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_blood",
+      "narration": "That's why you can go into an MRI without your blood flying out. Loose metal, though, stays outside the room.",
+      "on_screen_text": "Safe inside the MRI",
+      "highlight_words": [
+        "Safe"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "And the biggest magnet you know is under your feet. Earth's core has moving liquid iron that generates a magnetic field.",
+      "on_screen_text": "Earth is a magnet",
+      "highlight_words": [
+        "magnet"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The biggest magnet"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_north",
+      "narration": "That's why compasses point north. And that field shields us from particles coming from the Sun.",
+      "on_screen_text": "Compasses point north",
+      "highlight_words": [
+        "north"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_moving",
+      "narration": "Also, the magnetic north pole isn't fixed: it moves tens of kilometers every year.",
+      "on_screen_text": "The pole moves",
+      "highlight_words": [
+        "moves"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_shield",
+      "narration": "When those particles hit the air near the poles, the sky lights up with auroras.",
+      "on_screen_text": "Auroras are born",
+      "highlight_words": [
+        "Auroras"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_animals",
+      "narration": "Some animals do have a magnetic superpower: birds and sea turtles sense Earth's field to find their way.",
+      "on_screen_text": "Animals with a compass",
+      "highlight_words": [
+        "compass"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_flip",
+      "narration": "And Earth's field changes: the magnetic poles have flipped many times in the planet's history.",
+      "on_screen_text": "The poles flip",
+      "highlight_words": [
+        "flip"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "So moving metal isn't magic: it's electricity and magnetism, the same force that runs motors, trains and hospitals.",
+      "on_screen_text": "Not magic, physics",
+      "highlight_words": [
+        "physics"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Electromagnets are also in doorbells, speakers and the electric motors that run fans and cars.",
+      "on_screen_text": "Electromagnets everywhere",
+      "highlight_words": [
+        "everywhere"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ima_outro",
+      "narration": "Which superpower should we test with science next? Tell me in the comments.",
+      "on_screen_text": "Which superpower next?",
+      "highlight_words": [
+        "superpower"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "We love superheroes who move metal with their minds. What does physics say? Magnets, electromagnets, floating trains, a levitating frog and the giant magnet that is Earth. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "magnetism",
+    "magnets",
+    "superpowers",
+    "physics",
+    "superheroes",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s2",
+    "at": 0.7,
+    "text": "Could you control metal?",
+    "highlight": [
+      "metal?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Magnetism",
+      "url": "https://en.wikipedia.org/wiki/Magnetism",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Electromagnet",
+      "url": "https://en.wikipedia.org/wiki/Electromagnet",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic levitation",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_levitation",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Shanghai maglev train",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_maglev_train",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic resonance imaging",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetoreception",
+      "url": "https://en.wikipedia.org/wiki/Magnetoreception",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "In 1997 a live frog was levitated with a magnetic field of about 16 teslas (diamagnetism).",
+      "scene_id": "s17",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_levitation"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Shanghai maglev reached about 430 km/h in service.",
+      "scene_id": "s12",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shanghai_maglev_train"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "MRI scanners typically use fields of 1.5 to 3 teslas.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Earth's magnetic field is generated by moving liquid iron in the outer core.",
+      "scene_id": "s21",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Birds and sea turtles use the magnetic field to navigate.",
+      "scene_id": "s25",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetoreception"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

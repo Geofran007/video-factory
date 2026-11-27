@@ -1,0 +1,490 @@
+{
+  "topic": "The science of tsunamis",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "TSUNAMIS: the Science of the Wave That Crosses Oceans 🌊",
+  "hook": "How can a single wave cross an entire ocean and reach the other side of the world?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "tsu_hook",
+      "narration": "How can a single wave cross an entire ocean and reach the other side of the world?",
+      "on_screen_text": "A wave that crosses oceans",
+      "highlight_words": [
+        "oceans"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "And the strangest part: out at sea you can barely notice it. A ship could ride over it without feeling a thing.",
+      "on_screen_text": "Barely noticeable at sea",
+      "highlight_words": [
+        "Barely"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "I'm Leo, and today I'll explain the real science of tsunamis, and most importantly, how to stay safe.",
+      "on_screen_text": "The real science",
+      "highlight_words": [
+        "real"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "Scientists can't predict the exact day of an earthquake, but they can detect a tsunami within minutes.",
+      "on_screen_text": "Detected in minutes",
+      "highlight_words": [
+        "minutes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_push",
+      "narration": "Most tsunamis start under the sea, where one plate of the crust dives beneath another.",
+      "on_screen_text": "Colliding plates",
+      "highlight_words": [
+        "plates"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How it starts"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "For years the plates get stuck. When they finally slip, the seafloor jumps all at once: that's a great earthquake.",
+      "on_screen_text": "The seafloor jumps",
+      "highlight_words": [
+        "jumps"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "The biggest tsunamis come from very large earthquakes, magnitude eight or more, when the seafloor moves vertically.",
+      "on_screen_text": "Huge earthquakes",
+      "highlight_words": [
+        "Huge"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_lift",
+      "narration": "That jump pushes up the entire column of water, from the bottom to the surface, over a huge area.",
+      "on_screen_text": "All the water rises",
+      "highlight_words": [
+        "water"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "Then the water drops back down, and that energy spreads out in waves moving in every direction.",
+      "on_screen_text": "Waves in every direction",
+      "highlight_words": [
+        "direction"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "Landslides and volcanoes can trigger them too, but earthquakes are the most common cause.",
+      "on_screen_text": "The most common cause",
+      "highlight_words": [
+        "common"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "In deep water, a tsunami travels at more than eight hundred kilometers per hour, as fast as a jet plane.",
+      "on_screen_text": "As fast as a jet",
+      "highlight_words": [
+        "jet"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Fast as a jet"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "But out there it's a meter tall or less. What makes it dangerous isn't its height but its length: hundreds of kilometers of moving water.",
+      "on_screen_text": "Low but very long",
+      "highlight_words": [
+        "long"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "In nineteen sixty, a tsunami born in Chile crossed the whole Pacific and reached Japan about twenty-two hours later.",
+      "on_screen_text": "Chile → Japan: 22 hours",
+      "highlight_words": [
+        "22"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "As it nears the coast, the seafloor gets shallow. The front slows down and the back catches up.",
+      "on_screen_text": "It slows and piles up",
+      "highlight_words": [
+        "piles"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Reaching the coast"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "All that water piles up and the wave grows, sometimes many meters tall.",
+      "on_screen_text": "The wave grows",
+      "highlight_words": [
+        "grows"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_hook",
+      "narration": "And it's not just one wave: several usually arrive over hours, and the first isn't always the biggest.",
+      "on_screen_text": "Several waves arrive",
+      "highlight_words": [
+        "Several"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Sometimes, before it arrives, the sea suddenly pulls back and leaves the beach exposed. That's a warning sign.",
+      "on_screen_text": "The sea pulls back",
+      "highlight_words": [
+        "pulls"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "In nineteen oh six, off the coast of Ecuador and Colombia, an earthquake of about magnitude eight point eight caused a tsunami.",
+      "on_screen_text": "Ecuador, 1906",
+      "highlight_words": [
+        "1906"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Ecuador and the Pacific"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_row",
+      "narration": "The whole Pacific coast, from Chile to Alaska and Japan, is lined with these plate collisions.",
+      "on_screen_text": "A ring around the Pacific",
+      "highlight_words": [
+        "Pacific"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "That's why warning systems exist: buoys and sensors at sea detect the waves and alert the coast.",
+      "on_screen_text": "Buoys that warn",
+      "highlight_words": [
+        "warn"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "Its speed depends on depth: the deeper the ocean, the faster the wave moves.",
+      "on_screen_text": "Deeper means faster",
+      "highlight_words": [
+        "faster"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "The most important part. If you're on the coast and the ground shakes hard or for a long time, don't wait for the alarm.",
+      "on_screen_text": "Don't wait for the alarm",
+      "highlight_words": [
+        "alarm"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How to stay safe"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Move away from the sea and get to high ground, or as far inland as you can, on foot if needed.",
+      "on_screen_text": "Get to high ground",
+      "highlight_words": [
+        "high"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "And if you see the sea pull back, never go down to look. That's exactly the time to get away.",
+      "on_screen_text": "Never go look",
+      "highlight_words": [
+        "Never"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Learn your area's evacuation routes and the nearest high ground ahead of time. Many beaches have signs showing them.",
+      "on_screen_text": "Know your route",
+      "highlight_words": [
+        "route"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Stay on high ground for several hours, until the authorities say it's safe to return.",
+      "on_screen_text": "Wait several hours",
+      "highlight_words": [
+        "hours"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Often it doesn't arrive as a breaking wave but as a tide that rises and rises, sweeping everything along.",
+      "on_screen_text": "A tide that won't stop",
+      "highlight_words": [
+        "tide"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "Surprise: some tsunamis cross entire oceans and still have strength on the far side of the planet.",
+      "on_screen_text": "They cross the planet",
+      "highlight_words": [
+        "planet"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "So a tsunami isn't a giant surfing wave: it's the whole ocean moving at once.",
+      "on_screen_text": "The whole ocean moves",
+      "highlight_words": [
+        "whole"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "tsu_outro",
+      "narration": "Share this video with someone who lives near the sea. Knowing this can save lives.",
+      "on_screen_text": "Share it",
+      "highlight_words": [
+        "Share"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "How a tsunami forms, why it travels so fast, why it grows near the coast and how to stay safe. With the cases of Chile 1960 and Ecuador 1906. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "tsunami",
+    "earthquake",
+    "ocean",
+    "safety",
+    "geology",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s14",
+    "at": 0.7,
+    "text": "How is a giant wave born?",
+    "highlight": [
+      "giant"
+    ]
+  },
+  "sources": [
+    {
+      "title": "What is a tsunami?",
+      "url": "https://oceanservice.noaa.gov/facts/tsunami.html",
+      "publisher": "NOAA"
+    },
+    {
+      "title": "Tsunami safety",
+      "url": "https://www.weather.gov/safety/tsunami",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "1960 Valdivia earthquake",
+      "url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "1906 Ecuador–Colombia earthquake",
+      "url": "https://en.wikipedia.org/wiki/1906_Ecuador%E2%80%93Colombia_earthquake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tsunami",
+      "url": "https://en.wikipedia.org/wiki/Tsunami",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Subduction",
+      "url": "https://en.wikipedia.org/wiki/Subduction",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "In deep water a tsunami can travel at over 800 km/h.",
+      "scene_id": "s11",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/tsunami.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "A sudden retreat of the sea can signal a tsunami; head to high ground.",
+      "scene_id": "s17",
+      "source_urls": [
+        "https://www.weather.gov/safety/tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The tsunami from the 1960 Valdivia earthquake reached Japan about 22 hours later.",
+      "scene_id": "s13",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The 1906 Ecuador–Colombia earthquake, magnitude about 8.8, caused a tsunami.",
+      "scene_id": "s1",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/1906_Ecuador%E2%80%93Colombia_earthquake"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

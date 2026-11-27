@@ -1,0 +1,510 @@
+{
+  "topic": "La ciencia del rayo",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Se puede CONTROLAR UN RAYO? La ciencia del poder del trueno ⚡",
+  "hook": "Hay superhéroes y dioses del cine que lanzan rayos con un martillo o con las manos. ¿Podría alguien controlar un rayo de verdad?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Hay superhéroes y dioses del cine que lanzan rayos con un martillo o con las manos. ¿Podría alguien controlar un rayo de verdad?",
+      "on_screen_text": "¿Controlar un rayo?",
+      "highlight_words": [
+        "rayo?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "Antes de intentarlo, mejor conocer al enemigo: un rayo es cinco veces más caliente que la superficie del Sol.",
+      "on_screen_text": "Más caliente que el Sol",
+      "highlight_words": [
+        "Sol"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "Soy Leo, y hoy vamos a ver qué es de verdad un rayo y hasta dónde los humanos hemos aprendido a guiarlo.",
+      "on_screen_text": "Guiar un rayo",
+      "highlight_words": [
+        "Guiar"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "Todo empieza dentro de una nube de tormenta. Allí el viento sube con fuerza y hace chocar cristales de hielo con granizo blando.",
+      "on_screen_text": "Dentro de la tormenta",
+      "highlight_words": [
+        "tormenta"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Una fábrica de electricidad"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_charges",
+      "narration": "Millones de choques separan las cargas: arriba quedan las positivas, abajo las negativas, y el suelo se carga al revés.",
+      "on_screen_text": "Cargas separadas",
+      "highlight_words": [
+        "Cargas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_charges",
+      "narration": "Es parecido a frotar un globo en el pelo, pero a escala gigante: la nube se carga como una batería enorme.",
+      "on_screen_text": "Como un globo frotado",
+      "highlight_words": [
+        "globo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "En Venezuela, sobre el lago de Maracaibo, hay tormentas casi todas las noches: es el famoso relámpago del Catatumbo.",
+      "on_screen_text": "El relámpago del Catatumbo",
+      "highlight_words": [
+        "Catatumbo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "Algunas nubes de tormenta miden más de diez kilómetros de alto, más que el monte Everest.",
+      "on_screen_text": "Nubes más altas que el Everest",
+      "highlight_words": [
+        "Everest"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "Cuando la diferencia de cargas es enorme, baja de la nube un canal de aire cargado, a saltos, buscando el suelo.",
+      "on_screen_text": "Baja a saltos",
+      "highlight_words": [
+        "saltos"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Así cae un rayo"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "Desde el suelo sube otra chispa a su encuentro. Cuando se tocan, la corriente viaja de golpe: ese es el destello.",
+      "on_screen_text": "¡El destello!",
+      "highlight_words": [
+        "destello!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "Ese canal calienta el aire a unos treinta mil grados en una fracción de segundo.",
+      "on_screen_text": "30.000 grados",
+      "highlight_words": [
+        "30.000"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "Cuando un rayo cae sobre la arena, puede fundirla y formar tubos de vidrio llamados fulguritas.",
+      "on_screen_text": "Vidrio hecho por rayos",
+      "highlight_words": [
+        "Vidrio"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_thunder",
+      "narration": "El aire se expande tan rápido que estalla como una explosión. Eso es el trueno.",
+      "on_screen_text": "Así nace el trueno",
+      "highlight_words": [
+        "trueno"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_thunder",
+      "narration": "De cerca suena como un latigazo seco; de lejos, como un rugido largo, porque el sonido llega desde distintas partes del canal.",
+      "on_screen_text": "Latigazo o rugido",
+      "highlight_words": [
+        "rugido"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "Como la luz llega antes que el sonido, cuenta los segundos entre el destello y el trueno: cada tres son más o menos un kilómetro.",
+      "on_screen_text": "3 segundos ≈ 1 km",
+      "highlight_words": [
+        "kilómetro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "¿Podemos controlarlo? En parte sí. Hace más de doscientos años, Benjamin Franklin inventó el pararrayos.",
+      "on_screen_text": "El pararrayos",
+      "highlight_words": [
+        "pararrayos"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Domar el rayo"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "Una punta de metal conectada a tierra le ofrece al rayo un camino seguro, y así protege edificios enteros.",
+      "on_screen_text": "Un camino seguro",
+      "highlight_words": [
+        "seguro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "Y sí, un rayo puede caer dos veces en el mismo lugar: el Empire State de Nueva York recibe unos veinte rayos al año.",
+      "on_screen_text": "Dos veces, y más",
+      "highlight_words": [
+        "veces"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "Los aviones también reciben rayos, pero están diseñados para que la corriente pase por fuera sin dañar a los pasajeros.",
+      "on_screen_text": "Aviones a prueba de rayos",
+      "highlight_words": [
+        "Aviones"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "Lo más cercano a lanzar rayos: los científicos disparan pequeños cohetes que llevan un cable hacia la tormenta, y el rayo baja por él.",
+      "on_screen_text": "Rayos a pedido",
+      "highlight_words": [
+        "pedido"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "Así estudian los rayos de cerca, y prueban protecciones para aviones, cables eléctricos y edificios.",
+      "on_screen_text": "Estudiarlos de cerca",
+      "highlight_words": [
+        "cerca"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "Ese canal busca el camino más fácil por el aire, por eso los rayos se ven torcidos y llenos de ramas.",
+      "on_screen_text": "Torcidos y con ramas",
+      "highlight_words": [
+        "ramas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_storm",
+      "narration": "Pero guardar la energía de un rayo no es práctico: dura apenas un instante y cae donde quiere.",
+      "on_screen_text": "Difícil de atrapar",
+      "highlight_words": [
+        "atrapar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_storm",
+      "narration": "Además, casi toda su energía se convierte en luz, calor y sonido en un solo instante.",
+      "on_screen_text": "Luz, calor y sonido",
+      "highlight_words": [
+        "calor"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Lo más importante: si escuchas truenos, ya estás lo bastante cerca para que te alcance un rayo.",
+      "on_screen_text": "Si truena, cuidado",
+      "highlight_words": [
+        "truena"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Cómo protegerte"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Entra a un edificio o a un auto cerrado, y aléjate de árboles solos, del agua y de lugares abiertos.",
+      "on_screen_text": "Busca refugio",
+      "highlight_words": [
+        "refugio"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Cada segundo caen decenas de rayos en algún lugar del planeta, de día y de noche.",
+      "on_screen_text": "Decenas por segundo",
+      "highlight_words": [
+        "segundo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "Espera unos treinta minutos después del último trueno antes de volver a salir.",
+      "on_screen_text": "Espera 30 minutos",
+      "highlight_words": [
+        "30"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "Así que nadie lanza rayos con las manos, pero la ciencia sí aprendió a guiarlos, estudiarlos y protegernos de ellos.",
+      "on_screen_text": "La ciencia lo guía",
+      "highlight_words": [
+        "ciencia"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "Todo ocurre muy rápido: el destello dura mucho menos de un segundo, aunque a veces parpadea varias veces.",
+      "on_screen_text": "Un destello que parpadea",
+      "highlight_words": [
+        "parpadea"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ray_outro",
+      "narration": "¿Qué otro poder de película quieres que analicemos? Escríbelo en los comentarios.",
+      "on_screen_text": "¿Qué poder sigue?",
+      "highlight_words": [
+        "poder"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "En el cine hay dioses y héroes que lanzan rayos. ¿Qué es de verdad un rayo, cuánto calienta, por qué suena el trueno y hasta dónde podemos guiarlo los humanos? Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "rayos",
+    "tormenta",
+    "electricidad",
+    "superpoderes",
+    "fisica",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s10",
+    "at": 0.55,
+    "text": "¿Se puede controlar un rayo?",
+    "highlight": [
+      "rayo?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Lightning science",
+      "url": "https://www.weather.gov/safety/lightning-science-overview",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "Thunder",
+      "url": "https://www.weather.gov/safety/lightning-science-thunder",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "Lightning myths",
+      "url": "https://www.weather.gov/safety/lightning-myths",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "Lightning",
+      "url": "https://en.wikipedia.org/wiki/Lightning",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Catatumbo lightning",
+      "url": "https://en.wikipedia.org/wiki/Catatumbo_lightning",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Lightning rod",
+      "url": "https://en.wikipedia.org/wiki/Lightning_rod",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Un rayo puede calentar el aire a unos 30.000 °C, unas cinco veces la superficie del Sol.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-overview"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El trueno es el sonido de la rápida expansión del aire calentado por el rayo.",
+      "scene_id": "s13",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-thunder"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un rayo sí puede caer dos veces en el mismo lugar; el Empire State recibe unos 20 al año.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-myths"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El relámpago del Catatumbo, en Venezuela, es una de las zonas con más rayos del planeta.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Catatumbo_lightning"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los científicos provocan rayos con cohetes que llevan un cable conductor.",
+      "scene_id": "s10",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lightning"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

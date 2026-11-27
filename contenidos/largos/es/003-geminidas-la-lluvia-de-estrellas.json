@@ -1,0 +1,505 @@
+{
+  "topic": "Lluvia de estrellas Gemínidas",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "La MEJOR lluvia de estrellas del año: las Gemínidas ✨",
+  "hook": "Esta semana el cielo prepara uno de los mejores espectáculos de estrellas fugaces del año.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "met_hook",
+      "narration": "Esta semana el cielo prepara uno de los mejores espectáculos de estrellas fugaces del año.",
+      "on_screen_text": "El mejor show del cielo",
+      "highlight_words": [
+        "show"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "Se llama la lluvia de las Gemínidas, y su mejor momento llega la noche del trece al catorce de diciembre.",
+      "on_screen_text": "13–14 de diciembre",
+      "highlight_words": [
+        "diciembre"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "Con un cielo oscuro se pueden ver decenas por hora. Soy Leo, y hoy te explico de dónde salen y cómo verlas.",
+      "on_screen_text": "Decenas por hora",
+      "highlight_words": [
+        "Decenas"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_grain",
+      "narration": "Primera sorpresa: una estrella fugaz no es una estrella. Casi siempre es un granito de polvo, del tamaño de un grano de arena.",
+      "on_screen_text": "Un grano de arena",
+      "highlight_words": [
+        "arena"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "¿Qué es una estrella fugaz?"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_grain",
+      "narration": "Los más grandes, del tamaño de una canica, producen bolas de fuego que iluminan el cielo por un instante.",
+      "on_screen_text": "Bolas de fuego",
+      "highlight_words": [
+        "fuego"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Ese granito entra en la atmósfera a decenas de kilómetros por segundo, muchísimo más rápido que una bala.",
+      "on_screen_text": "Más rápido que una bala",
+      "highlight_words": [
+        "bala"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "A unos cien kilómetros de altura choca con el aire tan rápido que lo calienta hasta hacerlo brillar.",
+      "on_screen_text": "El aire brilla",
+      "highlight_words": [
+        "brillar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Ese destello, que dura menos de un segundo, es lo que llamamos estrella fugaz. El granito se desintegra allá arriba.",
+      "on_screen_text": "Menos de un segundo",
+      "highlight_words": [
+        "segundo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "Por eso no hay ningún peligro: casi nada llega al suelo, y lo poco que llega es polvo finísimo.",
+      "on_screen_text": "Sin peligro",
+      "highlight_words": [
+        "peligro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "¿Y por qué tantas en diciembre? La mayoría de las lluvias de estrellas nacen del polvo que sueltan los cometas.",
+      "on_screen_text": "Polvo de cometas",
+      "highlight_words": [
+        "cometas"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Un asteroide de piedra"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Pero las Gemínidas son especiales: vienen de un asteroide llamado Faetón, un nombre tomado de los mitos griegos.",
+      "on_screen_text": "Vienen de Faetón",
+      "highlight_words": [
+        "Faetón"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Faetón da una vuelta al Sol cada año y medio, más o menos, y deja un rastro de polvo a lo largo de su camino.",
+      "on_screen_text": "Un rastro de polvo",
+      "highlight_words": [
+        "rastro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Cada diciembre, la Tierra cruza ese rastro, y millones de granitos entran en nuestra atmósfera.",
+      "on_screen_text": "La Tierra cruza el rastro",
+      "highlight_words": [
+        "cruza"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Por eso a Faetón a veces lo llaman cometa de roca: se comporta un poco como un cometa, aunque parece un asteroide.",
+      "on_screen_text": "Un cometa de roca",
+      "highlight_words": [
+        "roca"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "Faetón se acerca muchísimo al Sol. Los científicos creen que el calor lo agrieta y le arranca ese polvo.",
+      "on_screen_text": "El Sol lo agrieta",
+      "highlight_words": [
+        "agrieta"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "Ahora, cómo verlas. Todas parecen salir de un mismo punto del cielo, en la constelación de Géminis.",
+      "on_screen_text": "Salen de Géminis",
+      "highlight_words": [
+        "Géminis"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Cómo verlas"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "Por eso se llaman Gemínidas. Pero no mires solo ahí: aparecen en cualquier parte del cielo.",
+      "on_screen_text": "Aparecen por todo el cielo",
+      "highlight_words": [
+        "todo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Busca un lugar lejos de las luces de la ciudad. Cuanto más oscuro esté el cielo, más estrellas fugaces verás.",
+      "on_screen_text": "Lejos de las luces",
+      "highlight_words": [
+        "luces"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "Este año la Luna será apenas un hilito durante el máximo, así que el cielo estará bastante oscuro.",
+      "on_screen_text": "La Luna no molestará",
+      "highlight_words": [
+        "Luna"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Acuéstate mirando hacia arriba y deja que tus ojos se acostumbren a la oscuridad durante unos veinte minutos.",
+      "on_screen_text": "Veinte minutos de paciencia",
+      "highlight_words": [
+        "paciencia"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "No necesitas telescopio ni binoculares: solo tus ojos, una manta y un poco de paciencia.",
+      "on_screen_text": "Solo tus ojos",
+      "highlight_words": [
+        "ojos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "La mejor hora suele ser pasada la medianoche, cuando Géminis está más alto en el cielo.",
+      "on_screen_text": "Después de medianoche",
+      "highlight_words": [
+        "medianoche"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Las Gemínidas son más lentas que otras lluvias: entran a unos treinta y cinco kilómetros por segundo.",
+      "on_screen_text": "Lentas… a 35 km/s",
+      "highlight_words": [
+        "35"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Datos que sorprenden"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "Por eso muchas se ven largas y brillantes, y a veces dejan destellos de colores.",
+      "on_screen_text": "Destellos de colores",
+      "highlight_words": [
+        "colores"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "Si hay nubes, no te preocupes: la lluvia dura varios días, así que puedes intentarlo otra noche cercana.",
+      "on_screen_text": "Varias noches",
+      "highlight_words": [
+        "noches"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "Desde Ecuador y casi toda Latinoamérica también se ven, aunque Géminis aparece más cerca del horizonte norte.",
+      "on_screen_text": "También desde Latinoamérica",
+      "highlight_words": [
+        "Latinoamérica"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Y un dato curioso: cada día cae a la Tierra polvo del espacio. Parte de ese polvo podría estar en el techo de tu casa.",
+      "on_screen_text": "Polvo del espacio en tu techo",
+      "highlight_words": [
+        "techo"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Deja el celular a un lado: su pantalla brillante hace que tus ojos pierdan la adaptación a la oscuridad.",
+      "on_screen_text": "Guarda el celular",
+      "highlight_words": [
+        "celular"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "Así que esta semana apaga las luces, mira hacia arriba y pide todos los deseos que quieras.",
+      "on_screen_text": "Pide tus deseos",
+      "highlight_words": [
+        "deseos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "Y si quieres un reto, cuenta cuántas ves en una hora y compáralo con tus amigos.",
+      "on_screen_text": "El reto de contarlas",
+      "highlight_words": [
+        "reto"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "met_outro",
+      "narration": "Cuéntame en los comentarios cuántas estrellas fugaces lograste ver.",
+      "on_screen_text": "¿Cuántas viste?",
+      "highlight_words": [
+        "Cuántas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Del 13 al 14 de diciembre llega la lluvia de las Gemínidas. Te explicamos qué es una estrella fugaz, por qué esta lluvia nace de un asteroide y cómo verla. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "geminidas",
+    "estrellasfugaces",
+    "lluviadeestrellas",
+    "astronomia",
+    "espacio",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s2",
+    "at": 0.6,
+    "text": "La mejor lluvia de estrellas del año",
+    "highlight": [
+      "estrellas"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Geminids",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "3200 Phaethon",
+      "url": "https://en.wikipedia.org/wiki/3200_Phaethon",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Geminids",
+      "url": "https://en.wikipedia.org/wiki/Geminids",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Meteoroid",
+      "url": "https://en.wikipedia.org/wiki/Meteoroid",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Micrometeorite",
+      "url": "https://en.wikipedia.org/wiki/Micrometeorite",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Las Gemínidas tienen su máximo hacia el 13 y 14 de diciembre.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Geminids"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El cuerpo de origen de las Gemínidas es el asteroide 3200 Faetón.",
+      "scene_id": "s10",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/3200_Phaethon"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los meteoros Gemínidas entran a unos 35 km/s.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La mayoría de los meteoros los producen partículas del tamaño de un grano de arena.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meteoroid"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Cada día cae a la Tierra polvo de origen espacial, parte en forma de micrometeoritos.",
+      "scene_id": "s18",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Micrometeorite"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

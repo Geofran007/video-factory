@@ -1,0 +1,490 @@
+{
+  "topic": "La ciencia del magnetismo y los superpoderes",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Se puede CONTROLAR EL METAL como un superhéroe? 🧲",
+  "hook": "En el cine hay superhéroes que levantan coches, puentes y barcos de metal con solo mover la mano.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ima_hook",
+      "narration": "En el cine hay superhéroes que levantan coches, puentes y barcos de metal con solo mover la mano.",
+      "on_screen_text": "Mover metal con la mano",
+      "highlight_words": [
+        "metal"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "¿Sería posible en la vida real? La respuesta te va a sorprender, porque una parte ya existe.",
+      "on_screen_text": "¿Es posible de verdad?",
+      "highlight_words": [
+        "posible"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_magnet",
+      "narration": "Soy Leo, y hoy vamos a descubrir la ciencia del magnetismo, la fuerza invisible que mueve el metal.",
+      "on_screen_text": "La fuerza invisible",
+      "highlight_words": [
+        "invisible"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_magnet",
+      "narration": "La palabra magnetismo viene de Magnesia, una región de la antigua Grecia donde se encontraban piedras que atraían el hierro.",
+      "on_screen_text": "Piedras de Magnesia",
+      "highlight_words": [
+        "Magnesia"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "Todo imán tiene dos polos. Los polos opuestos se atraen y los iguales se empujan, aunque no se toquen.",
+      "on_screen_text": "Polos que se atraen",
+      "highlight_words": [
+        "atraen"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "¿Qué es un imán?"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "Y si partes un imán por la mitad, no separas los polos: obtienes dos imanes, cada uno con su norte y su sur.",
+      "on_screen_text": "Siempre dos polos",
+      "highlight_words": [
+        "polos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_domains",
+      "narration": "Dentro del hierro hay zonas diminutas que funcionan como imanes pequeñitos. Normalmente apuntan en todas direcciones.",
+      "on_screen_text": "Imanes diminutos",
+      "highlight_words": [
+        "diminutos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_domains",
+      "narration": "Cuando se alinean todos hacia el mismo lado, el hierro se vuelve un imán. Por eso un imán atrae clavos, pero no madera ni plástico.",
+      "on_screen_text": "Todos alineados",
+      "highlight_words": [
+        "alineados"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Ahora, el truco más poderoso: la electricidad. Una corriente que pasa por un cable enrollado crea un campo magnético.",
+      "on_screen_text": "Electricidad = magnetismo",
+      "highlight_words": [
+        "Electricidad"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Imanes que se encienden"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Eso es un electroimán. En los desguaces, grúas con electroimanes levantan coches enteros, y los sueltan al apagar la corriente.",
+      "on_screen_text": "Grúas que levantan coches",
+      "highlight_words": [
+        "coches"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Así que levantar un coche con magnetismo es real. Solo que se necesita mucha energía, no un gesto con la mano.",
+      "on_screen_text": "Real, pero con energía",
+      "highlight_words": [
+        "energía"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_train",
+      "narration": "Con imanes también se pueden hacer flotar trenes. El tren maglev de Shanghái llegó a unos cuatrocientos treinta kilómetros por hora.",
+      "on_screen_text": "Trenes que flotan",
+      "highlight_words": [
+        "flotan"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_train",
+      "narration": "Como no tocan los rieles, casi no tienen fricción. Flotan unos centímetros sobre la vía.",
+      "on_screen_text": "Sin tocar los rieles",
+      "highlight_words": [
+        "rieles"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "En los hospitales hay imanes gigantes: las máquinas de resonancia, que usan campos de una coma cinco a tres teslas.",
+      "on_screen_text": "Imanes de hospital",
+      "highlight_words": [
+        "hospital"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Los imanes más fuertes"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "Un imán de nevera tiene unos cinco milésimos de tesla. La resonancia es cientos de veces más fuerte.",
+      "on_screen_text": "Cientos de veces más fuerte",
+      "highlight_words": [
+        "Cientos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "Gracias a esos imanes gigantes, los médicos pueden ver el interior del cuerpo sin hacer ni un corte.",
+      "on_screen_text": "Ver por dentro",
+      "highlight_words": [
+        "dentro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "Y con un imán todavía más fuerte, de unos dieciséis teslas, unos científicos hicieron flotar una rana viva.",
+      "on_screen_text": "¡Una rana flotando!",
+      "highlight_words": [
+        "rana"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "No le pasó nada. El agua de su cuerpo es repelida muy débilmente por los imanes, y con un campo así de fuerte, basta para que flote.",
+      "on_screen_text": "El agua es repelida",
+      "highlight_words": [
+        "repelida"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_blood",
+      "narration": "¿Podría un imán controlar a una persona por el hierro de su sangre? No: ese hierro está repartido en moléculas y casi no responde a los imanes.",
+      "on_screen_text": "La sangre no se pega",
+      "highlight_words": [
+        "sangre"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "¿Y en el cuerpo humano?"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_blood",
+      "narration": "Por eso puedes entrar a una resonancia sin que tu sangre salga volando. Eso sí, el metal suelto queda fuera de la sala.",
+      "on_screen_text": "A salvo en la resonancia",
+      "highlight_words": [
+        "salvo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "Y el imán más grande que conoces está bajo tus pies. El núcleo de la Tierra tiene hierro líquido que se mueve y genera un campo magnético.",
+      "on_screen_text": "La Tierra es un imán",
+      "highlight_words": [
+        "imán"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El imán más grande"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_north",
+      "narration": "Por eso las brújulas apuntan al norte. Y ese campo nos protege de partículas que vienen del Sol.",
+      "on_screen_text": "Las brújulas apuntan al norte",
+      "highlight_words": [
+        "norte"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_moving",
+      "narration": "Además, el polo norte magnético no está quieto: se mueve decenas de kilómetros cada año.",
+      "on_screen_text": "El polo se mueve",
+      "highlight_words": [
+        "mueve"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_shield",
+      "narration": "Cuando esas partículas chocan con el aire cerca de los polos, el cielo se ilumina con auroras.",
+      "on_screen_text": "Nacen las auroras",
+      "highlight_words": [
+        "auroras"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_animals",
+      "narration": "Algunos animales sí tienen un poder magnético: aves y tortugas marinas sienten el campo de la Tierra para orientarse en sus viajes.",
+      "on_screen_text": "Animales con brújula",
+      "highlight_words": [
+        "brújula"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_flip",
+      "narration": "Y el campo de la Tierra cambia: los polos magnéticos se han invertido muchas veces en la historia del planeta.",
+      "on_screen_text": "Los polos se invierten",
+      "highlight_words": [
+        "invierten"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Así que mover metal no es magia: es electricidad y magnetismo, la misma fuerza que mueve motores, trenes y hospitales.",
+      "on_screen_text": "No es magia, es física",
+      "highlight_words": [
+        "física"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "También hay electroimanes en los timbres, en los parlantes y en los motores eléctricos que mueven ventiladores y autos.",
+      "on_screen_text": "Electroimanes por todas partes",
+      "highlight_words": [
+        "partes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ima_outro",
+      "narration": "¿Qué superpoder quieres que analicemos con ciencia? Escríbelo en los comentarios.",
+      "on_screen_text": "¿Qué superpoder sigue?",
+      "highlight_words": [
+        "superpoder"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Los superhéroes que mueven metal con la mente nos encantan. ¿Qué dice la física? Imanes, electroimanes, trenes que flotan, una rana levitando y el gran imán que es la Tierra. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "magnetismo",
+    "imanes",
+    "superpoderes",
+    "fisica",
+    "superheroes",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s2",
+    "at": 0.7,
+    "text": "¿Se puede controlar el metal?",
+    "highlight": [
+      "metal?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Magnetism",
+      "url": "https://en.wikipedia.org/wiki/Magnetism",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Electromagnet",
+      "url": "https://en.wikipedia.org/wiki/Electromagnet",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic levitation",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_levitation",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Shanghai maglev train",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_maglev_train",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic resonance imaging",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetoreception",
+      "url": "https://en.wikipedia.org/wiki/Magnetoreception",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "En 1997 se hizo levitar una rana viva con un campo magnético de unos 16 teslas (diamagnetismo).",
+      "scene_id": "s17",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_levitation"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El tren maglev de Shanghái alcanzó unos 430 km/h en servicio.",
+      "scene_id": "s12",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shanghai_maglev_train"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los equipos de resonancia magnética usan campos típicos de 1,5 a 3 teslas.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El campo magnético de la Tierra se genera por el movimiento del hierro líquido del núcleo externo.",
+      "scene_id": "s21",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Aves y tortugas marinas usan el campo magnético para orientarse.",
+      "scene_id": "s25",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetoreception"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

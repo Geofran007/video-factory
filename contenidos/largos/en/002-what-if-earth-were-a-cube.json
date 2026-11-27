@@ -1,0 +1,479 @@
+{
+  "topic": "What if Earth were a cube",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "What If Earth Were a CUBE? 🧊🌍",
+  "hook": "What would happen if tomorrow Earth woke up as a giant cube, like a planet made of blocks?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cub_hook",
+      "narration": "What would happen if tomorrow Earth woke up as a giant cube, like a planet made of blocks?",
+      "on_screen_text": "What if Earth were a cube?",
+      "highlight_words": [
+        "cube?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Spoiler: the seas would turn into perfect circles, and at the corners you couldn't even breathe.",
+      "on_screen_text": "Round seas, airless corners",
+      "highlight_words": [
+        "airless"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "I'm Leo, and today we'll build a square planet with real physics, to understand why ours is round.",
+      "on_screen_text": "A square planet",
+      "highlight_words": [
+        "square"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "It all starts with gravity. It doesn't pull down, as we think, but toward the center of the planet.",
+      "on_screen_text": "Toward the center",
+      "highlight_words": [
+        "center"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Gravity rules"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "On a sphere, the center is the same distance from every point on the surface, so the ground feels flat everywhere.",
+      "on_screen_text": "On a sphere, all is flat",
+      "highlight_words": [
+        "flat"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "But on a cube, the middle of each face is closer to the center than the edges and corners are.",
+      "on_screen_text": "The cube is different",
+      "highlight_words": [
+        "different"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "That's why anywhere in the world, down always means toward Earth's center, even on the other side of the planet.",
+      "on_screen_text": "Down means the center",
+      "highlight_words": [
+        "center"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "To gravity, the middle of each face would be a valley, and walking toward an edge would mean climbing an ever steeper mountain.",
+      "on_screen_text": "It's all uphill",
+      "highlight_words": [
+        "uphill"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "At Earth's size, a corner would sit about seventeen hundred kilometers up. Far higher than any real mountain.",
+      "on_screen_text": "Towering corners",
+      "highlight_words": [
+        "Towering"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "Planes couldn't cross the edges either, because there would be no air there to hold up their wings.",
+      "on_screen_text": "No air to fly",
+      "highlight_words": [
+        "fly"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Now, about water: it always flows to the lowest place, so all the oceans would pour into the middle of the faces.",
+      "on_screen_text": "Water flows to the middle",
+      "highlight_words": [
+        "middle"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Seas and air"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "We'd have six round seas, one on each face, like six blue eyes staring into space.",
+      "on_screen_text": "Six round seas",
+      "highlight_words": [
+        "Six"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "The same would happen to the air. The atmosphere would also gather over the middle of each face.",
+      "on_screen_text": "The air sinks too",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "At the edges and corners there would be almost no air: frozen zones with no water and no life, like being in space.",
+      "on_screen_text": "Edges with no air",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Life would crowd into green rings around each sea, on the rim of each valley.",
+      "on_screen_text": "Six islands of life",
+      "highlight_words": [
+        "life"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Cities would be built along those shores, and rivers would run down the slopes into each sea.",
+      "on_screen_text": "Rivers to the middle",
+      "highlight_words": [
+        "Rivers"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "And day and night? On a spinning cube, the Sun would pop up suddenly as each edge rolled past.",
+      "on_screen_text": "Sudden sunrises",
+      "highlight_words": [
+        "Sudden"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Strange days"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "A whole face would go from night to day almost instantly, without the long sunsets we know.",
+      "on_screen_text": "No long sunsets",
+      "highlight_words": [
+        "sunsets"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "Seasons would be strange too: depending on how the cube is tilted, one face could spend months facing the Sun.",
+      "on_screen_text": "Strange seasons",
+      "highlight_words": [
+        "Strange"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "And traveling to another face would be a mountaineering expedition in a spacesuit, crossing an airless edge.",
+      "on_screen_text": "Travel means climbing",
+      "highlight_words": [
+        "climbing"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "But there's a problem: a cube planet wouldn't last. Its own gravity would crush it.",
+      "on_screen_text": "It wouldn't last",
+      "highlight_words": [
+        "last"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Why it can't exist"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "The towering corners would press down so hard on the rock below that it would slowly sink and flow away.",
+      "on_screen_text": "The corners sink",
+      "highlight_words": [
+        "sink"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Over time, everything would settle at the same distance from the center. In other words, it would become a sphere.",
+      "on_screen_text": "It becomes a sphere",
+      "highlight_words": [
+        "sphere"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "That's why all planets and big moons are round: their gravity is strong enough to round them off.",
+      "on_screen_text": "That's why they're round",
+      "highlight_words": [
+        "round"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Scientists estimate that from a few hundred kilometers across, a body of rock or ice rounds itself off.",
+      "on_screen_text": "A few hundred km is enough",
+      "highlight_words": [
+        "hundred"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "Small asteroids, on the other hand, can be shaped like potatoes, because their gravity is too weak.",
+      "on_screen_text": "Small ones look like potatoes",
+      "highlight_words": [
+        "potatoes"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "Surprise: not even Earth is a perfect sphere. Because it spins, it bulges a little at the equator.",
+      "on_screen_text": "Earth isn't perfect either",
+      "highlight_words": [
+        "perfect"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_globe",
+      "narration": "That's why the top of Chimborazo, in Ecuador, is the point farthest from Earth's center.",
+      "on_screen_text": "Chimborazo wins",
+      "highlight_words": [
+        "Chimborazo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_hook",
+      "narration": "So even though a block planet is fun in video games, gravity always wins in the end.",
+      "on_screen_text": "Gravity wins",
+      "highlight_words": [
+        "wins"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cub_outro",
+      "narration": "What strange shape should we give Earth next time? Tell me in the comments.",
+      "on_screen_text": "Which shape next?",
+      "highlight_words": [
+        "shape"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Imagine a planet made of blocks. Where would the seas, the air and the mountains be? The physics of gravity has the answer, and it explains why planets are round. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "whatif",
+    "earth",
+    "gravity",
+    "planets",
+    "physics",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.5,
+    "text": "What if Earth were a cube?",
+    "highlight": [
+      "cube?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Hydrostatic equilibrium",
+      "url": "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gravity",
+      "url": "https://en.wikipedia.org/wiki/Gravity",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Atmosphere of Earth",
+      "url": "https://en.wikipedia.org/wiki/Atmosphere_of_Earth",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Equatorial bulge",
+      "url": "https://en.wikipedia.org/wiki/Equatorial_bulge",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Massive enough bodies pull themselves into a nearly round shape (hydrostatic equilibrium).",
+      "scene_id": "s21",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "A body's gravity pulls toward its center of mass.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gravity"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Most of Earth's air lies within the first few kilometers above the surface.",
+      "scene_id": "s13",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atmosphere_of_Earth"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Earth is slightly wider at the equator because of its spin.",
+      "scene_id": "s27",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Equatorial_bulge"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

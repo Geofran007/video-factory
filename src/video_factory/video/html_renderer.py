@@ -105,8 +105,8 @@ def render_thumbnail(templates_dir: Path, timeline: Timeline, scene_id: str, at:
             page.on("pageerror", lambda e: errors.append(str(e)))
             page.goto(page_url, wait_until="load")
             page.evaluate("tl => VF.init(tl)", json.loads(timeline.model_dump_json()))
-            page.evaluate("t => VF.seek(t)", t)
             page.evaluate("([text, hl]) => VF.thumb(text, hl)", [text, highlight])
+            page.evaluate("t => VF.seek(t)", t)
             png = out.with_suffix(".png")
             page.screenshot(path=str(png))
         finally:

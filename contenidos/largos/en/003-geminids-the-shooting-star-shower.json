@@ -1,0 +1,505 @@
+{
+  "topic": "Geminid meteor shower",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "The BEST Meteor Shower of the Year: the Geminids ✨",
+  "hook": "This week the sky is getting ready for one of the best shooting star shows of the year.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "met_hook",
+      "narration": "This week the sky is getting ready for one of the best shooting star shows of the year.",
+      "on_screen_text": "The sky's best show",
+      "highlight_words": [
+        "show"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "It's called the Geminid meteor shower, and its best moment arrives on the night of December thirteenth to fourteenth.",
+      "on_screen_text": "December 13–14",
+      "highlight_words": [
+        "December"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "Under a dark sky you can see dozens per hour. I'm Leo, and today I'll explain where they come from and how to see them.",
+      "on_screen_text": "Dozens per hour",
+      "highlight_words": [
+        "Dozens"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_grain",
+      "narration": "First surprise: a shooting star isn't a star. It's almost always a speck of dust, about the size of a grain of sand.",
+      "on_screen_text": "A grain of sand",
+      "highlight_words": [
+        "sand"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "What is a shooting star?"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_grain",
+      "narration": "Bigger ones, the size of a marble, make fireballs that light up the sky for an instant.",
+      "on_screen_text": "Fireballs",
+      "highlight_words": [
+        "Fireballs"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "That speck enters the atmosphere at tens of kilometers per second, far faster than a bullet.",
+      "on_screen_text": "Faster than a bullet",
+      "highlight_words": [
+        "bullet"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "About a hundred kilometers up, it slams into the air so fast that it heats it until it glows.",
+      "on_screen_text": "The air glows",
+      "highlight_words": [
+        "glows"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "That flash, lasting less than a second, is what we call a shooting star. The speck burns up high above.",
+      "on_screen_text": "Less than a second",
+      "highlight_words": [
+        "second"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "So there's no danger at all: almost nothing reaches the ground, and what does is extremely fine dust.",
+      "on_screen_text": "No danger",
+      "highlight_words": [
+        "danger"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "So why so many in December? Most meteor showers come from dust shed by comets.",
+      "on_screen_text": "Comet dust",
+      "highlight_words": [
+        "comets"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "A stony asteroid"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "But the Geminids are special: they come from an asteroid called Phaethon, a name borrowed from Greek myths.",
+      "on_screen_text": "They come from Phaethon",
+      "highlight_words": [
+        "Phaethon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Phaethon circles the Sun about every year and a half, leaving a trail of dust along its path.",
+      "on_screen_text": "A trail of dust",
+      "highlight_words": [
+        "trail"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Every December, Earth crosses that trail, and millions of specks plunge into our atmosphere.",
+      "on_screen_text": "Earth crosses the trail",
+      "highlight_words": [
+        "crosses"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "That's why Phaethon is sometimes called a rock comet: it acts a bit like a comet, even though it looks like an asteroid.",
+      "on_screen_text": "A rock comet",
+      "highlight_words": [
+        "rock"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "Phaethon gets extremely close to the Sun. Scientists think the heat cracks it and breaks off that dust.",
+      "on_screen_text": "The Sun cracks it",
+      "highlight_words": [
+        "cracks"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "Now, how to see them. They all seem to come from one point in the sky, in the constellation Gemini.",
+      "on_screen_text": "They come from Gemini",
+      "highlight_words": [
+        "Gemini"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How to watch"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "That's why they're called Geminids. But don't look only there: they appear anywhere in the sky.",
+      "on_screen_text": "They show up everywhere",
+      "highlight_words": [
+        "everywhere"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Find a spot far from city lights. The darker the sky, the more shooting stars you'll see.",
+      "on_screen_text": "Away from the lights",
+      "highlight_words": [
+        "lights"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "This year the Moon will be just a thin sliver at the peak, so the sky will be nice and dark.",
+      "on_screen_text": "The Moon won't get in the way",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Lie back looking up and let your eyes adjust to the dark for about twenty minutes.",
+      "on_screen_text": "Twenty minutes of patience",
+      "highlight_words": [
+        "patience"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "You don't need a telescope or binoculars: just your eyes, a blanket and a little patience.",
+      "on_screen_text": "Just your eyes",
+      "highlight_words": [
+        "eyes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "The best time is usually after midnight, when Gemini is highest in the sky.",
+      "on_screen_text": "After midnight",
+      "highlight_words": [
+        "midnight"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "The Geminids are slower than other showers: they come in at about thirty-five kilometers per second.",
+      "on_screen_text": "Slow… at 35 km/s",
+      "highlight_words": [
+        "35"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Surprising facts"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "That's why many look long and bright, sometimes with flashes of color.",
+      "on_screen_text": "Flashes of color",
+      "highlight_words": [
+        "color"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_rain",
+      "narration": "If it's cloudy, don't worry: the shower lasts several days, so you can try another night nearby.",
+      "on_screen_text": "Several nights",
+      "highlight_words": [
+        "nights"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "They're visible from most of the world, though from the far south Gemini sits lower on the northern horizon.",
+      "on_screen_text": "Visible almost everywhere",
+      "highlight_words": [
+        "everywhere"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "And a fun fact: space dust falls on Earth every day. Some of it might even be on your roof.",
+      "on_screen_text": "Space dust on your roof",
+      "highlight_words": [
+        "roof"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Put your phone away: its bright screen makes your eyes lose their dark adaptation.",
+      "on_screen_text": "Put the phone away",
+      "highlight_words": [
+        "phone"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "So this week, turn off the lights, look up and make as many wishes as you like.",
+      "on_screen_text": "Make your wishes",
+      "highlight_words": [
+        "wishes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "And if you want a challenge, count how many you see in an hour and compare with your friends.",
+      "on_screen_text": "The counting challenge",
+      "highlight_words": [
+        "challenge"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "met_outro",
+      "narration": "Tell me in the comments how many shooting stars you saw.",
+      "on_screen_text": "How many did you see?",
+      "highlight_words": [
+        "many"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "On December 13–14 the Geminid meteor shower peaks. Here's what a shooting star is, why this shower comes from an asteroid, and how to watch it. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "geminids",
+    "shootingstars",
+    "meteorshower",
+    "astronomy",
+    "space",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s2",
+    "at": 0.6,
+    "text": "The best meteor shower of the year",
+    "highlight": [
+      "meteor"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Geminids",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "3200 Phaethon",
+      "url": "https://en.wikipedia.org/wiki/3200_Phaethon",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Geminids",
+      "url": "https://en.wikipedia.org/wiki/Geminids",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Meteoroid",
+      "url": "https://en.wikipedia.org/wiki/Meteoroid",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Micrometeorite",
+      "url": "https://en.wikipedia.org/wiki/Micrometeorite",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Geminids peak around December 13–14.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Geminids"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The parent body of the Geminids is the asteroid 3200 Phaethon.",
+      "scene_id": "s10",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/3200_Phaethon"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Geminid meteors enter at about 35 km/s.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Most meteors are produced by sand-grain-sized particles.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meteoroid"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Space dust falls on Earth every day, partly as micrometeorites.",
+      "scene_id": "s18",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Micrometeorite"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

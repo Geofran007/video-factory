@@ -1,0 +1,489 @@
+{
+  "topic": "Por qué diciembre es invierno en el norte y verano en el sur",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Por qué hay NAVIDAD con NIEVE y Navidad en la PLAYA? ☀️❄️",
+  "hook": "En Navidad, unos hacen muñecos de nieve y otros van a la playa. ¿Cómo puede ser el mismo día?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "En Navidad, unos hacen muñecos de nieve y otros van a la playa. ¿Cómo puede ser el mismo día?",
+      "on_screen_text": "¿Nieve o playa?",
+      "highlight_words": [
+        "playa?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "Mientras en Nueva York hace frío, en Buenos Aires o en Sídney es pleno verano.",
+      "on_screen_text": "Frío aquí, calor allá",
+      "highlight_words": [
+        "calor"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "Soy Leo, y hoy te explico por qué diciembre es invierno en el norte y verano en el sur, y qué pasa en Ecuador.",
+      "on_screen_text": "Norte, sur y Ecuador",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Mucha gente cree que es por la distancia: que en verano estamos más cerca del Sol.",
+      "on_screen_text": "¿Es la distancia?",
+      "highlight_words": [
+        "distancia?"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El gran mito"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Pero es al revés: la Tierra está más cerca del Sol a principios de enero, justo cuando en el norte es invierno.",
+      "on_screen_text": "Más cerca en enero",
+      "highlight_words": [
+        "enero"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Además, si fuera por la distancia, todo el planeta tendría verano al mismo tiempo. Y no es así.",
+      "on_screen_text": "No es la distancia",
+      "highlight_words": [
+        "distancia"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "El verdadero secreto es que el eje de la Tierra está inclinado, unos veintitrés grados y medio.",
+      "on_screen_text": "Un planeta inclinado",
+      "highlight_words": [
+        "inclinado"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El verdadero secreto"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_tilt",
+      "narration": "Sin esa inclinación no tendríamos estaciones: cada lugar tendría casi el mismo clima todo el año.",
+      "on_screen_text": "Sin inclinación, sin estaciones",
+      "highlight_words": [
+        "estaciones"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "Y ese eje apunta siempre hacia el mismo lado del espacio mientras damos la vuelta al Sol.",
+      "on_screen_text": "Siempre hacia el mismo lado",
+      "highlight_words": [
+        "mismo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "Damos una vuelta completa al Sol cada año, a unos ciento cincuenta millones de kilómetros de distancia.",
+      "on_screen_text": "150 millones de km",
+      "highlight_words": [
+        "150"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "En diciembre, el hemisferio sur queda inclinado hacia el Sol, y el norte, alejado.",
+      "on_screen_text": "El sur mira al Sol",
+      "highlight_words": [
+        "sur"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "Cuando el Sol pega de frente, concentra su calor en poco espacio. Cuando llega inclinado, reparte el mismo calor en mucho más.",
+      "on_screen_text": "Directo o inclinado",
+      "highlight_words": [
+        "Directo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "Además, en el sur los días son largos y las noches cortas. Más horas de Sol, más calor: es verano.",
+      "on_screen_text": "Días largos en el sur",
+      "highlight_words": [
+        "largos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "En junio pasa al revés: el norte se inclina hacia el Sol y tiene su verano, mientras el sur pasa frío.",
+      "on_screen_text": "En junio, al revés",
+      "highlight_words": [
+        "revés"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Medio año después"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_june",
+      "narration": "Y en la Antártida pasa lo contrario: en diciembre el Sol no se pone, y hay luz las veinticuatro horas.",
+      "on_screen_text": "Sol de medianoche",
+      "highlight_words": [
+        "medianoche"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "Hacia el veintiuno de diciembre llega el solsticio: el día más corto del año en el norte y el más largo en el sur.",
+      "on_screen_text": "El solsticio",
+      "highlight_words": [
+        "solsticio"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_december",
+      "narration": "En el extremo norte, cerca del polo, el Sol ni siquiera sale en esos días: es la noche polar.",
+      "on_screen_text": "La noche polar",
+      "highlight_words": [
+        "polar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "¿Y en Ecuador? En la línea ecuatorial el Sol pega casi de frente todo el año.",
+      "on_screen_text": "Ecuador: Sol todo el año",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "¿Y en Ecuador?"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "Por eso allí no hay cuatro estaciones marcadas, sino épocas de lluvia y épocas secas.",
+      "on_screen_text": "Lluvias y sequía",
+      "highlight_words": [
+        "Lluvias"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "Además, en Ecuador hay muchos climas: playa, páramo y selva, todo a pocas horas de viaje.",
+      "on_screen_text": "Muchos climas cerca",
+      "highlight_words": [
+        "climas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_equator",
+      "narration": "En Quito, por ejemplo, la temperatura cambia más entre el día y la noche que entre un mes y otro.",
+      "on_screen_text": "Más cambio en un día",
+      "highlight_words": [
+        "día"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_day",
+      "narration": "Y el día y la noche duran casi doce horas cada uno, en Navidad y en cualquier otra fecha.",
+      "on_screen_text": "12 horas de día",
+      "highlight_words": [
+        "12"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_cotopaxi",
+      "narration": "Ojo: en Ecuador también hay frío, pero por la altura. En la cima del Cotopaxi hay nieve todo el año.",
+      "on_screen_text": "Frío por la altura",
+      "highlight_words": [
+        "altura"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "est_distance",
+      "narration": "Sorpresa: el planeta entero recibe un poco más de luz solar en enero que en julio, porque estamos más cerca del Sol.",
+      "on_screen_text": "Más luz en enero",
+      "highlight_words": [
+        "enero"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "Pero la inclinación pesa mucho más que esa pequeña diferencia. Por eso manda en las estaciones.",
+      "on_screen_text": "La inclinación manda",
+      "highlight_words": [
+        "manda"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "Puedes probarlo con una linterna: si apuntas de frente, el círculo de luz es pequeño y brillante; si la inclinas, se estira y se vuelve más débil.",
+      "on_screen_text": "El truco de la linterna",
+      "highlight_words": [
+        "linterna"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "Así que la próxima Navidad, si estás con frío o con calor, acuérdate de que es por un planeta inclinado.",
+      "on_screen_text": "Gracias a la inclinación",
+      "highlight_words": [
+        "inclinación"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "Por eso en el sur hay árboles de Navidad junto a la piscina, y en el norte, junto a la chimenea.",
+      "on_screen_text": "Piscina o chimenea",
+      "highlight_words": [
+        "Piscina"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_hook",
+      "narration": "En Australia muchas familias celebran con un almuerzo al aire libre, y en Argentina, con calor de verano.",
+      "on_screen_text": "Navidad de verano",
+      "highlight_words": [
+        "verano"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "est_outro",
+      "narration": "¿Cómo es la Navidad donde vives, con frío o con calor? Cuéntamelo en los comentarios.",
+      "on_screen_text": "¿Frío o calor?",
+      "highlight_words": [
+        "calor?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "En diciembre unos celebran con nieve y otros en la playa. La razón es la inclinación de la Tierra, no la distancia al Sol. Y en Ecuador, ni lo uno ni lo otro. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "navidad",
+    "estaciones",
+    "tierra",
+    "sol",
+    "ecuador",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.6,
+    "text": "¿Navidad con nieve o en la playa?",
+    "highlight": [
+      "playa?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Season",
+      "url": "https://en.wikipedia.org/wiki/Season",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Apsis",
+      "url": "https://en.wikipedia.org/wiki/Apsis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "What causes the seasons?",
+      "url": "https://spaceplace.nasa.gov/seasons/",
+      "publisher": "NASA Space Place"
+    },
+    {
+      "title": "Climate of Ecuador",
+      "url": "https://en.wikipedia.org/wiki/Climate_of_Ecuador",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "December solstice",
+      "url": "https://en.wikipedia.org/wiki/December_solstice",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El eje de la Tierra está inclinado unos 23,4°.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Axial_tilt"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La Tierra está más cerca del Sol a principios de enero (perihelio).",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Apsis"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hacia el 21 de diciembre ocurre el solsticio: el día más corto en el norte y el más largo en el sur.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/December_solstice"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En Ecuador no hay cuatro estaciones marcadas, sino épocas lluviosas y secas.",
+      "scene_id": "s18",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Climate_of_Ecuador"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

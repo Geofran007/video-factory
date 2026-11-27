@@ -1,0 +1,510 @@
+{
+  "topic": "The science of lightning",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "Could You CONTROL LIGHTNING? The Science of Thunder Power ⚡",
+  "hook": "Some movie heroes and gods throw lightning with a hammer or their bare hands. Could anyone really control lightning?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Some movie heroes and gods throw lightning with a hammer or their bare hands. Could anyone really control lightning?",
+      "on_screen_text": "Control lightning?",
+      "highlight_words": [
+        "lightning?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "Before trying, know your enemy: a lightning bolt is five times hotter than the surface of the Sun.",
+      "on_screen_text": "Hotter than the Sun",
+      "highlight_words": [
+        "Sun"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "I'm Leo, and today we'll see what lightning really is and how far humans have learned to guide it.",
+      "on_screen_text": "Guiding lightning",
+      "highlight_words": [
+        "Guiding"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "It all starts inside a thundercloud. Strong winds rise and make ice crystals collide with soft hail.",
+      "on_screen_text": "Inside the storm",
+      "highlight_words": [
+        "storm"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "An electricity factory"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_charges",
+      "narration": "Millions of collisions separate the charges: positive on top, negative at the bottom, and the ground charges the opposite way.",
+      "on_screen_text": "Separated charges",
+      "highlight_words": [
+        "charges"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_charges",
+      "narration": "It's like rubbing a balloon on your hair, but on a giant scale: the cloud charges up like a huge battery.",
+      "on_screen_text": "Like a rubbed balloon",
+      "highlight_words": [
+        "balloon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "In Venezuela, over Lake Maracaibo, there are storms almost every night: the famous Catatumbo lightning.",
+      "on_screen_text": "Catatumbo lightning",
+      "highlight_words": [
+        "Catatumbo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_cloud",
+      "narration": "Some thunderclouds tower more than ten kilometers high, taller than Mount Everest.",
+      "on_screen_text": "Clouds taller than Everest",
+      "highlight_words": [
+        "Everest"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "When the charge difference gets huge, a channel of charged air steps down from the cloud, looking for the ground.",
+      "on_screen_text": "It steps down",
+      "highlight_words": [
+        "steps"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How it strikes"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "A spark rises from the ground to meet it. When they touch, the current rushes through all at once: that's the flash.",
+      "on_screen_text": "The flash!",
+      "highlight_words": [
+        "flash!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "That channel heats the air to about thirty thousand degrees Celsius in a fraction of a second.",
+      "on_screen_text": "30,000 degrees",
+      "highlight_words": [
+        "30,000"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_heat",
+      "narration": "When lightning hits sand, it can melt it into glass tubes called fulgurites.",
+      "on_screen_text": "Glass made by lightning",
+      "highlight_words": [
+        "Glass"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_thunder",
+      "narration": "The air expands so fast that it bursts like an explosion. That's thunder.",
+      "on_screen_text": "That's thunder",
+      "highlight_words": [
+        "thunder"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_thunder",
+      "narration": "Up close it sounds like a sharp crack; far away, like a long rumble, because sound arrives from different parts of the channel.",
+      "on_screen_text": "Crack or rumble",
+      "highlight_words": [
+        "rumble"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "Since light arrives before sound, count the seconds between flash and thunder: every three seconds is roughly one kilometer.",
+      "on_screen_text": "3 seconds ≈ 1 km",
+      "highlight_words": [
+        "kilometer"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "Can we control it? Partly, yes. More than two hundred years ago, Benjamin Franklin invented the lightning rod.",
+      "on_screen_text": "The lightning rod",
+      "highlight_words": [
+        "rod"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Taming lightning"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "A metal tip connected to the ground offers lightning a safe path, protecting whole buildings.",
+      "on_screen_text": "A safe path",
+      "highlight_words": [
+        "safe"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "And yes, lightning can strike the same place twice: New York's Empire State Building gets about twenty strikes a year.",
+      "on_screen_text": "Twice, and more",
+      "highlight_words": [
+        "Twice"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_tower",
+      "narration": "Planes get struck too, but they're designed so the current flows around the outside without hurting passengers.",
+      "on_screen_text": "Lightning-proof planes",
+      "highlight_words": [
+        "planes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "The closest thing to throwing lightning: scientists launch small rockets trailing a wire into a storm, and lightning follows it down.",
+      "on_screen_text": "Lightning on demand",
+      "highlight_words": [
+        "demand"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "That's how they study lightning up close and test protection for planes, power lines and buildings.",
+      "on_screen_text": "Studying it up close",
+      "highlight_words": [
+        "close"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_leader",
+      "narration": "That channel looks for the easiest path through the air, which is why lightning looks crooked and full of branches.",
+      "on_screen_text": "Crooked and branching",
+      "highlight_words": [
+        "branches"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_storm",
+      "narration": "But storing a bolt's energy isn't practical: it lasts only an instant and strikes wherever it wants.",
+      "on_screen_text": "Hard to catch",
+      "highlight_words": [
+        "catch"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_storm",
+      "narration": "Besides, almost all of its energy turns into light, heat and sound in a single instant.",
+      "on_screen_text": "Light, heat and sound",
+      "highlight_words": [
+        "heat"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Most important of all: if you can hear thunder, you're close enough to be struck by lightning.",
+      "on_screen_text": "When thunder roars",
+      "highlight_words": [
+        "thunder"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Stay safe"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Go into a building or a closed car, and stay away from lone trees, water and open spaces.",
+      "on_screen_text": "Find shelter",
+      "highlight_words": [
+        "shelter"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_hook",
+      "narration": "Every second, dozens of lightning bolts strike somewhere on the planet, day and night.",
+      "on_screen_text": "Dozens per second",
+      "highlight_words": [
+        "second"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_count",
+      "narration": "Wait about thirty minutes after the last thunder before going back outside.",
+      "on_screen_text": "Wait 30 minutes",
+      "highlight_words": [
+        "30"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "So nobody throws lightning with their hands, but science has learned to guide it, study it and protect us from it.",
+      "on_screen_text": "Science guides it",
+      "highlight_words": [
+        "Science"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ray_strike",
+      "narration": "It all happens very fast: the flash lasts far less than a second, though it sometimes flickers several times.",
+      "on_screen_text": "A flickering flash",
+      "highlight_words": [
+        "flickers"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ray_outro",
+      "narration": "Which other movie power should we analyze next? Tell me in the comments.",
+      "on_screen_text": "Which power next?",
+      "highlight_words": [
+        "power"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "In movies, gods and heroes throw lightning. What really is lightning, how hot does it get, why does thunder boom, and how far can humans guide it? Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "lightning",
+    "storm",
+    "electricity",
+    "superpowers",
+    "physics",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s10",
+    "at": 0.55,
+    "text": "Could you control lightning?",
+    "highlight": [
+      "lightning?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Lightning science",
+      "url": "https://www.weather.gov/safety/lightning-science-overview",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "Thunder",
+      "url": "https://www.weather.gov/safety/lightning-science-thunder",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "Lightning myths",
+      "url": "https://www.weather.gov/safety/lightning-myths",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "Lightning",
+      "url": "https://en.wikipedia.org/wiki/Lightning",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Catatumbo lightning",
+      "url": "https://en.wikipedia.org/wiki/Catatumbo_lightning",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Lightning rod",
+      "url": "https://en.wikipedia.org/wiki/Lightning_rod",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Lightning can heat the air to about 30,000 °C, about five times the Sun's surface.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-overview"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Thunder is the sound of air rapidly expanding after being heated by lightning.",
+      "scene_id": "s13",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-science-thunder"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Lightning can strike the same place twice; the Empire State Building gets about 20 a year.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://www.weather.gov/safety/lightning-myths"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Catatumbo lightning in Venezuela is one of the most lightning-prone places on Earth.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Catatumbo_lightning"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Scientists trigger lightning with rockets trailing a conducting wire.",
+      "scene_id": "s10",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Lightning"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

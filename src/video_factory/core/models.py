@@ -113,7 +113,11 @@ Model3D = Literal["ball", "room", "pool", "pyramid", "earth",
                   # Videos largos: asteroides y estrellas fugaces (largos-3d.js)
                   "ast_binary", "ast_dart", "ast_shrink", "ast_hera", "ast_outro", "ast_deflect", "ast_watch",
                   "ast_belt", "ast_safe", "met_hook", "met_rain", "met_radiant", "met_watch", "met_outro",
-                  "met_orbit", "met_burn", "met_grain"]
+                  "met_orbit", "met_burn", "met_grain",
+                  # Videos largos de diciembre (diciembre-3d.js)
+                  "cub_hook", "cub_gravity", "cub_seas", "cub_air", "cub_edge", "cub_round", "cub_day",
+                  "cub_outro", "nav_hook", "nav_speed", "nav_gifts", "nav_outro", "nav_kids", "nav_zones",
+                  "nav_radar", "mag_crane", "mag_frog", "mag_train", "mag_mri", "mag_blood"]
 # Caricatura: personajes originales del proyecto que actúan sobre un escenario (templates/runtime/cartoon.js).
 Setting = Literal["house", "street", "train", "great_hall", "sky", "corridor", "forest", "chessboard", "castle_night",
                   "mirror_room"]

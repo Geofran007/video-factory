@@ -1,0 +1,490 @@
+{
+  "topic": "La ciencia de los tsunamis",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "TSUNAMIS: la ciencia de la ola que cruza océanos 🌊",
+  "hook": "¿Cómo puede una sola ola cruzar un océano entero y llegar al otro lado del mundo?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "tsu_hook",
+      "narration": "¿Cómo puede una sola ola cruzar un océano entero y llegar al otro lado del mundo?",
+      "on_screen_text": "Una ola que cruza océanos",
+      "highlight_words": [
+        "océanos"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "Y lo más extraño: en alta mar casi no se nota. Un barco podría pasar por encima sin sentirla.",
+      "on_screen_text": "En alta mar casi no se nota",
+      "highlight_words": [
+        "nota"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "Soy Leo, y hoy te explico la ciencia real de los tsunamis, y lo más importante: cómo estar a salvo.",
+      "on_screen_text": "La ciencia real",
+      "highlight_words": [
+        "real"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "Los científicos no pueden predecir el día exacto de un terremoto, pero sí detectar un tsunami en pocos minutos.",
+      "on_screen_text": "Detectarlo en minutos",
+      "highlight_words": [
+        "minutos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_push",
+      "narration": "La mayoría de los tsunamis empieza bajo el mar, donde una placa de la corteza se mete debajo de otra.",
+      "on_screen_text": "Placas que chocan",
+      "highlight_words": [
+        "Placas"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Cómo nace"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "Durante años las placas se traban. Cuando por fin se sueltan, el fondo del mar salta de golpe: es un gran terremoto.",
+      "on_screen_text": "El fondo salta de golpe",
+      "highlight_words": [
+        "golpe"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "Los mayores tsunamis los producen terremotos muy grandes, de magnitud ocho o más, cuando el fondo del mar se mueve en vertical.",
+      "on_screen_text": "Terremotos enormes",
+      "highlight_words": [
+        "enormes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_lift",
+      "narration": "Ese salto empuja hacia arriba toda la columna de agua, desde el fondo hasta la superficie, en un área enorme.",
+      "on_screen_text": "Sube toda el agua",
+      "highlight_words": [
+        "agua"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "Luego el agua vuelve a bajar, y esa energía se reparte en olas que se abren en todas direcciones.",
+      "on_screen_text": "Olas en todas direcciones",
+      "highlight_words": [
+        "direcciones"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "También pueden provocarlos deslizamientos de tierra o volcanes, pero los terremotos son la causa más común.",
+      "on_screen_text": "La causa más común",
+      "highlight_words": [
+        "común"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "En aguas profundas, un tsunami viaja a más de ochocientos kilómetros por hora, tan rápido como un avión.",
+      "on_screen_text": "Rápido como un avión",
+      "highlight_words": [
+        "avión"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Rápido como un avión"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "Pero allí mide un metro o menos de alto. Lo que lo hace peligroso no es su altura, sino su largo: cientos de kilómetros de agua en movimiento.",
+      "on_screen_text": "Bajo pero larguísimo",
+      "highlight_words": [
+        "larguísimo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "En mil novecientos sesenta, un tsunami nacido en Chile cruzó todo el Pacífico y llegó a Japón unas veintidós horas después.",
+      "on_screen_text": "Chile → Japón: 22 horas",
+      "highlight_words": [
+        "22"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Al acercarse a la costa, el fondo se vuelve poco profundo. La parte de adelante se frena y la de atrás la alcanza.",
+      "on_screen_text": "Se frena y se amontona",
+      "highlight_words": [
+        "amontona"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Al llegar a la costa"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Toda esa agua se amontona y la ola crece, a veces hasta muchos metros de altura.",
+      "on_screen_text": "La ola crece",
+      "highlight_words": [
+        "crece"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_hook",
+      "narration": "Y no es una sola ola: suelen llegar varias, durante horas, y la primera no siempre es la más grande.",
+      "on_screen_text": "Llegan varias olas",
+      "highlight_words": [
+        "varias"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "A veces, antes de llegar, el mar se retira de golpe y deja la playa al descubierto. Es una señal de alerta.",
+      "on_screen_text": "El mar se retira",
+      "highlight_words": [
+        "retira"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "En mil novecientos seis, frente a Esmeraldas, un terremoto de magnitud cercana a ocho coma ocho provocó un tsunami en Ecuador y Colombia.",
+      "on_screen_text": "Ecuador, 1906",
+      "highlight_words": [
+        "1906"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Ecuador y el Pacífico"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_row",
+      "narration": "Toda la costa del Pacífico, desde Chile hasta Alaska y Japón, está rodeada por estos choques de placas.",
+      "on_screen_text": "El Pacífico, rodeado",
+      "highlight_words": [
+        "Pacífico"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "Por eso existen sistemas de alerta: boyas y sensores en el mar detectan las olas y avisan a la costa.",
+      "on_screen_text": "Boyas que avisan",
+      "highlight_words": [
+        "avisan"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_speed",
+      "narration": "Su velocidad depende de la profundidad: cuanto más hondo es el océano, más rápido avanza la ola.",
+      "on_screen_text": "Más hondo, más rápido",
+      "highlight_words": [
+        "rápido"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Lo más importante. Si estás en la costa y la tierra tiembla fuerte o por mucho tiempo, no esperes la alarma.",
+      "on_screen_text": "No esperes la alarma",
+      "highlight_words": [
+        "alarma"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Cómo estar a salvo"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Aléjate del mar y sube a un lugar alto, o lo más tierra adentro que puedas, caminando si hace falta.",
+      "on_screen_text": "Sube a un lugar alto",
+      "highlight_words": [
+        "alto"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Y si ves que el mar se retira, nunca bajes a mirar. Ese es justo el momento de alejarse.",
+      "on_screen_text": "Nunca bajes a mirar",
+      "highlight_words": [
+        "Nunca"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_retreat",
+      "narration": "Conoce antes las rutas de evacuación de tu zona y los lugares altos más cercanos. En muchas playas hay señales que los indican.",
+      "on_screen_text": "Conoce tu ruta",
+      "highlight_words": [
+        "ruta"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Quédate en el lugar alto varias horas, hasta que las autoridades digan que es seguro volver.",
+      "on_screen_text": "Espera varias horas",
+      "highlight_words": [
+        "horas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_grow",
+      "narration": "Muchas veces no llega como una ola que rompe, sino como una marea que sube y sube sin parar, arrastrando todo.",
+      "on_screen_text": "Como una marea que no para",
+      "highlight_words": [
+        "marea"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "Sorpresa: algunos tsunamis cruzan océanos enteros y siguen teniendo fuerza al otro lado del planeta.",
+      "on_screen_text": "Cruzan el planeta",
+      "highlight_words": [
+        "planeta"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_small",
+      "narration": "Así que un tsunami no es una ola de surf gigante: es el océano entero moviéndose a la vez.",
+      "on_screen_text": "El océano entero se mueve",
+      "highlight_words": [
+        "entero"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "tsu_outro",
+      "narration": "Comparte este video con alguien que vive cerca del mar. Saber esto puede salvar vidas.",
+      "on_screen_text": "Compártelo",
+      "highlight_words": [
+        "Compártelo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Cómo se forma un tsunami, por qué viaja tan rápido, por qué crece al llegar a la costa y qué hacer para estar a salvo. Con los casos de Chile 1960 y Ecuador 1906. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "tsunami",
+    "terremoto",
+    "oceano",
+    "ecuador",
+    "seguridad",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s14",
+    "at": 0.7,
+    "text": "¿Cómo nace una ola gigante?",
+    "highlight": [
+      "gigante?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "What is a tsunami?",
+      "url": "https://oceanservice.noaa.gov/facts/tsunami.html",
+      "publisher": "NOAA"
+    },
+    {
+      "title": "Tsunami safety",
+      "url": "https://www.weather.gov/safety/tsunami",
+      "publisher": "NOAA NWS"
+    },
+    {
+      "title": "1960 Valdivia earthquake",
+      "url": "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "1906 Ecuador–Colombia earthquake",
+      "url": "https://en.wikipedia.org/wiki/1906_Ecuador%E2%80%93Colombia_earthquake",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tsunami",
+      "url": "https://en.wikipedia.org/wiki/Tsunami",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Subduction",
+      "url": "https://en.wikipedia.org/wiki/Subduction",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "En aguas profundas un tsunami puede viajar a más de 800 km/h.",
+      "scene_id": "s11",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/facts/tsunami.html"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un retroceso repentino del mar puede anunciar un tsunami; hay que ir a un lugar alto.",
+      "scene_id": "s17",
+      "source_urls": [
+        "https://www.weather.gov/safety/tsunami"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El tsunami del terremoto de Valdivia de 1960 llegó a Japón unas 22 horas después.",
+      "scene_id": "s13",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El terremoto de 1906 frente a Ecuador y Colombia, de magnitud cercana a 8,8, causó un tsunami.",
+      "scene_id": "s1",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/1906_Ecuador%E2%80%93Colombia_earthquake"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

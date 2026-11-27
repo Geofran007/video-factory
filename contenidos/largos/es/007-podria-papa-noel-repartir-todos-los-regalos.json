@@ -1,0 +1,506 @@
+{
+  "topic": "La física de la Nochebuena",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Podría PAPÁ NOEL repartir todos los regalos en UNA noche? 🎅",
+  "hook": "Cada veinticuatro de diciembre, Papá Noel tiene que repartir regalos por todo el mundo en una sola noche.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "Cada veinticuatro de diciembre, Papá Noel tiene que repartir regalos por todo el mundo en una sola noche.",
+      "on_screen_text": "Una sola noche",
+      "highlight_words": [
+        "noche"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "¿Es posible? Vamos a hacer las cuentas con física de verdad, sin magia… al menos al principio.",
+      "on_screen_text": "Hagamos las cuentas",
+      "highlight_words": [
+        "cuentas"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "Soy Leo, y hoy averiguamos qué haría falta para lograrlo. Spoiler: el trineo sería la máquina más rápida de la historia.",
+      "on_screen_text": "La máquina más rápida",
+      "highlight_words": [
+        "rápida"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "Primero, cuántos niños hay. En el mundo viven cerca de dos mil millones de personas menores de quince años.",
+      "on_screen_text": "≈ 2.000 millones de niños",
+      "highlight_words": [
+        "niños"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Cuántos niños"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "Supongamos que viven, en promedio, unos tres niños por casa. Serían cientos de millones de hogares en una noche.",
+      "on_screen_text": "Cientos de millones de casas",
+      "highlight_words": [
+        "casas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "Pero Papá Noel tiene un truco: los husos horarios. La medianoche no llega a todo el mundo a la vez.",
+      "on_screen_text": "El truco de los husos",
+      "highlight_words": [
+        "husos"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "La ayuda del reloj"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "Si empieza en las islas del Pacífico, donde primero es Navidad, y viaja hacia el oeste siguiendo la noche, tiene más de treinta horas.",
+      "on_screen_text": "Más de 30 horas",
+      "highlight_words": [
+        "30"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "Las primeras en recibir la Navidad son islas del Pacífico, como Kiribati, que van catorce horas por delante del reloj mundial.",
+      "on_screen_text": "Kiribati va primero",
+      "highlight_words": [
+        "Kiribati"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_zones",
+      "narration": "En algunos países los regalos llegan otro día, como el seis de enero con los Reyes Magos, y eso también ayuda.",
+      "on_screen_text": "Otros días de regalos",
+      "highlight_words": [
+        "días"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_spin",
+      "narration": "Es como correr junto con la noche mientras la Tierra gira, para que en cada lugar siga siendo de madrugada.",
+      "on_screen_text": "Corriendo con la noche",
+      "highlight_words": [
+        "noche"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "Aun así, las cuentas son locas: tendría que visitar unas seis mil casas por segundo.",
+      "on_screen_text": "6.000 casas por segundo",
+      "highlight_words": [
+        "6.000"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "La velocidad del trineo"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "Si las casas estuvieran separadas por un kilómetro, el trineo iría a miles de kilómetros por segundo.",
+      "on_screen_text": "Miles de km por segundo",
+      "highlight_words": [
+        "Miles"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_speed",
+      "narration": "En cada casa tendría apenas una fracción diminuta de segundo para bajar, dejar los regalos y volver al trineo.",
+      "on_screen_text": "Una fracción de segundo",
+      "highlight_words": [
+        "fracción"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_orbit",
+      "narration": "Para comparar: un cohete en órbita va a unos ocho kilómetros por segundo. El trineo sería cientos de veces más rápido.",
+      "on_screen_text": "Más que un cohete",
+      "highlight_words": [
+        "cohete"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_orbit",
+      "narration": "Ni siquiera las sondas espaciales más rápidas que hemos construido se acercan a esa velocidad.",
+      "on_screen_text": "Más que cualquier sonda",
+      "highlight_words": [
+        "sonda"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Y aquí viene el problema. A esa velocidad, el aire delante del trineo se comprimiría y se calentaría muchísimo.",
+      "on_screen_text": "El aire se calienta",
+      "highlight_words": [
+        "calienta"
+      ],
+      "sfx": "riser",
+      "transition": "cut",
+      "chapter": "El problema del aire"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Le pasaría lo mismo que a una estrella fugaz: brillaría como un meteoro cruzando el cielo.",
+      "on_screen_text": "Como una estrella fugaz",
+      "highlight_words": [
+        "fugaz"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Además, los renos sufrirían fuerzas enormes cada vez que frenaran y aceleraran entre una casa y otra.",
+      "on_screen_text": "Frenadas brutales",
+      "highlight_words": [
+        "brutales"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "Y la carga sería gigantesca. Si cada regalo pesara apenas medio kilo, serían cientos de miles de toneladas.",
+      "on_screen_text": "Una carga gigantesca",
+      "highlight_words": [
+        "gigantesca"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "Más que muchos barcos de carga juntos, tirados por unos pocos renos.",
+      "on_screen_text": "Más que un barco",
+      "highlight_words": [
+        "barco"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_gifts",
+      "narration": "Y tendría que bajar por chimeneas que muchas casas ni siquiera tienen.",
+      "on_screen_text": "Casas sin chimenea",
+      "highlight_words": [
+        "chimenea"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "Entonces, con la física normal, es imposible. Por eso la Navidad necesita un poco de magia.",
+      "on_screen_text": "Hace falta magia",
+      "highlight_words": [
+        "magia"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Entonces, ¿cómo lo hace?"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "O, como dicen muchos, los ayudantes de Papá Noel están en cada casa del mundo.",
+      "on_screen_text": "Muchos ayudantes",
+      "highlight_words": [
+        "ayudantes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "nav_radar",
+      "narration": "Sorpresa: hay una agencia militar que lo sigue cada año. Desde 1955, NORAD publica por dónde va el trineo en Nochebuena.",
+      "on_screen_text": "NORAD lo sigue",
+      "highlight_words": [
+        "NORAD"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_radar",
+      "narration": "Todo empezó por un número de teléfono mal impreso en un anuncio. Los niños llamaron, y los militares decidieron seguir el juego.",
+      "on_screen_text": "Empezó con un error",
+      "highlight_words": [
+        "error"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "Hoy millones de familias siguen el viaje en internet, mientras la noche recorre el planeta.",
+      "on_screen_text": "Millones lo siguen",
+      "highlight_words": [
+        "Millones"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "Y no olvidemos las cartas: millones de niños escriben cada año, y en varios países el correo tiene direcciones especiales para responderlas.",
+      "on_screen_text": "Millones de cartas",
+      "highlight_words": [
+        "cartas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_kids",
+      "narration": "No todas las familias celebran la Navidad, pero aun así, la lista sería enorme.",
+      "on_screen_text": "Una lista enorme",
+      "highlight_words": [
+        "enorme"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "Así que la próxima Nochebuena, mira el cielo: si ves una estrella fugaz, quizá no sea polvo, o quizá sí.",
+      "on_screen_text": "Mira el cielo",
+      "highlight_words": [
+        "cielo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "nav_hook",
+      "narration": "Los renos existen de verdad y viven en las zonas frías del norte, aunque, claro, ninguno puede volar.",
+      "on_screen_text": "Renos de verdad",
+      "highlight_words": [
+        "verdad"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "nav_outro",
+      "narration": "¿Qué otra pregunta navideña quieres que respondamos con ciencia? Escríbela en los comentarios. ¡Feliz Navidad!",
+      "on_screen_text": "¡Feliz Navidad!",
+      "highlight_words": [
+        "Navidad!"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Hacemos las cuentas con física: cuántos niños, cuántas horas gracias a los husos horarios, a qué velocidad iría el trineo y qué le pasaría al aire. Un experimento mental navideño. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "navidad",
+    "papanoel",
+    "fisica",
+    "quepasariasi",
+    "matematicas",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.95,
+    "text": "¿Puede Papá Noel repartir todo en una noche?",
+    "highlight": [
+      "noche?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "World population",
+      "url": "https://en.wikipedia.org/wiki/World_population",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Time zone",
+      "url": "https://en.wikipedia.org/wiki/Time_zone",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "NORAD Tracks Santa",
+      "url": "https://en.wikipedia.org/wiki/NORAD_Tracks_Santa",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Orbital speed",
+      "url": "https://en.wikipedia.org/wiki/Orbital_speed",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Atmospheric entry",
+      "url": "https://en.wikipedia.org/wiki/Atmospheric_entry",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Alrededor de una cuarta parte de la población mundial tiene menos de 15 años.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/World_population"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los husos horarios van de UTC−12 a UTC+14, lo que alarga la Nochebuena en todo el planeta.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Time_zone"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "NORAD sigue a Papá Noel cada Nochebuena desde 1955, por un número de teléfono mal impreso.",
+      "scene_id": "s24",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/NORAD_Tracks_Santa"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En órbita baja se viaja a unos 7,8 km/s.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Orbital_speed"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Un objeto que atraviesa el aire a gran velocidad comprime y calienta el aire que tiene delante.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Atmospheric_entry"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
