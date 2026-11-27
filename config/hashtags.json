@@ -1,0 +1,32 @@
+{
+  "_nota": "Hashtags para YouTube. Solo los 3 primeros de la descripción se muestran sobre el título y, con más de 15, YouTube puede ignorarlos todos: se usan 5 (Shorts: 6 con #shorts). Orden: tema del guion, área, generales.",
+  "maximo": 5,
+  "generales": {
+    "es": ["#ciencia", "#curiosidades", "#sabiasque"],
+    "en": ["#science", "#facts", "#didyouknow"]
+  },
+  "shorts": {"es": "#shorts", "en": "#shorts"},
+  "areas": {
+    "espacio": {
+      "prefijos": ["luna", "est", "ecl", "sol", "bh", "aur", "coh", "ast", "met", "sl", "lun", "cielo", "gps"],
+      "es": ["#espacio", "#astronomia"], "en": ["#space", "#astronomy"]
+    },
+    "tierra": {
+      "prefijos": ["and", "sub", "gal", "tsu", "mit", "hur", "ray", "sal", "cue", "cub", "hie", "arco", "dia", "arb"],
+      "es": ["#planetatierra", "#naturaleza"], "en": ["#earthscience", "#nature"]
+    },
+    "animales": {
+      "prefijos": ["gato", "abe", "pul", "pez", "col", "ceb", "din"],
+      "es": ["#animales", "#naturaleza"], "en": ["#animals", "#wildlife"]
+    },
+    "cuerpo": {
+      "prefijos": ["cor", "ojo", "hue", "die"],
+      "es": ["#cuerpohumano", "#biologia"], "en": ["#humanbody", "#biology"]
+    },
+    "fisica": {
+      "prefijos": ["ima", "mag", "avi", "mic", "net", "nav", "pan", "ball", "room", "pool"],
+      "es": ["#fisica", "#tecnologia"], "en": ["#physics", "#technology"]
+    }
+  },
+  "excluir": ["leocurioso", "curiousleo", "shorts", "ciencia", "science", "curiosidades", "facts", "sabiasque", "didyouknow"]
+}

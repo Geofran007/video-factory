@@ -268,7 +268,7 @@ gh secret set VOICE_PASSPHRASE
   guion a `contenidos/publicados/<idioma>/` con el enlace del video. Si el control de calidad falla, no sube nada.
   GitHub retrasa las ejecuciones hasta 12 h, por eso se intenta cada 3 h y `scripts/turnos.py` prepara cada turno
   con hasta 24 h de antelación; `contenidos/publicados/turnos.json` evita repetirlo. La variable de repositorio
-  Los videos largos (horizontales, `contenidos/largos/`) tienen dos turnos semanales, miércoles y sábado (`largos` en `config/horarios.json`)
+  Los videos largos (horizontales, `contenidos/largos/`) tienen tres turnos semanales, martes, jueves y sábado (`largos` en `config/horarios.json`)
   y portada propia (campo `thumbnail` del guion). `YT_PROGRAMAR=si` (activada el 2026-11-25 por el autor) hace público cada video automáticamente a su hora; sin ella quedan privados.
   También se puede lanzar a mano (*Run workflow*) con la opción «prueba» para generar sin subir.
 

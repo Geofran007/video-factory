@@ -23,6 +23,7 @@ from ..audio.tts_provider import create_tts
 from ..core.config import AppConfig
 from ..core.errors import BudgetExceededError, ConfigurationError, ValidationError, VideoFactoryError
 from ..core.logging_setup import job_log_handler, remove_handler
+from ..core.hashtags import choose as choose_hashtags
 from ..core.models import CATEGORIES, STYLES, Timeline, VideoContent
 from ..storage.history import History
 from ..timeline.subtitle_generator import to_srt
@@ -275,17 +276,19 @@ def build_metadata(content: VideoContent, timeline: Timeline, voice: dict, music
     credits.append(f"{'Music' if en else 'Música'}: {music}")
     chapters = chapter_list(timeline, "Intro" if en else "Introducción")
     sources = "\n".join(f"- {s.title} ({s.publisher}): {s.url}" for s in content.sources)
+    hashtags = choose_hashtags(content)
     labels = ("Sources", "Credits") if en else ("Fuentes", "Créditos")
-    description = (f"{content.description}\n\n{chapters}{' '.join(content.hashtags)}\n\n{labels[0]}:\n{sources}\n\n{labels[1]}:\n"
+    description = (f"{content.description}\n\n{chapters}{' '.join(hashtags)}\n\n{labels[0]}:\n{sources}\n\n{labels[1]}:\n"
                    + "\n".join(f"- {c}" for c in credits))
-    tags = [h.lstrip("#") for h in content.hashtags]
+    # Etiquetas (palabras clave, no visibles): las elegidas y las del guion, sin repetir.
+    tags = list(dict.fromkeys(h.lstrip("#") for h in hashtags + content.hashtags))
     return {
         "title": content.title,
         "language": content.language,
         "format": content.format,
         "own_voice": voice.get("license") == "Voz propia del autor",
         "description": description,
-        "hashtags": content.hashtags,
+        "hashtags": hashtags,
         "category": content.category,
         "style": timeline.style,
         "duration_s": round(timeline.duration, 2),
@@ -298,7 +301,7 @@ def build_metadata(content: VideoContent, timeline: Timeline, voice: dict, music
         "platforms": {
             "youtube_shorts": {"title": content.title[:100], "description": description[:5000], "tags": tags[:15],
                                "category_id": "27", "made_for_kids": False},
-            "tiktok": {"caption": (content.title + " " + " ".join(content.hashtags))[:2200]},
+            "tiktok": {"caption": (content.title + " " + " ".join(hashtags))[:2200]},
         },
     }
 
