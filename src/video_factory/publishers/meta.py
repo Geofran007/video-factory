@@ -66,7 +66,8 @@ class MetaPublisher:
         c = channel.upper()
         self.page_id = os.environ.get(f"META_PAGE_ID_{c}", "").strip()
         self.token = os.environ.get(f"META_PAGE_TOKEN_{c}", "").strip()
-        self.ig_id = os.environ.get(f"META_IG_ID_{c}", "").strip()
+        # Instagram publica al momento (sin borradores ni programación): se activa aparte con META_IG_AUTO=si.
+        self.ig_id = os.environ.get(f"META_IG_ID_{c}", "").strip() if os.environ.get("META_IG_AUTO") == "si" else ""
         if not (self.page_id and self.token):
             raise MetaError(f"Faltan META_PAGE_ID_{c} / META_PAGE_TOKEN_{c} (ver scripts/meta_auth.py)")
         self.http = session or requests.Session()

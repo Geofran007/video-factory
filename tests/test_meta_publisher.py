@@ -35,7 +35,7 @@ class Fake:
 
 @pytest.fixture()
 def env(monkeypatch):
-    for k, v in {"META_PAGE_ID_ES": "P", "META_PAGE_TOKEN_ES": "T", "META_IG_ID_ES": "IG"}.items():
+    for k, v in {"META_PAGE_ID_ES": "P", "META_PAGE_TOKEN_ES": "T", "META_IG_ID_ES": "IG", "META_IG_AUTO": "si"}.items():
         monkeypatch.setenv(k, v)
 
 
@@ -78,3 +78,10 @@ def test_draft_is_not_published(tmp_path, env):
     meta.MetaPublisher("es", session=s).facebook_reel(video(tmp_path), "x", draft=True)
     finish = [c for c in s.calls if c[0] == "POST" and c[2].get("upload_phase") == "finish"][0][2]
     assert finish["video_state"] == "DRAFT" and "scheduled_publish_time" not in finish
+
+
+def test_instagram_off_without_switch(tmp_path, env, monkeypatch):
+    monkeypatch.delenv("META_IG_AUTO")
+    s = Fake()
+    res = meta.MetaPublisher("es", session=s).publish(video(tmp_path), "x", 50)
+    assert res.facebook_id == "V1" and not res.instagram_id and not any("/media" in c[1] for c in s.calls)
