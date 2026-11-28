@@ -90,11 +90,20 @@ class MetaCarousel(MetaPublisher):
             raise MetaError("Un carrusel necesita de 2 a 10 imágenes")
         res = CarouselResult()
         ids = self._upload_photos(images)
+        # Las direcciones se leen antes de crear la publicación, mientras las fotos aún son solo de la Página.
+        urls, url_error = [], ""
+        if self.ig_id:
+            try:
+                urls = [self._photo_url(i) for i in ids]
+            except (MetaError, requests.RequestException) as exc:
+                url_error = str(exc)[:500]
         res.facebook_post_id = self.facebook_post(ids, caption, publish_at)
         res.facebook_scheduled = str(publish_at or "")
         if self.ig_id:
             try:
-                res.instagram_id = self.instagram_carousel([self._photo_url(i) for i in ids], caption)
+                if url_error:
+                    raise MetaError(url_error)
+                res.instagram_id = self.instagram_carousel(urls, caption)
             except (MetaError, requests.RequestException) as exc:
                 res.instagram_error = str(exc)[:500]
         return res
