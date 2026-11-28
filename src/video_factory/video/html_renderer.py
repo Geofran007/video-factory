@@ -119,6 +119,36 @@ def render_thumbnail(templates_dir: Path, timeline: Timeline, scene_id: str, at:
     return out
 
 
+def render_post(templates_dir: Path, timeline: Timeline, scene_id: str, at: float, card: dict, out: Path) -> Path:
+    """Imagen 1080×1350 de dato curioso: fotograma vertical de una escena 3D con el dato y Leo encima."""
+    from playwright.sync_api import sync_playwright
+
+    scene = next(s for s in timeline.scenes if s.id == scene_id)
+    t = scene.start + (scene.end - scene.start) * at
+    errors: list[str] = []
+    with sync_playwright() as p:
+        browser = p.chromium.launch(args=_CHROMIUM_ARGS)
+        try:
+            ctx = browser.new_context(viewport={"width": 1080, "height": 1920}, device_scale_factor=1, offline=True)
+            ctx.route("**/*", lambda route: route.continue_() if route.request.url.startswith("file:") else route.abort())
+            page = ctx.new_page()
+            page.on("pageerror", lambda e: errors.append(str(e)))
+            page.goto((templates_dir / "runtime" / "index.html").resolve().as_uri(), wait_until="load")
+            page.evaluate("tl => VF.init(tl)", json.loads(timeline.model_dump_json()))
+            page.evaluate("c => VF.post(c)", card)
+            page.evaluate("t => VF.seek(t)", t)
+            page.wait_for_function("() => [...document.images].every((i) => i.complete)")
+            png = out.with_suffix(".png")
+            page.screenshot(path=str(png), clip={"x": 0, "y": 0, "width": 1080, "height": 1350})
+        finally:
+            browser.close()
+    if errors:
+        raise RenderError("Error en la imagen: " + " | ".join(errors[:3]))
+    run_ffmpeg(["-i", str(png), "-q:v", "2", str(out)])
+    png.unlink(missing_ok=True)
+    return out
+
+
 class PlaywrightRenderer:
     def __init__(self, templates_dir: Path, video_cfg: dict[str, Any]):
         self.templates_dir = templates_dir

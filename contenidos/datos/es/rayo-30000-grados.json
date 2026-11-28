@@ -1,0 +1,22 @@
+{
+  "language": "es",
+  "model3d": "ray_hook",
+  "at": 0.3,
+  "fact": "Un rayo calienta el aire a unos 30.000 °C",
+  "highlight": [
+    "30.000"
+  ],
+  "detail": "Es unas cinco veces más que la superficie del Sol. Por eso el aire estalla… y oímos el trueno.",
+  "caption": "⚡ ¿Sabías que un rayo calienta el aire a unos 30.000 °C, cinco veces más que la superficie del Sol?\n\nEse calor hace que el aire se expanda de golpe, como una explosión: eso es el trueno. Y cuenta los segundos entre el destello y el trueno: cada 3 segundos son más o menos 1 km de distancia.\n\nFuente: Servicio Meteorológico Nacional de EE. UU. (NOAA)",
+  "hashtags": [
+    "#rayos",
+    "#ciencia",
+    "#datoscuriosos",
+    "#tormenta",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://www.weather.gov/safety/lightning-science-overview",
+    "https://en.wikipedia.org/wiki/Lightning"
+  ]
+}

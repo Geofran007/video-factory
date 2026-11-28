@@ -1,0 +1,22 @@
+{
+  "language": "en",
+  "model3d": "ray_hook",
+  "at": 0.3,
+  "fact": "A lightning bolt heats the air to about 30,000 °C",
+  "highlight": [
+    "30,000"
+  ],
+  "detail": "That's about five times hotter than the Sun's surface. The air bursts… and we hear thunder.",
+  "caption": "⚡ Did you know a lightning bolt heats the air to about 30,000 °C, five times hotter than the surface of the Sun?\n\nThat heat makes the air expand all at once, like an explosion: that's thunder. Count the seconds between flash and thunder: every 3 seconds is roughly 1 km away.\n\nSource: US National Weather Service (NOAA)",
+  "hashtags": [
+    "#lightning",
+    "#science",
+    "#funfacts",
+    "#storm",
+    "#didyouknow"
+  ],
+  "sources": [
+    "https://www.weather.gov/safety/lightning-science-overview",
+    "https://en.wikipedia.org/wiki/Lightning"
+  ]
+}

@@ -649,6 +649,26 @@
     return true;
   };
 
+  // Imagen de dato curioso (1080×1350, se recorta la parte de arriba del lienzo vertical): escena 3D de fondo,
+  // cartel «¿Sabías que…?», el dato en grande, una explicación corta, Leo y la firma del canal.
+  VF.post = function post(card) {
+    document.body.classList.add('thumb', 'post');
+    const wrap = el('div', 'post-card');
+    wrap.append(el('div', 'post-badge', card.badge || '¿SABÍAS QUE…?'));
+    const fact = el('div', 'post-fact');
+    const hl = new Set((card.highlight || []).map((w) => w.toLowerCase()));
+    String(card.fact).split(/\s+/).forEach((w) => {
+      fact.append(el('span', hl.has(w.toLowerCase()) || hl.has(w.toLowerCase().replace(/[¿?¡!.,:;]+$/g, '')) ? 'pw pw-hl' : 'pw', w), ' ');
+    });
+    wrap.append(fact);
+    if (card.detail) wrap.append(el('div', 'post-detail', card.detail));
+    wrap.append(el('div', 'post-brand', card.brand || 'Leo curioso'));
+    if (TL.presenter) { const img = el('img', 'post-leo'); img.src = `../presenters/${TL.presenter}.png`; wrap.append(img); }
+    $('stage').appendChild(wrap);
+    fitText(fact, 92, 54);
+    return true;
+  };
+
   VF.seek = function seek(t) {
     style.draw(bgCtx, t, W, H, TL.duration);
     for (const s of scenes) {
