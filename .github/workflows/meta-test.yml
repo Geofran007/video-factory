@@ -17,6 +17,10 @@ on:
         description: "Publicar ya en Facebook e Instagram (si no, borrador solo en Facebook)"
         type: boolean
         default: false
+      solo_instagram:
+        description: "Publicar solo en Instagram (cuando Facebook ya salió)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -33,6 +37,7 @@ jobs:
       META_IG_AUTO: ${{ vars.META_IG_AUTO }}
       TITULO: ${{ inputs.titulo }}
       PUBLICAR: ${{ inputs.publicar }}
+      SOLO_IG: ${{ inputs.solo_instagram }}
       GH_TOKEN: ${{ github.token }}
       RUN_ID: ${{ inputs.run_id }}
     steps:
@@ -51,5 +56,5 @@ jobs:
           gh run download "$RUN_ID" -D descargas
       - name: Subir
         run: |
-          extra=(); [ "$PUBLICAR" = "true" ] && extra=(--publicar)
-          python scripts/meta_test.py --carpeta descargas --canal es --titulo "$TITULO" "${extra[@]}"
+          extra=(); [ "$PUBLICAR" = "true" ] && extra=(--publicar); [ "$SOLO_IG" = "true" ] && extra=(--solo-instagram)
+          PYTHONUNBUFFERED=1 python -c "import logging,runpy,sys; logging.basicConfig(level=logging.INFO); sys.argv=sys.argv[1:]; runpy.run_path(sys.argv[0], run_name='__main__')" scripts/meta_test.py --carpeta descargas --canal es --titulo "$TITULO" "${extra[@]}"

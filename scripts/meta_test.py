@@ -29,6 +29,7 @@ def main() -> int:
     ap.add_argument("--canal", choices=["es", "en"], default="es")
     ap.add_argument("--titulo", default="", help="Parte del título del Short a usar (sin distinguir mayúsculas)")
     ap.add_argument("--publicar", action="store_true", help="Publica ya en Facebook e Instagram en lugar de dejar un borrador")
+    ap.add_argument("--solo-instagram", action="store_true", help="Publica solo en Instagram (si Facebook ya salió)")
     args = ap.parse_args()
     if not meta.configured(args.canal):
         raise SystemExit(f"Faltan los secretos META_PAGE_ID_{args.canal.upper()} / META_PAGE_TOKEN_{args.canal.upper()}.")
@@ -41,6 +42,11 @@ def main() -> int:
         raise SystemExit("No hay ningún Short con video.mp4 en esa carpeta.")
     print(f"Video: {data['title']} · {data['duration_s']} s")
     pub = meta.MetaPublisher(args.canal)
+    if args.solo_instagram:
+        if not pub.ig_id:
+            raise SystemExit("Instagram no está activado (META_IG_AUTO) o no hay META_IG_ID.")
+        print(f"Instagram: publicado · {pub.instagram_reel(md.parent / 'video.mp4', meta_caption(md.parent))}")
+        return 0
     if not args.publicar:
         vid = pub.facebook_reel(md.parent / "video.mp4", meta_caption(md.parent), draft=True)
         print(f"Facebook: borrador de Reel creado · {vid}. Revísalo en Meta Business Suite → Contenido.")

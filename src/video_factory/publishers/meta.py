@@ -99,11 +99,14 @@ class MetaPublisher:
             "media_type": "REELS", "upload_type": "resumable", "caption": caption[:2200], "share_to_feed": "true",
             "access_token": self.token}, timeout=60), "Crear contenedor de Instagram")
         cid = cont["id"]
-        size = video.stat().st_size
-        with open(video, "rb") as fh:
-            _check(self.http.post(f"{RUPLOAD}/ig-api-upload/v27.0/{cid}", data=fh, timeout=1800,
-                                  headers={"Authorization": f"OAuth {self.token}", "offset": "0", "file_size": str(size)}),
-                   "Subir Reel a Instagram")
+        # Meta devuelve la dirección de subida («uri»); si no, se arma con el id del contenedor.
+        upload_url = cont.get("uri") or f"{RUPLOAD}/ig-api-upload/v27.0/{cid}"
+        log.info("Instagram: contenedor %s (campos: %s)", cid, ", ".join(sorted(cont)))
+        body = video.read_bytes()
+        _check(self.http.post(upload_url, data=body, timeout=1800,
+                              headers={"Authorization": f"OAuth {self.token}", "offset": "0", "file_size": str(len(body)),
+                                       "Content-Type": "application/octet-stream"}),
+               "Subir Reel a Instagram")
         waited = 0
         while True:
             st = _check(self.http.get(f"{GRAPH}/{cid}", params={"fields": "status_code,status", "access_token": self.token},
