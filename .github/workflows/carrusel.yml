@@ -1,0 +1,76 @@
+name: Publicar carruseles
+
+# Un carrusel de datos curiosos al día en la Página de Facebook (programado a las 12:00 de Ecuador, config/horarios.json)
+# y en su Instagram (al momento). Toma el primero de contenidos/carruseles/es y lo mueve a contenidos/publicados/carruseles.
+# Se intenta cada 2 h porque GitHub retrasa las ejecuciones; scripts/carrusel.py decide si toca y evita repetir.
+on:
+  schedule:
+    - cron: "37 */2 * * *"
+  workflow_dispatch:
+    inputs:
+      modo:
+        description: "turno = publicar si toca; prueba = Facebook programado y borrado, Instagram sin publicar"
+        type: choice
+        options: [prueba, turno]
+        default: prueba
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-carruseles
+  cancel-in-progress: false
+
+jobs:
+  carrusel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      META_PAGE_ID_ES: ${{ secrets.META_PAGE_ID_ES }}
+      META_PAGE_TOKEN_ES: ${{ secrets.META_PAGE_TOKEN_ES }}
+      META_IG_ID_ES: ${{ secrets.META_IG_ID_ES }}
+      META_IG_AUTO: ${{ vars.META_IG_AUTO }}
+      MODO: ${{ inputs.modo || 'turno' }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.ref_name }}
+      - name: ¿Toca carrusel?
+        id: toca
+        run: |
+          n=$(ls contenidos/carruseles/es/*.json 2>/dev/null | wc -l)
+          echo "pendientes=$n" >> "$GITHUB_OUTPUT"
+          echo "Carruseles en cola: $n"
+      - uses: actions/setup-python@v5
+        if: steps.toca.outputs.pendientes != '0' && env.META_PAGE_TOKEN_ES != ''
+        with:
+          python-version: "3.12"
+          cache: pip
+      - if: steps.toca.outputs.pendientes != '0' && env.META_PAGE_TOKEN_ES != ''
+        run: sudo apt-get update && sudo apt-get install -y --no-install-recommends ffmpeg fonts-dejavu-core
+      - if: steps.toca.outputs.pendientes != '0' && env.META_PAGE_TOKEN_ES != ''
+        run: pip install -e ".[youtube]" && python -m playwright install --with-deps chromium
+      - name: Generar y publicar
+        if: steps.toca.outputs.pendientes != '0' && env.META_PAGE_TOKEN_ES != ''
+        run: python scripts/carrusel.py "$MODO" --canal es
+      - name: Guardar la cola
+        if: always() && env.MODO == 'turno'
+        run: |
+          git config user.name "video-factory[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A contenidos/carruseles contenidos/publicados
+          if git diff --cached --quiet; then echo "Sin cambios."; exit 0; fi
+          git commit -m "chore(carruseles): carrusel publicado $(date -u +%F)"
+          for i in 1 2 3; do
+            git pull --rebase -X theirs --quiet && git push && exit 0
+            git rebase --abort 2>/dev/null || true
+            sleep $((i * 10))
+          done
+          exit 1
+      - uses: actions/upload-artifact@v4
+        if: always() && steps.toca.outputs.pendientes != '0'
+        with:
+          name: carrusel-${{ github.run_id }}
+          path: output/carruseles/*.jpg
+          retention-days: 7
+          if-no-files-found: ignore

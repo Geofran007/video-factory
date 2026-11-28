@@ -1,7 +1,24 @@
 {
-  "turnos": {"manana": "09:00", "tarde": "17:00"},
-  "zonas": {"es": "America/Guayaquil", "en": "America/New_York"},
+  "turnos": {
+    "manana": "09:00",
+    "tarde": "17:00"
+  },
+  "zonas": {
+    "es": "America/Guayaquil",
+    "en": "America/New_York"
+  },
   "horizonte_h": 24,
   "margen_min": 75,
-  "largos": {"dias": ["martes", "jueves", "sabado"], "hora": "10:00", "margen_min": 240}
+  "largos": {
+    "dias": [
+      "martes",
+      "jueves",
+      "sabado"
+    ],
+    "hora": "10:00",
+    "margen_min": 240
+  },
+  "carruseles": {
+    "hora": "12:00"
+  }
 }

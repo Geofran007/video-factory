@@ -1,0 +1,83 @@
+{
+  "language": "es",
+  "colors": [
+    "#0a0a1e",
+    "#3a1f8a"
+  ],
+  "caption": "🌌 Ni la luz escapa de ellos. Desliza y entiende los agujeros negros.\n\nFuentes: https://science.nasa.gov/universe/black-holes/ · https://eventhorizontelescope.org/ · https://en.wikipedia.org/wiki/Schwarzschild_radius · https://en.wikipedia.org/wiki/Spaghettification",
+  "hashtags": [
+    "#agujeronegro",
+    "#ciencia",
+    "#espacio",
+    "#astronomia",
+    "#universo"
+  ],
+  "sources": [
+    "https://science.nasa.gov/universe/black-holes/",
+    "https://eventhorizontelescope.org/",
+    "https://en.wikipedia.org/wiki/Schwarzschild_radius",
+    "https://en.wikipedia.org/wiki/Spaghettification"
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "model3d": "bh_hook",
+      "at": 0.5,
+      "tag": "CIENCIA EN 30 SEG",
+      "fact": "¿Qué es un agujero negro?",
+      "highlight": [
+        "negro?"
+      ],
+      "detail": "Tres datos para entenderlo sin fórmulas.",
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "fact",
+      "model3d": "bh_collapse",
+      "at": 0.5,
+      "tag": "DATO 1/3",
+      "big": "Colapso",
+      "fact": "Nace cuando una estrella muy grande se queda sin combustible y su núcleo se aplasta por su propia gravedad.",
+      "highlight": [
+        "gravedad."
+      ],
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "fact",
+      "model3d": "bh_light",
+      "at": 0.5,
+      "tag": "DATO 2/3",
+      "big": "Ni la luz",
+      "fact": "puede escapar una vez que cruza su borde, el horizonte de eventos. Por eso se ve negro.",
+      "highlight": [
+        "horizonte",
+        "eventos."
+      ],
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "fact",
+      "model3d": "bh_photo",
+      "at": 0.5,
+      "tag": "DATO 3/3",
+      "big": "2019",
+      "fact": "fue el año de la primera foto de un agujero negro, tomada por una red de telescopios repartidos por todo el planeta.",
+      "highlight": [
+        "foto"
+      ],
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "cta",
+      "model3d": "bh_hook",
+      "at": 0.5,
+      "tag": "FUENTES ABAJO ↓",
+      "fact": "¿Lo sabías? 🤯",
+      "highlight": [
+        "sabías?"
+      ],
+      "detail": "Guárdalo y compártelo con alguien que ama el espacio 🌌."
+    }
+  ]
+}

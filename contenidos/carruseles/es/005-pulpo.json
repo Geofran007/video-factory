@@ -1,0 +1,84 @@
+{
+  "language": "es",
+  "colors": [
+    "#3a0f5e",
+    "#a316d6"
+  ],
+  "caption": "🐙 ¿Tres corazones y sangre azul? Desliza y conoce al pulpo.\n\nFuentes: https://en.wikipedia.org/wiki/Octopus · https://en.wikipedia.org/wiki/Cephalopod_intelligence · https://en.wikipedia.org/wiki/Hemocyanin",
+  "hashtags": [
+    "#pulpo",
+    "#ciencia",
+    "#animales",
+    "#oceano",
+    "#datoscuriosos"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Octopus",
+    "https://en.wikipedia.org/wiki/Cephalopod_intelligence",
+    "https://en.wikipedia.org/wiki/Hemocyanin"
+  ],
+  "slides": [
+    {
+      "layout": "cover",
+      "model3d": "pul_hook",
+      "at": 0.5,
+      "tag": "CIENCIA EN 30 SEG",
+      "fact": "El pulpo parece un extraterrestre",
+      "highlight": [
+        "extraterrestre"
+      ],
+      "detail": "Tres datos que lo demuestran.",
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "fact",
+      "model3d": "pul_hearts",
+      "at": 0.5,
+      "tag": "DATO 1/3",
+      "big": "3 corazones",
+      "fact": "Dos bombean sangre a las branquias y uno al resto del cuerpo. Y ese último se detiene cuando el pulpo nada.",
+      "highlight": [
+        "branquias",
+        "nada."
+      ],
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "fact",
+      "model3d": "pul_blue",
+      "at": 0.5,
+      "tag": "DATO 2/3",
+      "big": "Sangre azul",
+      "fact": "Usa hemocianina, una molécula con cobre, para llevar el oxígeno. Por eso su sangre es azul y no roja como la nuestra.",
+      "highlight": [
+        "cobre,",
+        "azul"
+      ],
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "fact",
+      "model3d": "pul_brain",
+      "at": 0.5,
+      "tag": "DATO 3/3",
+      "big": "2/3",
+      "fact": "de sus unos 500 millones de neuronas están en los brazos. Además, sus ventosas pueden 'saborear' lo que tocan.",
+      "highlight": [
+        "brazos.",
+        "'saborear'"
+      ],
+      "swipe": "Desliza →"
+    },
+    {
+      "layout": "cta",
+      "model3d": "pul_hook",
+      "at": 0.5,
+      "tag": "FUENTES ABAJO ↓",
+      "fact": "¿Lo sabías? 🤯",
+      "highlight": [
+        "sabías?"
+      ],
+      "detail": "Guárdalo y compártelo con alguien a quien le encanta el mar 🐙."
+    }
+  ]
+}
