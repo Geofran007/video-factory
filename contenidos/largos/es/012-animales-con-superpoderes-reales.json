@@ -1,0 +1,615 @@
+{
+  "topic": "Animales con superpoderes reales",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "ANIMALES con SUPERPODERES reales 🐙🐦🐱",
+  "hook": "Olvida los superhéroes del cine: hay animales con poderes reales que parecen de ciencia ficción.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pul_hook",
+      "narration": "Olvida los superhéroes del cine: hay animales con poderes reales que parecen de ciencia ficción.",
+      "on_screen_text": "Superpoderes reales",
+      "highlight_words": [
+        "reales"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hook",
+      "narration": "Tres corazones, alas invisibles de tan rápidas, caídas perfectas y rayas antimoscas.",
+      "on_screen_text": "Cuatro poderes increíbles",
+      "highlight_words": [
+        "increíbles"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_hook",
+      "narration": "Soy Leo, y aunque soy un perro, hoy te presento a los superhéroes del reino animal.",
+      "on_screen_text": "Los superhéroes animales",
+      "highlight_words": [
+        "superhéroes"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_hearts",
+      "narration": "El pulpo tiene tres corazones: dos bombean sangre a las branquias y uno al resto del cuerpo.",
+      "on_screen_text": "Tres corazones",
+      "highlight_words": [
+        "Tres"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El pulpo"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_blue",
+      "narration": "Y su sangre es azul, porque usa cobre en lugar de hierro para llevar el oxígeno.",
+      "on_screen_text": "Sangre azul",
+      "highlight_words": [
+        "azul"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_brain",
+      "narration": "Dos tercios de sus neuronas están en los brazos. Cada brazo puede explorar casi por su cuenta.",
+      "on_screen_text": "Brazos que piensan",
+      "highlight_words": [
+        "piensan"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_camo",
+      "narration": "Además cambia de color y de textura en un instante para esconderse.",
+      "on_screen_text": "Camuflaje instantáneo",
+      "highlight_words": [
+        "Camuflaje"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_beats",
+      "narration": "El colibrí bate las alas hasta unas ochenta veces por segundo. Por eso zumba como un insecto.",
+      "on_screen_text": "80 aleteos por segundo",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El colibrí"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hover",
+      "narration": "Puede quedarse quieto en el aire e incluso volar hacia atrás, algo que casi ningún otro pájaro hace.",
+      "on_screen_text": "Vuela hacia atrás",
+      "highlight_words": [
+        "atrás"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_heart",
+      "narration": "Su corazón puede latir más de mil doscientas veces por minuto.",
+      "on_screen_text": "1.200 latidos por minuto",
+      "highlight_words": [
+        "1.200"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_ecuador",
+      "narration": "Y Ecuador es uno de sus mejores hogares: allí se han registrado más de cien especies.",
+      "on_screen_text": "+100 especies en Ecuador",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_upside",
+      "narration": "El gato tiene un truco famoso: si cae de espaldas, casi siempre aterriza de pie.",
+      "on_screen_text": "Siempre de pie",
+      "highlight_words": [
+        "pie"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El gato"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_front",
+      "narration": "Primero gira la parte de adelante del cuerpo, y luego la de atrás, sin apoyarse en nada.",
+      "on_screen_text": "Gira por partes",
+      "highlight_words": [
+        "partes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_kitten",
+      "narration": "Este reflejo aparece cuando son gatitos de apenas tres o cuatro semanas.",
+      "on_screen_text": "Desde las 3 semanas",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_hook",
+      "narration": "¿Y las rayas de las cebras? No son solo para verse bien: funcionan como repelente de moscas.",
+      "on_screen_text": "Rayas antimoscas",
+      "highlight_words": [
+        "antimoscas"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "La cebra"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_miss",
+      "narration": "Las moscas que pican se confunden con las rayas, frenan mal y casi no logran aterrizar.",
+      "on_screen_text": "Las moscas fallan",
+      "highlight_words": [
+        "fallan"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ceb_experiment",
+      "narration": "Sorpresa: en un experimento, caballos con abrigos de rayas recibieron muchos menos aterrizajes.",
+      "on_screen_text": "¡Caballos con pijama de cebra!",
+      "highlight_words": [
+        "cebra!"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_gills",
+      "narration": "Y los peces respiran bajo el agua, donde hay muchísimo menos oxígeno que en el aire.",
+      "on_screen_text": "Respirar bajo el agua",
+      "highlight_words": [
+        "agua"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El pez"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_counter",
+      "narration": "Sus branquias usan un truco a contracorriente que les permite sacar hasta el ochenta por ciento del oxígeno.",
+      "on_screen_text": "Hasta el 80 % del oxígeno",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_shark",
+      "narration": "Algunos tiburones incluso tienen que nadar sin parar para que el agua pase por sus branquias.",
+      "on_screen_text": "Nadar para respirar",
+      "highlight_words": [
+        "Nadar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_shapes",
+      "narration": "Y las abejas construyen hexágonos, la forma que guarda más miel con menos cera.",
+      "on_screen_text": "Ingenieras hexagonales",
+      "highlight_words": [
+        "hexagonales"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_swim",
+      "narration": "Y cuando nada, el corazón que alimenta su cuerpo se detiene. Por eso prefiere caminar por el fondo.",
+      "on_screen_text": "Prefiere caminar",
+      "highlight_words": [
+        "caminar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_squeeze",
+      "narration": "Como no tiene huesos, puede pasar por cualquier agujero más grande que su pico.",
+      "on_screen_text": "Sin huesos",
+      "highlight_words": [
+        "huesos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_taste",
+      "narration": "Y sus ventosas pueden saborear lo que tocan. Es como tener lengua en los dedos.",
+      "on_screen_text": "Ventosas que saborean",
+      "highlight_words": [
+        "saborean"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_lift",
+      "narration": "Sus alas dibujan un ocho en el aire, y empujan tanto al bajar como al subir.",
+      "on_screen_text": "Alas en forma de ocho",
+      "highlight_words": [
+        "ocho"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_torpor",
+      "narration": "De noche entra en letargo: baja su temperatura y su ritmo para ahorrar energía hasta el amanecer.",
+      "on_screen_text": "Modo ahorro nocturno",
+      "highlight_words": [
+        "ahorro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_ear",
+      "narration": "Su oído interno le dice en una fracción de segundo dónde está el suelo.",
+      "on_screen_text": "El oído interno",
+      "highlight_words": [
+        "oído"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_photo",
+      "narration": "Los científicos lo estudiaron en 1894, con una de las primeras secuencias de fotos de la historia.",
+      "on_screen_text": "Fotos de 1894",
+      "highlight_words": [
+        "1894"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_unique",
+      "narration": "Y no hay dos cebras con las mismas rayas: cada una tiene su propio diseño.",
+      "on_screen_text": "Rayas únicas",
+      "highlight_words": [
+        "únicas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_lamellae",
+      "narration": "Las branquias tienen miles de laminillas muy finas, que ofrecen una superficie enorme para atrapar oxígeno.",
+      "on_screen_text": "Laminillas finísimas",
+      "highlight_words": [
+        "Laminillas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_ink",
+      "narration": "Si lo atacan, suelta una nube de tinta y escapa mientras el enemigo queda confundido.",
+      "on_screen_text": "Una nube de tinta",
+      "highlight_words": [
+        "tinta"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_eight",
+      "narration": "Pesa menos que una moneda pequeña, pero puede migrar largas distancias.",
+      "on_screen_text": "Pequeño pero viajero",
+      "highlight_words": [
+        "viajero"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_tuck",
+      "narration": "Encoge y estira las patas para girar más rápido o más lento, como una patinadora sobre hielo.",
+      "on_screen_text": "Como una patinadora",
+      "highlight_words": [
+        "patinadora"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s34",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_land",
+      "narration": "Al final aterriza con las patas como amortiguadores. Aun así, las caídas altas sí pueden lastimarlo.",
+      "on_screen_text": "Patas amortiguadoras",
+      "highlight_words": [
+        "amortiguadoras"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s35",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_skin",
+      "narration": "Debajo de su pelaje blanco y negro, la piel de la cebra es oscura.",
+      "on_screen_text": "Piel oscura debajo",
+      "highlight_words": [
+        "oscura"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s36",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_oxygen",
+      "narration": "En el agua hay entre veinte y cuarenta veces menos oxígeno que en el aire. Respirar ahí es un reto enorme.",
+      "on_screen_text": "Poco oxígeno en el agua",
+      "highlight_words": [
+        "oxígeno"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s37",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_less",
+      "narration": "Las abejas necesitan varios kilos de miel para fabricar un kilo de cera, así que no pueden desperdiciarla.",
+      "on_screen_text": "La cera es valiosa",
+      "highlight_words": [
+        "valiosa"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s38",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hook",
+      "narration": "La naturaleza lleva millones de años inventando superpoderes. Solo hay que saber mirar.",
+      "on_screen_text": "Millones de años inventando",
+      "highlight_words": [
+        "inventando"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s39",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pul_outro",
+      "narration": "¿Cuál es tu animal favorito? Escríbelo en los comentarios y quizás sea el próximo.",
+      "on_screen_text": "¿Cuál es tu favorito?",
+      "highlight_words": [
+        "favorito?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Un pulpo con tres corazones y sangre azul, un colibrí que bate las alas 80 veces por segundo, gatos que caen de pie, cebras antimoscas y peces que respiran bajo el agua. Datos verificados en 3D. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "animales",
+    "naturaleza",
+    "pulpo",
+    "colibri",
+    "curiosidades",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s4",
+    "at": 0.5,
+    "text": "Animales con superpoderes",
+    "highlight": [
+      "superpoderes"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Octopus",
+      "url": "https://en.wikipedia.org/wiki/Octopus",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hummingbird",
+      "url": "https://en.wikipedia.org/wiki/Hummingbird",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cat righting reflex",
+      "url": "https://en.wikipedia.org/wiki/Cat_righting_reflex",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Zebra",
+      "url": "https://en.wikipedia.org/wiki/Zebra",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gill",
+      "url": "https://en.wikipedia.org/wiki/Gill",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Countercurrent exchange",
+      "url": "https://en.wikipedia.org/wiki/Countercurrent_exchange",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El pulpo tiene tres corazones y sangre azul con hemocianina.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los colibríes baten las alas de unas 12 a 80 veces por segundo según la especie.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El reflejo de enderezamiento del gato aparece a las 3–4 semanas.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Las rayas reducen los aterrizajes de moscas que pican.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Zebra"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El intercambio a contracorriente permite a los peces extraer hasta ~80 % del oxígeno del agua.",
+      "scene_id": "s19",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Countercurrent_exchange"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

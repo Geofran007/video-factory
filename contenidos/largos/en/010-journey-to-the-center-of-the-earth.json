@@ -1,0 +1,593 @@
+{
+  "topic": "Journey to the center of the Earth",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "JOURNEY to the CENTER of the EARTH: What's Under Your Feet? 🌍",
+  "hook": "If you dug a hole straight down under your feet, what would you find at the center of the Earth?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "If you dug a hole straight down under your feet, what would you find at the center of the Earth?",
+      "on_screen_text": "What's at the center?",
+      "highlight_words": [
+        "center?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_hook",
+      "narration": "The center is about six thousand four hundred kilometers down. Like a cross-continent trip… but straight down.",
+      "on_screen_text": "6,400 km down",
+      "highlight_words": [
+        "6,400"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_hook",
+      "narration": "I'm Leo, and today we're going down layer by layer to the heart of the planet.",
+      "on_screen_text": "Down layer by layer",
+      "highlight_words": [
+        "layer"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "The deepest hole we've ever dug is the Kola well in Russia: just over twelve kilometers.",
+      "on_screen_text": "The record: 12 km",
+      "highlight_words": [
+        "12"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The crust"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "It sounds like a lot, but it's barely a scratch: it didn't even get through the crust.",
+      "on_screen_text": "Barely a scratch",
+      "highlight_words": [
+        "scratch"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "It took almost twenty years to drill, and they had to stop because the rock was too hot.",
+      "on_screen_text": "Too hot to continue",
+      "highlight_words": [
+        "hot"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "The crust is the layer of rock we live on. Under the oceans it's just a few kilometers thick, under mountains, tens.",
+      "on_screen_text": "The crust",
+      "highlight_words": [
+        "crust"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "If Earth were an apple, the crust would be thinner than its skin.",
+      "on_screen_text": "Thinner than an apple skin",
+      "highlight_words": [
+        "skin"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_push",
+      "narration": "And it's broken into plates that move a few centimeters a year, like the Nazca plate off South America.",
+      "on_screen_text": "Moving plates",
+      "highlight_words": [
+        "plates"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_melt",
+      "narration": "Below is the mantle: very hot rock that slowly flows like a paste over millions of years.",
+      "on_screen_text": "The mantle",
+      "highlight_words": [
+        "mantle"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The mantle"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_melt",
+      "narration": "The mantle is the thickest layer: almost three thousand kilometers of hot rock.",
+      "on_screen_text": "The thickest layer",
+      "highlight_words": [
+        "thickest"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_rise",
+      "narration": "Where a plate sinks, rock melts and magma rises to feed volcanoes.",
+      "on_screen_text": "Magma is born",
+      "highlight_words": [
+        "Magma"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_rise",
+      "narration": "Volcanoes are like windows: the magma they spew tells us what the deep rock is like.",
+      "on_screen_text": "Windows into the Earth",
+      "highlight_words": [
+        "Windows"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gal_hotspot",
+      "narration": "In other places a column of hot rock rises from deep down. That's how the Galápagos Islands were born.",
+      "on_screen_text": "Hotspots",
+      "highlight_words": [
+        "Hotspots"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_deep",
+      "narration": "About a hundred and fifty kilometers down, heat and pressure are so great that carbon turns into diamond.",
+      "on_screen_text": "A diamond factory",
+      "highlight_words": [
+        "diamond"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_pipe",
+      "narration": "Some ride up to the surface in deep, very fast volcanic eruptions.",
+      "on_screen_text": "They ride eruptions",
+      "highlight_words": [
+        "eruptions"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "Further down, almost three thousand kilometers deep, the core begins: a huge ball of iron and nickel.",
+      "on_screen_text": "The iron core",
+      "highlight_words": [
+        "iron"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The core"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_north",
+      "narration": "Its outer part is liquid, and as it moves it creates the magnetic field that makes compasses work.",
+      "on_screen_text": "Moving liquid iron",
+      "highlight_words": [
+        "liquid"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_shield",
+      "narration": "That field shields us from particles from the Sun and, near the poles, creates the auroras.",
+      "on_screen_text": "Our shield",
+      "highlight_words": [
+        "shield"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "And at the center, the temperature reaches about five thousand four hundred degrees: similar to the surface of the Sun.",
+      "on_screen_text": "As hot as the Sun",
+      "highlight_words": [
+        "Sun"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "But the inner core is solid. The pressure is so enormous that the iron can't melt.",
+      "on_screen_text": "Solid from pressure",
+      "highlight_words": [
+        "pressure"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_womb",
+      "narration": "How do we know, if nobody has been there? By listening to earthquakes.",
+      "on_screen_text": "How do we know?",
+      "highlight_words": [
+        "know?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "Earthquake waves travel through the planet and change speed and direction as they cross each layer.",
+      "on_screen_text": "Waves passing through",
+      "highlight_words": [
+        "Waves"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How we know"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "With seismographs all over the world, scientists rebuild what's inside, like a giant ultrasound scan.",
+      "on_screen_text": "An ultrasound of the planet",
+      "highlight_words": [
+        "ultrasound"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_globe",
+      "narration": "And the point on the surface farthest from the center is in Ecuador: the summit of Chimborazo.",
+      "on_screen_text": "Chimborazo, the farthest",
+      "highlight_words": [
+        "Chimborazo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "That's because Earth, as it spins, bulges a little at the equator.",
+      "on_screen_text": "A bulging Earth",
+      "highlight_words": [
+        "bulging"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_row",
+      "narration": "That's why volcanoes and earthquakes cluster along plate edges, like the Pacific coast.",
+      "on_screen_text": "Along plate edges",
+      "highlight_words": [
+        "edges"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_hard",
+      "narration": "Diamond and the graphite in your pencil are the same carbon, just arranged differently.",
+      "on_screen_text": "Pencil and diamond, same carbon",
+      "highlight_words": [
+        "carbon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_moving",
+      "narration": "And the magnetic north pole isn't fixed: it moves tens of kilometers every year.",
+      "on_screen_text": "The pole moves",
+      "highlight_words": [
+        "moves"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_flip",
+      "narration": "Over the planet's history, the magnetic poles have flipped many times.",
+      "on_screen_text": "The poles flip",
+      "highlight_words": [
+        "flip"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "Some earthquake waves can't pass through liquids. From the shadows they leave, we know the outer core is liquid.",
+      "on_screen_text": "Shadows that reveal",
+      "highlight_words": [
+        "Shadows"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_cotopaxi",
+      "narration": "That inner heat also powers volcanoes like Ecuador's Cotopaxi, almost six thousand meters high.",
+      "on_screen_text": "Heat that drives volcanoes",
+      "highlight_words": [
+        "volcanoes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gal_plate",
+      "narration": "The plate carrying the Galápagos moves a few centimeters a year, about as fast as your fingernails grow.",
+      "on_screen_text": "As slow as your nails",
+      "highlight_words": [
+        "nails"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s34",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_age",
+      "narration": "Many diamonds are between one and three and a half billion years old: older than the dinosaurs.",
+      "on_screen_text": "Older than the dinosaurs",
+      "highlight_words": [
+        "dinosaurs"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s35",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_poles",
+      "narration": "Without that magnetic shield, the solar wind would slowly wear away our atmosphere.",
+      "on_screen_text": "A vital shield",
+      "highlight_words": [
+        "shield"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s36",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_spin",
+      "narration": "And all of it spins with you: at the equator you travel about a thousand six hundred kilometers per hour without noticing.",
+      "on_screen_text": "Spinning without noticing",
+      "highlight_words": [
+        "Spinning"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s37",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "So under your feet there's rock, magma, diamonds and an iron heart hotter than any furnace.",
+      "on_screen_text": "A living planet",
+      "highlight_words": [
+        "living"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s38",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "and_outro",
+      "narration": "How deep would you like to go? Tell me in the comments.",
+      "on_screen_text": "How deep would you go?",
+      "highlight_words": [
+        "deep"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "We go down layer by layer: the crust, the mantle where volcanoes and diamonds are born, the iron core that makes the magnetic field and a center as hot as the surface of the Sun. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "earth",
+    "geology",
+    "volcanoes",
+    "earthscience",
+    "core",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.5,
+    "text": "Journey to the center of the Earth",
+    "highlight": [
+      "center"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Kola Superdeep Borehole",
+      "url": "https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Crust (geology)",
+      "url": "https://en.wikipedia.org/wiki/Crust_(geology)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Earth's inner core",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_inner_core",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Diamond",
+      "url": "https://en.wikipedia.org/wiki/Diamond",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Subduction",
+      "url": "https://en.wikipedia.org/wiki/Subduction",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Kola Superdeep Borehole reached 12,262 m in 1989.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Most natural diamonds form about 150–250 km deep.",
+      "scene_id": "s15",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The inner core's surface is about 5,400 °C, similar to the Sun's surface.",
+      "scene_id": "s1",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_inner_core"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Earth's magnetic field is generated by moving liquid iron in the outer core.",
+      "scene_id": "s18",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

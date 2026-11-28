@@ -1,0 +1,615 @@
+{
+  "topic": "Animals with real superpowers",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "ANIMALS with Real SUPERPOWERS 🐙🐦🐱",
+  "hook": "Forget movie superheroes: there are animals with real powers that seem straight out of science fiction.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "pul_hook",
+      "narration": "Forget movie superheroes: there are animals with real powers that seem straight out of science fiction.",
+      "on_screen_text": "Real superpowers",
+      "highlight_words": [
+        "Real"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hook",
+      "narration": "Three hearts, wings too fast to see, perfect landings and fly-proof stripes.",
+      "on_screen_text": "Four incredible powers",
+      "highlight_words": [
+        "incredible"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_hook",
+      "narration": "I'm Leo, and although I'm a dog, today I'll introduce you to the superheroes of the animal kingdom.",
+      "on_screen_text": "Animal superheroes",
+      "highlight_words": [
+        "superheroes"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_hearts",
+      "narration": "The octopus has three hearts: two pump blood to the gills and one to the rest of the body.",
+      "on_screen_text": "Three hearts",
+      "highlight_words": [
+        "Three"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The octopus"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_blue",
+      "narration": "And its blood is blue, because it uses copper instead of iron to carry oxygen.",
+      "on_screen_text": "Blue blood",
+      "highlight_words": [
+        "Blue"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_brain",
+      "narration": "Two thirds of its neurons are in its arms. Each arm can explore almost on its own.",
+      "on_screen_text": "Thinking arms",
+      "highlight_words": [
+        "Thinking"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_camo",
+      "narration": "It can also change color and texture in an instant to hide.",
+      "on_screen_text": "Instant camouflage",
+      "highlight_words": [
+        "camouflage"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_beats",
+      "narration": "The hummingbird beats its wings up to about eighty times a second. That's why it buzzes like an insect.",
+      "on_screen_text": "80 beats a second",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The hummingbird"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hover",
+      "narration": "It can hover in place and even fly backwards, something almost no other bird can do.",
+      "on_screen_text": "It flies backwards",
+      "highlight_words": [
+        "backwards"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_heart",
+      "narration": "Its heart can beat more than twelve hundred times a minute.",
+      "on_screen_text": "1,200 beats a minute",
+      "highlight_words": [
+        "1,200"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_ecuador",
+      "narration": "And Ecuador is one of its best homes: more than a hundred species have been recorded there.",
+      "on_screen_text": "100+ species in Ecuador",
+      "highlight_words": [
+        "Ecuador"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_upside",
+      "narration": "The cat has a famous trick: if it falls upside down, it almost always lands on its feet.",
+      "on_screen_text": "Always on its feet",
+      "highlight_words": [
+        "feet"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The cat"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_front",
+      "narration": "First it twists the front half of its body, then the back half, without pushing off anything.",
+      "on_screen_text": "It turns in halves",
+      "highlight_words": [
+        "halves"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_kitten",
+      "narration": "This reflex appears when they're kittens just three or four weeks old.",
+      "on_screen_text": "From 3 weeks old",
+      "highlight_words": [
+        "3"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_hook",
+      "narration": "And zebra stripes? They're not just for looks: they work as a fly repellent.",
+      "on_screen_text": "Fly-proof stripes",
+      "highlight_words": [
+        "Fly-proof"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The zebra"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_miss",
+      "narration": "Biting flies get confused by the stripes, brake badly and barely manage to land.",
+      "on_screen_text": "Flies miss",
+      "highlight_words": [
+        "miss"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ceb_experiment",
+      "narration": "Surprise: in an experiment, horses wearing striped coats got far fewer fly landings.",
+      "on_screen_text": "Horses in zebra pajamas!",
+      "highlight_words": [
+        "zebra"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_gills",
+      "narration": "And fish breathe underwater, where there's far less oxygen than in air.",
+      "on_screen_text": "Breathing underwater",
+      "highlight_words": [
+        "underwater"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The fish"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_counter",
+      "narration": "Their gills use a countercurrent trick that lets them pull out up to eighty percent of the oxygen.",
+      "on_screen_text": "Up to 80% of the oxygen",
+      "highlight_words": [
+        "80"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_shark",
+      "narration": "Some sharks even have to keep swimming so water flows over their gills.",
+      "on_screen_text": "Swim to breathe",
+      "highlight_words": [
+        "Swim"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_shapes",
+      "narration": "And bees build hexagons, the shape that stores the most honey with the least wax.",
+      "on_screen_text": "Hexagon engineers",
+      "highlight_words": [
+        "Hexagon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_swim",
+      "narration": "And when it swims, the heart that feeds its body stops. That's why it prefers to crawl along the bottom.",
+      "on_screen_text": "It prefers to crawl",
+      "highlight_words": [
+        "crawl"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_squeeze",
+      "narration": "Since it has no bones, it can squeeze through any hole bigger than its beak.",
+      "on_screen_text": "No bones",
+      "highlight_words": [
+        "bones"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_taste",
+      "narration": "And its suckers can taste what they touch. It's like having tongues on your fingers.",
+      "on_screen_text": "Suckers that taste",
+      "highlight_words": [
+        "taste"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_lift",
+      "narration": "Its wings trace a figure eight in the air, pushing both on the way down and on the way up.",
+      "on_screen_text": "Figure-eight wings",
+      "highlight_words": [
+        "eight"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_torpor",
+      "narration": "At night it goes into torpor: it lowers its temperature and heart rate to save energy until dawn.",
+      "on_screen_text": "Night-time power saving",
+      "highlight_words": [
+        "saving"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_ear",
+      "narration": "Its inner ear tells it in a split second where the ground is.",
+      "on_screen_text": "The inner ear",
+      "highlight_words": [
+        "ear"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_photo",
+      "narration": "Scientists studied it back in 1894, with one of the first photo sequences in history.",
+      "on_screen_text": "Photos from 1894",
+      "highlight_words": [
+        "1894"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_unique",
+      "narration": "And no two zebras have the same stripes: each one has its own pattern.",
+      "on_screen_text": "Unique stripes",
+      "highlight_words": [
+        "Unique"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_lamellae",
+      "narration": "Gills have thousands of very thin plates, giving a huge surface to catch oxygen.",
+      "on_screen_text": "Super-thin plates",
+      "highlight_words": [
+        "plates"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pul_ink",
+      "narration": "If it's attacked, it squirts a cloud of ink and escapes while the enemy is confused.",
+      "on_screen_text": "A cloud of ink",
+      "highlight_words": [
+        "ink"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_eight",
+      "narration": "It weighs less than a small coin, yet some can migrate long distances.",
+      "on_screen_text": "Small but well-traveled",
+      "highlight_words": [
+        "traveled"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_tuck",
+      "narration": "It tucks and stretches its legs to spin faster or slower, like a figure skater.",
+      "on_screen_text": "Like a figure skater",
+      "highlight_words": [
+        "skater"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s34",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gato_land",
+      "narration": "Finally it lands with its legs as shock absorbers. Even so, high falls can still hurt it.",
+      "on_screen_text": "Shock-absorbing legs",
+      "highlight_words": [
+        "Shock-absorbing"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s35",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ceb_skin",
+      "narration": "Under its black and white coat, a zebra's skin is dark.",
+      "on_screen_text": "Dark skin underneath",
+      "highlight_words": [
+        "Dark"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s36",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "pez_oxygen",
+      "narration": "Water holds twenty to forty times less oxygen than air. Breathing there is a huge challenge.",
+      "on_screen_text": "Little oxygen in water",
+      "highlight_words": [
+        "oxygen"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s37",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "abe_less",
+      "narration": "Bees need several kilos of honey to make one kilo of wax, so they can't afford to waste it.",
+      "on_screen_text": "Wax is precious",
+      "highlight_words": [
+        "precious"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s38",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "col_hook",
+      "narration": "Nature has been inventing superpowers for millions of years. You just have to know where to look.",
+      "on_screen_text": "Millions of years of invention",
+      "highlight_words": [
+        "invention"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s39",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "pul_outro",
+      "narration": "What's your favorite animal? Tell me in the comments and it might be next.",
+      "on_screen_text": "What's your favorite?",
+      "highlight_words": [
+        "favorite?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "An octopus with three hearts and blue blood, a hummingbird beating its wings 80 times a second, cats that land on their feet, fly-proof zebras and fish that breathe underwater. Verified facts in 3D. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "animals",
+    "nature",
+    "octopus",
+    "hummingbird",
+    "funfacts",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s4",
+    "at": 0.5,
+    "text": "Animals with superpowers",
+    "highlight": [
+      "superpowers"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Octopus",
+      "url": "https://en.wikipedia.org/wiki/Octopus",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hummingbird",
+      "url": "https://en.wikipedia.org/wiki/Hummingbird",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Cat righting reflex",
+      "url": "https://en.wikipedia.org/wiki/Cat_righting_reflex",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Zebra",
+      "url": "https://en.wikipedia.org/wiki/Zebra",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gill",
+      "url": "https://en.wikipedia.org/wiki/Gill",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Countercurrent exchange",
+      "url": "https://en.wikipedia.org/wiki/Countercurrent_exchange",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The octopus has three hearts and blue blood with hemocyanin.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Octopus"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hummingbirds beat their wings about 12 to 80 times per second depending on species.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hummingbird"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The cat righting reflex appears at 3–4 weeks of age.",
+      "scene_id": "s14",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Cat_righting_reflex"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Stripes reduce landings by biting flies.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Zebra"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Countercurrent exchange lets fish extract up to ~80% of the oxygen in water.",
+      "scene_id": "s19",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Countercurrent_exchange"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

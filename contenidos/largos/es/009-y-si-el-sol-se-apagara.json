@@ -1,0 +1,523 @@
+{
+  "topic": "Qué pasaría si el Sol se apagara",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "¿Qué pasaría si el SOL se APAGARA? ☀️",
+  "hook": "¿Qué pasaría si, de un momento a otro, el Sol se apagara para siempre?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "sol_hook",
+      "narration": "¿Qué pasaría si, de un momento a otro, el Sol se apagara para siempre?",
+      "on_screen_text": "¿Y si el Sol se apagara?",
+      "highlight_words": [
+        "apagara?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "Lo más raro es que, al principio, no te darías cuenta. Durante unos minutos todo seguiría igual.",
+      "on_screen_text": "Al principio, nada",
+      "highlight_words": [
+        "nada"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_walk",
+      "narration": "Soy Leo, y hoy vamos a apagar el Sol con la imaginación, para entender todo lo que hace por nosotros.",
+      "on_screen_text": "Apaguemos el Sol",
+      "highlight_words": [
+        "Apaguemos"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "La luz del Sol tarda unos ocho minutos en llegar a la Tierra. Así que durante ocho minutos seguiríamos viendo un Sol que ya no existe.",
+      "on_screen_text": "8 minutos de luz",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Los primeros minutos"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "Y lo mismo con su gravedad: la Tierra seguiría dando vueltas como si nada durante esos minutos.",
+      "on_screen_text": "La órbita sigue… un rato",
+      "highlight_words": [
+        "rato"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "La Tierra da una vuelta al Sol cada año, a unos ciento cincuenta millones de kilómetros, porque su gravedad la mantiene en ese camino.",
+      "on_screen_text": "Atada por la gravedad",
+      "highlight_words": [
+        "gravedad"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_sun",
+      "narration": "Después, sin nada que la sujete, la Tierra saldría disparada en línea recta hacia el espacio.",
+      "on_screen_text": "En línea recta",
+      "highlight_words": [
+        "recta"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_sun",
+      "narration": "Sin el Sol, todos los planetas saldrían disparados, cada uno por su lado, como piedras soltadas de una honda.",
+      "on_screen_text": "Como una honda",
+      "highlight_words": [
+        "honda"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "De día, el cielo se volvería negro. Solo quedarían las estrellas, y ya no veríamos la Luna, porque brilla con luz del Sol.",
+      "on_screen_text": "Adiós, día",
+      "highlight_words": [
+        "día"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_photo",
+      "narration": "Las plantas usan la luz del Sol para fabricar su alimento. Sin luz, la fotosíntesis se detendría de inmediato.",
+      "on_screen_text": "Sin fotosíntesis",
+      "highlight_words": [
+        "fotosíntesis"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El gran frío"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_photo",
+      "narration": "Sin plantas, los animales que comen plantas se quedarían sin alimento, y después los que se alimentan de ellos.",
+      "on_screen_text": "Se rompe la cadena",
+      "highlight_words": [
+        "cadena"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_leaf",
+      "narration": "Algunos árboles grandes podrían aguantar un tiempo con sus reservas, pero tarde o temprano también se apagarían.",
+      "on_screen_text": "Los árboles resisten un poco",
+      "highlight_words": [
+        "resisten"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "Sin calor, el aire y la superficie se enfriarían rápido. En pocas semanas haría un frío peor que el de cualquier invierno.",
+      "on_screen_text": "Un frío extremo",
+      "highlight_words": [
+        "frío"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "Los mares se congelarían por arriba, pero esa capa de hielo funcionaría como una manta para el agua de abajo.",
+      "on_screen_text": "El hielo como manta",
+      "highlight_words": [
+        "manta"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "Con el tiempo, incluso el aire podría congelarse y caer como nieve sobre la superficie.",
+      "on_screen_text": "Nieve de aire",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "Y en el fondo del océano, junto a fuentes de agua caliente, hay vida que no necesita la luz del Sol.",
+      "on_screen_text": "Vida sin Sol",
+      "highlight_words": [
+        "Vida"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "Esos animales y bacterias obtienen energía de sustancias químicas que salen del interior de la Tierra. Podrían seguir viviendo mucho tiempo.",
+      "on_screen_text": "Energía de la Tierra",
+      "highlight_words": [
+        "Tierra"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "El calor del interior de la Tierra seguiría escapando por el fondo del mar durante muchísimo tiempo.",
+      "on_screen_text": "El calor del planeta",
+      "highlight_words": [
+        "calor"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_core",
+      "narration": "Pero, ¿puede el Sol apagarse de verdad? Para saberlo hay que mirar su centro, que está a unos quince millones de grados.",
+      "on_screen_text": "15 millones de °C",
+      "highlight_words": [
+        "15"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "¿Cómo brilla el Sol?"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_fusion",
+      "narration": "Allí, el hidrógeno se une para formar helio y libera muchísima energía. Es la fusión nuclear.",
+      "on_screen_text": "Fusión nuclear",
+      "highlight_words": [
+        "Fusión"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_fusion",
+      "narration": "Para producir tanta energía, el Sol tiene que ser enorme: en él cabrían más de un millón de Tierras.",
+      "on_screen_text": "Más de un millón de Tierras",
+      "highlight_words": [
+        "millón"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_mass",
+      "narration": "Cada segundo, el Sol convierte en energía unos cuatro millones de toneladas de su propia materia.",
+      "on_screen_text": "4 millones de t por segundo",
+      "highlight_words": [
+        "4"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "Esa energía tarda muchísimo en salir: puede pasar decenas de miles de años rebotando antes de llegar a la superficie.",
+      "on_screen_text": "Miles de años para salir",
+      "highlight_words": [
+        "Miles"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "Durante esos minutos, las plantas seguirían haciendo fotosíntesis y los paneles solares seguirían dando electricidad.",
+      "on_screen_text": "Todo sigue… por ahora",
+      "highlight_words": [
+        "ahora"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_age",
+      "narration": "La buena noticia: el Sol tiene unos cuatro mil seiscientos millones de años y le quedan unos cinco mil millones más.",
+      "on_screen_text": "Le quedan 5.000 millones",
+      "highlight_words": [
+        "5.000"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El futuro real"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_giant",
+      "narration": "Al final no se apagará de golpe: se hinchará como una gigante roja, mucho más grande que ahora.",
+      "on_screen_text": "Una gigante roja",
+      "highlight_words": [
+        "gigante"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_giant",
+      "narration": "Pero tranquilo: eso ocurrirá dentro de miles de millones de años, muchísimo después de que nosotros existamos.",
+      "on_screen_text": "Falta muchísimo",
+      "highlight_words": [
+        "muchísimo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "Y la superficie que vemos hoy, a unos cinco mil quinientos grados, es la que nos da la luz y el calor de cada día.",
+      "on_screen_text": "5.500 °C en la superficie",
+      "highlight_words": [
+        "5.500"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "Esa misma luz, al llegar más o menos inclinada, crea las estaciones, el clima y el ciclo del agua.",
+      "on_screen_text": "Estaciones y clima",
+      "highlight_words": [
+        "clima"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_walk",
+      "narration": "Así que la próxima vez que salgas al Sol, recuerda que estás recibiendo luz que salió de él hace ocho minutos.",
+      "on_screen_text": "Luz de hace 8 minutos",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "El cielo se llenaría de estrellas, incluso al mediodía. Sería precioso, pero muy frío.",
+      "on_screen_text": "Estrellas al mediodía",
+      "highlight_words": [
+        "mediodía"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_hook",
+      "narration": "Sin el Sol no habría plantas, ni clima, ni días. Es, literalmente, el motor de la vida en la Tierra.",
+      "on_screen_text": "El motor de la vida",
+      "highlight_words": [
+        "motor"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "sol_outro",
+      "narration": "¿Qué otra estrella quieres que exploremos? Escríbelo en los comentarios.",
+      "on_screen_text": "¿Qué estrella sigue?",
+      "highlight_words": [
+        "estrella"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Ocho minutos de calma, una órbita que se rompe, plantas que dejan de crecer y vida que sigue en el fondo del mar. Lo que diría la física si el Sol desapareciera, y lo que de verdad le pasará dentro de miles de millones de años. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "sol",
+    "quepasariasi",
+    "espacio",
+    "astronomia",
+    "planetatierra",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.5,
+    "text": "¿Y si el Sol se apagara?",
+    "highlight": [
+      "apagara?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Sun facts",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Sun",
+      "url": "https://en.wikipedia.org/wiki/Sun",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hydrothermal vent",
+      "url": "https://en.wikipedia.org/wiki/Hydrothermal_vent",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Chemosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Chemosynthesis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Photosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La luz del Sol tarda unos 8 minutos en llegar a la Tierra.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La temperatura del núcleo solar es de unos 15 millones de °C.",
+      "scene_id": "s19",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Junto a las fuentes hidrotermales viven comunidades que obtienen energía de sustancias químicas, no de la luz.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hydrothermal_vent"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El Sol tiene unos 4.600 millones de años y le quedan unos 5.000 millones en su etapa actual.",
+      "scene_id": "s25",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

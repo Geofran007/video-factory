@@ -1,0 +1,523 @@
+{
+  "topic": "What if the Sun went out",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "What Would Happen If the SUN Went OUT? ☀️",
+  "hook": "What would happen if, all of a sudden, the Sun went out forever?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "sol_hook",
+      "narration": "What would happen if, all of a sudden, the Sun went out forever?",
+      "on_screen_text": "What if the Sun went out?",
+      "highlight_words": [
+        "out?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "The strangest part is that at first you wouldn't notice. For a few minutes everything would stay the same.",
+      "on_screen_text": "At first, nothing",
+      "highlight_words": [
+        "nothing"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_walk",
+      "narration": "I'm Leo, and today we'll switch off the Sun in our imagination, to understand everything it does for us.",
+      "on_screen_text": "Let's switch off the Sun",
+      "highlight_words": [
+        "switch"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "Sunlight takes about eight minutes to reach Earth. So for eight minutes we'd still see a Sun that no longer exists.",
+      "on_screen_text": "8 minutes of light",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The first minutes"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "Same with its gravity: Earth would keep circling as if nothing happened for those minutes.",
+      "on_screen_text": "The orbit holds… briefly",
+      "highlight_words": [
+        "briefly"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_orbit",
+      "narration": "Earth circles the Sun once a year, about a hundred and fifty million kilometers away, because its gravity keeps it on that path.",
+      "on_screen_text": "Held by gravity",
+      "highlight_words": [
+        "gravity"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_sun",
+      "narration": "Then, with nothing holding it, Earth would fly off in a straight line into space.",
+      "on_screen_text": "In a straight line",
+      "highlight_words": [
+        "straight"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "bh_sun",
+      "narration": "Without the Sun, every planet would fly off on its own, like stones let go from a sling.",
+      "on_screen_text": "Like a sling",
+      "highlight_words": [
+        "sling"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "By day, the sky would turn black. Only the stars would remain, and we'd lose the Moon too, because it shines with sunlight.",
+      "on_screen_text": "Goodbye, daytime",
+      "highlight_words": [
+        "daytime"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_photo",
+      "narration": "Plants use sunlight to make their food. Without light, photosynthesis would stop right away.",
+      "on_screen_text": "No photosynthesis",
+      "highlight_words": [
+        "photosynthesis"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The big freeze"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_photo",
+      "narration": "Without plants, the animals that eat plants would run out of food, and then the ones that eat them.",
+      "on_screen_text": "The food chain breaks",
+      "highlight_words": [
+        "chain"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "arb_leaf",
+      "narration": "Some big trees could hold out for a while on their reserves, but sooner or later they'd fade too.",
+      "on_screen_text": "Trees hold out a little",
+      "highlight_words": [
+        "hold"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "Without heat, the air and the surface would cool fast. Within weeks it would be colder than any winter.",
+      "on_screen_text": "Extreme cold",
+      "highlight_words": [
+        "cold"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "The seas would freeze from the top, but that layer of ice would act like a blanket for the water below.",
+      "on_screen_text": "Ice as a blanket",
+      "highlight_words": [
+        "blanket"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hie_lake",
+      "narration": "Over time, even the air itself could freeze and fall like snow onto the surface.",
+      "on_screen_text": "Snow made of air",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "And on the ocean floor, next to hot springs, there's life that doesn't need sunlight.",
+      "on_screen_text": "Life without the Sun",
+      "highlight_words": [
+        "Life"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "Those animals and bacteria get energy from chemicals coming out of Earth's interior. They could keep living for a long time.",
+      "on_screen_text": "Energy from Earth",
+      "highlight_words": [
+        "Earth"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sal_vents",
+      "narration": "Heat from Earth's interior would keep escaping through the seafloor for a very long time.",
+      "on_screen_text": "Earth's own heat",
+      "highlight_words": [
+        "heat"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_core",
+      "narration": "But can the Sun really go out? To find out we have to look at its core, at about fifteen million degrees.",
+      "on_screen_text": "15 million °C",
+      "highlight_words": [
+        "15"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "How the Sun shines"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_fusion",
+      "narration": "There, hydrogen fuses into helium and releases enormous energy. It's nuclear fusion.",
+      "on_screen_text": "Nuclear fusion",
+      "highlight_words": [
+        "fusion"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_fusion",
+      "narration": "To make that much energy, the Sun has to be huge: more than a million Earths would fit inside it.",
+      "on_screen_text": "Over a million Earths",
+      "highlight_words": [
+        "million"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_mass",
+      "narration": "Every second, the Sun turns about four million tons of its own matter into energy.",
+      "on_screen_text": "4 million tons a second",
+      "highlight_words": [
+        "4"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "That energy takes ages to escape: it can spend tens of thousands of years bouncing around before reaching the surface.",
+      "on_screen_text": "Thousands of years to escape",
+      "highlight_words": [
+        "Thousands"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_light",
+      "narration": "During those minutes, plants would keep photosynthesizing and solar panels would keep making electricity.",
+      "on_screen_text": "All normal… for now",
+      "highlight_words": [
+        "now"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_age",
+      "narration": "The good news: the Sun is about four point six billion years old, with about five billion more to go.",
+      "on_screen_text": "5 billion years left",
+      "highlight_words": [
+        "5"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The real future"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_giant",
+      "narration": "In the end it won't switch off suddenly: it will swell into a red giant, far bigger than it is today.",
+      "on_screen_text": "A red giant",
+      "highlight_words": [
+        "giant"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_giant",
+      "narration": "But don't worry: that will happen billions of years from now, long after us.",
+      "on_screen_text": "A very long way off",
+      "highlight_words": [
+        "long"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "And the surface we see today, at about five thousand five hundred degrees, is what gives us light and warmth every day.",
+      "on_screen_text": "5,500 °C at the surface",
+      "highlight_words": [
+        "5,500"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "est_rays",
+      "narration": "That same light, arriving more or less slanted, creates the seasons, the weather and the water cycle.",
+      "on_screen_text": "Seasons and weather",
+      "highlight_words": [
+        "weather"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_walk",
+      "narration": "So next time you step into the sunshine, remember you're getting light that left it eight minutes ago.",
+      "on_screen_text": "Light from 8 minutes ago",
+      "highlight_words": [
+        "8"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "The sky would fill with stars, even at noon. It would be beautiful, but very cold.",
+      "on_screen_text": "Stars at noon",
+      "highlight_words": [
+        "noon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sol_hook",
+      "narration": "Without the Sun there'd be no plants, no weather, no days. It's literally the engine of life on Earth.",
+      "on_screen_text": "The engine of life",
+      "highlight_words": [
+        "engine"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "sol_outro",
+      "narration": "Which other star should we explore next? Tell me in the comments.",
+      "on_screen_text": "Which star is next?",
+      "highlight_words": [
+        "star"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Eight calm minutes, a broken orbit, plants that stop growing and life that carries on at the bottom of the sea. What physics says would happen if the Sun vanished, and what will really happen to it billions of years from now. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "sun",
+    "whatif",
+    "space",
+    "astronomy",
+    "earth",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.5,
+    "text": "What if the Sun went out?",
+    "highlight": [
+      "out?"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Sun facts",
+      "url": "https://science.nasa.gov/sun/facts/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "Sun",
+      "url": "https://en.wikipedia.org/wiki/Sun",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hydrothermal vent",
+      "url": "https://en.wikipedia.org/wiki/Hydrothermal_vent",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Chemosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Chemosynthesis",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Photosynthesis",
+      "url": "https://en.wikipedia.org/wiki/Photosynthesis",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Sunlight takes about 8 minutes to reach Earth.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Sun's core is about 15 million °C.",
+      "scene_id": "s19",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Sun"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Communities around hydrothermal vents get energy from chemicals, not light.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hydrothermal_vent"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The Sun is about 4.6 billion years old with about 5 billion left in its current stage.",
+      "scene_id": "s25",
+      "source_urls": [
+        "https://science.nasa.gov/sun/facts/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

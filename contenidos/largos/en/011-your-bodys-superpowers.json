@@ -1,0 +1,601 @@
+{
+  "topic": "Your body's superpowers",
+  "language": "en",
+  "format": "long",
+  "category": "ciencia",
+  "title": "Your BODY's Hidden SUPERPOWERS 🫀",
+  "hook": "Your body has superpowers you use every day without noticing.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cor_hook",
+      "narration": "Your body has superpowers you use every day without noticing.",
+      "on_screen_text": "Hidden superpowers",
+      "highlight_words": [
+        "superpowers"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_hook",
+      "narration": "An engine that never stops, cameras that see upside down and prints nobody else in the world has.",
+      "on_screen_text": "Engine, cameras and prints",
+      "highlight_words": [
+        "prints"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_hook",
+      "narration": "I'm Leo, and today I'll introduce you to the superpowers of your own body.",
+      "on_screen_text": "Meet your body",
+      "highlight_words": [
+        "body"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_size",
+      "narration": "First power: your heart. It's about the size of your fist, and it never rests.",
+      "on_screen_text": "Fist-sized",
+      "highlight_words": [
+        "Fist-sized"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The engine"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_hook",
+      "narration": "It beats about a hundred thousand times a day. Over a lifetime, billions of times.",
+      "on_screen_text": "100,000 beats a day",
+      "highlight_words": [
+        "100,000"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_two",
+      "narration": "It's really two pumps: the right side sends blood to the lungs and the left side to the rest of the body.",
+      "on_screen_text": "Two pumps in one",
+      "highlight_words": [
+        "pumps"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_spark",
+      "narration": "Each beat starts with a tiny electric spark, your natural pacemaker.",
+      "on_screen_text": "A spark every beat",
+      "highlight_words": [
+        "spark"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_liters",
+      "narration": "And every day it pumps about seven and a half thousand liters of blood. Enough to fill dozens of bathtubs.",
+      "on_screen_text": "7,500 liters a day",
+      "highlight_words": [
+        "7,500"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_parts",
+      "narration": "Second power: your eyes. They work like cameras, with a lens that focuses light onto the retina.",
+      "on_screen_text": "Two cameras",
+      "highlight_words": [
+        "cameras"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The cameras"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_cells",
+      "narration": "The retina has about a hundred and twenty million rods for dim light, and about six million cones for color.",
+      "on_screen_text": "Millions of sensors",
+      "highlight_words": [
+        "sensors"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_flip",
+      "narration": "Here's the twist: the image arrives upside down. Your brain flips it without you noticing.",
+      "on_screen_text": "It all arrives upside down",
+      "highlight_words": [
+        "upside"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_blind",
+      "narration": "And each eye has a blind spot, where the nerve leaves. Your brain fills that gap with what it guesses is there.",
+      "on_screen_text": "The blind spot",
+      "highlight_words": [
+        "blind"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_blind",
+      "narration": "You can find your blind spot by covering one eye and staring at a point while moving another object in from the side.",
+      "on_screen_text": "Find your blind spot",
+      "highlight_words": [
+        "blind"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_saccade",
+      "narration": "Your eyes jump about three times a second, and your brain erases those jumps so the picture doesn't shake.",
+      "on_screen_text": "Invisible jumps",
+      "highlight_words": [
+        "jumps"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_ridges",
+      "narration": "Third power: your fingerprints. They formed before you were born, between weeks ten and sixteen of pregnancy.",
+      "on_screen_text": "Before birth",
+      "highlight_words": [
+        "birth"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The unique signature"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_twins",
+      "narration": "Not even identical twins have the same fingerprints.",
+      "on_screen_text": "Not even twins",
+      "highlight_words": [
+        "twins"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_touch",
+      "narration": "And their ridges aren't just a pattern: they help you feel very fine textures as you slide your finger.",
+      "on_screen_text": "A texture sensor",
+      "highlight_words": [
+        "texture"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s18",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "hue_koala",
+      "narration": "Surprise: koalas have fingerprints so similar to ours that they're hard to tell apart.",
+      "on_screen_text": "Koalas with human prints!",
+      "highlight_words": [
+        "Koalas"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_enamel",
+      "narration": "Fourth power: the enamel on your teeth, the hardest material in your whole body.",
+      "on_screen_text": "The hardest thing in you",
+      "highlight_words": [
+        "hardest"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "The armor"
+    },
+    {
+      "id": "s20",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_norepair",
+      "narration": "But it has a weak spot: it has no living cells, so it can't repair itself. That's why you need to look after it.",
+      "on_screen_text": "It can't regrow",
+      "highlight_words": [
+        "regrow"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_count",
+      "narration": "We have twenty baby teeth and up to thirty-two adult ones, waiting hidden in the jaw.",
+      "on_screen_text": "20 + 32 teeth",
+      "highlight_words": [
+        "32"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_body",
+      "narration": "All these systems work together, day and night, without you having to think about them.",
+      "on_screen_text": "A perfect team",
+      "highlight_words": [
+        "team"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_body",
+      "narration": "Your blood vessels, laid end to end, would wrap around Earth several times. Your heart pushes blood through all of them nonstop.",
+      "on_screen_text": "A huge journey",
+      "highlight_words": [
+        "journey"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_valves",
+      "narration": "The famous thump-thump you hear is the sound of your heart valves closing.",
+      "on_screen_text": "The sound of valves",
+      "highlight_words": [
+        "valves"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_lungs",
+      "narration": "In the lungs, blood drops off carbon dioxide and picks up fresh oxygen.",
+      "on_screen_text": "Fresh oxygen",
+      "highlight_words": [
+        "oxygen"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_squeeze",
+      "narration": "When you run, it can beat twice as fast to bring more oxygen to your muscles.",
+      "on_screen_text": "Faster when you run",
+      "highlight_words": [
+        "run"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_pupil",
+      "narration": "The pupil widens in the dark and shrinks in bright light, like a camera's aperture.",
+      "on_screen_text": "The pupil adjusts",
+      "highlight_words": [
+        "pupil"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_colors",
+      "narration": "With just three types of cones, your brain mixes signals and tells apart a huge number of colors.",
+      "on_screen_text": "Three cones, countless colors",
+      "highlight_words": [
+        "colors"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_patterns",
+      "narration": "There are three basic fingerprint patterns: arches, loops and whorls. Which one do you have?",
+      "on_screen_text": "Arches, loops, whorls",
+      "highlight_words": [
+        "whorls"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_police",
+      "narration": "That's why police have used them for more than a century to identify people.",
+      "on_screen_text": "A lifelong signature",
+      "highlight_words": [
+        "signature"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_roots",
+      "narration": "When an adult tooth comes in, the baby tooth's root dissolves, and that's why it falls out.",
+      "on_screen_text": "Why they fall out",
+      "highlight_words": [
+        "fall"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_cavity",
+      "narration": "Bacteria turn sugar into acid, and that acid is what damages enamel.",
+      "on_screen_text": "Sugar + bacteria = acid",
+      "highlight_words": [
+        "acid"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ojo_rays",
+      "narration": "Light enters through the pupil, the lens focuses it and the retina turns it into electrical signals for the brain.",
+      "on_screen_text": "Light turned into signals",
+      "highlight_words": [
+        "signals"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s34",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_unique",
+      "narration": "Fingerprints don't change over your lifetime: if you cut yourself, the skin grows back with the same pattern.",
+      "on_screen_text": "The same pattern forever",
+      "highlight_words": [
+        "pattern"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s35",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_shark",
+      "narration": "Sharks, on the other hand, replace their teeth again and again, and can go through thousands in a lifetime.",
+      "on_screen_text": "Sharks with spares",
+      "highlight_words": [
+        "spares"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s36",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "die_jaw",
+      "narration": "Adult teeth form hidden in your jaw while you're still using your baby teeth.",
+      "on_screen_text": "Hidden in the jaw",
+      "highlight_words": [
+        "jaw"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s37",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cor_hook",
+      "narration": "So next time you look in the mirror, remember: you're looking at a superhero.",
+      "on_screen_text": "You're a superhero",
+      "highlight_words": [
+        "superhero"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s38",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cor_outro",
+      "narration": "Which part of the body should we explore next? Tell me in the comments.",
+      "on_screen_text": "Which part is next?",
+      "highlight_words": [
+        "part"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "A heart that beats 100,000 times a day, eyes that see upside down, a blind spot your brain fills in, unique fingerprints and the hardest material in your body. Verified facts, explained in 3D. Original 3D animation; sizes and distances are not to scale.",
+  "hashtags": [
+    "humanbody",
+    "heart",
+    "eyes",
+    "biology",
+    "funfacts",
+    "science",
+    "curiousleo"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.5,
+    "text": "Your body's superpowers",
+    "highlight": [
+      "superpowers"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Heart",
+      "url": "https://en.wikipedia.org/wiki/Heart",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Retina",
+      "url": "https://en.wikipedia.org/wiki/Retina",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Blind spot (vision)",
+      "url": "https://en.wikipedia.org/wiki/Blind_spot_(vision)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Fingerprint",
+      "url": "https://en.wikipedia.org/wiki/Fingerprint",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Tooth enamel",
+      "url": "https://en.wikipedia.org/wiki/Tooth_enamel",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Saccade",
+      "url": "https://en.wikipedia.org/wiki/Saccade",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The heart beats about 100,000 times a day.",
+      "scene_id": "s1",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Heart"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The retina has about 120 million rods and 6 million cones.",
+      "scene_id": "s10",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Retina"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The blind spot has no photoreceptors and the brain fills it in.",
+      "scene_id": "s12",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Blind_spot_(vision)"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Identical twins have different fingerprints.",
+      "scene_id": "s16",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Fingerprint"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Tooth enamel is the hardest substance in the human body.",
+      "scene_id": "s19",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Tooth_enamel"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

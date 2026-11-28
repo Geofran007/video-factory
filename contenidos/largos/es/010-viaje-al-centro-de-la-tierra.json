@@ -1,0 +1,593 @@
+{
+  "topic": "Viaje al centro de la Tierra",
+  "language": "es",
+  "format": "long",
+  "category": "ciencia",
+  "title": "VIAJE al CENTRO de la TIERRA: ¿qué hay debajo de tus pies? 🌍",
+  "hook": "Si cavaras un agujero justo debajo de tus pies, ¿qué encontrarías en el centro de la Tierra?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "Si cavaras un agujero justo debajo de tus pies, ¿qué encontrarías en el centro de la Tierra?",
+      "on_screen_text": "¿Qué hay en el centro?",
+      "highlight_words": [
+        "centro?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_hook",
+      "narration": "El centro está a unos seis mil cuatrocientos kilómetros. Como ir de Quito a Nueva York… pero hacia abajo.",
+      "on_screen_text": "6.400 km hacia abajo",
+      "highlight_words": [
+        "6.400"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_hook",
+      "narration": "Soy Leo, y hoy bajamos capa por capa hasta el corazón del planeta.",
+      "on_screen_text": "Bajemos capa por capa",
+      "highlight_words": [
+        "capa"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "El agujero más profundo que hemos hecho es el pozo de Kola, en Rusia: algo más de doce kilómetros.",
+      "on_screen_text": "El récord: 12 km",
+      "highlight_words": [
+        "12"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "La corteza"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "Parece mucho, pero es apenas un rasguño: ni siquiera atravesó la corteza.",
+      "on_screen_text": "Apenas un rasguño",
+      "highlight_words": [
+        "rasguño"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cue_giant",
+      "narration": "Tardaron casi veinte años en perforarlo, y tuvieron que parar porque la roca estaba demasiado caliente.",
+      "on_screen_text": "Demasiado caliente",
+      "highlight_words": [
+        "caliente"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "La corteza es la capa de roca donde vivimos. Bajo los océanos mide unos pocos kilómetros, y bajo las montañas, decenas.",
+      "on_screen_text": "La corteza",
+      "highlight_words": [
+        "corteza"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_plates",
+      "narration": "Si la Tierra fuera una manzana, la corteza sería más delgada que su cáscara.",
+      "on_screen_text": "Más fina que una cáscara",
+      "highlight_words": [
+        "cáscara"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_push",
+      "narration": "Y está partida en placas que se mueven unos centímetros al año, como la de Nazca frente a Ecuador.",
+      "on_screen_text": "Placas en movimiento",
+      "highlight_words": [
+        "Placas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_melt",
+      "narration": "Debajo está el manto: roca muy caliente que, a lo largo de millones de años, se mueve despacio como una pasta.",
+      "on_screen_text": "El manto",
+      "highlight_words": [
+        "manto"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El manto"
+    },
+    {
+      "id": "s11",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_melt",
+      "narration": "El manto es la capa más gruesa: casi tres mil kilómetros de roca caliente.",
+      "on_screen_text": "La capa más gruesa",
+      "highlight_words": [
+        "gruesa"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s12",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_rise",
+      "narration": "Donde una placa se hunde, la roca se derrite y sube el magma que alimenta los volcanes.",
+      "on_screen_text": "Nace el magma",
+      "highlight_words": [
+        "magma"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s13",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_rise",
+      "narration": "Los volcanes son como ventanas: el magma que expulsan nos cuenta cómo es la roca de las profundidades.",
+      "on_screen_text": "Ventanas al interior",
+      "highlight_words": [
+        "Ventanas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s14",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gal_hotspot",
+      "narration": "En otros lugares sube una columna de roca caliente desde muy hondo. Así nacieron las islas Galápagos.",
+      "on_screen_text": "Puntos calientes",
+      "highlight_words": [
+        "calientes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s15",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_deep",
+      "narration": "A unos ciento cincuenta kilómetros, el calor y la presión son tan grandes que el carbono se convierte en diamante.",
+      "on_screen_text": "Fábrica de diamantes",
+      "highlight_words": [
+        "diamantes"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s16",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_pipe",
+      "narration": "Algunos suben hasta la superficie en erupciones volcánicas profundas, muy rápidas.",
+      "on_screen_text": "Viajan en erupciones",
+      "highlight_words": [
+        "erupciones"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s17",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "Más abajo, a casi tres mil kilómetros, empieza el núcleo: una enorme bola de hierro y níquel.",
+      "on_screen_text": "El núcleo de hierro",
+      "highlight_words": [
+        "hierro"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "El núcleo"
+    },
+    {
+      "id": "s18",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_north",
+      "narration": "Su parte de afuera es líquida, y al moverse crea el campo magnético que hace funcionar las brújulas.",
+      "on_screen_text": "Hierro líquido en movimiento",
+      "highlight_words": [
+        "líquido"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s19",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_shield",
+      "narration": "Ese campo nos protege de partículas del Sol y, cerca de los polos, crea las auroras.",
+      "on_screen_text": "Nuestro escudo",
+      "highlight_words": [
+        "escudo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s20",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sol_surface",
+      "narration": "Y en el centro, la temperatura llega a unos cinco mil cuatrocientos grados: parecida a la superficie del Sol.",
+      "on_screen_text": "Tan caliente como el Sol",
+      "highlight_words": [
+        "Sol"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s21",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "Pero el núcleo interno es sólido. La presión es tan enorme que el hierro no puede derretirse.",
+      "on_screen_text": "Sólido por la presión",
+      "highlight_words": [
+        "presión"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s22",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "hue_womb",
+      "narration": "¿Cómo lo sabemos, si nadie ha llegado? Escuchando los terremotos.",
+      "on_screen_text": "¿Cómo lo sabemos?",
+      "highlight_words": [
+        "sabemos?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s23",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_quake",
+      "narration": "Las ondas de los terremotos atraviesan el planeta y cambian de velocidad y dirección al cruzar cada capa.",
+      "on_screen_text": "Ondas que atraviesan",
+      "highlight_words": [
+        "Ondas"
+      ],
+      "sfx": "ding",
+      "transition": "cut",
+      "chapter": "Cómo lo sabemos"
+    },
+    {
+      "id": "s24",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_spread",
+      "narration": "Con sismógrafos repartidos por todo el mundo, los científicos reconstruyen lo que hay dentro, como una ecografía gigante.",
+      "on_screen_text": "Una ecografía del planeta",
+      "highlight_words": [
+        "ecografía"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s25",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_globe",
+      "narration": "Y el punto de la superficie más lejano del centro está en Ecuador: la cima del Chimborazo.",
+      "on_screen_text": "El Chimborazo, el más lejano",
+      "highlight_words": [
+        "Chimborazo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s26",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "Es porque la Tierra, al girar, está un poco abultada en el ecuador.",
+      "on_screen_text": "La Tierra abultada",
+      "highlight_words": [
+        "abultada"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s27",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sub_row",
+      "narration": "Por eso los volcanes y los terremotos se concentran en los bordes de las placas, como en la costa del Pacífico.",
+      "on_screen_text": "En los bordes de las placas",
+      "highlight_words": [
+        "bordes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s28",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_hard",
+      "narration": "El diamante y el grafito de tu lápiz son el mismo carbono, solo que ordenado de otra forma.",
+      "on_screen_text": "Lápiz y diamante, mismo carbono",
+      "highlight_words": [
+        "carbono"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s29",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_moving",
+      "narration": "Y el polo norte magnético no está quieto: se mueve decenas de kilómetros cada año.",
+      "on_screen_text": "El polo se mueve",
+      "highlight_words": [
+        "mueve"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s30",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_flip",
+      "narration": "En la historia del planeta, los polos magnéticos se han invertido muchas veces.",
+      "on_screen_text": "Los polos se invierten",
+      "highlight_words": [
+        "invierten"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s31",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "tsu_pacific",
+      "narration": "Algunas ondas de terremotos no pueden atravesar líquidos. Por las sombras que dejan, sabemos que el núcleo externo es líquido.",
+      "on_screen_text": "Sombras que revelan",
+      "highlight_words": [
+        "Sombras"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s32",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "and_cotopaxi",
+      "narration": "Ese calor interno también mueve los volcanes de Ecuador, como el Cotopaxi, de casi seis mil metros.",
+      "on_screen_text": "El calor que mueve volcanes",
+      "highlight_words": [
+        "volcanes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s33",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "gal_plate",
+      "narration": "La placa que lleva a las Galápagos avanza unos centímetros por año, más o menos lo que crecen tus uñas.",
+      "on_screen_text": "Tan lento como tus uñas",
+      "highlight_words": [
+        "uñas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s34",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "dia_age",
+      "narration": "Muchos diamantes tienen entre mil y tres mil quinientos millones de años: son más viejos que los dinosaurios.",
+      "on_screen_text": "Más viejos que los dinosaurios",
+      "highlight_words": [
+        "dinosaurios"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s35",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "aur_poles",
+      "narration": "Sin ese escudo magnético, el viento del Sol iría desgastando poco a poco nuestra atmósfera.",
+      "on_screen_text": "Un escudo vital",
+      "highlight_words": [
+        "escudo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s36",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mit_spin",
+      "narration": "Y todo esto gira contigo: en la línea ecuatorial viajas a unos mil seiscientos kilómetros por hora sin notarlo.",
+      "on_screen_text": "Girando sin notarlo",
+      "highlight_words": [
+        "Girando"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s37",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "Así que debajo de tus pies hay roca, magma, diamantes y un corazón de hierro más caliente que un horno.",
+      "on_screen_text": "Un planeta vivo",
+      "highlight_words": [
+        "vivo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s38",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "and_outro",
+      "narration": "¿Hasta dónde te gustaría bajar? Escríbelo en los comentarios.",
+      "on_screen_text": "¿Hasta dónde bajarías?",
+      "highlight_words": [
+        "bajarías?"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Bajamos capa por capa: la corteza, el manto donde nacen volcanes y diamantes, el núcleo de hierro que crea el campo magnético y un centro tan caliente como la superficie del Sol. Animación 3D propia; tamaños y distancias no están a escala.",
+  "hashtags": [
+    "tierra",
+    "geologia",
+    "volcanes",
+    "planetatierra",
+    "nucleo",
+    "ciencia",
+    "leocurioso"
+  ],
+  "thumbnail": {
+    "scene_id": "s1",
+    "at": 0.5,
+    "text": "Viaje al centro de la Tierra",
+    "highlight": [
+      "centro"
+    ]
+  },
+  "sources": [
+    {
+      "title": "Kola Superdeep Borehole",
+      "url": "https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Crust (geology)",
+      "url": "https://en.wikipedia.org/wiki/Crust_(geology)",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Earth's inner core",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_inner_core",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Earth's magnetic field",
+      "url": "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Diamond",
+      "url": "https://en.wikipedia.org/wiki/Diamond",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Subduction",
+      "url": "https://en.wikipedia.org/wiki/Subduction",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El pozo superprofundo de Kola alcanzó 12.262 m en 1989.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Kola_Superdeep_Borehole"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La mayoría de los diamantes naturales se forman a unos 150–250 km de profundidad.",
+      "scene_id": "s15",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Diamond"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "La superficie del núcleo interno está a unos 5.400 °C, similar a la superficie del Sol.",
+      "scene_id": "s1",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_inner_core"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El campo magnético terrestre se genera por el movimiento del hierro líquido del núcleo externo.",
+      "scene_id": "s18",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
