@@ -63,6 +63,13 @@ jobs:
       TIKTOK_REFRESH_TOKEN_ES: ${{ secrets.TIKTOK_REFRESH_TOKEN_ES }}
       TIKTOK_REFRESH_TOKEN_EN: ${{ secrets.TIKTOK_REFRESH_TOKEN_EN }}
       TIKTOK_MODE: ${{ vars.TIKTOK_MODE || 'inbox' }}
+      # Facebook e Instagram (opcional, scripts/meta_auth.py): si faltan, se omiten sin afectar a YouTube.
+      META_PAGE_ID_ES: ${{ secrets.META_PAGE_ID_ES }}
+      META_PAGE_TOKEN_ES: ${{ secrets.META_PAGE_TOKEN_ES }}
+      META_IG_ID_ES: ${{ secrets.META_IG_ID_ES }}
+      META_PAGE_ID_EN: ${{ secrets.META_PAGE_ID_EN }}
+      META_PAGE_TOKEN_EN: ${{ secrets.META_PAGE_TOKEN_EN }}
+      META_IG_ID_EN: ${{ secrets.META_IG_ID_EN }}
     steps:
       - uses: actions/checkout@v4
         with:

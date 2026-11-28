@@ -9,7 +9,7 @@ from video_factory.core.models import VideoContent
 from video_factory.core.pipeline import chapter_list
 
 ROOT = Path(__file__).resolve().parents[2]
-FILES = [p for c in ("largos", "publicados") for p in (ROOT / "contenidos" / c).rglob("*.json")
+FILES = [p for c in ("largos", "publicados") for p in (ROOT / "contenidos" / c).rglob("*.json") if not p.name.endswith((".youtube.json", ".tiktok.json", ".meta.json"))
          if json.loads(p.read_text(encoding="utf-8")).get("format") == "long"]
 
 

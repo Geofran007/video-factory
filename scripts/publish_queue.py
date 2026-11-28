@@ -32,7 +32,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 import turnos  # noqa: E402
-from video_factory.publishers import tiktok  # noqa: E402
+from video_factory.publishers import meta, tiktok  # noqa: E402
 from video_factory.publishers.youtube import YouTubePublisher, request_from_job  # noqa: E402
 
 
@@ -136,7 +136,39 @@ def main() -> int:
 
     if not args.sin_tiktok and not args.largo:
         publish_tiktok(job_dir, args.canal, args.visibility, done / f"{stamp}-{name}.tiktok.json", result)
+    # Facebook e Instagram solo cuando el Short va a ser público en YouTube (público ya o programado).
+    if not args.largo and (args.visibility == "public" or scheduled):
+        publish_meta(job_dir, args.canal, when, done / f"{stamp}-{name}.meta.json", result)
     return 0
+
+
+def meta_caption(job_dir: Path) -> str:
+    """Texto para Facebook e Instagram: título, primer párrafo de la descripción y hashtags."""
+    meta_data = json.loads((job_dir / "metadata.json").read_text(encoding="utf-8"))
+    intro = meta_data["description"].split("\n\n")[0]
+    return f"{meta_data['title']}\n\n{intro}\n\n{' '.join(meta_data.get('hashtags', []))}"
+
+
+def publish_meta(job_dir: Path, canal: str, when: dt.datetime | None, record: Path, result: dict) -> None:
+    """Reel en la Página de Facebook (programado a la hora del turno) y en su Instagram (al momento)."""
+    if not meta.configured(canal):
+        print(f"Facebook/Instagram: sin credenciales para '{canal}', se omite.")
+        return
+    publish_at = None
+    if when and when > dt.datetime.now(dt.timezone.utc) + dt.timedelta(minutes=15):
+        publish_at = int(when.timestamp())
+    try:
+        res = meta.MetaPublisher(canal).publish(job_dir / "video.mp4", meta_caption(job_dir), float(result["duration_s"]), publish_at)
+        info = {"ok": True, "facebook_video_id": res.facebook_id, "facebook_programado_unix": res.facebook_scheduled,
+                "instagram_media_id": res.instagram_id, "instagram_error": res.instagram_error}
+        print(f"Facebook: Reel {'programado' if publish_at else 'publicado'} · {res.facebook_id}")
+        print(f"Instagram: {'publicado · ' + res.instagram_id if res.instagram_id else 'no se publicó: ' + (res.instagram_error or 'sin cuenta vinculada')}")
+    except Exception as exc:  # Meta no debe tumbar la publicación de YouTube
+        info = {"ok": False, "error": str(exc)[:500]}
+        print(f"::warning::Facebook/Instagram falló: {exc}")
+    info.update({"channel": canal, "title": result["title"], "job_id": result["job_id"],
+                 "sent_at": dt.datetime.now(dt.timezone.utc).isoformat(timespec="seconds")})
+    record.write_text(json.dumps(info, ensure_ascii=False, indent=2), encoding="utf-8")
 
 
 def save_rotated_token(token: str) -> None:
