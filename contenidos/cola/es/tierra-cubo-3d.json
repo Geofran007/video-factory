@@ -1,0 +1,180 @@
+{
+  "topic": "Qué pasaría si la Tierra fuera un cubo y por qué los planetas son redondos",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Y si la Tierra fuera un cubo? 🧊🌍",
+  "hook": "¿Qué pasaría si la Tierra fuera un cubo, como un planeta de bloques?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cub_hook",
+      "narration": "¿Qué pasaría si la Tierra fuera un cubo, como un planeta de bloques?",
+      "on_screen_text": "¿Y si la Tierra fuera un cubo?",
+      "highlight_words": [
+        "cubo?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "La gravedad tira hacia el centro del planeta, no hacia abajo, así que el centro de cada cara sería un valle.",
+      "on_screen_text": "La gravedad apunta al centro",
+      "highlight_words": [
+        "centro"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "Toda el agua bajaría a esos valles: tendríamos seis mares redondos, uno en cada cara.",
+      "on_screen_text": "Seis mares redondos",
+      "highlight_words": [
+        "Seis"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "El aire haría lo mismo, y en los bordes casi no quedaría aire para respirar.",
+      "on_screen_text": "Bordes sin aire",
+      "highlight_words": [
+        "aire"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "Caminar hacia un borde sería subir una montaña cada vez más empinada, de cientos de kilómetros.",
+      "on_screen_text": "Todo es cuesta arriba",
+      "highlight_words": [
+        "arriba"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "Y el Sol aparecería de golpe al pasar cada borde, sin largos atardeceres.",
+      "on_screen_text": "Amaneceres de golpe",
+      "highlight_words": [
+        "golpe"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Pero un planeta así no duraría: las esquinas pesarían tanto que la roca se iría hundiendo.",
+      "on_screen_text": "No duraría",
+      "highlight_words": [
+        "duraría"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Con el tiempo se volvería una esfera. Por eso todos los planetas son redondos.",
+      "on_screen_text": "Por eso son redondos",
+      "highlight_words": [
+        "redondos"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "Y ni la Tierra es perfecta: como gira, está un poco abultada en el ecuador.",
+      "on_screen_text": "Ni la Tierra es perfecta",
+      "highlight_words": [
+        "perfecta"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cub_outro",
+      "narration": "Mándaselo a alguien que juega a construir mundos.",
+      "on_screen_text": "Para quien construye mundos",
+      "highlight_words": [
+        "mundos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "En una Tierra cúbica la gravedad seguiría apuntando al centro: el agua y el aire se juntarían en el centro de cada cara, formando seis mares redondos, y bordes y esquinas serían montañas sin aire. Por eso un planeta así no duraría: su gravedad lo redondearía. Animación 3D propia; tamaños no a escala.",
+  "hashtags": [
+    "quepasariasi",
+    "tierra",
+    "gravedad",
+    "planetas",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Hydrostatic equilibrium",
+      "url": "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gravity",
+      "url": "https://en.wikipedia.org/wiki/Gravity",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La gravedad de un cuerpo atrae hacia su centro de masa.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gravity"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los cuerpos suficientemente masivos adoptan forma casi esférica por su propia gravedad.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,180 @@
+{
+  "topic": "What if Earth were a cube, and why planets are round",
+  "language": "en",
+  "category": "ciencia",
+  "title": "What if Earth were a cube? 🧊🌍",
+  "hook": "What would happen if Earth were a cube, like a planet made of blocks?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "cub_hook",
+      "narration": "What would happen if Earth were a cube, like a planet made of blocks?",
+      "on_screen_text": "What if Earth were a cube?",
+      "highlight_words": [
+        "cube?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_gravity",
+      "narration": "Gravity pulls toward the planet's center, not just down, so the middle of each face would be a valley.",
+      "on_screen_text": "Gravity points to the center",
+      "highlight_words": [
+        "center"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_seas",
+      "narration": "All the water would flow into those valleys: we'd have six round seas, one on each face.",
+      "on_screen_text": "Six round seas",
+      "highlight_words": [
+        "Six"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_air",
+      "narration": "The air would do the same, and at the edges there would be almost nothing left to breathe.",
+      "on_screen_text": "Edges with no air",
+      "highlight_words": [
+        "air"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_edge",
+      "narration": "Walking toward an edge would mean climbing an ever steeper mountain, hundreds of kilometers high.",
+      "on_screen_text": "It's all uphill",
+      "highlight_words": [
+        "uphill"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_day",
+      "narration": "And the Sun would pop up suddenly as each edge rolled past, with no long sunsets.",
+      "on_screen_text": "Sudden sunrises",
+      "highlight_words": [
+        "Sudden"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "But a planet like that wouldn't last: the corners would weigh so much that the rock would slowly sink.",
+      "on_screen_text": "It wouldn't last",
+      "highlight_words": [
+        "last"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "cub_round",
+      "narration": "Over time it would turn into a sphere. That's why all planets are round.",
+      "on_screen_text": "That's why they're round",
+      "highlight_words": [
+        "round"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mit_bulge",
+      "narration": "And not even Earth is perfect: because it spins, it bulges a little at the equator.",
+      "on_screen_text": "Earth isn't perfect either",
+      "highlight_words": [
+        "perfect"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "cub_outro",
+      "narration": "Send this to someone who loves building worlds.",
+      "on_screen_text": "For the world builders",
+      "highlight_words": [
+        "worlds"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "On a cube Earth, gravity would still point to the center: water and air would gather in the middle of each face, making six round seas, while edges and corners would be airless mountains. That's why such a planet wouldn't last: its gravity would round it off. Original 3D animation; not to scale.",
+  "hashtags": [
+    "whatif",
+    "earth",
+    "gravity",
+    "planets",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Hydrostatic equilibrium",
+      "url": "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Gravity",
+      "url": "https://en.wikipedia.org/wiki/Gravity",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "A body's gravity pulls toward its center of mass.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Gravity"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Massive enough bodies pull themselves into a nearly round shape.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hydrostatic_equilibrium"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

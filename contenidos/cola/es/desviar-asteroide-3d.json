@@ -1,0 +1,188 @@
+{
+  "topic": "La misión DART y cómo se desvía un asteroide",
+  "language": "es",
+  "category": "ciencia",
+  "title": "La nave que empujó un asteroide ☄️",
+  "hook": "¿Y si un asteroide viniera hacia la Tierra? Ya probamos cómo empujarlo.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "din_asteroid",
+      "narration": "¿Y si un asteroide viniera hacia la Tierra? Ya probamos cómo empujarlo.",
+      "on_screen_text": "¿Podemos desviar un asteroide?",
+      "highlight_words": [
+        "asteroide?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_binary",
+      "narration": "La NASA eligió dos asteroides que no son peligrosos: Didymos y su pequeña luna, Dimorphos.",
+      "on_screen_text": "Didymos y Dimorphos",
+      "highlight_words": [
+        "Dimorphos"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "coh_hook",
+      "narration": "En 2021 lanzó la nave DART, del tamaño de un auto pequeño.",
+      "on_screen_text": "Despega DART",
+      "highlight_words": [
+        "DART"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "En 2022 se estrelló contra Dimorphos a unos seis kilómetros por segundo.",
+      "on_screen_text": "¡Impacto!",
+      "highlight_words": [
+        "Impacto!"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_dart",
+      "narration": "Sin explosivos: el golpe solo fue el empujón, como una bola de billar.",
+      "on_screen_text": "Como en el billar",
+      "highlight_words": [
+        "billar"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "ast_shrink",
+      "narration": "Funcionó: la órbita de Dimorphos se acortó unos treinta y tres minutos.",
+      "on_screen_text": "33 minutos menos",
+      "highlight_words": [
+        "33"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_deflect",
+      "narration": "El truco es el tiempo: un empujón pequeño, años antes, basta para que una roca pase de largo.",
+      "on_screen_text": "El secreto es el tiempo",
+      "highlight_words": [
+        "tiempo"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_hera",
+      "narration": "Ahora la nave europea Hera está estudiando el cráter que dejó el choque.",
+      "on_screen_text": "Llega la nave Hera",
+      "highlight_words": [
+        "Hera"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ast_watch",
+      "narration": "Y telescopios de todo el mundo vigilan cada noche las rocas que pasan cerca.",
+      "on_screen_text": "Vigilando el cielo",
+      "highlight_words": [
+        "Vigilando"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ast_outro",
+      "narration": "Mándaselo a alguien que se preocupa por los asteroides.",
+      "on_screen_text": "Para quien mira al cielo",
+      "highlight_words": [
+        "cielo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "En 2022 la nave DART de la NASA chocó a propósito contra Dimorphos, la pequeña luna del asteroide Didymos, y acortó su órbita unos 33 minutos. Ahora la misión Hera estudia el resultado. Animación 3D propia; tamaños y distancias no a escala.",
+  "hashtags": [
+    "asteroide",
+    "espacio",
+    "nasa",
+    "dart",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Double Asteroid Redirection Test",
+      "url": "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Hera (space mission)",
+      "url": "https://en.wikipedia.org/wiki/Hera_(space_mission)",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "DART chocó contra Dimorphos el 26 de septiembre de 2022 a unos 6 km/s.",
+      "scene_id": "s4",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El impacto acortó la órbita de Dimorphos unos 33 minutos.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Double_Asteroid_Redirection_Test"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Hera, de la ESA, se lanzó en octubre de 2024 para estudiar Didymos y Dimorphos.",
+      "scene_id": "s8",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Hera_(space_mission)"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

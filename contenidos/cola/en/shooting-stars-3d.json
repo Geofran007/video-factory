@@ -1,0 +1,185 @@
+{
+  "topic": "What shooting stars are and where the Geminids come from",
+  "language": "en",
+  "category": "ciencia",
+  "title": "What is a shooting star? ✨",
+  "hook": "What is a shooting star really? Spoiler: it's not a star.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "met_hook",
+      "narration": "What is a shooting star really? Spoiler: it's not a star.",
+      "on_screen_text": "What is a shooting star?",
+      "highlight_words": [
+        "shooting"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_grain",
+      "narration": "It's almost always a speck of dust, about the size of a grain of sand.",
+      "on_screen_text": "A grain of sand",
+      "highlight_words": [
+        "sand"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "It enters the atmosphere at tens of kilometers per second, far faster than a bullet.",
+      "on_screen_text": "Faster than a bullet",
+      "highlight_words": [
+        "bullet"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "About a hundred kilometers up, it hits the air so fast that it makes it glow.",
+      "on_screen_text": "The air glows",
+      "highlight_words": [
+        "glows"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_hook",
+      "narration": "And it burns up high above, so there's no danger at all.",
+      "on_screen_text": "No danger",
+      "highlight_words": [
+        "danger"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Every December, Earth crosses the dust trail of an asteroid called Phaethon.",
+      "on_screen_text": "Phaethon's trail",
+      "highlight_words": [
+        "Phaethon's"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "That's why we see the Geminid shower: they all seem to come from the constellation Gemini.",
+      "on_screen_text": "They come from Gemini",
+      "highlight_words": [
+        "Gemini"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "To see them, find a dark spot and let your eyes adjust for about twenty minutes.",
+      "on_screen_text": "Find a dark sky",
+      "highlight_words": [
+        "dark"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "You don't need a telescope: just your eyes and a little patience.",
+      "on_screen_text": "Just your eyes",
+      "highlight_words": [
+        "eyes"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "met_outro",
+      "narration": "Send this to someone you'd make a wish with.",
+      "on_screen_text": "Make a wish",
+      "highlight_words": [
+        "wish"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "A shooting star is almost always a speck of dust entering the atmosphere very fast and making the air glow about 100 km up. Every December Earth crosses the trail of asteroid Phaethon and we see the Geminid shower. Original 3D animation; not to scale.",
+  "hashtags": [
+    "shootingstars",
+    "geminids",
+    "astronomy",
+    "space",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Geminids",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "3200 Phaethon",
+      "url": "https://en.wikipedia.org/wiki/3200_Phaethon",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Meteoroid",
+      "url": "https://en.wikipedia.org/wiki/Meteoroid",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "Most meteors are produced by sand-grain-sized particles.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meteoroid"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "The parent body of the Geminids is the asteroid 3200 Phaethon.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+  "topic": "What if the Moon disappeared: nights, tides and Earth's axis",
+  "language": "en",
+  "category": "ciencia",
+  "title": "What would happen without the Moon? 🌙",
+  "hook": "What would happen if the Moon vanished tonight?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "luna_hook",
+      "narration": "What would happen if the Moon vanished tonight?",
+      "on_screen_text": "What if there were no Moon?",
+      "highlight_words": [
+        "Moon?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_vanish",
+      "narration": "Nothing would fall from the sky, but many things on Earth would change.",
+      "on_screen_text": "Many things would change",
+      "highlight_words": [
+        "change"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "Every night would be as dark as a new moon night.",
+      "on_screen_text": "Dark nights",
+      "highlight_words": [
+        "Dark"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_pull",
+      "narration": "The Moon stretches the oceans, and that's why we have tides.",
+      "on_screen_text": "The Moon moves the sea",
+      "highlight_words": [
+        "sea"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_none",
+      "narration": "Without it, only the Sun's tides would remain, with about half the strength.",
+      "on_screen_text": "Much smaller tides",
+      "highlight_words": [
+        "smaller"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_coral_sync",
+      "narration": "And many corals, which use moonlight to spawn all at once, would lose their clock.",
+      "on_screen_text": "Corals lose their clock",
+      "highlight_words": [
+        "clock"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_tilt",
+      "narration": "The Moon also helps keep Earth's tilted axis steady.",
+      "on_screen_text": "It steadies the axis",
+      "highlight_words": [
+        "axis"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_wobble",
+      "narration": "Without it, the axis could vary more over time, and the seasons along with it.",
+      "on_screen_text": "Wilder seasons",
+      "highlight_words": [
+        "seasons"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "The upside: we'd see a sky full of stars.",
+      "on_screen_text": "A sky full of stars",
+      "highlight_words": [
+        "stars"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "lun_outro",
+      "narration": "Send this to someone who loves looking at the Moon.",
+      "on_screen_text": "For Moon lovers",
+      "highlight_words": [
+        "Moon"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Without the Moon nights would be darker, tides much smaller (only the Sun's would remain) and Earth's axis could vary more over time. Original 3D animation; not to scale.",
+  "hashtags": [
+    "moon",
+    "whatif",
+    "tides",
+    "space",
+    "science",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "What causes tides?",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html",
+      "publisher": "NOAA"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Sun's tide-generating force is about half the Moon's.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

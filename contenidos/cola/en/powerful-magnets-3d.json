@@ -1,0 +1,198 @@
+{
+  "topic": "Electromagnets, maglev trains and the floating frog",
+  "language": "en",
+  "category": "ciencia",
+  "title": "Magnets so strong they make a frog float 🐸🧲",
+  "hook": "Did you know there's a magnet so strong it can make a frog float?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "Did you know there's a magnet so strong it can make a frog float?",
+      "on_screen_text": "A floating frog",
+      "highlight_words": [
+        "floating"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "Every magnet has two poles: opposites attract and like poles push apart.",
+      "on_screen_text": "Two poles",
+      "highlight_words": [
+        "poles"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Run electricity through a coiled wire and you get an electromagnet you can switch on and off.",
+      "on_screen_text": "The electromagnet",
+      "highlight_words": [
+        "electromagnet"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "With them, scrapyard cranes lift entire cars.",
+      "on_screen_text": "It lifts cars",
+      "highlight_words": [
+        "cars"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_train",
+      "narration": "And they make trains float: Shanghai's reached about four hundred and thirty kilometers per hour.",
+      "on_screen_text": "Floating trains",
+      "highlight_words": [
+        "Floating"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "In hospitals, MRI machines use magnets of up to three teslas, hundreds of times a fridge magnet.",
+      "on_screen_text": "Hospital magnets",
+      "highlight_words": [
+        "Hospital"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "With about sixteen teslas, scientists made a live frog float. It was totally fine.",
+      "on_screen_text": "16 teslas!",
+      "highlight_words": [
+        "16"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_blood",
+      "narration": "The water in its body is very weakly pushed away, and with a field like that, it's enough to float.",
+      "on_screen_text": "Water gets pushed away",
+      "highlight_words": [
+        "pushed"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "And the biggest magnet is under your feet: Earth's iron core.",
+      "on_screen_text": "Earth is a magnet",
+      "highlight_words": [
+        "magnet"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ima_outro",
+      "narration": "Send this to someone who collects fridge magnets.",
+      "on_screen_text": "For the collector",
+      "highlight_words": [
+        "collector"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Electricity makes huge magnets: cranes that lift cars, floating trains and MRI scanners of 1.5 to 3 teslas. With about 16 teslas, scientists made a live frog float, unharmed. Original 3D animation; not to scale.",
+  "hashtags": [
+    "magnets",
+    "magnetism",
+    "physics",
+    "science",
+    "experiments",
+    "didyouknow",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Electromagnet",
+      "url": "https://en.wikipedia.org/wiki/Electromagnet",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic levitation",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_levitation",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Shanghai maglev train",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_maglev_train",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic resonance imaging",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "The Shanghai maglev reached about 430 km/h in service.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shanghai_maglev_train"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "MRI scanners typically use fields of 1.5 to 3 teslas.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "In 1997 a live frog was levitated with a field of about 16 teslas.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_levitation"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

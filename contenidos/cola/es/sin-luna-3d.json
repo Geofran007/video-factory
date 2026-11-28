@@ -1,0 +1,172 @@
+{
+  "topic": "Qué pasaría si la Luna desapareciera: noches, mareas y eje de la Tierra",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Qué pasaría sin la Luna? 🌙",
+  "hook": "¿Qué pasaría si esta noche la Luna desapareciera?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "luna_hook",
+      "narration": "¿Qué pasaría si esta noche la Luna desapareciera?",
+      "on_screen_text": "¿Y si no hubiera Luna?",
+      "highlight_words": [
+        "Luna?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_vanish",
+      "narration": "Nada caería del cielo, pero muchas cosas cambiarían en la Tierra.",
+      "on_screen_text": "Muchas cosas cambiarían",
+      "highlight_words": [
+        "cambiarían"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_fade",
+      "narration": "Todas las noches serían tan oscuras como una de luna nueva.",
+      "on_screen_text": "Noches oscuras",
+      "highlight_words": [
+        "oscuras"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_pull",
+      "narration": "La Luna estira los océanos, y por eso hay mareas.",
+      "on_screen_text": "La Luna mueve el mar",
+      "highlight_words": [
+        "mar"
+      ],
+      "sfx": "bubbles",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_tide_none",
+      "narration": "Sin ella solo quedarían las mareas del Sol, con cerca de la mitad de fuerza.",
+      "on_screen_text": "Mareas mucho más pequeñas",
+      "highlight_words": [
+        "pequeñas"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_coral_sync",
+      "narration": "Y muchos corales, que usan la luz de la Luna para reproducirse a la vez, perderían su reloj.",
+      "on_screen_text": "Corales sin reloj",
+      "highlight_words": [
+        "reloj"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "lun_tilt",
+      "narration": "La Luna también ayuda a mantener firme el eje inclinado de la Tierra.",
+      "on_screen_text": "Sostiene el eje",
+      "highlight_words": [
+        "eje"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_wobble",
+      "narration": "Sin ella ese eje podría variar más con el tiempo, y con él, las estaciones.",
+      "on_screen_text": "Estaciones más locas",
+      "highlight_words": [
+        "estaciones"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "Lo bueno: veríamos el cielo lleno de estrellas.",
+      "on_screen_text": "Un cielo lleno de estrellas",
+      "highlight_words": [
+        "estrellas"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "lun_outro",
+      "narration": "Mándaselo a alguien que ama mirar la Luna.",
+      "on_screen_text": "Para quien ama la Luna",
+      "highlight_words": [
+        "Luna"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Sin la Luna las noches serían más oscuras, las mareas mucho más pequeñas (solo quedarían las del Sol) y el eje de la Tierra podría variar más con el tiempo. Animación 3D propia; no a escala.",
+  "hashtags": [
+    "luna",
+    "quepasariasi",
+    "mareas",
+    "espacio",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "What causes tides?",
+      "url": "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html",
+      "publisher": "NOAA"
+    },
+    {
+      "title": "Axial tilt",
+      "url": "https://en.wikipedia.org/wiki/Axial_tilt",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La fuerza de marea del Sol es cerca de la mitad de la de la Luna.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://oceanservice.noaa.gov/education/tutorial_tides/tides02_cause.html"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

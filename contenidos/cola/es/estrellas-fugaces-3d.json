@@ -1,0 +1,185 @@
+{
+  "topic": "Qué son las estrellas fugaces y de dónde vienen las Gemínidas",
+  "language": "es",
+  "category": "ciencia",
+  "title": "¿Qué es una estrella fugaz? ✨",
+  "hook": "¿Qué es en realidad una estrella fugaz? Spoiler: no es una estrella.",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "met_hook",
+      "narration": "¿Qué es en realidad una estrella fugaz? Spoiler: no es una estrella.",
+      "on_screen_text": "¿Qué es una estrella fugaz?",
+      "highlight_words": [
+        "fugaz?"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_grain",
+      "narration": "Casi siempre es un granito de polvo, del tamaño de un grano de arena.",
+      "on_screen_text": "Un grano de arena",
+      "highlight_words": [
+        "arena"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "Entra en la atmósfera a decenas de kilómetros por segundo, muchísimo más rápido que una bala.",
+      "on_screen_text": "Más rápido que una bala",
+      "highlight_words": [
+        "bala"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_burn",
+      "narration": "A unos cien kilómetros de altura choca tan rápido con el aire que lo hace brillar.",
+      "on_screen_text": "El aire brilla",
+      "highlight_words": [
+        "brilla"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_hook",
+      "narration": "Y se desintegra allá arriba, así que no hay ningún peligro.",
+      "on_screen_text": "Sin peligro",
+      "highlight_words": [
+        "peligro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_orbit",
+      "narration": "Cada diciembre la Tierra cruza el rastro de polvo de un asteroide llamado Faetón.",
+      "on_screen_text": "El rastro de Faetón",
+      "highlight_words": [
+        "Faetón"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "met_radiant",
+      "narration": "Por eso vemos la lluvia de las Gemínidas: todas parecen salir de la constelación de Géminis.",
+      "on_screen_text": "Salen de Géminis",
+      "highlight_words": [
+        "Géminis"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "met_watch",
+      "narration": "Para verlas, busca un lugar oscuro y deja que tus ojos se acostumbren unos veinte minutos.",
+      "on_screen_text": "Busca un cielo oscuro",
+      "highlight_words": [
+        "oscuro"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "sl_stars",
+      "narration": "No necesitas telescopio: solo tus ojos y un poco de paciencia.",
+      "on_screen_text": "Solo tus ojos",
+      "highlight_words": [
+        "ojos"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "met_outro",
+      "narration": "Mándaselo a alguien con quien quieras pedir un deseo.",
+      "on_screen_text": "Pide un deseo",
+      "highlight_words": [
+        "deseo"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Una estrella fugaz es casi siempre un grano de polvo que entra en la atmósfera muy rápido y hace brillar el aire a unos 100 km de altura. Cada diciembre la Tierra cruza el rastro del asteroide Faetón y vemos la lluvia de las Gemínidas. Animación 3D propia; no a escala.",
+  "hashtags": [
+    "estrellasfugaces",
+    "geminidas",
+    "astronomia",
+    "espacio",
+    "ciencia",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Geminids",
+      "url": "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/",
+      "publisher": "NASA"
+    },
+    {
+      "title": "3200 Phaethon",
+      "url": "https://en.wikipedia.org/wiki/3200_Phaethon",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Meteoroid",
+      "url": "https://en.wikipedia.org/wiki/Meteoroid",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "La mayoría de los meteoros los producen partículas del tamaño de un grano de arena.",
+      "scene_id": "s2",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Meteoroid"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "El cuerpo de origen de las Gemínidas es el asteroide 3200 Faetón.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://science.nasa.gov/solar-system/meteors-meteorites/geminids/"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}

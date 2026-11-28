@@ -1,0 +1,198 @@
+{
+  "topic": "Electroimanes, trenes maglev y la rana que flotó",
+  "language": "es",
+  "category": "ciencia",
+  "title": "Imanes tan fuertes que hacen flotar una rana 🐸🧲",
+  "hook": "¿Sabías que existe un imán tan fuerte que puede hacer flotar una rana?",
+  "presenter": "perro",
+  "scenes": [
+    {
+      "id": "s1",
+      "role": "hook",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "¿Sabías que existe un imán tan fuerte que puede hacer flotar una rana?",
+      "on_screen_text": "Una rana flotando",
+      "highlight_words": [
+        "flotando"
+      ],
+      "sfx": "impact",
+      "transition": "cut"
+    },
+    {
+      "id": "s2",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_poles",
+      "narration": "Todo imán tiene dos polos: los opuestos se atraen y los iguales se empujan.",
+      "on_screen_text": "Dos polos",
+      "highlight_words": [
+        "polos"
+      ],
+      "sfx": "pop",
+      "transition": "cut"
+    },
+    {
+      "id": "s3",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Si pasas electricidad por un cable enrollado, creas un electroimán que se enciende y se apaga.",
+      "on_screen_text": "El electroimán",
+      "highlight_words": [
+        "electroimán"
+      ],
+      "sfx": "riser",
+      "transition": "cut"
+    },
+    {
+      "id": "s4",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_crane",
+      "narration": "Con ellos, las grúas de los desguaces levantan coches enteros.",
+      "on_screen_text": "Levanta coches",
+      "highlight_words": [
+        "coches"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s5",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_train",
+      "narration": "Y hacen flotar trenes: el de Shanghái llegó a unos cuatrocientos treinta kilómetros por hora.",
+      "on_screen_text": "Trenes que flotan",
+      "highlight_words": [
+        "flotan"
+      ],
+      "sfx": "whoosh",
+      "transition": "cut"
+    },
+    {
+      "id": "s6",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_mri",
+      "narration": "En los hospitales, las máquinas de resonancia usan imanes de hasta tres teslas, cientos de veces un imán de nevera.",
+      "on_screen_text": "Imanes de hospital",
+      "highlight_words": [
+        "hospital"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s7",
+      "role": "surprise",
+      "type": "scene3d",
+      "model3d": "mag_frog",
+      "narration": "Con unos dieciséis teslas, unos científicos hicieron flotar una rana viva. No le pasó nada.",
+      "on_screen_text": "¡16 teslas!",
+      "highlight_words": [
+        "16"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s8",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "mag_blood",
+      "narration": "El agua de su cuerpo es repelida muy débilmente, y con un campo así, basta para que flote.",
+      "on_screen_text": "El agua es repelida",
+      "highlight_words": [
+        "repelida"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    },
+    {
+      "id": "s9",
+      "role": "development",
+      "type": "scene3d",
+      "model3d": "ima_core",
+      "narration": "Y el imán más grande está bajo tus pies: el núcleo de hierro de la Tierra.",
+      "on_screen_text": "La Tierra es un imán",
+      "highlight_words": [
+        "imán"
+      ],
+      "sfx": "ding",
+      "transition": "cut"
+    },
+    {
+      "id": "s10",
+      "role": "closing",
+      "type": "scene3d",
+      "model3d": "ima_outro",
+      "narration": "Mándaselo a alguien que colecciona imanes de nevera.",
+      "on_screen_text": "Para el coleccionista",
+      "highlight_words": [
+        "coleccionista"
+      ],
+      "sfx": "none",
+      "transition": "cut"
+    }
+  ],
+  "description": "Con electricidad se crean imanes enormes: grúas que levantan coches, trenes que flotan y equipos de resonancia de 1,5 a 3 teslas. Con unos 16 teslas, unos científicos hicieron flotar una rana viva sin dañarla. Animación 3D propia; no a escala.",
+  "hashtags": [
+    "imanes",
+    "magnetismo",
+    "fisica",
+    "ciencia",
+    "experimentos",
+    "sabiasque",
+    "shorts"
+  ],
+  "sources": [
+    {
+      "title": "Electromagnet",
+      "url": "https://en.wikipedia.org/wiki/Electromagnet",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic levitation",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_levitation",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Shanghai maglev train",
+      "url": "https://en.wikipedia.org/wiki/Shanghai_maglev_train",
+      "publisher": "Wikipedia"
+    },
+    {
+      "title": "Magnetic resonance imaging",
+      "url": "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging",
+      "publisher": "Wikipedia"
+    }
+  ],
+  "claims": [
+    {
+      "statement": "El tren maglev de Shanghái alcanzó unos 430 km/h en servicio.",
+      "scene_id": "s5",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Shanghai_maglev_train"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "Los equipos de resonancia magnética usan campos típicos de 1,5 a 3 teslas.",
+      "scene_id": "s6",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_resonance_imaging"
+      ],
+      "confidence": "alta"
+    },
+    {
+      "statement": "En 1997 se hizo levitar una rana viva con un campo de unos 16 teslas.",
+      "scene_id": "s7",
+      "source_urls": [
+        "https://en.wikipedia.org/wiki/Magnetic_levitation"
+      ],
+      "confidence": "alta"
+    }
+  ]
+}
