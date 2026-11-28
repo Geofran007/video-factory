@@ -1,0 +1,34 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f2a5e",
+    "#0b8ad6"
+  ],
+  "caption": "🌐 Hay más de 1,4 millones de kilómetros de cables submarinos. En el fondo del océano, muchos son tan delgados como una manguera.\n\nFuente: https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+  "hashtags": [
+    "#internet",
+    "#ciencia",
+    "#tecnologia",
+    "#oceano",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://www2.telegeography.com/submarine-cable-faqs-frequently-asked-questions",
+    "https://en.wikipedia.org/wiki/Packet_switching",
+    "https://en.wikipedia.org/wiki/Optical_fiber",
+    "https://en.wikipedia.org/wiki/Submarine_communications_cable"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "net_cable",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "99 %",
+      "fact": "del tráfico de internet entre continentes viaja por cables bajo el mar, no por satélites.",
+      "highlight": [
+        "mar,"
+      ]
+    }
+  ]
+}

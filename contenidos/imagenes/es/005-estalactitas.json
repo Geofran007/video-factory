@@ -1,0 +1,33 @@
+{
+  "language": "es",
+  "colors": [
+    "#2a2a3a",
+    "#6a5a8a"
+  ],
+  "caption": "🪨 Cada gota deja un poquito de mineral. Con paciencia, las cuevas se llenan de esculturas naturales.\n\nFuente: https://en.wikipedia.org/wiki/Solutional_cave",
+  "hashtags": [
+    "#cuevas",
+    "#ciencia",
+    "#geologia",
+    "#planetatierra",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Solutional_cave",
+    "https://en.wikipedia.org/wiki/Stalactite",
+    "https://en.wikipedia.org/wiki/S%C6%A1n_%C4%90%C3%B2ng_cave"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "cue_column",
+      "at": 0.6,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "0,1 mm",
+      "fact": "por año, en promedio, crece una estalactita. Una de un metro puede tener miles de años.",
+      "highlight": [
+        "miles"
+      ]
+    }
+  ]
+}

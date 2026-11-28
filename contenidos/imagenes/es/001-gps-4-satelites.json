@@ -1,0 +1,33 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f2a5e",
+    "#0b8ad6"
+  ],
+  "caption": "📡 Tu GPS escucha a varios satélites a la vez. Y ojo: tu celular solo recibe señales, no las envía a los satélites.\n\nFuente: https://www.gps.gov/systems/gps/space/",
+  "hashtags": [
+    "#gps",
+    "#ciencia",
+    "#tecnologia",
+    "#espacio",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://www.gps.gov/systems/gps/space/",
+    "https://en.wikipedia.org/wiki/Global_Positioning_System",
+    "https://en.wikipedia.org/wiki/Error_analysis_for_the_Global_Positioning_System"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "gps_four",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "4 satélites",
+      "fact": "Tu celular necesita al menos cuatro satélites para saber dónde estás: tres para la posición y uno para corregir el reloj.",
+      "highlight": [
+        "cuatro"
+      ]
+    }
+  ]
+}

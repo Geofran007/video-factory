@@ -693,7 +693,7 @@
       if (card.big) b.append(el('div', 'pk-bbig', card.big));
       const t = hlWords(el('div', 'pk-btext'), card.fact, card.highlight, 'kw');
       b.append(t); wrap.append(b);
-      $('stage').appendChild(wrap); fitText(t, 54, 34);
+      $('stage').appendChild(wrap); fitText(t, 50, 28);
     }
     if (TL.presenter) { const img = el('img', `pk-leo pk-leo-${L}`); img.src = `../presenters/${TL.presenter}.png`; wrap.append(img); }
     return true;

@@ -1,0 +1,33 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f4e3a",
+    "#16a36b"
+  ],
+  "caption": "🦖 Hace unos 66 millones de años desapareció cerca del 75 % de las especies… pero algunos dinosaurios siguen aquí, con plumas.\n\nFuente: https://en.wikipedia.org/wiki/Chicxulub_crater",
+  "hashtags": [
+    "#dinosaurios",
+    "#ciencia",
+    "#animales",
+    "#aves",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Chicxulub_crater",
+    "https://en.wikipedia.org/wiki/Cretaceous%E2%80%93Paleogene_extinction_event",
+    "https://en.wikipedia.org/wiki/Origin_of_birds"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "din_birds",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "¡Dinosaurios!",
+      "fact": "Las aves descienden de dinosaurios terópodos. La gallina es pariente del T-rex.",
+      "highlight": [
+        "T-rex."
+      ]
+    }
+  ]
+}

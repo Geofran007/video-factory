@@ -1,0 +1,33 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f3a5e",
+    "#16a3d6"
+  ],
+  "caption": "💎 El diamante y el grafito de tu lápiz son carbono puro. Lo que cambia es cómo se ordenan sus átomos.\n\nFuente: https://en.wikipedia.org/wiki/Diamond",
+  "hashtags": [
+    "#diamantes",
+    "#ciencia",
+    "#geologia",
+    "#planetatierra",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Diamond",
+    "https://en.wikipedia.org/wiki/Kimberlite",
+    "https://en.wikipedia.org/wiki/BPM_37093"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "dia_age",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "3.500 millones",
+      "fact": "de años pueden tener algunos diamantes. Se forman a más de 150 km de profundidad.",
+      "highlight": [
+        "150"
+      ]
+    }
+  ]
+}

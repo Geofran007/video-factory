@@ -1,0 +1,34 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f5e5e",
+    "#16d6b0"
+  ],
+  "caption": "🦷 Tenemos 20 dientes de leche y hasta 32 permanentes. El esmalte no tiene células vivas, así que no se repara solo.\n\nFuente: https://en.wikipedia.org/wiki/Deciduous_teeth",
+  "hashtags": [
+    "#dientes",
+    "#ciencia",
+    "#cuerpohumano",
+    "#salud",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Deciduous_teeth",
+    "https://en.wikipedia.org/wiki/Tooth_enamel",
+    "https://en.wikipedia.org/wiki/Tooth_decay",
+    "https://en.wikipedia.org/wiki/Shark_tooth"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "die_enamel",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "Lo más duro",
+      "fact": "El esmalte de tus dientes es lo más duro de tu cuerpo, pero no se regenera. ¡Cuídalo!",
+      "highlight": [
+        "regenera."
+      ]
+    }
+  ]
+}

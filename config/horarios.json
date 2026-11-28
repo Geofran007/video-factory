@@ -18,7 +18,14 @@
     "hora": "10:00",
     "margen_min": 240
   },
-  "carruseles": {
-    "hora": "12:00"
-  }
+  "publicaciones": [
+    {
+      "tipo": "carrusel",
+      "hora": "12:00"
+    },
+    {
+      "tipo": "imagen",
+      "hora": "19:00"
+    }
+  ]
 }

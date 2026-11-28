@@ -1,0 +1,34 @@
+{
+  "language": "es",
+  "colors": [
+    "#3a0f5e",
+    "#a316d6"
+  ],
+  "caption": "🧭 El campo magnético de la Tierra nace del hierro líquido que se mueve en su núcleo.\n\nFuente: https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+  "hashtags": [
+    "#brujula",
+    "#ciencia",
+    "#magnetismo",
+    "#planetatierra",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Earth%27s_magnetic_field",
+    "https://en.wikipedia.org/wiki/North_magnetic_pole",
+    "https://en.wikipedia.org/wiki/Brunhes%E2%80%93Matuyama_reversal",
+    "https://en.wikipedia.org/wiki/Magnetoreception"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "ima_moving",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "Se mueve",
+      "fact": "El polo norte magnético se desplaza decenas de kilómetros cada año. Tu brújula apunta a un lugar que viaja.",
+      "highlight": [
+        "viaja."
+      ]
+    }
+  ]
+}

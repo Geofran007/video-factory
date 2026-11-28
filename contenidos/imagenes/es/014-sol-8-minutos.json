@@ -1,0 +1,34 @@
+{
+  "language": "es",
+  "colors": [
+    "#5e1f0f",
+    "#d66a0b"
+  ],
+  "caption": "☀️ El Sol tiene unos 4.600 millones de años y le quedan unos 5.000 millones más.\n\nFuente: https://science.nasa.gov/sun/facts/",
+  "hashtags": [
+    "#sol",
+    "#ciencia",
+    "#espacio",
+    "#astronomia",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://science.nasa.gov/sun/facts/",
+    "https://en.wikipedia.org/wiki/Sun",
+    "https://en.wikipedia.org/wiki/Solar_core"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "sol_light",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "8 minutos",
+      "fact": "tarda la luz del Sol en llegar a la Tierra. Cuando lo miras, ves el Sol de hace 8 minutos.",
+      "highlight": [
+        "8",
+        "minutos."
+      ]
+    }
+  ]
+}

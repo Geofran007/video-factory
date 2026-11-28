@@ -30,7 +30,9 @@ from video_factory.publishers import meta  # noqa: E402
 from video_factory.publishers.meta_carousel import MetaCarousel  # noqa: E402
 from video_factory.video.html_renderer import render_post  # noqa: E402
 
-QUEUE = ROOT / "contenidos" / "carruseles"
+# Dos publicaciones de imágenes al día (config/horarios.json → publicaciones): carrusel y dato en una imagen.
+QUEUES = {"carrusel": ROOT / "contenidos" / "carruseles", "imagen": ROOT / "contenidos" / "imagenes"}
+QUEUE = QUEUES["carrusel"]
 DONE = ROOT / "contenidos" / "publicados" / "carruseles"
 
 
@@ -56,57 +58,65 @@ def caption(card: dict) -> str:
     return f"{card['caption']}\n\n{' '.join(card.get('hashtags', []))}"
 
 
-def slot_now(canal: str, cfg: dict, now: dt.datetime) -> tuple[str, dt.datetime] | None:
-    """Turno diario de carruseles que toca: desde 3 h antes hasta 6 h después de su hora local."""
-    c = cfg["carruseles"]
-    for offset in (-1, 0, 1):
-        day = (now + dt.timedelta(days=offset)).date().isoformat()
-        local = dt.datetime.fromisoformat(f"{day}T{c['hora']}:00").replace(tzinfo=turnos.ZoneInfo(cfg["zonas"][canal]))
-        when = local.astimezone(dt.timezone.utc)
-        if when - dt.timedelta(hours=3) <= now <= when + dt.timedelta(hours=6):
-            return f"{day}-carrusel", when
-    return None
+def slots_now(canal: str, cfg: dict, now: dt.datetime) -> list[tuple[str, str, dt.datetime]]:
+    """Turnos de imágenes que tocan (tipo, turno, hora UTC): desde 3 h antes hasta 6 h después de su hora local."""
+    out = []
+    for p in cfg["publicaciones"]:
+        for offset in (-1, 0, 1):
+            day = (now + dt.timedelta(days=offset)).date().isoformat()
+            local = dt.datetime.fromisoformat(f"{day}T{p['hora']}:00").replace(tzinfo=turnos.ZoneInfo(cfg["zonas"][canal]))
+            when = local.astimezone(dt.timezone.utc)
+            if when - dt.timedelta(hours=3) <= now <= when + dt.timedelta(hours=6):
+                out.append((p["tipo"], f"{day}-{p['tipo']}", when))
+    return sorted(out, key=lambda x: x[2])
 
 
 def turno(canal: str) -> int:
     now = dt.datetime.now(dt.timezone.utc)
-    cfg = turnos.load(turnos.CONFIG)
-    found = slot_now(canal, cfg, now)
-    if not found:
-        print("No toca carrusel ahora.")
-        return 0
-    slot, when = found
-    ledger = turnos.load(turnos.LEDGER)
-    if canal in ledger.get(slot, {}):
-        print(f"El carrusel de {slot} ya se publicó.")
-        return 0
-    pending = sorted((QUEUE / canal).glob("*.json"))
-    if not pending:
-        print("Cola de carruseles vacía.")
-        return 0
     if not meta.configured(canal):
         print(f"Sin credenciales de Meta para '{canal}'.")
         return 0
-    card_path = pending[0]
+    due = slots_now(canal, turnos.load(turnos.CONFIG), now)
+    if not due:
+        print("No toca ninguna publicación de imágenes ahora.")
+    for tipo, slot, when in due:
+        if canal in turnos.load(turnos.LEDGER).get(slot, {}):
+            print(f"{slot}: ya se publicó.")
+            continue
+        pending = sorted((QUEUES[tipo] / canal).glob("*.json"))
+        if not pending:
+            print(f"{slot}: la cola de {tipo} está vacía.")
+            continue
+        publicar(canal, tipo, slot, when, pending[0], now)
+    return 0
+
+
+def publicar(canal: str, tipo: str, slot: str, when: dt.datetime, card_path: Path, now: dt.datetime) -> None:
     card = json.loads(card_path.read_text(encoding="utf-8"))
     images = render(card_path, ROOT / "output" / "carruseles")
     publish_at = int(when.timestamp()) if when > now + dt.timedelta(minutes=15) else None
     res = MetaCarousel(canal).publish_carousel(images, caption(card), publish_at)
-    print(f"Facebook: carrusel {'programado' if publish_at else 'publicado'} · {res.facebook_post_id}")
+    print(f"{slot} · Facebook: {tipo} {'programado' if publish_at else 'publicado'} · {res.facebook_post_id}")
     print(f"Instagram: {'publicado · ' + res.instagram_id if res.instagram_id else 'no se publicó: ' + (res.instagram_error or 'no activado')}")
     DONE.mkdir(parents=True, exist_ok=True)
     stamp = now.strftime("%Y%m%d")
-    card_path.replace(DONE / f"{stamp}-{canal}-{card_path.name}")
+    card_path.replace(DONE / f"{stamp}-{canal}-{tipo}-{card_path.name}")
     turnos.record(turnos.LEDGER, slot, canal, {"guion": card_path.stem, "facebook_post_id": res.facebook_post_id,
                                                "instagram_id": res.instagram_id, "instagram_error": res.instagram_error,
                                                "hora_recomendada_utc": when.isoformat()})
-    return 0
 
 
 def prueba(canal: str) -> int:
     """Comprueba la conexión sin dejar nada publicado: Facebook programado a 2 días y borrado; Instagram sin publicar."""
-    pending = sorted((QUEUE / canal).glob("*.json"))
-    card_path = pending[0]
+    for tipo, queue in QUEUES.items():
+        pending = sorted((queue / canal).glob("*.json"))
+        if pending:
+            print(f"--- Prueba de {tipo}: {pending[0].name}")
+            _prueba(canal, pending[0])
+    return 0
+
+
+def _prueba(canal: str, card_path: Path) -> None:
     card = json.loads(card_path.read_text(encoding="utf-8"))
     images = render(card_path, ROOT / "output" / "carruseles")
     pub = MetaCarousel(canal)
@@ -122,7 +132,6 @@ def prueba(canal: str) -> int:
     finally:
         pub.delete(post)
         print("Facebook: publicación de prueba borrada.")
-    return 0
 
 
 def main() -> int:

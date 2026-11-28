@@ -1,0 +1,34 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f4e3a",
+    "#16a36b"
+  ],
+  "caption": "🌳 Un científico cultivó un sauce 5 años: el árbol ganó unos 74 kg y la tierra solo perdió unos 57 gramos.\n\nFuente: https://en.wikipedia.org/wiki/Photosynthesis",
+  "hashtags": [
+    "#arboles",
+    "#ciencia",
+    "#naturaleza",
+    "#fotosintesis",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Photosynthesis",
+    "https://en.wikipedia.org/wiki/Jan_Baptist_van_Helmont",
+    "https://en.wikipedia.org/wiki/Hyperion_(tree)",
+    "https://en.wikipedia.org/wiki/Dendrochronology"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "arb_carbon",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "Del aire",
+      "fact": "La mayor parte de la madera de un árbol viene del dióxido de carbono del aire, no de la tierra.",
+      "highlight": [
+        "aire,"
+      ]
+    }
+  ]
+}

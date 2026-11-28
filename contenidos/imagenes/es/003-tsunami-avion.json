@@ -1,0 +1,34 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f2a5e",
+    "#0b8ad6"
+  ],
+  "caption": "🌊 Si estás en la costa y el mar se retira de golpe, no bajes a mirar: sube a un lugar alto.\n\nFuente: https://oceanservice.noaa.gov/facts/tsunami.html",
+  "hashtags": [
+    "#tsunami",
+    "#ciencia",
+    "#oceano",
+    "#planetatierra",
+    "#seguridad"
+  ],
+  "sources": [
+    "https://oceanservice.noaa.gov/facts/tsunami.html",
+    "https://www.weather.gov/safety/tsunami",
+    "https://en.wikipedia.org/wiki/1960_Valdivia_earthquake",
+    "https://en.wikipedia.org/wiki/Tsunami"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "tsu_grow",
+      "at": 0.7,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "800 km/h",
+      "fact": "En mar abierto un tsunami viaja tan rápido como un avión… pero mide un metro o menos.",
+      "highlight": [
+        "avión…"
+      ]
+    }
+  ]
+}

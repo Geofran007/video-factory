@@ -1,0 +1,33 @@
+{
+  "language": "es",
+  "colors": [
+    "#5e0f2a",
+    "#d6203a"
+  ],
+  "caption": "🍲 La rejilla de la puerta funciona como una jaula: deja pasar la luz para que veas la comida, pero no las microondas.\n\nFuente: https://en.wikipedia.org/wiki/Microwave_oven",
+  "hashtags": [
+    "#microondas",
+    "#ciencia",
+    "#fisica",
+    "#cocina",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Microwave_oven",
+    "https://en.wikipedia.org/wiki/Percy_Spencer",
+    "https://en.wikipedia.org/wiki/Faraday_cage"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "mic_door",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "12 cm",
+      "fact": "mide la onda de un microondas. Los agujeros de la puerta son mucho más pequeños, por eso las ondas no salen.",
+      "highlight": [
+        "agujeros"
+      ]
+    }
+  ]
+}

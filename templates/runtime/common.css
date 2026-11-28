@@ -255,8 +255,8 @@ body.pl-bubble { --fy: 150px; }
 .pk-bubble { position: absolute; left: 380px; top: 900px; width: 650px; padding: 26px 34px; border-radius: 40px; background: #fff; color: #1a1020;
   box-shadow: 0 18px 40px rgba(0,0,0,.4); }
 .pk-bubble::before { content: ''; position: absolute; left: -36px; top: 150px; border: 22px solid transparent; border-right: 36px solid #fff; }
-.pk-bbig { font-size: 92px; font-weight: 900; color: #6b2bd6; line-height: 1; margin-bottom: 8px; }
-.pk-btext { max-height: 260px; overflow: hidden; font-weight: 800; line-height: 1.2; }
+.pk-bbig { font-size: 76px; font-weight: 900; color: #6b2bd6; line-height: 1; margin-bottom: 8px; }
+.pk-btext { max-height: 230px; overflow: hidden; font-weight: 800; line-height: 1.2; }
 .pk-btext .kw-hl { color: #6b2bd6; }
 
 .pk-sub2 { position: absolute; left: 60px; top: 450px; width: 960px; font-size: 40px; font-weight: 700; line-height: 1.25; color: #dfe8ff; }

@@ -1,0 +1,33 @@
+{
+  "language": "es",
+  "colors": [
+    "#0f2a5e",
+    "#0b8ad6"
+  ],
+  "caption": "🌀 El mar caliente es el combustible de los huracanes. Y casi nunca se forman justo sobre el ecuador.\n\nFuente: https://www.weather.gov/jetstream/tc",
+  "hashtags": [
+    "#huracanes",
+    "#ciencia",
+    "#clima",
+    "#planetatierra",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://www.weather.gov/jetstream/tc",
+    "https://www.nhc.noaa.gov/aboutsshws.php",
+    "https://en.wikipedia.org/wiki/Tropical_cyclone"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "hur_spin",
+      "at": 0.6,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "26,5 °C",
+      "fact": "Un huracán necesita agua del mar a unos 26,5 °C o más. Por eso nacen en océanos tropicales.",
+      "highlight": [
+        "26,5"
+      ]
+    }
+  ]
+}

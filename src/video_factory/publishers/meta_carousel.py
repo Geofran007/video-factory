@@ -68,6 +68,15 @@ class MetaCarousel(MetaPublisher):
             waited += 5
 
     def instagram_carousel(self, urls: list[str], caption: str, publish: bool = True) -> str:
+        if len(urls) == 1:  # imagen única: un solo contenedor, sin carrusel
+            parent = _check(self.http.post(f"{GRAPH}/{self.ig_id}/media", data={
+                "image_url": urls[0], "caption": caption[:2200], "access_token": self.token}, timeout=60), "Imagen de Instagram")["id"]
+            self._wait(parent)
+            if not publish:
+                return parent
+            return _check(self.http.post(f"{GRAPH}/{self.ig_id}/media_publish",
+                                         data={"creation_id": parent, "access_token": self.token}, timeout=60),
+                          "Publicar imagen en Instagram")["id"]
         children = []
         for u in urls:
             c = _check(self.http.post(f"{GRAPH}/{self.ig_id}/media", data={"image_url": u, "is_carousel_item": "true",
@@ -86,8 +95,8 @@ class MetaCarousel(MetaPublisher):
                       "Publicar carrusel en Instagram")["id"]
 
     def publish_carousel(self, images: list[Path], caption: str, publish_at: int | None = None) -> CarouselResult:
-        if not 2 <= len(images) <= 10:
-            raise MetaError("Un carrusel necesita de 2 a 10 imágenes")
+        if not 1 <= len(images) <= 10:
+            raise MetaError("Una publicación lleva de 1 a 10 imágenes")
         res = CarouselResult()
         ids = self._upload_photos(images)
         # Las direcciones se leen antes de crear la publicación, mientras las fotos aún son solo de la Página.

@@ -1,0 +1,34 @@
+{
+  "language": "es",
+  "colors": [
+    "#5e3a0f",
+    "#d6a316"
+  ],
+  "caption": "🐝 El hexágono es la forma que divide el espacio con menos pared. Las abejas lo descubrieron mucho antes que los matemáticos.\n\nFuente: https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+  "hashtags": [
+    "#abejas",
+    "#ciencia",
+    "#animales",
+    "#matematicas",
+    "#naturaleza"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Honeycomb_conjecture",
+    "https://en.wikipedia.org/wiki/Beeswax",
+    "https://en.wikipedia.org/wiki/Honeycomb",
+    "https://honey.com/"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "abe_wax",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "6–8 kg",
+      "fact": "de miel consumen las abejas para producir apenas 1 kg de cera. Por eso construyen hexágonos: gastan menos.",
+      "highlight": [
+        "hexágonos:"
+      ]
+    }
+  ]
+}

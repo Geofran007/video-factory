@@ -1,0 +1,33 @@
+{
+  "language": "es",
+  "colors": [
+    "#1e1e1e",
+    "#5a5a5a"
+  ],
+  "caption": "🦓 En un experimento, caballos con abrigos de rayas recibieron muchos menos aterrizajes de tábanos.\n\nFuente: https://en.wikipedia.org/wiki/Zebra",
+  "hashtags": [
+    "#cebras",
+    "#ciencia",
+    "#animales",
+    "#naturaleza",
+    "#sabiasque"
+  ],
+  "sources": [
+    "https://en.wikipedia.org/wiki/Zebra",
+    "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0210831",
+    "https://www.nature.com/articles/ncomms4535"
+  ],
+  "slides": [
+    {
+      "layout": "bubble",
+      "model3d": "ceb_flies",
+      "at": 0.5,
+      "tag": "¿SABÍAS QUE…?",
+      "big": "Antimoscas",
+      "fact": "Las rayas de las cebras confunden a las moscas que pican: frenan mal y casi no logran aterrizar.",
+      "highlight": [
+        "moscas"
+      ]
+    }
+  ]
+}

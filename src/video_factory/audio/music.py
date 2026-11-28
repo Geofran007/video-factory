@@ -99,4 +99,4 @@ def music_bed(category: str, duration: float, out: Path, assets_dir: Path) -> tu
         "dynaudnorm=f=500:g=31,volume=-3dB"
     )
     run_ffmpeg(["-f", "lavfi", "-i", graph, "-ar", "48000", "-ac", "2", "-c:a", "pcm_s16le", str(out)])
-    return out, "Música original generada por AI Video Factory"
+    return out, "Música original de Leo curioso"
