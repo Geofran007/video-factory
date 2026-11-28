@@ -115,11 +115,13 @@ def prueba(canal: str) -> int:
     print(f"Facebook: {len(urls)} direcciones de imagen leídas para Instagram.")
     post = pub.facebook_post(ids, caption(card), int((dt.datetime.now(dt.timezone.utc) + dt.timedelta(days=2)).timestamp()))
     print(f"Facebook: publicación programada creada ({post}) con {len(ids)} imágenes.")
-    pub.delete(post)
-    print("Facebook: publicación de prueba borrada.")
-    if pub.ig_id:
-        cont = pub.instagram_carousel(urls, caption(card), publish=False)
-        print(f"Instagram: carrusel aceptado y listo ({cont}), sin publicar.")
+    try:
+        if pub.ig_id:
+            cont = pub.instagram_carousel(urls, caption(card), publish=False)
+            print(f"Instagram: carrusel aceptado y listo ({cont}), sin publicar.")
+    finally:
+        pub.delete(post)
+        print("Facebook: publicación de prueba borrada.")
     return 0
 
 
