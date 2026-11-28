@@ -186,9 +186,12 @@ jobs:
           if git diff --cached --quiet; then echo "Sin cambios en la cola."; exit 0; fi
           git commit -m "chore(publicar): guiones subidos a YouTube $(date -u +%F)"
           for i in 1 2 3; do
-            git pull --rebase --quiet && git push && exit 0
+            # En un choque gana el cambio de este bot (lo que ya se subió); si aun así no se puede, se aborta y se reintenta.
+            git pull --rebase -X theirs --quiet && git push && exit 0
+            git rebase --abort 2>/dev/null || true
             sleep $((i * 10))
           done
+          echo "::error::Los videos se subieron, pero no se pudo guardar la cola: hay que mover sus guiones a mano a contenidos/publicados."
           exit 1
 
       - name: Subir resultado
