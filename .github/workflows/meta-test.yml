@@ -1,0 +1,41 @@
+name: Probar Facebook
+
+# Sube a la Página de Facebook, como BORRADOR (no público), un Short ya generado por "Publicar en YouTube".
+# Sirve para comprobar la conexión con Meta antes de activar el envío automático (variable META_AUTO=si).
+on:
+  workflow_dispatch:
+    inputs:
+      run_id:
+        description: "Ejecución de «Publicar en YouTube» de la que tomar el video (vacío = la última con videos)"
+        type: string
+        default: ""
+
+permissions:
+  contents: read
+  actions: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      META_PAGE_ID_ES: ${{ secrets.META_PAGE_ID_ES }}
+      META_PAGE_TOKEN_ES: ${{ secrets.META_PAGE_TOKEN_ES }}
+      GH_TOKEN: ${{ github.token }}
+      RUN_ID: ${{ inputs.run_id }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests
+      - name: Descargar un Short ya generado
+        run: |
+          if [ -z "$RUN_ID" ]; then
+            RUN_ID=$(gh api "repos/$GITHUB_REPOSITORY/actions/artifacts?per_page=30" \
+              --jq '[.artifacts[] | select(.name | startswith("publicado-")) | select(.expired | not)][0].workflow_run.id')
+          fi
+          echo "Ejecución: $RUN_ID"
+          gh run download "$RUN_ID" -D descargas
+      - name: Subir como borrador
+        run: python scripts/meta_test.py --carpeta descargas --canal es

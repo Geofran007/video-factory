@@ -137,7 +137,8 @@ def main() -> int:
     if not args.sin_tiktok and not args.largo:
         publish_tiktok(job_dir, args.canal, args.visibility, done / f"{stamp}-{name}.tiktok.json", result)
     # Facebook e Instagram solo cuando el Short va a ser público en YouTube (público ya o programado).
-    if not args.largo and (args.visibility == "public" or scheduled):
+    # META_AUTO=si (variable del repositorio) activa el envío; antes se prueba con .github/workflows/meta-test.yml.
+    if not args.largo and (args.visibility == "public" or scheduled) and os.environ.get("META_AUTO") == "si":
         publish_meta(job_dir, args.canal, when, done / f"{stamp}-{name}.meta.json", result)
     return 0
 

@@ -71,3 +71,10 @@ def test_reel_duration_limit(tmp_path, env):
 def test_not_configured(monkeypatch):
     monkeypatch.delenv("META_PAGE_TOKEN_EN", raising=False)
     assert not meta.configured("en")
+
+
+def test_draft_is_not_published(tmp_path, env):
+    s = Fake()
+    meta.MetaPublisher("es", session=s).facebook_reel(video(tmp_path), "x", draft=True)
+    finish = [c for c in s.calls if c[0] == "POST" and c[2].get("upload_phase") == "finish"][0][2]
+    assert finish["video_state"] == "DRAFT" and "scheduled_publish_time" not in finish

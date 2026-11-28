@@ -64,6 +64,7 @@ jobs:
       TIKTOK_REFRESH_TOKEN_EN: ${{ secrets.TIKTOK_REFRESH_TOKEN_EN }}
       TIKTOK_MODE: ${{ vars.TIKTOK_MODE || 'inbox' }}
       # Facebook e Instagram (opcional, scripts/meta_auth.py): si faltan, se omiten sin afectar a YouTube.
+      META_AUTO: ${{ vars.META_AUTO }}
       META_PAGE_ID_ES: ${{ secrets.META_PAGE_ID_ES }}
       META_PAGE_TOKEN_ES: ${{ secrets.META_PAGE_TOKEN_ES }}
       META_IG_ID_ES: ${{ secrets.META_IG_ID_ES }}

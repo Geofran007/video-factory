@@ -73,7 +73,7 @@ class MetaPublisher:
         self.sleep = sleep
 
     # ------------------------------------------------------------------ Facebook
-    def facebook_reel(self, video: Path, description: str, publish_at: int | None = None) -> str:
+    def facebook_reel(self, video: Path, description: str, publish_at: int | None = None, draft: bool = False) -> str:
         start = _check(self.http.post(f"{GRAPH}/{self.page_id}/video_reels",
                                       data={"upload_phase": "start", "access_token": self.token}, timeout=60), "Iniciar Reel")
         vid = start["video_id"]
@@ -83,7 +83,9 @@ class MetaPublisher:
                                   headers={"Authorization": f"OAuth {self.token}", "offset": "0", "file_size": str(size)}),
                    "Subir Reel a Facebook")
         finish = {"upload_phase": "finish", "video_id": vid, "description": description[:2200], "access_token": self.token}
-        if publish_at:
+        if draft:
+            finish["video_state"] = "DRAFT"
+        elif publish_at:
             finish.update(video_state="SCHEDULED", scheduled_publish_time=str(publish_at))
         else:
             finish["video_state"] = "PUBLISHED"
