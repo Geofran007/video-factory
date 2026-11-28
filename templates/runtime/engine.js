@@ -676,13 +676,14 @@
     if (L === 'cover') {
       const t = hlWords(el('div', 'pk-hook'), card.fact, card.highlight, 'kw');
       wrap.append(t, el('div', 'pk-swipe', card.swipe || 'Desliza →'));
-      $('stage').appendChild(wrap); fitText(t, 104, 60);
+      if (card.detail) wrap.append(el('div', 'pk-sub2', card.detail));
+      $('stage').appendChild(wrap); fitText(t, 96, 56);
     } else if (L === 'fact') {
       if (card.big) wrap.append(el('div', 'pk-big', card.big));
       const t = hlWords(el('div', 'pk-text'), card.fact, card.highlight, 'kw');
       wrap.append(t);
       if (card.swipe) wrap.append(el('div', 'pk-next', card.swipe));
-      $('stage').appendChild(wrap); fitText(t, 56, 36);
+      $('stage').appendChild(wrap); fitText(t, 46, 32);
     } else if (L === 'cta') {
       const t = hlWords(el('div', 'pk-cta'), card.fact, card.highlight, 'kw');
       wrap.append(t, el('div', 'pk-sub', card.detail || ''));

@@ -225,25 +225,28 @@ body.post-framed #stage { background: linear-gradient(160deg, var(--pa) 0%, var(
 /* Se muestra la franja de la escena entre y=330 y y=1050 (alrededor del foco), escalada a 960 px de ancho. */
 body.post-framed .three-full { transform-origin: 0 0; clip-path: inset(330px 0 870px 0 round 64px);
   transform: translate(60px, calc(var(--fy, 170px) - 293px)) scale(.889); box-shadow: 0 30px 60px rgba(0,0,0,.4); }
-body.pl-cover { --fy: 560px; }
+body.pl-cover { --fy: 600px; }
+/* En portada y datos el marco es más bajo (franja y=410…970) para dejar más sitio al texto. */
+body.pl-cover .three-full, body.pl-fact .three-full { clip-path: inset(410px 0 950px 0 round 56px);
+  transform: translate(60px, calc(var(--fy, 140px) - 364px)) scale(.889); }
 body.pl-cta .three-full { display: none; }
 body.pl-bubble { --fy: 150px; }
 .pk-top { position: absolute; left: 60px; right: 60px; top: 52px; display: flex; justify-content: space-between; align-items: center; }
 .pk-tag { padding: 10px 26px; border-radius: 40px; background: #ffd23a; color: #1a1020; font-size: 34px; font-weight: 900; }
 .pk-tag:empty { visibility: hidden; }
 .pk-brand { font-size: 32px; font-weight: 900; color: #fff; opacity: .9; }
-.pk-hook { position: absolute; left: 60px; top: 150px; width: 960px; max-height: 380px; overflow: hidden; font-weight: 900; line-height: 1.04;
+.pk-hook { position: absolute; left: 60px; top: 140px; width: 960px; max-height: 300px; overflow: hidden; font-weight: 900; line-height: 1.04;
   color: #fff; text-transform: uppercase; paint-order: stroke fill; -webkit-text-stroke: 8px rgba(0,0,0,.55); }
 .kw { display: inline-block; } .kw-hl { color: #ffd23a; }
-.pk-swipe { position: absolute; left: 50%; top: 1235px; transform: translateX(-50%); padding: 14px 44px; border-radius: 50px;
+.pk-swipe { position: absolute; left: 50%; top: 1200px; transform: translateX(-50%); padding: 14px 44px; border-radius: 50px;
   background: #fff; color: #1a1020; font-size: 38px; font-weight: 900; box-shadow: 0 12px 30px rgba(0,0,0,.35); }
-.pk-big { position: absolute; left: 60px; top: 840px; width: 960px; font-size: 150px; font-weight: 900; line-height: 1; color: #ffd23a;
+.pk-big { position: absolute; left: 60px; top: 680px; width: 960px; font-size: 132px; font-weight: 900; line-height: 1; color: #ffd23a;
   paint-order: stroke fill; -webkit-text-stroke: 10px rgba(0,0,0,.45); white-space: nowrap; }
-.pk-text { position: absolute; left: 60px; top: 1010px; width: 700px; max-height: 270px; overflow: hidden; font-weight: 800; line-height: 1.18; color: #fff; }
-.pk-next { position: absolute; left: 60px; top: 1280px; font-size: 32px; font-weight: 900; color: #ffd23a; }
+.pk-text { position: absolute; left: 60px; top: 840px; width: 960px; max-height: 300px; overflow: hidden; font-weight: 800; line-height: 1.18; color: #fff; }
+.pk-next { position: absolute; left: 60px; top: 1270px; font-size: 32px; font-weight: 900; color: #ffd23a; }
 .pk-leo { position: absolute; filter: drop-shadow(0 16px 26px rgba(0,0,0,.5)); }
-.pk-leo-cover { right: 24px; top: 1010px; width: 250px; }
-.pk-leo-fact { right: 30px; top: 1030px; width: 270px; }
+.pk-leo-cover { right: 24px; top: 920px; width: 230px; }
+.pk-leo-fact { right: 30px; top: 1110px; width: 220px; }
 .pk-leo-cta { left: 50%; top: 640px; width: 560px; transform: translateX(-50%); }
 .pk-leo-bubble { left: 20px; top: 930px; width: 380px; }
 .pk-cta { position: absolute; left: 60px; top: 170px; width: 960px; max-height: 300px; overflow: hidden; text-align: center; font-weight: 900;
@@ -255,3 +258,5 @@ body.pl-bubble { --fy: 150px; }
 .pk-bbig { font-size: 92px; font-weight: 900; color: #6b2bd6; line-height: 1; margin-bottom: 8px; }
 .pk-btext { max-height: 260px; overflow: hidden; font-weight: 800; line-height: 1.2; }
 .pk-btext .kw-hl { color: #6b2bd6; }
+
+.pk-sub2 { position: absolute; left: 60px; top: 450px; width: 960px; font-size: 40px; font-weight: 700; line-height: 1.25; color: #dfe8ff; }
