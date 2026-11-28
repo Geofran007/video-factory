@@ -1,4 +1,4 @@
-name: Probar Facebook
+name: Probar Facebook e Instagram
 
 # Sube a la Página de Facebook, como BORRADOR (no público), un Short ya generado por "Publicar en YouTube".
 # Sirve para comprobar la conexión con Meta antes de activar el envío automático (variable META_AUTO=si).
@@ -9,6 +9,14 @@ on:
         description: "Ejecución de «Publicar en YouTube» de la que tomar el video (vacío = la última con videos)"
         type: string
         default: ""
+      titulo:
+        description: "Parte del título del Short (vacío = el primero en español)"
+        type: string
+        default: ""
+      publicar:
+        description: "Publicar ya en Facebook e Instagram (si no, borrador solo en Facebook)"
+        type: boolean
+        default: false
 
 permissions:
   contents: read
@@ -21,6 +29,10 @@ jobs:
     env:
       META_PAGE_ID_ES: ${{ secrets.META_PAGE_ID_ES }}
       META_PAGE_TOKEN_ES: ${{ secrets.META_PAGE_TOKEN_ES }}
+      META_IG_ID_ES: ${{ secrets.META_IG_ID_ES }}
+      META_IG_AUTO: ${{ vars.META_IG_AUTO }}
+      TITULO: ${{ inputs.titulo }}
+      PUBLICAR: ${{ inputs.publicar }}
       GH_TOKEN: ${{ github.token }}
       RUN_ID: ${{ inputs.run_id }}
     steps:
@@ -37,5 +49,7 @@ jobs:
           fi
           echo "Ejecución: $RUN_ID"
           gh run download "$RUN_ID" -D descargas
-      - name: Subir como borrador
-        run: python scripts/meta_test.py --carpeta descargas --canal es
+      - name: Subir
+        run: |
+          extra=(); [ "$PUBLICAR" = "true" ] && extra=(--publicar)
+          python scripts/meta_test.py --carpeta descargas --canal es --titulo "$TITULO" "${extra[@]}"
