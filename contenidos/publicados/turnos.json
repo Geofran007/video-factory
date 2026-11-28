@@ -78,5 +78,21 @@
       "hora_recomendada_utc": "2026-11-28T14:00:00+00:00",
       "programado_utc": "2026-11-28T14:00:00Z"
     }
+  },
+  "2026-11-28-largo": {
+    "es": {
+      "guion": "podemos-desviar-un-asteroide",
+      "firma": "din_asteroid>din_impact>din_crater>ast_dart>ast_belt>ast_belt>ast_watch>ast_safe>din_impact>ast_binary>ast_binary>coh_hook>ast_dart>ast_dart>ast_shrink>ast_shrink>ast_hera>ast_hera>ast_hera>ast_binary>ast_deflect>ast_deflect>ast_deflect>ast_watch>ast_safe>met_orbit>met_rain>met_burn>ast_watch>ast_outro",
+      "video_id": "iwLb6qz3HYk",
+      "hora_recomendada_utc": "2026-11-28T15:00:00+00:00",
+      "programado_utc": "2026-11-28T15:00:00Z"
+    },
+    "en": {
+      "guion": "can-we-move-an-asteroid",
+      "firma": "din_asteroid>din_impact>din_crater>ast_dart>ast_belt>ast_belt>ast_watch>ast_safe>din_impact>ast_binary>ast_binary>coh_hook>ast_dart>ast_dart>ast_shrink>ast_shrink>ast_hera>ast_hera>ast_hera>ast_binary>ast_deflect>ast_deflect>ast_deflect>ast_watch>ast_safe>met_orbit>met_rain>met_burn>ast_watch>ast_outro",
+      "video_id": "PN6QKSqn97Y",
+      "hora_recomendada_utc": "2026-11-28T15:00:00+00:00",
+      "programado_utc": "2026-11-28T15:00:00Z"
+    }
   }
 }
