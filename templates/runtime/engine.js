@@ -651,7 +651,55 @@
 
   // Imagen de dato curioso (1080×1350, se recorta la parte de arriba del lienzo vertical): escena 3D de fondo,
   // cartel «¿Sabías que…?», el dato en grande, una explicación corta, Leo y la firma del canal.
+  // Palabras con resaltado (amarillo) para los textos de las imágenes.
+  function hlWords(box, text, highlight, cls) {
+    const hl = new Set((highlight || []).map((w) => w.toLowerCase()));
+    String(text).split(/\s+/).forEach((w) => {
+      const on = hl.has(w.toLowerCase()) || hl.has(w.toLowerCase().replace(/[¿?¡!.,:;]+$/g, ''));
+      box.append(el('span', on ? `${cls} ${cls}-hl` : cls, w), ' ');
+    });
+    return box;
+  }
+
+  // Diseños de tarjeta (carrusel): cover (portada con gancho), fact (un dato con cifra grande), cta (cierre),
+  // bubble (Leo cuenta el dato en un globo). Fondo de color, escena 3D dentro de un marco redondeado.
+  function postCard(card) {
+    const L = card.layout;
+    document.body.classList.add('thumb', 'post', 'post-framed', `pl-${L}`);
+    const st = $('stage').style;
+    st.setProperty('--pa', card.colors?.[0] || '#2b1a6b');
+    st.setProperty('--pb', card.colors?.[1] || '#0b6bd6');
+    const wrap = el('div', 'post-card');
+    const top = el('div', 'pk-top');
+    top.append(el('span', 'pk-tag', card.tag || ''), el('span', 'pk-brand', card.brand || 'Leo curioso'));
+    wrap.append(top);
+    if (L === 'cover') {
+      const t = hlWords(el('div', 'pk-hook'), card.fact, card.highlight, 'kw');
+      wrap.append(t, el('div', 'pk-swipe', card.swipe || 'Desliza →'));
+      $('stage').appendChild(wrap); fitText(t, 104, 60);
+    } else if (L === 'fact') {
+      if (card.big) wrap.append(el('div', 'pk-big', card.big));
+      const t = hlWords(el('div', 'pk-text'), card.fact, card.highlight, 'kw');
+      wrap.append(t);
+      if (card.swipe) wrap.append(el('div', 'pk-next', card.swipe));
+      $('stage').appendChild(wrap); fitText(t, 56, 36);
+    } else if (L === 'cta') {
+      const t = hlWords(el('div', 'pk-cta'), card.fact, card.highlight, 'kw');
+      wrap.append(t, el('div', 'pk-sub', card.detail || ''));
+      $('stage').appendChild(wrap); fitText(t, 110, 64);
+    } else {
+      const b = el('div', 'pk-bubble');
+      if (card.big) b.append(el('div', 'pk-bbig', card.big));
+      const t = hlWords(el('div', 'pk-btext'), card.fact, card.highlight, 'kw');
+      b.append(t); wrap.append(b);
+      $('stage').appendChild(wrap); fitText(t, 54, 34);
+    }
+    if (TL.presenter) { const img = el('img', `pk-leo pk-leo-${L}`); img.src = `../presenters/${TL.presenter}.png`; wrap.append(img); }
+    return true;
+  }
+
   VF.post = function post(card) {
+    if (card.layout && card.layout !== 'photo') return postCard(card);
     document.body.classList.add('thumb', 'post');
     const wrap = el('div', 'post-card');
     wrap.append(el('div', 'post-badge', card.badge || '¿SABÍAS QUE…?'));
